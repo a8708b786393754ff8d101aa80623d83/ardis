@@ -37,10 +37,13 @@ article .row {
     width: 500px;
     height: 100px;
     position: relative;
-    bottom: 630px;
-    left: 550px;
+    bottom: 355px;
+    left: 800px;
 }
-
+.container-fluid > img{
+    position: relative;
+    top: 100px;
+ }
 
 /* icon emap*/
 
@@ -76,6 +79,7 @@ article .galerie_photo,
 
 footer {
     position: relative;
+    top: 272px;
     background: #707070! important;
     height: 82px;
 }
