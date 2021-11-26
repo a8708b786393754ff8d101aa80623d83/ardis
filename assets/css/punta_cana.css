@@ -1,0 +1,27 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-color: #F1F1F2;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+
+
+/* localisation */
+
+.locate {
+    position: relative;
+    left: 510px;
+}
