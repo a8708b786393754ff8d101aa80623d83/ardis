@@ -1,0 +1,102 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-color: #F1F1F2;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 1px !important;
+}
+
+
+/* localisation */
+
+.breadcrumb li:first-child {
+    right: 12px;
+    position: relative;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+/* positionnement de l'article 'article */
+article .container-fluid{
+    position: relative;
+    top: 100px;
+}
+
+
+/* title */
+
+article .row {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    bottom: 500px;
+    left: 730px;
+}
+
+
+
+
+/* icon emap*/
+
+article i {
+    font-size: 30px;
+}
+
+article .city_hotel {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+/* positionnement des etoile**/
+
+article .start {
+    position: relative;
+    bottom: 40px;
+}
+
+article .start i {
+    color: yellow;
+}
+
+article .galerie_photo,
+.reserver-btn {
+    background-color: #33939A;
+}
+
+/* placement du button reserver est galerie  */
+article .galerie_photo,
+.reserver-btn {
+    background-color: #33939A;
+    position: relative;
+    left: 150px;
+    width: 150px;
+}
+
+
+/* foooter */
+
+footer {
+    position: relative;
+    background: #707070! important;
+    top: 223px;
+    height: 82px;
+}
+
+
+/* faire media pour le responsive */
