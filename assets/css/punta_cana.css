@@ -15,13 +15,76 @@ body {
 /* navbar */
 
 .nav-item {
-    margin: 5px !important;
+    margin: 1px !important;
 }
 
 
 /* localisation */
 
-.locate {
+.breadcrumb li:first-child {
+    right: 12px;
     position: relative;
-    left: 510px;
 }
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+/* title */
+
+article .row {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    bottom: 630px;
+    left: 550px;
+}
+
+
+/* icon emap*/
+
+article i {
+    font-size: 30px;
+}
+
+article .city_hotel {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+/* positionnement des etoile**/
+
+article .start {
+    position: relative;
+    bottom: 40px;
+}
+
+article .start i {
+    color: yellow;
+}
+
+/* placement du button reserver est galerie  */
+article .galerie_photo,
+.reserver-btn {
+    background-color: #33939A;
+    position: relative;
+    left: 150px;
+    width: 150px;
+}
+
+
+
+
+/* foooter */
+
+footer {
+    position: relative;
+    background: #707070! important;
+    height: 82px;
+}
+
+
+/* faire media pour le responsive */
