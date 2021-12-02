@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+
+.breadcrumb li:first-child {
+    right: 15px;
+    position: relative;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+/* dubai galerie image  */
+.container > .row > img{
+    position: relative;
+    width: 500px;
+}
