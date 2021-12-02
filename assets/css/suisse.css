@@ -20,6 +20,10 @@ body {
 
 
 /* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
 
 .breadcrumb li:first-child {
     right: 12px;
@@ -72,6 +76,9 @@ article .start i {
 article .galerie_photo,
 .reserver-btn {
     background-color: #33939A;
+    position: relative;
+    left: 150px;
+    width: 150px;
 }
 
 

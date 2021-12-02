@@ -20,7 +20,10 @@ body {
 
 
 /* localisation */
-
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
 .breadcrumb li:first-child {
     right: 12px;
     position: relative;
