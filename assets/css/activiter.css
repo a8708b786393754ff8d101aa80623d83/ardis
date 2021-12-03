@@ -68,3 +68,61 @@ footer {
     top: 216px;
     height: 82px;
 }
+
+/* partie responsive   */
+@media screen and (max-width: 1280px){
+    .navbar{
+        font-size:xx-large;
+    }
+
+    /* localisation  */
+    .breadcrumb{
+        font-size:xx-large;
+        
+    }
+    .sortie_chameaux{
+        position: relative;
+        width: 500px;
+        bottom: 700px;
+        left: 450px;
+    }
+    
+    .container>.row>p{
+        position: relative;
+        top: 500px;
+        left: 200px;
+        font-size: xx-large;
+    }
+
+    .phare_bayahibe{
+        position: relative;
+        width: 1000px;
+        top: 600px;
+        left: 200px;
+    }
+    
+    
+    /* button  */
+    .reserver-btn{
+        text-align: center;
+        font-size: xx-large;
+
+        background-color: #33939A;
+        position: relative;
+        width: 200px;
+        height: 75px;
+        top: 750px;
+        left: 50px;
+    }
+    
+    
+
+    footer{
+        font-size:xx-large; 
+        position: relative;
+        top: 1638px;
+        width: 1429px;
+    }
+
+
+}
