@@ -1,0 +1,70 @@
+/*config global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F2;
+}
+
+/* navbar */
+.nav-item {
+    margin: 1px !important;
+}
+
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+.breadcrumb li:first-child {
+    right: 12px;
+    position: relative;
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+
+/* positionnement du paragraphe  */
+.container>.row>p{
+    position: relative;
+    top: 150px;
+    right: 280px;
+    font-size: 25px;
+}
+
+.sortie_chameaux{
+    position: relative;
+    width: 300px;
+    bottom: 150px;
+    left: 500px;
+}
+
+.phare_bayahibe{
+    position: relative;
+    width: 500px;
+    top: 170px;
+    left: 800px;
+}
+
+
+/* button  */
+.reserver-btn{
+    text-align: center;
+    background-color: #33939A;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    top: 300px;
+    right: 500px;
+}
+
+/* foooter */
+footer {
+    position: relative;
+    background: #707070! important;
+    top: 216px;
+    height: 82px;
+}

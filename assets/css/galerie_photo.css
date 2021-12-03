@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-repeat: no-repeat;
-}
-
-
 /* navbar */
 
 .nav-item {
@@ -29,8 +24,32 @@ body {
 .breadcrumb a {
     text-decoration: none;
 }
+
 /* dubai galerie image  */
-.container > .row > img{
-    position: relative;
+  .dubai_photos{
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* punta cana galerie image  */
+article  > .punta_cana{
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* suisse galerie image  */
+article  > .suisse_photos{
     width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* foooter */
+footer {
+    position: relative;
+    background: #707070! important;
+    top: 20px;
+    height: 82px;
 }

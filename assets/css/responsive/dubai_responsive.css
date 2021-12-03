@@ -1,4 +1,4 @@
-/*config global*/
+/* config global du responsive*/
 
 * {
     margin: 0;
@@ -12,6 +12,12 @@ body{
     position: relative ;
     width: 275px;
     height: 812px;
+}
+
+h1{
+    position: relative;
+    width: 500px;
+    height: 10px;
 }
 /* positionnement du menu hamburger */
 .navbar-toggler{
@@ -31,7 +37,7 @@ body{
     text-decoration: none;
 }
 
-/* title locate hotel et start posiitonnement*/
+/* title locate hotel et start positonnement*/
 .container-fluid .description{
     position: relative;
     right: 650px;
@@ -45,18 +51,29 @@ body{
     top: 10px;
 }
 
+
+/* block de start  */
+.start{
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
 /* explication de l'hotel */
 .localisation_hotel, .presentation{
     position: relative;
-    right: 580px;
-    top: 500px;
+    right:700px;
+    top: 400px;
+    width: 350px;
 }
 
 footer {
     position: relative;
-    top: 750px;
+    top: 620px;
     background: #707070! important;
-    height: 82px;
+    height: 70px;
+    width: 300px;
+    right: 0px;
 }
 
 /* faire media pour le responsive */

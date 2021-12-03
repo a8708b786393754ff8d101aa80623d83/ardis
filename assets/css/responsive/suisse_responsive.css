@@ -1,0 +1,62 @@
+/*config global du responsive*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-color: #F1F1F2;
+    position: relative ;
+    width: 275px;
+    height: 812px;
+}
+/* positionnement du menu hamburger */
+.navbar-toggler{
+    position: relative;
+    left: 100px;
+}
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 20px;
+}
+.breadcrumb li:first-child {
+    right: 5px;
+    position: relative;
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+
+/* title locate hotel et start positonnement*/
+.container-fluid .description{
+    position: relative;
+    right: 650px;
+    top: 190px;
+}
+
+/* image */
+.image_suisse {
+    position: relative;
+    width: 350px;
+    top: 10px;
+}
+
+/* explication de l'hotel */
+.localisation_hotel, .presentation{
+    position: relative;
+    right: 580px;
+    top: 500px;
+}
+
+footer {
+    position: relative;
+    top: 750px;
+    background: #707070! important;
+    height: 82px;
+}
+
+/* faire media pour le responsive */

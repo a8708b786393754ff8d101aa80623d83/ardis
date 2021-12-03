@@ -1,5 +1,4 @@
 /*config global*/
-
 * {
     margin: 0;
     padding: 0;
@@ -62,10 +61,7 @@ article .start {
 article .start i {
     color: yellow;
 }
-article .galerie_photo,
-.reserver-btn {
-    background-color: #33939A;
-}
+
 /* placement du button reserver est galerie  */
 article .galerie_photo,
 .reserver-btn {
