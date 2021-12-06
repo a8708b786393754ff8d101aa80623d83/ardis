@@ -53,3 +53,12 @@ footer {
     top: 20px;
     height: 82px;
 }
+
+/* partie responsive   */
+@media screen and (max-width: 1280px){
+    /* laisser un peux d'espace */
+    h2{
+        margin: 50px;
+    }
+
+}

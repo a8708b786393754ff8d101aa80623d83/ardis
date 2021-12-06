@@ -41,7 +41,11 @@ article h1{
     width: 300px;
     top: 80px;
 }
-
+/* ajustement de l'image */
+.image_suisse{
+    position: relative;
+    left: 130px;
+}
 /* position de la div */
 article .row {
     width: 500px;

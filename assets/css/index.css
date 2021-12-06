@@ -44,7 +44,10 @@ section .card-group {
     top: 1050px;
 }
 
-
+.btn{
+    background-color: #33939A;
+    
+}
 /* button pour voir en plus */
 
 section .container {

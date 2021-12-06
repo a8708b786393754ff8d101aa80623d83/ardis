@@ -1,0 +1,53 @@
+/*config global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+
+/* navbar */
+.nav-item {
+    margin: 5px !important;
+}
+
+/* localisation */
+.breadcrumb p {
+    position: relative;
+    right: 12px;
+}
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+/* ajustement du titre  */
+h1{
+    position: relative;
+    bottom: 30px;
+    left: 720px;
+}
+
+/* positionnement des image de menu  */
+.poisson, .viande{
+    position: relative;
+    left: 350px;
+}
+
+.vegeterien{
+    position: relative;
+    left: 990px;
+}
+
+
+
+
+/* ajustement des paragraphe  */

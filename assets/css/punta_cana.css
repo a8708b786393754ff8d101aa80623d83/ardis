@@ -33,7 +33,11 @@ body {
     text-decoration: none;
 }
 
-
+/* ajustement de l'image  */
+.image_hotel{
+    position: relative;
+    left: 150px;
+}
 /* positionnement du contenus principale*/
 article .row {
     width: 500px;
@@ -76,7 +80,7 @@ article .galerie_photo,
 footer {
     position: relative;
     background: #707070! important;
-    height: 82px;
+    height: 66px;
 }
 
 
@@ -84,43 +88,48 @@ footer {
 @media screen and (max-width: 1280px){
 
     .navbar{
-        font-size:xx-large;
+        position: relative;
+        width: 1350px;
+        font-size: xx-large;
+
     }
 
     /* localisation  */
     .breadcrumb{
         font-size:xx-large;
+        /* width: 10px; */
         
     }
      /* titre avec les note  */
     .description{
         position: relative;
-        right: 150px;
-        top: 50px;
+        right: 450px;
+        top: 30px;
+        font-size: xx-large;
     }
 
     /* positionnement image  */
 
     .image_hotel{
         position: relative;
-        top: 240px;
-        left: 280px;
+        top: 400px;
+        left: 400px;
     }
 
     .localisation_hotel, .presentation{
-        font-size:xx-large;
+        font-size:40px;
         text-align: center;
         position: relative;
-        top: 750px;
-        right: 250px;
+        top: 900px;
+        right: 400px;
+        width: 1000px;
     }
 
     footer{
         font-size:xx-large; 
         position: relative;
-        top: 1265px;
-        width: 1100px;
+        height: 150px;
+        top: 2130px;
+        width: 1500px;
     }
-
-
 }
