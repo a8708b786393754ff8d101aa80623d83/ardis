@@ -34,41 +34,49 @@ body {
 }
 
 
-/* title */
+/* titre  */
+article h1{
+    position: relative;
+    left: 800px;
+    width: 300px;
+    top: 80px;
+}
 
+/* position de la div */
 article .row {
     width: 500px;
     height: 100px;
     position: relative;
-    bottom: 355px;
+    bottom: 220px;
     left: 800px;
 }
+
+/* postion de l'image  */
 .container-fluid > img{
     position: relative;
     top: 100px;
+    width: 600px;
  }
 
-/* icon emap*/
+/* reglage de l'icone gps*/
 
-article i {
-    font-size: 30px;
+article .gps_icone{
+    position: relative;
+    bottom: 5px;
 }
 
+/* reglage  de la vilee de l'hotel*/
 article .city_hotel {
     position: relative;
     bottom: 25px;
     left: 25px;
 }
 
-
 /* positionnement des etoile**/
-
 article .start {
     position: relative;
+    font-size: 30px;
     bottom: 40px;
-}
-
-article .start i {
     color: yellow;
 }
 
@@ -82,10 +90,9 @@ article .galerie_photo,
 
 
 /* foooter */
-
 footer {
     position: relative;
-    top: 272px;
+    top: 291px;
     background: #707070! important;
     height: 82px;
 }

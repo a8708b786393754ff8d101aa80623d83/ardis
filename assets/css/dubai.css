@@ -31,6 +31,9 @@ body {
 .image_dubai{
     max-width: 100%;
     height: auto;
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
 
 /* title */
@@ -38,8 +41,8 @@ article .row {
     width: 500px;
     height: 100px;
     position: relative;
-    bottom: 500px;
-    left: 730px;
+    bottom: 400px;
+    left: 930px;
 }
 
 /* icon emap*/
