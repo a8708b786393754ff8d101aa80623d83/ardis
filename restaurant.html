@@ -7,8 +7,8 @@
     <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
     Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <title>Nos menus</title>
+    <link rel="stylesheet" href="assets/css/restaurant.css">
+    <title>Restaurant</title>
 </head>
 <body>
     <!-- hedear -->
@@ -71,31 +71,48 @@
     <!-- title  -->
     <h1>Nos menus</h1>
 
-    <div class="container">
-        <div class="row">
-            <div class="menu_presentation">
-                <img src="assets/Images/resto1.png" alt="menu poisson" class="poisson">
-                <p>
-                    Le menu enfant comporte une viande ou un
-                    poisson avec accompagnement au choix
-                    (légumes de saison, féculents) et un dessert au
-                    chocolat ou aux fruits réalisé par notre pâtissier.
-                    Ce menu servi à la demande est servi aux
-                    enfants de moins de 12 ans et permet à
-                    l'ensemble de la table ou du groupe de passer
-                    un agréable moment culinaire.
-                </p>
 
-                <img src="assets/Images/resto2png" alt="menu viande" class="viande">
-                <p>
-                    Le menu jour de l'an comporte des œufs de poule surprise Nougat de foie gras glacé au jus de canard et
-                    Clémentine Noix de Saint-Jacques de Dieppe poêlées / endives à la carbonara jus court Filet de perdreau 
-                    cuisiné en canapé et glacé au porto.
-                </p>
+    <!-- section avec les chaque menu  -->
+    <section>
+        <img src="assets/Images/resto1.png" alt="menu_enfant" class="menu_enfant_image">
+        <img src="assets/Images/resto2png" alt="menu viande" class="menu_jour_image">
+        <img src="assets/Images/resto_vegeterien.png" alt=" menu vegeterien" class="menu_vegeterien_image">
+
+        <article class="menu_enfant">
+            <div class="container">
+                <div class="row">
+                    <h4 class="menu_enfant_titre">Menu enfant</h4>
+                    <p class="menu_enfant-paragraphe">
+                        Le menu enfant comporte une viande ou un
+                        poisson avec accompagnement au choix
+                        (légumes de saison, féculents) et un dessert au
+                        chocolat ou aux fruits réalisé par notre pâtissier
+                        Ce menu servi à la demande est servi aux
+                        enfants de moins de 12 ans et permet à
+                        l'ensemble de la table ou du groupe de passer
+                        un agréable moment culinaire.
+                    </p>
+                </div>
             </div>
+        </article>
 
-            <div class="menu_vegeterien">
-                <img src="assets/Images/resto_vegeterien.png" alt=" menu vegeterien" class="vegeterien">
+        <article class="menu_jour">
+            <div class="container">
+                <div class="row">
+                    <h4 class="menu_jour_titre">Menu du jour</h4>
+                    <p class="menu_jour_paragraphe">
+                        Le menu jour de l'an comporte des œufs de poule surprise Nougat de foie gras glacé au jus de canard et
+                        Clémentine Noix de Saint-Jacques de Dieppe poêlées / endives à la carbonara jus court Filet de perdreau 
+                        cuisiné en canapé et glacé au porto.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class='menu_vegeterien'>
+            <div class="container">
+                <div class="row">
+                    <h4 class="menu_vegeterien_titre">Menu vegeterien</h4>
                 <p>
                     Cette recette végétarienne
                     gastronomique est également vegan.
@@ -106,9 +123,10 @@
                     tandis que les pommes de terre rôties
                     offrent fondant et douceur.
                 </p>
+                </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 
 </body>
 <script src="../assets/js/bootstrap.bundle.js "></script>

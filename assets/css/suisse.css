@@ -101,5 +101,6 @@ footer {
     height: 82px;
 }
 
-
-/* faire media pour le responsive */
+.contact {
+    height: 50px;
+}
