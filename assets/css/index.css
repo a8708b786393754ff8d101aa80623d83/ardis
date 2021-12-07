@@ -28,6 +28,13 @@ body {
     border: 0px black;
 }
 
+/* positionnement de la fleche  */
+.fa-arrow-down{
+    position: relative;
+    left: 950px; 
+    font-size: 50px;
+    top: 860px;
+}
 
 /* titre meuiller hotel au meuilleur prix  */
 
@@ -42,6 +49,12 @@ body {
 section .card-group {
     position: relative;
     top: 1050px;
+}
+
+/* lien des page   */
+.card-body p:first-child{
+    list-style: none;
+    text-decoration: none;
 }
 
 .btn{
@@ -64,4 +77,14 @@ footer {
     top: 1150px;
     background: #707070;
     height: 110px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .fa-arrow-down{
+        position: relative;
+        color: white ;
+        top: 700px;
+        left: 180px;        
+    }
 }

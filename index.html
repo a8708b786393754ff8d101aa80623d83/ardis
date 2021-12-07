@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,7 @@
         <!-- navbar -->
         <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/Images/logo.png" alt="logo" width="80"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/Images/logo_menu.png" alt="logo" width="80"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,7 +43,7 @@
                             <a class="nav-link text-white" href="activiter.html">Nos activiter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Restaurants</a>
+                            <a class="nav-link text-white" href="restaurant.html">Restaurants</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="galerie_photo.html">Galerie_photo</a>
@@ -66,10 +65,12 @@
                 <input type="date" class="">
                 <label for="reservation" class="text-white">Au:</label>
                 <input type="date" class="">
-                <input type="submit" name="sub" class="btn-dark btn" value="chercher">
+                <input type="submit" name="sub" class="btn-dark" value="chercher">
             </form>
         </div>
     </div>
+
+    <i class="fas fa-arrow-down"></i>
 
     <!-- partie meuilleur hotel/prix -->
     <section>
@@ -78,24 +79,24 @@
             <div class="card">
                 <img src="assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Punta cana</h5>
-                    <p style="color: #ff00aa ;" class="card-text ">Hotel ardis Sampatico</p>
+                    <h5 class="card-title"><a href="nos_hotel/punta_cana.html">Punta cana</a></h5>
+                    <p class="card-text ">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text ">a partir de 250€</p>
                 </div>
             </div>
             <div class="card">
                 <img src="assets/Images/dubai/hotel-desert-dubai.png" class="card-img-top d-block mx-auto" alt="hotel_dubai">
                 <div class="card-body">
-                    <h5 class="card-title">Dubai</h5>
-                    <p style="color: #ff00aa ;" class="card-text text-start">Hotel ardis dubai</p>
+                    <h5 class="card-title"><a href="nos_hotel/dubai.html">Dubai</a></h5>
+                    <p class="card-text text-start">Hotel ardis dubai</p>
                     <p style="color: #ff00aa ;" class="card-text text-start">a partir de 320€</p>
                 </div>
             </div>
             <div class="card">
                 <img src="assets/Images/suisse/images2.png" class="card-img-top d-block mx-auto" alt="hotel_suisse">
                 <div class="card-body">
-                    <h5 class="card-title">Suisse</h5>
-                    <p style="color: #ff00aa ;" class="card-text text-start">Hotel ardis Sampatico</p>
+                    <h5 class="card-title"><a href="nos_hotel/suisse.html">Suisse</a></h5>
+                    <p class="card-text text-start">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text text-start">a partir de 100€</p>
                 </div>
             </div>
@@ -121,4 +122,6 @@
 
 </body>
 <script src="assets/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/f8e0ca0321.js " crossorigin="anonymous "></script>
+
 </html>
