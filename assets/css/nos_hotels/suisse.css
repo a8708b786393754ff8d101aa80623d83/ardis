@@ -76,7 +76,7 @@ article .city_hotel {
     left: 25px;
 }
 
-/* positionnement des etoile**/
+/* positionnement des etoile */
 article .start {
     position: relative;
     font-size: 30px;
@@ -101,6 +101,3 @@ footer {
     height: 82px;
 }
 
-.contact {
-    height: 50px;
-}

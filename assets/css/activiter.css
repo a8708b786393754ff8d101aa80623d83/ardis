@@ -7,6 +7,7 @@
 
 body {
     background-color: #F1F1F2;
+    background-repeat: no-repeat;
 }
 
 /* navbar */
@@ -31,22 +32,15 @@ body {
 .container>.row>p{
     position: relative;
     top: 150px;
-    right: 280px;
+    left: 180px;
     font-size: 25px;
-}
-
-.sortie_chameaux{
-    position: relative;
-    width: 300px;
-    bottom: 150px;
-    left: 500px;
 }
 
 .phare_bayahibe{
     position: relative;
     width: 500px;
-    top: 170px;
-    left: 800px;
+    top: 10px;
+    left: 850px;
 }
 
 
@@ -57,8 +51,8 @@ body {
     position: relative;
     width: 200px;
     height: 40px;
-    top: 300px;
-    right: 500px;
+    top: 350px;
+    left: 5px;
 }
 
 /* foooter */

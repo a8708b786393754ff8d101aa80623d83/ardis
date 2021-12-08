@@ -7,8 +7,8 @@
     <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
     Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/restaurant.css">
-    <title>Restaurant</title>
+    <link rel="stylesheet" href="assets/css/reserver.css">
+    <title>Reservez</title>
 </head>
 <body>
     <!-- hedear -->
@@ -36,18 +36,18 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="reservation.html">Reservation</a>
+                            <a class="nav-link text-black" href="#">Reservation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="activiter.html">Nos activiter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="#">Restaurants</a>
+                            <a class="nav-link text-black" href="restaurant.html">Restaurants</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="galerie_photo.html">Galerie_photo</a>
                         </li>
-                      
+                    
                     </ul>
                 </div>
             </div>
@@ -60,76 +60,34 @@
             <ol class="breadcrumb">
                 <p>Vous ete ici: </p>
                 <li class="breadcrumb-item"><a class='text-black' href="index.html">Acceuil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Restaurant</li>
+                <li class="breadcrumb-item active" aria-current="page">Reserver</li>
             </ol>
         </div>
     </div>
 
 
-    <!-- title  -->
-    <h1>Nos menus</h1>
 
-
-    <!-- section avec les chaque menu  -->
-    <section>
-        <img src="assets/Images/resto1.png" alt="menu_enfant" class="menu_enfant_image">
-        <img src="assets/Images/resto2png" alt="menu viande" class="menu_jour_image">
-        <img src="assets/Images/resto_vegeterien.png" alt=" menu vegeterien" class="menu_vegeterien_image">
-
-        <article class="menu_enfant">
-            <div class="container">
-                <div class="row">
-                    <h4 class="menu_enfant_titre">Menu enfant</h4>
-                    <p class="menu_enfant_prix">Prix: 5.99 <i class="fas fa-euro-sign"></i></p>
-                    <p class="menu_enfant-paragraphe">
-                        Le menu enfant comporte une viande ou un
-                        poisson avec accompagnement au choix
-                        (légumes de saison, féculents) et un dessert au
-                        chocolat ou aux fruits réalisé par notre pâtissier
-                        Ce menu servi à la demande est servi aux
-                        enfants de moins de 12 ans et permet à
-                        l'ensemble de la table ou du groupe de passer
-                        un agréable moment culinaire.
-                    </p>
+    <div class="container">
+        <div class="row">
+            <div class="reservation">
+                <h2>Reserver dés maintenant !! </h2>
+                <div class="destination">
+                    <input type="text" placeholder="Hotel de destinations">
                 </div>
-            </div>
-        </article>
-
-        <article class="menu_jour">
-            <div class="container">
-                <div class="row">
-                    <h4 class="menu_jour_titre">Menu du jour</h4>
-                    <p class="menu_jour_prix">Prix: 9.99 <i class="fas fa-euro-sign"></i></p>
-                    <p class="menu_jour_paragraphe">
-                        Le menu jour de l'an comporte des œufs de poule surprise Nougat de foie gras glacé au jus de canard et
-                        Clémentine Noix de Saint-Jacques de Dieppe poêlées / endives à la carbonara jus court Filet de perdreau 
-                        cuisiné en canapé et glacé au porto.
-                    </p>
+                <div class="date">
+                    Du: <input type="date">
+                    AU: <input type="date">
                 </div>
-            </div>
-        </article>
 
-        <article class='menu_vegeterien'>
-            <div class="container">
-                <div class="row">
-                    <h4 class="menu_vegeterien_titre">Menu vegeterien</h4>
-                    <p class="menu_vegeterien_prix">Prix: 5.82 <i class="fas fa-euro-sign"></i></p>
-                    <p>
-                    Cette recette végétarienne
-                    gastronomique est également vegan.
-                    La sauce au cresson est réalisée à
-                    base de noix de cajou qui lui ajoute
-                    du corps, le condiment d’estragon et
-                    amandes grillées donne de la texture
-                    tandis que les pommes de terre rôties
-                    offrent fondant et douceur.
-                </p>
+                <div class="nombre_voyager">
+                    <input type="numbre" placeholder="Nombre de voyageurs">
                 </div>
-            </div>
-        </article>
-    </section>
+            <input type="submit" class="btn" value="reserver">
+          </div>
+        </div>
+    </div>
 
-    <!-- footer  -->
+    <!-- footer -->
     <footer class=" card-footer d-flex align-items-center ">
         <div class="container ">
             <div class="row ">
@@ -140,9 +98,6 @@
                 </div>
             </div>
         </div>
-    </footer>   
-
+    </footer>
 </body>
-<script src="../assets/js/bootstrap.bundle.js "></script>
-<script src="https://kit.fontawesome.com/f8e0ca0321.js " crossorigin="anonymous "></script>
 </html>

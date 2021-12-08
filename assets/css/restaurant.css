@@ -71,18 +71,23 @@ h1{
 .menu_enfant-paragraphe{
     position: relative;
     width: 700px;
-    left: 90px;
+    left: 50px;
     text-align: center;
     bottom: 50px;
 }
-
+/* prix menu enfant  */
+.menu_enfant_prix{
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+}
 
 
 /* image menu jour  */
 .menu_jour_image{
     position: relative;
     left: 400px;
-    top: 560px;
+    top: 590px;
 }
 
 /* article menu jour  */
@@ -97,8 +102,14 @@ h1{
 .menu_jour_paragraphe{
     text-align: center;
     position: relative;
-    top: 260px;
+    top: 220px;
     right: 120px;
+}
+/* prix menu de jour  */
+.menu_jour_prix{
+    position: relative;
+    left: 50px;
+    top: 220px;
 }
 
 
@@ -111,15 +122,27 @@ h1{
     text-align: center;
 }
 
+/* titre emnu vegeter */
+
 /* image du menu vegeterien  */
 .menu_vegeterien_image{
     position: relative;
-    top: 970px;
+    top: 1050px;
     left: 100px;
 }
 
 /* titre du menu vegeterien  */
 .menu_vegeterien_titre{
     position: relative;
-    bottom: 220px;
+    bottom: 250px;
+}
+
+
+
+/* foooter */
+footer {
+    position: relative;
+    top: 591px;
+    background: #707070! important;
+    height: 82px;
 }
