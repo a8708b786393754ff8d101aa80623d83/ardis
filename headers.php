@@ -7,9 +7,8 @@ function head_root(string $title){
     $file = tree_file_config(); 
     
     if (is_string($file)){
-        $body_background = $name_file === 'index' ?  "<body style='background-image:"."url('assets/Images/background.jpg')>": '<body>'; // faut voir pourquoi les slash n'est plus la !!!
-
         $name_file = explode('.php', $file)[0]; // nom du fichier pour le css 
+        $body_background = $name_file === 'index' ?  "<body style='background-image:"."url('assets/Images/background.jpg')>": '<body>'; // faut voir pourquoi les slash n'est plus la !!!
 
         return "<!DOCTYPE html>
         <html lang='en'>
@@ -56,7 +55,7 @@ function head_root(string $title){
                                     <a class='nav-link text-black' href='restaurant.php'>Restaurants</a>
                                 </li>
                                 <li class='nav-item'>
-                                    <a class='nav-link text-black' href='galerie_photo.php'>Galerie_photo</a>
+                                    <a class='nav-link text-black' href='galerie photo.php'>Galerie_photo</a>
                                 </li>
                             
                             </ul>
@@ -114,7 +113,7 @@ function head_root(string $title){
                                 <a class='nav-link text-black' href='../restaurant.php'>Restaurants</a>
                             </li>
                             <li class='nav-item'>
-                                <a class='nav-link text-black' href='../galerie_photo.php'>Galerie_photo</a>
+                                <a class='nav-link text-black' href='../galerie_photo.php'>galerie photo</a>
         
                             </li>
                             

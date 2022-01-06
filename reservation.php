@@ -2,6 +2,8 @@
     require 'headers.php'; 
     echo head_root('Reservez');
 ?>
+
+
 <!-- locate -->
     <div class="container ">
         <div class="row " aria-label="breadcrumb ">
@@ -42,7 +44,7 @@
                 <div class="d-flex ">
                     <p class=" "> © 2021 Hotel ardis|Mention legale</p>
                     <p>| Email: hotel@ardis.com |  Numero mobile: 06 06 06 06 06</p>
-                    <img src="assets/Images/Objet dynamique vectoriel.png " alt="logo_icone " height="30">
+                    <img src="../assets/Images/Objet dynamique vectoriel.png " alt="logo_icone " height="30">
                 </div>
             </div>
         </div>
