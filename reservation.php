@@ -3,7 +3,6 @@
     echo head_root('Reservez');
 ?>
 
-
 <!-- locate -->
     <div class="container ">
         <div class="row " aria-label="breadcrumb ">
