@@ -1,15 +1,18 @@
 <?php 
-require 'conf.php';
+require_once 'conf.php';
 
 define('URL',explode('/', $_SERVER['REQUEST_URI']));
 
-function head_root(string $title){
+function head(string $title){
     $file = tree_file_config(); 
     
     if (is_string($file)){
         $name_file = explode('.php', $file)[0]; // nom du fichier pour le css 
-        $body_background = $name_file === 'index' ?  "<body style='background-image:"."url('assets/Images/background.jpg')>": '<body>'; // faut voir pourquoi les slash n'est plus la !!!
+        $body_background = $name_file === 'index' ?  "<body style='background-image:"."url('assets/Images/background.jpg')>": '<body>'; // faut voir pourquoi les slash(sur la page d'acceuil) n'est plus la !!!
 
+        if ($name_file == ''){ // verif pour la page d'acceuil
+            $name_file = 'index'; 
+        }
         return "<!DOCTYPE html>
         <html lang='en'>
         <head>
@@ -55,7 +58,7 @@ function head_root(string $title){
                                     <a class='nav-link text-black' href='restaurant.php'>Restaurants</a>
                                 </li>
                                 <li class='nav-item'>
-                                    <a class='nav-link text-black' href='galerie photo.php'>Galerie_photo</a>
+                                    <a class='nav-link text-black' href='galerie_photo.php'>galerie photo</a>
                                 </li>
                             
                             </ul>
@@ -64,6 +67,7 @@ function head_root(string $title){
                 </nav>
             </header>";    
     }
+
     $name_file = explode('.php', $file[0])[0]; // nom du fichier pour le css 
     return "<!DOCTYPE html>
         <html lang='fr'>
@@ -122,5 +126,4 @@ function head_root(string $title){
                 </div>
             </nav>
         </header>";
-
-} 
+}

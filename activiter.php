@@ -1,6 +1,6 @@
 <?php 
-    require 'headers.php'; 
-    echo head_root('Activiter');
+    require_once 'headers.php'; 
+    echo head('Activiter');
 ?>
     <div class="container ">
         <!-- locate -->
@@ -40,19 +40,5 @@
         </div>
     </div>
 
-
-    <!-- footer  -->
-    <footer class=" card-footer d-flex align-items-center ">
-        <div class="container ">
-            <div class="row ">
-                <div class="d-flex ">
-                    <p class=" "> © 2021 Hotel ardis|Mention legale</p>
-                    <p>| Email: hotel@ardis.com |  Numero mobile: 06 06 06 06 06</p>
-                    <img src="../assets/Images/Objet dynamique vectoriel.png " alt="logo_icone " height="30">
-                </div>
-            </div>
-        </div>
-    </footer>   
-</body>
-<script src="assets/js/bootstrap.bundle.js"></script>
-</html>
+<?php
+require_once 'footers.php'; 
