@@ -2,8 +2,6 @@
     require_once 'headers.php'; 
     echo head('Hotel ardis');
 ?>
-
-   
     <!-- reservation -->
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">

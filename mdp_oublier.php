@@ -1,6 +1,6 @@
 <?php 
     require 'headers.php'; 
-    echo ('mdp oublie');
+    echo head('mdp oublie');
 ?>
 <div class="container"> 
     <div class= "row justify-content-center">

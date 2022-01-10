@@ -8,8 +8,8 @@ function head(string $title){
     
     if (is_string($file)){
         $name_file = explode('.php', $file)[0]; // nom du fichier pour le css 
-        $body_background = $name_file === 'index' ?  "<body style='background-image:"."url('assets/Images/background.jpg')>": '<body>'; // faut voir pourquoi les slash(sur la page d'acceuil) n'est plus la !!!
-
+        $body_background = $name_file === '' ?  ' <body style="background-image: url('.'assets/Images/background.jpg'.')" >' : '<body>'; // faut voir pourquoi les slash(sur la page d'acceuil) n'est plus la !!!
+        // var_dump($name_file);
         if ($name_file == ''){ // verif pour la page d'acceuil
             $name_file = 'index'; 
         }

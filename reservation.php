@@ -20,11 +20,15 @@
         <div class="row">
             <div class="reservation">
                 <h2>Reserver dés maintenant !! </h2>
-                <div class="destination">
-                    <input type="text" placeholder="Hotel de destinations">
+                <div class="text-center">
+                    <h3 class='destination '>Hotel de destinations</h3>
+                        <select class=" destination">
+                        <option>Punta cana</option>
+                        <option>Dubai</option>
+                        <option>Suisse</option>
+                        </select>
                 </div>
                 <div class="date">
-                    Du: <input type="date">
                     AU: <input type="date">
                 </div>
 
