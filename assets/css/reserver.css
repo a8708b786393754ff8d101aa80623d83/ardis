@@ -1,0 +1,85 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-color: #F1F1F2;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 1px !important;
+}
+
+
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+.breadcrumb p{
+    right: 12px;
+    position: relative;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+/* titre principale*/
+h2{
+    position: relative;
+    left: 350px;
+    width: 400px;
+    /* height: 0px; */
+}
+
+/* hotel de destination  */
+.destination input:nth-child(1){
+    position: relative;
+    left: 400px;
+    top: 115px;
+    font-size: 25px;
+}
+
+/* dates  */
+.date{
+    position: relative;
+    font-size: 20px;
+    left: 300px;
+    top: 200px;
+}
+
+/* nombre de voyageur  */
+.nombre_voyager{
+    position: relative;
+    font-size: 20px;
+    left: 400px;
+    top: 290px;
+    width: 500px;
+}
+
+/* button  */
+input[type=submit]{
+    position: relative;
+    left: 500px;
+    top: 350px;
+    background-color: #33939A;
+}
+
+
+/* foooter */
+footer {
+    position: relative;
+    top: 537px;
+    background: #707070! important;
+    height: 82px;
+}
