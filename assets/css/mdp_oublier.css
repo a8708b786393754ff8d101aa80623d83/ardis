@@ -1,0 +1,25 @@
+.form-gap {
+    padding-top: 100px;
+}
+.nav-item {
+    margin: 5px !important;
+}
+footer {
+    position: relative;
+    height: 10vh;
+    background-color: #707070 !important;
+    height: 110px;
+}
+ .container {
+     padding-top: 200px;
+     padding-left: 500px;
+ }
+
+@media screen and (max-width: 1280px){
+    .fa-arrow-down{
+        position: relative;
+        color: white ;
+        top: 700px;
+        left: 180px;        
+    }
+}
