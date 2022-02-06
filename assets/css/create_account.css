@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+body { padding-top:30px; }
+.form-control { margin-bottom: 10px; }
+
+section{
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+
+/* foooter */
+
+footer {
+    position: relative;
+    top: 408px;
+    background-color: #707070 !important;
+    height: 110px;
+}
