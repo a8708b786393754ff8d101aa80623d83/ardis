@@ -4,22 +4,27 @@
 .nav-item {
     margin: 5px !important;
 }
+
+
+
+
+.container {
+    position: absolute; /* postulat de départ */
+  top: 50%; left: 80%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.item {
+    width: 10em;
+}
+    
+
+
+
+/* foooter */
 footer {
     position: relative;
-    height: 10vh;
-    background-color: #707070 !important;
-    height: 110px;
-}
- .container {
-     padding-top: 200px;
-     padding-left: 500px;
- }
-
-@media screen and (max-width: 1280px){
-    .fa-arrow-down{
-        position: relative;
-        color: white ;
-        top: 700px;
-        left: 180px;        
-    }
+    top: 591px;
+    background: #707070! important;
+    height: 82px;
 }
