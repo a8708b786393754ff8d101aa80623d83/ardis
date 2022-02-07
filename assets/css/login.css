@@ -1,14 +1,5 @@
 
 /* BASIC */
-
-html {
-    background-color: #56baed;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-  }
   
   a {
     color: #92badd;
@@ -262,4 +253,12 @@ html {
   #icon {
     width:30%;
   }
-  
+
+  /* foooter */
+
+footer {
+  position: relative;
+  top: 325px;
+  background-color: #707070 !important;
+  height: 110px;
+}
