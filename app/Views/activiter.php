@@ -7,7 +7,7 @@
     <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
     Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/activiter.css">
+    <link rel="stylesheet" href="base_url('assets/css/activiter.css')">
     <title>Nos activiter</title>
 </head>
 <body style="background-image: url('assets/Images/desert_activiter.jpg') ;">
