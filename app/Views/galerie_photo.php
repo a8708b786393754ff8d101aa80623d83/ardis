@@ -21,11 +21,11 @@
                     <ul class="navbar-nav">
                         <!-- item navbar  -->
                         <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="./index.html">Acceuil</a>
+                            <a class="nav-link active " aria-current="page" href="./index.html">Accueil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Nos hotels
+                                Nos hôtels
                             </a>
                             <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item bg-transparent text-black" href="./nos_hotel/punta_cana.html">Punta cana</a></li>
@@ -34,10 +34,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="reservation.html">Reservation</a>
+                            <a class="nav-link text-black" href="reservation.html">Réservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="activiter.html">Nos activiter</a>
+                            <a class="nav-link text-black" href="activiter.html">Nos activités</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="restaurant.html">Restaurants</a>
@@ -49,7 +49,7 @@
                             <a class="nav-link text-black" href="login.html">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" href="create_account.html">Creer un compte</a>
+                            <a class="nav-link text-black" href="create_account.html">Créer un compte</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black" href="avis.html">Les avis </a>
@@ -65,10 +65,10 @@
         <!-- locate -->
         <div class="row " aria-label="breadcrumb ">
             <ol class="breadcrumb ">
-                <li>Vous ete ici: </li>
+                <li>Vous êtes ici: </li>
                 <li class="breadcrumb-item ">
                     <a href="./index.html " class="text-black ">
-                        Acceuil
+                        Accueil
                     </a>
                 </li>
                 <li class="breadcrumb-item ">

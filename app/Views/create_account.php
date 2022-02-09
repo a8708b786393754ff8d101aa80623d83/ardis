@@ -68,7 +68,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
-                <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+                <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> S'inscrire !</legend>
                 <form action="#" method="post" class="form" role="form">
                 <div class="row">
                     <div class="col-xs-6 col-md-6">
@@ -80,11 +80,11 @@
                     </div>
                 </div>
                 <input class="form-control" name="email" placeholder="Email" type="email" />
-                <input class="form-control" name="password" placeholder="Enter password" type="password" />
-                <input class="form-control" name="Confirm_password" placeholder="Re-enter Password" type="password" />
+                <input class="form-control" name="password" placeholder="Mot de passe" type="password" />
+                <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" />
                 <br />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
-                    Sign up</button>
+                    Envoyer</button>
                 </form>
             </div>
         </div>
