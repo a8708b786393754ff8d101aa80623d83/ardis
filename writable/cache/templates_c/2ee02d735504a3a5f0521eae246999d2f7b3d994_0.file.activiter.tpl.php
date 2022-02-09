@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 4.0.4, created on 2022-02-09 09:37:27
+  from '/var/www/html/ardis/app/Views/activiter.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.4',
+  'unifunc' => 'content_6203dfb710bc31_30401964',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2ee02d735504a3a5f0521eae246999d2f7b3d994' => 
+    array (
+      0 => '/var/www/html/ardis/app/Views/activiter.tpl',
+      1 => 1644421039,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6203dfb710bc31_30401964 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +30,8 @@
     <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
     Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="{base_url('assets/css/activiter.css')}">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/activiter.css');?>
+">
     <title>Nos activiter</title>
 </head>
 <body style="background-image: url('assets/Images/desert_activiter.jpg') ;">
@@ -23,10 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-black" aria-current="page" href="
-                            
-                            
-                            ">Accueil</a>
+                            <a class="nav-link active text-black" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -191,8 +212,13 @@
             </div>
         </div>
     </footer> 
-    <script src="/code.jquery.com/jquery-1.11.1.min.js"></script>
+    <?php echo '<script'; ?>
+ src="/code.jquery.com/jquery-1.11.1.min.js"><?php echo '</script'; ?>
+>
     
 </body>
-<script src="assets/js/bootstrap.bundle.js"></script>  
-</html>
+<?php echo '<script'; ?>
+ src="assets/js/bootstrap.bundle.js"><?php echo '</script'; ?>
+>  
+</html><?php }
+}

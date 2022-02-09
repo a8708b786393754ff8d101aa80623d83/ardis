@@ -1,22 +1,44 @@
 <?php 
 
 namespace App\Controllers; 
-require_once 'smarty/Smarty.class.php';
 
 class Pages extends BaseController{
-    protected $smarty; 
 
-    public function __construct()
-    {
-        $this->smarty = new Smarty(); 
-    }
     public function index()
     {
-        $this->smarty->display("app/Views/index.tpl");  
+        $this->_smarty->display("index.tpl");  
     }
 
-    // public function activiter()
-    // {
-        // return view("activiter");
-    // }
+    public function activiter()
+    {
+        $this->_smarty->display("activiter.tpl");  
+    }
+    protected function admin()
+    {
+        $this->_smarty->display("admin.tpl");
+    }
+
+    public function avis()
+    {
+        $this->_smarty->display('avis.tpl'); 
+    }
+
+    public function create_account()
+    {
+        $this->_smarty->display('create_account.tpl'); 
+    }
+
+    public function galerie_photo()
+    {
+        $this->_smarty->display('galerie_photo.tpl'); 
+    }
+
+    public function login()
+    {
+        $this->_smarty->display('login.tpl'); 
+    }
+
+    public function mdp_oublier(){
+        $this->_smarty->display('mdpoublier.tpl');
+    }
 }
