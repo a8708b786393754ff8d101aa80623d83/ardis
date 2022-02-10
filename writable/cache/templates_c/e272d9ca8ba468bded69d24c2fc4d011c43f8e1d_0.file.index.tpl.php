@@ -1,5 +1,46 @@
-{extends file='layout.tpl'}
-{block name="content"}
+<?php
+/* Smarty version 4.0.4, created on 2022-02-10 10:01:03
+  from 'C:\MAMP\htdocs\ardis\app\Views\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.4',
+  'unifunc' => 'content_620536bfac5da0_12715017',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'e272d9ca8ba468bded69d24c2fc4d011c43f8e1d' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\index.tpl',
+      1 => 1644508860,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_620536bfac5da0_12715017 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_434672369620536bfac5554_11433794', "content");
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'layout.tpl');
+}
+/* {block "content"} */
+class Block_434672369620536bfac5554_11433794 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'content' => 
+  array (
+    0 => 'Block_434672369620536bfac5554_11433794',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
  <!-- reservation -->
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
@@ -51,4 +92,8 @@
             </div>
         </div>
     </section>
-{/block}
+<?php
+}
+}
+/* {/block "content"} */
+}

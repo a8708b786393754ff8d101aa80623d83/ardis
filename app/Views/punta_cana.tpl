@@ -7,8 +7,9 @@
     <meta name="description " content="Hotel ardis ,l 'hotel du 'climats ' ">
     <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
     Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
-    <link rel="stylesheet " href="../assets/css/bootstrap.css ">
-    <link rel="stylesheet " href="../assets/css/nos_hotels/punta_cana.css ">
+    <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
+
+    <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <title>Punta cana</title>
 </head>
 
