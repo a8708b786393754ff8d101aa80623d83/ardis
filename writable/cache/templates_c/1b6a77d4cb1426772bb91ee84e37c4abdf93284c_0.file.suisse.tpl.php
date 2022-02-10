@@ -1,5 +1,46 @@
-{extends file='base/layout.tpl'}
-{block name=content}
+<?php
+/* Smarty version 4.0.4, created on 2022-02-10 13:00:36
+  from '/var/www/html/ardis/app/Views/suisse.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.4',
+  'unifunc' => 'content_620560d4856090_69381732',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '1b6a77d4cb1426772bb91ee84e37c4abdf93284c' => 
+    array (
+      0 => '/var/www/html/ardis/app/Views/suisse.tpl',
+      1 => 1644519612,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_620560d4856090_69381732 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2093170752620560d4855595_62178959', 'content');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
+}
+/* {block 'content'} */
+class Block_2093170752620560d4855595_62178959 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'content' => 
+  array (
+    0 => 'Block_2093170752620560d4855595_62178959',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
 <div class="container ">
     <!-- locate -->
     <div class="row " aria-label="breadcrumb ">
@@ -27,7 +68,8 @@
 <article>
     <h1>Hotel alpardis</h1>
     <div class="container-fluid ">
-        <img class="image_suisse"src="{base_url('assets/Images/suisse/images2.png')}" alt="image suisse hotel">
+        <img class="image_suisse"src="<?php echo base_url('assets/Images/suisse/images2.png');?>
+" alt="image suisse hotel">
         <div class="row ">
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel ">Suisse/ Turbenthal</p>
@@ -48,4 +90,8 @@
         </div>
     </div>
 </article>
-{/block}
+<?php
+}
+}
+/* {/block 'content'} */
+}
