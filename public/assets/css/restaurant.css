@@ -1,5 +1,4 @@
 /*config global*/
-
 * {
     margin: 0;
     padding: 0;
@@ -8,78 +7,139 @@
 
 body {
     background-repeat: no-repeat;
-    background-color: #F1F1F2;
 }
 
 
 /* navbar */
-
 .nav-item {
-    margin: 1px !important;
+    margin: 5px !important;
 }
 
-
 /* localisation */
+.breadcrumb p {
+    position: relative;
+    right: 12px;
+}
 .breadcrumb{
     position: relative;
     left: 65px;
 }
-.breadcrumb p{
-    right: 12px;
-    position: relative;
-}
-
 .breadcrumb a {
     text-decoration: none;
 }
 
 
-/* titre principale*/
-h2{
+/* ajustement du titre  */
+h1{
     position: relative;
-    left: 350px;
-    width: 400px;
-    /* height: 0px; */
-}
-
-/* hotel de destination  */
-.destination input:nth-child(1){
-    position: relative;
-    left: 400px;
-    top: 115px;
-    font-size: 25px;
-}
-
-/* dates  */
-.date{
-    position: relative;
-    font-size: 20px;
-    left: 300px;
-    top: 200px;
-}
-
-/* nombre de voyageur  */
-.nombre_voyager{
-    position: relative;
-    font-size: 20px;
-    left: 400px;
-    top: 290px;
+    bottom: 30px;
+    left: 720px;
     width: 500px;
 }
 
-/* button  */
-input[type=submit]{
-    position: relative;
-    left: 500px;
-    top: 350px;
-    background-color: #33939A;
+/* positionnement des image de menu  */
+
+.menu_jour_image, .menu_vegeterien_image,  .menu_enfant_image{
+    max-width: 100%;
+    height: auto;
+    width: 300px;
 }
+
+
+
+/* image menu enfant  */
+.menu_enfant_image{
+    position: relative;
+    left: 700px;
+    top: 70px;
+}
+/* article de menu enfant  */
+.menu_enfant{
+    position: relative;
+    left: 550px;
+    top: 100px;
+    width: 500px;
+}
+/* titre de menu enfant  */
+.menu_enfant_titre{
+    position: relative;
+    bottom: 270px;
+    width: 500px;
+    left: 200px;
+}
+/* paragraphe du menu enfant  */
+.menu_enfant-paragraphe{
+    position: relative;
+    width: 700px;
+    left: 50px;
+    text-align: center;
+    bottom: 50px;
+}
+/* prix menu enfant  */
+.menu_enfant_prix{
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+}
+
+
+/* image menu jour  */
+.menu_jour_image{
+    position: relative;
+    left: 400px;
+    top: 590px;
+}
+
+/* article menu jour  */
+.menu_jour{
+    position: relative;
+    top: 100px;
+    left: 750px;
+    width: 500px;
+}
+
+/* paragraphe  du menu de jour  */
+.menu_jour_paragraphe{
+    text-align: center;
+    position: relative;
+    top: 220px;
+    right: 120px;
+}
+/* prix menu de jour  */
+.menu_jour_prix{
+    position: relative;
+    left: 50px;
+    top: 220px;
+}
+
+
+/* paragraphe du menu vegeterien  */
+.menu_vegeterien{
+    position: relative;
+    top: 600px;
+    left: 610px;
+    width: 500px;
+    text-align: center;
+}
+/* image du menu vegeterien  */
+.menu_vegeterien_image{
+    position: relative;
+    top: 1050px;
+    left: 100px;
+}
+
+/* titre du menu vegeterien  */
+.menu_vegeterien_titre{
+    position: relative;
+    bottom: 250px;
+}
+    
 
 
 /* foooter */
 footer {
     position: relative;
-    top: 537px;
+    top: 591px;
     background: #707070! important;
     height: 82px;
 }
