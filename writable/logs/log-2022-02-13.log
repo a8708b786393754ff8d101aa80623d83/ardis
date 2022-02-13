@@ -1,0 +1,23 @@
+CRITICAL - 2022-02-13 11:05:38 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->pages()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-13 11:07:54 --> touch(): Utime failed: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(178): touch()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#7 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#8 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->page()
+#9 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-10 12:57:03
+/* Smarty version 4.0.4, created on 2022-02-13 11:08:35
   from '/var/www/html/ardis/app/Views/login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62055fff218521_68671357',
+  'unifunc' => 'content_62093b13aade64_44394192',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '16983b41c81c607951d644b9c4822fd393cc58b5' => 
     array (
       0 => '/var/www/html/ardis/app/Views/login.tpl',
-      1 => 1644519291,
+      1 => 1644772067,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62055fff218521_68671357 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62093b13aade64_44394192 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_124215615062055fff217af7_54700624', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_27029591162093b13aaae30_51596333', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_124215615062055fff217af7_54700624 extends Smarty_Internal_Block
+class Block_27029591162093b13aaae30_51596333 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_124215615062055fff217af7_54700624',
+    0 => 'Block_27029591162093b13aaae30_51596333',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -47,7 +47,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     
         <!-- Icon -->
         <div class="fadeIn first">
-          <img src="assets/Images/logo.png" id="icon" alt="User Icon" />
+          <img src="<?php echo base_url('assets/Images/logo.png');?>
+" id="icon" alt="User Icon" />
         </div>
     
         <!-- Login Form -->

@@ -11,7 +11,7 @@ class Pages extends BaseController{
         $this->_smarty->display("index.tpl");  
     }
 
-    public function pages($page='index')
+    public function page($page='index')
     {
         if($page === 'index'){ // verifie pour la nav bar en blanc
             $this->_smarty->assign('color_link_nav','white');
