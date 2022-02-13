@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-13 11:59:05
+/* Smarty version 4.0.4, created on 2022-02-13 12:22:08
   from '/var/www/html/ardis/app/Views/restaurant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620946e94cd0e2_27764750',
+  'unifunc' => 'content_62094c508d60c3_64842954',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd92e1ec2168f805eef6888b5cbc2da9841b1c269' => 
     array (
       0 => '/var/www/html/ardis/app/Views/restaurant.tpl',
-      1 => 1644775140,
+      1 => 1644776512,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620946e94cd0e2_27764750 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62094c508d60c3_64842954 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1426518243620946e94cc3e4_55882108', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_84906760662094c508d31f9_07747840', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1426518243620946e94cc3e4_55882108 extends Smarty_Internal_Block
+class Block_84906760662094c508d31f9_07747840 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1426518243620946e94cc3e4_55882108',
+    0 => 'Block_84906760662094c508d31f9_07747840',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -47,9 +47,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
     <!-- section avec les chaque menu  -->
     <section>
-        <img src="assets/Images/resto1.webp" alt="menu_enfant" class="menu_enfant_image">
-        <img src="assets/Images/restaurant-01-plat.webp" alt="menu viande" class="menu_jour_image">
-        <img src="assets/Images/resto_vegeterien.webp" alt=" menu vegeterien" class="menu_vegeterien_image">
+        <img src="<?php echo base_url('assets/Images/resto1.webp');?>
+" alt="menu_enfant" class="menu_enfant_image">
+        <img src="<?php echo base_url('assets/Images/restaurant-01-plat.webp');?>
+" alt="menu viande" class="menu_jour_image">
+        <img src="<?php echo base_url('assets/Images/resto_vegeterien.webp');?>
+" alt=" menu vegeterien" class="menu_vegeterien_image">
         <article class="menu_enfant">
             <div class="container">
                 <div class="row">

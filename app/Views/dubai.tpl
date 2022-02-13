@@ -28,6 +28,7 @@
 <article>
     <div class="container-fluid ">
         <img class="image_dubai img-fluid" src="{base_url('assets/Images/dubai/hotel-desert-dubai.png')}" alt="image dubai">
+        <i class="fa-solid fa-envelope"></i>
         <div class="row ">
             <div class="notes">
                 <h1 class="title">Hotel ardis Dubai</h1>

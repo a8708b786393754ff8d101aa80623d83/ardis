@@ -28,6 +28,7 @@
     <h1>Hotel alpardis</h1>
     <div class="container-fluid ">
         <img class="image_suisse"src="{base_url('assets/Images/suisse/images2.png')}" alt="image suisse hotel">
+        <i class="fa-solid fa-envelope"></i>
         <div class="row ">
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel ">Suisse/ Turbenthal</p>

@@ -6,9 +6,9 @@
 
     <!-- section avec les chaque menu  -->
     <section>
-        <img src="assets/Images/resto1.webp" alt="menu_enfant" class="menu_enfant_image">
-        <img src="assets/Images/restaurant-01-plat.webp" alt="menu viande" class="menu_jour_image">
-        <img src="assets/Images/resto_vegeterien.webp" alt=" menu vegeterien" class="menu_vegeterien_image">
+        <img src="{base_url('assets/Images/resto1.webp')}" alt="menu_enfant" class="menu_enfant_image">
+        <img src="{base_url('assets/Images/restaurant-01-plat.webp')}" alt="menu viande" class="menu_jour_image">
+        <img src="{base_url('assets/Images/resto_vegeterien.webp')}" alt=" menu vegeterien" class="menu_vegeterien_image">
         <article class="menu_enfant">
             <div class="container">
                 <div class="row">

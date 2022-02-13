@@ -44,13 +44,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/reservation')}">Reservation</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/reservation')}">reservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/activiter')}">Nos activiter</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/activiter')}">nos activiter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/restaurant')}">Restaurants</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/restaurant')}">restaurants</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/galerie_photo')}">galerie photo</a>
@@ -59,10 +59,10 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/login')}">login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/create_account')}">Creer un compte</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/create_account')}">creer un compte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/avis')}">Les avis </a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/avis')}">les avis </a>
                     </li>
                       <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/mdpoublier')}">mot de passe oublié </a>

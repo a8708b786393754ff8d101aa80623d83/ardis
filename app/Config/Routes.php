@@ -36,6 +36,18 @@ $routes->group('pages', function ($routes){
     $routes->add('/', 'Pages::index'); 
 }); 
 
+$routes->group('visitor', function ($routes){
+    $routes->add('login', 'Visiteur::view/login'); 
+    $routes->add('create_account', 'Visiteur::view/create_account'); 
+});
+
+$routes->group('customers', function ($routes){
+    $routes->add('logout', 'Customers::logout'); 
+    $routes->add('profile(:any)', 'Customers::profile/$1');
+});
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

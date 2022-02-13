@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-10 13:00:31
+/* Smarty version 4.0.4, created on 2022-02-13 12:33:18
   from '/var/www/html/ardis/app/Views/punta_cana.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620560cfaf98c0_72232813',
+  'unifunc' => 'content_62094eee97a6b7_92323551',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ca2bc9f8caededd9ec82e5354647563b56f4a940' => 
     array (
       0 => '/var/www/html/ardis/app/Views/punta_cana.tpl',
-      1 => 1644519630,
+      1 => 1644777191,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620560cfaf98c0_72232813 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62094eee97a6b7_92323551 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1470941628620560cfaf89a4_18024848', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_205971233862094eee979b50_75507480', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1470941628620560cfaf89a4_18024848 extends Smarty_Internal_Block
+class Block_205971233862094eee979b50_75507480 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1470941628620560cfaf89a4_18024848',
+    0 => 'Block_205971233862094eee979b50_75507480',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -57,6 +57,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="container-fluid ">
         <img class="image_hotel img-fluid"  src="<?php echo base_url('assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png');?>
 " alt="image punta_cana ">
+        <i class="fa-solid fa-envelope"></i>
         <div class="row ">
            <div class="description">
                 <h1 class="title">Hotel ardis Sampatico</h1>

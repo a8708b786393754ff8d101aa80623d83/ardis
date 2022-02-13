@@ -15,6 +15,7 @@
 <article>
     <div class="container-fluid ">
         <img class="image_hotel img-fluid"  src="{base_url('assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png')}" alt="image punta_cana ">
+        <i class="fa-solid fa-envelope"></i>
         <div class="row ">
            <div class="description">
                 <h1 class="title">Hotel ardis Sampatico</h1>
