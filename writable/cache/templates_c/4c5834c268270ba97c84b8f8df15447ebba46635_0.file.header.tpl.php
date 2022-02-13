@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-10 12:50:20
+/* Smarty version 4.0.4, created on 2022-02-13 11:12:00
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62055e6c443858_73542036',
+  'unifunc' => 'content_62093be013abf4_71561753',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1644518927,
+      1 => 1644772318,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62055e6c443858_73542036 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62093be013abf4_71561753 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,12 +100,12 @@ function content_62055e6c443858_73542036 (Smarty_Internal_Template $_smarty_tpl)
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/pages/galerie_photo');?>
-">Galerie_photo</a>
+">galerie photo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/pages/login');?>
-">Login</a>
+">login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
@@ -117,7 +117,11 @@ function content_62055e6c443858_73542036 (Smarty_Internal_Template $_smarty_tpl)
 " href="<?php echo base_url('pages/pages/avis');?>
 ">Les avis </a>
                     </li>
-                   
+                      <li class="nav-item">
+                        <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('pages/pages/mdpoublier');?>
+">mot de passe oublié </a>
+                    </li>
                 </ul>
             </div>
         </div>

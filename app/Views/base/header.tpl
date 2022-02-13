@@ -53,10 +53,10 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/restaurant')}">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/galerie_photo')}">Galerie_photo</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/galerie_photo')}">galerie photo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/login')}">Login</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/login')}">login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/create_account')}">Creer un compte</a>
@@ -64,7 +64,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/avis')}">Les avis </a>
                     </li>
-                   
+                      <li class="nav-item">
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/pages/mdpoublier')}">mot de passe oublié </a>
+                    </li>
                 </ul>
             </div>
         </div>
