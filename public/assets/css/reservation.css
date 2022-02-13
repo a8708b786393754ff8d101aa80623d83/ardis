@@ -7,6 +7,7 @@
 }
 
 body {
+    background-repeat: no-repeat;
     background-color: #F1F1F2;
 }
 
@@ -42,16 +43,12 @@ h2{
 }
 
 /* hotel de destination  */
-.destination{
+.destination {
     position: relative;
-    top: 80px;
-    right: 100px;
+    left: 400px;
+    top: 115px;
+    font-size: 25px;
 }
-select{
-    position: relative;
-    width: 200px;
-}
-
 
 /* dates  */
 .date{

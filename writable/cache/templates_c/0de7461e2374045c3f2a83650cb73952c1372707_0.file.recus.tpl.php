@@ -1,5 +1,46 @@
-{extends file='base/layout.tpl'}
-{block name=content}
+<?php
+/* Smarty version 4.0.4, created on 2022-02-13 12:11:53
+  from '/var/www/html/ardis/app/Views/recus.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.4',
+  'unifunc' => 'content_620949e98d4279_22826355',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '0de7461e2374045c3f2a83650cb73952c1372707' => 
+    array (
+      0 => '/var/www/html/ardis/app/Views/recus.tpl',
+      1 => 1644775523,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_620949e98d4279_22826355 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_655301462620949e98d3c53_44563178', 'content');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
+}
+/* {block 'content'} */
+class Block_655301462620949e98d3c53_44563178 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'content' => 
+  array (
+    0 => 'Block_655301462620949e98d3c53_44563178',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
 <table class="body-wrap">
     <tbody><tr>
         <td></td>
@@ -78,4 +119,8 @@
         <td></td>
     </tr>
 </tbody></table>
-{/block}
+<?php
+}
+}
+/* {/block 'content'} */
+}
