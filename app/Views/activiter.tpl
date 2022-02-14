@@ -1,5 +1,60 @@
-{extends file='base/layout.tpl'}
-{block name=content}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description " content="Hotel ardis ,l 'hotel du 'climats ' ">
+    <meta name="description " content="Découvrez nos hôtels sur tout les climats, nous avons des hôtels dans les 4 coins du globe.
+    Nous en avons trois à dubai, deux en suisse et deux à punta cana. ">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="{base_url('assets/css/activiter.css')}">
+    <title>Nos activités</title>
+</head>
+<body style="background-image: url('assets/Images/desert_activiter.jpg') ;">
+     <!-- header -->
+     <header>
+        <!-- navbar -->
+        <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/Images/logo.png" alt="logo" width="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="
+                            
+                            
+                            ">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nos hôtels
+                    </a>
+                            <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item bg-transparent text-black" href="nos_hotel/punta_cana.html">Punta cana</a></li>
+                                <li><a class="dropdown-item bg-transparent text-black" href="nos_hotel/dubai.html">Dubai</a></li>
+                                <li><a class="dropdown-item bg-transparent text-black" href="nos_hotel/suisse.html">Suisse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="reservation.html">Réservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Nos activités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="restaurant.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="galerie_photo.html">Galerie photo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 <!--Carrousel d'activités-->
     <div class="carousel-reviews broun-block">
         <div class="container">
@@ -124,4 +179,20 @@
             </div>
         </div>
     </div>
-{/block}
+    <!-- footer  -->
+    <footer class=" card-footer d-flex align-items-center ">
+        <div class="container ">
+            <div class="row ">
+                <div class="d-flex ">
+                    <p class=" "> © 2021 Hôtel ardis|Mentions légales</p>
+                    <p>| Email: hotel@ardis.com |  Numéro mobile: 06 06 06 06 06</p>
+                    <img src="../assets/Images/Objet dynamique vectoriel.png " alt="logo_icone " height="30">
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="/code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+</body>
+<script src="assets/js/bootstrap.bundle.js"></script>  
+</html>

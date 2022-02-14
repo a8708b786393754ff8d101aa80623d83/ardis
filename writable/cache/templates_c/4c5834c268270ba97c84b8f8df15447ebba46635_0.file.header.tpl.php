@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-14 16:55:58
+/* Smarty version 4.0.4, created on 2022-02-14 17:01:44
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620addfe971d02_92243481',
+  'unifunc' => 'content_620adf5849b262_53282255',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1644879356,
+      1 => 1644879681,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620addfe971d02_92243481 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620adf5849b262_53282255 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +28,8 @@ function content_620addfe971d02_92243481 (Smarty_Internal_Template $_smarty_tpl)
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description " content="Hotel ardis ,l 'hotel du 'climats ' ">
-    <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
-    Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
+    <meta name="description " content="Découvrez nos hôtels sur tout les climats, nous avons des hôtels Dans les 4 coins du globe.
+    Nous avons 3 hotels à dubai, 2 en suisse et 2 à punt cana. ">
     <link rel="stylesheet " href="<?php echo base_url('assets/css/bootstrap.css');?>
 ">
     <link rel="stylesheet" href="<?php echo base_url((('assets/css/').($_smarty_tpl->tpl_vars['name_file']->value)).('.css'));?>
@@ -68,7 +68,7 @@ function content_620addfe971d02_92243481 (Smarty_Internal_Template $_smarty_tpl)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Nos hotels
+                             Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
@@ -85,12 +85,12 @@ function content_620addfe971d02_92243481 (Smarty_Internal_Template $_smarty_tpl)
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/view/reservation');?>
-">reservation</a>
+">réservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/view/activiter');?>
-">nos activiter</a>
+">nos activités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
