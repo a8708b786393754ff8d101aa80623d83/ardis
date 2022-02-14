@@ -5,8 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description " content="Hotel ardis ,l 'hotel du 'climats ' ">
-    <meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
-    Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
+    <meta name="description " content="Découvrez nos hôtels sur tout les climats, nous avons des hôtels Dans les 4 coins du globe.
+    Nous avons 3 hotels à dubai, 2 en suisse et 2 à punt cana. ">
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <title>{$name_file}</title>
@@ -35,7 +35,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-{$color_link_nav}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Nos hotels
+                             Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/view/punta_cana')}">Punta cana</a></li>
@@ -44,10 +44,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/reservation')}">reservation</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/reservation')}">réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/activiter')}">nos activiter</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/activiter')}">nos activités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/restaurant')}">restaurants</a>
@@ -59,7 +59,7 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/login')}">login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/create_account')}">creer un compte</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/create_account')}">créer un compte</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/avis')}">les avis </a>
