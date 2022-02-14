@@ -10,6 +10,7 @@
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <title>{$name_file}</title>
+    {* {$smarty.session} *}
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.jpg')})">
@@ -56,17 +57,27 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/galerie_photo')}">galerie photo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/login')}">login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/create_account')}">creer un compte</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/avis')}">les avis </a>
                     </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/view/mdpoublier')}">mot de passe oublié </a>
-                    </li>
+                    {if isset($smarty.session.pseudo)}
+                        <li class="nav-item">
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/profile/'|cat: $smarty.session.pseudo )}">profile - {$smarty.session.pseudo}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/logout/')}">se déconnecter</a>
+                        </li>
+                    {else}
+                        <li class="nav-item">
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/create_account')}">creer un compte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/login')}">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/mdpoublier')}">mot de passe oublié </a>
+                        </li>
+
+                    {/if}
                 </ul>
             </div>
         </div>

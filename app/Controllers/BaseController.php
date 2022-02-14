@@ -49,7 +49,7 @@ class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        // E.g.: 
         require_once(APPPATH.'ThirdParty/smarty/Smarty.class.php');
         $this->_smarty = new Smarty();
  
@@ -60,12 +60,12 @@ class BaseController extends Controller
         $this->_smarty->setCacheDir(WRITEPATH.'/cache/cache/');
 	}
  
-        public function display($strTemplate = 'default.tpl'){
-            // Assignation de toutes les variables au template
-            foreach($this->_data as $key=>$value){
-                $this->_smarty->assign($key, $value);
-            }
-            //$this->_smarty->debugging = true;
-            $this->_smarty->display($strTemplate);
+    public function display($strTemplate = 'default.tpl'){
+        // Assignation de toutes les variables au template
+        foreach($this->_data as $key=>$value){
+            $this->_smarty->assign($key, $value);
         }
+        //$this->_smarty->debugging = true;
+        $this->_smarty->display($strTemplate);
+    }
 }

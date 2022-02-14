@@ -1,0 +1,1424 @@
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:18 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:23:20 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:25:59 --> touch(): Utime failed: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(178): touch()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#7 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#8 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#9 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-14 09:26:21 --> touch(): Utime failed: Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(188): touch()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#7 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#8 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#9 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-14 09:26:46 --> touch(): Utime failed: Operation not permitted
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(188): touch()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#7 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#8 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#9 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-14 09:51:35 --> Undefined property: App\Controllers\Visiteur::$input
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 09:51:52 --> Undefined property: App\Controllers\Visiteur::$input
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 09:52:49 --> Undefined property: App\Controllers\Visiteur::$input
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 09:55:05 --> Invalid file: login.php
+#0 /var/www/html/ardis/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ardis/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(10): view()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:55:05 --> Invalid file: login.php
+#0 /var/www/html/ardis/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ardis/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(10): view()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:55:06 --> Invalid file: login.php
+#0 /var/www/html/ardis/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ardis/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(10): view()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:55:06 --> Invalid file: login.php
+#0 /var/www/html/ardis/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ardis/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(10): view()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 13:20:55 --> Declaration of App\Models\Users_management::delete($id) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 /var/www/html/ardis/app/Models/Users_management.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(264): include_once('/var/www/html/a...')
+#2 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#3 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 /var/www/html/ardis/app/Controllers/UsersController.php(9): spl_autoload_call()
+#6 /var/www/html/ardis/app/Controllers/Visiteur.php(9): App\Controllers\UsersController->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#8 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#9 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-14 13:21:04 --> Declaration of App\Models\Users_management::delete($id) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 /var/www/html/ardis/app/Models/Users_management.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(264): include_once('/var/www/html/a...')
+#2 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#3 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 /var/www/html/ardis/app/Controllers/UsersController.php(9): spl_autoload_call()
+#6 /var/www/html/ardis/app/Controllers/Visiteur.php(9): App\Controllers\UsersController->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#8 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#9 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-14 13:21:14 --> Undefined variable: id
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(14): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:43:22 --> Call to undefined method App\Models\Users_management::getResult
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Model->__call()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-14 13:44:11 --> Unknown column 'admin' in 'where clause'
+CRITICAL - 2022-02-14 13:44:11 --> Unknown column 'admin' in 'where clause'
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/ardis/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\BaseModel->first()
+#7 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#8 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#9 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-14 13:45:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::here()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): App\Models\Users_management->getEmailUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:46:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): App\Models\Users_management->getEmailUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:46:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): App\Models\Users_management->getEmailUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-14 13:47:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'admin' at line 1
+CRITICAL - 2022-02-14 13:47:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'admin' at line 1
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/Users_management.php(46): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Controllers/UsersController.php(19): App\Models\Users_management->getEmailUser()
+#5 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-14 13:54:17 --> Undefined index: name
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:54:34 --> syntax error, unexpected 'session_start' (T_STRING)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Controllers/Visiteur.php(9): spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 13:54:41 --> Undefined index: name
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:55:01 --> Undefined offset: 1
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:55:13 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:55:21 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:55:32 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:55:46 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:55:54 --> Use of undefined constant name - assumed 'name' (this will throw an Error in a future version of PHP)
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 13:56:06 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:57:09 --> Cannot use object of type stdClass as array
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 13:59:38 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/UsersController.php(20): count()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 14:01:42 --> Undefined property: App\Controllers\Visiteur::$input
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 14:02:00 --> Undefined property: App\Controllers\Visiteur::$input
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 14:02:05 --> Undefined property: App\Controllers\UsersController::$input
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(15): App\Controllers\UsersController->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 14:06:07 --> syntax error, unexpected '$sql' (T_VARIABLE)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Controllers/UsersController.php(9): spl_autoload_call()
+#4 /var/www/html/ardis/app/Controllers/Visiteur.php(10): App\Controllers\UsersController->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-14 14:09:19 --> syntax error, unexpected '}'
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(790): class_exists()
+#5 /var/www/html/ardis/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 14:09:24 --> Call to undefined method App\Controllers\UsersController::login()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 14:13:02 --> syntax error, unexpected 'if' (T_IF)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Controllers/Visiteur.php(8): spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 14:13:07 --> Undefined variable: req
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(16): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 14:13:37 --> Undefined offset: 1
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(16): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 14:18:16 --> Undefined variable: var_dump
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 14:42:08 --> Declaration of App\Models\Users_management::update(string $element, string $table = 'compt_pseu...') must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-14 14:42:25 --> Declaration of App\Models\Users_management::update(string $element, string $table = 'compt_pseu...') must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-14 14:42:50 --> Declaration of App\Models\Users_management::delete($id) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 /var/www/html/ardis/app/Models/Users_management.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(264): include_once('/var/www/html/a...')
+#2 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#3 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 /var/www/html/ardis/app/Controllers/UsersController.php(9): spl_autoload_call()
+#6 /var/www/html/ardis/app/Controllers/Visiteur.php(8): App\Controllers\UsersController->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#8 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#9 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-14 14:50:12 --> Too few arguments to function App\Models\Users_management::updateUser(), 1 passed in /var/www/html/ardis/app/Controllers/UsersController.php on line 15 and exactly 2 expected
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(15): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 14:51:12 --> var_dump() expects at least 1 parameter, 0 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Models/Users_management.php(45): var_dump()
+#2 /var/www/html/ardis/app/Controllers/UsersController.php(15): App\Models\Users_management->updateUser()
+#3 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#4 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#5 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 14:58:59 --> Undefined variable: table
+#0 /var/www/html/ardis/app/Models/Users_management.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 15:06:21 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Models/Users_management.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 15:07:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:08:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:08:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:09:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:11:36 --> syntax error, unexpected '}'
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Controllers/UsersController.php(9): spl_autoload_call()
+#4 /var/www/html/ardis/app/Controllers/Visiteur.php(8): App\Controllers\UsersController->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-14 15:11:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:12:15 --> Access level to App\Models\Users_management::$db must be protected (as in class CodeIgniter\Model) or weaker
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-14 15:12:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(16): App\Models\Users_management->updateUser()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 15:23:52 --> Too few arguments to function App\Controllers\Visiteur::create_account(), 0 passed in /var/www/html/ardis/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 16:15:17 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(134): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620ad475aa63d4_71268990()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Visiteur.php(13): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-02-14 16:16:04 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(134): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620ad4a4b22b71_59195679()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Visiteur.php(13): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-02-14 16:16:29 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(134): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620ad4bd039d16_99036195()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Visiteur.php(13): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-02-14 16:23:12 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620ad6506d9f82_21285098()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Visiteur.php(13): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-02-14 16:26:47 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(7): session_destroy()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:28:06 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(7): session_destroy()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:28:08 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(7): session_destroy()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:28:08 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(7): session_destroy()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:28:08 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(7): session_destroy()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:29:01 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:23 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620ad7c3e63949_22234280()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/e3ea99295679a90e01af79e8aacbe2f779520814_0.file.reservation.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62094782330c84_71638034()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#20 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#21 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#22 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:29:43 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:39:27 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:39:55 --> session_start(): A session had already been started - ignoring
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/UsersController.php(19): session_start()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:40:26 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:41:05 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:41:13 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:46:42 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:49:07 --> Call to a member function set() on null
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(18): App\Controllers\UsersController->verificate_login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 16:49:42 --> Cannot call constructor
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(8): App\Controllers\UsersController->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#2 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 16:51:32 --> Cannot call constructor
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(9): App\Controllers\UsersController->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visiteur->__construct()
+#2 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 16:51:38 --> Call to a member function set() on string
+#0 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate_login()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 16:51:45 --> Undefined property: App\Controllers\UsersController::$session
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(19): App\Controllers\UsersController->verificate_login()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:02 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:57 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:53:57 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:54:13 --> Undefined variable: _SESSION
+#0 /var/www/html/ardis/writable/cache/templates_c/4c5834c268270ba97c84b8f8df15447ebba46635_0.file.header.tpl.php(110): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620add95a69210_25412130()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#19 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#20 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#21 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#22 {main}
+CRITICAL - 2022-02-14 16:54:33 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:57:52 --> Call to undefined method App\Controllers\UsersController::getName()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 16:58:01 --> Call to undefined method App\Controllers\UsersController::getName()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:30 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:32 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:34 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 16:58:37 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(22): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

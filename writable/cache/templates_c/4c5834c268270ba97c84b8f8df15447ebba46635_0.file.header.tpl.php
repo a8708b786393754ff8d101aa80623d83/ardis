@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-13 13:59:44
+/* Smarty version 4.0.4, created on 2022-02-14 16:55:58
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62096330dc8e09_14095648',
+  'unifunc' => 'content_620addfe971d02_92243481',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1644782384,
+      1 => 1644879356,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62096330dc8e09_14095648 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620addfe971d02_92243481 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ function content_62096330dc8e09_14095648 (Smarty_Internal_Template $_smarty_tpl)
 ">
     <title><?php echo $_smarty_tpl->tpl_vars['name_file']->value;?>
 </title>
-</head>
+    </head>
 <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'index') {?>
 <body style="background-image: url(<?php echo base_url('assets/Images/background.jpg');?>
 )">
@@ -104,24 +104,39 @@ function content_62096330dc8e09_14095648 (Smarty_Internal_Template $_smarty_tpl)
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/view/login');?>
-">login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/view/create_account');?>
-">creer un compte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/view/avis');?>
 ">les avis </a>
                     </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/view/mdpoublier');?>
+                    <?php if ((isset($_SESSION['pseudo']))) {?>
+                        <li class="nav-item">
+                            <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url(('customers/profile/').($_SESSION['pseudo']));?>
+">profile - <?php echo $_SESSION['pseudo'];?>
+</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('customers/logout/');?>
+">se déconnecter</a>
+                        </li>
+                    <?php } else { ?>
+                        <li class="nav-item">
+                            <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('visitor/create_account');?>
+">creer un compte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('visitor/login');?>
+">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('visitor/mdpoublier');?>
 ">mot de passe oublié </a>
-                    </li>
+                        </li>
+
+                    <?php }?>
                 </ul>
             </div>
         </div>
