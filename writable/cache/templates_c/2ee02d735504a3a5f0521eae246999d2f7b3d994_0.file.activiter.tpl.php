@@ -1,5 +1,46 @@
-{extends file='base/layout.tpl'}
-{block name=content}
+<?php
+/* Smarty version 4.0.4, created on 2022-02-15 04:22:11
+  from '/var/www/html/ardis/app/Views/activiter.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.4',
+  'unifunc' => 'content_620b7ed36d3082_88799688',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2ee02d735504a3a5f0521eae246999d2f7b3d994' => 
+    array (
+      0 => '/var/www/html/ardis/app/Views/activiter.tpl',
+      1 => 1644920530,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_620b7ed36d3082_88799688 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1916011898620b7ed36d2985_77219617', 'content');
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
+}
+/* {block 'content'} */
+class Block_1916011898620b7ed36d2985_77219617 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'content' => 
+  array (
+    0 => 'Block_1916011898620b7ed36d2985_77219617',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
 <!--Carrousel d'activités-->
     <div class="carousel-reviews broun-block">
         <div class="container">
@@ -124,4 +165,8 @@
             </div>
         </div>
     </div>
-{/block}
+<?php
+}
+}
+/* {/block 'content'} */
+}

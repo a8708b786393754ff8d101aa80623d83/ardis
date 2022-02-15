@@ -48,10 +48,13 @@ class Users_management extends Model
     }
     public function appendUser(array $data)
     {
-        var_dump($data['client_email']); 
-        return $this->is_account('client_email', $data['client_email']);  
-
-        
+        $id = $this->is_account('client_email', $data['client_email']);
+        if(count($id) === 1){
+            // $add_user = $this->db->table('client'); 
+            // $add_user->select("")
+            
+            return true; 
+        } return false; 
     }
 
     // public function delete()

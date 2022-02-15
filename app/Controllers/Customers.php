@@ -6,10 +6,7 @@ class Customers extends Visiteur{
     protected $load; 
     public function __construct()
     {
-
-        helper('url');
         parent::__construct();
-
     }
     public function logout()
     {
