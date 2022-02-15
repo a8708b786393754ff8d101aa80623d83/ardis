@@ -349,3 +349,188 @@ CRITICAL - 2022-02-15 02:15:26 --> Unable to load template 'file:assets.tpl'
 #5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-02-15 02:36:05 --> syntax error, unexpected '<<' (T_SL), expecting end of file
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#3 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(28): Smarty_Internal_Template->_subTemplateRender()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_62055e6c43c654_08780635()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#9 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_620a7a803a2db9_44267433()
+#11 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#15 /var/www/html/ardis/app/Controllers/Pages.php(26): Smarty_Internal_TemplateBase->display()
+#16 /var/www/html/ardis/app/Controllers/Visiteur.php(25): App\Controllers\Pages->view()
+#17 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->login()
+#18 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#19 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#20 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#21 {main}
+CRITICAL - 2022-02-15 02:37:31 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(26): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 02:38:34 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(26): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 02:57:47 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(16): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 02:57:58 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(16): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 02:57:59 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(16): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:16 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:22 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:32 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:33 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:33 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:33 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:33 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:33 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:11:38 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:13:01 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:13:02 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:13:02 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:13:07 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ardis/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ardis/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(17): redirect()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->logout()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

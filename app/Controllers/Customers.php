@@ -3,14 +3,18 @@ namespace App\Controllers;
 
 class Customers extends Visiteur{
 
+    protected $load; 
     public function __construct()
     {
+
+        helper('url');
         parent::__construct();
 
     }
     public function logout()
     {
-        $this->session->destroy(); header('Location: pages/index'); // le tester  
+        $this->session->destroy();  // le tester  
+        return redirect()->to('http://localhost/ardis/public/customers/');
     }
 
     public function profile($nom)

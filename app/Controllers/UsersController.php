@@ -17,7 +17,6 @@ class UsersController extends Pages{
 
         //verifie sic'est une tbaleau est que  
         if (is_array($resp) && isset($resp[0]->name)){ 
-            var_dump($this->session);
             $this->session->set([
                     'pseudo'=>$resp[0]->name
             ]); 

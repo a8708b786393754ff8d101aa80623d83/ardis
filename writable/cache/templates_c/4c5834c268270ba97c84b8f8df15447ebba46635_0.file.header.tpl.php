@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 4.0.4, created on 2022-02-14 17:01:44
-=======
-/* Smarty version 4.0.4, created on 2022-02-15 02:17:14
->>>>>>> ayoub
+/* Smarty version 4.0.4, created on 2022-02-15 02:37:19
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-<<<<<<< HEAD
-  'unifunc' => 'content_620adf5849b262_53282255',
-=======
-  'unifunc' => 'content_620b618a905969_64472900',
->>>>>>> ayoub
+  'unifunc' => 'content_620b663f322832_48472612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-<<<<<<< HEAD
-      1 => 1644879681,
-=======
-      1 => 1644912980,
->>>>>>> ayoub
+      1 => 1644913440,
       2 => 'file',
     ),
   ),
@@ -32,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_620adf5849b262_53282255 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_620b618a905969_64472900 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> ayoub
+function content_620b663f322832_48472612 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,15 +84,6 @@ function content_620b618a905969_64472900 (Smarty_Internal_Template $_smarty_tpl)
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-<<<<<<< HEAD
-" href="<?php echo base_url('pages/view/reservation');?>
-">réservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/view/activiter');?>
-">nos activités</a>
-=======
 " href="<?php echo base_url('pages/reservation');?>
 ">reservation</a>
                     </li>
@@ -116,7 +91,6 @@ function content_620b618a905969_64472900 (Smarty_Internal_Template $_smarty_tpl)
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/activiter');?>
 ">nos activiter</a>
->>>>>>> ayoub
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>

@@ -39,6 +39,7 @@ class BaseController extends Controller
      */
     protected $helpers = [];
 
+
     /**
      * Constructor.
      */
@@ -58,6 +59,8 @@ class BaseController extends Controller
         $this->_smarty->setCompileDir(WRITEPATH.'/cache/templates_c/');
         $this->_smarty->setConfigDir(WRITEPATH.'/cache/configs/');
         $this->_smarty->setCacheDir(WRITEPATH.'/cache/cache/');
+
+
 	}
  
     public function display($strTemplate = 'default.tpl'){

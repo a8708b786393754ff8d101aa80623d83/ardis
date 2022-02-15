@@ -39,6 +39,7 @@ $routes->group('visitor', function ($routes){
     $routes->add('/', 'Pages::index');
     $routes->add('login', 'Visiteur::login'); 
     $routes->add('create_account', 'Visiteur::create_account'); 
+    $routes->add('mdpoublier', 'Visiteur::mdpoublier'); 
 });
 
 $routes->group('customers', function ($routes){
