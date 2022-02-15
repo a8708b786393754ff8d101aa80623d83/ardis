@@ -8,21 +8,16 @@
                 <form action="{base_url('/visitor/create_account')}" method="post" class="form" role="form">
                 <div class="row">
                     <div class="col-xs-6 col-md-6">
-<<<<<<< HEAD
                         <input class="form-control" name="firstname" placeholder="Prenom" type="text"
                             required autofocus />
                               <input class="form-control" name="City" placeholder="Ville" type="text"
                             required autofocus />
-=======
-                        <input class="form-control" name="firstname" placeholder="Prénom" type="text" required/>
->>>>>>> main
                     </div>
                     <div class="col-xs-6 col-md-6">
                         <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
                          <input class="form-control" name="CP" placeholder="Code postale" type="text" required />
                     </div>
                 </div>
-<<<<<<< HEAD
                 <select>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -269,11 +264,6 @@
                  <input class="form-control" name="email" placeholder="Téléphone " type="email" />
                 <input class="form-control" name="password" placeholder="Mot de passe" type="password" />
                 <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" />
-=======
-                <input class="form-control" name="email" placeholder="Email" type="email" required/>
-                <input class="form-control" name="password" placeholder="Mot de passe" type="password" required/>
-                <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" required/>
->>>>>>> main
                 <br />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Envoyer</button>
