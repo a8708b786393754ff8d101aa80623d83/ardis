@@ -41,7 +41,7 @@ class UsersModel extends Model
                 $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
             }
             return $this->db->query($sql)->getResult(); 
-        }
+        }return false; 
 
     }
     public function getPseudo(string $username,string $password)
@@ -54,7 +54,10 @@ class UsersModel extends Model
     {
         $id = $this->is_account('client_email', $data['client_email']);
         var_dump($id); 
-        if(count($id) === 1){
+        if(is_array($id)){
+            if(count($id) === 1){
+                var_dump($data); 
+            }
             // $add_user = $this->db->table('client'); 
             // $add_user->select("")
             

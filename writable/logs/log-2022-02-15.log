@@ -26,3 +26,122 @@ CRITICAL - 2022-02-15 13:32:22 --> Unable to load template 'file:assets.tpl'
 #5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-02-15 13:34:25 --> Unable to load template 'file:assets.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(28): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 13:49:19 --> Unable to load template 'file:view.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/Pages.php(28): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 14:41:10 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(790): class_exists()
+#5 /var/www/html/ardis/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-15 14:41:14 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(790): class_exists()
+#5 /var/www/html/ardis/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-15 14:54:01 --> Undefined variable: passwd
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/UsersController.php(38): App\Controllers\UsersController->verif_conf_password()
+#2 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 15:01:59 --> Undefined index: city
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:03:04 --> Undefined index: tel
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:03:28 --> Undefined index: city
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:03:53 --> Undefined index: city
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:05:14 --> Undefined index: city
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:09:02 --> Undefined variable: passwd
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:09:34 --> Undefined variable: passwd
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:09:56 --> Undefined variable: passwd
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-15 15:12:42 --> Undefined variable: passwd
+#0 /var/www/html/ardis/app/Controllers/UsersController.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Visiteur.php(33): App\Controllers\UsersController->verificate_create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visiteur->create_account()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -49,10 +49,6 @@ $routes->group('customers', function ($routes){
     $routes->add('logout', 'Customers::logout'); 
     $routes->add('profile(:any)', 'Customers::profile/$1');
 });
-
-
-
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

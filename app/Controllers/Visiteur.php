@@ -31,10 +31,10 @@ class Visiteur extends Pages{
         $this->view('create_account'); 
         if ($this->request->getMethod()=== 'post'){
             $resp = $this->userContr->verificate_create_account($this->request->getPost());
-            if(\is_array($resp)){
+            if(is_array($resp)){
                 return redirect()->to('http://localhost/ardis/public/customers/');
                 // var_dump($this->request->getPost());
-            }echo 'Vous avez deja un compte'; 
+            }
         }
     }
 

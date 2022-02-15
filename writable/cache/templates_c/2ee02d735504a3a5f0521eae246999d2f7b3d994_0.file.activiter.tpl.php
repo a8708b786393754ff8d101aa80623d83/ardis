@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 12:59:16
+/* Smarty version 4.0.4, created on 2022-02-15 13:37:18
   from '/var/www/html/ardis/app/Views/activiter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620bf804680808_57391466',
+  'unifunc' => 'content_620c00eeee15e1_05215550',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ee02d735504a3a5f0521eae246999d2f7b3d994' => 
     array (
       0 => '/var/www/html/ardis/app/Views/activiter.tpl',
-      1 => 1644951554,
+      1 => 1644953609,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620bf804680808_57391466 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620c00eeee15e1_05215550 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1791488402620bf80467f5b6_69650256', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_83947931620c00eeee0482_88979914', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1791488402620bf80467f5b6_69650256 extends Smarty_Internal_Block
+class Block_83947931620c00eeee0482_88979914 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1791488402620bf80467f5b6_69650256',
+    0 => 'Block_83947931620c00eeee0482_88979914',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -44,8 +44,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 <!------ Include the above in your HEAD tag ---------->
 
 <section>
-
-    
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
