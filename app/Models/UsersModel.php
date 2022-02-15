@@ -36,7 +36,7 @@ class UsersModel extends Model
     public function is_account(string $table, string $element){
         if($table === 'compt_pseudo' || $table === 'client_email'){
             if ($table === 'client_email'){
-                $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE '.$table.'="'.$element.'"';
+                $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$element.'"';
             }else{
                 $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
             }

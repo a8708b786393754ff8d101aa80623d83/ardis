@@ -14,8 +14,6 @@
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.jpg')})">
-{elseif $name_file eq 'activiter'}
-<body style="background-image: url({base_url('assets/Images/desert_activiter.jpg')})">
 {else}
 <body>
 {/if}

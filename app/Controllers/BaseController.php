@@ -64,11 +64,10 @@ class BaseController extends Controller
 	}
  
     public function display(string $strTemplate){
-        // Assignation de toutes les variables au template
         foreach($this->_data as $key=>$value){
             $this->_smarty->assign($key, $value);
         }
-        // $this->_smarty->debugging = true;
+        $this->_smarty->debugging = true;
         $this->_smarty->display($strTemplate);
     }
 }

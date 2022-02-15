@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 02:37:19
+/* Smarty version 4.0.4, created on 2022-02-15 12:54:06
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620b663f322832_48472612',
+  'unifunc' => 'content_620bf6cecbf122_77089120',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1644913440,
+      1 => 1644951245,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620b663f322832_48472612 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620bf6cecbf122_77089120 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +39,6 @@ function content_620b663f322832_48472612 (Smarty_Internal_Template $_smarty_tpl)
     </head>
 <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'index') {?>
 <body style="background-image: url(<?php echo base_url('assets/Images/background.jpg');?>
-)">
-<?php } elseif ($_smarty_tpl->tpl_vars['name_file']->value == 'activiter') {?>
-<body style="background-image: url(<?php echo base_url('assets/Images/desert_activiter.jpg');?>
 )">
 <?php } else { ?>
 <body>

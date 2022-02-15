@@ -12,7 +12,8 @@ class Visiteur extends Pages{
 
     public function login()
     {
-        if ($this->request->getMethod()=== 'post'){
+        $this->view('login');
+        if ($this->request->getMethod() === 'post'){
             // verifie si la methode est bien post
             $pseudo = esc($this->request->getVar('username'));
             $passwd = esc($this->request->getVar('password')); 
@@ -23,7 +24,6 @@ class Visiteur extends Pages{
                 return redirect()->to('http://localhost/ardis/public/customers/');
             }
         }
-        $this->view('login');
     }
 
     public function create_account()
@@ -42,7 +42,6 @@ class Visiteur extends Pages{
     {
         $this->view('mdpoublier'); 
         if ($this->request->getMethod()=== 'post'){
-            // var_dump($this->request->getPost()); 
             $resp = $this->userContr->verificate_mdp_oublier($this->request->getPost());
             if(is_array($resp) && count($resp) === 1){
                 echo 'Un email vous a été envoyer'; 
