@@ -1,0 +1,18 @@
+CRITICAL - 2022-02-14 09:54:10 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'profile')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-14 09:54:35 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'profile')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

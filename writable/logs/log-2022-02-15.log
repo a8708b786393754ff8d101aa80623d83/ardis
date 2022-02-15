@@ -1,0 +1,315 @@
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'hotel-desert-du...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-182...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'bar.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-512...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-156391130...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-157100312...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'montagne_room.j...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:37 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'luge.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:38 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'resto.jpg')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:38 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'images2.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:38 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-161877392...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'hotel-desert-du...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-182...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'bar.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-156391130...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-512...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-157100312...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-161877392...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'luge.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'montagne_room.j...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'images2.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:41 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'resto.jpg')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:31:46 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'profile')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'hotel-desert-du...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-182...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'istockphoto-512...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-157100312...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-156391130...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'dubai', 'bar.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'photo-161877392...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'punta_cana', 'resto.jpg')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'montagne_room.j...')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'luge.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:01 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'Images', 'suisse', 'images2.png')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-15 03:56:05 --> Unable to load template 'file:assets.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\Pages.php(22): Smarty_Internal_TemplateBase->display('assets.tpl')
+#3 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Pages->view('assets', 'profile')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
