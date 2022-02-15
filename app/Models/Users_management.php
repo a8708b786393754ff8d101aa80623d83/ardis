@@ -4,8 +4,8 @@ use CodeIgniter\Model;
 
 class Users_management extends Model
 {
-    protected $table      = 'clients';
-    protected $primaryKey = 'client_id';
+    protected $table         = 'clients';
+    protected $primaryKey    = 'client_id';
     protected $allowedFields = ["client_id","client_nom","client_prénom",
                 "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
                 "client_tel", "compte_client","resrv_client","client_avis"
