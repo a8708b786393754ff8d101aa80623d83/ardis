@@ -2,13 +2,12 @@
 namespace App\Controllers; 
 use App\Models\Users_management;
 
-class UsersController extends BaseController{
+class UsersController extends Pages{
     private $conn; 
-    private $session; 
 
     public function __construct(){
         $this->conn = new Users_management();
-        $this->session = \Config\Services::session();
+        parent::__construct();
     }
 
     // qui va gerer le verification : RENVoie un boolean 
@@ -18,6 +17,7 @@ class UsersController extends BaseController{
 
         //verifie sic'est une tbaleau est que  
         if (is_array($resp) && isset($resp[0]->name)){ 
+            var_dump($this->session);
             $this->session->set([
                     'pseudo'=>$resp[0]->name
             ]); 

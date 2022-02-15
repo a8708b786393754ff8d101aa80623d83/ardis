@@ -3,6 +3,10 @@
 namespace App\Controllers; 
 
 class Pages extends BaseController{
+    protected $session; 
+    public function __construct(){
+        $this->session = session();
+    }
 
     public function index()
     {

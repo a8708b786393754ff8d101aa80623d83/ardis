@@ -6,6 +6,7 @@ class Visiteur extends Pages{
     protected $userContr;
 
     public function __construct(){
+        parent::__construct();
         $this->userContr = new UsersController;
     }
 
@@ -16,8 +17,8 @@ class Visiteur extends Pages{
             $pseudo = esc($this->request->getVar('username'));
             $passwd = esc($this->request->getVar('password')); 
             if ($pseudo !== '' && $passwd !== ''){
-                if($this->userContr->verificate_login($pseudo, $passwd)){
-                    var_dump($_SESSION);
+                if(! $this->userContr->verificate_login($pseudo, $passwd)){
+                    //code d'erruer
                 }
             }
         }
