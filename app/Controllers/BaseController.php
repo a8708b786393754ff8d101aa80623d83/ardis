@@ -68,7 +68,7 @@ class BaseController extends Controller
         foreach($this->_data as $key=>$value){
             $this->_smarty->assign($key, $value);
         }
-        $this->_smarty->debugging = true;
+        // $this->_smarty->debugging = true;
         $this->_smarty->display($strTemplate);
     }
 }

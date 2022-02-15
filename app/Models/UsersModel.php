@@ -33,13 +33,14 @@ class UsersModel extends Model
     //     }
     // }
 
-    private function is_account(string $table, string $element){
+    public function is_account(string $table, string $element){
         if($table === 'compt_pseudo' || $table === 'client_email'){
             if ($table === 'client_email'){
-                $sql = 'SELECT compt_id FROM compte INNER JOIN clients   WHERE ?= "?" ';
+                $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE '.$table.'="'.$element.'"';
             }else{
-                $sql = 'SELECT compt_id FROM compte WHERE ? = "?" ';
-            }return $this->db->query($sql, [$table, $element])->getResult(); 
+                $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
+            }
+            return $this->db->query($sql)->getResult(); 
         }
 
     }
@@ -52,6 +53,7 @@ class UsersModel extends Model
     public function appendUser(array $data)
     {
         $id = $this->is_account('client_email', $data['client_email']);
+        var_dump($id); 
         if(count($id) === 1){
             // $add_user = $this->db->table('client'); 
             // $add_user->select("")

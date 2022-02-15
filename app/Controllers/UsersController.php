@@ -26,13 +26,14 @@ class UsersController extends Pages{
     }
 
     public function verificate_create_account(array $data){
+        // verifie si la longeur des element du post sont a 5 
         if (count($data) === 5){
             $cmpt = 0; 
             foreach($data as $keys=>$element){
                 if($element !== ''){
                     $cmpt++; 
                 }
-            }if(strpos($data['email'], "@") && ($data['password'] === $data['Confirm_password']) && $cmpt === 5){
+            }if($this->verif_email($data) && ($data['password'] === $data['Confirm_password']) && $cmpt === 5){
                 return $this->conn->appendUser([
                     'client_nom'=> $data['lastname'], 
                     'client_prénom'=>$data['firstname'], 
@@ -41,6 +42,18 @@ class UsersController extends Pages{
                     ]); 
             } 
         }return false; 
-    }       
+    } 
+
+    public function verificate_mdp_oublier(array $data){
+        if ($this->verif_email($data)){
+            return $this->conn->is_account('client_email', $data['email']); 
+        }return false; 
+    }
+
+    public function verif_email(array $data){
+        if(strpos($data['email'], "@")){
+            return true; 
+        }return false; 
+    }
     
 }
