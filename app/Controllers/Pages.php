@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 class Pages extends BaseController{
     protected $session; 
+
     public function __construct(){
         $this->session = session();
         helper('url');
@@ -13,7 +14,7 @@ class Pages extends BaseController{
     {
         $this->_smarty->assign('color_link_nav','white');
         $this->_smarty->assign('name_file','index');
-        $this->_smarty->display("index.tpl");  
+        $this->_smarty->display('index.tpl');  
     }
 
     public function view($page='index')

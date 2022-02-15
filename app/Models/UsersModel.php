@@ -2,7 +2,7 @@
 namespace App\Models;
 use CodeIgniter\Model; 
 
-class Users_management extends Model
+class UsersModel extends Model
 {
     protected $table         = 'clients';
     protected $primaryKey    = 'client_id';
@@ -10,11 +10,13 @@ class Users_management extends Model
                 "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
                 "client_tel", "compte_client","resrv_client","client_avis"
                 ];
+    // protected $returnType    = 'App\Entities\User_entity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
+
 
     public function __construct()
     {
@@ -46,6 +48,7 @@ class Users_management extends Model
         $sql = 'SELECT compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
+
     public function appendUser(array $data)
     {
         $id = $this->is_account('client_email', $data['client_email']);

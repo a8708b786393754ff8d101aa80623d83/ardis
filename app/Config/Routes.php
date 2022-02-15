@@ -37,6 +37,7 @@ $routes->get('pages/', 'Pages::index');
 
 $routes->group('visitor', function ($routes){
     $routes->add('/', 'Pages::index');
+    $routes->add('/(:any)', 'Pages::view/$1');
     $routes->add('login', 'Visiteur::login'); 
     $routes->add('create_account', 'Visiteur::create_account'); 
     $routes->add('mdpoublier', 'Visiteur::mdpoublier'); 
@@ -44,6 +45,7 @@ $routes->group('visitor', function ($routes){
 
 $routes->group('customers', function ($routes){
     $routes->add('/', 'Pages::index');
+    $routes->add('/(:any)', 'Pages::view/$1');
     $routes->add('logout', 'Customers::logout'); 
     $routes->add('profile(:any)', 'Customers::profile/$1');
 });

@@ -1,12 +1,12 @@
 <?php 
 namespace App\Controllers; 
-use App\Models\Users_management;
+use App\Models\UsersModel;
 
 class UsersController extends Pages{
     private $conn; 
 
     public function __construct(){
-        $this->conn = new Users_management();
+        $this->conn = new UsersModel();
         parent::__construct();
     }
 
@@ -32,14 +32,13 @@ class UsersController extends Pages{
                 if($element !== ''){
                     $cmpt++; 
                 }
-            }
-            if(strpos($data['email'], "@") && ($data['password'] === $data['Confirm_password']) && $cmpt === 5){
-                 return $this->conn->appendUser([
-                        'client_nom'=> $data['lastname'], 
-                        'client_prénom'=>$data['firstname'], 
-                        'client_pass'=>$data['lastname'],
-                        'client_email'=>$data['email'], 
-                        ]); 
+            }if(strpos($data['email'], "@") && ($data['password'] === $data['Confirm_password']) && $cmpt === 5){
+                return $this->conn->appendUser([
+                    'client_nom'=> $data['lastname'], 
+                    'client_prénom'=>$data['firstname'], 
+                    'client_pass'=>$data['lastname'],
+                    'client_email'=>$data['email'], 
+                    ]); 
             } 
         }return false; 
     }       
