@@ -12,13 +12,13 @@
                               <p>Demandez votre de mot de passe .</p>
                                 <div class="panel-body">
                                   
-                                  <form class="form">
+                                  <form class="{base_url('/visitor/mdpoublier')}" method='POST'>
                                     <fieldset>
                                       <div class="form-group">
                                         <div class="input-group">
                                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
                                         {literal}
-                                          <input id="emailInput" placeholder="e-mail" class="form-control" type="email" oninvalid="setCustomValidity('Merci de mettre un e-mail valide.')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+                                          <input id="emailInput" placeholder="e-mail" class="form-control" type="email"  required name='email'>
                                         {/literal}
                                         </div>
                                       </div>

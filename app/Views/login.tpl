@@ -9,7 +9,7 @@
         </div>
     
         <!-- Login Form -->
-        <form action="login" method="POST">
+        <form action="{base_url('/visitor/login/')}" method="POST">
           <input type="text" id="login" class="fadeIn second" name="username" placeholder="username or email">
           <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
           <input type="submit" class="fadeIn fourth" value="Log In">

@@ -14,5 +14,6 @@
 </body>
 <script src="{base_url('assets/js/bootstrap.bundle.js')}"></script>
 <script src="https://kit.fontawesome.com/f8e0ca0321.js " crossorigin="anonymous "></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </html>

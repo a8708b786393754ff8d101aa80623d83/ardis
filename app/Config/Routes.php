@@ -31,20 +31,25 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->group('pages', function ($routes){
-    $routes->add('view/(:any)', 'Pages::view/$1'); 
-    $routes->add('/', 'Pages::index'); 
-}); 
+
+$routes->get('pages/(:any)', 'Pages::view/$1');
+$routes->get('pages/', 'Pages::index');
 
 $routes->group('visitor', function ($routes){
-    $routes->add('login', 'Visiteur::view/login'); 
-    $routes->add('create_account', 'Visiteur::view/create_account'); 
+    $routes->add('/', 'Pages::index');
+    $routes->add('/(:any)', 'Pages::view/$1');
+    $routes->add('login', 'Visiteur::login'); 
+    $routes->add('create_account', 'Visiteur::create_account'); 
+    $routes->add('mdpoublier', 'Visiteur::mdpoublier'); 
 });
 
 $routes->group('customers', function ($routes){
+    $routes->add('/', 'Pages::index');
+    $routes->add('/(:any)', 'Pages::view/$1');
     $routes->add('logout', 'Customers::logout'); 
     $routes->add('profile(:any)', 'Customers::profile/$1');
 });
+
 
 
 

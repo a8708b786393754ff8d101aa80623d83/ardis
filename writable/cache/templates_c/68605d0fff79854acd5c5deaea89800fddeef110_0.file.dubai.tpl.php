@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-10 12:56:44
+/* Smarty version 4.0.4, created on 2022-02-15 06:45:23
   from '/var/www/html/ardis/app/Views/dubai.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62055fec81acc9_48159169',
+  'unifunc' => 'content_620ba063c3cca6_60455654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68605d0fff79854acd5c5deaea89800fddeef110' => 
     array (
       0 => '/var/www/html/ardis/app/Views/dubai.tpl',
-      1 => 1644519403,
+      1 => 1644786417,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62055fec81acc9_48159169 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620ba063c3cca6_60455654 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_103224032462055fec81a1e4_86097311', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2098792547620ba063c3bc68_16322384', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_103224032462055fec81a1e4_86097311 extends Smarty_Internal_Block
+class Block_2098792547620ba063c3bc68_16322384 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_103224032462055fec81a1e4_86097311',
+    0 => 'Block_2098792547620ba063c3bc68_16322384',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -70,6 +70,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="container-fluid ">
         <img class="image_dubai img-fluid" src="<?php echo base_url('assets/Images/dubai/hotel-desert-dubai.png');?>
 " alt="image dubai">
+        <i class="fa-solid fa-envelope"></i>
         <div class="row ">
             <div class="notes">
                 <h1 class="title">Hotel ardis Dubai</h1>

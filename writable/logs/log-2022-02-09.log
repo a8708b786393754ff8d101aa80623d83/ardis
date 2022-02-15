@@ -1,6 +1,0 @@
-CRITICAL - 2022-02-09 07:37:49 --> Call to undefined function App\Controllers\vieuw()
-#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Ardis->index()
-#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
-#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
-#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
-#4 {main}
