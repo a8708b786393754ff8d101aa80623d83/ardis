@@ -36,13 +36,8 @@ class Visiteur extends Pages{
         }
     }
 
-
-    public function register()
+    public function mdpoublier()
     {
-        return $this->view('mdpoublier');
-    }
-
-    public function mdpoublier(){
 
     }
 

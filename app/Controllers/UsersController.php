@@ -19,7 +19,7 @@ class UsersController extends Pages{
         if (is_array($resp) && isset($resp[0]->name)){ 
             $this->session->set([
                     'pseudo'=>$resp[0]->name
-            ]); 
+                    ]); 
             return true; 
         }
         return false; 
@@ -34,13 +34,13 @@ class UsersController extends Pages{
                 }
             }
             if(strpos($data['email'], "@") && ($data['password'] === $data['Confirm_password']) && $cmpt === 5){
-                return $arr = [
+                return  $this->conn->appendUser([
                         'client_nom'=> $data['lastname'], 
                         'client_prénom'=>$data['firstname'], 
                         'client_pass'=>$data['lastname'],
                         'client_email'=>$data['email'], 
                         //regarder pour faire un inner join au moment de la requete 
-                ]; 
+                ]); 
             } 
         }return false; 
     }       

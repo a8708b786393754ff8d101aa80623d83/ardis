@@ -31,10 +31,13 @@ class Users_management extends Model
     //     }
     // }
 
-    private function getId(string $table, string $element){
-        if($table === 'compt_pseudo' || $table === 'client_id'){
-            $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
-            return $this->db->query($sql)->getResult(); 
+    private function is_account(string $table, string $element){
+        if($table === 'compt_pseudo' || $table === 'client_email'){
+            if ($table === 'client_email'){
+                $sql = 'SELECT compt_id FROM compte INNER JOIN clients   WHERE ?= "?" ';
+            }else{
+                $sql = 'SELECT compt_id FROM compte WHERE ? = "?" ';
+            }return $this->db->query($sql, [$table, $element])->getResult(); 
         }
 
     }
@@ -45,7 +48,10 @@ class Users_management extends Model
     }
     public function appendUser(array $data)
     {
+        var_dump($data['client_email']); 
+        return $this->is_account('client_email', $data['client_email']);  
 
+        
     }
 
     // public function delete()
