@@ -1,0 +1,103 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F2;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 1px !important;
+}
+
+
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+
+.breadcrumb li:first-child {
+    right: 12px;
+    position: relative;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+/* titre  */
+article h1{
+    position: relative;
+    left: 800px;
+    width: 300px;
+    top: 80px;
+}
+/* ajustement de l'image */
+.image_suisse{
+    position: relative;
+    left: 130px;
+}
+/* position de la div */
+article .row {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    bottom: 220px;
+    left: 800px;
+}
+
+/* postion de l'image  */
+.container-fluid > img{
+    position: relative;
+    top: 100px;
+    width: 600px;
+ }
+
+/* reglage de l'icone gps*/
+
+article .gps_icone{
+    position: relative;
+    bottom: 5px;
+}
+
+/* reglage  de la vilee de l'hotel*/
+article .city_hotel {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+/* positionnement des etoile */
+article .start {
+    position: relative;
+    font-size: 30px;
+    bottom: 40px;
+    color: yellow;
+}
+
+article .galerie_photo,
+.reserver-btn {
+    background-color: #33939A;
+    position: relative;
+    left: 150px;
+    width: 150px;
+}
+
+
+/* foooter */
+footer {
+    position: relative;
+    top: 291px;
+    background: #707070! important;
+    height: 82px;
+}
+
