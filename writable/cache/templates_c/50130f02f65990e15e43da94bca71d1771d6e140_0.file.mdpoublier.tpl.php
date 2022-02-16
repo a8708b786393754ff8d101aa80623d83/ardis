@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 07:39:00
+/* Smarty version 4.0.4, created on 2022-02-16 07:39:17
   from '/var/www/html/ardis/app/Views/mdpoublier.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620bacf4586408_23877984',
+  'unifunc' => 'content_620cfe85b22fa6_23277207',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '50130f02f65990e15e43da94bca71d1771d6e140' => 
     array (
       0 => '/var/www/html/ardis/app/Views/mdpoublier.tpl',
-      1 => 1644932338,
+      1 => 1645018755,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620bacf4586408_23877984 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620cfe85b22fa6_23277207 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1790364035620bacf4585348_12036820', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_907148304620cfe85b20196_88997030', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1790364035620bacf4585348_12036820 extends Smarty_Internal_Block
+class Block_907148304620cfe85b20196_88997030 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1790364035620bacf4585348_12036820',
+    0 => 'Block_907148304620cfe85b20196_88997030',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -49,6 +49,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         <div class="panel-body">
                             <div class="text-center">
                               <h3><i class="fa fa-lock fa-4x"></i></h3>
+                              <?php if ((isset($_smarty_tpl->tpl_vars['message']->value))) {?>
+                                <?php if ($_smarty_tpl->tpl_vars['message']->value) {?>
+                                <div class="p-3 mb-2 bg-success text-white">Un email vous a été envoyer</div>
+                                <?php } else { ?>
+                                <div class="p-3 mb-2 bg-danger text-white">Email invalide!</div>                                  
+                                <?php }?>
+                              <?php }?>
                               <h2 class="text-center">Mot de passe oublié  ?</h2>
                               <p>Demandez votre de mot de passe .</p>
                                 <div class="panel-body">

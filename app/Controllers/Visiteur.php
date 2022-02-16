@@ -41,17 +41,11 @@ class Visiteur extends Pages{
 
     public function mdpoublier()
     {
-        $this->view('mdpoublier'); 
+        $et_la = 'init'; 
         if ($this->request->getMethod()=== 'post'){
-            $resp = $this->userContr->verificate_mdp_oublier($this->request->getPost());
-            if(is_array($resp) && count($resp) === 1){
-                echo 'Un email vous a été envoyer'; 
-                // code d'envoye email
-                //le dire a l'utilisateur le email il va bientot arriver 
-            }else{
-                echo 'Vous n"avez pas de compte'; 
-            }
+            $et_la = $this->userContr->verificate_mdp_oublier($this->request->getPost());
         }
+        $this->view('mdpoublier', $et_la); 
     }
 
 }
