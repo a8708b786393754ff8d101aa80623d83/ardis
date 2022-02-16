@@ -43,7 +43,6 @@ class Visiteur extends Pages{
                 }
             }
         }
-        var_dump($error); 
         $this->view('create_account', $error); 
     }
 
