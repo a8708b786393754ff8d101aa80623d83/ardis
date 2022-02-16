@@ -27,6 +27,7 @@ class UsersController extends Pages{
 
     public function verificate_create_account(array $data){
         // verifie si la longeur des element du post sont a 11
+        var_dump(count($data)); 
         if (count($data) === 11){
             $cmpt = 0; 
             foreach($data as $keys=>$element){
@@ -52,7 +53,6 @@ class UsersController extends Pages{
                 // verfier si le telephone est un nombre 
                 //verifie si le mdp est mdp confirm  
                 if ($this->verif_conf_password($password, $confirm_password) && is_numeric($tel) && $this->verif_lenght_password($password)){
-                    var_dump('a'); 
                     $this->conn->appendUser([
                     'client_nom'    => $lastname, 
                     'client_prenom' =>$firstname, // changer le nom du champs 
@@ -74,7 +74,7 @@ class UsersController extends Pages{
     public function verificate_mdp_oublier(array $data)
     {
         if ($this->verif_email($data)){
-            $resp_query = $this->conn->getId('client_email', $data['email']); 
+            $resp_query = $this->conn->getEmail($data['email']); 
             if(count($resp_query) === 1){
                 return true; 
             }return false; 

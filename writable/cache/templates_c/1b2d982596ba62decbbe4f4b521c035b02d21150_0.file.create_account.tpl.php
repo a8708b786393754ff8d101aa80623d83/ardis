@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 15:05:14
+/* Smarty version 4.0.4, created on 2022-02-16 04:43:10
   from '/var/www/html/ardis/app/Views/create_account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620c158a2d1ad3_25347011',
+  'unifunc' => 'content_620cd53e3cae65_33114843',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1b2d982596ba62decbbe4f4b521c035b02d21150' => 
     array (
       0 => '/var/www/html/ardis/app/Views/create_account.tpl',
-      1 => 1644959039,
+      1 => 1645008188,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620c158a2d1ad3_25347011 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620cd53e3cae65_33114843 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_681750939620c158a2d0d43_47670361', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1787373230620cd53e3c8ab3_90369962', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_681750939620c158a2d0d43_47670361 extends Smarty_Internal_Block
+class Block_1787373230620cd53e3c8ab3_90369962 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_681750939620c158a2d0d43_47670361',
+    0 => 'Block_1787373230620cd53e3c8ab3_90369962',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -306,6 +306,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <input class="form-control" name="adresse" placeholder="Adresse" type="text" required autofocus />
                 <input class="form-control" name="email" placeholder="Email" type="email" />
                  <input class="form-control" name="tel" placeholder="Téléphone " type="tel" />
+                <input class="form-control" name="pseudo" placeholder="pseudo" type="text" />
                 <input class="form-control" name="password" placeholder="Mot de passe" type="password" />
                 <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" />
                 <br />

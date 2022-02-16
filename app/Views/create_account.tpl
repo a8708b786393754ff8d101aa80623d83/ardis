@@ -264,6 +264,7 @@
                 <input class="form-control" name="adresse" placeholder="Adresse" type="text" required autofocus />
                 <input class="form-control" name="email" placeholder="Email" type="email" />
                  <input class="form-control" name="tel" placeholder="Téléphone " type="tel" />
+                <input class="form-control" name="pseudo" placeholder="pseudo" type="text" />
                 <input class="form-control" name="password" placeholder="Mot de passe" type="password" />
                 <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" />
                 <br />

@@ -23,7 +23,7 @@
             <div class="card">
                 <img src="{base_url('assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png')}" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
                 <div class="card-body text-center">
-                    <h5 class="card-title"><a href="{base_url('punta_cana.tpl')}">Punta cana</a></h5>
+                    <h5 class="card-title"><a href="{base_url('pages/punta_cana')}">Punta cana</a></h5>
                     <p class="card-text ">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text ">a partir de 250€</p>
                 </div>
@@ -31,7 +31,7 @@
             <div class="card">
                 <img src="{base_url('assets/Images/dubai/hotel-desert-dubai.png')}" class="card-img-top d-block mx-auto" alt="hotel_dubai">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="{base_url('dubai.tpl')}">Dubai</a></h5>
+                    <h5 class="card-title"><a href="{base_url('pages/dubai')}">Dubai</a></h5>
                     <p class="card-text text-start">Hotel ardis dubai</p>
                     <p style="color: #ff00aa;" class="card-text text-start">a partir de 320€</p>
                 </div>
@@ -39,7 +39,7 @@
             <div class="card">
                 <img src="{base_url('assets/Images/suisse/images2.png')}" class="card-img-top d-block mx-auto" alt="hotel_suisse">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="{base_url('suisse.tpl')}">Suisse</a></h5>
+                    <h5 class="card-title"><a href="{base_url('pages/suisse')}">Suisse</a></h5>
                     <p class="card-text text-start">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text text-start">a partir de 100€</p>
                 </div>
@@ -47,7 +47,7 @@
         </div>
         <div class="container">
             <div class="d-grid gap-2 d-md-block">
-                <a href="{base_url('punta_cana.tpl')}" class="btn">Pour en savoir plus</a>
+                <a href="{base_url('#')}" class="btn">Pour en savoir plus</a>
             </div>
         </div>
     </section>

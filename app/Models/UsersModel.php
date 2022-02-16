@@ -21,17 +21,6 @@ class UsersModel extends Model
     {
         parent::__construct();
     }
-    public function getId(string $table, string $element){
-        if($table === 'compt_pseudo' || $table === 'client_email'){
-            if ($table === 'client_email'){
-                $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$element.'"';
-            }else{
-                $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
-            }
-            return $this->db->query($sql)->getResult(); 
-        }return false; 
-
-    }
     public function getPseudo(string $username,string $password)
     {
         $sql = 'SELECT compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
@@ -40,7 +29,8 @@ class UsersModel extends Model
 
     public function appendUser(array $contact, array $identify)
     {
-        $id = $this->getId('client_email', $contact['client_email']);
+        $id = $this->getEmail($contact['client_email']);
+        var_dump($id); 
         if(is_array($id)){
             var_dump('a'); 
             if(count($id) === 0){
@@ -49,11 +39,17 @@ class UsersModel extends Model
                 $builder_clients->insert($contact); 
                 $builder_compte->insert($identify); 
 
-                $builder_compte->get(); 
                 $builder_clients->get(); 
+                $builder_compte->get(); 
                 return true; 
             }
         } return false; 
+    }
+
+    public function getEmail(string $email)
+    {
+        $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$email.'"';
+        return $this->db->query($sql)->getResult(); 
     }
 
     // public function updateUser(array $dataUpdate)
@@ -71,4 +67,16 @@ class UsersModel extends Model
         //utiliser la fonction getId pour pouvoir supprimer facilement
     //     // $this->db->delete(); 
     // }
+
+    //public function getId(string $table, string $element){
+        //     if($table === 'compt_pseudo' || $table === 'client_email'){
+        //         if ($table === 'client_email'){
+        //             $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$element.'"';
+        //         }else{
+        //             $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
+        //         }
+        //         return $this->db->query($sql)->getResult(); 
+        //     }return false; 
+    
+        // }
 }
