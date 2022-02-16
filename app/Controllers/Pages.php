@@ -17,14 +17,28 @@ class Pages extends BaseController{
         $this->_smarty->display('index.tpl');  
     }
 
-    public function view($page='index')
+    public function view($page='index',$element=false)
     {
-        if($page === 'index'){ // verifie pour la nav bar en blanc
-            $this->_smarty->assign('color_link_nav','white');
-        }else{
-            $this->_smarty->assign('color_link_nav','black');
-        }
+        $color_link = $this->color_link_nav($page, $element); 
+        $this->_smarty->assign('color_link_nav',$color_link);
         $this->_smarty->assign('name_file',$page);
         $this->_smarty->display($page.'.tpl');
+    }
+
+    private function color_link_nav($page, $bool): string 
+    {
+        if($page === 'index'){
+            return 'white'; 
+        }
+        elseif($page === 'mdpoublier'){
+            if($bool !== 'init'){
+                $this->_smarty->assign('message',$bool);
+                return 'black'; 
+            }
+            return 'black'; 
+        }
+        else{
+            return 'black'; 
+        }
     }
 }

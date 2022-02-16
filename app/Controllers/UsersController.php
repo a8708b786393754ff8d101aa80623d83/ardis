@@ -33,41 +33,40 @@ class UsersController extends Pages{
                 if($element !== ''){
                     $cmpt++; 
                 }
-            }
-            
-            if($this->verif_email($data) && $this->verif_conf_password($data['password'], $data['Confirm_password']) 
-                                                    && $cmpt === count($data)){
-                $firstname = esc($data['firstname']); 
-                $lastname = esc($data['lastname']); 
-                $city = esc($data['city']); 
-                $cp = esc($data['CP']); 
-                $adresse = esc($data['adresse']); 
-                $tel = esc($data['tel']); 
-                $country = esc($data['select']); 
-                $email = esc($data['email']); 
-                $pseudo = esc($data['pseudo']); 
-                $password = esc($data['password']); 
-                $confirm_password = esc($data['Confirm_password']); 
-
-                // verfier si le telephone est un nombre 
-                //verifie si le mdp est mdp confirm  
-                if ($this->verif_conf_password($password, $confirm_password) && is_numeric($tel) && $this->verif_lenght_password($password)){
-                    $this->conn->appendUser([
-                    'client_nom'    => $lastname, 
-                    'client_prenom' =>$firstname, // changer le nom du champs 
-                    'client_cp'     =>$cp, 
-                    'client_ville'  =>$city, 
-                    'client_tel'    =>$tel, 
-                    'client_email'  =>$email, // terminer l'insert de la bdd
-                    'client_pays'   =>$country, // terminer l'insert de la bdd
-                    'client_adresse'=>$adresse
-                    ],[
-                        'compt_pseudo' => $pseudo, 
-                        'compt_pass'   => $password
-                    ]);  
-                    return true; 
+            }if ($cmpt === count($data)){ // si les nombres des champs remplie
+                if($this->verif_email($data) && $this->verif_conf_password($data['password'], $data['Confirm_password'])){
+                    $firstname = esc($data['firstname']); 
+                    $lastname = esc($data['lastname']); 
+                    $city = esc($data['city']); 
+                    $cp = esc($data['CP']); 
+                    $adresse = esc($data['adresse']); 
+                    $tel = esc($data['tel']); 
+                    $country = esc($data['select']); 
+                    $email = esc($data['email']); 
+                    $pseudo = esc($data['pseudo']); 
+                    $password = esc($data['password']); 
+                    $confirm_password = esc($data['Confirm_password']); 
+    
+                    // verfier si le telephone est un nombre 
+                    //verifie si le mdp est mdp confirm  
+                    if ($this->verif_conf_password($password, $confirm_password) && is_numeric($tel) && $this->verif_lenght_password($password)){
+                        $this->conn->appendUser([
+                        'client_nom'    => $lastname, 
+                        'client_prenom' =>$firstname, // changer le nom du champs 
+                        'client_cp'     =>$cp, 
+                        'client_ville'  =>$city, 
+                        'client_tel'    =>$tel, 
+                        'client_email'  =>$email, // terminer l'insert de la bdd
+                        'client_pays'   =>$country, // terminer l'insert de la bdd
+                        'client_adresse'=>$adresse
+                        ],[
+                            'compt_pseudo' => $pseudo, 
+                            'compt_pass'   => $password
+                        ]);  
+                        return true; 
+                    }
                 }
-            }return false; 
+            }
         }return false; 
     } 
 
