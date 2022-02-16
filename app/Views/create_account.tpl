@@ -4,6 +4,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
+            {if isset($message)}
+                <div class="p-3 mb-2 bg-danger text-white">
+                    {foreach from=$message item=msg}
+                    {$msg|cat:" <br>\n"}
+                    {/foreach}
+                </div>                                  
+            {/if}
                 <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> S'inscrire !</legend>
                 <form action="{base_url('/visitor/create_account')}" method="post" class="form" role="form">
                 <div class="row">

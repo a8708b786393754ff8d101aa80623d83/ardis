@@ -35,12 +35,15 @@ class Visiteur extends Pages{
     {
         $error = []; 
         if ($this->request->getMethod()=== 'post'){
-            $resp = $this->userContr->verificate_create_account($this->request->getPost());
-            if($resp){
-                return redirect()->to('http://localhost/ardis/public/customers/');
+            $error = $this->errorHunt->hunt_error_create_account($this->request->getPost());
+            if(count($error) === 0){
+                $resp = $this->userContr->verificate_create_account($this->request->getPost());
+                if($resp){
+                    return redirect()->to('http://localhost/ardis/public/customers/');
+                }
             }
-            $error = $this->errorHunt->hunt_error_login($this->request->getPost()); 
         }
+        var_dump($error); 
         $this->view('create_account', $error); 
     }
 

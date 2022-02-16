@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 04:43:10
+/* Smarty version 4.0.4, created on 2022-02-16 13:49:08
   from '/var/www/html/ardis/app/Views/create_account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620cd53e3cae65_33114843',
+  'unifunc' => 'content_620d5534eb7023_06505535',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1b2d982596ba62decbbe4f4b521c035b02d21150' => 
     array (
       0 => '/var/www/html/ardis/app/Views/create_account.tpl',
-      1 => 1645008188,
+      1 => 1645040946,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620cd53e3cae65_33114843 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d5534eb7023_06505535 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1787373230620cd53e3c8ab3_90369962', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58115337620d5534eb0418_78727337', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1787373230620cd53e3c8ab3_90369962 extends Smarty_Internal_Block
+class Block_58115337620d5534eb0418_78727337 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1787373230620cd53e3c8ab3_90369962',
+    0 => 'Block_58115337620d5534eb0418_78727337',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,6 +45,21 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
+            <?php if ((isset($_smarty_tpl->tpl_vars['message']->value))) {?>
+                <div class="p-3 mb-2 bg-danger text-white">
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['message']->value, 'msg');
+$_smarty_tpl->tpl_vars['msg']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['msg']->value) {
+$_smarty_tpl->tpl_vars['msg']->do_else = false;
+?>
+                    <?php echo ($_smarty_tpl->tpl_vars['msg']->value).(" <br>\n");?>
+
+                    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                </div>                                  
+            <?php }?>
                 <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> S'inscrire !</legend>
                 <form action="<?php echo base_url('/visitor/create_account');?>
 " method="post" class="form" role="form">

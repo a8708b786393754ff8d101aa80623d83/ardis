@@ -19,15 +19,16 @@ body { padding-top:30px; }
 
 section{
     position: relative;
-    left: 20%;
-    top: 100px;
+    width: 65%;
+    left: 35%;
+    top: 60px;
 }
 
 /* foooter */
 
 footer {
     position: relative;
-    top: 408px;
+    top: 111px;
     background-color: #707070 !important;
     height: 110px;
 }
