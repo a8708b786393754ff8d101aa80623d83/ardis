@@ -26,8 +26,8 @@ class UsersController extends Pages{
     }
 
     public function verificate_create_account(array $data){
-        // verifie si la longeur des element du post sont a 10
-        if (count($data) === 10){
+        // verifie si la longeur des element du post sont a 11
+        if (count($data) === 11){
             $cmpt = 0; 
             foreach($data as $keys=>$element){
                 if($element !== ''){
@@ -45,42 +45,60 @@ class UsersController extends Pages{
                 $tel = esc($data['tel']); 
                 $country = esc($data['select']); 
                 $email = esc($data['email']); 
+                $pseudo = esc($data['pseudo']); 
                 $password = esc($data['password']); 
                 $confirm_password = esc($data['Confirm_password']); 
 
                 // verfier si le telephone est un nombre 
                 //verifie si le mdp est mdp confirm  
-                if ($this->verif_conf_password($password, $confirm_password) && is_numeric($tel)){
-                    return $this->conn->appendUser([
-                    'client_nom'=> $lastname, 
-                    'client_prénom'=>$firstname, // changer le nom du champs 
-                    'client_cp' =>$cp, 
-                    'client_ville' =>$city, 
-                    'client_tel' =>$tel, 
-                    'client_email'=>$email, // terminer l'insert de la bdd
+                if ($this->verif_conf_password($password, $confirm_password) && is_numeric($tel) && $this->verif_lenght_password($password)){
+                    var_dump('a'); 
+                    $this->conn->appendUser([
+                    'client_nom'    => $lastname, 
+                    'client_prenom' =>$firstname, // changer le nom du champs 
+                    'client_cp'     =>$cp, 
+                    'client_ville'  =>$city, 
+                    'client_tel'    =>$tel, 
+                    'client_email'  =>$email, // terminer l'insert de la bdd
+                    'client_pays'   =>$country, // terminer l'insert de la bdd
+                    'client_adresse'=>$adresse
+                    ],[
+                        'compt_pseudo' => $pseudo, 
+                        'compt_pass'   => $password
                     ]);  
                 }
-            } 
+            }return false; 
         }return false; 
     } 
 
     public function verificate_mdp_oublier(array $data)
     {
         if ($this->verif_email($data)){
-            return $this->conn->is_account('client_email', $data['email']); 
+            $resp_query = $this->conn->getId('client_email', $data['email']); 
+            if(count($resp_query) === 1){
+                return true; 
+            }return false; 
         }return false; 
     }
 
-    public function verif_email(array $data)
+    private function verif_email(array $data)
     {
         if(strpos($data['email'], "@")){
             return true; 
         }return false; 
     }
 
-    public function verif_conf_password(string $password, string $confPasswd)
+    private function verif_conf_password(string $password, string $confPasswd)
     {
         if ($password === $confPasswd){
+            return true; 
+        }return false; 
+    }
+
+    private function verif_lenght_password(string $password, int $min_length=8)
+    {
+        var_dump($password); 
+        if(strlen($password) >= $min_length){
             return true; 
         }return false; 
     }
