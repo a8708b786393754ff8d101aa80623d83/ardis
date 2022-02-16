@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 16 fév. 2022 à 10:16
+-- Généré le : mer. 16 fév. 2022 à 10:30
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -216,12 +216,12 @@ INSERT INTO `clients` (`client_id`, `client_nom`, `client_prenom`, `client_adres
 
 DROP TABLE IF EXISTS `compte`;
 CREATE TABLE IF NOT EXISTS `compte` (
-  `compt_id` int(11) NOT NULL,
+  `compt_id` int(11) NOT NULL AUTO_INCREMENT,
   `compt_pseudo` varchar(50) NOT NULL,
   `compt_pass` varchar(50) NOT NULL,
   `client_id` varchar(50) NOT NULL,
   PRIMARY KEY (`compt_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `compte`
@@ -366,7 +366,7 @@ CREATE TABLE IF NOT EXISTS `reservations` (
 
 INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `reserv_prixar`, `reserv_datepayar`, `client_id`, `chamb_reserv`, `chamb_id`, `hotel_id`, `activ_id`, `activ_reserv`, `conso_reserv`) VALUES
 (1, '2021-05-12', '2021-05-22', 30, '2021-04-05', 2, 8, 8, 1, 1, NULL, NULL),
-(2, '2022-01-01', '2022-01-02', 30, '2022-01-01', 3, 12, 12, 2, NULL, NULL, NULL);
+(2, '2022-01-01', '2022-02-01', 30, '2022-02-01', 3, 12, 12, 2, NULL, NULL, NULL);
 
 --
 -- Contraintes pour les tables déchargées
