@@ -2,27 +2,6 @@
 {block name=content}
 <div class="container ">
     <!-- locate -->
-    <div class="row " aria-label="breadcrumb ">
-        <ol class="breadcrumb ">
-            <li>Vous ete ici: </li>
-            <li class="breadcrumb-item ">
-                <a href="../index.html " class="text-black ">
-                    Accueil
-                </a>
-            </li>
-            <li class="breadcrumb-item ">
-                <a href="# " class="text-black ">
-                    Nos hotels
-                </a>
-            </li>
-            <li class="breadcrumb-item ">
-                <a href="# " class="text-black ">
-                    Suisse
-                </a>
-            </li>
-        </ol>
-    </div>
-</div>
 
 <article>
     <h1>Hotel Aloardis</h1>

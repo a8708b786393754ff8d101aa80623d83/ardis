@@ -1,14 +1,5 @@
 {extends file='base/layout.tpl'}
 {block name=content}
-    <div class="container ">
-        <div class="row " aria-label="breadcrumb ">
-            <ol class="breadcrumb">
-                <p>Vous ete ici: </p>
-                <li class="breadcrumb-item"><a class='text-black' href="index.html">Acceuil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Reserver</li>
-            </ol>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="reservation">

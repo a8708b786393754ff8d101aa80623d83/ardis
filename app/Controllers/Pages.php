@@ -25,12 +25,12 @@ class Pages extends BaseController{
         $this->_smarty->display($page.'.tpl');
     }
 
-    private function color_link_nav($page, $bool): string 
+    public function color_link_nav($page, $bool): string 
     {
         if($page === 'index'){
             return 'white'; 
         }
-        elseif($page === 'mdpoublier'){
+        elseif($page === 'mdpoublier' || $page === 'login'){
             if($bool !== 'init'){
                 $this->_smarty->assign('message',$bool);
                 return 'black'; 

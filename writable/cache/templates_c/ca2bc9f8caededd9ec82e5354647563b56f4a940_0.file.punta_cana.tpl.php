@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 04:19:58
+/* Smarty version 4.0.4, created on 2022-02-16 08:29:57
   from '/var/www/html/ardis/app/Views/punta_cana.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620b7e4e158fb3_67378740',
+  'unifunc' => 'content_620d0a65089ab1_45720791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ca2bc9f8caededd9ec82e5354647563b56f4a940' => 
     array (
       0 => '/var/www/html/ardis/app/Views/punta_cana.tpl',
-      1 => 1644786417,
+      1 => 1645020199,
       2 => 'file',
     ),
   ),
@@ -20,38 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620b7e4e158fb3_67378740 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d0a65089ab1_45720791 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1022535498620b7e4e158507_49328931', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_385307460620d0a65088dd7_97959470', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1022535498620b7e4e158507_49328931 extends Smarty_Internal_Block
+class Block_385307460620d0a65088dd7_97959470 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1022535498620b7e4e158507_49328931',
+    0 => 'Block_385307460620d0a65088dd7_97959470',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
-
-<div class="container ">
-    <!-- locate -->
-    <div class="row " aria-label="breadcrumb ">
-        <ol class="breadcrumb">
-            <p>Vous ete ici: </p>
-            <li class="breadcrumb-item"><a class='text-black' href="../index.html">Accueil</a></li>
-            <li class="breadcrumb-item"><a class='text-black' href="#">Nos hôtels</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Punta cana</li>
-        </ol>
-    </div>
-</div>
 
 <article>
     <div class="container-fluid ">

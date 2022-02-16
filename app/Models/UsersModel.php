@@ -21,9 +21,9 @@ class UsersModel extends Model
     {
         parent::__construct();
     }
-    public function getPseudo(string $username,string $password)
-    {
-        $sql = 'SELECT compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
+    public function login(string $username,string $password)
+    {   
+        $sql = 'SELECT compt_id , compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 

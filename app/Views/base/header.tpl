@@ -82,3 +82,30 @@
         </div>
     </nav>
 </header>
+{if $name_file neq 'index'}
+<div class="container ">
+    <div class="row " aria-label="breadcrumb ">
+            <ol class="breadcrumb ">
+                <li>Vous ete ici: </li>
+                <li class="breadcrumb-item ">
+                    <a href="{base_url('pages/index')} " class="text-black ">
+                        Accueil
+                    </a>
+                </li>
+                {if $name_file == 'hawai' || $name_file == 'punta_cana' || $name_file == 'dubai'|| $name_file == 'suisse'}
+                    <li class="breadcrumb-item ">
+                    <a href="" class="text-black ">
+                        Nos hotels
+                    </a>
+                </li>
+                {/if}
+                <li class="breadcrumb-item ">
+                    <a href="" class="text-black ">
+                        {$name_file}
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+{/if}

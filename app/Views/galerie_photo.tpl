@@ -1,24 +1,5 @@
 {extends file='base/layout.tpl'}
 {block name=content}
-    <div class="container ">
-        <!-- locate -->
-        <div class="row " aria-label="breadcrumb ">
-            <ol class="breadcrumb ">
-                <li>Vous êtes ici: </li>
-                <li class="breadcrumb-item ">
-                    <a href="./index.html " class="text-black ">
-                        Accueil
-                    </a>
-                </li>
-                <li class="breadcrumb-item ">
-                    <a href="galerie_photo.html" class="text-black ">
-                        Galerie photos
-                    </a>
-                </li>
-            </ol>
-        </div>
-    </div>
-
     <section>
         <article>
             <h2 class="text-center">Dubai</h2>

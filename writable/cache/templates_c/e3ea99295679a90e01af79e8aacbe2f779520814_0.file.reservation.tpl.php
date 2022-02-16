@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 02:37:29
+/* Smarty version 4.0.4, created on 2022-02-16 08:03:32
   from '/var/www/html/ardis/app/Views/reservation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620b6649419f14_00531433',
+  'unifunc' => 'content_620d04346f45f9_76511029',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e3ea99295679a90e01af79e8aacbe2f779520814' => 
     array (
       0 => '/var/www/html/ardis/app/Views/reservation.tpl',
-      1 => 1644879619,
+      1 => 1645020193,
       2 => 'file',
     ),
   ),
@@ -20,36 +20,27 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620b6649419f14_00531433 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d04346f45f9_76511029 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1774799923620b6649419408_47313999', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1578573889620d04346f37b1_26183430', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1774799923620b6649419408_47313999 extends Smarty_Internal_Block
+class Block_1578573889620d04346f37b1_26183430 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1774799923620b6649419408_47313999',
+    0 => 'Block_1578573889620d04346f37b1_26183430',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-    <div class="container ">
-        <div class="row " aria-label="breadcrumb ">
-            <ol class="breadcrumb">
-                <p>Vous ete ici: </p>
-                <li class="breadcrumb-item"><a class='text-black' href="index.html">Acceuil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Reserver</li>
-            </ol>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="reservation">

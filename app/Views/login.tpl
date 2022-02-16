@@ -1,5 +1,16 @@
 {extends file='base/layout.tpl'}
 {block name=content}
+
+    {if isset($message)}
+      <div class='container'>
+        <div class='row'>
+        {foreach from=$message item=$msg}
+          <div class="p-3 mb-2 bg-danger text-white">{$msg}</div>                                  
+        {/foreach}
+        </div>
+      </div>
+
+    {/if}
     <div class="wrapper fadeInDown">
       <div id="formContent">
         <!-- Tabs Titles -->

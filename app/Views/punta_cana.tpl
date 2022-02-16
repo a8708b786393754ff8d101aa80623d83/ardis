@@ -1,17 +1,5 @@
 {extends file='base/layout.tpl'}
 {block name=content}
-<div class="container ">
-    <!-- locate -->
-    <div class="row " aria-label="breadcrumb ">
-        <ol class="breadcrumb">
-            <p>Vous ete ici: </p>
-            <li class="breadcrumb-item"><a class='text-black' href="../index.html">Accueil</a></li>
-            <li class="breadcrumb-item"><a class='text-black' href="#">Nos hôtels</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Punta cana</li>
-        </ol>
-    </div>
-</div>
-
 <article>
     <div class="container-fluid ">
         <img class="image_hotel img-fluid"  src="{base_url('assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png')}" alt="image punta_cana ">

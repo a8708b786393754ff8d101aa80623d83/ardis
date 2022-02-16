@@ -1,4 +1,4 @@
-.form-gap {
+ .form-gap {
     padding-top: 100px;
 }
 .nav-item {
@@ -6,12 +6,10 @@
 }
 
 
-
-
 .container {
-    position: absolute; /* postulat de départ */
-  top: 50%; left: 70%; /* à 50%/50% du parent référent */
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    position: absolute;
+  top: 50%; left: 70%; 
+  transform: translate(-50%, -50%); 
   width: 1000px;
 }
 
@@ -19,11 +17,24 @@
     width: 10em;
 }
     
+div > .breadcrumb{
+    position: relative;
+    right: 500px;
+    bottom: 300px;
+}
 
-/* foooter */
+div >.breadcrumb li:first-child {
+    right: 12px;
+    position: relative;
+}
+
+div > .breadcrumb a {
+    text-decoration: none;
+}
+
 footer {
     position: relative;
     top: 787px;
     background: #707070! important;
     height: 82px;
-}
+} 

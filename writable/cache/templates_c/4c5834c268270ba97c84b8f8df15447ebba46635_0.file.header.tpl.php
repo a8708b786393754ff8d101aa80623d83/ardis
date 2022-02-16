@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 04:24:37
+/* Smarty version 4.0.4, created on 2022-02-16 08:36:24
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620cd0e56a8681_92612962',
+  'unifunc' => 'content_620d0be86f8ec4_37181335',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1645007057,
+      1 => 1645022182,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620cd0e56a8681_92612962 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d0be86f8ec4_37181335 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +77,9 @@ function content_620cd0e56a8681_92612962 (Smarty_Internal_Template $_smarty_tpl)
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/suisse');?>
 ">Suisse</a></li>
+                              <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('pages/hawai');?>
+">Hawai</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -139,5 +142,34 @@ function content_620cd0e56a8681_92612962 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </nav>
 </header>
+<?php if ($_smarty_tpl->tpl_vars['name_file']->value != 'index') {?>
+<div class="container ">
+    <div class="row " aria-label="breadcrumb ">
+            <ol class="breadcrumb ">
+                <li>Vous ete ici: </li>
+                <li class="breadcrumb-item ">
+                    <a href="<?php echo base_url('pages/index');?>
+ " class="text-black ">
+                        Accueil
+                    </a>
+                </li>
+                <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'hawai' || $_smarty_tpl->tpl_vars['name_file']->value == 'punta_cana' || $_smarty_tpl->tpl_vars['name_file']->value == 'dubai' || $_smarty_tpl->tpl_vars['name_file']->value == 'suisse') {?>
+                    <li class="breadcrumb-item ">
+                    <a href="" class="text-black ">
+                        Nos hotels
+                    </a>
+                </li>
+                <?php }?>
+                <li class="breadcrumb-item ">
+                    <a href="" class="text-black ">
+                        <?php echo $_smarty_tpl->tpl_vars['name_file']->value;?>
+
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
 <?php }
+}
 }

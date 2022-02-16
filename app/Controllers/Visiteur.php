@@ -4,48 +4,54 @@ namespace App\Controllers;
 
 class Visiteur extends Pages{
     protected $userContr;
+    protected $errorHunt;
 
     public function __construct(){
         parent::__construct();
         $this->userContr = new UsersController;
+        $this->errorHunt = new Connexion_error; 
     }
 
     public function login()
     {
-        $this->view('login');
+        $error = []; 
         if ($this->request->getMethod() === 'post'){
             // verifie si la methode est bien post
             $pseudo = esc($this->request->getVar('username'));
             $passwd = esc($this->request->getVar('password')); 
             if ($pseudo !== '' && $passwd !== ''){
-                if(! $this->userContr->verificate_login($pseudo, $passwd)){
-                    //code d'erruer
+                $resp =  $this->userContr->verificate_login($pseudo, $passwd);
+                if(!$resp){
+                    $error = $this->errorHunt->hunt_error_login($this->request->getPost(), $resp); 
+                }else{
+                    return redirect()->to('http://localhost/ardis/public/customers/');
                 }
-                return redirect()->to('http://localhost/ardis/public/customers/');
             }
         }
+        $this->view('login', $error);
     }
 
     public function create_account()
     {
-        $this->view('create_account'); 
+        $error = []; 
         if ($this->request->getMethod()=== 'post'){
             $resp = $this->userContr->verificate_create_account($this->request->getPost());
-            var_dump($resp); 
             if($resp){
                 return redirect()->to('http://localhost/ardis/public/customers/');
-                // var_dump($this->request->getPost());
             }
+            $error = $this->errorHunt->hunt_error_login($this->request->getPost()); 
         }
+        $this->view('create_account', $error); 
     }
 
     public function mdpoublier()
     {
-        $et_la = 'init'; 
+        $msg = 'init'; 
         if ($this->request->getMethod()=== 'post'){
-            $et_la = $this->userContr->verificate_mdp_oublier($this->request->getPost());
+            $resp = $this->userContr->verificate_mdp_oublier($this->request->getPost());
+            $msg = $this->errorHunt->forget_password($resp);
         }
-        $this->view('mdpoublier', $et_la); 
+        $this->view('mdpoublier', $msg); 
     }
 
 }

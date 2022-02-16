@@ -9,11 +9,9 @@
                             <div class="text-center">
                               <h3><i class="fa fa-lock fa-4x"></i></h3>
                               {if isset($message)}
-                                {if $message}
-                                <div class="p-3 mb-2 bg-success text-white">Un email vous a été envoyer</div>
-                                {else}
-                                <div class="p-3 mb-2 bg-danger text-white">Email invalide!</div>                                  
-                                {/if}
+                                  {foreach from=$message key=color item=msg}
+                                    <div class="p-3 mb-2 bg-{$color} text-white">{$msg}</div>                                  
+                                  {/foreach}
                               {/if}
                               <h2 class="text-center">Mot de passe oublié  ?</h2>
                               <p>Demandez votre de mot de passe .</p>

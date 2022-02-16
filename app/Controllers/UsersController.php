@@ -13,7 +13,7 @@ class UsersController extends Pages{
     // qui va gerer le verification : RENVoie un boolean 
     public function verificate_login(string $pseudo, string $passwd): bool
     {
-        $resp = $this->conn->getPseudo($pseudo, $passwd);
+        $resp = $this->conn->login($pseudo, $passwd);
 
         //verifie sic'est une tbaleau est que  
         if (is_array($resp) && isset($resp[0]->name)){ 
@@ -21,6 +21,8 @@ class UsersController extends Pages{
                     'pseudo'=>$resp[0]->name
                     ]); 
             return true; 
+        }else{
+
         }
         return false; 
     }
@@ -34,7 +36,7 @@ class UsersController extends Pages{
                     $cmpt++; 
                 }
             }if ($cmpt === count($data)){ // si les nombres des champs remplie
-                if($this->verif_email($data) && $this->verif_conf_password($data['password'], $data['Confirm_password'])){
+                if($this->verif_conf_password($data['password'], $data['Confirm_password'])){
                     $firstname = esc($data['firstname']); 
                     $lastname = esc($data['lastname']); 
                     $city = esc($data['city']); 
@@ -70,23 +72,16 @@ class UsersController extends Pages{
         }return false; 
     } 
 
-    public function verificate_mdp_oublier(array $data)
+    public function verificate_mdp_oublier(array $data): bool
     {
-        if ($this->verif_email($data)){
-            $resp_query = $this->conn->getEmail($data['email']); 
-            if(count($resp_query) === 1){
-                return true; 
-            }return false; 
-        }return false; 
-    }
-
-    private function verif_email(array $data)
-    {
-        if(strpos($data['email'], "@")){
+        $resp_query = $this->conn->getEmail($data['email']); 
+        if(count($resp_query) === 1){
             return true; 
         }return false; 
+        return false; 
     }
 
+    
     private function verif_conf_password(string $password, string $confPasswd)
     {
         if ($password === $confPasswd){

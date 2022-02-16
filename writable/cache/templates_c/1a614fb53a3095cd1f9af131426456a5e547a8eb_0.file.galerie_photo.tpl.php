@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 04:32:46
+/* Smarty version 4.0.4, created on 2022-02-16 08:03:53
   from '/var/www/html/ardis/app/Views/galerie_photo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620b814e9277b7_36733578',
+  'unifunc' => 'content_620d0449579606_75690700',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a614fb53a3095cd1f9af131426456a5e547a8eb' => 
     array (
       0 => '/var/www/html/ardis/app/Views/galerie_photo.tpl',
-      1 => 1644921164,
+      1 => 1645020232,
       2 => 'file',
     ),
   ),
@@ -20,45 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620b814e9277b7_36733578 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d0449579606_75690700 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1294050970620b814e925002_00941564', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1662781282620d0449571589_80568048', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1294050970620b814e925002_00941564 extends Smarty_Internal_Block
+class Block_1662781282620d0449571589_80568048 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1294050970620b814e925002_00941564',
+    0 => 'Block_1662781282620d0449571589_80568048',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
-
-    <div class="container ">
-        <!-- locate -->
-        <div class="row " aria-label="breadcrumb ">
-            <ol class="breadcrumb ">
-                <li>Vous êtes ici: </li>
-                <li class="breadcrumb-item ">
-                    <a href="./index.html " class="text-black ">
-                        Accueil
-                    </a>
-                </li>
-                <li class="breadcrumb-item ">
-                    <a href="galerie_photo.html" class="text-black ">
-                        Galerie photos
-                    </a>
-                </li>
-            </ol>
-        </div>
-    </div>
 
     <section>
         <article>
