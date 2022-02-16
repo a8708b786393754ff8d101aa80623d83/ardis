@@ -9,7 +9,7 @@ class Visiteur extends Pages{
     public function __construct(){
         parent::__construct();
         $this->userContr = new UsersController;
-        $this->errorHunt = new Connexion_error; 
+        $this->errorHunt = new ConnexionError; 
     }
 
     public function login()

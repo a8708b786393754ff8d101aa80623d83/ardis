@@ -3,7 +3,7 @@
     
 <article>
     <div class="container-fluid ">
-        <img class="image_dubai img-fluid" src="{base_url('assets/Images/dubai/hotel-desert-dubai.png')}" alt="image dubai">
+        <img class="image_dubai img-fluid" src="{base_url('assets/Images')|cat:'/'}{$name_file|capitalize|cat:'.webp'}" alt="image dubai">
         <i class="fa-solid fa-envelope"></i>
         <div class="row ">
             <div class="notes">

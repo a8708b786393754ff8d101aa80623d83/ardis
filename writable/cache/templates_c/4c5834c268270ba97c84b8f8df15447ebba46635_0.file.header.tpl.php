@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 08:36:24
+/* Smarty version 4.0.4, created on 2022-02-16 15:22:11
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d0be86f8ec4_37181335',
+  'unifunc' => 'content_620d6b0372c528_74282552',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1645022182,
+      1 => 1645046526,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d0be86f8ec4_37181335 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d6b0372c528_74282552 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,13 +69,13 @@ function content_620d0be86f8ec4_37181335 (Smarty_Internal_Template $_smarty_tpl)
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/punta_cana');?>
+" href="<?php echo base_url('pages/sampatico');?>
 ">Punta cana</a></li>
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/dubai');?>
 ">Dubai</a></li>
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/suisse');?>
+" href="<?php echo base_url('pages/alpardis');?>
 ">Suisse</a></li>
                               <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/hawai');?>
@@ -153,7 +153,7 @@ function content_620d0be86f8ec4_37181335 (Smarty_Internal_Template $_smarty_tpl)
                         Accueil
                     </a>
                 </li>
-                <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'hawai' || $_smarty_tpl->tpl_vars['name_file']->value == 'punta_cana' || $_smarty_tpl->tpl_vars['name_file']->value == 'dubai' || $_smarty_tpl->tpl_vars['name_file']->value == 'suisse') {?>
+                <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'hawai' || $_smarty_tpl->tpl_vars['name_file']->value == 'sampatico' || $_smarty_tpl->tpl_vars['name_file']->value == 'dubai' || $_smarty_tpl->tpl_vars['name_file']->value == 'alpardis') {?>
                     <li class="breadcrumb-item ">
                     <a href="" class="text-black ">
                         Nos hotels

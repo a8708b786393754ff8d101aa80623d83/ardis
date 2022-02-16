@@ -32,8 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('pages/(:any)', 'Pages::view/$1');
 $routes->get('pages/', 'Pages::index');
+$routes->get('pages/(:any)', 'Pages::view/$1');
+// $routes->get('hotel/(:any)', 'HotelController::view/$1');
 
 $routes->group('visitor', function ($routes){
     $routes->add('/', 'Pages::index');

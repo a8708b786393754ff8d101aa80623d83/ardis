@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-15 06:45:23
+/* Smarty version 4.0.4, created on 2022-02-16 15:40:50
   from '/var/www/html/ardis/app/Views/dubai.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620ba063c3cca6_60455654',
+  'unifunc' => 'content_620d6f62a1f866_75989213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68605d0fff79854acd5c5deaea89800fddeef110' => 
     array (
       0 => '/var/www/html/ardis/app/Views/dubai.tpl',
-      1 => 1644786417,
+      1 => 1645047596,
       2 => 'file',
     ),
   ),
@@ -20,55 +20,33 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620ba063c3cca6_60455654 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d6f62a1f866_75989213 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2098792547620ba063c3bc68_16322384', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2035616669620d6f62a1dea4_67491374', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_2098792547620ba063c3bc68_16322384 extends Smarty_Internal_Block
+class Block_2035616669620d6f62a1dea4_67491374 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_2098792547620ba063c3bc68_16322384',
+    0 => 'Block_2035616669620d6f62a1dea4_67491374',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/ardis/app/ThirdParty/smarty/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 ?>
 
     
-<div class="container ">
-    <!-- locate -->
-    <div class="row " aria-label="breadcrumb">
-        <ol class="breadcrumb ">
-            <li>Vous ete ici: </li>
-            <li class="breadcrumb-item ">
-                <a href="../index.html " class="text-black ">
-                    Accueil
-                </a>
-            </li>
-            <li class="breadcrumb-item ">
-                <a href="#" class="text-black ">
-                    Nos hotels
-                </a>
-            </li>
-            <li class="breadcrumb-item ">
-                <a href="# " class="text-black ">
-                    Dubai
-                </a>
-            </li>
-        </ol>
-    </div>
-</div>
-
 <article>
     <div class="container-fluid ">
-        <img class="image_dubai img-fluid" src="<?php echo base_url('assets/Images/dubai/hotel-desert-dubai.png');?>
+        <img class="image_dubai img-fluid" src="<?php echo (base_url('assets/Images')).('/');
+echo (smarty_modifier_capitalize($_smarty_tpl->tpl_vars['name_file']->value)).('.webp');?>
 " alt="image dubai">
         <i class="fa-solid fa-envelope"></i>
         <div class="row ">

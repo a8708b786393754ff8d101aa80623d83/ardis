@@ -37,9 +37,9 @@
                              Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/punta_cana')}">Punta cana</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/sampatico')}">Punta cana</a></li>
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/dubai')}">Dubai</a></li>
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/suisse')}">Suisse</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/alpardis')}">Suisse</a></li>
                               <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/hawai')}">Hawai</a></li>
                         </ul>
                     </li>
@@ -92,7 +92,7 @@
                         Accueil
                     </a>
                 </li>
-                {if $name_file == 'hawai' || $name_file == 'punta_cana' || $name_file == 'dubai'|| $name_file == 'suisse'}
+                {if $name_file == 'hawai' || $name_file == 'sampatico' || $name_file == 'dubai'|| $name_file == 'alpardis'}
                     <li class="breadcrumb-item ">
                     <a href="" class="text-black ">
                         Nos hotels

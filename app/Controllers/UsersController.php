@@ -21,10 +21,7 @@ class UsersController extends Pages{
                     'pseudo'=>$resp[0]->name
                     ]); 
             return true; 
-        }else{
-
-        }
-        return false; 
+        }return false; 
     }
 
     public function verificate_create_account(array $data): bool

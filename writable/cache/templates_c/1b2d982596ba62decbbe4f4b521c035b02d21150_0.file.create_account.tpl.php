@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 13:49:08
+/* Smarty version 4.0.4, created on 2022-02-16 13:56:22
   from '/var/www/html/ardis/app/Views/create_account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d5534eb7023_06505535',
+  'unifunc' => 'content_620d56e609cee8_67155576',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1b2d982596ba62decbbe4f4b521c035b02d21150' => 
     array (
       0 => '/var/www/html/ardis/app/Views/create_account.tpl',
-      1 => 1645040946,
+      1 => 1645041380,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d5534eb7023_06505535 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620d56e609cee8_67155576 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58115337620d5534eb0418_78727337', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1761039729620d56e6099bb6_60869132', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_58115337620d5534eb0418_78727337 extends Smarty_Internal_Block
+class Block_1761039729620d56e6099bb6_60869132 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_58115337620d5534eb0418_78727337',
+    0 => 'Block_1761039729620d56e6099bb6_60869132',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
-            <?php if ((isset($_smarty_tpl->tpl_vars['message']->value))) {?>
+            <?php if ((isset($_smarty_tpl->tpl_vars['message']->value)) && !empty($_smarty_tpl->tpl_vars['message']->value)) {?>
                 <div class="p-3 mb-2 bg-danger text-white">
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['message']->value, 'msg');

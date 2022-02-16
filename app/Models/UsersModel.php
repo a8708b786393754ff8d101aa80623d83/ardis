@@ -10,7 +10,7 @@ class UsersModel extends Model
                 "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
                 "client_tel", "compte_client","resrv_client","client_avis"
                 ];
-    protected $returnType    = 'App\Entities\User_entity';
+    protected $returnType    = 'App\Entities\UserEntity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

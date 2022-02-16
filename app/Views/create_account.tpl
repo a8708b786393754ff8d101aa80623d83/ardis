@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
-            {if isset($message)}
+            {if isset($message) && ! empty($message)}
                 <div class="p-3 mb-2 bg-danger text-white">
                     {foreach from=$message item=msg}
                     {$msg|cat:" <br>\n"}
