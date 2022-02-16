@@ -40,6 +40,7 @@
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/punta_cana')}">Punta cana</a></li>
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/dubai')}">Dubai</a></li>
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/suisse')}">Suisse</a></li>
+                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/hawai')}">Hawai</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
