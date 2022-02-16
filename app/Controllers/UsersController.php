@@ -27,7 +27,6 @@ class UsersController extends Pages{
 
     public function verificate_create_account(array $data){
         // verifie si la longeur des element du post sont a 11
-        var_dump(count($data)); 
         if (count($data) === 11){
             $cmpt = 0; 
             foreach($data as $keys=>$element){
@@ -66,6 +65,7 @@ class UsersController extends Pages{
                         'compt_pseudo' => $pseudo, 
                         'compt_pass'   => $password
                     ]);  
+                    return true; 
                 }
             }return false; 
         }return false; 

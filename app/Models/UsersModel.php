@@ -30,9 +30,7 @@ class UsersModel extends Model
     public function appendUser(array $contact, array $identify)
     {
         $id = $this->getEmail($contact['client_email']);
-        var_dump($id); 
         if(is_array($id)){
-            var_dump('a'); 
             if(count($id) === 0){
                 $builder_clients = $this->db->table('clients'); 
                 $builder_compte = $this->db->table('compte'); 
