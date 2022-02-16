@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : Dim 13 fév. 2022 à 18:53
+-- Généré le : mer. 16 fév. 2022 à 10:16
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `activites` (
   `activ_dispo` int(2) NOT NULL,
   `hotel_id` int(1) NOT NULL,
   PRIMARY KEY (`activ_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `activites`
@@ -50,7 +50,10 @@ INSERT INTO `activites` (`activ_id`, `activ_nom`, `activ_image`, `activ_loca`, `
 (2, 'Jet-ski', 'jet-sski.webp', 'Punta Cana', 50, '2022-07-23', 'Initiation au Jet-Ski', 0, 1),
 (3, 'Visite phare de bayahibe', 'phare.webp', 'Punta Cana', 15, '2020-09-12', 'Visite phare de bayahibe avec notre guide', 3, 1),
 (4, 'Ski', 'ski.webp', 'Suisse', 100, '2020-06-28', 'Ski sur nos pistes privées', 5, 3),
-(5, 'Raquette', 'raquette.webp', 'Suisse', 150, '2020-06-12', 'Raquette entre amis sur nos pistes privées', 3, 3);
+(5, 'Raquette', 'raquette.webp', 'Suisse', 150, '2020-06-12', 'Raquette entre amis sur nos pistes privées', 3, 3),
+(6, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2018-03-20', 'Promenade en chameaux dans le désert', 0, 2),
+(7, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2017-03-20', 'Promenade en chameaux dans le désert', 0, 2),
+(8, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2015-03-20', 'Promenade en chameaux dans le désert', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -178,7 +181,7 @@ DROP TABLE IF EXISTS `clients`;
 CREATE TABLE IF NOT EXISTS `clients` (
   `client_id` int(11) NOT NULL AUTO_INCREMENT,
   `client_nom` varchar(50) NOT NULL,
-  `client_prénom` varchar(50) NOT NULL,
+  `client_prenom` varchar(50) NOT NULL,
   `client_adresse` varchar(100) NOT NULL,
   `client_cp` varchar(50) NOT NULL,
   `client_ville` varchar(50) NOT NULL,
@@ -198,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `clients` (
 -- Déchargement des données de la table `clients`
 --
 
-INSERT INTO `clients` (`client_id`, `client_nom`, `client_prénom`, `client_adresse`, `client_cp`, `client_ville`, `client_pays`, `client_email`, `client_tel`, `compte_client`, `resrv_client`, `client_avis`) VALUES
+INSERT INTO `clients` (`client_id`, `client_nom`, `client_prenom`, `client_adresse`, `client_cp`, `client_ville`, `client_pays`, `client_email`, `client_tel`, `compte_client`, `resrv_client`, `client_avis`) VALUES
 (1, 'MATHIEU', 'Antoine', '3 Rue de la Gare', '75000', 'Paris', 'France', 'mathieuAntoine@gmaiL.com', '06 54 85 12 40', NULL, NULL, NULL),
 (2, 'KURT', 'Cobain', '171 Lake Washington Blvd E', 'WA 98112-5033', 'Seattle', 'USA', 'shot.gun@gmail.com', '09 11 52 49 87', NULL, NULL, NULL),
 (3, 'JEAN-CHRYSOSTOME', 'Dolto', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '09 14 78 54 70', NULL, NULL, NULL),
@@ -240,21 +243,10 @@ INSERT INTO `compte` (`compt_id`, `compt_pseudo`, `compt_pass`, `client_id`) VAL
 DROP TABLE IF EXISTS `consomations`;
 CREATE TABLE IF NOT EXISTS `consomations` (
   `conso_id` int(11) NOT NULL AUTO_INCREMENT,
-  `conso_nom` varchar(50) NOT NULL,
-  `conso_tarif` int(5) DEFAULT NULL,
-  `conso_nbr` int(5) DEFAULT NULL,
-  `conso_menu` int(11) DEFAULT NULL,
   `client_cons` int(11) DEFAULT NULL,
   PRIMARY KEY (`conso_id`),
-  KEY `conso_clinet_fk` (`client_cons`)
+  KEY `conso_client_fk` (`client_cons`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `consomations`
---
-
-INSERT INTO `consomations` (`conso_id`, `conso_nom`, `conso_tarif`, `conso_nbr`, `conso_menu`, `client_cons`) VALUES
-(1, 'menu 2', 20, 3, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -327,20 +319,21 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `menu_id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_nom` varchar(50) NOT NULL,
   `menu_prix` varchar(11) NOT NULL,
-  `hotel_id` int(11) NOT NULL,
   `menu_descri` varchar(800) NOT NULL,
   `menu_image` varchar(255) NOT NULL,
   `conso_menu` int(11) DEFAULT NULL,
   PRIMARY KEY (`menu_id`),
   KEY `menu_conso_fk` (`conso_menu`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `menu`
 --
 
-INSERT INTO `menu` (`menu_id`, `menu_nom`, `menu_prix`, `hotel_id`, `menu_descri`, `menu_image`, `conso_menu`) VALUES
-(1, 'Menu végétarien', '5.82€', 3, 'Menu végétarien ', 'menu_vege.webp', NULL);
+INSERT INTO `menu` (`menu_id`, `menu_nom`, `menu_prix`, `menu_descri`, `menu_image`, `conso_menu`) VALUES
+(1, 'Menu végétarien', '5.82', 'Cette recette végétarienne gastronomique est également vegan. La sauce au cresson est réalisée à base de noix de cajou qui lui ajoute du corps, le condiment d’estragon et amandes grillées donne de la texture tandis que les pommes de terre rôties offrent fondant et douceur.', 'menu_vege.webp', NULL),
+(2, 'Menu enfant', '5.99', 'Le menu enfant comporte une viande ou un poisson avec accompagnement au choix (légumes de saison, féculents) et un dessert au chocolat ou aux fruits réalisé par notre pâtissier Ce menu servi à la demande est servi aux enfants de moins de 12 ans et permet à l ensemble de la table ou du groupe de passer un agréable moment culinaire.', 'menu_enfant.webp', NULL),
+(3, 'Menu du jour', '9.99', 'Le menu jour de lan comporte des œufs de poule surprise Nougat de foie gras glacé au jus de canard et Clémentine Noix de Saint-Jacques de Dieppe poêlées / endives à la carbonara jus court Filet de perdreau cuisiné en canapé et glacé au porto.', 'menu_du_jour.webp', NULL);
 
 -- --------------------------------------------------------
 
@@ -358,20 +351,22 @@ CREATE TABLE IF NOT EXISTS `reservations` (
   `client_id` int(11) NOT NULL,
   `chamb_reserv` int(11) NOT NULL,
   `chamb_id` int(11) NOT NULL,
+  `hotel_id` int(11) NOT NULL,
+  `activ_id` int(11) DEFAULT NULL,
   `activ_reserv` int(11) DEFAULT NULL,
   `conso_reserv` int(11) DEFAULT NULL,
   PRIMARY KEY (`reserv_id`),
   KEY `reserv_activ_fk` (`activ_reserv`),
-  KEY `reserv_cons_fk` (`conso_reserv`),
   KEY `reserv_chambre_fk` (`chamb_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `reservations`
 --
 
-INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `reserv_prixar`, `reserv_datepayar`, `client_id`, `chamb_reserv`, `chamb_id`, `activ_reserv`, `conso_reserv`) VALUES
-(1, '2021-05-12', '2021-05-22', 30, '2021-04-05', 2, 8, 8, NULL, NULL);
+INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `reserv_prixar`, `reserv_datepayar`, `client_id`, `chamb_reserv`, `chamb_id`, `hotel_id`, `activ_id`, `activ_reserv`, `conso_reserv`) VALUES
+(1, '2021-05-12', '2021-05-22', 30, '2021-04-05', 2, 8, 8, 1, 1, NULL, NULL),
+(2, '2022-01-01', '2022-01-02', 30, '2022-01-01', 3, 12, 12, 2, NULL, NULL, NULL);
 
 --
 -- Contraintes pour les tables déchargées
@@ -382,7 +377,6 @@ INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `re
 --
 ALTER TABLE `clients`
   ADD CONSTRAINT `client_avis_fk` FOREIGN KEY (`client_avis`) REFERENCES `avis` (`avis_id`),
-  ADD CONSTRAINT `client_compte_fk` FOREIGN KEY (`compte_client`) REFERENCES `compte` (`compt_id`),
   ADD CONSTRAINT `client_reserv_fk` FOREIGN KEY (`resrv_client`) REFERENCES `reservations` (`reserv_id`);
 
 --
@@ -399,18 +393,11 @@ ALTER TABLE `hotels`
   ADD CONSTRAINT `hotel_menu_fk` FOREIGN KEY (`hotel_activ`) REFERENCES `activites` (`activ_id`);
 
 --
--- Contraintes pour la table `menu`
---
-ALTER TABLE `menu`
-  ADD CONSTRAINT `menu_conso_fk` FOREIGN KEY (`conso_menu`) REFERENCES `consomations` (`conso_id`);
-
---
 -- Contraintes pour la table `reservations`
 --
 ALTER TABLE `reservations`
   ADD CONSTRAINT `reserv_activ_fk` FOREIGN KEY (`activ_reserv`) REFERENCES `activites` (`activ_id`),
-  ADD CONSTRAINT `reserv_chambre_fk` FOREIGN KEY (`chamb_id`) REFERENCES `chambres` (`chamb_id`),
-  ADD CONSTRAINT `reserv_cons_fk` FOREIGN KEY (`conso_reserv`) REFERENCES `consomations` (`conso_id`);
+  ADD CONSTRAINT `reserv_chambre_fk` FOREIGN KEY (`chamb_id`) REFERENCES `chambres` (`chamb_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
