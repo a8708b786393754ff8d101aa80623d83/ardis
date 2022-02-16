@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 02:59:08
+/* Smarty version 4.0.4, created on 2022-02-16 07:44:24
   from 'C:\wamp64\www\ardis\app\Views\base\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620cbcdc06d870_24282206',
+  'unifunc' => 'content_620cffb8cca888_53976444',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c6ee69f2fe9b30f87aed4a73ba0d2a06a6d41c88' => 
     array (
       0 => 'C:\\wamp64\\www\\ardis\\app\\Views\\base\\header.tpl',
-      1 => 1645001946,
+      1 => 1645019057,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620cbcdc06d870_24282206 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620cffb8cca888_53976444 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +77,9 @@ function content_620cbcdc06d870_24282206 (Smarty_Internal_Template $_smarty_tpl)
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/suisse');?>
 ">Suisse</a></li>
+                              <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('pages/hawai');?>
+">Hawai</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

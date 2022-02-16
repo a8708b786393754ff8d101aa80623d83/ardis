@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-14 09:53:57
+/* Smarty version 4.0.4, created on 2022-02-16 07:44:24
   from 'C:\wamp64\www\ardis\app\Views\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620a7b15d04fd7_53889997',
+  'unifunc' => 'content_620cffb8b9ad35_69273367',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e4861418cdebd7144d06a8a59303e675b08729bb' => 
     array (
       0 => 'C:\\wamp64\\www\\ardis\\app\\Views\\index.tpl',
-      1 => 1644853104,
+      1 => 1645008797,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620a7b15d04fd7_53889997 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620cffb8b9ad35_69273367 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1628402618620a7b15ca5131_46814045', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1700350407620cffb8b783c1_04285779', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1628402618620a7b15ca5131_46814045 extends Smarty_Internal_Block
+class Block_1700350407620cffb8b783c1_04285779 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1628402618620a7b15ca5131_46814045',
+    0 => 'Block_1700350407620cffb8b783c1_04285779',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,7 +65,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <img src="<?php echo base_url('assets/Images/punta_cana/photo-1571003123894-1f0594d2b5d9.png');?>
 " class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
                 <div class="card-body text-center">
-                    <h5 class="card-title"><a href="<?php echo base_url('punta_cana.tpl');?>
+                    <h5 class="card-title"><a href="<?php echo base_url('pages/punta_cana');?>
 ">Punta cana</a></h5>
                     <p class="card-text ">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text ">a partir de 250€</p>
@@ -75,7 +75,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <img src="<?php echo base_url('assets/Images/dubai/hotel-desert-dubai.png');?>
 " class="card-img-top d-block mx-auto" alt="hotel_dubai">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="<?php echo base_url('dubai.tpl');?>
+                    <h5 class="card-title"><a href="<?php echo base_url('pages/dubai');?>
 ">Dubai</a></h5>
                     <p class="card-text text-start">Hotel ardis dubai</p>
                     <p style="color: #ff00aa;" class="card-text text-start">a partir de 320€</p>
@@ -85,7 +85,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <img src="<?php echo base_url('assets/Images/suisse/images2.png');?>
 " class="card-img-top d-block mx-auto" alt="hotel_suisse">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="<?php echo base_url('suisse.tpl');?>
+                    <h5 class="card-title"><a href="<?php echo base_url('pages/suisse');?>
 ">Suisse</a></h5>
                     <p class="card-text text-start">Hotel ardis Sampatico</p>
                     <p style="color: #ff00aa ;" class="card-text text-start">a partir de 100€</p>
@@ -94,7 +94,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
         <div class="container">
             <div class="d-grid gap-2 d-md-block">
-                <a href="<?php echo base_url('punta_cana.tpl');?>
+                <a href="<?php echo base_url('#');?>
 " class="btn">Pour en savoir plus</a>
             </div>
         </div>
