@@ -10,30 +10,18 @@ class UsersModel extends Model
                 "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
                 "client_tel", "compte_client","resrv_client","client_avis"
                 ];
-    // protected $returnType    = 'App\Entities\User_entity';
+    protected $returnType    = 'App\Entities\User_entity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-
     public function __construct()
     {
         parent::__construct();
     }
-
-    // public function updateUser(array $dataUpdate)
-    // {
-    //     if(isset($data['compt_pseudo']) || isset($data['compt_pass'])){
-    //         foreach($data as $keys=>$values){
-    //             $id = intval($this->getId($, $values)); 
-    //             $this->db->update($id, )
-    //         }
-    //     }
-    // }
-
-    public function is_account(string $table, string $element){
+    public function getId(string $table, string $element){
         if($table === 'compt_pseudo' || $table === 'client_email'){
             if ($table === 'client_email'){
                 $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$element.'"';
@@ -50,20 +38,33 @@ class UsersModel extends Model
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 
-    public function appendUser(array $data)
+    public function appendUser(array $contact, array $identify)
     {
-        $id = $this->is_account('client_email', $data['client_email']);
-        var_dump($id); 
+        $id = $this->getId('client_email', $contact['client_email']);
         if(is_array($id)){
-            if(count($id) === 1){
-                var_dump($data); 
+            var_dump('a'); 
+            if(count($id) === 0){
+                $builder_clients = $this->db->table('clients'); 
+                $builder_compte = $this->db->table('compte'); 
+                $builder_clients->insert($contact); 
+                $builder_compte->insert($identify); 
+
+                $builder_compte->get(); 
+                $builder_clients->get(); 
+                return true; 
             }
-            // $add_user = $this->db->table('client'); 
-            // $add_user->select("")
-            
-            return true; 
         } return false; 
     }
+
+    // public function updateUser(array $dataUpdate)
+    // {
+    //     if(isset($data['compt_pseudo']) || isset($data['compt_pass'])){
+    //         foreach($data as $keys=>$values){
+    //             $id = intval($this->getId($, $values)); 
+    //             $this->db->update($id, )
+    //         }
+    //     }
+    // }
 
     // public function delete()
     // {
