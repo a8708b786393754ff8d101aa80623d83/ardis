@@ -6,7 +6,7 @@
 <article>
     <h1>Hotel Aloardis</h1>
     <div class="container-fluid ">
-        <img class="image_suisse"src="{base_url('assets/Images/hawai/hawai.jpg')}" alt="image hawai hotel">
+        <img class="image_suisse"src="{base_url('assets/Images/nos_hotels/hawai.jpg')}" alt="image hawai hotel">
         <i class="fa-solid fa-envelope"></i>
         <div class="row ">
             <i class="fas fa-map-marker-alt gps_icone "></i>

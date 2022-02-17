@@ -2,7 +2,7 @@
 {block name=content}
 <article>
     <div class="container-fluid ">
-        <img class="image_hotel img-fluid"  src="{base_url('assets/Images')|cat:'/'}{$name_file|capitalize|cat:'.webp'}" alt="image punta_cana ">
+        <img class="image_hotel img-fluid"  src="{base_url('assets/Images/nos_hotels/')|cat:'/punta_cana'|cat:'.webp'}" alt="image punta_cana ">
         <i class="fa-solid fa-envelope"></i>
         <div class="row ">
            <div class="description">

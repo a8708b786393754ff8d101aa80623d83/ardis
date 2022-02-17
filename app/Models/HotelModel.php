@@ -3,7 +3,6 @@ namespace App\Models;
 use CodeIgniter\Model; 
 
 class HotelModel extends Model{
-
     protected $table         = 'clients';
     protected $primaryKey    = 'client_id';
     protected $allowedFields = ["client_id","client_nom","client_prénom",
@@ -31,5 +30,22 @@ class HotelModel extends Model{
                 ORDER BY hotel_price 
                 LIMIT 3'
                 )->getResult(); 
+    }
+
+    public function getAll(string $hotel)
+    {
+        return $this->db->query(
+            'SELECT hotel_nom,hotel_image,hotel_pays,hotel_price, hotel_ville, hotel_note, hotel_contenue
+            FROM hotels
+            WHERE hotel_price = ?'
+        , [$hotel]);
+    }
+
+    public function getName()
+    {
+        return $this->db->query(
+                        'SELECT hotel_nom
+                        FROM hotels
+                        ');
     }
 }

@@ -1,27 +1,29 @@
 <?php 
-namespace App\Controllers; 
-use App\Models\UsersModel;
+namespace App\Models; 
 
-class UsersController extends Pages{
-    private $conn; 
-
+class UserManager extends UsersModel{
+    protected $errorHunt; 
     public function __construct(){
-        $this->conn = new UsersModel();
         parent::__construct();
+        $this->errorHunt = new ConnexionManager; 
     }
 
-    // qui va gerer le verification : RENVoie un boolean 
-    public function verificate_login(string $pseudo, string $passwd): bool
+    public function verificate_login($requests)
     {
-        $resp = $this->conn->login($pseudo, $passwd);
-
-        //verifie sic'est une tbaleau est que  
-        if (is_array($resp) && isset($resp[0]->name)){ 
-            $this->session->set([
-                    'pseudo'=>$resp[0]->name
-                    ]); 
-            return true; 
-        }return false; 
+        var_dump($this->session); 
+        if ($requests === 'post'){
+            $pseudo = $_POST['username']; 
+            $password = $_POST['password']; 
+            if ($pseudo !== '' || $password !== ''){
+                $resp = $this->login(esc($pseudo), esc($password));
+                if (is_array($resp) && count($resp) === 1){ // si la requete est bonne
+                    $this->session->set([
+                        'pseudo'=>$resp[0]->name,
+                        'id'=>$resp[0]->id
+                    ]); return []; 
+                }
+            }return $this->errorHunt->hunt_error_login($password, $pseudo); //renvoie le message d'erreur
+        }return []; 
     }
 
     public function verificate_create_account(array $data): bool

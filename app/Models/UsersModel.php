@@ -21,13 +21,14 @@ class UsersModel extends Model
     {
         parent::__construct();
     }
-    public function login(string $username,string $password)
+
+    protected function login(string $username,string $password)
     {   
-        $sql = 'SELECT compt_id , compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
+        $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 
-    public function appendUser(array $contact, array $identify)
+    protected function appendUser(array $contact, array $identify)
     {
         $id = $this->getEmail($contact['client_email']);
         if(is_array($id)){
@@ -44,11 +45,13 @@ class UsersModel extends Model
         } return false; 
     }
 
-    public function getEmail(string $email)
+    protected function getEmail(string $email)
     {
         $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$email.'"';
         return $this->db->query($sql)->getResult(); 
     }
+
+    
 
     // public function updateUser(array $dataUpdate)
     // {

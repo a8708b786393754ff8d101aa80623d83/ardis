@@ -7,6 +7,7 @@ use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Smarty; 
 use Psr\Log\LoggerInterface;
 
 /**
@@ -20,7 +21,6 @@ use Psr\Log\LoggerInterface;
  * For security be sure to declare any new methods as protected or private.
  * 
  */
-use Smarty; 
 class BaseController extends Controller
 {
     /**
@@ -38,7 +38,8 @@ class BaseController extends Controller
      * @var array
      */
     protected $helpers = [];
-
+    protected array $_data;
+	protected $_smarty;
 
     /**
      * Constructor.
@@ -63,11 +64,12 @@ class BaseController extends Controller
 
 	}
  
-    public function display(string $strTemplate){
+    public function display(string $strTemplate='index.tpl'){
         foreach($this->_data as $key=>$value){
             $this->_smarty->assign($key, $value);
         }
-        $this->_smarty->debugging = true;
+        
+        // $this->_smarty->debugging = true;
         $this->_smarty->display($strTemplate);
     }
 }

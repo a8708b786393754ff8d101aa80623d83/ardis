@@ -10,7 +10,6 @@
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <title>{$name_file}</title>
-    {* {$smarty.session} *}
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.jpg')})">
@@ -30,17 +29,17 @@
                 <ul class="navbar-nav">
                     <!-- item navbar  -->
                     <li class="nav-item">
-                        <a class="nav-link active text-{$color_link_nav}" aria-current="page" href="{base_url('pages/index')}">Accueil</a>
+                        <a class="nav-link active text-{$color_link_nav}" aria-current="page" href="{base_url('pages')}">Accueil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-{$color_link_nav}" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                              Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/sampatico')}">Punta cana</a></li>
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/dubai')}">Dubai</a></li>
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/alpardis')}">Suisse</a></li>
-                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('pages/hawai')}">Hawai</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotels/sampatico')}">Punta cana</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotels/dubai')}">Dubai</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotels/alpardis')}">Suisse</a></li>
+                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotels/hawai')}">Hawai</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

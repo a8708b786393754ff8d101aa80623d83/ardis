@@ -2,18 +2,20 @@
 namespace App\Controllers; 
 use App\Models\HotelModel;
 
-class HotelController {
-    private array $bestHotel; 
-    private $conn; 
-
-    public function __construct()
+class HotelController extends Pages{
+    public function getAllInfo(string $hotel)
     {
-        $this->conn = new HotelModel; 
+        return $this->conn->getAll($hotel); 
     }
 
-    public function index(): array 
+    public function getName()
     {
-        return $this->conn->getBestHotels(); 
+        var_dump($this->helpers);
+        $this->setLayoutHotels($this->conn->getName()); 
+    }
+
+    private function setLayoutHotels($data){
+        $this->_data['hotels'] = $data; 
     }
 
 }

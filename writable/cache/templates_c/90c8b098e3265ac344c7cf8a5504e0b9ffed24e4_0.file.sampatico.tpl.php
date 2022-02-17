@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 15:39:18
+/* Smarty version 4.0.4, created on 2022-02-17 07:26:12
   from '/var/www/html/ardis/app/Views/sampatico.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d6f06db8ec2_82245757',
+  'unifunc' => 'content_620e4cf4bd6f24_36037587',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '90c8b098e3265ac344c7cf8a5504e0b9ffed24e4' => 
     array (
       0 => '/var/www/html/ardis/app/Views/sampatico.tpl',
-      1 => 1645047546,
+      1 => 1645104371,
       2 => 'file',
     ),
   ),
@@ -20,32 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d6f06db8ec2_82245757 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620e4cf4bd6f24_36037587 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1964088939620d6f06db5077_81084453', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1780033073620e4cf4bd5c04_51073913', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1964088939620d6f06db5077_81084453 extends Smarty_Internal_Block
+class Block_1780033073620e4cf4bd5c04_51073913 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1964088939620d6f06db5077_81084453',
+    0 => 'Block_1780033073620e4cf4bd5c04_51073913',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/ardis/app/ThirdParty/smarty/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 ?>
 
 <article>
     <div class="container-fluid ">
-        <img class="image_hotel img-fluid"  src="<?php echo (base_url('assets/Images')).('/');
-echo (smarty_modifier_capitalize($_smarty_tpl->tpl_vars['name_file']->value)).('.webp');?>
+        <img class="image_hotel img-fluid"  src="<?php echo ((base_url('assets/Images/nos_hotels/')).('/punta_cana')).('.webp');?>
 " alt="image punta_cana ">
         <i class="fa-solid fa-envelope"></i>
         <div class="row ">

@@ -1,8 +1,8 @@
 <?php 
-namespace App\Controllers; 
+namespace App\Models; 
 
 // class pour les message d'erruer pour tout ce qui est connexion 
-class ConnexionError {
+class ConnexionManager {
     private array $error; 
 
     public function __construct()
@@ -10,19 +10,16 @@ class ConnexionError {
         $this->error = []; 
     }
 
-    public function hunt_error_login(array $post, $resp)
+    public function hunt_error_login(string $password, string $pseudo)
     {
-        if(!$resp){
-            if($this->verif_lenght_password($post['password'], 8)){
-                return 'Votre mot de passe est trop petit';
-            }
-            return 'Votre mot de passe/idenitifiant incorrecte! '; 
-        }
-
         $pseudo = isset($post['pseudo']);
         $password = isset($post['password']);
+
+        if(! $this->verif_lenght_password($password, 8)){
+            $this->error[] = 'Votre mot de passe est trop petit';
+        }
         if(empty($password) || empty($pseudo)){
-            array_push($this->error,'Veuillez entrez votre mot de passe et identifiant'); 
+            $this->error[] = 'Veuillez entrez votre mot de passe et identifiant'; 
         }
         return $this->error; 
     }
@@ -63,9 +60,8 @@ class ConnexionError {
 
     private function verif_lenght_password(string $password, int $min_length=8)
     {
-        if(strlen($password) >= $min_length){
-            return true; 
-        }return false; 
+        return strlen($password) >= $min_length;
+
     }
 
 

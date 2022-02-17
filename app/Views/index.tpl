@@ -20,18 +20,16 @@
     <section>
         <h2 class="text-center presentation_hotel">Nos meuilleur hotel avec les meuilleur prix</h2>
         <div class="card-group">
-        {if $element}
-            {foreach from=$element  key=key item=item}                
-                <div class="card">
-                    <img src="{base_url('assets/Images/')|cat:'/'|cat:$item->hotel_nom|cat:'.webp'}" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="{base_url('pages')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
-                        <p class="card-text ">Hotel ardis {$item->hotel_nom}</p>
-                        <p style="color: #ff00aa ;" class="card-text">a partir de {$item->hotel_price}€</p>
-                    </div>
+        {foreach from=$element  key=key item=item}                
+            <div class="card">
+                <img src="{base_url('assets/Images/nos_hotels')|cat:'/'|cat:$item->hotel_image}" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><a href="{base_url('pages')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
+                    <p class="card-text ">Hotel ardis {$item->hotel_nom}</p>
+                    <p style="color: #ff00aa ;" class="card-text">a partir de {$item->hotel_price}€</p>
                 </div>
-            {/foreach}
-        {/if}
+            </div>
+        {/foreach}
         </div>
         <div class="container">
             <div class="d-grid gap-2 d-md-block">

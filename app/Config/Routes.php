@@ -34,7 +34,10 @@ $routes->setAutoRoute(true);
 
 $routes->get('pages/', 'Pages::index');
 $routes->get('pages/(:any)', 'Pages::view/$1');
-// $routes->get('hotel/(:any)', 'HotelController::view/$1');
+
+$routes->group('hotels', function ($routes){
+    $routes->add('/', 'Pages::index');
+});
 
 $routes->group('visitor', function ($routes){
     $routes->add('/', 'Pages::index');

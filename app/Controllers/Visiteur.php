@@ -1,34 +1,23 @@
 <?php 
 
 namespace App\Controllers; 
+use App\Models\UserManager;
 
 class Visiteur extends Pages{
-    protected $userContr;
-    protected $errorHunt;
+    private $userManager;
+    private $errorHunt;
 
     public function __construct(){
         parent::__construct();
-        $this->userContr = new UsersController;
-        $this->errorHunt = new ConnexionError; 
+        $this->userManager = new UserManager;
     }
 
     public function login()
     {
-        $error = []; 
-        if ($this->request->getMethod() === 'post'){
-            // verifie si la methode est bien post
-            $pseudo = esc($this->request->getVar('username'));
-            $passwd = esc($this->request->getVar('password')); 
-            if ($pseudo !== '' && $passwd !== ''){
-                $resp =  $this->userContr->verificate_login($pseudo, $passwd);
-                if(!$resp){
-                    $error = $this->errorHunt->hunt_error_login($this->request->getPost(), $resp); 
-                }else{
-                    return redirect()->to('http://localhost/ardis/public/customers/');
-                }
-            }
-        }
-        $this->view('login', $error);
+        $mesg = $this->userManager->verificate_login($this->request->getMethod());
+        var_dump($this->session); 
+        $this->_data['message'] = $mesg;  
+        $this->view('login');
     }
 
     public function create_account()
