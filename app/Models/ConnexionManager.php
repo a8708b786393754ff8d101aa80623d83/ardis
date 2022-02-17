@@ -3,66 +3,61 @@ namespace App\Models;
 
 // class pour les message d'erruer pour tout ce qui est connexion 
 class ConnexionManager {
-    private array $error; 
+    private $error = []; 
 
-    public function __construct()
+    public function hunt_error_login(string $password, string $pseudo): array 
     {
-        $this->error = []; 
-    }
-
-    public function hunt_error_login(string $password, string $pseudo)
-    {
-        $pseudo = isset($post['pseudo']);
-        $password = isset($post['password']);
-
-        if(! $this->verif_lenght_password($password, 8)){
+        // reecrire le code est voir tout les option 
+        if($this->length_password($password, 8)){
             $this->error[] = 'Votre mot de passe est trop petit';
         }
         if(empty($password) || empty($pseudo)){
-            $this->error[] = 'Veuillez entrez votre mot de passe et identifiant'; 
+            $this->error[] = 'Veuillez entrez votre mot de passe et/ou identifiant'; 
         }
         return $this->error; 
     }
-    public function forget_password(bool $resp) 
+
+    public function forget_password($email, $resp): array 
     {
-        if(! $resp){
-        return [
-            "danger"=>'Verifier votre email!'
-            ];
-        }
-        return [
-            'success'=>'Un email va vous etre envoyer',
-        ];
+        if($this->verif_email($email)){
+            if(count($resp) === 1){
+                return ['success'=>'Un email va vous etre envoyer'];
+            }
+        } return ["danger"=>'Verifier votre email!'];
     }
 
     public function hunt_error_create_account(array $post): array 
     {
         $tel = $post['tel']; 
+        $email = $post['email']; 
         $password = $post['password']; 
         $confirm_password = $post['Confirm_password']; 
 
         if(! $this->verif_conf_password($password, $confirm_password)){
-            array_push($this->error,'Veuillez entrez le meme mot de passe!'); 
+            $this->error[] ='Veuillez entrez le meme mot de passe!';
         }if(! is_numeric($tel)){
-            array_push($this->error,'Veuillez entrez un numero de telephone valide!'); 
-        }if(! $this->verif_lenght_password($password)){
-            array_push($this->error,'Veuillez entrez un mot de passe de plus de huit carachtere!'); 
+            $this->error[] ='Veuillez entrez un numero de telephone valide!';
+        }if(! $this->length_password($password)){
+            $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
+        }if(! $this->verif_email($email)){
+            $this->error[] = 'Veuillez entrez un email valide'; 
         }
         return $this->error; 
     }
 
-    private function verif_conf_password(string $password, string $confPasswd)
+    private function verif_conf_password(string $password, string $confPasswd): bool 
     {
-        if ($password === $confPasswd){
-            return true; 
-        }return false; 
+        return $password === $confPasswd; 
     }
 
-    private function verif_lenght_password(string $password, int $min_length=8)
+    private function length_password(string $password, int $min_length=8): bool 
     {
-        return strlen($password) >= $min_length;
-
+        return strlen($password) > $min_length;
     }
 
+    private function verif_email($email): bool
+    {
+        return is_string($email) && strpos($email, '@'); 
+    }
 
 }

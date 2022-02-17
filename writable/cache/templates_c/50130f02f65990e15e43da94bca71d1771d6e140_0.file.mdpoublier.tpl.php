@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 12:18:59
+/* Smarty version 4.0.4, created on 2022-02-17 13:57:54
   from '/var/www/html/ardis/app/Views/mdpoublier.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d4013c11ed6_56169160',
+  'unifunc' => 'content_620ea8c2171ba9_97110295',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '50130f02f65990e15e43da94bca71d1771d6e140' => 
     array (
       0 => '/var/www/html/ardis/app/Views/mdpoublier.tpl',
-      1 => 1645035537,
+      1 => 1645127562,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d4013c11ed6_56169160 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620ea8c2171ba9_97110295 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1724211212620d4013c0d103_37182633', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2024387409620ea8c21621e6_14490014', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1724211212620d4013c0d103_37182633 extends Smarty_Internal_Block
+class Block_2024387409620ea8c21621e6_14490014 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1724211212620d4013c0d103_37182633',
+    0 => 'Block_2024387409620ea8c21621e6_14490014',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -49,7 +49,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         <div class="panel-body">
                             <div class="text-center">
                               <h3><i class="fa fa-lock fa-4x"></i></h3>
-                              <?php if ((isset($_smarty_tpl->tpl_vars['message']->value))) {?>
+                              <?php if (!empty($_smarty_tpl->tpl_vars['message']->value)) {?>
                                   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['message']->value, 'msg', false, 'color');
 $_smarty_tpl->tpl_vars['msg']->do_else = true;

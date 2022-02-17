@@ -8,7 +8,7 @@
                         <div class="panel-body">
                             <div class="text-center">
                               <h3><i class="fa fa-lock fa-4x"></i></h3>
-                              {if isset($message)}
+                              {if !empty($message)}
                                   {foreach from=$message key=color item=msg}
                                     <div class="p-3 mb-2 bg-{$color} text-white">{$msg}</div>                                  
                                   {/foreach}

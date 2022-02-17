@@ -42,7 +42,8 @@ class UsersModel extends Model
                 $builder_compte->get(); 
                 return true; 
             }
-        } return false; 
+        }
+        return false; 
     }
 
     protected function getEmail(string $email)
