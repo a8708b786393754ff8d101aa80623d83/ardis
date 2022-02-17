@@ -3,10 +3,9 @@
 namespace App\Controllers; 
 use App\Models\UserManager;
 
-class Visiteur extends Pages{
-    private $userManager;
+class Visitor extends Pages{
+    protected $userManager;
     private $errorHunt;
-    
 
     public function __construct(){
         parent::__construct();

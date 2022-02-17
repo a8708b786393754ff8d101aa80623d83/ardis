@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-17 15:39:54
-  from '/var/www/html/ardis/app/Views/alpardis.tpl' */
+/* Smarty version 4.0.4, created on 2022-02-17 15:46:32
+  from '/var/www/html/ardis/app/Views/aloardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620ec0aade4c10_00356346',
+  'unifunc' => 'content_620ec238639af9_98217243',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6541a7561a180a8599b217c481d032ca5e41142b' => 
+    'eaa8023708b7b5be570a553acd0b4299407b8335' => 
     array (
-      0 => '/var/www/html/ardis/app/Views/alpardis.tpl',
-      1 => 1645133972,
+      0 => '/var/www/html/ardis/app/Views/aloardis.tpl',
+      1 => 1645134379,
       2 => 'file',
     ),
   ),
@@ -20,30 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620ec0aade4c10_00356346 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620ec238639af9_98217243 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_626109608620ec0aaddd796_70675318', 'content');
-$_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_487276755620ec23862f3f4_60577790', 'content');
+?>
+
+<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_626109608620ec0aaddd796_70675318 extends Smarty_Internal_Block
+class Block_487276755620ec23862f3f4_60577790 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_626109608620ec0aaddd796_70675318',
+    0 => 'Block_487276755620ec23862f3f4_60577790',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <article>
-    <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
-</h1>
     <div class="container-fluid ">
         <img class="image_<?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
 " src="<?php echo (base_url('assets/Images/nos_hotels')).('/');
@@ -51,6 +51,8 @@ echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_image;?>
 " alt="image <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
  hotel">
                 <div class="row ">
+            <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel "><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_pays;?>
 / <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_ville;?>
@@ -69,7 +71,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
             <div class="localisation_hotel ">
             <p><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_contenue;?>
 </p>
-            <p>A partir de <span styl='color: purple;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
+            <p>A partir de <span style='color: #ff00aa;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
 €</span></p>
             <a href="<?php echo base_url('galerie_photo');?>
 " class=" btn galerie_photo ">Galerie_photo</a>

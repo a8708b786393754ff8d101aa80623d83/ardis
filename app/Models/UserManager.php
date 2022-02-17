@@ -1,12 +1,14 @@
 <?php 
 namespace App\Models; 
+use App\Models\UsersModel;
 
-class UserManager extends UsersModel{
+class UserManager{
     protected $errorHunt;
+    private $respQuery; 
 
     public function __construct(){
-        parent::__construct();
         $this->errorHunt = new ConnexionManager; 
+        $this->respQuery = new UsersModel; 
     }
 
     public function verificate_login($method, $session): array 
@@ -15,7 +17,7 @@ class UserManager extends UsersModel{
             $pseudo = $_POST['username']; 
             $password = $_POST['password']; 
             if ($pseudo !== '' || $password !== ''){
-                $resp = $this->login(esc($pseudo), esc($password));
+                $resp = $this->respQuery(esc($pseudo), esc($password));
                 if (is_array($resp) && count($resp) === 1){ // si la requete est bonne on a joute le pseudo est son id dans la session
                     $session->set([
                         'pseudo'=>$resp[0]->name,
@@ -46,7 +48,7 @@ class UserManager extends UsersModel{
                     }
                     // si les nombres des champs remplie
                     if ($cmpt === count($_POST)){
-                        $this->appendUser([
+                        $this->respQuery->appendUser([
                         'client_nom'    => esc($_POST['lastname']), 
                         'client_prenom' => esc($_POST['firstname']), 
                         'client_cp'     => esc($_POST['CP']), 
@@ -71,7 +73,7 @@ class UserManager extends UsersModel{
     {
         if ($method === 'post'){
             $email = $_POST['email']; 
-            $resp_query = $this->getEmail($email); 
+            $resp_query = $this->respQuery->getEmail($email); 
             return  $this->errorHunt->forget_password($email, $resp_query);
         }return []; 
     }

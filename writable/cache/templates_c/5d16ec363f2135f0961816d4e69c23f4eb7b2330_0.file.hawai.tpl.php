@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-17 07:22:41
+/* Smarty version 4.0.4, created on 2022-02-17 15:45:14
   from '/var/www/html/ardis/app/Views/hawai.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620e4c21d99897_28820665',
+  'unifunc' => 'content_620ec1eaec34d3_11437688',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5d16ec363f2135f0961816d4e69c23f4eb7b2330' => 
     array (
       0 => '/var/www/html/ardis/app/Views/hawai.tpl',
-      1 => 1645104158,
+      1 => 1645134314,
       2 => 'file',
     ),
   ),
@@ -20,55 +20,67 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620e4c21d99897_28820665 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620ec1eaec34d3_11437688 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_903478357620e4c21d98834_79919507', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_779088501620ec1eaebe7c2_61604033', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_903478357620e4c21d98834_79919507 extends Smarty_Internal_Block
+class Block_779088501620ec1eaebe7c2_61604033 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_903478357620e4c21d98834_79919507',
+    0 => 'Block_779088501620ec1eaebe7c2_61604033',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<div class="container ">
-    <!-- locate -->
-
 <article>
-    <h1>Hotel Aloardis</h1>
     <div class="container-fluid ">
-        <img class="image_suisse"src="<?php echo base_url('assets/Images/hawai.jpg');?>
-" alt="image hawai hotel">
-        <i class="fa-solid fa-envelope"></i>
-        <div class="row ">
+        <img class="image_<?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+" src="<?php echo (base_url('assets/Images/nos_hotels')).('/');
+echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_image;?>
+" alt="image <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+ hotel">
+                <div class="row ">
+            <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
-            <p class="city_hotel ">Hawai/ Waikiki Beach</p>
+            <p class="city_hotel "><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_pays;?>
+/ <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_ville;?>
+</p>
             <div class="start ">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
+                <?php
+$_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_note+1 - (1) : 1-($_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_note)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+if ($_smarty_tpl->tpl_vars['foo']->total > 0) {
+for ($_smarty_tpl->tpl_vars['foo']->value = 1, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++) {
+$_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration === 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration === $_smarty_tpl->tpl_vars['foo']->total;?>
+                    <i class="fas fa-star "></i>
+                <?php }
+}
+?>
             </div>
             <div class="localisation_hotel ">
-            <p>Notre hôtel Aloardis à 5 étoiles se situe  à Hawai , plus précisément à Waikiki Beach, la nuit est <span style="color:#ff00aa ;">à partir de 500 €</span>.</p>
-            <p>L'hôtel est situé a quelques pas de la mer : amoureux en lune de miel , cet hôtel est pour vous! Cette hôtel a 10 chambres avec uniquement des lits deux places .</p>
-            <a href="../galerie_photo.html" class=" btn galerie_photo ">Galerie_photo</a>
+            <p><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_contenue;?>
+</p>
+            <p>A partir de <span style='color: #ff00aa;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
+€</span></p>
+            <a href="<?php echo base_url('galerie_photo');?>
+" class=" btn galerie_photo ">Galerie_photo</a>
         </div>
-
+        
         <div class="presentation ">
-            <p>Pour les activités , nous vous proposont une balade en bateau , nager avec les dauphins et une visite de l'île en avion.</p>
-            <a href="../reservation.html" class=" btn reserver-btn  ">Réserver</a>
+            <p>Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.</p>
+            <a href="<?php echo base_url('reserver');?>
+" class=" btn reserver-btn  ">Réserver</a>
         </div>
     </div>
 </article>

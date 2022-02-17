@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-16 15:40:50
+/* Smarty version 4.0.4, created on 2022-02-17 15:39:43
   from '/var/www/html/ardis/app/Views/dubai.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620d6f62a1f866_75989213',
+  'unifunc' => 'content_620ec09f471043_47066209',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68605d0fff79854acd5c5deaea89800fddeef110' => 
     array (
       0 => '/var/www/html/ardis/app/Views/dubai.tpl',
-      1 => 1645047596,
+      1 => 1645133981,
       2 => 'file',
     ),
   ),
@@ -20,61 +20,67 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620d6f62a1f866_75989213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620ec09f471043_47066209 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2035616669620d6f62a1dea4_67491374', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_264701547620ec09f46c846_56634816', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_2035616669620d6f62a1dea4_67491374 extends Smarty_Internal_Block
+class Block_264701547620ec09f46c846_56634816 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_2035616669620d6f62a1dea4_67491374',
+    0 => 'Block_264701547620ec09f46c846_56634816',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/ardis/app/ThirdParty/smarty/plugins/modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 ?>
 
-    
 <article>
+    <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+</h1>
     <div class="container-fluid ">
-        <img class="image_dubai img-fluid" src="<?php echo (base_url('assets/Images')).('/');
-echo (smarty_modifier_capitalize($_smarty_tpl->tpl_vars['name_file']->value)).('.webp');?>
-" alt="image dubai">
-        <i class="fa-solid fa-envelope"></i>
-        <div class="row ">
-            <div class="notes">
-                <h1 class="title">Hotel ardis Dubai</h1>
-                <i class="fas fa-map-marker-alt "></i>
-                <p class="city_hotel ">Dubai</p>
-                <div class="start ">
+        <img class="image_<?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+" src="<?php echo (base_url('assets/Images/nos_hotels')).('/');
+echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_image;?>
+" alt="image <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+ hotel">
+                <div class="row ">
+            <i class="fas fa-map-marker-alt gps_icone "></i>
+            <p class="city_hotel "><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_pays;?>
+/ <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_ville;?>
+</p>
+            <div class="start ">
+                <?php
+$_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_note+1 - (1) : 1-($_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_note)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+if ($_smarty_tpl->tpl_vars['foo']->total > 0) {
+for ($_smarty_tpl->tpl_vars['foo']->value = 1, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++) {
+$_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration === 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration === $_smarty_tpl->tpl_vars['foo']->total;?>
                     <i class="fas fa-star "></i>
-                    <i class="fas fa-star "></i>
-                    <i class="fas fa-star "></i>
-                    <i class="fas fa-star "></i>
-                    <i class="fas fa-star "></i>
-                </div>
+                <?php }
+}
+?>
             </div>
-            <div class="localisation_hotel">
-            <p class=".text-center-sm">L'hôtel se trouve à Dubaï. si aiment les climats chauds et le desert, dans notre hôtel vous seriez au bon endroit.La nuit est <span style="color:#ff00aa ;">à partir de 320 €</span>.</p>
-            <p class=".text-center-sm">L'hôtel est assez proche pour voit les tempêtess de sable arriver, ces tempêtes ne sont pas dangereux .Cet hôtel 5 étoiles à 5 ilots et dans un chaque ilot il y a 1 grand lit pour 2 personnes, ce séjour-là c'est fait pour les amoureux. Les sorties sont organisées selon vos envies, vous pouvez visiter la ville ou vous se balader en chameaux.</p>
-            <a href="../galerie_photo.html" class=" btn galerie_photo ">Galerie_photo</a>
+            <div class="localisation_hotel ">
+            <p><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_contenue;?>
+</p>
+            <p>A partir de <span styl='color: purple;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
+€</span></p>
+            <a href="<?php echo base_url('galerie_photo');?>
+" class=" btn galerie_photo ">Galerie_photo</a>
         </div>
         
         <div class="presentation ">
-            <p class=".text-center-sm">L'hôtel est luxueux est bien assez proche de la mer. Cet hôtel 4 étoiles à 18 chambres à 4 lits chacune, 10 chambres à 2 lits.</p>
-            <p class=".text-center-sm">Les sorites sont organisés selon vos envies, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul.</p>
-            <a href="../reservation.html" class=" btn reserver-btn ">Réserver</a>
+            <p>Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.</p>
+            <a href="<?php echo base_url('reserver');?>
+" class=" btn reserver-btn  ">Réserver</a>
         </div>
     </div>
-
 </article>
 <?php
 }

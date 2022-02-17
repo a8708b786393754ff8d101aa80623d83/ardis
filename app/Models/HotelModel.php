@@ -37,8 +37,7 @@ class HotelModel extends Model{
         return $this->db->query(
             'SELECT hotel_nom,hotel_image,hotel_pays,hotel_price, hotel_ville, hotel_note, hotel_contenue
             FROM hotels
-            WHERE hotel_price = ?'
-        , [$hotel]);
+            WHERE hotel_nom = ?', [ucfirst($hotel)])->getResult();
     }
 
     public function getName()
@@ -46,6 +45,6 @@ class HotelModel extends Model{
         return $this->db->query(
                         'SELECT hotel_nom
                         FROM hotels
-                        ');
+                        ')->getResult();
     }
 }

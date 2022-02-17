@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-17 08:43:18
+/* Smarty version 4.0.4, created on 2022-02-17 14:28:07
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620e5f06302048_96350992',
+  'unifunc' => 'content_620eafd718c412_82494148',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1645108995,
+      1 => 1645129675,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620e5f06302048_96350992 (Smarty_Internal_Template $_smarty_tpl) {
+function content_620eafd718c412_82494148 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,16 +69,16 @@ function content_620e5f06302048_96350992 (Smarty_Internal_Template $_smarty_tpl)
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotels/sampatico');?>
+" href="<?php echo base_url('hotel/sampatico');?>
 ">Punta cana</a></li>
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotels/dubai');?>
+" href="<?php echo base_url('hotel/dubai');?>
 ">Dubai</a></li>
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotels/alpardis');?>
+" href="<?php echo base_url('hotel/alpardis');?>
 ">Suisse</a></li>
                               <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotels/hawai');?>
+" href="<?php echo base_url('hotel/hawai');?>
 ">Hawai</a></li>
                         </ul>
                     </li>

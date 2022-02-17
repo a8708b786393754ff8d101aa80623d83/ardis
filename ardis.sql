@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 16 fév. 2022 à 10:30
+-- Généré le : jeu. 17 fév. 2022 à 13:41
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -92,7 +92,7 @@ DROP TABLE IF EXISTS `chambres`;
 CREATE TABLE IF NOT EXISTS `chambres` (
   `chamb_id` int(5) NOT NULL,
   `chamb_num` int(5) NOT NULL,
-  `chamb_tel` varchar(10) NOT NULL,
+  `chamb_tel` varchar(20) NOT NULL,
   `nbr_lit` int(2) NOT NULL,
   `hotel_id` int(5) NOT NULL,
   `chamb_dispo` int(1) NOT NULL,
@@ -169,7 +169,17 @@ INSERT INTO `chambres` (`chamb_id`, `chamb_num`, `chamb_tel`, `nbr_lit`, `hotel_
 (63, 7, '0389451562', 4, 3, 0),
 (64, 8, '0389451562', 4, 3, 1),
 (65, 9, '0389451562', 4, 3, 0),
-(66, 10, '0389451562', 4, 3, 1);
+(66, 10, '0389451562', 4, 3, 1),
+(67, 1, '+1-808-687-7700', 2, 4, 0),
+(68, 2, '+1-808-687-7700', 2, 4, 0),
+(69, 3, '+1-808-687-7700', 2, 4, 1),
+(70, 4, '+1-808-687-7700', 2, 4, 0),
+(71, 5, '+1-808-687-7700', 2, 4, 0),
+(72, 6, '+1-808-687-7700', 2, 4, 0),
+(73, 7, '+1-808-687-7700', 2, 4, 0),
+(74, 8, '+1-808-687-7700', 2, 4, 0),
+(75, 9, '+1-808-687-7700', 2, 4, 0),
+(76, 10, '+1-808-687-7700', 2, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -246,7 +256,7 @@ CREATE TABLE IF NOT EXISTS `consomations` (
   `client_cons` int(11) DEFAULT NULL,
   PRIMARY KEY (`conso_id`),
   KEY `conso_client_fk` (`client_cons`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -263,7 +273,7 @@ CREATE TABLE IF NOT EXISTS `hotels` (
   `hotel_ville` varchar(50) NOT NULL,
   `hotel_pays` varchar(250) NOT NULL,
   `hotel_mail` varchar(50) NOT NULL,
-  `hotel_tel` int(10) NOT NULL,
+  `hotel_tel` text NOT NULL,
   `hotel_image` varchar(255) DEFAULT NULL,
   `hotel_activ` int(11) DEFAULT NULL,
   `hotel_menu` int(11) DEFAULT NULL,
@@ -275,16 +285,17 @@ CREATE TABLE IF NOT EXISTS `hotels` (
   KEY `hotel_image_fk` (`hotel_image`),
   KEY `hotel_menu_fk` (`hotel_activ`),
   KEY `hotel_activ_fk` (`hotel_menu`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `hotels`
 --
 
 INSERT INTO `hotels` (`hotel_id`, `hotel_nom`, `hotel_adresse`, `hotel_cp`, `hotel_ville`, `hotel_pays`, `hotel_mail`, `hotel_tel`, `hotel_image`, `hotel_activ`, `hotel_menu`, `hotel_chambre`, `hotel_price`, `hotel_note`, `hotel_contenue`) VALUES
-(1, 'Sampatico', 'Boulevard Zona Hotelera', '23302', 'Punta Cana', '', 'Sampatico@ardis.fr', 384551422, 'punta_cana.webp', NULL, NULL, NULL, 250, 4, 'L\'hotel se trouve en République domicaine a Punta cana.La nuit est à partir de 250€.\r\n\r\nPour les amoureux des caraibe, cette hotel ce trouve a l\'extremité de la mer de caraibe, avec une vue sur la mer est est les palmiers est le phare de bayahibe\r\n\r\nL\'hotel est luxueux est bien assez proche de la mer.Cette hotel 4 etoile a 18 chambre a 4 lits chacune, 10 chambre a 2 lits\r\n\r\nLes sorite sont organiser selon vos envie, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul'),
-(2, 'Daubaï', 'Dubai Fountain St - Downtown Dubai ', '00000', 'Dubaï', '', 'Dubaï@ardis.fr', 384581422, 'dubai.webp', NULL, NULL, NULL, 320, 5, 'L\'hôtel est assez proche pour voit les tempêtess de sable arriver, ces tempêtes ne sont pas dangereux .Cet hôtel 5 étoiles à 5 ilots et dans un chaque ilot il y a 1 grand lit pour 2 personnes, ce séjour-là c\'est fait pour les amoureux. Les sorties sont organisées selon vos envies, vous pouvez visiter la ville ou vous se balader en chameaux.\r\n\r\nL\'hôtel est luxueux est bien assez proche de la mer. Cet hôtel 4 étoiles à 18 chambres à 4 lits chacune, 10 chambres à 2 lits.\r\n\r\nLes sorites sont organisés selon vos envies, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul.'),
-(3, 'Alpardis', 'Rue du théatre 9', '54450', 'Turbenthal', '', 'Alpardis@ardis.fr', 384874422, 'suisse.webp', NULL, NULL, NULL, 100, 3, 'Notre hôtel alpadris à 3 étoiles se situe en Suisse, plus précisément à Turbenthal, la nuit est à partir de 100 €. L\'hôtel est situé dans les alpes, pour les amoureux de la neige est des montagnes, cet hôtel est pour vous. Par notre qualité de service nous sommes à top ! Il y a 5 étages et 10 chambres, 5 a deux lits et 10 pour 4 lits. Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.');
+(1, 'Sampatico', 'Boulevard Zona Hotelera', '23302', 'Punta Cana', 'République dominicaine ', 'Sampatico@ardis.fr', '384551422', 'punta_cana.webp', NULL, NULL, NULL, 250, 4, 'L\'hotel se trouve en République domicaine a Punta cana.La nuit est à partir de 250€.\r\n\r\nPour les amoureux des caraibe, cette hotel ce trouve a l\'extremité de la mer de caraibe, avec une vue sur la mer est est les palmiers est le phare de bayahibe\r\n\r\nL\'hotel est luxueux est bien assez proche de la mer.Cette hotel 4 etoile a 18 chambre a 4 lits chacune, 10 chambre a 2 lits\r\n\r\nLes sorite sont organiser selon vos envie, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul'),
+(2, 'Daubaï', 'Dubai Fountain St - Downtown Dubai ', '00000', 'Dubaï', 'Émirats arabes unis', 'Dubaï@ardis.fr', '384581422', 'dubai.webp', NULL, NULL, NULL, 320, 5, 'L\'hôtel est assez proche pour voit les tempêtess de sable arriver, ces tempêtes ne sont pas dangereux .Cet hôtel 5 étoiles à 5 ilots et dans un chaque ilot il y a 1 grand lit pour 2 personnes, ce séjour-là c\'est fait pour les amoureux. Les sorties sont organisées selon vos envies, vous pouvez visiter la ville ou vous se balader en chameaux.\r\n\r\nL\'hôtel est luxueux est bien assez proche de la mer. Cet hôtel 4 étoiles à 18 chambres à 4 lits chacune, 10 chambres à 2 lits.\r\n\r\nLes sorites sont organisés selon vos envies, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul.'),
+(3, 'Alpardis', 'Rue du théatre 9', '54450', 'Turbenthal', 'Suisse', 'Alpardis@ardis.fr', '384874422', 'suisse.webp', NULL, NULL, NULL, 100, 3, 'Notre hôtel alpadris à 3 étoiles se situe en Suisse, plus précisément à Turbenthal, la nuit est à partir de 100 €. L\'hôtel est situé dans les alpes, pour les amoureux de la neige est des montagnes, cet hôtel est pour vous. Par notre qualité de service nous sommes à top ! Il y a 5 étages et 10 chambres, 5 a deux lits et 10 pour 4 lits. Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.'),
+(4, 'Aloardis', '129 Paoakalani Ave', '96815', 'Honolulu', 'Hawai,USA', 'Aloardis@ardis.com', '+1-808-687-7700', 'hawai.webp', NULL, NULL, NULL, 500, 5, 'Notre hôtel Aloardis à 5 étoiles se situe  à Hawai , plus précisément à Waikiki Beach, la nuit est à partir de 500 €. L hôtel est situé a quelques pas de la mer : amoureux en lune de miel , cet hôtel est pour vous! Cette hôtel a 10 chambres avec uniquement des lits deux places .');
 
 -- --------------------------------------------------------
 
