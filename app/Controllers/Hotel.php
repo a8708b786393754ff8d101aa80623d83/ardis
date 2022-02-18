@@ -16,3 +16,5 @@ class Hotel extends Pages{
         $this->display($page.'.tpl');
     }
 }
+
+//Carlos

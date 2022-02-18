@@ -22,33 +22,37 @@ class UsersModel extends Model
         parent::__construct();
     }
 
-    protected function login(string $username,string $password)
+    public function login(string $username,string $password)
     {   
         $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 
-    protected function appendUser(array $contact, array $identify)
+    public function appendUser(array $contact, array $identify)
     {
-        $id = $this->getEmail($contact['client_email']);
-        if(is_array($id)){
-            if(count($id) === 0){
+        // if(is_array($id)){
+            // if(count($id) === 0){
                 $builder_clients = $this->db->table('clients'); 
                 $builder_compte = $this->db->table('compte'); 
                 $builder_clients->insert($contact); 
                 $builder_compte->insert($identify); 
-
-                $builder_clients->get(); 
+                $builder_clients->get();
                 $builder_compte->get(); 
-                return true; 
-            }
-        }
-        return false; 
+                // return true; 
+            // }
+        // }
+        // return false; 
     }
 
-    protected function getEmail(string $email)
+    public function is_a_account_by_email(string $email)
     {
         $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$email.'"';
+        return $this->db->query($sql)->getResult(); 
+    }
+
+    public function is_a_account_by_pseudo(string $pseudo)
+    {
+        $sql = 'SELECT compt_pseudo FROM compte WHERE compt_pseudo="'.esc($pseudo).'"';
         return $this->db->query($sql)->getResult(); 
     }
 

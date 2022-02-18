@@ -41,6 +41,8 @@ class ConnexionManager {
             $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
         }if(! $this->verif_email($email)){
             $this->error[] = 'Veuillez entrez un email valide'; 
+        }if(count($post) < 11){
+            $this->error[] = "Veuilleez remplire les tout les champs! "; 
         }
         return $this->error; 
     }

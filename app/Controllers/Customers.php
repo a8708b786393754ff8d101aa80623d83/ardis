@@ -1,7 +1,7 @@
 <?php 
 namespace App\Controllers; 
 
-class Customers extends Visiteur{
+class Customers extends Visitor{
 
     public function __construct()
     {
