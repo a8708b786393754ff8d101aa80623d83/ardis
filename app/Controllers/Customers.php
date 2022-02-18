@@ -13,9 +13,15 @@ class Customers extends Visitor{
         return redirect()->to('http://localhost/ardis/public/customers/');
     }
 
-    public function profile($nom)
+    public function profile($pseudo)
     {
-        $conn = new UsersController(); 
-        echo 'faireun truc ici';
+        // $msg = $this->userManager->verificate_create_account($this->request->getMethod()); 
+        $this->_data['pseudo'] = esc($pseudo); 
+        $this->view('profile'); 
+    }
+
+    public function  edit_profile()
+    {
+        $this->view('modif_profile'); 
     }
 }

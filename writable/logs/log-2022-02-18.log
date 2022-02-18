@@ -369,3 +369,24 @@ CRITICAL - 2022-02-18 03:35:17 --> Unable to load template 'file:assets.tpl'
 #6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-02-18 03:54:44 --> Unable to load template 'file:profile.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(29): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/app/Controllers/Customers.php(20): App\Controllers\Pages->view()
+#5 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#6 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-18 04:15:58 --> syntax error, unexpected '}'
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(790): class_exists()
+#5 /var/www/html/ardis/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
