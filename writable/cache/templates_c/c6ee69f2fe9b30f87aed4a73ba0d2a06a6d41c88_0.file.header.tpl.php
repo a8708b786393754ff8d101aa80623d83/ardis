@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 11:38:54
+/* Smarty version 4.0.4, created on 2022-02-21 12:01:52
   from 'C:\wamp64\www\ardis\app\Views\base\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6213ce2e5fa5a3_36372072',
+  'unifunc' => 'content_6213d3909c3e54_97686690',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c6ee69f2fe9b30f87aed4a73ba0d2a06a6d41c88' => 
     array (
       0 => 'C:\\wamp64\\www\\ardis\\app\\Views\\base\\header.tpl',
-      1 => 1645465017,
+      1 => 1645466508,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6213ce2e5fa5a3_36372072 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6213d3909c3e54_97686690 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,7 +120,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('customers/logout');?>
-">se déconnecter</a>
+">Se déconnecter</a>
                         </li>
                     <?php } else { ?>
                         <li class="nav-item">
@@ -149,7 +149,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 <div class="container ">
     <div class="row " aria-label="breadcrumb ">
             <ol class="breadcrumb ">
-                <li>Vous êtes ici : </li>
+                <li>Vous êtes ici :&nbsp;</li>
                 <li class="breadcrumb-item ">
                     <a href="<?php echo base_url('pages/index');?>
  " class="text-black ">

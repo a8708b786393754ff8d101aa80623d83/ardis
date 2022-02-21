@@ -13,8 +13,8 @@
                                     <div class="p-3 mb-2 bg-{$color} text-white">{$msg}</div>                                  
                                   {/foreach}
                               {/if}
-                              <h2 class="text-center">Mot de passe oublié  ?</h2>
-                              <p>Demandez votre de mot de passe .</p>
+                              <h2 class="text-center">Mot de passe oublié ?</h2>
+                              <p>Demandez votre mot de passe .</p>
                                 <div class="panel-body">
                                   
                                   <form class="{base_url('/visitor/mdpoublier')}" method='POST'>

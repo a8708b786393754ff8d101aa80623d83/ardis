@@ -3092,3 +3092,23 @@ CRITICAL - 2022-02-21 09:51:11 --> Undefined index: pays
 #23 C:\MAMP\htdocs\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #24 {main}
 >>>>>>> b274145d76a867c60eb6455e11730f2f97a58255
+CRITICAL - 2022-02-21 12:02:15 --> Unable to load template 'file:Daubaï.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\BaseController.php(73): Smarty_Internal_TemplateBase->display('Dauba\xC3\xAF.tpl')
+#3 C:\wamp64\www\ardis\app\Controllers\Hotel.php(46): App\Controllers\BaseController->display('Dauba\xC3\xAF.tpl')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Hotel->view('Dauba\xC3\xAF')
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+#6 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 12:02:18 --> Unable to load template 'file:Daubaï.tpl'
+#0 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 1)
+#1 C:\wamp64\www\ardis\app\ThirdParty\smarty\sysplugins\smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 1)
+#2 C:\wamp64\www\ardis\app\Controllers\BaseController.php(73): Smarty_Internal_TemplateBase->display('Dauba\xC3\xAF.tpl')
+#3 C:\wamp64\www\ardis\app\Controllers\Hotel.php(46): App\Controllers\BaseController->display('Dauba\xC3\xAF.tpl')
+#4 C:\wamp64\www\ardis\system\CodeIgniter.php(825): App\Controllers\Hotel->view('Dauba\xC3\xAF')
+#5 C:\wamp64\www\ardis\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+#6 C:\wamp64\www\ardis\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\ardis\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
