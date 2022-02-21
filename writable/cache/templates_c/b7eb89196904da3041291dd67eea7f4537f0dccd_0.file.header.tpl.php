@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 07:06:06
+/* Smarty version 4.0.4, created on 2022-02-21 09:11:19
   from 'C:\MAMP\htdocs\ardis\app\Views\base\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62138e3e11b0d3_00875008',
+  'unifunc' => 'content_6213ab97bfa484_18799625',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62138e3e11b0d3_00875008 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6213ab97bfa484_18799625 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
