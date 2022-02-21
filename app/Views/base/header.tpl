@@ -9,6 +9,7 @@
     Nous avons 3 hotels à dubai, 2 en suisse et 2 à punt cana. ">
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
+    <link rel="stylesheet" href="{base_url('assets/Fontawesome/css/font-awesome.min.css')}">
     <title>{$name_file}</title>
 </head>
 {if $name_file eq 'index'}
