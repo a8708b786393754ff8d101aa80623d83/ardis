@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-17 01:46:00
+/* Smarty version 4.0.4, created on 2022-02-21 03:56:55
   from 'C:\MAMP\htdocs\ardis\app\Views\base\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620dfd38e44e23_74759314',
+  'unifunc' => 'content_621361e7541108_93402005',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b7eb89196904da3041291dd67eea7f4537f0dccd' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\base\\header.tpl',
-      1 => 1645083809,
+      1 => 1645437415,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620dfd38e44e23_74759314 (Smarty_Internal_Template $_smarty_tpl) {
+function content_621361e7541108_93402005 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ function content_620dfd38e44e23_74759314 (Smarty_Internal_Template $_smarty_tpl)
 ">
     <title><?php echo $_smarty_tpl->tpl_vars['name_file']->value;?>
 </title>
-    </head>
+</head>
 <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'index') {?>
 <body style="background-image: url(<?php echo base_url('assets/Images/background.jpg');?>
 )">
@@ -59,7 +59,7 @@ function content_620dfd38e44e23_74759314 (Smarty_Internal_Template $_smarty_tpl)
                     <!-- item navbar  -->
                     <li class="nav-item">
                         <a class="nav-link active text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" aria-current="page" href="<?php echo base_url('pages/index');?>
+" aria-current="page" href="<?php echo base_url('pages');?>
 ">Accueil</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -69,16 +69,15 @@ function content_620dfd38e44e23_74759314 (Smarty_Internal_Template $_smarty_tpl)
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/sampatico');?>
+" href="<?php echo base_url('hotel/sampatico');?>
 ">Punta cana</a></li>
                             <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/dubai');?>
-">Dubai</a></li>
-                            <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/alpardis');?>
+" href="<?php echo base_url('hotel/dubai');?>
+">Dubai</a></li>                            <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo base_url('hotel/alpardis');?>
 ">Suisse</a></li>
                               <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('pages/hawai');?>
+" href="<?php echo base_url('hotel/Aloardis');?>
 ">Hawai</a></li>
                         </ul>
                     </li>

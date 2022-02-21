@@ -20,11 +20,11 @@
     <section>
         <h2 class="text-center presentation_hotel">Nos meuilleur hotel avec les meuilleur prix</h2>
         <div class="card-group">
-        {foreach from=$element  key=key item=item}                
+        {foreach from=$element  key=key item=item}
             <div class="card">
                 <img src="{base_url('assets/Images/nos_hotels')|cat:'/'|cat:$item->hotel_image}" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
                 <div class="card-body text-center">
-                    <h5 class="card-title"><a href="{base_url('pages')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
+                    <h5 class="card-title"><a href="{base_url('hotel')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
                     <p class="card-text ">Hotel ardis {$item->hotel_nom}</p>
                     <p style="color: #ff00aa ;" class="card-text">a partir de {$item->hotel_price}€</p>
                 </div>

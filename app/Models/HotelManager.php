@@ -18,4 +18,8 @@ class HotelManager {
     {
         return $this->respQuery->getName(); 
     }
+
+    public function getBestHotel(){
+        return $this->respQuery->getBestHotels(); 
+    }
 }

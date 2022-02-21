@@ -38,7 +38,7 @@ class UserManager{
                 $not_empty = 0; 
                 if (count($_POST) === 11){
                     //parcour le contenue du post est regarde si c'est pas vide
-                    foreach($_POST as $keys=>$element){
+                    foreach($_POST as $_=>$element){
                         if(! empty($element)){
                             $not_empty++; 
                         }
@@ -47,7 +47,7 @@ class UserManager{
                     if ($not_empty === count($_POST)){
                         $is_register_pseudo = $this->respQuery->is_a_account_by_pseudo($_POST['pseudo']); 
                         $is_register_email = $this->respQuery->is_a_account_by_email($_POST['email']);
-                        if(empty($is_register_pseudo) ){
+                        if(empty($is_register_pseudo)){
                             if(empty($is_register_email)){
                                 $this->respQuery->appendUser([
                                     'client_nom'    => esc($_POST['lastname']), 

@@ -1,15 +1,14 @@
 <?php 
 namespace App\Controllers;
-use App\Models\HotelModel;
+use App\Models\HotelManager;
 
 class Pages extends BaseController{
     protected $session; 
-    protected $hotelCtrl; 
-    protected $conn; 
+    protected $hotelMngr; 
 
     public function __construct(){
         $this->session = session();
-        $this->conn = new HotelModel; 
+        $this->hotelMngr = new HotelManager; 
         helper('url');
     }
 
@@ -17,7 +16,7 @@ class Pages extends BaseController{
     {
         $this->_data['color_link_nav'] = 'white';
         $this->_data['name_file'] = 'index';
-        $this->_data['element'] = $this->conn->getBestHotels(); 
+        $this->_data['element'] = $this->hotelMngr->getBestHotel(); 
         $this->display();
         die; 
     }

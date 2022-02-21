@@ -37,9 +37,9 @@
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/sampatico')}">Punta cana</a></li>
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/dubai')}">Dubai</a></li>
+                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/dubai')}">Dubai</a></li>{* mettre le valeur de lien la ville*}
                             <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/alpardis')}">Suisse</a></li>
-                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/hawai')}">Hawai</a></li>
+                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/Aloardis')}">Hawai</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

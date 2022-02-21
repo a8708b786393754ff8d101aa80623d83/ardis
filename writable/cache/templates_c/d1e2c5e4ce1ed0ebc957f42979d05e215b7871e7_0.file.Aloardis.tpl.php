@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 03:51:06
-  from 'C:\MAMP\htdocs\ardis\app\Views\hawai.tpl' */
+/* Smarty version 4.0.4, created on 2022-02-21 03:56:01
+  from 'C:\MAMP\htdocs\ardis\app\Views\Aloardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6213608a0ab8b7_99056674',
+  'unifunc' => 'content_621361b1d1ef38_67857486',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '85ded8d11b0a76ee1d1266df91cda66d90b80ca0' => 
+    'd1e2c5e4ce1ed0ebc957f42979d05e215b7871e7' => 
     array (
-      0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\hawai.tpl',
-      1 => 1645437062,
+      0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\Aloardis.tpl',
+      1 => 1645437358,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6213608a0ab8b7_99056674 (Smarty_Internal_Template $_smarty_tpl) {
+function content_621361b1d1ef38_67857486 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12797412306213608a0a0e06_34265137', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_39100574621361b1d14721_27723126', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_12797412306213608a0a0e06_34265137 extends Smarty_Internal_Block
+class Block_39100574621361b1d14721_27723126 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_12797412306213608a0a0e06_34265137',
+    0 => 'Block_39100574621361b1d14721_27723126',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

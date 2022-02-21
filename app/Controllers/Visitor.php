@@ -5,7 +5,6 @@ use App\Models\UserManager;
 
 class Visitor extends Pages{
     protected $userManager;
-    private $errorHunt;
 
     public function __construct(){
         parent::__construct();

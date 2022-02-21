@@ -1,11 +1,11 @@
 {extends file='base/layout.tpl'}
 {block name=content}
 <article>
-    <h1>Hotel {$hotel_info[0]->hotel_nom}</h1>
     <div class="container-fluid ">
         <img class="image_{$hotel_info[0]->hotel_nom}" src="{base_url('assets/Images/nos_hotels')|cat:'/'}{$hotel_info[0]->hotel_image}" alt="image {$hotel_info[0]->hotel_nom} hotel">
         {* <i class="fa-solid fa-envelope"></i> *}
         <div class="row ">
+            <h1>Hotel {$hotel_info[0]->hotel_nom}</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel ">{$hotel_info[0]->hotel_pays}/ {$hotel_info[0]->hotel_ville}</p>
             <div class="start ">
