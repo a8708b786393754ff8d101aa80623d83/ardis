@@ -3,11 +3,11 @@
  <!-- reservation -->
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
-            <h1 class="text-center text-white">Decouvrez nos hotels <br> sur tout les climats...</h1>
+            <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
             <form class="form-control bg-transparent reservation">
-                <label for="reservation" class="text-white">Du:</label>
+                <label for="reservation" class="text-white">Du :</label>
                 <input type="date" class="">
-                <label for="reservation" class="text-white">Au:</label>
+                <label for="reservation" class="text-white">Au :</label>
                 <input type="date" class="">
                 <input type="submit" name="sub" class="btn-dark" value="chercher">
             </form>
@@ -18,7 +18,7 @@
 
     <!-- partie meuilleur hotel/prix -->
     <section>
-        <h2 class="text-center presentation_hotel">Nos meuilleur hotel avec les meuilleur prix</h2>
+        <h2 class="text-center presentation_hotel">Le fleuron de nos hôtels aux meilleurs prix</h2>
         <div class="card-group">
         {foreach from=$element  key=key item=item}
             <div class="card">
@@ -26,7 +26,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title"><a href="{base_url('hotel')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
                     <p class="card-text ">Hotel ardis {$item->hotel_nom}</p>
-                    <p style="color: #ff00aa ;" class="card-text">a partir de {$item->hotel_price}€</p>
+                    <p style="color: #ff00aa ;" class="card-text">à partir de {$item->hotel_price}€</p>
                 </div>
             </div>
         {/foreach}

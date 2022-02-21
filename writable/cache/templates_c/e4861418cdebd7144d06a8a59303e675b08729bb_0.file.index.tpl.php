@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 11:38:54
+/* Smarty version 4.0.4, created on 2022-02-21 11:51:04
   from 'C:\wamp64\www\ardis\app\Views\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6213ce2e585845_99294066',
+  'unifunc' => 'content_6213d1089fb596_54804936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e4861418cdebd7144d06a8a59303e675b08729bb' => 
     array (
       0 => 'C:\\wamp64\\www\\ardis\\app\\Views\\index.tpl',
-      1 => 1645450165,
+      1 => 1645465861,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6213ce2e585845_99294066 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6213d1089fb596_54804936 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10820068236213ce2e547521_61824174', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5482955266213d1089d9609_65371458', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_10820068236213ce2e547521_61824174 extends Smarty_Internal_Block
+class Block_5482955266213d1089d9609_65371458 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_10820068236213ce2e547521_61824174',
+    0 => 'Block_5482955266213d1089d9609_65371458',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -44,11 +44,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
  <!-- reservation -->
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
-            <h1 class="text-center text-white">Decouvrez nos hotels <br> sur tout les climats...</h1>
+            <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
             <form class="form-control bg-transparent reservation">
-                <label for="reservation" class="text-white">Du:</label>
+                <label for="reservation" class="text-white">Du :</label>
                 <input type="date" class="">
-                <label for="reservation" class="text-white">Au:</label>
+                <label for="reservation" class="text-white">Au :</label>
                 <input type="date" class="">
                 <input type="submit" name="sub" class="btn-dark" value="chercher">
             </form>
@@ -59,7 +59,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
     <!-- partie meuilleur hotel/prix -->
     <section>
-        <h2 class="text-center presentation_hotel">Nos meuilleur hotel avec les meuilleur prix</h2>
+        <h2 class="text-center presentation_hotel">Le fleuron de nos hôtels aux meilleurs prix</h2>
         <div class="card-group">
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['element']->value, 'item', false, 'key');
@@ -79,7 +79,7 @@ echo ((base_url('hotel')).('/')).($_prefixVariable1);?>
 </a></h5>
                     <p class="card-text ">Hotel ardis <?php echo $_smarty_tpl->tpl_vars['item']->value->hotel_nom;?>
 </p>
-                    <p style="color: #ff00aa ;" class="card-text">a partir de <?php echo $_smarty_tpl->tpl_vars['item']->value->hotel_price;?>
+                    <p style="color: #ff00aa ;" class="card-text">à partir de <?php echo $_smarty_tpl->tpl_vars['item']->value->hotel_price;?>
 €</p>
                 </div>
             </div>
