@@ -1,7 +1,7 @@
 {extends file='base/layout.tpl'}
 {block name=content}
 
-    {if isset($message)}
+    {if isset($message) && is_array($message)}
       <div class='container'>
         <div class='row'>
         {foreach from=$message item=$msg}
@@ -9,7 +9,10 @@
         {/foreach}
         </div>
       </div>
-
+      {else}
+        <script type="text/javascript">
+          window.location.replace("http://localhost/ardis/public/customers/");
+        </script>
     {/if}
     <div class="wrapper fadeInDown">
       <div id="formContent">
@@ -21,7 +24,7 @@
     
         <!-- Login Form -->
         <form action="{base_url('/visitor/login/')}" method="POST">
-          <input type="text" id="login" class="fadeIn second" name="username" placeholder="username or email">
+          <input type="text" id="login" class="fadeIn second" name="username" placeholder="pseudo or email">
           <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
           <input type="submit" class="fadeIn fourth" value="Log In">
         </form>

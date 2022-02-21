@@ -2,6 +2,12 @@
 namespace App\Controllers; 
 
 class Customers extends Visitor{
+    protected string $email; 
+    protected string $pseudo; 
+    protected string $firstname; 
+    protected string $tel; 
+    protected string $adresse; 
+    
 
     public function __construct()
     {
@@ -13,10 +19,11 @@ class Customers extends Visitor{
         return redirect()->to('http://localhost/ardis/public/customers/');
     }
 
-    public function profile($pseudo)
+    public function profile()
     {
-        // $msg = $this->userManager->verificate_create_account($this->request->getMethod()); 
-        $this->_data['pseudo'] = esc($pseudo); 
+
+        // * IMPORTANT on dois verifier si la personne a une session est que le pseudo conresspond
+        $$this->session->get('pseudo');
         $this->view('profile'); 
     }
 

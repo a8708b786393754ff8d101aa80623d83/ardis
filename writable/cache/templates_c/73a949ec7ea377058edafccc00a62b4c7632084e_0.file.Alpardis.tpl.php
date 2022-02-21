@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 06:12:21
-  from 'C:\MAMP\htdocs\ardis\app\Views\dubai.tpl' */
+/* Smarty version 4.0.4, created on 2022-02-21 07:00:08
+  from 'C:\MAMP\htdocs\ardis\app\Views\Alpardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621381a5ed1563_64163228',
+  'unifunc' => 'content_62138cd8f08395_84727992',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '918faca86dbb94b81edc8e30022fc30cd19a82ba' => 
+    '73a949ec7ea377058edafccc00a62b4c7632084e' => 
     array (
-      0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\dubai.tpl',
-      1 => 1645437044,
+      0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\Alpardis.tpl',
+      1 => 1645433837,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_621381a5ed1563_64163228 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62138cd8f08395_84727992 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1146125794621381a5ec64a1_10288772', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9832864162138cd8efd7f1_86480001', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1146125794621381a5ec64a1_10288772 extends Smarty_Internal_Block
+class Block_9832864162138cd8efd7f1_86480001 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1146125794621381a5ec64a1_10288772',
+    0 => 'Block_9832864162138cd8efd7f1_86480001',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <article>
+    <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
+</h1>
     <div class="container-fluid ">
         <img class="image_<?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
 " src="<?php echo (base_url('assets/Images/nos_hotels')).('/');
@@ -49,8 +51,6 @@ echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_image;?>
 " alt="image <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
  hotel">
                 <div class="row ">
-            <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_nom;?>
-</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel "><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_pays;?>
 / <?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_ville;?>
@@ -69,7 +69,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
             <div class="localisation_hotel ">
             <p><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_contenue;?>
 </p>
-            <p>A partir de <span style='color: #ff00aa;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
+            <p>A partir de <span styl='color: purple;'><?php echo $_smarty_tpl->tpl_vars['hotel_info']->value[0]->hotel_price;?>
 €</span></p>
             <a href="<?php echo base_url('galerie_photo');?>
 " class=" btn galerie_photo ">Galerie_photo</a>

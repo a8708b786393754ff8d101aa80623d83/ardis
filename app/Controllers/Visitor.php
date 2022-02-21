@@ -29,7 +29,7 @@ class Visitor extends Pages{
     {
         $msg = $this->userManager->verificate_mdp_oublier($this->request->getMethod()); 
         $this->_data['message'] = $msg; 
-        $this->view('mdpoublier', $msg); 
+        $this->view('mdpoublier'); 
     }
 
 }

@@ -21,7 +21,7 @@
     <!-- navbar -->
     <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="{base_url('pages/index')}"><img src="{base_url('assets/Images/logo.png')}" alt="logo" width="80"></a>
+            <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo.png')}" alt="logo" width="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
             </button>
@@ -36,10 +36,10 @@
                              Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/sampatico')}">Punta cana</a></li>
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/dubai')}">Dubai</a></li>{* mettre le valeur de lien la ville*}
-                            <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/alpardis')}">Suisse</a></li>
-                              <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel/Aloardis')}">Hawai</a></li>
+                            {for $foo=0 to count($nav_bar_hotel) -1 }
+                                <li><a class="dropdown-item bg-transparent text-{$color_link_nav}" href="{base_url('hotel')|cat:'/'|cat:$nav_bar_hotel[$foo]}">{$nav_bar_hotel[$foo]}</a></li>
+                            {/for}
+            
                         </ul>
                     </li>
                     <li class="nav-item">

@@ -7,9 +7,9 @@ class UsersModel extends Model
     protected $table         = 'clients';
     protected $primaryKey    = 'client_id';
     protected $allowedFields = ["client_id","client_nom","client_prénom",
-                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
-                "client_tel", "compte_client","resrv_client","client_avis"
-                ];
+                                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
+                                "client_tel", "compte_client","resrv_client","client_avis"
+                                ];
     protected $returnType    = 'App\Entities\UserEntity';
 
     protected $useTimestamps = true;
@@ -30,18 +30,12 @@ class UsersModel extends Model
 
     public function appendUser(array $contact, array $identify)
     {
-        // if(is_array($id)){
-            // if(count($id) === 0){
-                $builder_clients = $this->db->table('clients'); 
-                $builder_compte = $this->db->table('compte'); 
-                $builder_clients->insert($contact); 
-                $builder_compte->insert($identify); 
-                $builder_clients->get();
-                $builder_compte->get(); 
-                // return true; 
-            // }
-        // }
-        // return false; 
+        $builder_clients = $this->db->table('clients'); 
+        $builder_compte = $this->db->table('compte'); 
+        $builder_clients->insert($contact); 
+        $builder_compte->insert($identify); 
+        $builder_clients->get();
+        $builder_compte->get(); 
     }
 
     public function is_a_account_by_email(string $email)
@@ -53,6 +47,16 @@ class UsersModel extends Model
     public function is_a_account_by_pseudo(string $pseudo)
     {
         $sql = 'SELECT compt_pseudo FROM compte WHERE compt_pseudo="'.esc($pseudo).'"';
+        return $this->db->query($sql)->getResult(); 
+    }
+
+    public function getDataProfile(string $pseudo)
+    {
+        $sql = 'SELECT client_nom AS nom, client_prenom AS prenom, client_adresse AS adresse, 
+            client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
+            client_tel AS num_tel 
+            FROM clients 
+            INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compt_pseudo = ?';
         return $this->db->query($sql)->getResult(); 
     }
 

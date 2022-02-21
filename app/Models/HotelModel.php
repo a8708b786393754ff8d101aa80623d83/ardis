@@ -47,4 +47,9 @@ class HotelModel extends Model{
                         FROM hotels
                         ')->getResult();
     }
+
+    public function getAllHotelsName()
+    {
+        return $this->db->query('SELECT hotel_nom AS nom FROM hotels')->getResult(); 
+    }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-21 03:56:55
+/* Smarty version 4.0.4, created on 2022-02-21 07:06:06
   from 'C:\MAMP\htdocs\ardis\app\Views\base\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621361e7541108_93402005',
+  'unifunc' => 'content_62138e3e11b0d3_00875008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b7eb89196904da3041291dd67eea7f4537f0dccd' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\base\\header.tpl',
-      1 => 1645437415,
+      1 => 1645448723,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_621361e7541108_93402005 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62138e3e11b0d3_00875008 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +48,7 @@ function content_621361e7541108_93402005 (Smarty_Internal_Template $_smarty_tpl)
     <!-- navbar -->
     <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="<?php echo base_url('pages/index');?>
+            <a class="navbar-brand logo" href="<?php echo base_url('pages');?>
 "><img src="<?php echo base_url('assets/Images/logo.png');?>
 " alt="logo" width="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,17 +68,19 @@ function content_621361e7541108_93402005 (Smarty_Internal_Template $_smarty_tpl)
                              Nos hôtels
                         </a>
                         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotel/sampatico');?>
-">Punta cana</a></li>
-                            <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotel/dubai');?>
-">Dubai</a></li>                            <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotel/alpardis');?>
-">Suisse</a></li>
-                              <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
-" href="<?php echo base_url('hotel/Aloardis');?>
-">Hawai</a></li>
+                            <?php
+$_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? count($_smarty_tpl->tpl_vars['nav_bar_hotel']->value)-1+1 - (0) : 0-(count($_smarty_tpl->tpl_vars['nav_bar_hotel']->value)-1)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+if ($_smarty_tpl->tpl_vars['foo']->total > 0) {
+for ($_smarty_tpl->tpl_vars['foo']->value = 0, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++) {
+$_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration === 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration === $_smarty_tpl->tpl_vars['foo']->total;?>
+                                <li><a class="dropdown-item bg-transparent text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
+" href="<?php echo ((base_url('hotel')).('/')).($_smarty_tpl->tpl_vars['nav_bar_hotel']->value[$_smarty_tpl->tpl_vars['foo']->value]);?>
+"><?php echo $_smarty_tpl->tpl_vars['nav_bar_hotel']->value[$_smarty_tpl->tpl_vars['foo']->value];?>
+</a></li>
+                            <?php }
+}
+?>
+            
                         </ul>
                     </li>
                     <li class="nav-item">

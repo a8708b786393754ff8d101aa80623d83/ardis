@@ -10,23 +10,23 @@ class UserManager{
         $this->respQuery = new UsersModel; 
     }
 
-    public function verificate_login($method, $session): array 
+    public function verificate_login($method, $session) 
     {
-        if ($method === 'post'){
-            $pseudo = $_POST['username']; 
-            $password = $_POST['password']; 
-            if ($pseudo !== '' || $password !== ''){
-                $resp = $this->respQuery->login(esc($pseudo), esc($password));
-                if (is_array($resp) && count($resp) === 1){ // si la requete est bonne on a joute le pseudo est son id dans la session
-                    $session->set([
-                        'pseudo'=>$resp[0]->name,
-                        'id'=>$resp[0]->id
-                    ]);
-                    // ? rediriger l'utilisateur vers index
-                    return []; 
-                }return ['Mot de passe ou/et indentifiant incorrect']; 
-            }return $this->errorHunt->hunt_error_login($password, $pseudo); //renvoie le message d'erreur
-        }return []; 
+        if ($method !== 'post'){
+            return []; 
+        }
+        $pseudo = $_POST['username']; 
+        $password = $_POST['password']; 
+        if ($pseudo !== '' || $password !== ''){
+            $resp = $this->respQuery->login(esc($pseudo), esc($password));
+            if (is_array($resp) && count($resp) === 1){ // si la requete est bonne on a joute le pseudo est son id dans la session
+                $session->set([
+                    'pseudo'=>$resp[0]->name,
+                    'id'=>$resp[0]->id
+                ]);
+                return[];
+            }return ['Mot de passe ou/et indentifiant incorrect']; 
+        }return $this->errorHunt->hunt_error_login($password, $pseudo); //renvoie le message d'erreur
     }
 
     public function verificate_create_account($method): array 
@@ -63,6 +63,7 @@ class UserManager{
                                         'compt_pseudo' => esc($_POST['pseudo']),
                                         'compt_pass'   => esc($_POST['password'])
                                     ]); 
+                                    // trouver un moyen de rediriger une fois qu'il c'est inscrit
                                     // return redirect()->to('http://localhost/ardis/public/customers/');
                                     // FIXME incrementer la le champs de client_id dans 
                             }
@@ -87,5 +88,9 @@ class UserManager{
             $resp_query = $this->respQuery->is_a_account_by_email($email); 
             return  $this->errorHunt->forget_password($email, $resp_query);
         }return []; 
+    }
+
+    public function getProfileData(){
+
     }
 }

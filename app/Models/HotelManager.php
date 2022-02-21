@@ -22,4 +22,14 @@ class HotelManager {
     public function getBestHotel(){
         return $this->respQuery->getBestHotels(); 
     }
+
+    public function getHotelsNamesForNavBar()
+    {
+        $arrNameHotel = []; 
+        $resultQuery =  $this->respQuery->getAllHotelsName(); 
+        foreach($resultQuery as $_ => $element){
+            $arrNameHotel[] = $element->nom; // je stocke le nom des hotels dans un variable 
+        }
+        return $arrNameHotel;
+    }
 }
