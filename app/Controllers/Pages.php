@@ -18,7 +18,6 @@ class Pages extends BaseController{
         $this->_data['name_file']      = 'index';
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
         $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();
-        var_dump($this->_data['nav_bar_hotel']);
         $this->display();
         die; 
     }

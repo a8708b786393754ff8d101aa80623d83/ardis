@@ -50,14 +50,14 @@ class UsersModel extends Model
         return $this->db->query($sql)->getResult(); 
     }
 
-    public function getDataProfile(string $pseudo)
+    public function getCreditials(string $pseudo)
     {
         $sql = 'SELECT client_nom AS nom, client_prenom AS prenom, client_adresse AS adresse, 
             client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
             client_tel AS num_tel 
             FROM clients 
             INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compt_pseudo = ?';
-        return $this->db->query($sql)->getResult(); 
+        return $this->db->query($sql, [$pseudo])->getResult(); 
     }
 
     

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-17 01:46:01
+/* Smarty version 4.0.4, created on 2022-02-21 09:11:24
   from 'C:\MAMP\htdocs\ardis\app\Views\base\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_620dfd39045df0_07154519',
+  'unifunc' => 'content_6213ab9c960de8_93269459',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8fb671bb6f24342fa481941520e0a552e56763c8' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\ardis\\app\\Views\\base\\footer.tpl',
-      1 => 1645083809,
+      1 => 1645433837,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_620dfd39045df0_07154519 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6213ab9c960de8_93269459 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- footer  -->
 <footer class=" card-footer d-flex align-items-center ">
     <div class="container ">
