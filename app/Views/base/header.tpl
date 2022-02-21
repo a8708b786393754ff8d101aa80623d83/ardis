@@ -43,36 +43,36 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/reservation')}">reservation</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/reservation')}">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/activiter')}">nos activiter</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/activiter')}">Nos activités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/restaurant')}">restaurants</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/restaurant')}">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/galerie_photo')}">galerie photo</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/galerie_photo')}">Galerie photo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/avis')}">les avis </a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/avis')}">Les avis </a>
                     </li>
                     {if isset($smarty.session.pseudo)}
                         <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/profile/'|cat: $smarty.session.pseudo )}">profile - {$smarty.session.pseudo}</a>
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/profile/'|cat: $smarty.session.pseudo )}">Profil - {$smarty.session.pseudo}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/logout')}">se déconnecter</a>
                         </li>
                     {else}
                         <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/create_account')}">creer un compte</a>
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/create_account')}">Créer un compte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/login')}">login</a>
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/login')}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/mdpoublier')}">mot de passe oublié </a>
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/mdpoublier')}">Mot de passe oublié </a>
                         </li>
 
                     {/if}
@@ -85,7 +85,7 @@
 <div class="container ">
     <div class="row " aria-label="breadcrumb ">
             <ol class="breadcrumb ">
-                <li>Vous ete ici: </li>
+                <li>Vous êtes ici : </li>
                 <li class="breadcrumb-item ">
                     <a href="{base_url('pages/index')} " class="text-black ">
                         Accueil
@@ -94,7 +94,7 @@
                 {if $name_file == 'hawai' || $name_file == 'sampatico' || $name_file == 'dubai'|| $name_file == 'alpardis'}
                     <li class="breadcrumb-item ">
                     <a href="" class="text-black ">
-                        Nos hotels
+                        Nos hôtels
                     </a>
                 </li>
                 {/if}
