@@ -3,7 +3,7 @@
 <article>
     <div class="container-fluid ">
         <img class="image_{$name}" src="{base_url('assets/Images/nos_hotels')|cat:'/'}{$image}" alt="image {$name} hotel">
-        {* <i class="fa-solid fa-envelope"></i> *}
+         <i class="fa fa-envelope share" aria-hidden="true"></i> 
         <div class="row ">
             <h1>Hotel {$name}</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
