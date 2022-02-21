@@ -63,7 +63,7 @@
                             <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/profile/'|cat: $smarty.session.pseudo )}">Profil - {$smarty.session.pseudo}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/logout')}">se déconnecter</a>
+                            <a class="nav-link text-{$color_link_nav}" href="{base_url('customers/logout')}">Se déconnecter</a>
                         </li>
                     {else}
                         <li class="nav-item">
@@ -86,7 +86,7 @@
 <div class="container ">
     <div class="row " aria-label="breadcrumb ">
             <ol class="breadcrumb ">
-                <li>Vous êtes ici : </li>
+                <li>Vous êtes ici :&nbsp;</li>
                 <li class="breadcrumb-item ">
                     <a href="{base_url('pages/index')} " class="text-black ">
                         Accueil
