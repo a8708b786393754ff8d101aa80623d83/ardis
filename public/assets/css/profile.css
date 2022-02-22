@@ -41,6 +41,10 @@ body {
     width: 140px;
     border-radius: 50%
 }
+.submit-btn{
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .name {
     font-size: 22px;

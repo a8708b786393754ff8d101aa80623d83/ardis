@@ -17,19 +17,16 @@ class UsersModel extends Model
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct();
     }
 
-    public function login(string $username,string $password)
-    {   
+    public function login(string $username,string $password){   
         $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 
-    public function appendUser(array $contact, array $identify)
-    {
+    public function appendUser(array $contact, array $identify){
         $builder_clients = $this->db->table('clients'); 
         $builder_compte = $this->db->table('compte'); 
         $builder_clients->insert($contact); 
@@ -44,14 +41,12 @@ class UsersModel extends Model
         return $this->db->query($sql)->getResult(); 
     }
 
-    public function is_a_account_by_pseudo(string $pseudo)
-    {
+    public function is_a_account_by_pseudo(string $pseudo){
         $sql = 'SELECT compt_pseudo FROM compte WHERE compt_pseudo="'.esc($pseudo).'"';
         return $this->db->query($sql)->getResult(); 
     }
 
-    public function getCreditials(string $pseudo)
-    {
+    public function getCreditials(string $pseudo){
         $sql = 'SELECT client_nom AS nom, client_prenom AS prenom, client_adresse AS adresse, 
             client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
             client_tel AS num_tel 
@@ -60,33 +55,17 @@ class UsersModel extends Model
         return $this->db->query($sql, [$pseudo])->getResult(); 
     }
 
+    public function getPasswordByPseudo(string $pseudo): string{
+        return $this->db->query('SELECT compt_pass FROM compte WHERE compt_pseudo= ?', [$pseudo])->getResult()[0]->compt_pass; 
+    }
+
+    public function updatePassword(string $pseudo, string $new_password): bool{
+        $id_pseudo = $this->getIdByPseudo($pseudo); 
+        return $this->db->query('UPDATE compte SET compt_pass = ? WHERE  compt_id = ?', [$new_password, $id_pseudo]);
+    }
+
+    private function getIdByPseudo(string $pseudo): string {
+        return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
+    }
     
-
-    // public function updateUser(array $dataUpdate)
-    // {
-    //     if(isset($data['compt_pseudo']) || isset($data['compt_pass'])){
-    //         foreach($data as $keys=>$values){
-    //             $id = intval($this->getId($, $values)); 
-    //             $this->db->update($id, )
-    //         }
-    //     }
-    // }
-
-    // public function delete()
-    // {
-        //utiliser la fonction getId pour pouvoir supprimer facilement
-    //     // $this->db->delete(); 
-    // }
-
-    //public function getId(string $table, string $element){
-        //     if($table === 'compt_pseudo' || $table === 'client_email'){
-        //         if ($table === 'client_email'){
-        //             $sql = 'SELECT compt_pseudo FROM compte INNER JOIN clients ON clients.client_id=compt_id WHERE client_email="'.$element.'"';
-        //         }else{
-        //             $sql = 'SELECT compt_id FROM compte WHERE '.$table.' = "'.$element.'" ';
-        //         }
-        //         return $this->db->query($sql)->getResult(); 
-        //     }return false; 
-    
-        // }
 }

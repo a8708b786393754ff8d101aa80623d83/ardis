@@ -1,6 +1,6 @@
 <?php 
 namespace App\Controllers; 
-use App\Models\UserManager;
+use App\Models\CustomerManager;
 
 class Customers extends Visitor{
     protected string $pseudo; 
@@ -11,16 +11,17 @@ class Customers extends Visitor{
     protected string $adresse; 
     protected string $zip_code; 
     protected string $city; 
+    protected string $photo_profile; 
 
     private $dataCreditials; 
 
     public function __construct()
     {
         parent::__construct();
-        $this->userManager = new UserManager;
+        $this->CustomerManager = new CustomerManager;
 
-        $this->pseudo = esc( $this->session->get('pseudo'));
-        $this->dataCreditials = $this->userManager->getProfileData($this->pseudo); 
+        $this->pseudo = $this->session->get('pseudo');
+        $this->dataCreditials = $this->CustomerManager->getProfileData($this->pseudo); 
 
         $this->firstname = $this->dataCreditials->prenom; 
         $this->name = $this->dataCreditials->nom; 
@@ -29,6 +30,7 @@ class Customers extends Visitor{
         $this->adresse = $this->dataCreditials->adresse; 
         $this->zip_code = $this->dataCreditials->cp; 
         $this->city = $this->dataCreditials->pays; 
+        $this->photo_profile = ''; // TODO une fois que le champs profile ajouter dans la bdd, la stocker
     }
 
 
@@ -41,6 +43,7 @@ class Customers extends Visitor{
     public function profile()
     {
         // * IMPORTANT on dois verifier si la personne a une session est que le pseudo conresspond
+
         $this->_data['firstname']  = $this->firstname;
         $this->_data['name']  = $this->name;
         $this->_data['tel']  = $this->tel;
@@ -51,5 +54,24 @@ class Customers extends Visitor{
         $this->_data['city']  = $this->city;
 
         $this->view('profile'); 
+    }
+
+    public function edite_profile()
+    {
+        $this->CustomerManager->updateData($this->pseudo, $this->request, 
+                [
+                    'pseudo'=>$this->pseudo,
+                    'prenom'=>$this->firstname,
+                    'nom'=>$this->name,
+                    'tel'=>$this->tel,
+                    'email'=>$this->email,
+                    'adresse'=>$this->adresse,
+                    'cp'=>$this->zip_code,
+                    'pays'=>$this->city,
+                    'photo_profile'=>$this->photo_profile,
+                ]    
+        );
+        // ! ajouter la requete pour ajouter l'utilisateur
+        return redirect()->to('http://localhost/ardis/public/customers/profile/');  
     }
 }

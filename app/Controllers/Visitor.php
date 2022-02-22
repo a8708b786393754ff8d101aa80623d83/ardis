@@ -13,14 +13,14 @@ class Visitor extends Pages{
 
     public function login()
     {
-        $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session); 
+        $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session);
         $this->_data['message'] = $msg;  
         $this->view('login');
     }
 
     public function create_account()
     {
-        $msg = $this->userManager->verificate_create_account($this->request->getMethod()); 
+        $msg = $this->userManager->verificate_create_account($this->request->getMethod());
         $this->_data['message'] = $msg; 
         $this->view('create_account'); 
     }

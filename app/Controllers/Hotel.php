@@ -19,7 +19,6 @@ class Hotel extends Pages{
     public function view($page)
     {
         $respQuery = $this->hotelMngr->getData($page)[0]; 
-        
         $this->name = $respQuery->hotel_nom; 
         $this->image = $respQuery->hotel_image; 
         $this->pays = $respQuery->hotel_pays; 
@@ -28,7 +27,6 @@ class Hotel extends Pages{
         $this->contenue = $respQuery->hotel_contenue; 
         $this->email = $respQuery->hotel_mail; 
         $this->ville = $respQuery->hotel_ville; 
-
     
         $this->_data['name']        = $this->name;
         $this->_data['image']       = $this->image;

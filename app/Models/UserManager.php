@@ -90,9 +90,4 @@ class UserManager{
         }return []; 
     }
 
-    public function getProfileData(string $pseudo): object
-    {
-
-        return  $this->respQuery->getCreditials($pseudo)[0]; 
-    }
 }

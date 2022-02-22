@@ -3,22 +3,19 @@ namespace App\Models;
 
 // class pour les message d'erruer pour tout ce qui est connexion 
 class ConnexionManager {
-    private $error = []; 
+    public $error = []; 
 
-    public function hunt_error_login(string $password, string $pseudo): array 
-    {
-        // reecrire le code est voir tout les option 
-        if($this->length_password($password, 8)){
-            $this->error[] = 'Votre mot de passe est trop petit';
-        }
+    public function hunt_error_login(string $password, string $pseudo): array {
+
         if(empty($password) || empty($pseudo)){
             $this->error[] = 'Veuillez entrez votre mot de passe et/ou identifiant'; 
         }
+
+        $this->length_password($password, 8);
         return $this->error; 
     }
 
-    public function forget_password($email, $resp): array 
-    {
+    public function forget_password($email, $resp): array {
         if($this->verif_email($email)){
             if(count($resp) === 1){
                 return ['success'=>'Un email va vous etre envoyer'];
@@ -26,40 +23,67 @@ class ConnexionManager {
         } return ["danger"=>'Verifier votre email!'];
     }
 
-    public function hunt_error_create_account(array $post): array 
-    {
+    public function hunt_error_create_account(array $post): array {
         $tel = $post['tel']; 
         $email = $post['email']; 
         $password = $post['password']; 
         $confirm_password = $post['Confirm_password']; 
 
-        if(! $this->verif_conf_password($password, $confirm_password)){
-            $this->error[] ='Veuillez entrez le meme mot de passe!';
-        }if(! is_numeric($tel)){
-            $this->error[] ='Veuillez entrez un numero de telephone valide!';
-        }if(! $this->length_password($password)){
-            $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
-        }if(! $this->verif_email($email)){
-            $this->error[] = 'Veuillez entrez un email valide'; 
-        }if(count($post) < 11){
+        if(count($post) < 11){
             $this->error[] = "Veuilleez remplire les tout les champs! "; 
         }
+
+        $this->verif_conf_password($password, $confirm_password); 
+        $this->length_password($password);
+        $this->verif_email($email);
+        $this->verif_tel($tel);
         return $this->error; 
     }
 
-    private function verif_conf_password(string $password, string $confPasswd): bool 
-    {
-        return $password === $confPasswd; 
+    public function verif_conf_password(string $password, string $confPasswd){
+        if(! $password === $confPasswd){
+            $this->error[] ='Veuillez entrez le meme mot de passe!';
+        }
     }
 
-    private function length_password(string $password, int $min_length=8): bool 
-    {
-        return strlen($password) > $min_length;
+    public function length_password(string $password, int $min_length=8) {
+        if(strlen($password) < $min_length){
+            $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
+        }
     }
 
-    private function verif_email($email): bool
-    {
-        return is_string($email) && strpos($email, '@'); 
+    public function verif_email($email){
+        if(! is_string($email) && strpos($email, '@')){
+            $this->error[] = 'Veuillez entrez un email valide'; 
+        }else{
+            return True;
+        }
     }
 
+    public function verif_tel(string $tel){
+        if(! is_numeric($tel)){
+            $this->error[] ='Veuillez entrez un numero de telephone valide!';
+        }
+    }
+
+    public function edit_profile($data_post){
+        $not_empty = 0; 
+        foreach($data_postas as $_ =>$values){
+            if(! empty($values)){
+                $not_empty++; 
+            }
+        }
+        $password = $data_post['new_password']; 
+        $password_confirm = $data_post['new_password_confirm']; 
+        $num_tel = $data_post['tel']; 
+        $email = $data_post['email']; 
+        if($not_empty === 8){      // ? le 8, c'est le nombre de champs obligatoire 
+            $this->length_password($password);
+            $this->verif_conf_password($password, $password_confirm); 
+            $this->verif_tel($num_tel); 
+            $this->verif_email($email); 
+        }else{
+            $this->error[] = 'Veuillez entrez tout les champs'; 
+        }
+    }
 }

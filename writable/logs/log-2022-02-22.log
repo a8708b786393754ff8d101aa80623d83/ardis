@@ -1,0 +1,181 @@
+CRITICAL - 2022-02-22 01:43:21 --> Typed property App\Controllers\Customers::$pseudo must be string, null used
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-22 04:12:25 --> syntax error, unexpected '$confirm_password' (T_VARIABLE)
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Models/UserManager.php(9): spl_autoload_call()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(11): App\Models\UserManager->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-22 04:13:57 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:14:44 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:21:19 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:21:40 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:23:10 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:23:28 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:23:38 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:24:08 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:26:25 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:28:03 --> Undefined offset: 10
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:28:18 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:33:03 --> Undefined offset: 9
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:44:09 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:44:19 --> Undefined offset: 1
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 04:48:22 --> Undefined variable: cmpt
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 05:40:33 --> Undefined index: new_password
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 05:41:52 --> Undefined variable: key
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-22 07:03:16 --> Cannot use object of type CodeIgniter\HTTP\IncomingRequest as array
+#0 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-22 07:11:52 --> Undefined variable: id_pseudo
+#0 /var/www/html/ardis/app/Models/UsersModel.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Models/CustomerManager.php(37): App\Models\UsersModel->updatePassword()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(71): App\Models\CustomerManager->updateData()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 08:16:57 --> syntax error, unexpected '}'
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ardis/app/Models/UserManager.php(9): spl_autoload_call()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(11): App\Models\UserManager->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(20): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

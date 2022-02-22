@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 17 fév. 2022 à 13:41
+-- Généré le : lun. 21 fév. 2022 à 15:08
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `avis` (
   `avis_note` int(1) DEFAULT NULL,
   `avis_hotel` int(11) NOT NULL,
   PRIMARY KEY (`avis_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `avis`
@@ -80,7 +80,8 @@ CREATE TABLE IF NOT EXISTS `avis` (
 INSERT INTO `avis` (`avis_id`, `avis_titre`, `avis_cont`, `avis_date`, `avis_nomphoto`, `avis_note`, `avis_hotel`) VALUES
 (1, 'Super hôtel !', 'Super hôtel , le staff est super ! ', '2018-07-18', 'vacance.jpg', 5, 1),
 (2, 'Bof', 'Vraiment décus ...', '2019-12-02', 'pascontent.webp', 2, 3),
-(3, 'Joli', 'c joli', '2020-11-05', 'joi.webp', 4, 2);
+(3, 'Joli', 'c joli', '2020-11-05', 'joi.webp', 4, 2),
+(4, 'Gérnial', 'c\'était génial , moi et mon mari avont adorées !', '2012-05-12', 'moi_et_fabrice.png', 5, 4);
 
 -- --------------------------------------------------------
 
@@ -105,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `chambres` (
 
 INSERT INTO `chambres` (`chamb_id`, `chamb_num`, `chamb_tel`, `nbr_lit`, `hotel_id`, `chamb_dispo`) VALUES
 (1, 1, '0389451170', 4, 1, 0),
-(2, 2, '0389451170', 4, 1, 1),
+(2, 2, '0389451170', 4, 1, 0),
 (3, 3, '0389451170', 4, 1, 0),
 (4, 4, '0389451170', 4, 1, 1),
 (5, 5, '0389451170', 4, 1, 1),
@@ -292,10 +293,10 @@ CREATE TABLE IF NOT EXISTS `hotels` (
 --
 
 INSERT INTO `hotels` (`hotel_id`, `hotel_nom`, `hotel_adresse`, `hotel_cp`, `hotel_ville`, `hotel_pays`, `hotel_mail`, `hotel_tel`, `hotel_image`, `hotel_activ`, `hotel_menu`, `hotel_chambre`, `hotel_price`, `hotel_note`, `hotel_contenue`) VALUES
-(1, 'Sampatico', 'Boulevard Zona Hotelera', '23302', 'Punta Cana', 'République dominicaine ', 'Sampatico@ardis.fr', '384551422', 'punta_cana.webp', NULL, NULL, NULL, 250, 4, 'L\'hotel se trouve en République domicaine a Punta cana.La nuit est à partir de 250€.\r\n\r\nPour les amoureux des caraibe, cette hotel ce trouve a l\'extremité de la mer de caraibe, avec une vue sur la mer est est les palmiers est le phare de bayahibe\r\n\r\nL\'hotel est luxueux est bien assez proche de la mer.Cette hotel 4 etoile a 18 chambre a 4 lits chacune, 10 chambre a 2 lits\r\n\r\nLes sorite sont organiser selon vos envie, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul'),
-(2, 'Daubaï', 'Dubai Fountain St - Downtown Dubai ', '00000', 'Dubaï', 'Émirats arabes unis', 'Dubaï@ardis.fr', '384581422', 'dubai.webp', NULL, NULL, NULL, 320, 5, 'L\'hôtel est assez proche pour voit les tempêtess de sable arriver, ces tempêtes ne sont pas dangereux .Cet hôtel 5 étoiles à 5 ilots et dans un chaque ilot il y a 1 grand lit pour 2 personnes, ce séjour-là c\'est fait pour les amoureux. Les sorties sont organisées selon vos envies, vous pouvez visiter la ville ou vous se balader en chameaux.\r\n\r\nL\'hôtel est luxueux est bien assez proche de la mer. Cet hôtel 4 étoiles à 18 chambres à 4 lits chacune, 10 chambres à 2 lits.\r\n\r\nLes sorites sont organisés selon vos envies, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul.'),
-(3, 'Alpardis', 'Rue du théatre 9', '54450', 'Turbenthal', 'Suisse', 'Alpardis@ardis.fr', '384874422', 'suisse.webp', NULL, NULL, NULL, 100, 3, 'Notre hôtel alpadris à 3 étoiles se situe en Suisse, plus précisément à Turbenthal, la nuit est à partir de 100 €. L\'hôtel est situé dans les alpes, pour les amoureux de la neige est des montagnes, cet hôtel est pour vous. Par notre qualité de service nous sommes à top ! Il y a 5 étages et 10 chambres, 5 a deux lits et 10 pour 4 lits. Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.'),
-(4, 'Aloardis', '129 Paoakalani Ave', '96815', 'Honolulu', 'Hawai,USA', 'Aloardis@ardis.com', '+1-808-687-7700', 'hawai.webp', NULL, NULL, NULL, 500, 5, 'Notre hôtel Aloardis à 5 étoiles se situe  à Hawai , plus précisément à Waikiki Beach, la nuit est à partir de 500 €. L hôtel est situé a quelques pas de la mer : amoureux en lune de miel , cet hôtel est pour vous! Cette hôtel a 10 chambres avec uniquement des lits deux places .');
+(1, 'Sampatico', 'Boulevard Zona Hotelera', '23302', 'Punta Cana', 'République dominicaine ', 'Sampatico@ardis.fr', '384551422', 'punta_cana.webp', NULL, NULL, NULL, 250, 4, 'L\'hotel se trouve en République domicaine a Punta cana.La nuit est à partir de €.\r\n\r\nPour les amoureux des caraibe, cette hotel ce trouve a l\'extremité de la mer de caraibe, avec une vue sur la mer est est les palmiers est le phare de bayahibe\r\n\r\nL\'hotel est luxueux est bien assez proche de la mer.Cette hotel 4 etoile a 18 chambre a 4 lits chacune, 10 chambre a 2 lits\r\n\r\nLes sorite sont organiser selon vos envie, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul'),
+(2, 'Dubai', 'Dubai Fountain St - Downtown Dubai ', '00000', 'Dubai', 'Émirats arabes unis', 'Dubaï@ardis.fr', '384581422', 'dubai.webp', NULL, NULL, NULL, 320, 5, 'L\'hôtel est assez proche pour voit les tempêtes de sable arriver, ces tempêtes ne sont pas dangereux .Cet hôtel 5 étoiles à 5 ilots et dans un chaque ilot il y a 1 grand lit pour 2 personnes, ce séjour là c\'est fait pour les amoureux. Les sorties sont organisées selon vos envies, vous pouvez visiter la ville ou vous se balader en chameaux.\r\n\r\nL\'hôtel est luxueux est bien assez proche de la mer. Cet hôtel 4 étoiles à 18 chambres à 4 lits chacune, 10 chambres à 2 lits.\r\n\r\nLes sorites sont organisés selon vos envies, vous pouvez visiter le phare de bayahibe ou vous baigner dans Hoyo Azul.'),
+(3, 'Alpardis', 'Rue du théatre 9', '54450', 'Turbenthal', 'Suisse', 'Alpardis@ardis.fr', '384874422', 'suisse.webp', NULL, NULL, NULL, 100, 3, 'Notre hôtel alpadris à 3 étoiles se situe en Suisse, plus précisément à Turbenthal, la nuit est à partir de  €. L\'hôtel est situé dans les alpes, pour les amoureux de la neige est des montagnes, cet hôtel est pour vous. Par notre qualité de service nous sommes à top ! Il y a 5 étages et 10 chambres, 5 a deux lits et 10 pour 4 lits. Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.'),
+(4, 'Aloardis', '129 Paoakalani Ave', '96815', 'Honolulu', 'Hawai,USA', 'Aloardis@ardis.com', '+1-808-687-7700', 'hawai.webp', NULL, NULL, NULL, 500, 5, 'Notre hôtel Aloardis à 5 étoiles se situe  à Hawai , plus précisément à Waikiki Beach, la nuit est à partir de  €. L hôtel est situé a quelques pas de la mer : amoureux en lune de miel , cet hôtel est pour vous! Cette hôtel a 10 chambres avec uniquement des lits deux places .');
 
 -- --------------------------------------------------------
 
@@ -308,16 +309,38 @@ CREATE TABLE IF NOT EXISTS `images` (
   `image_id` int(5) NOT NULL AUTO_INCREMENT,
   `image_nom` varchar(50) NOT NULL,
   `image_date` date NOT NULL,
-  `hotel_id` int(1) NOT NULL,
+  `page` varchar(255) NOT NULL,
+  `hotel_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`image_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `images`
 --
 
-INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `hotel_id`) VALUES
-(1, 'menu_végé.webp', '2018-07-18', 3);
+INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `page`, `hotel_id`) VALUES
+(1, 'resto_vegeterien.webp', '2018-07-18', 'restaurant', NULL),
+(2, 'restaurant-01-plat.webp', '2018-07-18', 'restaurant', NULL),
+(3, 'resto1', '2018-07-18', 'restaurant', NULL),
+(12, 'background.webp', '2018-07-18', 'index', NULL),
+(13, 'logo.webp', '2018-07-18', 'layout', NULL),
+(14, 'logo_menu.webp', '2018-07-18', 'layout', NULL),
+(15, 'Objet dynamique vectoriel.webp', '2018-07-18', 'footer', NULL),
+(16, 'desert_activiter.webp', '2018-07-18', 'activier', NULL),
+(17, 'desert_sortie.webp', '2018-07-18', 'activier', NULL),
+(18, 'luge.webp', '2018-07-18', 'activier', NULL),
+(19, 'phare.webp', '2018-07-18', 'activier', NULL),
+(20, 'plagues-surf.webp', '2018-07-18', 'activier', NULL),
+(21, 'bar.webp', '2018-07-18', 'galerie_photo ', 2),
+(22, 'istockphoto-182404406-170667a.webp', '2018-07-18', 'galerie_photo ', 2),
+(23, 'istockphoto-512882668-170667a.webp', '2018-07-18', 'galerie_photo ', 2),
+(24, 'hawai.webp', '2018-07-18', 'hawai', 4),
+(25, 'photo-1563911302283-d2bc129e7570.webp', '2018-07-18', 'galerie_photo', 1),
+(26, 'photo-1571003123894-1f0594d2b5d9.webp', '2018-07-18', 'punta_cana', 1),
+(27, 'photo-1618773928121-c32242e63f39.webp', '2018-07-18', 'galerie_photo', 1),
+(28, 'ressto.webp', '2018-07-18', 'galerie_photo', 1),
+(29, 'image2.webp', '2018-07-18', 'suisse', 3),
+(30, 'montagne_room.webp', '2018-07-18', 'galerie_photo', 3);
 
 -- --------------------------------------------------------
 
@@ -357,7 +380,6 @@ CREATE TABLE IF NOT EXISTS `reservations` (
   `reserv_id` int(11) NOT NULL AUTO_INCREMENT,
   `reserv_datedeb` date NOT NULL,
   `reserv_datefin` date NOT NULL,
-  `reserv_prixar` int(11) NOT NULL,
   `reserv_datepayar` date NOT NULL,
   `client_id` int(11) NOT NULL,
   `chamb_reserv` int(11) NOT NULL,
@@ -375,9 +397,9 @@ CREATE TABLE IF NOT EXISTS `reservations` (
 -- Déchargement des données de la table `reservations`
 --
 
-INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `reserv_prixar`, `reserv_datepayar`, `client_id`, `chamb_reserv`, `chamb_id`, `hotel_id`, `activ_id`, `activ_reserv`, `conso_reserv`) VALUES
-(1, '2021-05-12', '2021-05-22', 30, '2021-04-05', 2, 8, 8, 1, 1, NULL, NULL),
-(2, '2022-01-01', '2022-02-01', 30, '2022-02-01', 3, 12, 12, 2, NULL, NULL, NULL);
+INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `reserv_datepayar`, `client_id`, `chamb_reserv`, `chamb_id`, `hotel_id`, `activ_id`, `activ_reserv`, `conso_reserv`) VALUES
+(1, '2021-05-12', '2021-05-22', '2021-04-05', 2, 8, 8, 1, 1, NULL, NULL),
+(2, '2022-01-01', '2022-02-01', '2022-02-01', 3, 12, 12, 2, NULL, NULL, NULL);
 
 --
 -- Contraintes pour les tables déchargées
