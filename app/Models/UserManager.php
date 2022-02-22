@@ -29,6 +29,15 @@ class UserManager{
         }return $this->errorHunt->hunt_error_login($password, $pseudo); //renvoie le message d'erreur
     }
 
+    public function verificate_mdp_oublier($method): array 
+    {
+        if ($method === 'post'){
+            $email = $_POST['email']; 
+            $resp_query = $this->respQuery->is_a_account_by_email($email); 
+            return  $this->errorHunt->forget_password($email, $resp_query);
+        }return []; 
+    }
+
     public function verificate_create_account($method): array 
     {
         if ($method === 'post'){
@@ -80,14 +89,5 @@ class UserManager{
         }return []; 
         
     } 
-
-    public function verificate_mdp_oublier($method): array 
-    {
-        if ($method === 'post'){
-            $email = $_POST['email']; 
-            $resp_query = $this->respQuery->is_a_account_by_email($email); 
-            return  $this->errorHunt->forget_password($email, $resp_query);
-        }return []; 
-    }
 
 }

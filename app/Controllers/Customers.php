@@ -58,20 +58,20 @@ class Customers extends Visitor{
 
     public function edite_profile()
     {
-        $this->CustomerManager->updateData($this->pseudo, $this->request, 
-                [
-                    'pseudo'=>$this->pseudo,
-                    'prenom'=>$this->firstname,
-                    'nom'=>$this->name,
-                    'tel'=>$this->tel,
-                    'email'=>$this->email,
-                    'adresse'=>$this->adresse,
-                    'cp'=>$this->zip_code,
-                    'pays'=>$this->city,
-                    'photo_profile'=>$this->photo_profile,
-                ]    
-        );
-        // ! ajouter la requete pour ajouter l'utilisateur
-        return redirect()->to('http://localhost/ardis/public/customers/profile/');  
+        $resp = $this->CustomerManager->is_up_to_date($this->pseudo, $this->request, 
+        [
+            'pseudo'=>$this->pseudo,
+            'prenom'=>$this->firstname,
+            'nom'=>$this->name,
+            'tel'=>$this->tel,
+            'email'=>$this->email,
+            'adresse'=>$this->adresse,
+            'cp'=>$this->zip_code,
+            'pays'=>$this->city,
+            'photo_profile'=>$this->photo_profile,
+        ]    
+        ); 
+        $this->_data['msg_error'] = $resp;
+        $this->profile();  // ? affichage de la page profile avec 
     }
 }
