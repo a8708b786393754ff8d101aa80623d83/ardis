@@ -59,13 +59,35 @@ class UsersModel extends Model
         return $this->db->query('SELECT compt_pass FROM compte WHERE compt_pseudo= ?', [$pseudo])->getResult()[0]->compt_pass; 
     }
 
-    public function updatePassword(string $pseudo, string $new_password): bool{
+    public function updatePassword(string $pseudo, string $new_password){
         $id_pseudo = $this->getIdByPseudo($pseudo); 
-        return $this->db->query('UPDATE compte SET compt_pass = ? WHERE  compt_id = ?', [$new_password, $id_pseudo]);
+        $this->db->query('UPDATE compte SET compt_pass = ? WHERE  compt_id = ?', [$new_password, $id_pseudo]);
     }
 
     private function getIdByPseudo(string $pseudo): string {
         return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
+    }
+
+    private function getIdByClient(string $prenom){
+        return $this->db->query('SELECT client_id FROM clients WHERE client_prenom = ?', [$prenom])->getResult()[0]->client_id;  
+    }
+
+    public function updateProfile(array $data_for_update, string $pseudo, string $prenom_client){
+        if(array_key_exists('compt_pseudo', $data_for_update)){
+            $id_pseudo = $this->getIdByPseudo($pseudo);
+            $this->db->query('UPDATE compte SET compt_pseudo=? WHERE compt_id=?', [$pseudo, $id_pseudo]);  
+        }
+        $id_prenom_client = $this->getIdByClient($prenom_client); 
+        $sql = 'UPDATE clients SET';
+        foreach($data_for_update as $keys=>$values){
+            $sql .= ' '.$keys.'="'.$values.'",'; 
+        }
+        // ! faut faire le test sinon elle renvoie une erruer
+        if(strpos($sql,'=')){ // ? regarde si = est present dans la requete, si c'est le cas ca veut dire que le client a fait des modif
+            $sql = substr($sql,0,-1); // ? cette focntion supprimer le dernier element d'une chaine de caracter dans notre cas c'est le ' 
+            $this->db->query($sql.' WHERE client_prenom=?', [$prenom_client]);  
+            var_dump($sql); 
+        } 
     }
     
 }

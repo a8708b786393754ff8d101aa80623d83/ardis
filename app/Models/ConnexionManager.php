@@ -41,7 +41,7 @@ class ConnexionManager {
     }
 
     public function verif_conf_password(string $password, string $confPasswd){
-        if(! $password === $confPasswd){
+        if($password !== $confPasswd){
             $this->error[] ='Veuillez entrez le meme mot de passe!';
         }
     }
@@ -68,7 +68,7 @@ class ConnexionManager {
 
     public function edit_profile($data_post){
         $not_empty = 0; 
-        foreach($data_postas as $_ =>$values){
+        foreach($data_post as $_ =>$values){
             if(! empty($values)){
                 $not_empty++; 
             }
@@ -76,14 +76,17 @@ class ConnexionManager {
         $password = $data_post['new_password']; 
         $password_confirm = $data_post['new_password_confirm']; 
         $num_tel = $data_post['tel']; 
-        $email = $data_post['email']; 
-        if($not_empty === 8){      // ? le 8, c'est le nombre de champs obligatoire 
-            $this->length_password($password);
+        $email = $data_post['email'];
+        
+        if($not_empty >= 8){      // ? le 8, c'est le nombre de champs obligatoire 
             $this->verif_conf_password($password, $password_confirm); 
             $this->verif_tel($num_tel); 
             $this->verif_email($email); 
+            if(! empty($password) && ! empty($password_confirm)){ // ? faut regarder 
+                $this->length_password($password);
+            }
         }else{
             $this->error[] = 'Veuillez entrez tout les champs'; 
-        }
+        }return $this->error; 
     }
 }
