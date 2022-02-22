@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-22 09:26:22
+/* Smarty version 4.0.4, created on 2022-02-22 15:04:36
   from '/var/www/html/ardis/app/Views/base/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6215009ead2f56_39193103',
+  'unifunc' => 'content_62154fe4df3904_72489602',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c5834c268270ba97c84b8f8df15447ebba46635' => 
     array (
       0 => '/var/www/html/ardis/app/Views/base/header.tpl',
-      1 => 1645543303,
+      1 => 1645563813,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6215009ead2f56_39193103 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62154fe4df3904_72489602 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,55 +88,55 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/reservation');?>
-">reservation</a>
+">Réservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/activiter');?>
-">nos activiter</a>
+">Nos activités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/restaurant');?>
-">restaurants</a>
+">Restaurants</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/galerie_photo');?>
-">galerie photo</a>
+">Galerie photo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('pages/avis');?>
-">les avis </a>
+">Les avis </a>
                     </li>
                     <?php if ((isset($_SESSION['pseudo']))) {?>
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url(('customers/profile/').($_SESSION['pseudo']));?>
-">profile - <?php echo $_SESSION['pseudo'];?>
+">Profil - <?php echo $_SESSION['pseudo'];?>
 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('customers/logout');?>
-">se déconnecter</a>
+">Se déconnecter</a>
                         </li>
                     <?php } else { ?>
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('visitor/create_account');?>
-">creer un compte</a>
+">Créer un compte</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('visitor/login');?>
-">login</a>
+">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-<?php echo $_smarty_tpl->tpl_vars['color_link_nav']->value;?>
 " href="<?php echo base_url('visitor/mdpoublier');?>
-">mot de passe oublié </a>
+">Mot de passe oublié </a>
                         </li>
 
                     <?php }?>
@@ -149,7 +149,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 <div class="container ">
     <div class="row " aria-label="breadcrumb ">
             <ol class="breadcrumb ">
-                <li>Vous ete ici: </li>
+                <li>Vous êtes ici :&nbsp;</li>
                 <li class="breadcrumb-item ">
                     <a href="<?php echo base_url('pages/index');?>
  " class="text-black ">
@@ -159,7 +159,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
                 <?php if ($_smarty_tpl->tpl_vars['name_file']->value == 'hawai' || $_smarty_tpl->tpl_vars['name_file']->value == 'sampatico' || $_smarty_tpl->tpl_vars['name_file']->value == 'dubai' || $_smarty_tpl->tpl_vars['name_file']->value == 'alpardis') {?>
                     <li class="breadcrumb-item ">
                     <a href="" class="text-black ">
-                        Nos hotels
+                        Nos hôtels
                     </a>
                 </li>
                 <?php }?>

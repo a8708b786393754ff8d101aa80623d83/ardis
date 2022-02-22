@@ -16,27 +16,13 @@ class CustomerManager{
         return  $this->respQuery->getCreditials($pseudo)[0]; 
     }
 
-    public function is_up_to_date(string $pseudo,$post, array $data_user)
-    {
+    public function is_up_to_date(string $pseudo,$post, array $data_user){
         if ($post->getMethod() == 'post' ){
             $post_data = $post->getPost(); 
-            $must_be_modified = []; // * tableau associatif des element qui on changer,clef: nom du champs, valuer: la valeur (bah oe ta crus quoi)
-            $error = $this->errorHunt->edit_profile($post_data);
+            $error = $this->errorHunt->hunt_edit_profile($post_data);
             if(count($post_data) === 11 && count($error) === 0){ // * regarde si les donner envoyer son egale a 11 
-                // * partis pour les info 
-                foreach($post_data as $keys=>$values){                    
-                    if($keys !== 'new_password' && $keys !== 'new_password_confirm'){
-                        if($post_data[$keys] !== $data_user[$keys]){// ? fait un filtre pour les voir la difference 
-                            if($keys === "pseudo"){
-                                // ? ajoute le compt pseudo 
-                                $must_be_modified['compt_pseudo'] = esc($values); 
-                            }else{
-                                //? prend la modification est ajoute au tablea associatif des modifier
-                                $must_be_modified["client_".$keys] = esc($values); 
-                            }
-                        }
-                    }
-                }
+                // * fonction qui dit qui a changer
+                $must_be_modified = $this->who_changed($post_data, $data_user);
                 // * modification du profile 
                 $this->respQuery->updateProfile($must_be_modified, $pseudo, $data_user['prenom']); 
                 // * partit pour les mot de passe 
@@ -45,10 +31,30 @@ class CustomerManager{
                 if(! empty($password_entry) && ! empty($password_entry_confirm)){
                     if($password_entry === $password_entry_confirm){
                         $passwd_bdd = $this->respQuery->getPasswordByPseudo($pseudo);
-                        $this->respQuery->updatePassword($pseudo, esc($post_data['new_password'])); 
+                        $password_hash = password_hash(esc($post_data['new_password']), PASSWORD_DEFAULT);
+                        $this->respQuery->updatePassword($pseudo, $password_hash); 
+                    }
+                }return ['msg_succes','Votre changement a bien ete pris en compte'];
+            }return ['msg_error', $error]; 
+        }
+    }
+
+    public function who_changed(array $post_data, array $data_user):array{
+        // * tableau associatif des element qui on changer,clef: nom du champs, valuer: la valeur (bah oe ta crus quoi)
+        $must_be_modified = []; 
+        foreach($post_data as $keys=>$values){                    
+            if($keys !== 'new_password' && $keys !== 'new_password_confirm'){
+                if($post_data[$keys] !== $data_user[$keys]){// ? fait un filtre pour les voir la difference 
+                    if($keys === "pseudo"){
+                        // ? ajoute le compt pseudo 
+                        $must_be_modified['compt_pseudo'] = esc($values); 
+                    }else{
+                        //? prend la modification est ajoute au tablea associatif des modifier
+                        $must_be_modified["client_".$keys] = esc($values); 
                     }
                 }
-            }return $error; 
+            }
         }
+        return $must_be_modified; 
     }
 }

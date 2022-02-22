@@ -5,12 +5,13 @@ namespace App\Models;
 class ConnexionManager {
     public $error = []; 
 
-    public function hunt_error_login(string $password, string $pseudo): array {
-
+    public function hunt_error_login(string $pseudo, string $password, string $passwd_bdd): array {
         if(empty($password) || empty($pseudo)){
             $this->error[] = 'Veuillez entrez votre mot de passe et/ou identifiant'; 
         }
-
+        if(! password_verify($password, $passwd_bdd)){
+            $this->error[] = 'Votre mot de passe ou identifiant incorrecte'; 
+        }
         $this->length_password($password, 8);
         return $this->error; 
     }
@@ -66,7 +67,7 @@ class ConnexionManager {
         }
     }
 
-    public function edit_profile($data_post){
+    public function hunt_edit_profile($data_post){
         $not_empty = 0; 
         foreach($data_post as $_ =>$values){
             if(! empty($values)){

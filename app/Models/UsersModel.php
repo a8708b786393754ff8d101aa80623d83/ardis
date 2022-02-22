@@ -22,7 +22,7 @@ class UsersModel extends Model
     }
 
     public function login(string $username,string $password){   
-        $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
+        $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name",compt_pass AS "passwd_hash" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 
@@ -56,7 +56,10 @@ class UsersModel extends Model
     }
 
     public function getPasswordByPseudo(string $pseudo): string{
-        return $this->db->query('SELECT compt_pass FROM compte WHERE compt_pseudo= ?', [$pseudo])->getResult()[0]->compt_pass; 
+        $resp = $this->db->query('SELECT compt_pass FROM compte WHERE compt_pseudo= ?', [$pseudo])->getResult();
+        if(count($resp) !== 0){ // ? la verif si jamais le pseudo il est pas dans la bdd
+            return $resp[0]->compt_pass; 
+        }return ''; 
     }
 
     public function updatePassword(string $pseudo, string $new_password){
@@ -86,7 +89,6 @@ class UsersModel extends Model
         if(strpos($sql,'=')){ // ? regarde si = est present dans la requete, si c'est le cas ca veut dire que le client a fait des modif
             $sql = substr($sql,0,-1); // ? cette focntion supprimer le dernier element d'une chaine de caracter dans notre cas c'est le ' 
             $this->db->query($sql.' WHERE client_prenom=?', [$prenom_client]);  
-            var_dump($sql); 
         } 
     }
     

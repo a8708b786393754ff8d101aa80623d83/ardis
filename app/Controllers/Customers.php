@@ -30,7 +30,8 @@ class Customers extends Visitor{
         $this->adresse = $this->dataCreditials->adresse; 
         $this->zip_code = $this->dataCreditials->cp; 
         $this->city = $this->dataCreditials->pays; 
-        $this->photo_profile = ''; // TODO une fois que le champs profile ajouter dans la bdd, la stocker
+        $this->photo_profile = ''; 
+        // TODO ajouter la photo de profile est faire un test dans 
     }
 
 
@@ -40,8 +41,7 @@ class Customers extends Visitor{
         return redirect()->to('http://localhost/ardis/public/customers/');
     }
 
-    public function profile()
-    {
+    public function profile(){
         // * IMPORTANT on dois verifier si la personne a une session est que le pseudo conresspond
 
         $this->_data['firstname']  = $this->firstname;
@@ -52,12 +52,12 @@ class Customers extends Visitor{
         $this->_data['adresse']  = $this->adresse;
         $this->_data['zip']  = $this->zip_code;
         $this->_data['city']  = $this->city;
+        $this->_data['photo_profile']  = $this->photo_profile;
 
         $this->view('profile'); 
     }
 
-    public function edite_profile()
-    {
+    public function edite_profile(){
         $resp = $this->CustomerManager->is_up_to_date($this->pseudo, $this->request, 
         [
             'pseudo'=>$this->pseudo,
@@ -71,7 +71,7 @@ class Customers extends Visitor{
             'photo_profile'=>$this->photo_profile,
         ]    
         ); 
-        $this->_data['msg_error'] = $resp;
-        $this->profile();  // ? affichage de la page profile avec 
+        $this->_data[$resp[0]] = $resp[1];
+        $this->profile();
     }
 }
