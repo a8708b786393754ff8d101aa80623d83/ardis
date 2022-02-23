@@ -414,3 +414,35 @@ CRITICAL - 2022-02-23 08:29:09 --> Array to string conversion
 #22 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #23 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #24 {main}
+ERROR - 2022-02-23 08:53:28 --> Unknown column 'client_photo_profile' in 'field list'
+CRITICAL - 2022-02-23 08:53:28 --> Unknown column 'client_photo_profile' in 'field list'
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/UsersModel.php(93): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/CustomerManager.php(27): App\Models\UsersModel->updateProfile()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(74): App\Models\CustomerManager->is_up_to_date()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-23 08:54:29 --> Unknown column 'client_photo_profile' in 'field list'
+CRITICAL - 2022-02-23 08:54:29 --> Unknown column 'client_photo_profile' in 'field list'
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/UsersModel.php(93): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/CustomerManager.php(27): App\Models\UsersModel->updateProfile()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(75): App\Models\CustomerManager->is_up_to_date()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->edite_profile()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-23 09:15:20 --> Typed property App\Controllers\Customers::$photo_profile must be string, null used
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

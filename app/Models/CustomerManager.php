@@ -57,9 +57,19 @@ class CustomerManager{
         }
         return $must_be_modified; 
     }
-
+    // ? supprimer un utlisateur par le pseudo
     public function delete_user_data(string $pseudo, $session){
         $this->respQuery->deleteUser($pseudo); 
         $session->remove(['pseudo', 'id']); 
+    }
+
+    // ? va le choix du photo de profile
+    public function managerImgProfile(string $civ, string $img_profile, string $pseudo){
+        if(empty($img_profile)){
+            if($civ === 'Mr'){
+                return "mr.png";
+            }return "mme.png"; // ! changer en webp 
+        }
+        return $this->respQuery->getImgByPseudo(pseudo); 
     }
 }

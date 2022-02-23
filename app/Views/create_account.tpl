@@ -22,6 +22,13 @@
                             required autofocus />
                               <input class="form-control" name="city" placeholder="Ville" type="text"
                             required autofocus />
+                            <label>Votre genre : 
+                    <select name='civ'>
+                          <option value="Mr">Homme</option>
+                          <option value="Mme">Femme</option>
+                    </select>
+                </label>
+
                     </div>
                     <div class="col-xs-6 col-md-6">
                         <input class="form-control" name="lastname" placeholder="Nom" type="text" required />

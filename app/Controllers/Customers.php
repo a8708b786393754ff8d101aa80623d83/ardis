@@ -1,6 +1,7 @@
 <?php 
 namespace App\Controllers; 
 use App\Models\CustomerManager;
+use App\Models\ImageManager;
 
 class Customers extends Visitor{
     protected $img_manip;
@@ -12,6 +13,7 @@ class Customers extends Visitor{
     protected string $adresse; 
     protected string $zip_code; 
     protected string $city; 
+    protected string $civ; 
     protected string $photo_profile; 
 
     private $dataCreditials; 
@@ -33,7 +35,8 @@ class Customers extends Visitor{
         $this->adresse = $this->dataCreditials->adresse; 
         $this->zip_code = $this->dataCreditials->cp; 
         $this->city = $this->dataCreditials->pays; 
-        $this->photo_profile = ''; 
+        $this->photo_profile = $this->dataCreditials->img_profile; 
+        $this->civ = $this->dataCreditials->civ; 
         // TODO ajouter la photo de profile est faire un test dans 
     }
 
@@ -55,12 +58,12 @@ class Customers extends Visitor{
         $this->_data['adresse']  = $this->adresse;
         $this->_data['zip']  = $this->zip_code;
         $this->_data['city']  = $this->city;
-        $this->_data['photo_profile']  = $this->photo_profile;
-
+        $this->_data['photo_profile']  = $this->CustomerManager->managerImgProfile($this->civ, $this->photo_profile, $this->pseudo);
         $this->view('profile'); 
     }
 
     public function edite_profile(){
+        $this->imgManager = new ImageManager;
         $resp = $this->CustomerManager->is_up_to_date($this->pseudo, $this->request, 
         [
             'pseudo'=>$this->pseudo,
@@ -73,7 +76,8 @@ class Customers extends Visitor{
             'pays'=>$this->city,
             'photo_profile'=>$this->photo_profile,
         ]    
-        ); 
+        );
+        var_dump($this->imgManager->randomNameImg());
         $this->_data[$resp[0]] = $resp[1];
         $this->profile();
     }

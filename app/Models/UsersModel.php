@@ -49,7 +49,7 @@ class UsersModel extends Model
     public function getCreditials(string $pseudo){
         $sql = 'SELECT client_nom AS nom, client_prenom AS prenom, client_adresse AS adresse, 
             client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
-            client_tel AS num_tel 
+            client_tel AS num_tel, client_profil_img AS img_profile, client_civ AS civ
             FROM clients 
             INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compt_pseudo = ?';
         return $this->db->query($sql, [$pseudo])->getResult(); 
@@ -69,7 +69,7 @@ class UsersModel extends Model
 
     // ? 
     
-    private function getIdByPseudo(string $pseudo): string {
+    private function getIdBeyPsudo(string $pseudo): string {
         return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
     }
 
@@ -101,4 +101,10 @@ class UsersModel extends Model
         $this->db->query($query_clients, [$id_pseudo]);
         $this->db->query($query_comptes, [$id_pseudo]);
     } 
+
+    // ? Recupere l'image pars le pseudo
+    public function getImgByPseudo(string $pseudo){
+        $id = $this->getIdBeyPsudo($pseudo); 
+        return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult(); 
+    }
 }

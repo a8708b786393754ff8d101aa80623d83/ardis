@@ -34,6 +34,8 @@ class ImageModel extends Model{
 
     // ? Recuperer l'image par uen date 
     public function getImgDate(string $date_post){
-
+        
     }
+
+
 }
