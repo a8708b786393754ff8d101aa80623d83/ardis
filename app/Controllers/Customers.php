@@ -74,4 +74,9 @@ class Customers extends Visitor{
         $this->_data[$resp[0]] = $resp[1];
         $this->profile();
     }
+
+    public function delete_profile(){
+        $this->CustomerManager->delete_user_data($this->pseudo, $this->session); 
+        return redirect()->to('http://localhost/ardis/public/pages/');
+    }
 }

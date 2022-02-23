@@ -4,12 +4,15 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 well well-sm sign_up">
-            {if isset($message) && ! empty($message) && is_array($message)}
+            {if isset($msg_error) && ! empty($msg_error) && is_array($msg_error)}
                 <div class="p-3 mb-2 bg-danger text-white">
-                    {foreach from=$message item=msg}
+                    {foreach from=$msg_error item=msg}
                     {$msg|cat:" <br>\n"}
                     {/foreach}
                 </div>
+            {/if}
+            {if isset($msg_succes)}
+                <div class="p-3 mb-2 bg-success text-white">{$msg_succes}</div>
             {/if}
                 <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> S'inscrire !</legend>
                 <form action="{base_url('/visitor/create_account')}" method="post" class="form" role="form">
