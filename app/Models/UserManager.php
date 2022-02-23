@@ -28,7 +28,7 @@ class UserManager{
                     return redirect()->to('http://localhost/ardis/public/customers/'); 
                 }return ['Mot de passe ou/et indentifiant incorrect']; 
             }
-            $this->errorHunt->hunt_error_login($pseudo, $password, $passwd_hash_bdd); //renvoie le message d'erreur
+            return $this->errorHunt->hunt_error_login($pseudo, $password, $passwd_hash_bdd); //renvoie le message d'erreur
         }
     }
 
@@ -41,7 +41,7 @@ class UserManager{
         }return []; 
     }
 
-    public function verificate_create_account($method): array 
+    public function verificate_create_account($method):array 
     {
         if ($method === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($_POST);
@@ -75,7 +75,7 @@ class UserManager{
                                         'compt_pseudo' => esc($_POST['pseudo']),
                                         'compt_pass'   => password_hash(esc($_POST['password']), PASSWORD_DEFAULT)
                                     ]); 
-                                return redirect()->to('http://localhost/ardis/public/visitor/login/'); 
+                                return ['msg_succes', 'Votre compe a été creer'];  
                             }
                             else{
                                 $error[] = 'Cette email est deja prise';
@@ -86,7 +86,7 @@ class UserManager{
                         }
                     }
                 }     
-            }return $error;
+            }return ['msg_error',$error];
         }return []; 
         
     } 

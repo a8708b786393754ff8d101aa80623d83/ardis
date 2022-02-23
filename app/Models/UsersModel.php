@@ -67,6 +67,8 @@ class UsersModel extends Model
         $this->db->query('UPDATE compte SET compt_pass = ? WHERE  compt_id = ?', [$new_password, $id_pseudo]);
     }
 
+    // ? 
+    
     private function getIdByPseudo(string $pseudo): string {
         return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
     }
@@ -92,4 +94,11 @@ class UsersModel extends Model
         } 
     }
     
+    public function deleteUser($pseudo){
+        $id_pseudo = $this->getIdByPseudo($pseudo); 
+        $query_clients = 'DELETE FROM clients WHERE client_id=?'; 
+        $query_comptes = 'DELETE FROM compte WHERE compt_id=?'; 
+        $this->db->query($query_clients, [$id_pseudo]);
+        $this->db->query($query_comptes, [$id_pseudo]);
+    } 
 }

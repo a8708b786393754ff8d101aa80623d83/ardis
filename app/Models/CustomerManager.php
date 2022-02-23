@@ -39,7 +39,7 @@ class CustomerManager{
         }
     }
 
-    public function who_changed(array $post_data, array $data_user):array{
+    protected function who_changed(array $post_data, array $data_user):array{
         // * tableau associatif des element qui on changer,clef: nom du champs, valuer: la valeur (bah oe ta crus quoi)
         $must_be_modified = []; 
         foreach($post_data as $keys=>$values){                    
@@ -56,5 +56,10 @@ class CustomerManager{
             }
         }
         return $must_be_modified; 
+    }
+
+    public function delete_user_data(string $pseudo, $session){
+        $this->respQuery->deleteUser($pseudo); 
+        $session->remove(['pseudo', 'id']); 
     }
 }

@@ -58,3 +58,102 @@ CRITICAL - 2022-02-23 03:44:39 --> Unable to load template 'file:Sampatico.tpl'
 #6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-02-23 04:44:10 --> Unable to load template 'file:profile.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(30): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/app/Controllers/Customers.php(57): App\Controllers\Pages->view()
+#5 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#6 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 04:52:40 --> Undefined variable: seudo
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-23 04:52:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::delete()
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-23 04:56:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::delete()
+#0 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#1 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-23 06:19:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' FROM 'client_id'='2'' at line 1
+CRITICAL - 2022-02-23 06:19:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' FROM 'client_id'='2'' at line 1
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/UsersModel.php(98): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-23 06:20:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' WHERE 'client_id'='2'' at line 1
+CRITICAL - 2022-02-23 06:20:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' WHERE 'client_id'='2'' at line 1
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/UsersModel.php(98): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-23 06:29:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' WHERE 'client_id'='2'' at line 1
+CRITICAL - 2022-02-23 06:29:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''clients' WHERE 'client_id'='2'' at line 1
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/UsersModel.php(101): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-23 06:32:00 --> Undefined variable: qsl
+#0 /var/www/html/ardis/app/Models/UsersModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-23 06:34:40 --> Return value of App\Models\UserManager::verificate_create_account() must be of the type array, object returned
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(23): App\Models\UserManager->verificate_create_account()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 06:50:48 --> Undefined variable: sql
+#0 /var/www/html/ardis/app/Models/UsersModel.php(101): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Models/CustomerManager.php(62): App\Models\UsersModel->deleteUser()
+#2 /var/www/html/ardis/app/Controllers/Customers.php(79): App\Models\CustomerManager->delete_user_data()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->delete_profile()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

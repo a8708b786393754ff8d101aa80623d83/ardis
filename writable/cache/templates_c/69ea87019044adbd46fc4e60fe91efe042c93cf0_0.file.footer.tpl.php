@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-23 03:44:37
+/* Smarty version 4.0.4, created on 2022-02-23 03:47:10
   from '/var/www/html/ardis/app/Views/base/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62160205c90463_22076144',
+  'unifunc' => 'content_6216029eb27ec4_49766939',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62160205c90463_22076144 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6216029eb27ec4_49766939 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- footer  -->
 <footer class=" card-footer d-flex align-items-center ">
     <div class="container ">

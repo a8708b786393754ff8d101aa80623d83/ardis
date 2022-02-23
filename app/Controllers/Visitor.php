@@ -21,7 +21,7 @@ class Visitor extends Pages{
     public function create_account()
     {
         $msg = $this->userManager->verificate_create_account($this->request->getMethod());
-        $this->_data['message'] = $msg; 
+        $this->_data[$msg[0]] = $msg[1]; 
         $this->view('create_account'); 
     }
 

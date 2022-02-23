@@ -34,7 +34,10 @@
                             {/if}
                             <p>Entrez votre nouveaux mot de passe: <input type="password" name="new_password"> </p>
                             <p>Confirmez votre nouveaux mot de passe: <input type="password" name="new_password_confirm"> </p>
-                            <input type="submit" value="Valider les modification" class='btn btn-primary submit-btn '>
+                            <input type="submit" value="Valider les modification" class='btn-primary submit-btn '>
+                        </form>
+                        <form action="{base_url('/customers/delete_profile/')}" method="POST">
+                            <input type="submit" class='btn-danger' value='Supprimer votre compte'>
                         </form>
                     </div>
                 </div>
