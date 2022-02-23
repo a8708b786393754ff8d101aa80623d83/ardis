@@ -8,7 +8,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img  src="{base_url('assets/Images/activiter/plages-surf.jpg')}" class="d-block img " alt="..." width='800' height='500'>
+      <img  src="{base_url('assets/Images/activiter/plages-surf.webp')}" class="d-block img " alt="..." width='800' height='500'>
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{base_url('assets/Images/activiter/phare.png')}" class="d-block img " alt="..." width='800' height='500'>
+      <img src="{base_url('assets/Images/activiter/phare.webp')}" class="d-block img " alt="..." width='800' height='500'>
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>

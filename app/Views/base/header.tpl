@@ -13,7 +13,7 @@
     <title>{$name_file}</title>
 </head>
 {if $name_file eq 'index'}
-<body style="background-image: url({base_url('assets/Images/background.jpg')})">
+<body style="background-image: url({base_url('assets/Images/background.webp')})">
 {else}
 <body>
 {/if}
@@ -22,7 +22,7 @@
     <!-- navbar -->
     <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo.png')}" alt="logo" width="80"></a>
+            <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo.webp')}" alt="logo" width="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
             </button>
