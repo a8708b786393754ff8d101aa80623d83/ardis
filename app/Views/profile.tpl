@@ -15,7 +15,7 @@
                             <div class="p-3 mb-2 bg-success text-white">{$msg_succes}</div>                                  
                         {/if}
 
-                        <form action="{base_url('/customers/edite_profile/')}" method="post">
+                        <form action="{base_url('/customers/edite_profile/')}" method="post"  enctype='multipart/form-data'>
                             <p>Nom : <input type="text" name="nom"  value="{$name}"> </p>
                             <p>Prenom : <input type="text" name="prenom"  value="{$firstname}"> </p>
                             <p>Pseudo: <input type="text" name="pseudo"  value="{$pseudo}"></p>

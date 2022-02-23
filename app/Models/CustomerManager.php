@@ -63,13 +63,18 @@ class CustomerManager{
         $session->remove(['pseudo', 'id']); 
     }
 
-    // ? va le choix du photo de profile
+    /**
+     * methode qui va retourner le nom de l'image
+     * @param string $civ
+     * @param string $img_profile
+     * @param string $pseudo
+     */
     public function managerImgProfile(string $civ, string $img_profile, string $pseudo){
         if(empty($img_profile)){
             if($civ === 'Mr'){
                 return "mr.png";
             }return "mme.png"; // ! changer en webp 
         }
-        return $this->respQuery->getImgByPseudo(pseudo); 
+        return $this->respQuery->getImgByPseudo($pseudo); 
     }
 }

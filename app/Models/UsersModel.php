@@ -69,7 +69,7 @@ class UsersModel extends Model
 
     // ? 
     
-    private function getIdBeyPsudo(string $pseudo): string {
+    public function getIdBeyPsudo(string $pseudo): string {
         return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
     }
 
@@ -105,6 +105,7 @@ class UsersModel extends Model
     // ? Recupere l'image pars le pseudo
     public function getImgByPseudo(string $pseudo){
         $id = $this->getIdBeyPsudo($pseudo); 
-        return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult(); 
+        return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
     }
+
 }

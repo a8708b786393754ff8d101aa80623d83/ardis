@@ -5,6 +5,8 @@ use App\Models\ImageManager;
 
 class Customers extends Visitor{
     protected $img_manip;
+    protected $imgManager;
+
     protected string $pseudo; 
     protected string $firstname; 
     protected string $name; 
@@ -23,7 +25,7 @@ class Customers extends Visitor{
         parent::__construct();
         $this->CustomerManager = new CustomerManager;
         $this->img_manip = \Config\Services::image();
-
+        $this->imgManager = new ImageManager($this->img_manip);
 
         $this->pseudo = $this->session->get('pseudo');
         $this->dataCreditials = $this->CustomerManager->getProfileData($this->pseudo); 
@@ -63,7 +65,6 @@ class Customers extends Visitor{
     }
 
     public function edite_profile(){
-        $this->imgManager = new ImageManager;
         $resp = $this->CustomerManager->is_up_to_date($this->pseudo, $this->request, 
         [
             'pseudo'=>$this->pseudo,
@@ -77,7 +78,8 @@ class Customers extends Visitor{
             'photo_profile'=>$this->photo_profile,
         ]    
         );
-        var_dump($this->imgManager->randomNameImg());
+        $this->photo_profile = $this->imgManager->management_uplaod_img($this->request, $this->pseudo); 
+
         $this->_data[$resp[0]] = $resp[1];
         $this->profile();
     }
@@ -89,11 +91,9 @@ class Customers extends Visitor{
 
     // ! test 
     public function test(){
-        $this->img_manip->withFile('assets/Images/background.jpg')
-        // ->resize(100, 100,true, 'auto')
-        ->convert(IMAGETYPE_WEBP)
-        ->save('assets/Images/background_test.webp');
 
-        var_dump($this->img_manip->getProperties(true));
+        // ->save('assets/Images/background_test.webp');
+
+    //     var_dump($this->img_manip->getProperties(true));
     }
 }

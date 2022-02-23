@@ -1,5 +1,6 @@
 <?php 
 namespace App\Models; 
+use CodeIgniter\Model; 
 
 class ImageModel extends Model{
     protected $table         = 'clients';
@@ -15,9 +16,12 @@ class ImageModel extends Model{
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
+    protected $userModel; 
+
     public function __construct()
     {
         parent::__construct(); 
+        $this->userModel = new UsersModel; 
     }
 
     
@@ -37,5 +41,9 @@ class ImageModel extends Model{
         
     }
 
+    public function setImgProfile(string $pseudo, string $name_img){
+        $id = $this->userModel->getIdBeyPsudo($pseudo);
+        $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
+    }
 
 }

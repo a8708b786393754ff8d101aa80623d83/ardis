@@ -90,4 +90,8 @@ class ConnexionManager {
             $this->error[] = 'Veuillez entrez tout les champs'; 
         }return $this->error; 
     }
+
+    public function huntUplaodedFile(){
+        
+    }
 }
