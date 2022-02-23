@@ -86,10 +86,10 @@ class Customers extends Visitor{
     // ! test 
     public function test(){
         $this->img_manip->withFile('assets/Images/background.jpg')
-        ->resize(100, 100,true, 'auto')
+        // ->resize(100, 100,true, 'auto')
         ->convert(IMAGETYPE_WEBP)
         ->save('assets/Images/background_test.webp');
 
-        var_dump($this->img_manip->getProperties(true)); 
+        var_dump($this->img_manip->getProperties(true));
     }
 }
