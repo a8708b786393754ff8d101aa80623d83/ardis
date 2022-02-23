@@ -38,10 +38,10 @@ class Hotel extends Pages{
         $this->_data['ville']       = $this->ville;
 
         $this->_data['color_link_nav'] = 'black'; 
-        $this->_data['name_file']      = $page; 
+        $this->_data['name_file']      = lcfirst($page); 
         $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();
 
-        $this->display($page.'.tpl');
+        $this->display(lcfirst($page).'.tpl');
     }
 
 }

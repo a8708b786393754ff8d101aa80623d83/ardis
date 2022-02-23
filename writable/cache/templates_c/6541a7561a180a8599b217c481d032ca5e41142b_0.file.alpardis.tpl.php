@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-02-23 03:46:10
-  from '/var/www/html/ardis/app/Views/dubai.tpl' */
+/* Smarty version 4.0.4, created on 2022-02-23 03:46:11
+  from '/var/www/html/ardis/app/Views/alpardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621602625e2cc9_29101655',
+  'unifunc' => 'content_62160263885cd9_66767131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '68605d0fff79854acd5c5deaea89800fddeef110' => 
+    '6541a7561a180a8599b217c481d032ca5e41142b' => 
     array (
-      0 => '/var/www/html/ardis/app/Views/dubai.tpl',
+      0 => '/var/www/html/ardis/app/Views/alpardis.tpl',
       1 => 1645609418,
       2 => 'file',
     ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_621602625e2cc9_29101655 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62160263885cd9_66767131 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_731132590621602625d3f15_75486487', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_85464060462160263883568_18824425', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_731132590621602625d3f15_75486487 extends Smarty_Internal_Block
+class Block_85464060462160263883568_18824425 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_731132590621602625d3f15_75486487',
+    0 => 'Block_85464060462160263883568_18824425',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -48,7 +48,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['image']->value;?>
 " alt="image <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
  hotel">
-        <i class="fa fa-envelope share" aria-hidden="true"></i>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
         <div class="row ">
             <h1>Hotel <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
 </h1>
