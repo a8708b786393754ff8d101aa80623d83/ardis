@@ -3,6 +3,7 @@ namespace App\Controllers;
 use App\Models\CustomerManager;
 
 class Customers extends Visitor{
+    protected $img_manip;
     protected string $pseudo; 
     protected string $firstname; 
     protected string $name; 
@@ -19,6 +20,8 @@ class Customers extends Visitor{
     {
         parent::__construct();
         $this->CustomerManager = new CustomerManager;
+        $this->img_manip = \Config\Services::image();
+
 
         $this->pseudo = $this->session->get('pseudo');
         $this->dataCreditials = $this->CustomerManager->getProfileData($this->pseudo); 
@@ -78,5 +81,15 @@ class Customers extends Visitor{
     public function delete_profile(){
         $this->CustomerManager->delete_user_data($this->pseudo, $this->session); 
         return redirect()->to('http://localhost/ardis/public/pages/');
+    }
+
+    // ! test 
+    public function test(){
+        $this->img_manip->withFile('assets/Images/background.jpg')
+        ->resize(100, 100,true, 'auto')
+        ->convert(IMAGETYPE_WEBP)
+        ->save('assets/Images/background_test.webp');
+
+        var_dump($this->img_manip->getProperties(true)); 
     }
 }

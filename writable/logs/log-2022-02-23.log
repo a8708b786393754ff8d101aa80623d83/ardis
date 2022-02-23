@@ -157,3 +157,260 @@ CRITICAL - 2022-02-23 06:50:48 --> Undefined variable: sql
 #5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-02-23 08:14:55 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:15:03 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:15:34 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:02 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:02 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:02 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:07 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:28 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:54 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:54 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:55 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:16:55 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:17:08 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:17:08 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:17:08 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:17:08 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:23:03 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:23:15 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:25:37 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:25:38 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:25:38 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:11 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:12 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:12 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:53 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:54 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:54 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:26:54 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:27:21 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:27:42 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:27:42 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:27:42 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:28:43 --> Illegal offset type
+#0 /var/www/html/ardis/app/Controllers/Visitor.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->create_account()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-23 08:29:09 --> Array to string conversion
+#0 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_562002971621629bc8bae17_32762129->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_6216029eb153c1_79044910()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/16983b41c81c607951d644b9c4822fd393cc58b5_0.file.login.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621629bc8bd471_51738673()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Pages.php(30): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/app/Controllers/Visitor.php(18): App\Controllers\Pages->view()
+#20 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Visitor->login()
+#21 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#22 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#23 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#24 {main}

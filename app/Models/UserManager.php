@@ -32,7 +32,7 @@ class UserManager{
         }
     }
 
-    public function verificate_mdp_oublier($method): array 
+    public function verificate_mdp_oublier($method) 
     {
         if ($method === 'post'){
             $email = $_POST['email']; 
@@ -41,7 +41,7 @@ class UserManager{
         }return []; 
     }
 
-    public function verificate_create_account($method):array 
+    public function verificate_create_account($method) 
     {
         if ($method === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($_POST);
@@ -87,7 +87,7 @@ class UserManager{
                     }
                 }     
             }return ['msg_error',$error];
-        }return []; 
+        }return "none";
         
     } 
 
