@@ -88,7 +88,7 @@
             <ol class="breadcrumb ">
                 <li>Vous êtes ici :&nbsp;</li>
                 <li class="breadcrumb-item ">
-                    <a href="{base_url('pages/index')} " class="text-black ">
+                    <a href="{base_url('pages')} " class="text-black ">
                         Accueil
                     </a>
                 </li>

@@ -1,43 +1,82 @@
 <?php 
+/**
+ * @file articles_controller.php
+* @author Ayoub Brahim
+*  @details 
+* @brief Manager pour les client connecter
+* <p>Cette class gere toute la logique pour executer une requete</p>
+* <p>Les actions sont :</p>
+* <ul>
+* 	<li><strong>home</strong> : page d'accueil</li>
+* 	<li><strong>blog</strong> : Liste des articles</li>
+* </ul>
+*
+**/
 namespace App\Models; 
-
-// class manager pour les clients
 class CustomerManager{
     protected $respQuery; 
+    protected $errorHunt; 
+
+    /**
+    *	@brief methode constructeur qui initialise 
+    *	<p>Cette fonction permet de rechercher via une requête, 
+    *		la liste des articles présents dans la base de données</p>
+    **/
 
     public function __construct()
     {
-        $this->errorHunt = new ConnexionManager; 
+        $this->errorHunt = new HuntError; 
         $this->respQuery = new UsersModel; 
     }
 
-    public function getProfileData(string $pseudo): object
+    public function getProfileData(string $id): object
     {
-        return  $this->respQuery->getCreditials($pseudo)[0]; 
+        return  $this->respQuery->getCreditials($id)[0]; 
     }
 
-    public function is_up_to_date(string $pseudo,$post, array $data_user){
+    /**
+     * Methode qui met a jour le profile tout en verifiant avant 
+     * Retourne un tableau de message 
+     * ! index 1: le type de message(erreur ou success), index2: le message 
+     * @param string $pseudo
+     * @param  $post
+     * @param array $data_user
+     */
+    public function is_up_to_date(string $pseudo,$post, $id, array $data_user){
         if ($post->getMethod() == 'post' ){
-            $post_data = $post->getPost(); 
-            $error = $this->errorHunt->hunt_edit_profile($post_data);
-            if(count($post_data) === 11 && count($error) === 0){ // * regarde si les donner envoyer son egale a 11 
+            $post_data = $post->getPost(); // * stocke les donner envoyer par l'utilisateur (donc ceux qui vont etre modifier)
+            $error = $this->errorHunt->hunt_edit_profile($post_data); // * chasse les erruer 
+            if(count($post_data) === 10 && count($error) === 0){ // * regarde si les donner envoyer son egale a 11 
                 // * fonction qui dit qui a changer
                 $must_be_modified = $this->who_changed($post_data, $data_user);
-                // * modification du profile 
-                $this->respQuery->updateProfile($must_be_modified, $pseudo, $data_user['prenom']); 
+                if(count($must_be_modified) !== 0){
+                    // * modification du profile 
+                    $this->respQuery->updateProfile($must_be_modified, $pseudo, $id); 
+                }
                 // * partit pour les mot de passe 
                 $password_entry = esc($post_data['new_password']);
                 $password_entry_confirm = esc($post_data['new_password_confirm']);
+                $password_modified = false; 
                 if(! empty($password_entry) && ! empty($password_entry_confirm)){
                     if($password_entry === $password_entry_confirm){
                         $passwd_bdd = $this->respQuery->getPasswordByPseudo($pseudo);
                         $password_hash = password_hash(esc($post_data['new_password']), PASSWORD_DEFAULT);
                         $this->respQuery->updatePassword($pseudo, $password_hash); 
+                        $password_modified = true; 
                     }
-                }return ['msg_succes','Votre changement a bien ete pris en compte'];
+                }if(count($must_be_modified) !== 0 || $password_modified){ // ! regarde si le tableaux des changement n'est pas vide
+                    return ['msg_succes','Votre changement a bien ete pris en compte'];
+                }return ["non_modified", ['ignore']]; 
             }return ['msg_error', $error]; 
         }
     }
+
+    /**
+     * Methode proteger qui 
+     * 
+     * 
+     * 
+     */
 
     protected function who_changed(array $post_data, array $data_user):array{
         // * tableau associatif des element qui on changer,clef: nom du champs, valuer: la valeur (bah oe ta crus quoi)
@@ -69,12 +108,12 @@ class CustomerManager{
      * @param string $img_profile
      * @param string $pseudo
      */
-    public function managerImgProfile(string $civ, string $img_profile, string $pseudo){
+    public function managerImgProfile(string $civ, string $img_profile, string $id){
         if(empty($img_profile)){
             if($civ === 'Mr'){
                 return "mr.png";
             }return "mme.png"; // ! changer en webp 
         }
-        return $this->respQuery->getImgByPseudo($pseudo); 
+        return $this->respQuery->getImgByIdCustomers($id); 
     }
 }

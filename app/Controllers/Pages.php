@@ -29,4 +29,5 @@ class Pages extends BaseController{
         $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();
         $this->display($page.'.tpl');
     }
+
 }

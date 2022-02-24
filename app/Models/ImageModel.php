@@ -42,7 +42,7 @@ class ImageModel extends Model{
     }
 
     public function setImgProfile(string $pseudo, string $name_img){
-        $id = $this->userModel->getIdBeyPsudo($pseudo);
+        $id = $this->userModel->getIdByPseudo($pseudo);
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
     }
 

@@ -4,11 +4,13 @@ namespace App\Models;
 define('MAX_LENGHT_FILE', 5000); 
 class ImageManager{
     protected $imgModel; 
+    protected $error; 
     protected $gd; 
     protected $white_liste; 
     
     public function __construct($obgjGD){
         $this->imgModel = new ImageModel; 
+        $this->error = new HuntError; 
         $this->gd = $obgjGD;  
         $this->white_liste = ["png", "webp", 'jpeg', 'jpg']; 
     }
@@ -37,4 +39,6 @@ class ImageManager{
         // ->convert(IMAGETYPE_WEBP); 
         // var_dump($img_pre_uplaoded->isValid()); 
     }
+
+    
 }

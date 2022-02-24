@@ -2,7 +2,7 @@
 namespace App\Models; 
 
 // class pour les message d'erruer pour tout ce qui est connexion 
-class ConnexionManager {
+class HuntError {
     public $error = []; 
 
     public function hunt_error_login(string $pseudo, string $password, string $passwd_bdd): array {
@@ -29,9 +29,8 @@ class ConnexionManager {
         $email = $post['email']; 
         $password = $post['password']; 
         $confirm_password = $post['Confirm_password']; 
-
-        if(count($post) < 11){
-            $this->error[] = "Veuilleez remplire les tout les champs! "; 
+        if(! $this->isAllEmpty($post, 12)){
+            $this->error[] = "Veuillez remplire les tout les champs! "; 
         }
 
         $this->verif_conf_password($password, $confirm_password); 
@@ -54,11 +53,9 @@ class ConnexionManager {
     }
 
     public function verif_email($email){
-        if(! is_string($email) && strpos($email, '@')){
+        if(! is_string($email) || strpos($email, '@') === false){
             $this->error[] = 'Veuillez entrez un email valide'; 
-        }else{
-            return True;
-        }
+        }return true; 
     }
 
     public function verif_tel(string $tel){
@@ -66,20 +63,23 @@ class ConnexionManager {
             $this->error[] ='Veuillez entrez un numero de telephone valide!';
         }
     }
-
-    public function hunt_edit_profile($data_post){
+    public function isAllEmpty(array $arrData, int $mandatory): bool{
         $not_empty = 0; 
-        foreach($data_post as $_ =>$values){
+        foreach($arrData as $_ =>$values){
             if(! empty($values)){
                 $not_empty++; 
             }
         }
+        return $not_empty >= $mandatory; 
+    }
+
+    public function hunt_edit_profile($data_post){
         $password = $data_post['new_password']; 
         $password_confirm = $data_post['new_password_confirm']; 
         $num_tel = $data_post['tel']; 
         $email = $data_post['email'];
         
-        if($not_empty >= 8){      // ? le 8, c'est le nombre de champs obligatoire 
+        if($this->isAllEmpty($data_post, 8)){   // ? le 8, c'est le nombre de champs obligatoire 
             $this->verif_conf_password($password, $password_confirm); 
             $this->verif_tel($num_tel); 
             $this->verif_email($email); 
@@ -92,6 +92,6 @@ class ConnexionManager {
     }
 
     public function huntUplaodedFile(){
-        
+        // TODO faire les message d'erruer; 
     }
 }

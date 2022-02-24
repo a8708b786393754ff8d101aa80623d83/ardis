@@ -46,13 +46,13 @@ class UsersModel extends Model
         return $this->db->query($sql)->getResult(); 
     }
 
-    public function getCreditials(string $pseudo){
+    public function getCreditials(string $id){
         $sql = 'SELECT client_nom AS nom, client_prenom AS prenom, client_adresse AS adresse, 
             client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
-            client_tel AS num_tel, client_profil_img AS img_profile, client_civ AS civ
+            client_tel AS num_tel, client_profil_img AS img_profile, client_civ AS civ, compt_pseudo AS pseudo
             FROM clients 
-            INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compt_pseudo = ?';
-        return $this->db->query($sql, [$pseudo])->getResult(); 
+            INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compte.compt_id=?'; // ! mettre l'id est le tester
+        return $this->db->query($sql, [$id])->getResult(); 
     }
 
     public function getPasswordByPseudo(string $pseudo): string{
@@ -69,7 +69,7 @@ class UsersModel extends Model
 
     // ? 
     
-    public function getIdBeyPsudo(string $pseudo): string {
+    public function getIdByPseudo(string $pseudo): string {
         return $this->db->query('SELECT compt_id FROM compte WHERE compt_pseudo = ?', [$pseudo])->getResult()[0]->compt_id; 
     }
 
@@ -77,20 +77,23 @@ class UsersModel extends Model
         return $this->db->query('SELECT client_id FROM clients WHERE client_prenom = ?', [$prenom])->getResult()[0]->client_id;  
     }
 
-    public function updateProfile(array $data_for_update, string $pseudo, string $prenom_client){
+    /**
+     * Methode qui fait la requete pour mettre a jour
+     * @param array 
+     */
+    public function updateProfile(array $data_for_update, string $pseudo, $id){
         if(array_key_exists('compt_pseudo', $data_for_update)){
-            $id_pseudo = $this->getIdByPseudo($pseudo);
-            $this->db->query('UPDATE compte SET compt_pseudo=? WHERE compt_id=?', [$pseudo, $id_pseudo]);  
+            $this->db->query('UPDATE compte SET compt_pseudo=? WHERE compt_id=?', [$pseudo, $id]);  
         }
-        $id_prenom_client = $this->getIdByClient($prenom_client); 
-        $sql = 'UPDATE clients SET';
+        // TODO recuperer l'id a la place du prenom
+        $sql = 'UPDATE clients INNER JOIN compte ON compte.compt_id= clients.client_id SET ';
         foreach($data_for_update as $keys=>$values){
             $sql .= ' '.$keys.'="'.$values.'",'; 
         }
         // ! faut faire le test sinon elle renvoie une erruer
         if(strpos($sql,'=')){ // ? regarde si = est present dans la requete, si c'est le cas ca veut dire que le client a fait des modif
-            $sql = substr($sql,0,-1); // ? cette focntion supprimer le dernier element d'une chaine de caracter dans notre cas c'est le ' 
-            $this->db->query($sql.' WHERE client_prenom=?', [$prenom_client]);  
+            $sql = substr($sql,0,-1); // ? cette fonction supprimer le dernier element d'une chaine de caracter dans notre cas c'est le ' 
+            $this->db->query($sql.' WHERE client_id=?', [$id]);  
         } 
     }
     
@@ -103,8 +106,7 @@ class UsersModel extends Model
     } 
 
     // ? Recupere l'image pars le pseudo
-    public function getImgByPseudo(string $pseudo){
-        $id = $this->getIdBeyPsudo($pseudo); 
+    public function getImgByIdCustomers(string $id){
         return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
     }
 

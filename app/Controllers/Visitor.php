@@ -13,7 +13,10 @@ class Visitor extends Pages{
 
     public function login()
     {
-        $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session);
+        $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session, redirect());
+        if($msg === true){
+            return redirect()->to('http://localhost/ardis/public/customers/profile/'); 
+        }
         $this->_data['message'] = $msg;  
         $this->view('login');
     }
