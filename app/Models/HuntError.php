@@ -73,7 +73,7 @@ class HuntError {
         return $not_empty >= $mandatory; 
     }
 
-    public function hunt_edit_profile($data_post){
+    public function hunt_edit_profile($data_post): array {
         $password = $data_post['new_password']; 
         $password_confirm = $data_post['new_password_confirm']; 
         $num_tel = $data_post['tel']; 
@@ -83,15 +83,44 @@ class HuntError {
             $this->verif_conf_password($password, $password_confirm); 
             $this->verif_tel($num_tel); 
             $this->verif_email($email); 
-            if(! empty($password) && ! empty($password_confirm)){ // ? faut regarder 
+            if(! empty($password) && ! empty($password_confirm)){ // ?pour verifier si les mot de passe est le confirm passwd sont entrez
                 $this->length_password($password);
             }
         }else{
             $this->error[] = 'Veuillez entrez tout les champs'; 
-        }return $this->error; 
+        }
+        return $this->error; 
     }
 
-    public function huntUplaodedFile(){
-        // TODO faire les message d'erruer; 
+    /**
+     * @brief Methode qui trouve les erruer liée au televersement d'image de profile
+     *  @details 
+     *	<p>Cette fonction cherche les erruer lier au televersement d'image de profile</p>
+     *  <ul>
+     * 	    <li><strong>la taille</strong></li>
+     * 	    <li><strong>l'exension</strong></li>
+     * 	    <li><strong>regarde si il le fichier est valide</strong></li>
+     * </ul>
+     * @param  $img
+     * @param int $max_length
+     * @return array contenant les erruer 
+    */
+    public function huntUplaodedFile($img, int $max_length, array $white_list): array {
+        // si l'extension n'est pas dans la liste blanche 
+        if(! in_array($img->getClientExtension(), $white_list)){ 
+            var_dump(in_array($img->getClientExtension(), $white_list));
+            $this->error [] = 'Veuillez choisir une image '; 
+        }
+        // verifie la taille du fichier
+        if( $img->getSize() >= MAX_LENGHT_FILE){ 
+            $this->error[] = 'Votre image est trop lourdes'; 
+        }   
+        
+        // pour voir si le fichier est valide est qu'il a pas ete deplacer 
+        if(! $img->isValid() && $img->hasMoved()){
+            $this->error[] = "Veuillez re-entrez l'image ";
+        }
+        
+        return $this->error; 
     }
 }

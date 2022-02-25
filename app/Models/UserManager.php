@@ -49,16 +49,16 @@ class UserManager{
         if ($method === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($_POST);
             if(count($error) === 0){
-                // ? verifie si la longeur des element du post sont a 11
-                $not_empty = 0; 
+                // ? verifie si la longeur des element du post sont a 12
                 if (count($_POST) === 12){
                     // ? parcour le contenue du post est regarde si c'est pas vide
+                    $not_empty = 0; 
                     foreach($_POST as $_=>$element){
                         if(! empty($element)){
                             $not_empty++; 
                         }
                     }
-                    // ? si les nombres des champs remplie
+                    // ? si tout les champs sont renseigner
                     if ($not_empty === count($_POST)){
                         $is_register_pseudo = $this->respQuery->is_a_account_by_pseudo($_POST['pseudo']); 
                         $is_register_email = $this->respQuery->is_a_account_by_email($_POST['email']);
