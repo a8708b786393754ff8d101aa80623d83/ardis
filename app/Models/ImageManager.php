@@ -14,7 +14,7 @@ class ImageManager{
         $this->gd = $obgjGD;  
         $this->white_liste = ["png", "webp", 'jpeg', 'jpg']; 
     }
-
+    // TODO revoir cette methode est faire d'une autre facon  
     public function management_uplaod_img($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
         // verifie l'extension du fichier si il est bien dans la liste blanche 
