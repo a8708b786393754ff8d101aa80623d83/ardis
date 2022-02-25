@@ -1,9 +1,10 @@
 <?php 
 /**
  * @file articles_controller.php
+ * @date 20/02/2022
 * @author Ayoub Brahim
-*  @details 
 * @brief Manager pour les client connecter
+*  @details 
 * <p>Cette class gere toute la logique pour executer une requete</p>
 * <p>Les actions sont :</p>
 * <ul>

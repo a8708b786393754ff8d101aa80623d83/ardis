@@ -24,7 +24,9 @@
                             <p>Pays: <input type="text" name="pays"  value="{$city}"></p>
                             <p>Votre email: <input type="email" name="email"  value="{$email}"> </p>
                             <p>Votre numero de telephone: <input type="tel" name="tel"  value="{$tel}"> </p>
-                            <p>Photo de profile: <input type="file" name="photo_profile"></p>
+                            <p>Photo de profile: <input type="file" name="photo_profile"> 
+                                <p style="color: red;">Format accepter .png, .webp, .jpeg, .jpg</p>
+                            </p>
                             <p>Entrez votre nouveaux mot de passe: <input type="password" name="new_password"> </p>
                             <p>Confirmez votre nouveaux mot de passe: <input type="password" name="new_password_confirm"> </p>
                             <input type="submit" value="Valider les modification" class='btn-primary submit-btn '>

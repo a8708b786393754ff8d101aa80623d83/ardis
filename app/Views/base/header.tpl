@@ -94,13 +94,13 @@
                 </li>
                 {if $name_file == 'hawai' || $name_file == 'sampatico' || $name_file == 'dubai'|| $name_file == 'alpardis'}
                     <li class="breadcrumb-item ">
-                    <a href="" class="text-black ">
+                    <a href="#" class="text-black ">
                         Nos hôtels
                     </a>
                 </li>
                 {/if}
                 <li class="breadcrumb-item ">
-                    <a href="" class="text-black ">
+                    <a href="#" class="text-black ">
                         {$name_file}
                     </a>
                 </li>
