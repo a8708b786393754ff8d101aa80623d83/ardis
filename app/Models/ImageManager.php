@@ -1,7 +1,16 @@
 <?php
 namespace App\Models;
+// constante pour la taille maximum des fichier
+ define('MAX_SIZE', 300_000); 
 
-define('MAX_LENGHT_FILE', 300_000); 
+/**
+* @file ImageManager.php
+* @author Ayoub Brahim <ayoubbrahim68@gmail.com>
+* @date 25/02/2022
+* @brief Manager des images 
+* @details 
+* <p>Cette classe  gérer toute la logique lier aux image pour executer les resultat</p>
+**/
 
 class ImageManager{
     protected $imgModel; 
@@ -9,6 +18,17 @@ class ImageManager{
     protected $error; 
     protected $white_liste; 
     
+    /**
+    * @brief Methode constructrice 
+    * @details 
+    * <p>Cette methode constructrice initialise trois classe: </p>
+    * <ul>
+    * 	<li><strong>imgModel</strong> = ImageModel</li>
+    * 	<li><strong>hotelModel</strong> =  Hotel</li>
+    * 	<li><strong>error</strong> =  HuntError</li>
+    * </ul>
+    * <p> Elle initialise un tableaux d'extension accepeter</p>
+    **/
     public function __construct(){
         $this->imgModel = new ImageModel; 
         $this->hotelModel = new HotelModel; 
@@ -17,10 +37,19 @@ class ImageManager{
         $this->white_list = ["png", "webp", 'jpeg', 'jpg']; 
     }
 
+     /**
+    * @brief Methode qui fait les tests pour enregistrer la photo de profile 
+    * @details 
+    * <p>Cette methode continet la requete SQL pour ajouter la photo de profile a l'utilisateur</p>
+    * <p>Les test s'appuye sur la methode huntUplaodedFile() de la classe HuntError</p>
+    * <p>Regarde si le nom de fichier n'est pas vide (si c'est le cas la photo de profile n'est preciser dans l'edition de profile)</p>
+    * <p>
+    * @return array Contient erreur lier au televersement d'image de profile 
+    **/
     public function management_uplaod_img($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
         if (! empty($img_pre_uplaoded->getFileName())){
-            $error = $this->error->huntUplaodedFile($img_pre_uplaoded, MAX_LENGHT_FILE, $this->white_list); 
+            $error = $this->error->huntUplaodedFile($img_pre_uplaoded, MAX_SIZE, $this->white_list); 
             if(count($error) === 0 ){
                 $name_rand_file = $img_pre_uplaoded->getRandomName(); // nom aleatoire 
                 $img_pre_uplaoded->move('assets/Images/profile/',$name_rand_file); //deplace le fichier 

@@ -1,11 +1,12 @@
 <?php 
+ namespace App\Models; 
 /**
- * @file articles_controller.php
- * @date 20/02/2022
+* @file articles_controller.php
 * @author Ayoub Brahim
+* @date 20/02/2022
 * @brief Manager pour les client connecter
 *  @details 
-* <p>Cette class gere toute la logique pour executer une requete</p>
+* <p>Cette class gérer toute la logique pour executer une requete</p>
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>home</strong> : page d'accueil</li>
@@ -13,7 +14,6 @@
 * </ul>
 *
 **/
-namespace App\Models; 
 class CustomerManager{
     protected $respQuery; 
     protected $errorHunt; 
