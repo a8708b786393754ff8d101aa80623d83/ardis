@@ -43,7 +43,10 @@ class ImageManager{
             $id_hotel = $this->hotelModel->getIdByNameHotel($name)[0]->hotel_id;
             $img_name = $this->imgModel->getImgByIdHotel($id_hotel);  
             for($i=0; $i < count($img_name); $i++){
-                $arrImgHotels[$name][] = $img_name[$i]->image_nom; 
+                if($max !== 0){
+                    $arrImgHotels[$name][] = $img_name[$i]->image_nom; 
+                }
+                $max --; 
             }
         }
         return $arrImgHotels; 

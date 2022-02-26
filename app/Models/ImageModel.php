@@ -23,10 +23,6 @@ class ImageModel extends Model{
         $this->hotelModel = new HotelModel; 
     }
 
-    public function getAllImagePhotoGalerie(){
-        
-    }
-
     /** 
      * @param string $id 
      * @return array nom de l'image appartenant a l'hotel 

@@ -5,8 +5,7 @@
         <article>
             <h2 class="text-center">{$nav_bar_hotel[$foo]}</h2>
             {foreach from=$photo[$nav_bar_hotel[$foo]] item=item key=key name=name}
-            {$photo[$nav_bar_hotel[$foo]].$key}
-            <img class="dubai_photos" src="{base_url('assets/Images/galerie_photo')|cat:'/'|cat:$nav_bar_hotel[$foo]|cat:'/'|cat:$photo[$nav_bar_hotel[$foo]].$key}" alt="dubai_photo_terrase" width="100" height="50">
+                <img class="dubai_photos" src="{base_url('assets/Images/galerie_photo')|cat:'/'|cat:$nav_bar_hotel[$foo]|cat:'/'|cat:$photo[$nav_bar_hotel[$foo]].$key}" alt="dubai_photo_terrase" width="100" height="50">
             {/foreach}
         </article>
         {/for}
