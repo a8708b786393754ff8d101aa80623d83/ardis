@@ -16,13 +16,11 @@ class HotelModel extends Model{
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct(); 
     }
 
-    public function getBestHotels(): array 
-    {
+    public function getBestHotels(): array {
         return $this->db->query(
                 'SELECT hotel_image,hotel_nom,hotel_price, hotel_ville
                 FROM hotels
@@ -32,24 +30,25 @@ class HotelModel extends Model{
                 )->getResult(); 
     }
 
-    public function getAll(string $hotel)
-    {
+    public function getAll(string $hotel){
         return $this->db->query(
             'SELECT hotel_nom,hotel_image,hotel_pays,hotel_price, hotel_ville, hotel_note, hotel_contenue,hotel_mail 
             FROM hotels
             WHERE hotel_nom = ?', [ucfirst($hotel)])->getResult();
     }
 
-    public function getName()
-    {
+    public function getName(){
         return $this->db->query(
                         'SELECT hotel_nom
                         FROM hotels
                         ')->getResult();
     }
 
-    public function getAllHotelsName()
-    {
+    public function getAllHotelsName(){
         return $this->db->query('SELECT hotel_nom AS nom FROM hotels')->getResult(); 
+    }
+
+    public function getIdByNameHotel(string $name_hotel){
+        return $this->db->query('SELECT  hotel_id FROM hotels WHERE hotel_nom=?', [$name_hotel])->getResult(); 
     }
 }

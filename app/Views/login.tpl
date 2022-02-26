@@ -15,7 +15,7 @@
         <!-- Tabs Titles -->
         <!-- Icon -->
         <div class="fadeIn first">
-          <img src="{base_url('assets/Images/logo.png')}" id="icon" alt="User Icon" />
+          <img src="{base_url('assets/Images/logo.webp')}" id="icon" alt="User Icon" />
         </div>
     
         <!-- Login Form -->

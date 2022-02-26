@@ -92,6 +92,7 @@ class HuntError {
         return $this->error; 
     }
 
+    
     /**
      * @brief Methode qui trouve les erruer liée au televersement d'image de profile
      *  @details 
@@ -108,7 +109,6 @@ class HuntError {
     public function huntUplaodedFile($img, int $max_length, array $white_list): array {
         // si l'extension n'est pas dans la liste blanche 
         if(! in_array($img->getClientExtension(), $white_list)){ 
-            var_dump(in_array($img->getClientExtension(), $white_list));
             $this->error [] = 'Veuillez choisir une image '; 
         }
         // verifie la taille du fichier

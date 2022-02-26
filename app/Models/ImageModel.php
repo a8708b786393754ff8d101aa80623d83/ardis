@@ -3,12 +3,10 @@ namespace App\Models;
 use CodeIgniter\Model; 
 
 class ImageModel extends Model{
-    protected $table         = 'clients';
-    protected $primaryKey    = 'client_id';
-    protected $allowedFields = ["client_id","client_nom","client_prénom",
-                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
-                "client_tel", "compte_client","resrv_client","client_avis"
-                ];
+    protected $table         = 'images';
+    protected $primaryKey    = 'image_id';
+    protected $allowedFields = ["client_id","image_nom","image_date",
+                "page", "hotel_id"];
     protected $returnType    = 'App\Entities\PagesEntity';
 
     protected $useTimestamps = true;
@@ -16,14 +14,26 @@ class ImageModel extends Model{
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    protected $userModel; 
+    protected UsersModel $userModel; 
+    protected HotelModel $hotelModel; 
 
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct(); 
         $this->userModel = new UsersModel; 
+        $this->hotelModel = new HotelModel; 
     }
 
+    public function getAllImagePhotoGalerie(){
+        
+    }
+
+    /** 
+     * @param string $id 
+     * @return array nom de l'image appartenant a l'hotel 
+     */
+    public function getImgByIdHotel(string $id){
+        return $this->db->query('SELECT image_nom FROM images WHERE hotel_id=?', [$id])->getResult(); 
+    }
     
 
     // ? Recuperer tout les nom des images 
@@ -44,6 +54,14 @@ class ImageModel extends Model{
     public function setImgProfile(string $pseudo, string $name_img){
         $id = $this->userModel->getIdByPseudo($pseudo);
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
+    }
+
+    /**
+     * @brief 
+     * @param string $id 
+     */
+    public function deleteImg(string $id){
+        $this->db->query('query', [$id]); 
     }
 
 }
