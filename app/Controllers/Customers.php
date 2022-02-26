@@ -4,9 +4,9 @@ use App\Models\CustomerManager;
 use App\Models\ImageManager;
 
 class Customers extends Visitor{
-    protected $img_manip;
     protected $imgManager;
     
+    protected  $id; 
     protected string $pseudo;
     protected string $firstname; 
     protected string $name; 
@@ -17,24 +17,23 @@ class Customers extends Visitor{
     protected string $city; 
     protected string $civ; 
     protected string $photo_profile; 
-    protected  $id; 
-    
+
     private $dataCreditials; 
 
     public function __construct()
     {
         parent::__construct();
         $this->CustomerManager = new CustomerManager;
-        $this->img_manip = \Config\Services::image();
-        $this->imgManager = new ImageManager($this->img_manip);
+        $this->imgManager = new ImageManager;
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
+        $this->hydrate(); 
     }
     
     
     protected function hydrate(){
         $objResp = $this->dataCreditials = $this->CustomerManager->getProfileData($this->id);
-        $this->session->set('pseudo', $objResp->pseudo);
+        $this->session->set('pseudo', $objResp->pseudo); 
 
         $this->firstname = $objResp->prenom; 
         $this->name = $objResp->nom; 
@@ -70,8 +69,9 @@ class Customers extends Visitor{
     }
     
     public function edite_profile(){
-        $this->hydrate();
+        $this->photo_profile = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
         $resp = $this->CustomerManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
+        // $this->_data[];
         [
             'pseudo'=>$this->pseudo,
             'prenom'=>$this->firstname,
@@ -85,7 +85,9 @@ class Customers extends Visitor{
             ]    
         );
         $this->_data[$resp[0]] = $resp[1];
-        $this->_data["msg_error"] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
+
+
+        $this->hydrate();
         $this->profile(); 
     }
     
@@ -94,4 +96,11 @@ class Customers extends Visitor{
         return redirect()->to('http://localhost/ardis/public/pages/');
     }
 
+    // ! test 
+    public function test(){
+
+        // ->save('assets/Images/background_test.webp');
+
+    //     var_dump($this->img_manip->getProperties(true));
+    }
 }
