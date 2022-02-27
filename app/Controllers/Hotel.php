@@ -37,14 +37,14 @@ class Hotel extends Pages{
     * <p>Elle recupere les donnes de l'hotel grace a la methode getData de la classe HotelManager</p>
     * <p>Elle initialise les varaiables</p>
     * <ul>
-    * 	<li><strong>name</strong>:  nom de l'hotel</li>
-    * 	<li><strong>image</strong>: image principale de  l'hotel</li>
-    * 	<li><strong>pays</strong>:  pays ou est situer l'hotel</li>
-    * 	<li><strong>ville</strong>: ville l'hotel</li>
-    * 	<li><strong>price</strong>: prix de la nuit de l'hotel</li>
-    * 	<li><strong>note</strong>:  note de l'hotel</li>
-    * 	<li><strong>contenue</strong>: paragraphe de presentation de l'hotel</li>
-    * 	<li><strong>email</strong>:    email de l'hotel</li>
+    * 	<li><strong>Attribut: name</strong>:  nom de l'hotel</li>
+    * 	<li><strong>Attribut: image</strong>: image principale de  l'hotel</li>
+    * 	<li><strong>Attribut: pays</strong>:  pays ou est situer l'hotel</li>
+    * 	<li><strong>Attribut: ville</strong>: ville l'hotel</li>
+    * 	<li><strong>Attribut: price</strong>: prix de la nuit de l'hotel</li>
+    * 	<li><strong>Attribut: note</strong>:  note de l'hotel</li>
+    * 	<li><strong>Attribut: contenue</strong>: paragraphe de presentation de l'hotel</li>
+    * 	<li><strong>Attribut: email</strong>:    email de l'hotel</li>
     * </ul>
     * <p>Elle envoie un tableaux de nom d'hotel a smarty pour qu'elle affiche dans la barre de navigation</p>
     * @param string $page 

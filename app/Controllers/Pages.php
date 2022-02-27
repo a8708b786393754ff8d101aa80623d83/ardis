@@ -21,7 +21,7 @@ class Pages extends BaseController{
     /**
     * @brief Methode constructrice 
     * @details 
-    * <p>Cette methode initialise la variable session est la variable hotelMngr a la classe HotelManager</p>
+    * <p>Cette methode initialise la atrribut session est l'atrribut hotelMngr a la classe HotelManager</p>
     * <p>Elle charge le helper url pour utiliser la redirection avec codeIgniter</p>
     **/
     public function __construct(){

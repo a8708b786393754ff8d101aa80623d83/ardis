@@ -15,7 +15,7 @@ class HotelManager {
     /**
     * @brief Methode constructrice 
     * @details 
-    * <p>Cette methode constructrice initialise la class HotelModel</p>
+    * <p>Cette methode constructrice initialise la class HotelModel a l'attribut respQuery</p>
     **/
     public function __construct(){
         $this->respQuery = new HotelModel(); 

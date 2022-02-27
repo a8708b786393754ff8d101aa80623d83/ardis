@@ -1,10 +1,32 @@
 <?php 
 namespace App\Models; 
+/**
+* @file HuntError.php
+* @author Ayoub Brahim <ayoubbrahim68@gmail.com>
+* @date 15/02/2022
+* @brief Classe pour la gestion d'erreur
+* @details 
+* <p>Cette classe contient la logique des tests est la gestion d'erreur</p>
+**/
 
-// class pour les message d'erruer pour tout ce qui est connexion 
 class HuntError {
     public $error = []; 
 
+    /**
+    * @brief Methode qui chasse les erruer lie a la connexion d'un compte   
+    * @details 
+    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
+    * <p>La methode verifie:</p>
+    *<ul>
+    * 	<li>le contenue du pseudo est du mot de passe entrez (s'il ne sont pas vide).</li>
+    * 	<li>verifie l'hash stocker en bdd est le mot de passe entrez.</li>
+    * 	<li>verifie la longuer du mot de passe (il est de huit par default)</li>
+    *</ul>
+    * @param string $pseudo
+    * @param string $password
+    * @param string $password_bdd
+    * @return array Contient les erruer  
+    **/
     public function hunt_error_login(string $pseudo, string $password, string $passwd_bdd): array {
         if(empty($password) || empty($pseudo)){
             $this->error[] = 'Veuillez entrez votre mot de passe et/ou identifiant'; 
@@ -12,19 +34,45 @@ class HuntError {
         if(! password_verify($password, $passwd_bdd)){
             $this->error[] = 'Votre mot de passe ou identifiant incorrecte'; 
         }
-        $this->length_password($password, 8);
+        $this->length_password($password);
         return $this->error; 
     }
 
-    public function forget_password($email, $resp): array {
+    /**
+    * @brief Methode qui chasse les erruer lie a l'oublie de mot de passe
+    * @details 
+    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
+    * <p>La methode verifie:</p>
+    *<ul>
+    * 	<li>verifie l'email garce a la methode de cette instante</li>
+    * 	<li>verifie si la reponse de la requete sql a retourner des elements </li>
+    *</ul>
+    * @param string $email 
+    * @param array $resp
+    * @return array Contient le type de d'erruer est de son contenue  
+    **/
+    public function forget_password(string $email, array $resp): array{
         if($this->verif_email($email)){
             if(count($resp) === 1){
                 return ['success'=>'Un email va vous etre envoyer'];
-            }
+            } // la clef est le type d'erruer, la valeur le contenue du message
         } return ["danger"=>'Verifier votre email!'];
     }
 
-    public function hunt_error_create_account(array $post): array {
+    /**
+    * @brief Methode qui chasse les erruer lie a l'oublie de mot de passe
+    * @details 
+    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
+    * <p>La methode verifie:</p>
+    *<ul>
+    * 	<li>verifie l'email garce a la methode de cette instante</li>
+    * 	<li>verifie si la reponse de la requete sql a retourner des elements </li>
+    *</ul>
+    * @param string $email 
+    * @param array $resp
+    * @return array Contient le type de d'erruer est de son contenue  
+    **/
+    public function hunt_error_create_account(array $post): array{
         $tel = $post['tel']; 
         $email = $post['email']; 
         $password = $post['password']; 
@@ -46,7 +94,7 @@ class HuntError {
         }
     }
 
-    public function length_password(string $password, int $min_length=8) {
+    public function length_password(string $password, int $min_length=8){
         if(strlen($password) < $min_length){
             $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
         }

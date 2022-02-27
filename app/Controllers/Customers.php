@@ -41,8 +41,8 @@ class Customers extends Visitor{
     * <p>Cette methode constructrice appelle la methode constructrice de la classe Visitor</p>
     * <p>La methode constructrice initialise deux classe: </p>
     * <ul>
-    * 	<li><strong>custManager</strong> = CustomerManager</li>
-    * 	<li><strong>imgManager</strong> =  ImageManager</li>
+    * 	<li><strong>Attribut: custManager</strong> = CustomerManager</li>
+    * 	<li><strong>Attribut: imgManager</strong> =  ImageManager</li>
     * </ul>
     * <p>Elle recupere l'id de l'utilisateur a partir de la session</p>
     **/

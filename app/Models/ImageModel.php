@@ -31,8 +31,8 @@ class ImageModel extends Model{
     * <p>Cette methode constructrice appelle la methode constructrice de la classe Model</p>
     * <p>La methode constructrice initialise deux classe: </p>
     * <ul>
-    * 	<li><strong>userModel</strong> = UserModel</li>
-    * 	<li><strong>hotelModel</strong> =  HotelModel</li>
+    * 	<li><strong>Atrribut: userModel</strong> = UserModel</li>
+    * 	<li><strong>Atrribut: hotelModel</strong> =  HotelModel</li>
     * </ul>
     **/
     public function __construct(){
