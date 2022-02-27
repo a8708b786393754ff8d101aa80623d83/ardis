@@ -1,5 +1,16 @@
-<?php 
-namespace App\Controllers; 
+<?php
+namespace App\Controllers;
+/**
+* @file Hotel.php
+* @author Ayoub Brahim <ayoubbrahim68@gmail.com>
+* @date 21/02/2022
+* @brief Controller des Hotel 
+* @details 
+* <p>Les actions sont :</p>
+* <ul>
+* 	<li><strong>view</strong> : affcihe la page de l'hotel</li>
+* </ul>
+**/
 
 class Hotel extends Pages{
     protected string $name;
@@ -11,13 +22,35 @@ class Hotel extends Pages{
     protected string $contenue;
     protected string $email;
 
-    public function __construct()
-    {   
+     /**
+    * @brief Methode constructrice 
+    * @details 
+    * <p>Cette methode constructrice appelle la methode constructrice de la classe Pages</p>
+    **/
+    public function __construct(){   
         parent::__construct(); 
     }
     
-    public function view($page)
-    {
+    /** 
+    * @brief Methode qui donne a la vue les element pour qu'il doivent etre afficher  dans la vue 
+    * @details
+    * <p>Elle recupere les donnes de l'hotel grace a la methode getData de la classe HotelManager</p>
+    * <p>Elle initialise les varaiables</p>
+    * <ul>
+    * 	<li><strong>name</strong>:  nom de l'hotel</li>
+    * 	<li><strong>image</strong>: image principale de  l'hotel</li>
+    * 	<li><strong>pays</strong>:  pays ou est situer l'hotel</li>
+    * 	<li><strong>ville</strong>: ville l'hotel</li>
+    * 	<li><strong>price</strong>: prix de la nuit de l'hotel</li>
+    * 	<li><strong>note</strong>:  note de l'hotel</li>
+    * 	<li><strong>contenue</strong>: paragraphe de presentation de l'hotel</li>
+    * 	<li><strong>email</strong>:    email de l'hotel</li>
+    * </ul>
+    * <p>Elle envoie un tableaux de nom d'hotel a smarty pour qu'elle affiche dans la barre de navigation</p>
+    * @param string $page 
+    * @return array nom de l'image appartenant a l'hotel 
+    */
+    public function view($page){
         $respQuery = $this->hotelMngr->getData($page)[0]; 
         $this->name = $respQuery->hotel_nom; 
         $this->image = $respQuery->hotel_image; 
@@ -37,6 +70,7 @@ class Hotel extends Pages{
         $this->_data['email']       = $this->email;
         $this->_data['ville']       = $this->ville;
 
+        // pour la couleur du texte de la bar de navigation
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = lcfirst($page); 
         $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();

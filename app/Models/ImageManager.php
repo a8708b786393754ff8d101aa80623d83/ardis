@@ -1,8 +1,6 @@
 <?php
 namespace App\Models;
-// constante pour la taille maximum des fichier
- define('MAX_SIZE', 300_000); 
-
+define('MAX_SIZE', 300_000); // constante pour la taille maximum des fichier
 /**
 * @file ImageManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -43,7 +41,7 @@ class ImageManager{
     * <p>Cette methode continet la requete SQL pour ajouter la photo de profile a l'utilisateur</p>
     * <p>Les test s'appuye sur la methode huntUplaodedFile() de la classe HuntError</p>
     * <p>Regarde si le nom de fichier n'est pas vide (si c'est le cas la photo de profile n'est preciser dans l'edition de profile)</p>
-    * <p>
+    * <p>Si l'image passe les test de verification, le nouveaux nom de l'image serais ajouter a la base de donner</p>
     * @return array Contient erreur lier au televersement d'image de profile 
     **/
     public function management_uplaod_img($img_file, string $pseudo){
@@ -61,11 +59,14 @@ class ImageManager{
     }
 
     /**
-    * @brief 
+    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chasue hotels 
+    * @details 
+    * <p>Cette methode a besoin d'un tableaux de nom d'hotels pour avoir l'id est recuperer les image de cette hotels</p>
+    * <p>Le nombre d'image maximum pour chaque hotel est de 4</p>
     * @param  array $allHotels
-    * @return array contenue des photo avec les hotels 
+    * @param  int $max 
+    * @return array tableaux associatif, clef: nom de l'hotel, valeur: tableaux de nom d'image 
     */
-
     public function getAllData(array $allHotels, int $max=4){
         $arrImgHotels = []; 
         foreach($allHotels as $name){
