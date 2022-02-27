@@ -41,6 +41,7 @@ class Pages extends BaseController{
         $this->_data['color_link_nav'] = 'white';
         $this->_data['name_file']      = 'index';
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
+        $this->_data['meta_title']      = 'Acceuil'; 
         $this->display();
         die; 
     }
@@ -55,6 +56,7 @@ class Pages extends BaseController{
     public function view($page){
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = $page; 
+        $this->_data['meta_title']      = ucfirst($page); 
         $this->display($page.'.tpl');
     }
 

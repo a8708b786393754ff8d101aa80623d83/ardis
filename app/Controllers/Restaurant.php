@@ -2,7 +2,7 @@
 namespace App\Controllers; 
 use App\Models\RestaurantManager;
 /**
-* @file Customers.php
+* @file Restaurant.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 27/02/2022
 * @brief Controller des menus  
@@ -38,6 +38,7 @@ class Restaurant extends Pages{
         $this->_data['name_file']      = 'restaurant';
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
         $this->_data['content_menu']   = $this->allData; 
+        $this->_data['meta_title']      = ucfirst('restaurant'); 
         $this->display("restaurant.tpl");
     }
 }

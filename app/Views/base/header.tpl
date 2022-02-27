@@ -10,7 +10,7 @@
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <link rel="stylesheet" href="{base_url('assets/Fontawesome/css/font-awesome.min.css')}">
-    <title>{$name_file}</title>
+    <title>{$meta_title}</title>
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.webp')})">
