@@ -160,7 +160,7 @@ class HuntError {
             $this->error [] = 'Veuillez choisir une image '; 
         }
         // verifie la taille du fichier
-        if( $img->getSize() >= MAX_LENGHT_FILE){ 
+        if( $img->getSize() >= $max_length){ 
             $this->error[] = 'Votre image est trop lourdes'; 
         }   
         

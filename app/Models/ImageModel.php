@@ -13,9 +13,9 @@ use CodeIgniter\Model;
 class ImageModel extends Model{
     protected $table         = 'images';
     protected $primaryKey    = 'image_id';
-    protected $allowedFields = ["client_id","image_nom","image_date",
+    protected $allowedFields = ["image_nom","image_date",
                 "page", "hotel_id"];
-    protected $returnType    = 'App\Entities\PagesEntity';
+    protected $returnType    = 'App\Entities\ImageEntity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

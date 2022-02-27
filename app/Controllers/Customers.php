@@ -30,7 +30,7 @@ class Customers extends Visitor{
     protected string $zip_code; 
     protected string $city; 
     protected string $civ; 
-    protected string $photo_profile; 
+    protected  $photo_profile; 
     
     protected $imgManager;
     private $dataCreditials; 
@@ -128,6 +128,8 @@ class Customers extends Visitor{
     * <p>Elle donne les donner a smarty pour qu'elle sois afficher</p>
     **/
     public function edite_profile(){
+        $this->hydrate(); 
+
         $this->photo_profile = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
         $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
         [

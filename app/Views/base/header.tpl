@@ -50,7 +50,7 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/activiter')}">Nos activités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/restaurant')}">Restaurants</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('restaurant/')}">Restaurants</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('galerie_photo')}">Galerie photo</a>
