@@ -39,6 +39,7 @@ class PhotoGallery extends Pages{
     public function view($page='galerie_photo'){
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = $page; 
+        $this->_data['meta_title']      = 'Galerie photo'; 
         $this->_data['photo']          = $this->ImgManager->getAllData($this->_data['nav_bar_hotel']) ;
         $this->display($page.'.tpl');
     }

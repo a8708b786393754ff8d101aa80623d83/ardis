@@ -1,10 +1,10 @@
 <?php 
  namespace App\Models; 
 /**
-* @file articles_controller.php
+* @file RestaurantManager.php
 * @author Ayoub Brahim
-* @date 20/02/2022
-* @brief Manager pour les client connecter
+* @date 27/02/2022
+* @brief Manager pour le restaurant
 *  @details 
 * <p>Cette class gérer toute la logique pour executer une requete</p>
 * <p>Les actions sont :</p>
@@ -12,7 +12,6 @@
 * 	<li><strong>home</strong> : page d'accueil</li>
 * 	<li><strong>blog</strong> : Liste des articles</li>
 * </ul>
-*
 **/
 class RestaurantManager{
     protected $respQuery; 
