@@ -10,22 +10,7 @@ class PhotoGalleryManager{
         $this->hotels = $allHotels; 
     }
 
-    /**
-     * @brief Methode qui donne les rubrique est les photo associer a leur hotels
-     * 
-     */
+    // l'utiliser pour l'adminstateur
 
-    public function getAllData(){
-        var_dump($this->imgModel); 
-
-    }
-
-
-    public function getRubric(){
-        
-    }
-
-
-    // public function 
 
 }

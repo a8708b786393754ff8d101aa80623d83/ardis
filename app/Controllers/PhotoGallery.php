@@ -10,13 +10,12 @@ use App\Models\ImageManager;
 * @details 
 * <p>Les action de la classe est view</p>
 **/
-// ! mettre le allHotelNoms dans le constructeur de la classe Pages
 
 class PhotoGallery extends Pages{
     protected int $max_photo = 4; 
     protected array $allHotelNoms; 
     protected HotelManager $hotelManager; 
-    protected ImageManager $ImgModel; 
+    protected ImageManager $ImgManager; 
 
     /**
     * @brief Methode constructrice 
@@ -28,9 +27,7 @@ class PhotoGallery extends Pages{
     public function __construct(){
         parent::__construct(); 
         $this->hotelManager = new HotelManager; 
-        $this->allHotelNoms  = $this->hotelManager->getHotelsNamesForNavBar();
-        
-        $this->ImgModel = new ImageManager();
+        $this->ImgManager = new ImageManager();
     }
 
     /**
@@ -42,8 +39,7 @@ class PhotoGallery extends Pages{
     public function view($page='galerie_photo'){
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = $page; 
-        $this->_data['nav_bar_hotel']  = $this->allHotelNoms; 
-        $this->_data['photo']          = $this->ImgModel->getAllData($this->allHotelNoms) ;
+        $this->_data['photo']          = $this->ImgManager->getAllData($this->_data['nav_bar_hotel']) ;
         $this->display($page.'.tpl');
     }
 }

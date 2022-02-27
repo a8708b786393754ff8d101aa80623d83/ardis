@@ -2,11 +2,10 @@
 namespace App\Models;
 use CodeIgniter\Model; 
 
-class UsersModel extends Model
-{
+class UsersModel extends Model{
     protected $table         = 'clients';
     protected $primaryKey    = 'client_id';
-    protected $allowedFields = ["client_id","client_nom","client_prénom",
+    protected $allowedFields = [ "client_nom","client_prénom",
                                 "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
                                 "client_tel", "compte_client","resrv_client","client_avis"
                                 ];

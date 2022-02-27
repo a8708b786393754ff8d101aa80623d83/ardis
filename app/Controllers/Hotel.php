@@ -73,7 +73,6 @@ class Hotel extends Pages{
         // pour la couleur du texte de la bar de navigation
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = lcfirst($page); 
-        $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();
 
         $this->display(lcfirst($page).'.tpl');
     }

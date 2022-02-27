@@ -1,7 +1,7 @@
 {extends file='base/layout.tpl'}
 {block name=content}
     <section>
-         {for $foo=0 to count($nav_bar_hotel) -1 }
+        {for $foo=0 to count($nav_bar_hotel) -1 }
         <article>
             <h2 class="text-center">{$nav_bar_hotel[$foo]}</h2>
             {foreach from=$photo[$nav_bar_hotel[$foo]] item=item key=key name=name}

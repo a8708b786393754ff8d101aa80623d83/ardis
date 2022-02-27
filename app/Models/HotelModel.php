@@ -11,13 +11,12 @@ use CodeIgniter\Model;
 **/
 
 class HotelModel extends Model{
-    protected $table         = 'clients';
-    protected $primaryKey    = 'client_id';
-    protected $allowedFields = ["client_id","client_nom","client_prénom",
-                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
-                "client_tel", "compte_client","resrv_client","client_avis"
-                ];
-    protected $returnType    = 'App\Entities\PagesEntity';
+    protected $table         = 'hotels';
+    protected $primaryKey    = 'hotel_id';
+    protected $allowedFields = ["hotel_nom","hotel_adresse","hotel_cp" ,"hotel_ville" ,
+                "hotel_pays" ,"hotel_mail","hotel_tel", "hotel_menu","hotel_activ","hotel_avis", 
+                "hotel_image", "hotel_chambr", "hotel_price",  "hotel_note","hotel_contenue"];
+    protected $returnType    = 'App\Entities\HotelEntity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

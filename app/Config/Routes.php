@@ -53,6 +53,7 @@ $routes->get('galerie_photo/', 'PhotoGallery::view');
 
 $routes->get('pages/(:any)', 'Pages::view/$1');
 $routes->get('hotel/(:any)', 'Hotel::view/$1');
+$routes->get('restaurant/', 'Restaurant::index');
 
 /*
  * --------------------------------------------------------------------

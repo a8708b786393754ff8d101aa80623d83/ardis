@@ -3,7 +3,7 @@ namespace App\Entities;
 
 use CodeIgniter\Entity\Entity;
 
-class UserEntity extends Entity
+class ImageEntity extends Entity
 {
 
 }
