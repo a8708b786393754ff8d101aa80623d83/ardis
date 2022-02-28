@@ -18,7 +18,7 @@
                 <form action="{base_url('/visitor/create_account')}" method="post" class="form" role="form">
                 <div class="row">
                     <div class="col-xs-6 col-md-6">
-                        <input class="form-control" name="firstname" placeholder="Prenom" type="text"
+                        <input class="form-control" name="firstname" placeholder="Prénom" type="text"
                             required autofocus />
                               <input class="form-control" name="city" placeholder="Ville" type="text"
                             required autofocus />
@@ -281,7 +281,7 @@
                 <input class="form-control" name="adresse" placeholder="Adresse" type="text" required autofocus />
                 <input class="form-control" name="email" placeholder="Email" type="email" />
                  <input class="form-control" name="tel" placeholder="Téléphone " type="tel" />
-                <input class="form-control" name="pseudo" placeholder="pseudo" type="text" />
+                <input class="form-control" name="pseudo" placeholder="Pseudo" type="text" />
                 <input class="form-control" name="password" placeholder="Mot de passe" type="password" />
                 <input class="form-control" name="Confirm_password" placeholder="Confirmation du mot de passe" type="password" />
                 <br />
