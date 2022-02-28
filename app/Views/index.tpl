@@ -13,10 +13,7 @@
             </form>
         </div>
     </div>
-
     <i class="fas fa-arrow-down"></i>
-
-    <!-- partie meuilleur hotel/prix -->
     <section>
         <h2 class="text-center presentation_hotel">Le fleuron de nos hôtels aux meilleurs prix</h2>
         <div class="card-group">

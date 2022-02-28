@@ -1,7 +1,9 @@
 {extends file='base/layout.tpl'}
 {block name=content}
     <section>
+        {for $foo=0 to count($nav_bar_hotel) -1 }
         <article>
+<<<<<<< HEAD
             <h2 class="text-center">Dubai</h2>
             <img class="dubai_photos" src="{base_url('assets/Images/hotel-desert-dubai.webp')}" alt="dubai_photo_terrase">
             <img class="dubai_photos" src="{base_url('assets/Images/istockphoto-182404406-170667a.webp')}" alt="dubia_photo">
@@ -22,6 +24,13 @@
             <img class="suisse_photos" src="{base_url('assets/Images/images2.webp')}" alt="hotel apladris">
             <img class="suisse_photos" src="{base_url('assets/Images/montagne_room.webp')}" alt="suisse_room">
             <img class="suisse_photos" src="{base_url('assets/Images/luge.webp')}" alt="luge_suisse">
+=======
+            <h2 class="text-center">{$nav_bar_hotel[$foo]}</h2>
+            {foreach from=$photo[$nav_bar_hotel[$foo]] item=item key=key name=name}
+                <img class="dubai_photos" src="{base_url('assets/Images/galerie_photo')|cat:'/'|cat:$nav_bar_hotel[$foo]|cat:'/'|cat:$photo[$nav_bar_hotel[$foo]].$key}" alt="dubai_photo_terrase" width="100" height="50">
+            {/foreach}
+>>>>>>> main
         </article>
+        {/for}
     </section>
 {/block}

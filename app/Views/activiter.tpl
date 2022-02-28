@@ -1,5 +1,6 @@
 {extends file='base/layout.tpl'}
 {block name=content}
+<<<<<<< HEAD
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,4 +39,24 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+=======
+<section>
+  {foreach from=$activiter item=item key=key}
+    {for $foo=0 to count($item) -1}
+        <div class="contanier">
+          <div class="row">
+              <h2 class="text-center">{$item[$foo]->nom_hotel}</h2>
+              <h4 class='text-center'>{$item[$foo]->nom}</h4>
+              <img src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item[$foo]->image}" alt="">
+              <p>Pays: {$item[$foo]->loca}</p>
+              <p>Date: {$item[$foo]->date}</p>
+              <p>Description: {$item[$foo]->descri}</p>
+              <p>Tarif par personne: <strong>{$item[$foo]->tarif}€</strong></p>
+            </div>
+        </div>
+      {/for}
+  {/foreach}
+</section>
+<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
+>>>>>>> main
 {/block}

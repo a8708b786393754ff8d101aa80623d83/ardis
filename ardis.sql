@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 21 fév. 2022 à 15:08
+-- Généré le : lun. 28 fév. 2022 à 15:52
 -- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
+-- Version de PHP : 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `activites` (
   `activ_dispo` int(2) NOT NULL,
   `hotel_id` int(1) NOT NULL,
   PRIMARY KEY (`activ_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `activites`
@@ -53,7 +53,10 @@ INSERT INTO `activites` (`activ_id`, `activ_nom`, `activ_image`, `activ_loca`, `
 (5, 'Raquette', 'raquette.webp', 'Suisse', 150, '2020-06-12', 'Raquette entre amis sur nos pistes privées', 3, 3),
 (6, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2018-03-20', 'Promenade en chameaux dans le désert', 0, 2),
 (7, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2017-03-20', 'Promenade en chameaux dans le désert', 0, 2),
-(8, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2015-03-20', 'Promenade en chameaux dans le désert', 0, 2);
+(8, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2015-03-20', 'Promenade en chameaux dans le désert', 0, 2),
+(9, 'Raquette', 'ski.webp', 'Suisse', 100, '2022-06-28', 'ski sur nos pistes privées', 5, 3),
+(10, 'Ski', 'ski.webp', 'Suisse', 100, '2022-05-28', 'ski sur nos pistes privées', 5, 3),
+(11, 'Ski', 'ski.webp', 'Suisse', 100, '2022-07-28', 'ski sur nos pistes privées', 5, 3);
 
 -- --------------------------------------------------------
 
@@ -191,6 +194,7 @@ INSERT INTO `chambres` (`chamb_id`, `chamb_num`, `chamb_tel`, `nbr_lit`, `hotel_
 DROP TABLE IF EXISTS `clients`;
 CREATE TABLE IF NOT EXISTS `clients` (
   `client_id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_civ` varchar(255) NOT NULL,
   `client_nom` varchar(50) NOT NULL,
   `client_prenom` varchar(50) NOT NULL,
   `client_adresse` varchar(100) NOT NULL,
@@ -199,6 +203,7 @@ CREATE TABLE IF NOT EXISTS `clients` (
   `client_pays` varchar(50) NOT NULL,
   `client_email` varchar(50) NOT NULL,
   `client_tel` varchar(50) NOT NULL,
+  `client_profil_img` varchar(255) DEFAULT NULL,
   `compte_client` int(11) DEFAULT NULL,
   `resrv_client` int(11) DEFAULT NULL,
   `client_avis` int(11) DEFAULT NULL,
@@ -206,18 +211,19 @@ CREATE TABLE IF NOT EXISTS `clients` (
   KEY `client_compte_fk` (`compte_client`),
   KEY `client_reserv_fk` (`resrv_client`),
   KEY `client_avis_fk` (`client_avis`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `clients`
 --
 
-INSERT INTO `clients` (`client_id`, `client_nom`, `client_prenom`, `client_adresse`, `client_cp`, `client_ville`, `client_pays`, `client_email`, `client_tel`, `compte_client`, `resrv_client`, `client_avis`) VALUES
-(1, 'MATHIEU', 'Antoine', '3 Rue de la Gare', '75000', 'Paris', 'France', 'mathieuAntoine@gmaiL.com', '06 54 85 12 40', NULL, NULL, NULL),
-(2, 'KURT', 'Cobain', '171 Lake Washington Blvd E', 'WA 98112-5033', 'Seattle', 'USA', 'shot.gun@gmail.com', '09 11 52 49 87', NULL, NULL, NULL),
-(3, 'JEAN-CHRYSOSTOME', 'Dolto', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '09 14 78 54 70', NULL, NULL, NULL),
-(4, 'ARMAND', 'Thiery', '2 bis Rue de Villiers', '92300', 'Levallois-Perret', 'France', 'ATcontact@armandthiery.fr', '01 45 19 33 33', NULL, NULL, NULL),
-(5, 'CHRISTIAN', 'Dior', '30 avenue Montaigne', ' 75008 ', 'Paris', 'France', 'contactdioreu@dior.com', '01 40 73 54 44', NULL, NULL, NULL);
+INSERT INTO `clients` (`client_id`, `client_civ`, `client_nom`, `client_prenom`, `client_adresse`, `client_cp`, `client_ville`, `client_pays`, `client_email`, `client_tel`, `client_profil_img`, `compte_client`, `resrv_client`, `client_avis`) VALUES
+(1, 'Mr', 'MATHIEU', 'Antoine', '3 Rue de la Gare', '75000', 'Paris', 'France', 'mathieuAntoine@gmaiL.com', '0654851240', '', NULL, NULL, NULL),
+(2, 'Mr', 'KURT', 'Cobain', '171 Lake Washington Blvd E', 'WA 98112-5033', 'Seattle', 'USA', 'shot.gun@gmail.com', '0911524087', '', NULL, NULL, NULL),
+(3, 'Mr', 'JEAN-CHRYSOSTOM', 'Dolt', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '0914785470', '1646059195_1486b5519ae7af9c759d.jpg', NULL, NULL, NULL),
+(4, 'Mr', 'ARMANDee', 'Thieryt', '2 bis Rue de Villiers', '92300', 'Levallois-Perret', 'France', 'ATcontact@armandthiery.fr', '0145193333', '', NULL, NULL, NULL),
+(5, 'Mr', 'CHRISTIAN', 'Dior', '30 avenue Montaigne', ' 75008 ', 'Paris', 'France', 'contactdioreu@dior.com', '0140735444', '', NULL, NULL, NULL),
+(6, 'Mme', 'HAMILTON', 'Margaret', '3 Rue de Apollo', '75000', 'Paris', 'France', 'hamilton.Marge@hotmail.fr', '0645784054', '', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -229,35 +235,21 @@ DROP TABLE IF EXISTS `compte`;
 CREATE TABLE IF NOT EXISTS `compte` (
   `compt_id` int(11) NOT NULL AUTO_INCREMENT,
   `compt_pseudo` varchar(50) NOT NULL,
-  `compt_pass` varchar(50) NOT NULL,
-  `client_id` varchar(50) NOT NULL,
+  `compt_pass` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`compt_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `compte`
 --
 
-INSERT INTO `compte` (`compt_id`, `compt_pseudo`, `compt_pass`, `client_id`) VALUES
-(1, 'MAth.ant', 'jaimelesponay35', '1'),
-(2, 'lithium', 'Bean', '2'),
-(3, 'Carlos', 'Rosalie', '3'),
-(4, 'ArmT', 'jekoutchair', '4'),
-(5, 'Chrithor', 'diiorrr', '5');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `consomations`
---
-
-DROP TABLE IF EXISTS `consomations`;
-CREATE TABLE IF NOT EXISTS `consomations` (
-  `conso_id` int(11) NOT NULL AUTO_INCREMENT,
-  `client_cons` int(11) DEFAULT NULL,
-  PRIMARY KEY (`conso_id`),
-  KEY `conso_client_fk` (`client_cons`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `compte` (`compt_id`, `compt_pseudo`, `compt_pass`) VALUES
+(1, 'MAth.ant', '$2y$10$xtpq3ErdGQhrivzh/k2aa.urlp/ixfIWIXLbryjcJozlevybbWyUm'),
+(2, 'lithium', '$2y$10$ytD4TNRXZiXEhUGvJIVEluoJ6WLp8qIVo/F6BRJ2hnwdSb.P3M.5K'),
+(3, 'Carlos', '$2y$10$h5SpqQ9fcu.kV6QUPBDRh.FOFEuwebN7Lo8h8G/KiNHBx/aQnXAPS'),
+(4, 'ArmT', '$2y$10$d8vqGX6DlCa/lV8d8nGWvefynqtMQ2h9F5cJHuLPLjNyGCA4ChJ/S'),
+(5, 'Chrithor', '$2y$10$zDo.TW7h1qpPi8YViijdo.K94HqAAMgGbRGSyohsSoSFr7aNITSvW'),
+(6, 'Space', '$2y$10$hmm6CR4IWkjc1F.RgNXFm.jgV9x04moxo/EDWqZ2RpLXzqPP01m9q');
 
 -- --------------------------------------------------------
 
@@ -312,7 +304,7 @@ CREATE TABLE IF NOT EXISTS `images` (
   `page` varchar(255) NOT NULL,
   `hotel_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`image_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `images`
@@ -328,7 +320,7 @@ INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `page`, `hotel_id`)
 (15, 'Objet dynamique vectoriel.webp', '2018-07-18', 'footer', NULL),
 (16, 'desert_activiter.webp', '2018-07-18', 'activier', NULL),
 (17, 'desert_sortie.webp', '2018-07-18', 'activier', NULL),
-(18, 'luge.webp', '2018-07-18', 'activier', NULL),
+(18, 'luge_1.webp', '2018-07-18', 'activier', NULL),
 (19, 'phare.webp', '2018-07-18', 'activier', NULL),
 (20, 'plagues-surf.webp', '2018-07-18', 'activier', NULL),
 (21, 'bar.webp', '2018-07-18', 'galerie_photo ', 2),
@@ -340,7 +332,44 @@ INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `page`, `hotel_id`)
 (27, 'photo-1618773928121-c32242e63f39.webp', '2018-07-18', 'galerie_photo', 1),
 (28, 'ressto.webp', '2018-07-18', 'galerie_photo', 1),
 (29, 'image2.webp', '2018-07-18', 'suisse', 3),
-(30, 'montagne_room.webp', '2018-07-18', 'galerie_photo', 3);
+(30, 'montagne_room.webp', '2018-07-18', 'galerie_photo', 3),
+(31, 'camel.webp', '2018-12-13', 'galerie_photo', 2),
+(32, 'camel.webp', '2018-12-13', 'galerie_photo', 2),
+(33, 'dihram.webp', '2018-12-13', 'galerie_photo', 2),
+(34, 'dubaivue.webp', '2018-12-13', 'galerie_photo', 2),
+(35, 'jetski.webp', '2018-12-13', 'galerie_photo', 2),
+(36, 'museum.webp', '2018-12-13', 'galerie_photo', 2),
+(37, 'nuitdesert.webp', '2018-12-13', 'galerie_photo', 2),
+(38, 'oryx.webp', '2018-12-13', 'galerie_photo', 2),
+(39, 'rembarde.webp', '2018-12-13', 'galerie_photo', 2),
+(40, 'villedubai.webp', '2018-12-13', 'galerie_photo', 2),
+(41, 'aloha.webp', '2019-12-12', 'galerie_photo', 4),
+(42, 'tortue.webp', '2019-12-12', 'galerie_photo', 4),
+(43, 'danse.webp', '2019-12-12', 'galerie_photo', 4),
+(44, 'dauphin.webp', '2019-12-12', 'galerie_photo', 4),
+(45, 'flore.webp', '2019-12-12', 'galerie_photo', 4),
+(46, 'gazebo.webp', '2019-12-12', 'galerie_photo', 4),
+(47, 'helico.webp', '2019-12-12', 'galerie_photo', 4),
+(48, 'hotelhawai.webp', '2019-12-12', 'galerie_photo', 4),
+(49, 'paddle.webp', '2019-12-12', 'galerie_photo', 4),
+(50, 'caprin.webp', '2019-12-12', 'galerie_photo', 3),
+(51, 'hotelsuisse.webp', '2019-12-12', 'galerie_photo', 3),
+(52, 'lac.webp', '2019-12-12', 'galerie_photo', 3),
+(53, 'lindt.webp', '2019-12-12', 'galerie_photo', 3),
+(54, 'lugenocturne.webp', '2019-12-12', 'galerie_photo', 3),
+(55, 'pilatus.webp', '2019-12-12', 'galerie_photo', 3),
+(56, 'piscine.webp', '2019-12-12', 'galerie_photo', 3),
+(57, 'ski.webp', '2019-12-12', 'galerie_photo', 3),
+(58, 'suite.webp', '2019-12-12', 'galerie_photo', 3),
+(59, 'aeroport.webp', '2019-12-12', 'galerie_photo', 1),
+(60, 'bayahibe.webp', '2019-12-12', 'galerie_photo', 1),
+(61, 'hotelbaya.webp', '2019-12-12', 'galerie_photo', 1),
+(62, 'hoyo_azul.webp', '2019-12-12', 'galerie_photo', 1),
+(63, 'maison.webp', '2019-12-12', 'galerie_photo', 1),
+(64, 'perroquet.webp', '2019-12-12', 'galerie_photo', 1),
+(65, 'resto.webp', '2019-12-12', 'galerie_photo', 1),
+(66, 'Saint-Domingue.webp', '2019-12-12', 'galerie_photo', 1),
+(67, 'saona.webp', '2019-12-12', 'galerie_photo', 1);
 
 -- --------------------------------------------------------
 
@@ -411,12 +440,6 @@ INSERT INTO `reservations` (`reserv_id`, `reserv_datedeb`, `reserv_datefin`, `re
 ALTER TABLE `clients`
   ADD CONSTRAINT `client_avis_fk` FOREIGN KEY (`client_avis`) REFERENCES `avis` (`avis_id`),
   ADD CONSTRAINT `client_reserv_fk` FOREIGN KEY (`resrv_client`) REFERENCES `reservations` (`reserv_id`);
-
---
--- Contraintes pour la table `consomations`
---
-ALTER TABLE `consomations`
-  ADD CONSTRAINT `conso_clinet_fk` FOREIGN KEY (`client_cons`) REFERENCES `clients` (`client_id`);
 
 --
 -- Contraintes pour la table `hotels`

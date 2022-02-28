@@ -10,7 +10,7 @@
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <link rel="stylesheet" href="{base_url('assets/Fontawesome/css/font-awesome.min.css')}">
-    <title>{$name_file}</title>
+    <title>{$meta_title}</title>
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.webp')})">
@@ -22,7 +22,11 @@
     <!-- navbar -->
     <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
         <div class="container-fluid">
+<<<<<<< HEAD
             <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo.webp')}" alt="logo" width="80"></a>
+=======
+            <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo_menu.webp')}" alt="logo" width="80"></a>
+>>>>>>> main
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
             </button>
@@ -47,13 +51,13 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/reservation')}">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/activiter')}">Nos activités</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('activiter/')}">Nos activités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/restaurant')}">Restaurants</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('restaurant/')}">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/galerie_photo')}">Galerie photo</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('galerie_photo')}">Galerie photo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/avis')}">Les avis </a>
@@ -78,6 +82,12 @@
 
                     {/if}
                 </ul>
+                    <form class="form-search form-inline">
+                        <div class="input-append text-black">
+                            <input type="text" placeholder="Chercher un hotel, une activiter..." />
+                            <input type="submit" class="btn btn-dark" value='Search'/>
+                        </div>
+                    </form>
             </div>
         </div>
     </nav>
@@ -88,19 +98,19 @@
             <ol class="breadcrumb ">
                 <li>Vous êtes ici :&nbsp;</li>
                 <li class="breadcrumb-item ">
-                    <a href="{base_url('pages/index')} " class="text-black ">
+                    <a href="{base_url('pages')} " class="text-black ">
                         Accueil
                     </a>
                 </li>
                 {if $name_file == 'hawai' || $name_file == 'sampatico' || $name_file == 'dubai'|| $name_file == 'alpardis'}
                     <li class="breadcrumb-item ">
-                    <a href="" class="text-black ">
+                    <a href="#" class="text-black ">
                         Nos hôtels
                     </a>
                 </li>
                 {/if}
                 <li class="breadcrumb-item ">
-                    <a href="" class="text-black ">
+                    <a href="#" class="text-black ">
                         {$name_file}
                     </a>
                 </li>

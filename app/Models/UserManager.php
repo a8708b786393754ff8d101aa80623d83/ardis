@@ -6,11 +6,11 @@ class UserManager{
     private $respQuery; 
 
     public function __construct(){
-        $this->errorHunt = new ConnexionManager; 
+        $this->errorHunt = new HuntError; 
         $this->respQuery = new UsersModel; 
     }
 
-    public function verificate_login($method, $session){
+    public function verificate_login($method, $session, $redirect){
         if ($method !== 'post'){
             return []; 
         }
@@ -19,20 +19,23 @@ class UserManager{
         if ($pseudo !== '' || $password !== ''){
             $passwd_hash_bdd = $this->respQuery->getPasswordByPseudo($pseudo);
             if(! empty($passwd_hash_bdd)){
-                $resp = $this->respQuery->login($pseudo, $passwd_hash_bdd);
-                if (is_array($resp) && count($resp) === 1){ // si la requete est bonne on a joute le pseudo est son id dans la session
-                    $session->set([
-                        'pseudo'=>$resp[0]->name,
-                        'id'=>$resp[0]->id
-                    ]);
-                    return redirect()->to('http://localhost/ardis/public/customers/'); 
+                $resp = $this->respQuery->login($pseudo, $passwd_hash_bdd); 
+                if (is_array($resp) && count($resp) === 1 ){ // si la requete est bonne on a joute le pseudo est son id dans la session
+                    var_dump($password);
+                    if(password_verify($password, $resp[0]->passwd_hash)){
+                        $session->set([
+                            'pseudo'=>$resp[0]->name,
+                            'id'=>$resp[0]->id
+                        ]);
+                        return true; 
+                    }
                 }return ['Mot de passe ou/et indentifiant incorrect']; 
             }
             return $this->errorHunt->hunt_error_login($pseudo, $password, $passwd_hash_bdd); //renvoie le message d'erreur
         }
     }
 
-    public function verificate_mdp_oublier($method): array 
+    public function verificate_mdp_oublier($method) 
     {
         if ($method === 'post'){
             $email = $_POST['email']; 
@@ -41,21 +44,21 @@ class UserManager{
         }return []; 
     }
 
-    public function verificate_create_account($method):array 
+    public function verificate_create_account($method) 
     {
         if ($method === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($_POST);
             if(count($error) === 0){
-                // ? verifie si la longeur des element du post sont a 11
-                $not_empty = 0; 
-                if (count($_POST) === 11){
+                // ? verifie si la longeur des element du post sont a 12
+                if (count($_POST) === 12){
                     // ? parcour le contenue du post est regarde si c'est pas vide
+                    $not_empty = 0; 
                     foreach($_POST as $_=>$element){
                         if(! empty($element)){
                             $not_empty++; 
                         }
                     }
-                    // ? si les nombres des champs remplie
+                    // ? si tout les champs sont renseigner
                     if ($not_empty === count($_POST)){
                         $is_register_pseudo = $this->respQuery->is_a_account_by_pseudo($_POST['pseudo']); 
                         $is_register_email = $this->respQuery->is_a_account_by_email($_POST['email']);
@@ -87,7 +90,7 @@ class UserManager{
                     }
                 }     
             }return ['msg_error',$error];
-        }return []; 
+        }return "none";
         
     } 
 
