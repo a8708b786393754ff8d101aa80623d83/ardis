@@ -8,7 +8,7 @@ use App\Models\ImageManager;
 * @date 16/02/2022
 * @brief Controller de la gallerie photo
 * @details 
-* <p>Les action de la classe est view</p>
+* <p>Les actions de la classe est view</p>
 **/
 
 class PhotoGallery extends Pages{
@@ -18,11 +18,11 @@ class PhotoGallery extends Pages{
     protected ImageManager $ImgManager; 
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Pages</p>
-    * <p>La methode constructrice initialise la  classe HotelManager </p>
-    * <p>Elle recupere les nom des hotel pour les afficher dans la barre de navigation/p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
+    * <p>La méthode constructrice initialise la classe HotelManager </p>
+    * <p>Elle récupére les noms des hôtels pour les afficher dans la barre de navigation/p>
     **/
     public function __construct(){
         parent::__construct(); 
@@ -31,10 +31,10 @@ class PhotoGallery extends Pages{
     }
 
     /**
-    * @brief Methode view
+    * @brief Méthode view
     * @details
     * @param string $page='galerie-photo'
-    * <p>Elle envoie la information a smarty pour afficher la page galerie photo </p>
+    * <p>Elle envoie l'information à Smarty pour afficher la page galerie photo </p>
     */
     public function view($page='galerie_photo'){
         $this->_data['color_link_nav'] = 'black'; 

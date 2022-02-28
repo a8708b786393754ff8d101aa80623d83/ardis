@@ -9,11 +9,11 @@ use App\Models\RestaurantManager;
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
-* 	<li><strong>logout</strong> : se deconnecte du compte courant</li>
-* 	<li><strong>profile</strong> : la page de profile</li>
-* 	<li><strong>edite_profile</strong> : l'edition de profile</li>
+* 	<li><strong>logout</strong> : se déconnecte du compte courant</li>
+* 	<li><strong>profile</strong> : la page de profil</li>
+* 	<li><strong>edite_profile</strong> : l'édition du profil</li>
 * 	<li><strong>delete_profile</strong> : supression du compte courant</li>
-* 	<li><strong>hydrate</strong> : pour mettre a jour les atrributs</li>
+* 	<li><strong>hydrate</strong> : pour mettre à jour les attributs</li>
 * </ul>
 **/
 
