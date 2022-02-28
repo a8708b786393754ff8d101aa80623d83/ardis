@@ -5,13 +5,13 @@ use App\Models\UserManager;
 * @file Visitor.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 14/02/2022
-* @brief Controller des visiteur 
+* @brief Controller des visiteurs 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>login</strong> : pour se connecter</li>
-* 	<li><strong>create_account</strong> : pour creer un compte</li>
-* 	<li><strong>mdpoublier</strong> : pour l'oubliation du mot de passe</li>
+* 	<li><strong>create_account</strong> : pour créer un compte</li>
+* 	<li><strong>mdpoublier</strong> : pour le mot de passe oublié</li>
 * </ul>
 **/
 
@@ -19,10 +19,10 @@ class Visitor extends Pages{
     protected $userManager;
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Pages</p>
-    * <p>La methode constructrice initialise la classe UserManager </p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
+    * <p>La méthode constructrice initialise la classe UserManager </p>
     **/
     public function __construct(){
         parent::__construct();
@@ -30,10 +30,10 @@ class Visitor extends Pages{
     }
 
     /**
-    * @brief Methode login
+    * @brief Méthode login
     * @details
-    * <p>Elle recuperer les erruer lier a la connection, elle envoie le message d'erruer
-    *            a smarty, si il'y en a pas elle redirige le client vers sa page de profile </p>
+    * <p>Elle récupére les erreurs liés à la connection et les envoie 
+    *            à Smarty, si il n'y en a pas elle redirige le client vers sa page de profil </p>
     */
     public function login(){
         $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session, redirect());
@@ -45,22 +45,22 @@ class Visitor extends Pages{
     }
 
     /**
-    * @brief Methode create_account
+    * @brief Méthode create_account
     * @details
-    * <p>Elle recuperer les message  de succes/d'erruer lier a la creation du compte , elle envoie le message a smarty </p>
+    * <p>Elle récupére les messages de succès/d'erreurs liés à la création du compte et les envoie à Smarty </p>
     */
     public function create_account(){
         $msg = $this->userManager->verificate_create_account($this->request->getMethod());
-        // l'index 0 est pour le type de message (erruer ou de succes)
+        // l'index 0 est pour le type de message (d'erreurs ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$msg[0]]       = $msg[1]; 
         $this->view('create_account'); 
     }
 
      /**
-    * @brief Methode mdpoublier
+    * @brief Méthode mdpoublier
     * @details
-    * <p>Elle recuperer les message d'erruer/de succes lier a l'oublie du mot de passe , elle envoie le a smarty </p>
+    * <p>Elle récupére les messages d'erreurs/de succès liés à l'oublie du mot de passe et les envoie à Smarty </p>
     */
     public function mdpoublier(){
         $msg = $this->userManager->verificate_mdp_oublier($this->request->getMethod()); 

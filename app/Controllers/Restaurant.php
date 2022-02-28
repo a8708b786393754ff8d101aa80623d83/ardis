@@ -13,7 +13,7 @@ use App\Models\RestaurantManager;
 * 	<li><strong>profile</strong> : la page de profil</li>
 * 	<li><strong>edite_profile</strong> : l'édition du profil</li>
 * 	<li><strong>delete_profile</strong> : supression du compte courant</li>
-* 	<li><strong>hydrate</strong> : pour mettre à jour les atrributs</li>
+* 	<li><strong>hydrate</strong> : pour mettre à jour les attributs</li>
 * </ul>
 **/
 
