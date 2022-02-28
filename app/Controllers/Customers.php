@@ -6,15 +6,15 @@ use App\Models\ImageManager;
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Controller des clients connecter 
+* @brief Contrôleur des clients connectés 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
-* 	<li><strong>logout</strong> : se deconnecte du compte courant</li>
-* 	<li><strong>profile</strong> : la page de profile</li>
-* 	<li><strong>edite_profile</strong> : l'edition de profile</li>
-* 	<li><strong>delete_profile</strong> : supression du compte courant</li>
-* 	<li><strong>hydrate</strong> : pour mettre a jour les atrributs</li>
+* 	<li><strong>logout</strong> : Se déconnecte du compte courant</li>
+* 	<li><strong>profile</strong> : La page de profil</li>
+* 	<li><strong>edite_profile</strong> : L'édition du profil</li>
+* 	<li><strong>delete_profile</strong> : Supression du compte courant</li>
+* 	<li><strong>hydrate</strong> : Pour mettre à jour les attributs</li>
 * </ul>
 **/
 
@@ -36,15 +36,15 @@ class Customers extends Visitor{
     private $dataCreditials; 
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Visitor</p>
-    * <p>La methode constructrice initialise deux classe: </p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Visitor</p>
+    * <p>La méthode constructrice initialise deux classes : </p>
     * <ul>
     * 	<li><strong>Attribut: custManager</strong> = CustomerManager</li>
     * 	<li><strong>Attribut: imgManager</strong> =  ImageManager</li>
     * </ul>
-    * <p>Elle recupere l'id de l'utilisateur a partir de la session</p>
+    * <p>Elle récupére l'id de l'utilisateur à partir de la session</p>
     **/
     public function __construct(){
         parent::__construct();
@@ -56,22 +56,20 @@ class Customers extends Visitor{
     }
     
     /**
-    * @brief Methode hydrate 
+    * @brief Méthode hydrate 
     * @details 
     * <p></p>
-    * <p>Cette methode mes a jour le pseudo de la session est de ses attribut: </p>
+    * <p>Cette méthode met à jour le pseudo de la session et de ses attributs : </p>
     * <ul>
-    * 	<li><strong>firstname</strong>: prenom</li>
-    * 	<li><strong>name</strong>: nom de famille</li>
-    * 	<li><strong>tel</strong>: numero de télephone</li>
-    * 	<li><strong>email</strong>: l'email</li>
-    * 	<li><strong>adresse</strong>: adresse</li>
-    * 	<li><strong>zip_code</strong>: code postal</li>
-    * 	<li><strong>city</strong>: pays</li>
-    * 	<li><strong>photo_profile</strong>: photo de profile </li>
-    * 	<li><strong>civ</strong>: la civiliter</li>
+    * 	<li><strong>firstname</strong> : Prénom</li>
+    * 	<li><strong>name</strong> : Nom de famille</li>
+    * 	<li><strong>tel</strong> : Numéro de téléphone</li>
+    * 	<li><strong>email</strong> : L'email</li>
+    * 	<li><strong>adresse</strong> : Pays</li>
+    * 	<li><strong>photo_profile</strong> : Photo de profil </li>
+    * 	<li><strong>civ</strong> : La civilité</li>
     * </ul>
-    * <p>Elle recupere les donner a partir de l'id grace a la methode getProfileData() de la classe CustomerManager </p>
+    * <p>Elle récupére les données à partir de l'id grâce à la méthode getProfileData() de la classe CustomerManager </p>
     **/
     private function hydrate(){
         $objResp = $this->dataCreditials = $this->custManager->getProfileData($this->id);
@@ -89,9 +87,9 @@ class Customers extends Visitor{
     }
     
      /**
-    * @brief Methode lougout
+    * @brief Méthode lougout
     * @details
-    * <p>Detruit la session est redirige a la page d'acceuil</p>
+    * <p>Détruit la session et redirige vers la page d'acceuil</p>
     */
     public function logout(){ 
         $this->session->destroy();  
@@ -99,11 +97,11 @@ class Customers extends Visitor{
     }
 
     /**
-    * @brief Methode profile 
+    * @brief Méthode profile 
     * @details 
-    * <p>Cette methode affiche les donner de l'utilisateur qui sont stocker dans la base de donner</p>
-    * <p>Elle hydrate les attributs du clients</p>
-    * <p>Elle donne les donner a smarty pour qu'elle sois afficher</p>
+    * <p>Cette méthode affiche les données de l'utilisateur qui sont stockées dans la base de données</p>
+    * <p>Elle hydrate les attributs du client</p>
+    * <p>Elle donne les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function profile(){
         $this->hydrate();
@@ -120,12 +118,12 @@ class Customers extends Visitor{
     }
     
     /**
-    * @brief Methode edite_profile 
+    * @brief Méthode edite_profile 
     * @details 
-    * <p>Cette methode envoie les erruer/message de succes a smarty</p>
-    * <p>Elle televerse l'image de profile</p>
-    * <p>Reutulisation de la methode profile pour afficher la page de profile</p>
-    * <p>Elle donne les donner a smarty pour qu'elle sois afficher</p>
+    * <p>Cette méthode envoie les erreurs/méssage de succès à Smarty</p>
+    * <p>Elle téléverse l'image de profil</p>
+    * <p>Réutilisation de la méthode profile pour afficher la page de profil</p>
+    * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function edite_profile(){
         $this->hydrate(); 
@@ -144,7 +142,7 @@ class Customers extends Visitor{
             'photo_profile'=>$this->photo_profile,
             ]    
         );
-        // l'index 0 est pour le type de message (erruer ou de succes)
+        // l'index 0 est pour le type de message (d'erreur ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$resp[0]] = $resp[1];
 
@@ -153,9 +151,9 @@ class Customers extends Visitor{
     }
     
     /**
-    * @brief Methode delete_profile
+    * @brief Méthode delete_profile
     * @details
-    * <p>Cette methode supprime toutes les donner de l'utilisateur est redirige a la page d'acceuil</p>
+    * <p>Cette méthode supprime toutes les données de l'utilisateur et redirige vers la page d'acceuil</p>
     */
     public function delete_profile(){
         $this->custManager->delete_user_data($this->pseudo, $this->session); 
