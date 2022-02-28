@@ -5,12 +5,12 @@ use App\Models\HotelManager;
 * @file Visitor.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 14/02/2022
-* @brief Controller des visiteur 
+* @brief Controller des visiteurs 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>index</strong> : pour afficher la page d'acceuil</li>
-* 	<li><strong>view</strong> : pour afficher toutes les  page </li>
+* 	<li><strong>view</strong> : pour afficher toutes les  pages </li>
 * </ul>
 **/
 
@@ -20,9 +20,9 @@ class Pages extends BaseController{
     protected $allNamesHotels; 
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode initialise la atrribut session est l'atrribut hotelMngr a la classe HotelManager</p>
+    * <p>Cette méthode initialise les attributs session et hotelMngr à la classe HotelManager</p>
     * <p>Elle charge le helper url pour utiliser la redirection avec codeIgniter</p>
     **/
     public function __construct(){
@@ -33,9 +33,9 @@ class Pages extends BaseController{
     }
     
     /**
-    * @brief Methode index
+    * @brief Méthode index
     * @details
-    * <p>Elle envoie la information a smarty pour afficher la page d'acceuil </p>
+    * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil </p>
     */
     public function index(){
         $this->_data['color_link_nav'] = 'white';
@@ -48,10 +48,10 @@ class Pages extends BaseController{
 
 
     /**
-    * @brief Methode view
+    * @brief Méthode view
     * @details
     * @param string $page
-    * <p>Elle envoie la information a smarty pour afficher les page du site </p>
+    * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
     */
     public function view($page){
         $this->_data['color_link_nav'] = 'black'; 
