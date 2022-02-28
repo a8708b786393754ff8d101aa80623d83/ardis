@@ -12,7 +12,11 @@
                                 <div class="p-3 mb-2 bg-danger text-white">{$msg}</div>                                  
                             {/foreach}
                         {elseif isset($msg_succes)}
-                            <div class="p-3 mb-2 bg-success text-white">{$msg_succes}</div>                                  
+                            <div class="p-3 mb-2 bg-success text-white">{$msg_succes}</div>
+                        {elseif isset($msg_error_profile)}
+                            {foreach from=$msg_error_profile item=$msg}
+                                <div class="p-3 mb-2 bg-danger text-white">{$msg}</div>                                  
+                            {/foreach}
                         {/if}
 
                         <form action="{base_url('/customers/edite_profile/')}" method="post"  enctype='multipart/form-data'>
