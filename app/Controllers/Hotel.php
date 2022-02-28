@@ -4,11 +4,11 @@ namespace App\Controllers;
 * @file Hotel.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Controller des Hotel 
+* @brief Controller des Hôtels 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
-* 	<li><strong>view</strong> : affcihe la page de l'hotel</li>
+* 	<li><strong>view</strong> : affiche la page de l'hôtel</li>
 * </ul>
 **/
 
@@ -23,32 +23,32 @@ class Hotel extends Pages{
     protected string $email;
 
      /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Pages</p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
     **/
     public function __construct(){   
         parent::__construct(); 
     }
     
     /** 
-    * @brief Methode qui donne a la vue les element pour qu'il doivent etre afficher  dans la vue 
+    * @brief Méthode qui donne à la vue les éléments pour qu'ils soient affichés dans celle-ci
     * @details
-    * <p>Elle recupere les donnes de l'hotel grace a la methode getData de la classe HotelManager</p>
-    * <p>Elle initialise les varaiables</p>
+    * <p>Elle récupére les données de l'hôtel grâce à la méthode getData de la classe HotelManager</p>
+    * <p>Elle initialise les variables</p>
     * <ul>
-    * 	<li><strong>Attribut: name</strong>:  nom de l'hotel</li>
-    * 	<li><strong>Attribut: image</strong>: image principale de  l'hotel</li>
-    * 	<li><strong>Attribut: pays</strong>:  pays ou est situer l'hotel</li>
-    * 	<li><strong>Attribut: ville</strong>: ville l'hotel</li>
-    * 	<li><strong>Attribut: price</strong>: prix de la nuit de l'hotel</li>
-    * 	<li><strong>Attribut: note</strong>:  note de l'hotel</li>
-    * 	<li><strong>Attribut: contenue</strong>: paragraphe de presentation de l'hotel</li>
-    * 	<li><strong>Attribut: email</strong>:    email de l'hotel</li>
+    * 	<li><strong>Attribut : name</strong> :  nom de l'hôtel</li>
+    * 	<li><strong>Attribut : image</strong> : image principale de  l'hôtel</li>
+    * 	<li><strong>Attribut : pays</strong> :  pays où est situé l'hôtel</li>
+    * 	<li><strong>Attribut : ville</strong> : ville l'hôtel</li>
+    * 	<li><strong>Attribut : price</strong> : prix de la nuit de l'hôtel</li>
+    * 	<li><strong>Attribut : note</strong> :  note de l'hôtel</li>
+    * 	<li><strong>Attribut : contenue</strong> : paragraphe de présentation de l'hôtel</li>
+    * 	<li><strong>Attribut : email</strong> :    email de l'hôtel</li>
     * </ul>
-    * <p>Elle envoie un tableaux de nom d'hotel a smarty pour qu'elle affiche dans la barre de navigation</p>
+    * <p>Elle envoie un tableau de noms d'hôtels à Smarty pour qu'ils s'affichent dans la barre de navigation</p>
     * @param string $page 
-    * @return array nom de l'image appartenant a l'hotel 
+    * @return array Nom de l'image appartenant à l'hôtel 
     */
     public function view($page){
         $respQuery = $this->hotelMngr->getData($page)[0]; 
@@ -70,7 +70,7 @@ class Hotel extends Pages{
         $this->_data['email']       = $this->email;
         $this->_data['ville']       = $this->ville;
 
-        // pour la couleur du texte de la bar de navigation
+        // pour la couleur du texte de la barre de navigation
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['meta_title']     = 'Hotel '.lcfirst($page); 
         $this->_data['name_file']      = lcfirst($page); 
