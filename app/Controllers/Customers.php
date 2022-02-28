@@ -105,14 +105,14 @@ class Customers extends Visitor{
     **/
     public function profile(){
         $this->hydrate();
-        $this->_data['firstname']  = $this->firstname;
-        $this->_data['name']  = $this->name;
-        $this->_data['tel']  = $this->tel;
-        $this->_data['email']  = $this->email;
-        $this->_data['pseudo']  = $this->pseudo;
-        $this->_data['adresse']  = $this->adresse;
-        $this->_data['zip']  = $this->zip_code;
-        $this->_data['city']  = $this->city;
+        // $this->_data['firstname']  = $this->firstname;
+        // $this->_data['name']  = $this->name;
+        // $this->_data['tel']  = $this->tel;
+        // $this->_data['email']  = $this->email;
+        // $this->_data['pseudo']  = $this->pseudo;
+        // $this->_data['adresse']  = $this->adresse;
+        // $this->_data['zip']  = $this->zip_code;
+        // $this->_data['city']  = $this->city;
         $this->_data['photo_profile']  = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id);
         $this->view('profile'); 
     }
