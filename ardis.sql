@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 28 fév. 2022 à 13:05
+-- Généré le : lun. 28 fév. 2022 à 15:52
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.4.9
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `activites` (
   `activ_dispo` int(2) NOT NULL,
   `hotel_id` int(1) NOT NULL,
   PRIMARY KEY (`activ_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `activites`
@@ -53,7 +53,10 @@ INSERT INTO `activites` (`activ_id`, `activ_nom`, `activ_image`, `activ_loca`, `
 (5, 'Raquette', 'raquette.webp', 'Suisse', 150, '2020-06-12', 'Raquette entre amis sur nos pistes privées', 3, 3),
 (6, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2018-03-20', 'Promenade en chameaux dans le désert', 0, 2),
 (7, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2017-03-20', 'Promenade en chameaux dans le désert', 0, 2),
-(8, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2015-03-20', 'Promenade en chameaux dans le désert', 0, 2);
+(8, 'Promenade en chameaux', 'promenade_cham.webp', 'Dubai', 30, '2015-03-20', 'Promenade en chameaux dans le désert', 0, 2),
+(9, 'Raquette', 'ski.webp', 'Suisse', 100, '2022-06-28', 'ski sur nos pistes privées', 5, 3),
+(10, 'Ski', 'ski.webp', 'Suisse', 100, '2022-05-28', 'ski sur nos pistes privées', 5, 3),
+(11, 'Ski', 'ski.webp', 'Suisse', 100, '2022-07-28', 'ski sur nos pistes privées', 5, 3);
 
 -- --------------------------------------------------------
 
@@ -217,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `clients` (
 INSERT INTO `clients` (`client_id`, `client_civ`, `client_nom`, `client_prenom`, `client_adresse`, `client_cp`, `client_ville`, `client_pays`, `client_email`, `client_tel`, `client_profil_img`, `compte_client`, `resrv_client`, `client_avis`) VALUES
 (1, 'Mr', 'MATHIEU', 'Antoine', '3 Rue de la Gare', '75000', 'Paris', 'France', 'mathieuAntoine@gmaiL.com', '0654851240', '', NULL, NULL, NULL),
 (2, 'Mr', 'KURT', 'Cobain', '171 Lake Washington Blvd E', 'WA 98112-5033', 'Seattle', 'USA', 'shot.gun@gmail.com', '0911524087', '', NULL, NULL, NULL),
-(3, 'Mr', 'JEAN-CHRYSOSTOME', 'Dolto', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '0914785470', '', NULL, NULL, NULL),
+(3, 'Mr', 'JEAN-CHRYSOSTOM', 'Dolt', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '0914785470', '1646059195_1486b5519ae7af9c759d.jpg', NULL, NULL, NULL),
 (4, 'Mr', 'ARMANDee', 'Thieryt', '2 bis Rue de Villiers', '92300', 'Levallois-Perret', 'France', 'ATcontact@armandthiery.fr', '0145193333', '', NULL, NULL, NULL),
 (5, 'Mr', 'CHRISTIAN', 'Dior', '30 avenue Montaigne', ' 75008 ', 'Paris', 'France', 'contactdioreu@dior.com', '0140735444', '', NULL, NULL, NULL),
 (6, 'Mme', 'HAMILTON', 'Margaret', '3 Rue de Apollo', '75000', 'Paris', 'France', 'hamilton.Marge@hotmail.fr', '0645784054', '', NULL, NULL, NULL);

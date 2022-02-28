@@ -47,7 +47,7 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/reservation')}">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/activiter')}">Nos activités</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('activiter/')}">Nos activités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('restaurant/')}">Restaurants</a>
