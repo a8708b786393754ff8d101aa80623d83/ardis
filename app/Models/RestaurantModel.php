@@ -22,9 +22,6 @@ class RestaurantModel  extends Model{
     protected $returnType    = 'App\Entities\MenuEntity';
 
     protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
 
      /**
     * @brief Methode constructrice 
@@ -36,10 +33,8 @@ class RestaurantModel  extends Model{
     }
 
     public function getAllData() {
-        return $this->db->query('SELECT hotel_nom AS nomHotel, menu_nom AS nom, menu_prix AS price , menu_descri AS descri, menu_image AS image  
-                                FROM menu  
-                                INNER JOIN hotels  
-                                WHERE hotel_menu=menu_id')->getResult(); 
+        return $this->db->query('SELECT menu_nom AS nom, menu_prix AS price , menu_descri AS descri, menu_image AS image  
+                                FROM menu')->getResult();
     }
 
 

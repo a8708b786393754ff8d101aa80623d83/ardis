@@ -126,8 +126,6 @@ class Customers extends Visitor{
     * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function edite_profile(){
-        $this->hydrate(); 
-
         $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
         [
             'pseudo'=>$this->pseudo,

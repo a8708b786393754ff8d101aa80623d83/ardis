@@ -28,7 +28,8 @@ class Pages extends BaseController{
     public function __construct(){
         $this->session = session();
         $this->hotelMngr = new HotelManager; 
-        $this->_data['nav_bar_hotel']  = $this->hotelMngr->getHotelsNamesForNavBar();
+        $this->allNamesHotels =  $this->hotelMngr->getHotelsNamesForNavBar();
+        $this->_data['nav_bar_hotel']  = $this->allNamesHotels; 
         helper('url');
     }
     
@@ -45,7 +46,6 @@ class Pages extends BaseController{
         $this->display();
         die; 
     }
-
 
     /**
     * @brief Méthode view
