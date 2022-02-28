@@ -4,7 +4,7 @@ namespace App\Controllers;
 * @file Hotel.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Controller des Hôtels 
+* @brief Controller des hôtels 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>

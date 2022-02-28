@@ -6,15 +6,15 @@ use App\Models\ImageManager;
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Contrôleur des clients connectés 
+* @brief Controller des clients connectés 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
-* 	<li><strong>logout</strong> : Se déconnecte du compte courant</li>
-* 	<li><strong>profile</strong> : La page de profil</li>
-* 	<li><strong>edite_profile</strong> : L'édition du profil</li>
-* 	<li><strong>delete_profile</strong> : Supression du compte courant</li>
-* 	<li><strong>hydrate</strong> : Pour mettre à jour les attributs</li>
+* 	<li><strong>logout</strong> : se déconnecte du compte courant</li>
+* 	<li><strong>profile</strong> : la page de profil</li>
+* 	<li><strong>edite_profile</strong> : l'édition du profil</li>
+* 	<li><strong>delete_profile</strong> : supression du compte courant</li>
+* 	<li><strong>hydrate</strong> : pour mettre à jour les attributs</li>
 * </ul>
 **/
 
@@ -41,8 +41,8 @@ class Customers extends Visitor{
     * <p>Cette méthode appelle la méthode constructrice de la classe Visitor</p>
     * <p>La méthode constructrice initialise deux classes : </p>
     * <ul>
-    * 	<li><strong>Attribut: custManager</strong> = CustomerManager</li>
-    * 	<li><strong>Attribut: imgManager</strong> =  ImageManager</li>
+    * 	<li><strong>Attribut : custManager</strong> = CustomerManager</li>
+    * 	<li><strong>Attribut : imgManager</strong> =  ImageManager</li>
     * </ul>
     * <p>Elle récupére l'id de l'utilisateur à partir de la session</p>
     **/
@@ -61,13 +61,13 @@ class Customers extends Visitor{
     * <p></p>
     * <p>Cette méthode met à jour le pseudo de la session et de ses attributs : </p>
     * <ul>
-    * 	<li><strong>firstname</strong> : Prénom</li>
-    * 	<li><strong>name</strong> : Nom de famille</li>
-    * 	<li><strong>tel</strong> : Numéro de téléphone</li>
-    * 	<li><strong>email</strong> : L'email</li>
-    * 	<li><strong>adresse</strong> : Pays</li>
-    * 	<li><strong>photo_profile</strong> : Photo de profil </li>
-    * 	<li><strong>civ</strong> : La civilité</li>
+    * 	<li><strong>firstname</strong> : prénom</li>
+    * 	<li><strong>name</strong> : nom de famille</li>
+    * 	<li><strong>tel</strong> : numéro de téléphone</li>
+    * 	<li><strong>email</strong> : l'email</li>
+    * 	<li><strong>adresse</strong> : pays</li>
+    * 	<li><strong>photo_profile</strong> : photo de profil </li>
+    * 	<li><strong>civ</strong> : la civilité</li>
     * </ul>
     * <p>Elle récupére les données à partir de l'id grâce à la méthode getProfileData() de la classe CustomerManager </p>
     **/
@@ -101,7 +101,7 @@ class Customers extends Visitor{
     * @details 
     * <p>Cette méthode affiche les données de l'utilisateur qui sont stockées dans la base de données</p>
     * <p>Elle hydrate les attributs du client</p>
-    * <p>Elle donne les données à Smarty pour qu'elles soient affichées</p>
+    * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function profile(){
         $this->hydrate();
@@ -120,7 +120,7 @@ class Customers extends Visitor{
     /**
     * @brief Méthode edite_profile 
     * @details 
-    * <p>Cette méthode envoie les erreurs/méssage de succès à Smarty</p>
+    * <p>Cette méthode envoie les erreurs/message de succès à Smarty</p>
     * <p>Elle téléverse l'image de profil</p>
     * <p>Réutilisation de la méthode profile pour afficher la page de profil</p>
     * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
