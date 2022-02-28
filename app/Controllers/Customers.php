@@ -105,14 +105,14 @@ class Customers extends Visitor{
     **/
     public function profile(){
         $this->hydrate();
-        // $this->_data['firstname']  = $this->firstname;
-        // $this->_data['name']  = $this->name;
-        // $this->_data['tel']  = $this->tel;
-        // $this->_data['email']  = $this->email;
-        // $this->_data['pseudo']  = $this->pseudo;
-        // $this->_data['adresse']  = $this->adresse;
-        // $this->_data['zip']  = $this->zip_code;
-        // $this->_data['city']  = $this->city;
+        $this->_data['firstname']  = $this->firstname;
+        $this->_data['name']  = $this->name;
+        $this->_data['tel']  = $this->tel;
+        $this->_data['email']  = $this->email;
+        $this->_data['pseudo']  = $this->pseudo;
+        $this->_data['adresse']  = $this->adresse;
+        $this->_data['zip']  = $this->zip_code;
+        $this->_data['city']  = $this->city;
         $this->_data['photo_profile']  = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id);
         $this->view('profile'); 
     }
@@ -128,7 +128,6 @@ class Customers extends Visitor{
     public function edite_profile(){
         $this->hydrate(); 
 
-        $this->photo_profile = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
         $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
         [
             'pseudo'=>$this->pseudo,
@@ -145,8 +144,9 @@ class Customers extends Visitor{
         // l'index 0 est pour le type de message (d'erreur ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$resp[0]] = $resp[1];
-
-        $this->hydrate();
+        $this->_data['msg_error_profile'] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
+        
+        $this->hydrate(); 
         $this->profile(); 
     }
     
