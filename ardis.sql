@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 23 fév. 2022 à 14:48
+-- Généré le : lun. 28 fév. 2022 à 13:05
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.4.9
 
@@ -220,7 +220,7 @@ INSERT INTO `clients` (`client_id`, `client_civ`, `client_nom`, `client_prenom`,
 (3, 'Mr', 'JEAN-CHRYSOSTOME', 'Dolto', '673 boulevard Alfred Philippe', '61110', 'Bouvet', 'France', 'Carl0s@gmail.com', '0914785470', '', NULL, NULL, NULL),
 (4, 'Mr', 'ARMANDee', 'Thieryt', '2 bis Rue de Villiers', '92300', 'Levallois-Perret', 'France', 'ATcontact@armandthiery.fr', '0145193333', '', NULL, NULL, NULL),
 (5, 'Mr', 'CHRISTIAN', 'Dior', '30 avenue Montaigne', ' 75008 ', 'Paris', 'France', 'contactdioreu@dior.com', '0140735444', '', NULL, NULL, NULL),
-(6, 'Mme', 'HAMILTON', 'Margaret', '3 Rue de Apollo', '75000', 'Paris', 'France', 'hamilton.Marge@hotmail.fr', '0645784054', NULL, NULL, NULL, NULL);
+(6, 'Mme', 'HAMILTON', 'Margaret', '3 Rue de Apollo', '75000', 'Paris', 'France', 'hamilton.Marge@hotmail.fr', '0645784054', '', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -301,7 +301,7 @@ CREATE TABLE IF NOT EXISTS `images` (
   `page` varchar(255) NOT NULL,
   `hotel_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`image_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `images`
@@ -317,7 +317,7 @@ INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `page`, `hotel_id`)
 (15, 'Objet dynamique vectoriel.webp', '2018-07-18', 'footer', NULL),
 (16, 'desert_activiter.webp', '2018-07-18', 'activier', NULL),
 (17, 'desert_sortie.webp', '2018-07-18', 'activier', NULL),
-(18, 'luge.webp', '2018-07-18', 'activier', NULL),
+(18, 'luge_1.webp', '2018-07-18', 'activier', NULL),
 (19, 'phare.webp', '2018-07-18', 'activier', NULL),
 (20, 'plagues-surf.webp', '2018-07-18', 'activier', NULL),
 (21, 'bar.webp', '2018-07-18', 'galerie_photo ', 2),
@@ -329,7 +329,44 @@ INSERT INTO `images` (`image_id`, `image_nom`, `image_date`, `page`, `hotel_id`)
 (27, 'photo-1618773928121-c32242e63f39.webp', '2018-07-18', 'galerie_photo', 1),
 (28, 'ressto.webp', '2018-07-18', 'galerie_photo', 1),
 (29, 'image2.webp', '2018-07-18', 'suisse', 3),
-(30, 'montagne_room.webp', '2018-07-18', 'galerie_photo', 3);
+(30, 'montagne_room.webp', '2018-07-18', 'galerie_photo', 3),
+(31, 'camel.webp', '2018-12-13', 'galerie_photo', 2),
+(32, 'camel.webp', '2018-12-13', 'galerie_photo', 2),
+(33, 'dihram.webp', '2018-12-13', 'galerie_photo', 2),
+(34, 'dubaivue.webp', '2018-12-13', 'galerie_photo', 2),
+(35, 'jetski.webp', '2018-12-13', 'galerie_photo', 2),
+(36, 'museum.webp', '2018-12-13', 'galerie_photo', 2),
+(37, 'nuitdesert.webp', '2018-12-13', 'galerie_photo', 2),
+(38, 'oryx.webp', '2018-12-13', 'galerie_photo', 2),
+(39, 'rembarde.webp', '2018-12-13', 'galerie_photo', 2),
+(40, 'villedubai.webp', '2018-12-13', 'galerie_photo', 2),
+(41, 'aloha.webp', '2019-12-12', 'galerie_photo', 4),
+(42, 'tortue.webp', '2019-12-12', 'galerie_photo', 4),
+(43, 'danse.webp', '2019-12-12', 'galerie_photo', 4),
+(44, 'dauphin.webp', '2019-12-12', 'galerie_photo', 4),
+(45, 'flore.webp', '2019-12-12', 'galerie_photo', 4),
+(46, 'gazebo.webp', '2019-12-12', 'galerie_photo', 4),
+(47, 'helico.webp', '2019-12-12', 'galerie_photo', 4),
+(48, 'hotelhawai.webp', '2019-12-12', 'galerie_photo', 4),
+(49, 'paddle.webp', '2019-12-12', 'galerie_photo', 4),
+(50, 'caprin.webp', '2019-12-12', 'galerie_photo', 3),
+(51, 'hotelsuisse.webp', '2019-12-12', 'galerie_photo', 3),
+(52, 'lac.webp', '2019-12-12', 'galerie_photo', 3),
+(53, 'lindt.webp', '2019-12-12', 'galerie_photo', 3),
+(54, 'lugenocturne.webp', '2019-12-12', 'galerie_photo', 3),
+(55, 'pilatus.webp', '2019-12-12', 'galerie_photo', 3),
+(56, 'piscine.webp', '2019-12-12', 'galerie_photo', 3),
+(57, 'ski.webp', '2019-12-12', 'galerie_photo', 3),
+(58, 'suite.webp', '2019-12-12', 'galerie_photo', 3),
+(59, 'aeroport.webp', '2019-12-12', 'galerie_photo', 1),
+(60, 'bayahibe.webp', '2019-12-12', 'galerie_photo', 1),
+(61, 'hotelbaya.webp', '2019-12-12', 'galerie_photo', 1),
+(62, 'hoyo_azul.webp', '2019-12-12', 'galerie_photo', 1),
+(63, 'maison.webp', '2019-12-12', 'galerie_photo', 1),
+(64, 'perroquet.webp', '2019-12-12', 'galerie_photo', 1),
+(65, 'resto.webp', '2019-12-12', 'galerie_photo', 1),
+(66, 'Saint-Domingue.webp', '2019-12-12', 'galerie_photo', 1),
+(67, 'saona.webp', '2019-12-12', 'galerie_photo', 1);
 
 -- --------------------------------------------------------
 
