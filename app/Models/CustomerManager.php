@@ -117,7 +117,7 @@ class CustomerManager{
      * @param string $img_profile
      * @param string $pseudo
      */
-    public function managerImgProfile(string $civ, string $img_profile, string $id){
+    public function managerImgProfile(string $civ,  $img_profile, string $id){
         if(empty($img_profile)){
             if($civ === 'Mr'){
                 return "mr.png";
