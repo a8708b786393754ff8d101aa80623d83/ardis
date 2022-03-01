@@ -38,7 +38,7 @@ class Restaurant extends Pages{
         $this->_data['name_file']      = 'restaurant';
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
         $this->_data['content_menu']   = $this->allData; 
-        $this->_data['meta_title']      = ucfirst('restaurant'); 
+        $this->_data['meta_title']      = 'Restaurant'; 
         $this->display("restaurant.tpl");
     }
 }

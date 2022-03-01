@@ -17,8 +17,8 @@ body {
 }
 
 
-.card-inner{
-    margin-left: 4rem;
+.card{
+    position: relative;
 }
 
 

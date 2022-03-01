@@ -78,6 +78,12 @@
 
                     {/if}
                 </ul>
+                    <form class="form-search form-inline">
+                        <div class="input-append text-black">
+                            <input type="text" placeholder="Chercher un hotel, une activiter..." />
+                            <input type="submit" class="btn btn-dark" value='Search'/>
+                        </div>
+                    </form>
             </div>
         </div>
     </nav>

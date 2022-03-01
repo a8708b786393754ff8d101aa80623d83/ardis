@@ -1,11 +1,11 @@
 {extends file='base/layout.tpl'}
 {block name=content}
 <section>
-  {foreach from=$activiter item=item key=key}
+  {foreach from=$activiter_archiver item=item key=key}
     {for $foo=0 to count($item) -1}
         <div class="contanier">
           <div class="row">
-              <h2 class="text-center">{$item[$foo]->nom_hotel}</h2>
+              <h2 class="text-center">{$item[$foo]->nom_hotel} | {$item[$foo]->date}</h2>
               <h4 class='text-center'>{$item[$foo]->nom}</h4>
               <img src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item[$foo]->image}" alt="">
               <p>Pays: {$item[$foo]->loca}</p>
@@ -17,5 +17,4 @@
       {/for}
   {/foreach}
 </section>
-<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
 {/block}

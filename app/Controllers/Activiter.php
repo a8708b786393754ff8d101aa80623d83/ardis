@@ -1,6 +1,6 @@
 <?php 
 namespace App\Controllers; 
-use App\Models\ActiviterModel; 
+use App\Models\ActiviterManager; 
 /**
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -27,21 +27,25 @@ class Activiter extends Pages{
     protected string $descri;
     protected string $dispo;
 
-    protected ActiviterModel $activModel; 
+    protected ActiviterManager $activManager; 
 
     public function __construct(){
         parent::__construct(); 
-        $this->activModel = new  ActiviterModel; 
-    }
-
-
-    // methode y ajouter les donner afficher  dans la page home
-    public function index(){
+        $this->activManager = new  ActiviterManager($this->allNamesHotels); 
         $this->_data['color_link_nav'] = 'black';
         $this->_data['name_file']      = 'activiter';
-        $this->_data['meta_title']      = 'Activiter'; 
-        $this->_data['activiter']      = $this->activModel->getAllDataYoung(); 
-        var_dump($this->activModel->getAllDataYoung()); 
+        $this->_data['meta_title']     = 'Activiter'; 
+    }
+    
+    
+    // methode y ajouter les donner afficher  dans la page home
+    public function index(){
+        $this->_data['activiter'] = $this->activManager->getYoungActiviter(); 
         $this->display('activiter.tpl');
+    }
+
+    public function archive(){
+        $this->_data['activiter_archiver'] = $this->activManager->getOldActiviter(); 
+        $this->display('activiter_archiver.tpl');
     }
 }

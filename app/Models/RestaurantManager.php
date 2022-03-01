@@ -23,7 +23,6 @@ class RestaurantManager{
     public function getAllData(){
         $data = []; 
         foreach($this->respQuery->getAllData() as $element){
-            $data['hotel_nom'][] = $element->nomHotel; 
             $data['descri'][]    = $element->descri; 
             $data['price'][]     = $element->price; 
             $data['image'][]     = $element->image; 
