@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 * @file ActiviterModel.php
 * @author Arthur Kurt <email d'arthur>, Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 19/02/2022
-* @brief Model pour les activiter 
+* @brief Model pour les activités 
 * @details 
-* <p>Cette classe contient toute les requete liée aux activiter</p>
+* <p>Cette classe contient toutes les requêtes liées aux activités</p>
 **/
 
 class ActiviterModel extends Model{
@@ -20,19 +20,19 @@ class ActiviterModel extends Model{
 
     
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe mére Model</p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe mère Model</p>
     **/
     public function __construct(){
         parent::__construct(); 
     }
 
     /** 
-    * @brief Methode qui contient la requete SQL pour avoir les activiter archiver 
+    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées 
     * @details
-    * <p>Elle recupere le nom de l'activter, l'image, le pays, le tarif par personne, l'année, la déscription, le nom de l'hotel qui propose l'activiter </p>
-    * @return array les donner des activiter archiver
+    * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
+    * @return array les données des activités archivées
     */
     public function getDataOld(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 
@@ -45,10 +45,10 @@ class ActiviterModel extends Model{
     }
 
     /** 
-    * @brief Methode qui contient la requete SQL pour avoir les activiter récente 
+    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées 
     * @details
-    * <p>Elle recupere le nom de l'activter, l'image, le pays, le tarif par personne, l'année ,la déscription, le nom de l'hotel qui propose l'activiter </p>
-    * @return array les donner des activiter archiver
+    * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
+    * @return array les données des activités archivées
     */
     public function getDataYoung(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 

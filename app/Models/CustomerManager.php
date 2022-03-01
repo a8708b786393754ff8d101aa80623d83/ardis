@@ -4,18 +4,18 @@
 * @file CustomerManager.php
 * @author Ayoub Brahim
 * @date 20/02/2022
-* @brief Manager pour les client connecter
+* @brief Manager pour les clients connectés
 * @details 
-* <p>Cette class gérer toute la logique pour executer une requete lier au clients</p>
+* <p>Cette classe gére toute la logique pour exécuter une requête liée aux clients</p>
 **/
 class CustomerManager{
     protected $respQuery; 
     protected $errorHunt; 
 
     /**  
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice initialise la classe HuntError a l'attribut errorHunt, la classe UserModel a l'attribut respQuery</p>
+    * <p>Cette méthode constructrice initialise la classe HuntError à l'attribut errorHunt, la classe UserModel à l'attribut respQuery</p>
     **/
     public function __construct()
     {
@@ -24,11 +24,11 @@ class CustomerManager{
     }
 
     /**
-    * @brief Methode qui execute la requete SQL est la retourne 
+    * @brief Méthode qui exécute la requête SQL et la retourne 
     * @param string $id 
     * @details 
-    * <p>La methode execute la requete SQL pour recuperer les donner de l'utilisateur par son id</p>
-    * @return object Contient les donner des hotels 
+    * <p>La méthode exécute la requête SQL pour récupérer les données de l'utilisateur par son id</p>
+    * @return object Contient les données des hôtels 
     **/
     public function getProfileData(string $id): object
     {
@@ -36,7 +36,7 @@ class CustomerManager{
     }
 
     /**
-     * @brief Methode qui met a jour le profile tout en verifiant avant 
+     * @brief Méthode qui met à jour le profil tout en vérifiant avant 
      * @details 
      * <p>La methode verifie si les donner son envoyer avec la methode post,si c'est le cas elle recuperer le donner 
      *      est chasse les erreur(longuer du mot de passe, l'email) qui sont stocker dans tableaux d'erruer.</p>

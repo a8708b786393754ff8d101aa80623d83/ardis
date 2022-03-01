@@ -46,7 +46,7 @@ class ActiviterManager{
     }
 
     /**
-    * @brief Methode qui donne les activiter les plus viellies
+    * @brief Méthode qui donne les activiter les plus anciennes
     * @details 
     * <p>La méthode exécute une requête SQL qui lui donne les activités récentes.</p>
     * <p>Elle n'a plus qu'à les ranger par hôtel et à renvoyer le tableau</p>
