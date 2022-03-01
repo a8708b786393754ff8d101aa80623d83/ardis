@@ -4,9 +4,9 @@
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
-            <form class="form-search form-inline" method='POST' action='{base_url('/pages/resultSearch')}'>
+            <form class="form-search form-inline" method='POST' action='{base_url('/pages/search')}'>
                 <div class="input-append text-black">
-                    <input type="text" placeholder="Chercher un hotel, une activiter..." class="form-control"/>
+                    <input type="text" name='input' placeholder="Chercher un hotel, une activiter..." class="form-control"/>
                     <input type="submit" class="btn btn-dark" value='Search'/>
                 </div>
             </form>

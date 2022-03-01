@@ -17,8 +17,9 @@ use App\Models\SearchManager;
 
 class Pages extends BaseController{
     protected $session; 
-    protected $hotelMngr; 
     protected $allNamesHotels; 
+    protected HotelManager $hotelMngr; 
+    protected SearchManager $searchMngr; 
     
     private $searchManager; 
     /**
@@ -44,7 +45,7 @@ class Pages extends BaseController{
         $this->_data['color_link_nav'] = 'white';
         $this->_data['name_file']      = 'index';
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
-        $this->_data['meta_title']      = 'Acceuil'; 
+        $this->_data['meta_title']     = 'Acceuil'; 
         $this->display();
         die; 
     }
@@ -62,11 +63,13 @@ class Pages extends BaseController{
         $this->display($page.'.tpl');
     }
     
-    public function resultSearch(){
-        $this->hotelMngr = new SearchManager($this->request); 
+    public function search(){
+        $this->searchMngr = new SearchManager($this->request); 
+
         $this->_data['name_file']      = 'result_search';
         $this->_data['color_link_nav'] = 'black';
-        $this->_data['meta_title']      = 'Resultat de la recherche'; 
+        $this->_data['meta_title']     = 'Resultat de la recherche'; 
+        $this->_data['result']         = $this->searchMngr->getResult(); 
         
         $this->display('result_search.tpl'); 
     }
