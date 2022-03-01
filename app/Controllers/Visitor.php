@@ -17,7 +17,7 @@ use App\Models\UserManager;
 
 class Visitor extends Pages{
     protected $userManager;
-
+    protected $objetEmails;
     /**
     * @brief Méthode constructrice 
     * @details 
@@ -27,6 +27,7 @@ class Visitor extends Pages{
     public function __construct(){
         parent::__construct();
         $this->userManager = new UserManager;
+        $this->objetEmails = new Emails;
     }
 
     /**
@@ -67,4 +68,7 @@ class Visitor extends Pages{
         $this->_data['message'] = $msg; 
         $this->view('mdpoublier'); 
     }
+
+  
+
 }
