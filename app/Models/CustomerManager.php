@@ -1,35 +1,35 @@
 <?php 
  namespace App\Models; 
 /**
-* @file articles_controller.php
+* @file CustomerManager.php
 * @author Ayoub Brahim
 * @date 20/02/2022
 * @brief Manager pour les client connecter
-*  @details 
-* <p>Cette class gérer toute la logique pour executer une requete</p>
-* <p>Les actions sont :</p>
-* <ul>
-* 	<li><strong>home</strong> : page d'accueil</li>
-* 	<li><strong>blog</strong> : Liste des articles</li>
-* </ul>
-*
+* @details 
+* <p>Cette class gérer toute la logique pour executer une requete lier au clients</p>
 **/
 class CustomerManager{
     protected $respQuery; 
     protected $errorHunt; 
 
-    /**
-    *	@brief methode constructeur qui initialise 
-    *	<p>Cette fonction permet de rechercher via une requête, 
-    *		la liste des articles présents dans la base de données</p>
+    /**  
+    * @brief Methode constructrice 
+    * @details 
+    * <p>Cette methode constructrice initialise la classe HuntError a l'attribut errorHunt, la classe UserModel a l'attribut respQuery</p>
     **/
-
     public function __construct()
     {
         $this->errorHunt = new HuntError; 
         $this->respQuery = new UsersModel; 
     }
 
+    /**
+    * @brief Methode qui execute la requete SQL est la retourne 
+    * @param string $id 
+    * @details 
+    * <p>La methode execute la requete SQL pour recuperer les donner de l'utilisateur par son id</p>
+    * @return object Contient les donner des hotels 
+    **/
     public function getProfileData(string $id): object
     {
         return  $this->respQuery->getCreditials($id)[0]; 
@@ -37,16 +37,24 @@ class CustomerManager{
 
     /**
      * Methode qui met a jour le profile tout en verifiant avant 
-     * Retourne un tableau de message 
-     * ! index 1: le type de message(erreur ou success), index2: le message 
-     * @param string $pseudo
+     * @details 
+     * <p>La methode verifie si les donner son envoyer avec la methode post,si c'est le cas elle recuperer le donner 
+     *      est chasse les erreur(longuer du mot de passe, l'email) qui sont stocker dans tableaux d'erruer.</p>
+     * <p>Si le tableaux d'erreur est vide est que les champs obligatoire son entrez, elle regarde les champs qui sont modifier est on execute une requete SQL
+     *       pour met a jour les donner dans la base de donner</p>
+     * <p>Le mot de passe est hacher avant d'etre envoyer</p>
      * @param  $post
+     * @param $id
+     * @param $post
+     * @param string $pseudo
+     * @param string $pseudo
      * @param array $data_user
+     * @return array message d'err 
      */
     public function is_up_to_date(string $pseudo,$post, $id, array $data_user){
         if ($post->getMethod() == 'post' ){
-            $post_data = $post->getPost(); // * stocke les donner envoyer par l'utilisateur (donc ceux qui vont etre modifier)
-            $error = $this->errorHunt->hunt_edit_profile($post_data); // * chasse les erruer 
+            $post_data = $post->getPost(); // stocke les donner envoyer par l'utilisateur (donc ceux qui vont etre modifier)
+            $error = $this->errorHunt->hunt_edit_profile($post_data); 
             if(count($post_data) === 10 && count($error) === 0){ // * regarde si les donner envoyer son egale a 11 
                 // * fonction qui dit qui a changer
                 $must_be_modified = $this->who_changed($post_data, $data_user);

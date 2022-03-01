@@ -50,7 +50,7 @@ class Pages extends BaseController{
     /**
     * @brief Méthode view
     * @details
-    * @param string $page
+    * @param  $page
     * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
     */
     public function view($page){
