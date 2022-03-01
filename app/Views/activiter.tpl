@@ -1,5 +1,6 @@
 {extends file='base/layout.tpl'}
 {block name=content}
+<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
 <section>
   {foreach from=$activiter item=item key=key}
     {for $foo=0 to count($item) -1}
@@ -17,5 +18,4 @@
       {/for}
   {/foreach}
 </section>
-<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
 {/block}

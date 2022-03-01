@@ -1,7 +1,7 @@
 <?php 
 namespace App\Controllers; 
 use App\Config\Email;
-class Emails extends Email{
+class Emails {
     public string $from;
     public string $name; 
     public string $to; 
@@ -9,7 +9,7 @@ class Emails extends Email{
     public string $msg;
 
     public function construct(){
-       parent::construct(); 
+    //    parent::construct(); 
    }
    public function send(){
     $this->setFrom($this->$from, $this->$name);
