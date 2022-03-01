@@ -2,10 +2,10 @@
 namespace App\Controllers; 
 use App\Models\ActiviterManager; 
 /**
-* @file Customers.php
+* @file Activiter.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Controller des clients connectés 
+* @brief Controller des activités
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
@@ -38,7 +38,7 @@ class Activiter extends Pages{
     }
     
     
-    // methode y ajouter les donner afficher  dans la page home
+    // Méthode pour ajouter les données affichées dans la page home
     public function index(){
         $this->_data['activiter'] = $this->activManager->getYoungActiviter(); 
         $this->display('activiter.tpl');
