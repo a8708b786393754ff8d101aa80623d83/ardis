@@ -1,6 +1,7 @@
 <?php 
 namespace App\Controllers;
 use App\Models\HotelManager;
+use App\Models\SearchManager;
 /**
 * @file Visitor.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -18,7 +19,8 @@ class Pages extends BaseController{
     protected $session; 
     protected $hotelMngr; 
     protected $allNamesHotels; 
-
+    
+    private $searchManager; 
     /**
     * @brief Méthode constructrice 
     * @details 
@@ -34,10 +36,10 @@ class Pages extends BaseController{
     }
     
     /**
-    * @brief Méthode index
-    * @details
-    * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil </p>
-    */
+     * @brief Méthode index
+     * @details
+     * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil </p>
+     */
     public function index(){
         $this->_data['color_link_nav'] = 'white';
         $this->_data['name_file']      = 'index';
@@ -46,22 +48,27 @@ class Pages extends BaseController{
         $this->display();
         die; 
     }
-
+    
     /**
-    * @brief Méthode view
-    * @details
-    * @param  $page
-    * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
-    */
+     * @brief Méthode view
+     * @details
+     * @param  $page
+     * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
+     */
     public function view($page){
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['name_file']      = $page; 
         $this->_data['meta_title']      = ucfirst($page); 
         $this->display($page.'.tpl');
     }
-
+    
     public function resultSearch(){
+        $this->hotelMngr = new SearchManager($this->request); 
+        $this->_data['name_file']      = 'result_search';
+        $this->_data['color_link_nav'] = 'black';
+        $this->_data['meta_title']      = 'Resultat de la recherche'; 
+        
         $this->display('result_search.tpl'); 
     }
-
+    
 }
