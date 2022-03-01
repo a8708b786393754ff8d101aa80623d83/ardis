@@ -57,8 +57,8 @@ class Pages extends BaseController{
      * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
      */
     public function view($page){
-        $this->_data['color_link_nav'] = 'black'; 
-        $this->_data['name_file']      = $page; 
+        $this->_data['color_link_nav']  = 'black'; 
+        $this->_data['name_file']       = $page; 
         $this->_data['meta_title']      = ucfirst($page); 
         $this->display($page.'.tpl');
     }

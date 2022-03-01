@@ -60,7 +60,7 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('galerie_photo')}">Galerie photo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/avis')}">Les avis </a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('avis')}">Les avis </a>
                     </li>
                     {if isset($smarty.session.pseudo)}
                         <li class="nav-item">
