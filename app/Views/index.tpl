@@ -4,12 +4,11 @@
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
-            <form class="form-control bg-transparent reservation">
-                <label for="reservation" class="text-white">Du :</label>
-                <input type="date" class="">
-                <label for="reservation" class="text-white">Au :</label>
-                <input type="date" class="">
-                <input type="submit" name="sub" class="btn-dark" value="chercher">
+            <form class="form-search form-inline" method='POST' action='{base_url('/pages/resultSearch')}'>
+                <div class="input-append text-black">
+                    <input type="text" placeholder="Chercher un hotel, une activiter..." class="form-control"/>
+                    <input type="submit" class="btn btn-dark" value='Search'/>
+                </div>
             </form>
         </div>
     </div>
@@ -21,17 +20,13 @@
             <div class="card">
                 <img src="{base_url('assets/Images/nos_hotels')|cat:'/'|cat:$item->hotel_image}" class="d-block mx-auto" alt="hotel_punt_cana" width="200px">
                 <div class="card-body text-center">
-                    <h5 class="card-title"><a href="{base_url('hotel')|cat:'/'|cat:{$item->hotel_nom|lower}}">{$item->hotel_ville}</a></h5>
+                    <h5 class="card-title">{$item->hotel_ville}</h5>
                     <p class="card-text ">Hotel ardis {$item->hotel_nom}</p>
                     <p style="color: #ff00aa ;" class="card-text">à partir de {$item->hotel_price}€</p>
+                    <a href="{base_url('hotel')|cat:'/'|cat:{$item->hotel_nom|lower}}" class='btn '>Pour en savoir plus</a>
                 </div>
             </div>
         {/foreach}
-        </div>
-        <div class="container">
-            <div class="d-grid gap-2 d-md-block">
-                <a href="{base_url('#')}" class="btn">Pour en savoir plus</a>
-            </div>
         </div>
     </section>
 {/block}
