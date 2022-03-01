@@ -5,13 +5,13 @@ define('MAX_ACTIVITER_SHOW', 4);
 * @file ActiviterManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>, Arthur Kurt
 * @date 27/02/2022
-* @brief Manager pour les activiter
+* @brief Manager pour les activités
 *  @details 
-* <p>Cette class gérer toute la logique pour executer une requete</p>
+* <p>Cette classe gére toute la logique pour exécuter une requête</p>
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>home</strong> : page d'accueil</li>
-* 	<li><strong>blog</strong> : Liste des articles</li>
+* 	<li><strong>blog</strong> : liste des articles</li>
 * </ul>
 **/
 class ActiviterManager{
@@ -19,11 +19,10 @@ class ActiviterManager{
     protected ActiviterModel $activModel; 
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @param array $allHotels
-    * @details 
-    * <p>Cette methode constructrice initialise la classe ActiviterModel pour utiliser les executer les requete SQL </p>
-    * <p> Elle a besoin des nom des hotels pour les utiliser dans les autres methode</p>
+    * @details méthode constructrice initialise la classe ActiviterModel pour utiliser et exécuter les requêtes SQL </p>
+    * <p> Elle a besoin des noms des hôtels pour les utiliser dans d'autres méthodes</p>
     **/
     public function __construct(array $allHotels){
         $this->activModel = new ActiviterModel; 
@@ -31,11 +30,11 @@ class ActiviterManager{
     }
 
     /**
-    * @brief Methode qui donne les activiter les plus recentes 
+    * @brief Méthode qui donne les activités les plus récentes 
     * @details 
-    * <p>La methode execute une requete SQL qui lui donne les activiter recente.</p>
-    * <p>Elle a qu'a les ranger est par hotel est a renvoyer le tableaux</p>
-    * @return array Contient les donner trier est ordonné de la bonne manier pour qu'elle sois affciher
+    * <p>La méthode exécute une requête SQL qui lui donne les activités récentes.</p>
+    * <p>Elle n'a plus qu'à les ranger par hôtel et à renvoyer le tableau</p>
+    * @return array Contient les données triées et ordonnées de la bonne manière pour qu'elle soient affichées
     **/
     public function getYoungActiviter(){
         $arrdata = []; 
@@ -49,9 +48,9 @@ class ActiviterManager{
     /**
     * @brief Methode qui donne les activiter les plus viellies
     * @details 
-    * <p>La methode execute une requete SQL qui lui donne les activiter les moins recentes.</p>
-    * <p>Elle a qu'a les ranger est par hotel est a renvoyer le tableaux</p>
-    * @return array Contient les donner trier est ordonné de la bonne manier pour qu'elle sois affciher
+    * <p>La méthode exécute une requête SQL qui lui donne les activités récentes.</p>
+    * <p>Elle n'a plus qu'à les ranger par hôtel et à renvoyer le tableau</p>
+    * @return array Contient les données triées et ordonnées de la bonne manière pour qu'elle soient affichées
     **/
     public function getOldActiviter(){
         $arrdata = []; 
