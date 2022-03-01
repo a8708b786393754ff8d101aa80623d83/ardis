@@ -61,6 +61,10 @@ class Pages extends BaseController{
     }
 
     public function resultSearch(){
+        $this->_data['name_file']      = 'result_search';
+        $this->_data['color_link_nav'] = 'black';
+        $this->_data['meta_title']      = 'Resultat de la recherche'; 
+
         $this->display('result_search.tpl'); 
     }
 
