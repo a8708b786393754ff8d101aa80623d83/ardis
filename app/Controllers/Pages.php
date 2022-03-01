@@ -60,4 +60,8 @@ class Pages extends BaseController{
         $this->display($page.'.tpl');
     }
 
+    public function resultSearch(){
+        $this->display('result_search.tpl'); 
+    }
+
 }
