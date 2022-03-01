@@ -142,17 +142,17 @@ class HuntError {
 
     
     /**
-     * @brief Methode qui trouve les erruer liée au televersement d'image de profile
-     *  @details 
-     *	<p>Cette fonction cherche les erruer lier au televersement d'image de profile</p>
-     *  <ul>
-     * 	    <li><strong>la taille</strong></li>
-     * 	    <li><strong>l'exension</strong></li>
-     * 	    <li><strong>regarde si il le fichier est valide</strong></li>
-     * </ul>
-     * @param  $img
-     * @param int $max_length
-     * @return array contenant les erruer 
+    * @brief Methode qui trouve les erruer liée au televersement d'image de profile
+    *  @details 
+    *	<p>Cette fonction cherche les erruer lier au televersement d'image de profile</p>
+    *  <ul>
+    * 	    <li><strong>la taille</strong></li>
+    * 	    <li><strong>l'exension</strong></li>
+    * 	    <li><strong>regarde si il le fichier est valide</strong></li>
+    * </ul>
+    * @param  $img
+    * @param int $max_length
+    * @return array contenant les erruer 
     */
     public function huntUplaodedFile($img, int $max_length, array $white_list): array {
         // si l'extension n'est pas dans la liste blanche 

@@ -3,12 +3,12 @@ namespace App\Controllers;
 use App\Models\HotelManager;
 use App\Models\ImageManager;
 /**
-* @file Customers.php
+* @file PhotoGallery.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 16/02/2022
 * @brief Controller de la gallerie photo
 * @details 
-* <p>Les actions de la classe est view</p>
+* <p>L'actions de la classe est view</p>
 **/
 
 class PhotoGallery extends Pages{
@@ -21,8 +21,7 @@ class PhotoGallery extends Pages{
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
-    * <p>La méthode constructrice initialise la classe HotelManager </p>
-    * <p>Elle récupére les noms des hôtels pour les afficher dans la barre de navigation/p>
+    * <p>La méthode constructrice initialise la classe HotelManager est la classe ImageManager </p>
     **/
     public function __construct(){
         parent::__construct(); 

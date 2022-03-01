@@ -801,5 +801,5 @@ class Model extends BaseModel
         }
 
         return $properties;
-    }
+    }    
 }
