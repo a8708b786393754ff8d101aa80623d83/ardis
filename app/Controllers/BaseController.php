@@ -72,4 +72,7 @@ class BaseController extends Controller
         // $this->_smarty->debugging = true;
         $this->_smarty->display($strTemplate);
     }
+
+    public function searchBarre(){
+    }
 }

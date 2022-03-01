@@ -7,14 +7,7 @@ use App\Models\RestaurantManager;
 * @date 27/02/2022
 * @brief Controller des menus  
 * @details 
-* <p>Les actions sont :</p>
-* <ul>
-* 	<li><strong>logout</strong> : se déconnecte du compte courant</li>
-* 	<li><strong>profile</strong> : la page de profil</li>
-* 	<li><strong>edite_profile</strong> : l'édition du profil</li>
-* 	<li><strong>delete_profile</strong> : supression du compte courant</li>
-* 	<li><strong>hydrate</strong> : pour mettre à jour les attributs</li>
-* </ul>
+* <p>L'action de la classe est view</p>
 **/
 
 class Restaurant extends Pages{
@@ -26,6 +19,13 @@ class Restaurant extends Pages{
     protected array  $allData; 
     protected RestaurantManager $restoManagenr; 
 
+    /**
+    * @brief Méthode constructrice 
+    * @details 
+    * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
+    * <p>La méthode constructrice initialise la classe RestaurantManager</p>
+    * <p>Elle récupére les information a afficher.</p>
+    **/
     public function __construct(){
         parent::__construct(); 
         $this->restoManagenr = new RestaurantManager; 
@@ -33,10 +33,15 @@ class Restaurant extends Pages{
 
     }
 
+    /**
+    * @brief Méthode index
+    * @details
+    * <p>Donne a la vue les information afficher, comme la couleur de la barre de navigation, le meta_tile...</p>
+    */
     public function index(){
         $this->_data['color_link_nav'] = 'black';
         $this->_data['name_file']      = 'restaurant';
-        $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
+        // $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
         $this->_data['content_menu']   = $this->allData; 
         $this->_data['meta_title']      = 'Restaurant'; 
         $this->display("restaurant.tpl");

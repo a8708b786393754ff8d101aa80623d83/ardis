@@ -17,11 +17,6 @@ class ImageModel extends Model{
                 "page", "hotel_id"];
     protected $returnType    = 'App\Entities\ImageEntity';
 
-    protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
-
     protected UsersModel $userModel; 
     protected HotelModel $hotelModel; 
 

@@ -52,11 +52,11 @@ class Customers extends Visitor{
         $this->imgManager = new ImageManager;
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
-        $this->hydrate(); 
+        $this->updateAttribut(); 
     }
     
     /**
-    * @brief Méthode hydrate 
+    * @brief Méthode updateAttribut 
     * @details 
     * <p></p>
     * <p>Cette méthode met à jour le pseudo de la session et de ses attributs : </p>
@@ -71,7 +71,7 @@ class Customers extends Visitor{
     * </ul>
     * <p>Elle récupére les données à partir de l'id grâce à la méthode getProfileData() de la classe CustomerManager </p>
     **/
-    private function hydrate(){
+    private function updateAttribut(){
         $objResp = $this->dataCreditials = $this->custManager->getProfileData($this->id);
         $this->session->set('pseudo', $objResp->pseudo); 
 
@@ -104,7 +104,7 @@ class Customers extends Visitor{
     * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function profile(){
-        $this->hydrate();
+        $this->updateAttribut();
         $this->_data['firstname']  = $this->firstname;
         $this->_data['name']  = $this->name;
         $this->_data['tel']  = $this->tel;
@@ -144,7 +144,7 @@ class Customers extends Visitor{
         $this->_data[$resp[0]] = $resp[1];
         $this->_data['msg_error_profile'] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
         
-        $this->hydrate(); 
+        $this->updateAttribut(); 
         $this->profile(); 
     }
     
