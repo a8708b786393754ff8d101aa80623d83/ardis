@@ -5,7 +5,7 @@ use App\Models\ActiviterManager;
 * @file Activiter.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 21/02/2022
-* @brief Controller des activiter
+* @brief Controller des activités
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
