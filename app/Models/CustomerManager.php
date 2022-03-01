@@ -126,11 +126,11 @@ class CustomerManager{
      * <p>Le methode va regarder si l'utilisateur (par son id) a une photo de profile, si il en a pas il va retourner une image par default
      *  tout en regardant ça civiliter.Si il a une photo de profile stocker dans la base de donner il a renvoie</p>
      * @param string $civ
-     * @param string $img_profile
+     * @param  $img_profile
      * @param string $pseudo
      * @return array|string nom de l'image 
      */
-    public function managerImgProfile(string $civ, string $img_profile, string $id){
+    public function managerImgProfile(string $civ, $img_profile, string $id){
         if(empty($img_profile)){
             if($civ === 'Mr'){
                 return "mr.webp";
