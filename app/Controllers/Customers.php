@@ -113,7 +113,7 @@ class Customers extends Visitor{
         $this->_data['adresse']  = $this->adresse;
         $this->_data['zip']  = $this->zip_code;
         $this->_data['city']  = $this->city;
-        $this->_data['photo_profile']  = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id);
+        $this->_data['photo_profile']  = $this->photo_profile; 
         $this->view('profile'); 
     }
     
