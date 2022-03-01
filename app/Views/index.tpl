@@ -6,7 +6,7 @@
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
             <form class="form-search form-inline">
                 <div class="input-append text-black">
-                    <input type="text" placeholder="Chercher un hotel, une activiter..." class='form-control'/>
+                    <input type="text" placeholder="Chercher un hotel, une activiter..." class="form-control"/>
                     <input type="submit" class="btn btn-dark" value='Search'/>
                 </div>
             </form>

@@ -1,7 +1,7 @@
 <?php 
 namespace App\Controllers; 
-use App\Config\Email;
-class Emails {
+class Emails{
+    public $objEmail; // ! Cette objet va utiliser la email, je sais pas pk mais il ets pas content quand on y herite
     public string $from;
     public string $name; 
     public string $to; 
@@ -9,7 +9,7 @@ class Emails {
     public string $msg;
 
     public function construct(){
-    //    parent::construct(); 
+       $this->objEmail =  \Config\Services::email(); 
    }
    public function send(){
     $this->setFrom($this->$from, $this->$name);
@@ -23,5 +23,5 @@ class Emails {
     $this->send();
    }
 
-//   public 
+// ! ajouter mr.png est mme.png dans le dossier assets/Images/profile/
 }

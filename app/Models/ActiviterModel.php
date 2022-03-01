@@ -36,10 +36,11 @@ class ActiviterModel extends Model{
     */
     public function getDataOld(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 
-        AS loca,activ_tarif AS tarif, YEAR(activ_date) AS date, activ_descri AS descri, hotel_nom AS nom_hotel 
+        AS loca,activ_tarif AS tarif, activ_date AS date, YEAR(activ_date) AS year, activ_descri AS descri, hotel_nom AS nom_hotel 
                                 FROM activites
                                 INNER JOIN hotels ON hotels.hotel_id = activites.hotel_id 
-                                WHERE YEAR(`activ_date`) < YEAR(CURRENT_DATE)'
+                                WHERE YEAR(`activ_date`) < YEAR(CURRENT_DATE)
+                                ORDER BY activ_date desc'
                                 )->getResult(); 
     }
 
@@ -51,7 +52,7 @@ class ActiviterModel extends Model{
     */
     public function getDataYoung(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 
-                                AS loca,activ_tarif AS tarif, YEAR(activ_date) AS date, activ_descri AS descri, hotel_nom AS nom_hotel 
+                                AS loca,activ_tarif AS tarif, activ_date AS date, activ_descri AS descri, hotel_nom AS nom_hotel , activ_dispo AS dispo 
                                 FROM activites 
                                 INNER JOIN hotels ON hotels.hotel_id = activites.hotel_id 
                                 WHERE YEAR(`activ_date`) = YEAR(CURRENT_DATE)')->getResult(); 
