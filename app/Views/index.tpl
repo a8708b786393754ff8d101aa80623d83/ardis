@@ -4,12 +4,11 @@
     <div class=" form-reservation position-absolute top-50 start-50 translate-middle">
         <div class="row bg-transparent">
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
-            <form class="form-control bg-transparent reservation">
-                <label for="reservation" class="text-white">Du :</label>
-                <input type="date" class="">
-                <label for="reservation" class="text-white">Au :</label>
-                <input type="date" class="">
-                <input type="submit" name="sub" class="btn-dark" value="chercher">
+            <form class="form-search form-inline">
+                <div class="input-append text-black">
+                    <input type="text" placeholder="Chercher un hotel, une activiter..." class='form-control'/>
+                    <input type="submit" class="btn btn-dark" value='Search'/>
+                </div>
             </form>
         </div>
     </div>
