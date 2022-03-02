@@ -72,7 +72,8 @@ class UserManager{
                                         'client_tel'    => esc($_POST['tel']) , 
                                         'client_email'  => esc($_POST['email']), 
                                         'client_pays'   => esc($_POST['select']), 
-                                        'client_adresse'=> esc($_POST['adresse'])
+                                        'client_adresse'=> esc($_POST['adresse']),
+                                        'client_civ'=> esc($_POST['civ'])
                                     ],
                                     [
                                         'compt_pseudo' => esc($_POST['pseudo']),

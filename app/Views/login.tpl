@@ -20,7 +20,7 @@
     
         <!-- Login Form -->
         <form action="{base_url('/visitor/login/')}" method="POST">
-          <input type="text" id="login" class="fadeIn second" required name="username" placeholder="pseudo or email">
+          <input type="text" id="login" class="fadeIn second" required name="username" placeholder="pseudo">
           <input type="password" id="password" class="fadeIn third" required name="password" placeholder="password">
           <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
