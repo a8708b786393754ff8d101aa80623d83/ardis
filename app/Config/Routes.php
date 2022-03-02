@@ -56,6 +56,7 @@ $routes->get('hotel/(:any)', 'Hotel::view/$1');
 $routes->get('restaurant/', 'Restaurant::index');
 $routes->get('activiter/', 'Activiter::index');
 $routes->get('avis/', 'Avis::index');
+$routes->get('email/', 'SendMail::index');
 
 /*
  * --------------------------------------------------------------------
