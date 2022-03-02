@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 * @date 22/02/2022
 * @brief Model pour les images 
 * @details 
-* <p>Cette classe contient toute les requete liée aux images</p>
+* <p>Cette classe contient toutes les requêtes liées aux images</p>
 **/
 
 class ImageModel extends Model{
@@ -21,13 +21,13 @@ class ImageModel extends Model{
     protected HotelModel $hotelModel; 
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Model</p>
-    * <p>La methode constructrice initialise deux classe: </p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Model</p>
+    * <p>La methode constructrice initialise deux classes: </p>
     * <ul>
-    * 	<li><strong>Atrribut: userModel</strong> = UserModel</li>
-    * 	<li><strong>Atrribut: hotelModel</strong> =  HotelModel</li>
+    * 	<li><strong>Attribut: userModel</strong> = UserModel</li>
+    * 	<li><strong>Attribut: hotelModel</strong> =  HotelModel</li>
     * </ul>
     **/
     public function __construct(){
@@ -37,40 +37,40 @@ class ImageModel extends Model{
     }
 
     /** 
-    * @brief Methode qui contient la requete SQL pour avoir le nom de l'image 
+    * @brief Méthode qui contient la requête SQL pour avoir le nom de l'image 
     * @details
-    * <p>Elle recupere le nom de l'image grace a l'id de l'hotel</p>
+    * <p>Elle récupére le nom de l'image grâce à l'id de l'hôtel</p>
     * @param string $id 
-    * @return array nom de l'image appartenant a l'hotel 
+    * @return array nom de l'image appartenant à l'hôtel 
     */
     public function getImgByIdHotel(string $id){
         return $this->db->query('SELECT image_nom FROM images WHERE hotel_id=?', [$id])->getResult(); 
     }
     
 
-    // ? Recuperer tout les nom des images 
+    // ? Récupérer tous les noms des images 
     public function getAllImgNom(){
 
     }
 
-    // ? Recupere lèid a apartir du nom de l'image 
+    // ? Récupére l'id à partir du nom de l'image 
     public function getIdImgByName(string $name_img){
 
     }
 
-    // ? Recuperer l'image par uen date 
+    // ? Récupérer l'image par une date 
     public function getImgDate(string $date_post){
         
     }
 
     /** 
-    * @brief Methode qui ajoute l'image profile de l'utilisateur 
+    * @brief Méthode qui ajoute l'image de profil à l'utilisateur 
     * @details
-    * <p>Elle execute la methode getIdByPseudo  pour recuperer le id a partir du pseudo pour 
-    *          ensuite inserer l'image de profile dans la table clients</p>
+    * <p>Elle exécute la méthode getIdByPseudo  pour récupérer l'id à partir du pseudo pour 
+    *          ensuite insérer l'image de profil dans la table clients</p>
     * @param string $pseudo
     * @param string $name_img 
-    * @return array nom de l'image appartenant a l'hotel 
+    * @return array nom de l'image appartenant au profil 
     */
     public function setImgProfile(string $pseudo, string $name_img){
         $id = $this->userModel->getIdByPseudo($pseudo);
@@ -78,9 +78,9 @@ class ImageModel extends Model{
     }
 
     /**
-    * @brief Methode qui supprime ine image
+    * @brief Méthode qui supprime une image
     * @details
-    *<p>Elle forge la requete pour supprimer une image a partir de l'id de l'image</p>
+    *<p>Elle forge la requête pour supprimer une image à partir de l'id de celle-ci</p>
     * @param string $id 
     */
     public function deleteImg(string $id){

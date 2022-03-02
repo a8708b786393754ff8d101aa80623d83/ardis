@@ -77,21 +77,21 @@ class UsersModel extends Model{
     }
 
     /**
-     * Methode qui fait la requete pour mettre a jour
+     * Méthode qui fait la requête pour mettre à jour
      * @param array 
      */
     public function updateProfile(array $data_for_update, string $pseudo, $id){
         if(array_key_exists('compt_pseudo', $data_for_update)){
             $this->db->query('UPDATE compte SET compt_pseudo=? WHERE compt_id=?', [$pseudo, $id]);  
         }
-        // TODO recuperer l'id a la place du prenom
+        // TODO récupérer l'id à la place du prénom
         $sql = 'UPDATE clients INNER JOIN compte ON compte.compt_id= clients.client_id SET ';
         foreach($data_for_update as $keys=>$values){
             $sql .= ' '.$keys.'="'.$values.'",'; 
         }
-        // ! faut faire le test sinon elle renvoie une erruer
-        if(strpos($sql,'=')){ // ? regarde si = est present dans la requete, si c'est le cas ca veut dire que le client a fait des modif
-            $sql = substr($sql,0,-1); // ? cette fonction supprimer le dernier element d'une chaine de caracter dans notre cas c'est le ' 
+        // ! faut faire le test sinon elle renvoie une erreur
+        if(strpos($sql,'=')){ // ? regarde si = est présent dans la requête, si c'est le cas cela veut dire que le client a fait des modif
+            $sql = substr($sql,0,-1); // ? cette fonction supprime le dernier élément d'une chaine de caractère dans notre cas c'est le ' 
             $this->db->query($sql.' WHERE client_id=?', [$id]);  
         } 
     }
@@ -104,7 +104,7 @@ class UsersModel extends Model{
         $this->db->query($query_comptes, [$id_pseudo]);
     } 
 
-    // ? Recupere l'image pars le pseudo
+    // ? Récupére l'image pars le pseudo
     public function getImgByIdCustomers(string $id){
         return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
     }

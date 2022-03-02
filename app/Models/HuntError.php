@@ -6,26 +6,26 @@ namespace App\Models;
 * @date 15/02/2022
 * @brief Classe pour la gestion d'erreur
 * @details 
-* <p>Cette classe contient la logique des tests est la gestion d'erreur</p>
+* <p>Cette classe contient la logique des tests et la gestion d'erreur</p>
 **/
 
 class HuntError {
     public $error = []; 
 
     /**
-    * @brief Methode qui chasse les erruer lie a la connexion d'un compte   
+    * @brief Méthode qui chasse les erreurs liées à la connexion d'un compte   
     * @details 
-    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
-    * <p>La methode verifie:</p>
+    * <p>Les erreurs seront stockées au fur et à mesure que les tests ne passent pas </p>
+    * <p>La méthode vérifie:</p>
     *<ul>
-    * 	<li>le contenue du pseudo est du mot de passe entrez (s'il ne sont pas vide).</li>
-    * 	<li>verifie l'hash stocker en bdd est le mot de passe entrez.</li>
-    * 	<li>verifie la longuer du mot de passe (il est de huit par default)</li>
+    * 	<li>le contenu du pseudo et du mot de passe saisis (s'ils ne sont pas vides).</li>
+    * 	<li>le mot de passe haché stocké en bdd avec celui saisi.</li>
+    * 	<li>la longueur du mot de passe (il est de huit caractères par défaut)</li>
     *</ul>
     * @param string $pseudo
     * @param string $password
     * @param string $password_bdd
-    * @return array Contient les erruer  
+    * @return array Contient les erreurs  
     **/
     public function hunt_error_login(string $pseudo, string $password, string $passwd_bdd): array {
         if(empty($password) || empty($pseudo)){
@@ -39,38 +39,38 @@ class HuntError {
     }
 
     /**
-    * @brief Methode qui chasse les erruer lie a l'oublie de mot de passe
+    * @brief Méthode qui chasse les erreurs liées à l'oubli du mot de passe
     * @details 
-    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
-    * <p>La methode verifie:</p>
+    * <p>Les erreurs seront stockées au fur et à mesure que les tests ne passent pas </p>
+    * <p>La méthode vérifie:</p>
     *<ul>
-    * 	<li>verifie l'email garce a la methode de cette instante</li>
-    * 	<li>verifie si la reponse de la requete sql a retourner des elements </li>
+    * 	<li> l'email grâce à la méthode de cette instance</li>
+    * 	<li> si la réponse de la requête SQL à retourner des éléments </li>
     *</ul>
     * @param string $email 
     * @param array $resp
-    * @return array Contient le type de d'erruer est de son contenue  
+    * @return array Contient le type d'erreur et de son contenu  
     **/
     public function forget_password(string $email, array $resp): array{
         if($this->verif_email($email)){
             if(count($resp) === 1){
-                return ['success'=>'Un email va vous etre envoyer'];
+                return ['success'=>'Un email va vous être envoyer'];
             } // la clef est le type d'erruer, la valeur le contenue du message
         } return ["danger"=>'Verifier votre email!'];
     }
 
     /**
-    * @brief Methode qui chasse les erruer lie a l'oublie de mot de passe
+    * @brief Méthode qui chasse les erreurs liées à l'oubli de mot de passe
     * @details 
-    * <p>Les erruer seront stockée au fur est mesure que les test ne passe pas </p>
-    * <p>La methode verifie:</p>
+    * <p>Les erreurs seront stockées au fur et à mesure que les tests ne passent pas </p>
+    * <p>La méthode vérifie:</p>
     *<ul>
-    * 	<li>verifie l'email garce a la methode de cette instante</li>
-    * 	<li>verifie si la reponse de la requete sql a retourner des elements </li>
+    * 	<li> l'email grâce à la méthode de cette instance</li>
+    * 	<li> si la réponse de la requête SQL à retourner des éléments </li>
     *</ul>
     * @param string $email 
     * @param array $resp
-    * @return array Contient le type de d'erruer est de son contenue  
+    * @return array Contient le type d'erreur et son contenu  
     **/
     public function hunt_error_create_account(array $post): array{
         $tel = $post['tel']; 
@@ -142,17 +142,17 @@ class HuntError {
 
     
     /**
-    * @brief Methode qui trouve les erruer liée au televersement d'image de profile
+    * @brief Méthode qui trouve les erreurs liées au téléversement d'image de profil
     *  @details 
-    *	<p>Cette fonction cherche les erruer lier au televersement d'image de profile</p>
+    *	<p>Cette fonction cherche les erreurs liées au téléversement d'image de profil</p>
     *  <ul>
     * 	    <li><strong>la taille</strong></li>
-    * 	    <li><strong>l'exension</strong></li>
-    * 	    <li><strong>regarde si il le fichier est valide</strong></li>
+    * 	    <li><strong>l'extension</strong></li>
+    * 	    <li><strong>regarde si le fichier est valide</strong></li>
     * </ul>
     * @param  $img
     * @param int $max_length
-    * @return array contenant les erruer 
+    * @return array contenant les erreur 
     */
     public function huntUplaodedFile($img, int $max_length, array $white_list): array {
         // si l'extension n'est pas dans la liste blanche 

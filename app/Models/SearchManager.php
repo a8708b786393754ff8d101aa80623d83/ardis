@@ -6,11 +6,11 @@
 * @date 27/02/2022
 * @brief Manager pour le restaurant
 *  @details 
-* <p>Cette class gérer toute la logique pour executer une requete</p>
+* <p>Cette classe gére toute la logique pour exécuter une requête</p>
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>home</strong> : page d'accueil</li>
-* 	<li><strong>blog</strong> : Liste des articles</li>
+* 	<li><strong>blog</strong> : liste des articles</li>
 * </ul>
 **/
 class SearchManager{

@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 * @date 14/02/2022
 * @brief Model pour la restauration
 * @details 
-* <p>La methode contient les requete pour ceux qui est a rapport avec la menu/restaurantion</p>
+* <p>La méthode contient les requetes en lien avec le menu/la restauration</p>
 **/
 
 class RestaurantModel  extends Model{
@@ -20,9 +20,9 @@ class RestaurantModel  extends Model{
     protected $useTimestamps = true;
 
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Model</p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Model</p>
     **/
     public function __construct(){
         parent::__construct(); 
@@ -30,10 +30,10 @@ class RestaurantModel  extends Model{
 
 
      /** 
-    * @brief Methode qui contient la requete SQL pour avoir les tout les donner de la menu/restaurantion 
+    * @brief Méthode qui contient la requête SQL pour avoir les toutes les données du menu/de la restauration 
     * @details
-    * <p>Elle recupere le nom du menu, le prix, la description est l'image </p>
-    * @return array les donner des menu/restaurantion
+    * <p>Elle récupére le nom du menu, le prix, la description et l'image </p>
+    * @return array les donnés des menus/de la restauration
     */
     public function getAllData() {
         return $this->db->query('SELECT menu_nom AS nom, menu_prix AS price , menu_descri AS descri, menu_image AS image  

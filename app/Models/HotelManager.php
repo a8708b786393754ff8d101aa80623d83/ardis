@@ -33,19 +33,19 @@ class HotelManager {
     }
 
     /**
-    * @brief Méthode qui tout les noms des hotels   
+    * @brief Méthode qui récupére tous les noms des hôtels   
     * @details 
     * <p>La méthode exécute la requête SQL pour récupérer les noms de tous les hôtels </p>
-    * @return array Contient les nom des hotels 
+    * @return array Contient les noms des hôtels 
     **/
     public function getName(){
         return $this->respQuery->getName(); 
     }
     
     /**    
-    * @brief Methode qui retourne les trois meilleurs hôtels 
+    * @brief Méthode qui retourne les trois meilleurs hôtels 
     * @details 
-    * <p>La méethode exécute la requête SQL pour récupérer les images, noms, prix et villes des trois meilleurs hôtels</p>
+    * <p>La méthode exécute la requête SQL pour récupérer les images, noms, prix et villes des trois meilleurs hôtels</p>
     * @return array Contient les données liées à l'hôtel
     **/
     public function getBestHotel(){

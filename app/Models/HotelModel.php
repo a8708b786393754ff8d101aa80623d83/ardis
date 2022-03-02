@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 * @file HotelModel.php
 * @author Arthur Kurt <email d'arthur>
 * @date 19/02/2022
-* @brief Model pour les hotels 
+* @brief Model pour les hôtels 
 * @details 
-* <p>Cette classe contient toute les requete liée aux hotels</p>
+* <p>Cette classe contient toutes les requêtes liées aux hôtels</p>
 **/
 
 class HotelModel extends Model{
@@ -24,19 +24,19 @@ class HotelModel extends Model{
     protected $deletedField  = 'deleted_at';
     
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice appelle la methode constructrice de la classe Model</p>
+    * <p>Cette méthode appelle la méthode constructrice de la classe Model</p>
     **/
     public function __construct(){
         parent::__construct(); 
     }
 
     /**
-    * @brief Methode qui retourne les meuilleur hotels selon les prix   
+    * @brief Méthode qui retourne les meilleurs hôtels selon leur prix   
     * @details 
-    * <p>La methode continet la requete SQL complexe pour etre reutiliser </p>
-    * @return array Contient les donner des hotels aux meuilleur prix
+    * <p>La méthode contient la requête SQL complexe pour être réutiliser </p>
+    * @return array Contient les données des hôtels aux meilleurs prix
     **/
     public function getBestHotels(): array {
         return $this->db->query(
@@ -49,12 +49,12 @@ class HotelModel extends Model{
     }
 
     /**
-    * @brief Methode qui retourne  les information lieer a l'hotel specifier    
+    * @brief Méthode qui retourne les informations liées à l'hôtel spécifié    
     * @param string $hotel
     * @details 
-    * <p>La methode continet la requete SQL pour recuperer l'image, nom, prix, ville note, contenue, email de l'hotel </p>
-    * <p> Le premier caractere est mis en majiscule</p>
-    * @return array Contient les donner de l'hotel
+    * <p>La méthode contient la requête SQL pour récupérer l'image, nom, prix, ville note, contenue, email de l'hôtel </p>
+    * <p> Le premier caractère est mis en majuscule</p>
+    * @return array Contient les données de l'hôtel
     **/
     public function getAll(string $hotel):array {
         return $this->db->query(
@@ -64,21 +64,21 @@ class HotelModel extends Model{
     }
 
     /**
-    * @brief Methode qui retourne tout les noms des hotels 
+    * @brief Méthode qui retourne tous les noms des hôtels 
     * @details 
-    * <p>La methode contient la requete SQL  pour recuperer les nom de tout les hotels</p>
-    * @return array Contient les nom des hotels
+    * <p>La méthode contient la requête SQL  pour récupérer les noms de tous les hôtels</p>
+    * @return array Contient les noms des hôtels
     **/
     public function getName():array {
         return $this->db->query('SELECT hotel_nom FROM hotels')->getResult();
     }
 
     /**
-    * @brief Methode qui retourne l'id de l'hotel selon son nom    
+    * @brief Méthode qui retourne l'id de l'hôtel selon son nom    
     * @param string $name_hotel
     * @details 
-    * <p>La methode continet la requete SQL qui recuperer l'id de l'hotel  </p>
-    * @return array l'id de l'hotel 
+    * <p>La méthode contient la requêete SQL qui récupére l'id de l'hôtel  </p>
+    * @return array l'id de l'hôtel 
     **/
     public function getIdByNameHotel(string $name_hotel):array {
         return $this->db->query('SELECT  hotel_id FROM hotels WHERE hotel_nom=?', [$name_hotel])->getResult(); 

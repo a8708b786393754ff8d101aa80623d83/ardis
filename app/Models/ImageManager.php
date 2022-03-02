@@ -7,7 +7,7 @@ define('MAX_SIZE', 300_000); // constante pour la taille maximum des fichier
 * @date 25/02/2022
 * @brief Manager des images 
 * @details 
-* <p>Cette classe  gérer toute la logique lier aux image pour executer les resultat</p>
+* <p>Cette classe  gére toute la logique liée aux images pour exécuter les résultats</p>
 **/
 
 class ImageManager{
@@ -17,15 +17,15 @@ class ImageManager{
     protected $white_liste; 
     
     /**
-    * @brief Methode constructrice 
+    * @brief Méthode constructrice 
     * @details 
-    * <p>Cette methode constructrice initialise trois classe: </p>
+    * <p>Cette méthode constructrice initialise trois classes: </p>
     * <ul>
     * 	<li><strong>imgModel</strong> = ImageModel</li>
     * 	<li><strong>hotelModel</strong> =  Hotel</li>
     * 	<li><strong>error</strong> =  HuntError</li>
     * </ul>
-    * <p> Elle initialise un tableaux d'extension accepeter</p>
+    * <p> Elle initialise un tableau d'extensions acceptées</p>
     **/
     public function __construct(){
         $this->imgModel = new ImageModel; 
@@ -36,13 +36,13 @@ class ImageManager{
     }
 
      /**
-    * @brief Methode qui fait les tests pour enregistrer la photo de profile 
+    * @brief Méthode qui fait les tests pour enregistrer la photo de profil 
     * @details 
-    * <p>Cette methode continet la requete SQL pour ajouter la photo de profile a l'utilisateur</p>
-    * <p>Les test s'appuye sur la methode huntUplaodedFile() de la classe HuntError</p>
-    * <p>Regarde si le nom de fichier n'est pas vide (si c'est le cas la photo de profile n'est preciser dans l'edition de profile)</p>
-    * <p>Si l'image passe les test de verification, le nouveaux nom de l'image serais ajouter a la base de donner</p>
-    * @return array Contient erreur lier au televersement d'image de profile 
+    * <p>Cette méthode contient la requête SQL pour ajouter la photo de profil à l'utilisateur</p>
+    * <p>Les tests s'appuient sur la méthode huntUplaodedFile() de la classe HuntError</p>
+    * <p>Regarde si le nom de fichier n'est pas vide (si c'est le cas la photo de profil est precisée dans l'édition du profil)</p>
+    * <p>Si l'image passe les tests de vérification, le nouveau nom de l'image sera ajouter à la base de données</p>
+    * @return array Contient les erreurs liées au téléversement d'image de profil 
     **/
     public function management_uplaod_img($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
@@ -59,13 +59,13 @@ class ImageManager{
     }
 
     /**
-    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chasue hotels 
+    * @brief Méthode qui retourne un tableau associatif de données pour les images de chaques hôtels 
     * @details 
-    * <p>Cette methode a besoin d'un tableaux de nom d'hotels pour avoir l'id est recuperer les image de cette hotels</p>
+    * <p>Cette méthode a besoin d'un tableau de nom d'hôtels pour avoir l'id et récupérer les images de cet hôtel</p>
     * <p>Le nombre d'image maximum pour chaque hotel est de 4</p>
     * @param  array $allHotels
     * @param  int $max 
-    * @return array tableaux associatif, clef: nom de l'hotel, valeur: tableaux de nom d'image 
+    * @return array tableau associatif, clef : nom de l'hôtel, valeur : tableau de noms d'images 
     */
     public function getAllData(array $allHotels, int $max=4){
         $arrImgHotels = []; 
