@@ -60,6 +60,10 @@ h1{
     top: 100px;
     width: 500px;
 }
+.img{
+    position: relative;
+    left: 100px;
+}
 /* titre de menu enfant  */
 .menu_enfant_titre{
     position: relative;

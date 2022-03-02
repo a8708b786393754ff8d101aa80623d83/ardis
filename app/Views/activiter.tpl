@@ -1,6 +1,6 @@
 {extends file='base/layout.tpl'}
 {block name=content}
-<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
+<a href="{base_url('activiter/archive')}" class='btn btn-primary'>Allez voir les activiter archiver</a>
 <section>
   {foreach from=$activiter item=item key=key}
     {for $foo=0 to count($item) -1}

@@ -44,7 +44,7 @@ class ImageManager{
     * <p>Si l'image passe les test de verification, le nouveaux nom de l'image serais ajouter a la base de donner</p>
     * @return array Contient erreur lier au televersement d'image de profile 
     **/
-    public function management_uplaod_img($img_file, string $pseudo){
+    public function updateProfileOrError($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
         if (! empty($img_pre_uplaoded->getFileName())){
             $error = $this->error->huntUplaodedFile($img_pre_uplaoded, MAX_SIZE, $this->white_list); 

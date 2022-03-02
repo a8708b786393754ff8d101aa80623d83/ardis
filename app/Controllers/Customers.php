@@ -32,7 +32,8 @@ class Customers extends Visitor{
     protected string $civ; 
     protected  $photo_profile; 
     
-    protected $imgManager;
+    protected ImageManager $imgManager;
+    protected CustomerManager $custManager;
     private $dataCreditials; 
 
     /**
@@ -75,6 +76,7 @@ class Customers extends Visitor{
         $objResp = $this->dataCreditials = $this->custManager->getProfileData($this->id);
         $this->session->set('pseudo', $objResp->pseudo); 
 
+        $this->pseudo = $objResp->pseudo; 
         $this->firstname = $objResp->prenom; 
         $this->name = $objResp->nom; 
         $this->tel = $objResp->num_tel; 
@@ -141,7 +143,8 @@ class Customers extends Visitor{
         // l'index 0 est pour le type de message (d'erreur ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$resp[0]] = $resp[1];
-        $this->_data['msg_error_profile'] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
+        $this->_data['msg_error_profile'] = $this->imgManager->updateProfileOrError($this->request, $this->pseudo);
+        
         $this->updateAttribut(); 
         $this->profile(); 
     }
