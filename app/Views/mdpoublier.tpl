@@ -14,7 +14,7 @@
                                   {/foreach}
                               {/if}
                               <h2 class="text-center">Mot de passe oublié ?</h2>
-                              <p>Demandez votre mot de passe .</p>
+                              <p>Demandez votre mot de passe.</p>
                                 <div class="panel-body">
                                   
                                   <form class="{base_url('/visitor/mdpoublier')}" method='POST'>

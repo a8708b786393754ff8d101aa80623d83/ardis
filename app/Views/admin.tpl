@@ -80,7 +80,7 @@
 										<!-- Dropdown level 2 -->
 										<li class="panel panel-default" id="dropdown">
 											<a data-toggle="collapse" href="#dropdown-lvl2">
-												<span class="glyphicon glyphicon-off"></span> Nos hotels <span class="caret"></span>
+												<span class="glyphicon glyphicon-off"></span> Nos hôtels <span class="caret"></span>
 											</a>
 											<div id="dropdown-lvl2" class="panel-collapse collapse">
 												<div class="panel-body">

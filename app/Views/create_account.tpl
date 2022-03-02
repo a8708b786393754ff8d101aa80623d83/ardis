@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-xs-6 col-md-6">
                         <input class="form-control" name="lastname" placeholder="Nom" type="text" required />
-                         <input class="form-control" name="CP" placeholder="Code postale" type="text" required />
+                         <input class="form-control" name="CP" placeholder="Code postal" type="text" required />
                     </div>
                 </div>
                 <label>Votre pays: 

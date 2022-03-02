@@ -5,7 +5,7 @@
         <img class="image_{$name}" src="{base_url('assets/Images/nos_hotels')|cat:'/'}{$image}" alt="image {$name} hotel">
          <i class="fa fa-envelope share" aria-hidden="true"></i> 
         <div class="row ">
-            <h1>Hotel {$name}</h1>
+            <h1>Hôtel {$name}</h1>
             <i class="fas fa-map-marker-alt gps_icone "></i>
             <p class="city_hotel ">{$pays}/ {$ville}</p>
             <div class="start ">
@@ -16,7 +16,7 @@
             <div class="localisation_hotel ">
             <p>{$contenue}</p>
             <p>A partir de <span style='color: #ff00aa;'>{$price}€</span></p>
-            <a href="{base_url('galerie_photo')}" class=" btn galerie_photo ">Galerie_photo</a>
+            <a href="{base_url('galerie_photo')}" class=" btn galerie_photo ">Galerie photo</a>
         </div>
         
         <div class="presentation ">

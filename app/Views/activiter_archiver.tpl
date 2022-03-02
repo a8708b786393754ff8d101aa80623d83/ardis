@@ -8,10 +8,10 @@
               <h2 class="text-center">{$item[$foo]->nom_hotel} | {$item[$foo]->year}</h2>
               <h4 class='text-center'>{$item[$foo]->nom}</h4>
               <img src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item[$foo]->image}" alt="">
-              <p>Pays: {$item[$foo]->loca}</p>
-              <p>Date: {$item[$foo]->date}</p>
-              <p>Description: {$item[$foo]->descri}</p>
-              <p>Tarif par personne: <strong>{$item[$foo]->tarif}€</strong></p>
+              <p>Pays : {$item[$foo]->loca}</p>
+              <p>Date : {$item[$foo]->date}</p>
+              <p>Description : {$item[$foo]->descri}</p>
+              <p>Tarif par personne : <strong>{$item[$foo]->tarif}€</strong></p>
             </div>
         </div>
       {/for}

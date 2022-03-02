@@ -6,8 +6,8 @@
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
             <form class="form-search form-inline" method='POST' action='{base_url('/pages/search')}'>
                 <div class="input-append text-black">
-                    <input type="text" name='input' placeholder="Chercher un hotel, une activiter..." class="form-control"/>
-                    <input type="submit" class="btn btn-dark" value='Search'/>
+                    <input type="text" name='input' placeholder="Chercher un hôtel, une activité..." class="form-control"/>
+                    <input type="submit" class="btn btn-dark" value='Recherche'/>
                 </div>
             </form>
         </div>

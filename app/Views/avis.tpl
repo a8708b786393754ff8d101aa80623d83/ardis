@@ -10,8 +10,8 @@
           <p class="card-text">{$item[$foo]->avis_cont}</p>
         </div>
         <div class="card-body">
-          <a href="{base_url('hotel')|cat:'/'|cat:$item[$foo]->hotel_nom}" class="card-link btn">Voir l'hotel</a>
-          <a href="#" class="card-link">Mettre un ptit champs</a>
+          <a href="{base_url('hotel')|cat:'/'|cat:$item[$foo]->hotel_nom}" class="card-link btn">Voir l'hôtel</a>
+          <a href="#" class="card-link">Mettre un petit champs</a>
         </div>
     </div>
     {/for}

@@ -2,7 +2,7 @@
 {block name='content'}
 {if isset($result['avis'])}
       <hr>
-      <h2 class="text-center">Activiter</h2>
+      <h2 class="text-center">Activités</h2>
        {foreach from=$result['avis'] item=item key=key}
             {* <div class="card" style="width: 18rem;">
                   <img class="card-img-top" src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item['image']}" alt="Card image cap">
@@ -15,7 +15,7 @@
 {/if}
 {if isset($result['hotel'])}
       <hr>
-      <h2 class="text-center">Hotel</h2>
+      <h2 class="text-center">Hôtel</h2>
       <div class="container">
             {foreach from=$result['hotel'] item=item key=key}
                   <div class="card" style="width: 18rem;">
@@ -30,7 +30,7 @@
 {/if}
 {if isset($result['activiter'])}
       <hr>
-      <h2 class="text-center">Activiter</h2>
+      <h2 class="text-center">Activités</h2>
       <div class="container">
             {foreach from=$result['activiter'] item=item key=key}
                   <div class="card" style="width: 18rem;">
@@ -47,9 +47,9 @@
 {if empty($result)}
  <div class="container">
         <div class="well">
-            <h1><div class="ion ion-alert-circled"></div> La recherche n'a rien donner !!</h1>
+            <h1><div class="ion ion-alert-circled"></div> La recherche n'a rien donnée !!</h1>
             <p>
-                <a class="btn btn-dark" href="{base_url('pages/')}">Revenir a la page d'acceuile</a>
+                <a class="btn btn-dark" href="{base_url('pages/')}">Revenir à la page d'acceuil</a>
             </p>
         </div>
     </div>

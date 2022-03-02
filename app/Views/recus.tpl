@@ -21,10 +21,10 @@
                                                 <td>Kurt COBAIN
                                                 <br>Compte client numéro : 2
                                                 <br> Id réservation : 8
-                                                <br> Hotel de séjours : Suisse
-                                                <br> Date de séjour : 2021-05-12 / 2021-05-22 
+                                                <br> Hôtel de séjour : Suisse
+                                                <br> Dates de séjour : 2021-05-12 / 2021-05-22 
                                                 <br> Durée du séjour : 10 jours 
-                                                <br> Nombr de chambre loué : 1
+                                                <br> Nombre de chambre loué : 1
                                                 <br> Id chambre : 8
                                             </td>
                                             </tr>
@@ -33,7 +33,7 @@
                                                     <table class="invoice-items" cellpadding="0" cellspacing="0">
                                                         <tbody>
                                                             <tr>
-                                                                <td>Prix séjours</td>
+                                                                <td>Prix séjour</td>
                                                                 <td class="alignright">1000.00 € €</td>
                                                             </tr>
                                                             
