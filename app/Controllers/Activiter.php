@@ -37,7 +37,6 @@ class Activiter extends Pages{
         parent::__construct(); 
         $this->activManager = new  ActiviterManager($this->allNamesHotels); 
         $this->_data['color_link_nav'] = 'black';
-        $this->_data['name_file']      = 'activiter';
         $this->_data['meta_title']     = 'Activiter'; 
     }
     
@@ -49,6 +48,7 @@ class Activiter extends Pages{
     **/
     public function index(){
         $this->_data['activiter'] = $this->activManager->getYoungActiviter(); 
+        $this->_data['name_file']      = 'activiter';
         $this->display('activiter.tpl');
     }
 
@@ -59,6 +59,7 @@ class Activiter extends Pages{
     **/
     public function archive(){
         $this->_data['activiter_archiver'] = $this->activManager->getOldActiviter(); 
+        $this->_data['name_file']      = 'archive';
         $this->display('activiter_archiver.tpl');
     }
 }

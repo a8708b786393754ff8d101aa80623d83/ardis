@@ -54,7 +54,7 @@ class Visitor extends Pages{
         $msg = $this->userManager->verificate_create_account($this->request->getMethod());
         // l'index 0 est pour le type de message (d'erreurs ou de succès)
         // l'index 1 est pour le(s) message(s)
-        $this->_data[$msg[0]]       = $msg[1]; 
+        $this->_data[$msg[0]] = $msg[1]; 
         $this->view('create_account'); 
     }
 
@@ -68,7 +68,5 @@ class Visitor extends Pages{
         $this->_data['message'] = $msg; 
         $this->view('mdpoublier'); 
     }
-
-  
 
 }

@@ -75,7 +75,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/mdpoublier')}">Mot de passe oublié </a>
                         </li>
-
                     {/if}
                 </ul>
             </div>
@@ -99,11 +98,24 @@
                     </a>
                 </li>
                 {/if}
+                {if $name_file eq 'archive'}
+                <li class="breadcrumb-item ">
+                    <a href="{base_url('activiter/')}" class="text-black ">
+                        activiter
+                    </a>
+                </li>
+                <li class="breadcrumb-item ">
+                    <a href="#" class="text-black ">
+                        archiver
+                    </a>
+                </li>
+                {else}
                 <li class="breadcrumb-item ">
                     <a href="#" class="text-black ">
                         {$name_file}
                     </a>
                 </li>
+                {/if}
             </ol>
         </div>
     </div>
