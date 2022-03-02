@@ -22,11 +22,7 @@
     <!-- navbar -->
     <nav class="navbar bg-transparent navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-<<<<<<< HEAD
-            <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo.webp')}" alt="logo" width="80"></a>
-=======
             <a class="navbar-brand logo" href="{base_url('pages')}"><img src="{base_url('assets/Images/logo_menu.webp')}" alt="logo" width="80"></a>
->>>>>>> main
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
             </button>

@@ -59,7 +59,7 @@ class ImageManager{
     }
 
     /**
-    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chasue hotels 
+    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chaque hotel
     * @details 
     * <p>Cette methode a besoin d'un tableaux de nom d'hotels pour avoir l'id est recuperer les image de cette hotels</p>
     * <p>Le nombre d'image maximum pour chaque hotel est de 4</p>

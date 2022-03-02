@@ -126,8 +126,7 @@ class Customers extends Visitor{
     * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function edite_profile(){
-        $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
-        [
+        $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,[
             'pseudo'=>$this->pseudo,
             'prenom'=>$this->firstname,
             'nom'=>$this->name,
@@ -143,7 +142,6 @@ class Customers extends Visitor{
         // l'index 1 est pour le(s) message(s)
         $this->_data[$resp[0]] = $resp[1];
         $this->_data['msg_error_profile'] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
-        
         $this->updateAttribut(); 
         $this->profile(); 
     }
