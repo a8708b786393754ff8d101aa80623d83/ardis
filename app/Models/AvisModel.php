@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 * @date 19/02/2022
 * @brief Model pour les avis 
 * @details 
-* <p>Cette classe contient toute les requete liée aux avis</p>
+* <p>Cette classe contient toutes les requêtes liées aux avis</p>
 **/
 
 class AvisModel extends Model{

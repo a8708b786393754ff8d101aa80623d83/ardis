@@ -36,13 +36,13 @@ class CustomerManager{
     }
 
     /**
-     * @brief Méthode qui met à jour le profil tout en vérifiant avant 
+     * @brief Méthode qui met à jour le profil tout en vérifiant la cohérence des modifications 
      * @details 
-     * <p>La methode verifie si les donner son envoyer avec la methode post,si c'est le cas elle recuperer le donner 
-     *      est chasse les erreur(longuer du mot de passe, l'email) qui sont stocker dans tableaux d'erruer.</p>
-     * <p>Si le tableaux d'erreur est vide est que les champs obligatoire son entrez, elle regarde les champs qui sont modifier est on execute une requete SQL
-     *       pour met a jour les donner dans la base de donner</p>
-     * <p>Le mot de passe est hacher avant d'etre envoyer</p>
+     * <p>La méthode vérifie si les données sont envoyées avec la méthode post,si c'est le cas elle les récupére 
+     *      et chasse les erreurs (longueur du mot de passe, l'email) qui sont stockés dans un tableau d'erreur.</p>
+     * <p>Si le tableau d'erreur est vide et que les champs obligatoires sont renseignés, elle regarde les champs qui sont modifiés et éxécute une requête SQL
+     *       pour mettre à jour les données dans la base de données</p>
+     * <p>Le mot de passe est haché avant d'être envoyer</p>
      * @param  $post
      * @param $id
      * @param $post
@@ -79,15 +79,15 @@ class CustomerManager{
     }
 
     /**
-    * @brief Methode qui donne un tableaux des element qui on changer
+    * @brief Méthode qui donne un tableau des éléments qui ont changés
     * @details 
-    * <p>La methode donne les element qui ont changer</p> 
-    * <p>Elle verifie les donner envoyer par l'utilisateur par ce qui sont dans la base de donner,si les donner ne correspande pas, 
-    *    elle ajoute le champs de la base de donner avec la valeur qui a changer dans un tableau</p>
-    * <p>Le mot de passe est hacher avant d'etre envoyer</p>
+    * <p>La méthode donne les éléments qui ont changés</p> 
+    * <p>Elle compare les données envoyées par l'utilisateur avec celles qui sont dans la base de données, si elles ne correspondes pas, 
+    *    elle ajoute le champs de la base de données avec la valeur qui a changé dans un tableau</p>
+    * <p>Le mot de passe est haché avant d'être envoyer</p>
     * @param  array $post_data
     * @param array $data_user
-    * @return array elements qui on changer
+    * @return array éléments qui ont changés
     */
     protected function who_changed(array $post_data, array $data_user):array{
         //  tableau associatif des element qui on changer,clef: nom du champs, valuer: la valeur
@@ -109,9 +109,9 @@ class CustomerManager{
     }
 
     /**
-    * @brief Methode qui donne un supprime un utlisateur
+    * @brief Méthode qui supprime un utilisateur
     * @details 
-    * <p>La methode execute une requete SQL pour supprimer toute les donner lies au clients est ca session</p>
+    * <p>La méthode exécute une requête SQL pour supprimer toutes les données liées au client et sa session</p>
     * @param  string $pseudo
     * @param $session
     */
@@ -121,10 +121,10 @@ class CustomerManager{
     }
 
     /**
-     * @brief Methode qui va retourner le nom de l'image
+     * @brief Méthode qui va retourner le nom de l'image
      * @details
-     * <p>Le methode va regarder si l'utilisateur (par son id) a une photo de profile, si il en a pas il va retourner une image par default
-     *  tout en regardant ça civiliter.Si il a une photo de profile stocker dans la base de donner il a renvoie</p>
+     * <p>Le méthode va regarder si l'utilisateur (par son id) à une photo de profil, si il n'en a pas il va retourner une image par défaut
+     *  tout en regardant sa civilité. Si il a une photo de profil stockée dans la base de données il l'a renvoie</p>
      * @param string $civ
      * @param  $img_profile
      * @param string $pseudo

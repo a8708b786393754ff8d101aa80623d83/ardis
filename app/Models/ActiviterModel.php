@@ -45,10 +45,10 @@ class ActiviterModel extends Model{
     }
 
     /** 
-    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées 
+    * @brief Méthode qui contient la requête SQL pour avoir les activités les plus récentes 
     * @details
     * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
-    * @return array les données des activités archivées
+    * @return array les données des activités les plus récentes
     */
     public function getDataYoung(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 

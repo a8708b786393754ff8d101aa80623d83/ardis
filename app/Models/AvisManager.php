@@ -5,9 +5,9 @@ use App\Models\AvisModel;
 * @file AvisManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 24/02/2022
-* @brief Manager des hotel
+* @brief Manager des avis
 * @details 
-* <p>Cette classe  gérer toute la logique lier aux hotels pour executer la bonne requete</p>
+* <p>Cette classe  gére toute la logique liée aux avis pour exécuter la bonne requête</p>
 **/
 
 class AvisManager{

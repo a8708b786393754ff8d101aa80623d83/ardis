@@ -24,7 +24,7 @@ class Restaurant extends Pages{
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
     * <p>La méthode constructrice initialise la classe RestaurantManager</p>
-    * <p>Elle récupére les information a afficher.</p>
+    * <p>Elle récupére les informations à afficher.</p>
     **/
     public function __construct(){
         parent::__construct(); 
@@ -36,7 +36,7 @@ class Restaurant extends Pages{
     /**
     * @brief Méthode index
     * @details
-    * <p>Donne a la vue les information afficher, comme la couleur de la barre de navigation, le meta_tile...</p>
+    * <p>Donne à la vue les informations à afficher, comme la couleur de la barre de navigation, le meta_tile...</p>
     */
     public function index(){
         $this->_data['color_link_nav'] = 'black';

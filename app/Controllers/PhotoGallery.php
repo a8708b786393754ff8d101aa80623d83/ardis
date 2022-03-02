@@ -8,7 +8,7 @@ use App\Models\ImageManager;
 * @date 16/02/2022
 * @brief Controller de la gallerie photo
 * @details 
-* <p>L'actions de la classe est view</p>
+* <p>L'action de la classe view</p>
 **/
 
 class PhotoGallery extends Pages{
@@ -21,7 +21,7 @@ class PhotoGallery extends Pages{
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
-    * <p>La méthode constructrice initialise la classe HotelManager est la classe ImageManager </p>
+    * <p>La méthode constructrice initialise la classe HotelManager et la classe ImageManager </p>
     **/
     public function __construct(){
         parent::__construct(); 
