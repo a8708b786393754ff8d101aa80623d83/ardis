@@ -20,17 +20,20 @@ class Pages extends BaseController{
     protected $allNamesHotels; 
     protected HotelManager $hotelMngr; 
     protected SearchManager $searchMngr; 
+    public $objEmail;
     
     private $searchManager; 
     /**
     * @brief Méthode constructrice 
     * @details 
-    * <p>Cette méthode initialise les attributs session et hotelMngr à la classe HotelManager</p>
+    * <p>Cette méthode initialise les attributs session, hotelMngr à la classe HotelManager</p>
     * <p>Elle charge le helper url pour utiliser la redirection avec codeIgniter</p>
     **/
     public function __construct(){
         $this->session = session();
         $this->hotelMngr = new HotelManager; 
+        $this->objEmail =  \Config\Services::email(); 
+
         $this->allNamesHotels =  $this->hotelMngr->getHotelsNamesForNavBar();
         $this->_data['nav_bar_hotel']  = $this->allNamesHotels; 
         helper('url');
@@ -73,5 +76,4 @@ class Pages extends BaseController{
         
         $this->display('result_search.tpl'); 
     }
-    
 }

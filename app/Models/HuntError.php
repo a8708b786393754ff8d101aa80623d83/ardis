@@ -10,7 +10,7 @@ namespace App\Models;
 **/
 
 class HuntError {
-    public $error = []; 
+    public array $error; 
 
     /**
     * @brief Methode qui chasse les erruer lie a la connexion d'un compte   
@@ -103,7 +103,8 @@ class HuntError {
     public function verif_email($email){
         if(! is_string($email) || strpos($email, '@') === false){
             $this->error[] = 'Veuillez entrez un email valide'; 
-        }return true; 
+            return null; 
+        }return true;
     }
 
     public function verif_tel(string $tel){

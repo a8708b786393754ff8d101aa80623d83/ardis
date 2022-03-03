@@ -3,13 +3,6 @@
 <article>
     <div class="container-fluid ">
         <img class="image_{$name}" src="{base_url('assets/Images/nos_hotels')|cat:'/'}{$image}" alt="image {$name} hotel">
-        <div class='share_email'>
-           <form action="{}" method="POST">
-            <i class="fa fa-envelope " aria-hidden="true"></i>
-            <input type="text" name="email_entry">
-            <input type="submit" value="submit">
-           </form>
-        </div>
         <div class="row ">
             <div class="milieu ">
                 <h1>Hotel {$name}</h1>
@@ -31,7 +24,46 @@
         </div>
             </div>
         </div>
-        
     </div>
 </article>
+
+ <div class="container mt-5">
+  {if isset($msg_succes)}
+    <div class="alert alert-success" role="alert">
+      {$msg_succes}
+    </div>
+    {if isset($msg_error)}
+      <div class="alert alert-danger" role="alert">
+        {$msg_error}
+      </div>
+    {/if}
+  {/if}
+  <hr>
+  <h3 class='text-center'>Partager l'hotel a un proche.</h3>
+    <form action='{base_url('hotels/email')|cat:'/'}' method="POST">
+      <div class="form-group">
+        <label>Nom</label>
+        <input type="text" name="nom" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="mailTo" class="form-control" required>
+      </div> 
+      <div class="form-group">
+        <label>Object</label>
+        <input type="text" name="subject" class="form-control" required value="{$object_prefixed}">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <pre>
+        <textarea rows="20" type="text" name="message" class="form-control" required>
+            {$msg_prefixed}
+            </textarea>
+        </pre>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </div>
+    </form>
+  </div>
 {/block}

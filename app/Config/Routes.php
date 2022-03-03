@@ -48,15 +48,15 @@ $routes->group('customers', function ($routes){
 });
 
 $routes->get('pages/', 'Pages::index');
-$routes->get('hotel/', 'Hotel::index');
-$routes->get('galerie_photo/', 'PhotoGallery::view');
-
 $routes->get('pages/(:any)', 'Pages::view/$1');
+
 $routes->get('hotel/(:any)', 'Hotel::view/$1');
+$routes->get('hotels/email/', 'Hotel::sendEmail');
+
+$routes->get('galerie_photo/', 'PhotoGallery::view');
 $routes->get('restaurant/', 'Restaurant::index');
 $routes->get('activiter/', 'Activiter::index');
 $routes->get('avis/', 'Avis::index');
-$routes->get('email/', 'SendMail::index');
 
 /*
  * --------------------------------------------------------------------

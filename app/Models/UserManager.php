@@ -2,8 +2,8 @@
 namespace App\Models; 
 
 class UserManager{
-    protected $errorHunt;
-    private $respQuery; 
+    protected HuntError $errorHunt;
+    private  UsersModel $respQuery; 
 
     public function __construct(){
         $this->errorHunt = new HuntError; 
@@ -35,8 +35,7 @@ class UserManager{
         }
     }
 
-    public function verificate_mdp_oublier($method) 
-    {
+    public function verificate_mdp_oublier($method){
         if ($method === 'post'){
             $email = $_POST['email']; 
             $resp_query = $this->respQuery->is_a_account_by_email($email); 
@@ -44,8 +43,7 @@ class UserManager{
         }return []; 
     }
 
-    public function verificate_create_account($method) 
-    {
+    public function verificate_create_account($method){
         if ($method === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($_POST);
             if(count($error) === 0){
@@ -92,7 +90,13 @@ class UserManager{
                 }     
             }return ['msg_error',$error];
         }return "none";
-        
-    } 
+    }
+
+    public function verifSendMail(array $data){
+        if($this->errorHunt->isAllEmpty($data,4) && $this->errorHunt->verif_email($data['mailTo'])){ // verifie si les champs sans ne sont pas vide, return true si tout est remplie
+            return true; 
+        }return false; 
+
+    }
 
 }
