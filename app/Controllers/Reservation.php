@@ -27,14 +27,14 @@ class Reservation extends Visitor{
     public function index(){
         $this->_data['name_file']      = 'reservation';
         $this->_data['meta_title']     = 'Reservation'; 
-        $this->_data['msg_error']      = 'a'; 
         $this->display('reservation.tpl'); 
     }
 
     public function validation(){
         $this->_data['name_file']      = 'validation_reservation';
         $this->_data['meta_title']     = 'Validation de reservation'; 
-        $this->display('reservation.tpl'); 
+        $this->_data['msg_error']      = 'a'; 
+        $this->display('reservation_validation.tpl'); 
     }
 
 

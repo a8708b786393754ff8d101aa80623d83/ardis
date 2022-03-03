@@ -99,4 +99,8 @@ class UserManager{
 
     }
 
+    public function verifReservation(){
+        
+    }
+
 }
