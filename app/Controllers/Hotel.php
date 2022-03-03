@@ -81,7 +81,7 @@ class Hotel extends Pages{
         $this->_data['msg_prefixed']     = "Un ami veux vous faire partager un des hotel qui la trouver. Visitez le lien  a cette adresse:".base_url('/hotel/'.$this->name);
         $this->_data['object_prefixed']  = "Partage d'un super hotel"; 
 
-        if($this->userMgr->verif_sendmail($this->request)){
+        if($this->userMgr->verifSendMail($this->request->getPost())){
             // ! regler l'envoie d'un email 
             $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
 
