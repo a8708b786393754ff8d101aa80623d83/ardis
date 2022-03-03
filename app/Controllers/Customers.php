@@ -136,8 +136,7 @@ class Customers extends Visitor{
             'email'=>$this->email,
             'adresse'=>$this->adresse,
             'cp'=>$this->zip_code,
-            'pays'=>$this->city,
-            'photo_profile'=>$this->photo_profile,
+            'pays'=>$this->city
             ]    
         );
         // l'index 0 est pour le type de message (d'erreur ou de succès)

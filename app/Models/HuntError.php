@@ -10,7 +10,7 @@ namespace App\Models;
 **/
 
 class HuntError {
-    public array $error; 
+    public $error = []; 
 
     /**
     * @brief Methode qui chasse les erruer lie a la connexion d'un compte   
@@ -122,7 +122,7 @@ class HuntError {
         return $not_empty >= $mandatory; 
     }
 
-    public function hunt_edit_profile($data_post): array {
+    public function hunt_edit_profile(array $data_post){
         $password = $data_post['new_password']; 
         $password_confirm = $data_post['new_password_confirm']; 
         $num_tel = $data_post['tel']; 

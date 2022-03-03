@@ -10,7 +10,7 @@
                 <p class="city_hotel ">{$pays}/ {$ville}</p>
                 <div class="start ">
                     {for $foo=1 to $note}
-                        <i class="fas fa-star "></i>
+                        <i class="fa-solid fa-star start-icone"></i>
                     {/for}
                 </div>
                 <div class="localisation_hotel ">
