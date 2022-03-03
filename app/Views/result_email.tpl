@@ -5,10 +5,9 @@
     <div class="alert alert-success" role="alert">
       {$msg_succes}
     </div>
-    {if isset($msg_error)}
+{elseif isset($msg_error)}
       <div class="alert alert-danger" role="alert">
         {$msg_error}
       </div>
-    {/if}
-  {/if}
+{/if}
 {/block}

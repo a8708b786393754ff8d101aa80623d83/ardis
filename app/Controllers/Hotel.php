@@ -100,8 +100,10 @@ class Hotel extends Pages{
                 if ($this->objEmail->send()){
                     $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
                 }else{
-                    $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
+                    $this->_data['msg_error'] = 'Veuillez verifier votre destinateur'; 
                 }
+            }else{
+                $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
             }
         }
         $this->display('result_email.tpl'); 
