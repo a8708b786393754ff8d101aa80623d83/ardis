@@ -28,7 +28,7 @@ class SearchModel extends Model{
     }
 
     public function getResultAvis(){
-        return $this->db->query("SELECT avis_titre AS avis, avis_cont AS contenue 
+        return $this->db->query("SELECT avis_titre AS avis, avis_cont AS contenue, avis_nomphoto AS image
                                 FROM avis
                                 INNER JOIN hotels 
                                 ON avis.avis_hotel = hotels.hotel_id

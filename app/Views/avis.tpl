@@ -13,7 +13,7 @@
           <a href="{base_url('hotel')|cat:'/'|cat:$item[$foo]->hotel_nom}" class="card-link btn">Voir l'hotel</a>
           <a href="#" class="card-link">Repondre</a>
         </div>
-    </div>
+      </div>
     {/for}
   {/foreach}
 {/block}
