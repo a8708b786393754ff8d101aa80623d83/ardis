@@ -33,7 +33,8 @@ class Reservation extends Visitor{
     public function validation(){
         $this->_data['name_file']      = 'validation_reservation';
         $this->_data['meta_title']     = 'Validation de reservation'; 
-        $this->_data['msg_error']      = 'a'; 
+        $resp = $this->userManager->verifReservation($this->request->getPost());
+        $this->_data[$resp[0]]      = $resp[1]; 
         $this->display('reservation_validation.tpl'); 
     }
 

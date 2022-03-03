@@ -60,4 +60,5 @@ class ActiviterManager{
         }
         return $arrdata; 
     }
+
 }

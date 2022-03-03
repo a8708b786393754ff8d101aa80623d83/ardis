@@ -99,8 +99,18 @@ class UserManager{
 
     }
 
-    public function verifReservation(){
-        
-    }
+    public function verifReservation(array $data){
+        $error = []; 
+        if($this->errorHunt->isAllEmpty($data, 5)){
+            if(strtotime($data['startdate']) > strtotime($data['enddate'])){
+                $error[] = 'Veuillez verifier votre date'; 
+            }
+        }else{
+            $error[] = 'Veuillez rentrez tout les champs'; 
+        }
 
+        if(empty($error)){
+            return ['msg_succes','Votre reservation est faite, veuillez verifier votre adrresse email'];  
+        }return ['msg_error', $error]; 
+    }
 }

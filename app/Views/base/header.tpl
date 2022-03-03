@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('pages/reservation')}">Réservation</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('reservation')}">Réservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('activiter/')}">Nos activités</a>
