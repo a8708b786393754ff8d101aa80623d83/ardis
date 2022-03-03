@@ -56,8 +56,9 @@ article .city_hotel {
 
 
 /* positionnement des etoile**/
-article .start {
+.start-icone {
     position: relative;
+    size: 100px;
     bottom: 40px;
 }
 

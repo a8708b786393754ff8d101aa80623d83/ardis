@@ -10,7 +10,7 @@
                 <p class="city_hotel ">{$pays}/ {$ville}</p>
                 <div class="start ">
                     {for $foo=1 to $note}
-                        <i class="fas fa-star "></i>
+                        <i class="fa-solid fa-star start-icone"></i>
                     {/for}
                 </div>
                 <div class="localisation_hotel ">
@@ -28,37 +28,24 @@
 </article>
 
  <div class="container mt-5">
-  {if isset($msg_succes)}
-    <div class="alert alert-success" role="alert">
-      {$msg_succes}
-    </div>
-    {if isset($msg_error)}
-      <div class="alert alert-danger" role="alert">
-        {$msg_error}
-      </div>
-    {/if}
-  {/if}
   <hr>
   <h3 class='text-center'>Partager l'hotel a un proche.</h3>
-    <form action='{base_url('hotels/email')|cat:'/'}' method="POST">
+     <form method="post" action="{base_url('Hotel/sendMail')}">
       <div class="form-group">
-        <label>Nom</label>
-        <input type="text" name="nom" class="form-control" required>
+        <label>Destinateur</label>
+        <input type="text" name="mailTo" class="form-control">
       </div>
+       
       <div class="form-group">
-        <label>Email</label>
-        <input type="email" name="mailTo" class="form-control" required>
-      </div> 
-      <div class="form-group">
-        <label>Object</label>
-        <input type="text" name="subject" class="form-control" required value="{$object_prefixed}">
+        <label>Objet</label>
+        <input type="text" name="subject" class="form-control" value="{$object_prefixed}">
       </div>
       <div class="form-group">
         <label>Message</label>
         <pre>
-        <textarea rows="20" type="text" name="message" class="form-control" required>
+          <textarea rows="6" type="text" name="message" class="form-control">
             {$msg_prefixed}
-            </textarea>
+          </textarea>
         </pre>
       </div>
       <div class="form-group">
@@ -66,4 +53,5 @@
       </div>
     </form>
   </div>
+</div>
 {/block}
