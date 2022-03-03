@@ -93,7 +93,7 @@ class UserManager{
     }
 
     public function verifSendMail(array $data){
-        if($this->errorHunt->isAllEmpty($data,4) && $this->errorHunt->verif_email($data['mailTo'])){ // verifie si les champs sans ne sont pas vide, return true si tout est remplie
+        if($this->errorHunt->isAllEmpty($data,3) && $this->errorHunt->verif_email($data['mailTo'])){ // verifie si les champs sans ne sont pas vide, return true si tout est remplie
             return true; 
         }return false; 
 

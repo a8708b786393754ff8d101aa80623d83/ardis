@@ -77,43 +77,33 @@ class Hotel extends Pages{
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['meta_title']     = 'Hotel '.lcfirst($page); 
         $this->_data['name_file']      = lcfirst($page); 
+        $this->_data['object_prefixed']  = "Hotel Ardis ".$page; 
+        $this->_data['msg_prefixed']     = "Un ami veut partager un hôtel de la chaine Ardis-hôtel qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
 
-        $this->_data['msg_prefixed']     = "Un ami veux vous faire partager un des hotel qui la trouver. Visitez le lien  a cette adresse:".base_url('/hotel/'.$this->name);
-        $this->_data['object_prefixed']  = "Partage d'un super hotel"; 
-
-        if($this->userMgr->verifSendMail($this->request->getPost())){
-            // ! regler l'envoie d'un email 
-            $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
-
-            $this->objEmail->setSubject(esc($this->request->getVar('subject'))); 
-            $this->objEmail->setMessage("test"); 
-
-            $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
-        }else{
-            // ! regler les message
-            $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
-        }
 
         $this->display(lcfirst($page).'.tpl');
     }
 
-    public function sendEmail(){
+    public function sendMail(){
+        $this->_data['color_link_nav'] = 'black'; 
+        $this->_data['meta_title']     = "Envoie d'email"; 
+        $this->_data['name_file']      = "result_email"; 
+
+
         if($this->request->getMethod() === 'post'){
             if($this->userMgr->verifSendMail($this->request->getPost())){
                 $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
                 
+                $this->objEmail->setFrom('ardis.hotel68@gmail.com', 'Hotel Ardis'); 
                 $this->objEmail->setSubject(esc($this->request->getVar('subject'))); 
-                $this->objEmail->setMessage("test"); 
-                
-                // ! regler l'envoie d'un email 
-                $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
-            }else{
-                // ! regler les message
-                $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
+                $this->objEmail->setMessage(esc($this->request->getVar('message'))); 
+                if ($this->objEmail->send()){
+                    $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
+                }else{
+                    $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
+                }
             }
         }
-
+        $this->display('result_email.tpl'); 
     }
-
-
 }

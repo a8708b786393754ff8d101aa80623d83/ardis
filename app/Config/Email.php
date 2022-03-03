@@ -54,14 +54,14 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPUser ='ddf'; // ! j'ai changer ici pour tester avec mot adresse email
+    public $SMTPUser ='ardis.hotel68@gmail.com'; // ! j'ai changer ici pour tester avec mot adresse email
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = 'azertyuiop123456789';
+    public $SMTPPass = 'azertyuiop123789*';
 
     /**
      * SMTP Port
