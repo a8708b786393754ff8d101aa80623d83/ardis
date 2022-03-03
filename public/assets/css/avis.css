@@ -19,8 +19,15 @@ body {
 
 .card{
     position: relative;
+    margin-left:auto ;
+    margin-right:auto ;
 }
 
+h2{
+    position: relative;
+    left: 52rem;
+    width: 300px;
+}
 
 /* foooter */
 
