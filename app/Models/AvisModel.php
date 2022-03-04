@@ -32,4 +32,11 @@ class AvisModel extends Model{
                         FROM avis
                         INNER JOIN hotels ON hotel_id=avis_id")->getResult();
     }
+
+
+    public function setAvis(){
+        return $this->db->query("SELECT avis_titre, avis_date, avis_note, avis_nomphoto , hotel_nom, avis_cont
+                                FROM avis
+                                INNER JOIN hotels ON hotel_id=avis_id")->getResult();
+    }
 }

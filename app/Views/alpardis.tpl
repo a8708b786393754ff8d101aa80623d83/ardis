@@ -10,7 +10,7 @@
                 <p class="city_hotel ">{$pays}/ {$ville}</p>
                 <div class="start ">
                     {for $foo=1 to $note}
-                        <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
                     {/for}
                 </div>
                 <div class="localisation_hotel ">
@@ -49,9 +49,37 @@
         </pre>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
       </div>
     </form>
   </div>
 </div>
+
+{if isset($smarty.session.pseudo)}
+ <div class="container mt-5">
+  <hr>
+  <h3 class='text-center'>Ajouter un avis</h3>
+     <form method="post" action="{base_url('Hotel/addAvis')}" enctype="multipart/form-data">
+      <div class="form-group">
+        <label>Titre: </label>
+        <input type="text" name="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="file" name="photo_avis_clients" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Message: </label>
+        <pre>
+          <textarea rows="6" type="text" name="message" class="form-control">
+            
+          </textarea>
+        </pre>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</div>
+{/if}
 {/block}

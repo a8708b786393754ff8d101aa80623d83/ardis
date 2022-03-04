@@ -25,4 +25,12 @@ class AvisManager{
         }return $data;
     }
 
+
+    public function addAvis(){
+
+    }
+
+
+    
+
 }

@@ -67,4 +67,6 @@ class ActiviterModel extends Model{
                                 AND hotel_nom=?', [$hotel_name])->getResult(); 
     }
 
+
+
 }

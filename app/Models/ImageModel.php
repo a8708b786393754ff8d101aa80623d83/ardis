@@ -77,6 +77,10 @@ class ImageModel extends Model{
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
     }
 
+    public function setAvisPhoto(){
+        
+    }
+
     /**
     * @brief Methode qui supprime ine image
     * @details

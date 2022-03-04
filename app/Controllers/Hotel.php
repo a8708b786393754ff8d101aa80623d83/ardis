@@ -108,4 +108,13 @@ class Hotel extends Pages{
         }
         $this->display('result_email.tpl'); 
     }
+
+
+    public function addAvis(){
+        $this->_data['color_link_nav'] = 'black'; 
+        $this->_data['meta_title']     = "Ajout d'avis"; 
+        $this->_data['name_file']      = "ajout_avis"; 
+
+        $this->display('ajout_avis.tpl'); 
+    }
 }

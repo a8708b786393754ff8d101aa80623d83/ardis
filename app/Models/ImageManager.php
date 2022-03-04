@@ -58,6 +58,7 @@ class ImageManager{
         }
     }
 
+
     /**
     * @brief Methode qui retournez un tableaux associatif de donner pour les image de chaque hotel
     * @details 
