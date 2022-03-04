@@ -58,7 +58,7 @@
                   </ul>
                   <p class="card-text">${resp[i].descri}</p>
                   <a href="http://localhost/ardis/public/hotel/${resp[i].nom_hotel}" class="btn btn-primary">Voir l'hotel</a>
-                  <input type='checked'>Ajouter l'activités</a>
+                  <input type='checkbox'>Ajouter l'activités</a>
                 </div>
               </div>`) ;    console.log(i)
           }
