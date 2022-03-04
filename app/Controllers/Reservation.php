@@ -13,7 +13,7 @@ use App\Models\ReservationManager;
 * </ul>
 **/
 
-class Reservation extends Visitor{
+class Reservation extends Pages{
     protected $reservMngr; 
     /**
     * @brief Méthode constructrice 
@@ -35,11 +35,9 @@ class Reservation extends Visitor{
     public function validation(){
         $this->_data['name_file']      = 'validation_reservation';
         $this->_data['meta_title']     = 'Validation de reservation'; 
-        $resp = $this->reservMngr->validateReservation($this->request->getPost());
-        // $this->_data[$resp[0]]      = $resp[1]; 
+        $resp = $this->reservMngr->validateReservation($this->request->getPost(), $this->session->get('pseudo'));
+        $this->_data[$resp[0]]      = $resp[1]; 
+        // ! lui envoyer les donner pour qu'elle sois afficher dans le recus
         $this->display('reservation_validation.tpl'); 
     }
-
-
-   
 }

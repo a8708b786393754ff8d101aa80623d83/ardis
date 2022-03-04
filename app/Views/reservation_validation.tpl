@@ -81,13 +81,19 @@
 </tbody></table>
     {elseif isset($msg_error)}
         <div class="alert alert-danger" role="alert">
-            {$msg_error}
+            {foreach from=$msg_error item=item}
+                {$item}
+            {/foreach}
         </div>
     {/if}
-{else}
-    <div class="alert alert-danger" role="alert">
-        Vous devez vous connecter.
-        Mettre un lien vers la page de login
+{elseif (isset($error_conn))}
+    <div class='container'>
+        <div class='row'>
+            <div class="alert alert-danger" role="alert">
+                Vous devez vous connecter pour effectuer une reservation.
+            </div>
+            <a href="{base_url('visitor/login')}" class="btn btn-primary">login</a>
+        </div>
     </div>
 {/if}
 {/block}
