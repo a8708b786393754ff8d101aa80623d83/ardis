@@ -24,6 +24,8 @@ class UserManager{
                     if(password_verify($password, $resp[0]->passwd_hash)){
                         $session->set([
                             'pseudo'=>$resp[0]->name,
+                            'nom'=>$resp[0]->nom, 
+                            'prenom'=>$resp[0]->prenom, 
                             'id'=>$resp[0]->id
                         ]);
                         return true; 

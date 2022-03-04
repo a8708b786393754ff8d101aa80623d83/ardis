@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="reservation">
-                <h2>Reserver dés maintenant !! </h2>
+                <h1>Reserver dés maintenant !! </h1>
                 <form action='{base_url('Reservation/validation/')}' method='post'>
                     <div class="destination">
                         <label for="reservation">Hotel de destinations: </label>
@@ -31,7 +31,7 @@
 
                         </select>
                     </div>
-                    <input type="submit" value="reserver">
+                    <input type="submit" value="reserver" class='btn btn-primary'>
                     </div>
                 </form>
         </div>
@@ -39,17 +39,17 @@
     {literal}
          <script>
            $("#activHide").hide()
-    $('#hotel ').change(function(){ console.log($(this).val());
+    $('#hotel ').change(function(){
         $.ajax({
-        url: `http://localhost/ardis/public/MiniApiArdis/getActivByName?hotel_name=${$(this).val()}`,
-        method : 'get',
-      }).done(function(resp){
+          url: `http://localhost/ardis/public/MiniApiArdis/getActivByName?hotel_name=${$(this).val()}`,
+          method : 'get',
+        })
+        .done(function(resp){
          $("#activHide").html(' ')
           resp = JSON.parse(resp);
-          console.log(resp)
-          for (let i=0;i<resp.length;i++){
-            console.log(resp[i])
-            $("#activHide").append(`<div class="card" style="width: 18rem;">
+          for (let i=0;i < resp.length;i++){
+            $("#activHide").append(`
+              <div class="card" style="width: 18rem;">
                 <img src="http://localhost/ardis/public/assets/Images/activiter/${resp[i].image}" alt="img" class='card-img-top'>
                   <div class="card-body">
                   <h5 class="text-center card-title">Hotel ${resp[i].nom_hotel}</h5>
@@ -61,10 +61,11 @@
                   </ul>
                   <p class="card-text">${resp[i].descri}</p>
                   <a href="http://localhost/ardis/public/hotel/${resp[i].nom_hotel}" class="btn btn-primary">Voir l'hotel</a>
-                  <input type='checkbox'>Ajouter l'activités</a>
-                </div>
-              </div>`) ;    console.log(i)
-          }
+                  <input type='checkbox' name='activiter' value='${resp[i].activID}'>Ajouter l'activités</a>
+                  </div>
+              </div>
+              `);
+            }
       })
     });
     $("#oui").click(function(){

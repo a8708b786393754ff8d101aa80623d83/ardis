@@ -21,7 +21,10 @@ class UsersModel extends Model{
     }
 
     public function login(string $username,string $password){   
-        $sql = 'SELECT compt_id AS "id", compt_pseudo AS "name",compt_pass AS "passwd_hash" FROM compte WHERE compt_pseudo= ? AND compt_pass=?';
+        $sql = 'SELECT compt_id AS id, compt_pseudo AS name,compt_pass AS passwd_hash, client_nom AS nom, client_prenom AS prenom
+                FROM compte 
+                INNER JOIN clients ON clients.client_id = compt_id
+                WHERE compt_pseudo= ? AND compt_pass=?';
         return $this->db->query($sql, [esc($username), esc($password)])->getResult();
     }
 

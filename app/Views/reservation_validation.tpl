@@ -22,14 +22,12 @@
                                     <td class="content-block">
                                         <table class="invoice">
                                             <tbody><tr>
-                                                <td>Kurt COBAIN
-                                                <br>Compte client numéro : 2
-                                                <br> Id réservation : 8
-                                                <br> Hotel de séjours : Suisse
-                                                <br> Date de séjour : 2021-05-12 / 2021-05-22 
-                                                <br> Durée du séjour : 10 jours 
+                                                <td>{$nom}   {$prenom}
+                                                <br> Hotel de séjours : {$hotel_sejour}
+                                                <br> Date de séjour : {$startdate} / {$enddate}
+                                                <br> Durée du séjour : {$durer} jours
                                                 <br> Nombr de chambre loué : 1
-                                                <br> Id chambre : 8
+                                                <br> Numero chambre : 8
                                             </td>
                                             </tr>
                                             <tr>
@@ -38,11 +36,10 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td>Prix séjours</td>
-                                                                <td class="alignright">1000.00 € €</td>
+                                                                <td class="alignright">1000.00 €</td>
                                                             </tr>
                                                             <tr>
-                                                            <td>Prix AR </td>
-                                                            <td class="alignright">30.00 €</td>
+                                                            
                                                         </tr>
                                                         <tr>
                                                             <td>Activité</td>
@@ -50,18 +47,7 @@
                                                         </tr>
                                                        
                                                         <tr class="total">
-                                                            <td class="alignright" width="80%">Total avec AR </td>
-                                                            <td class="alignright">1 180.00 €</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Prix AR </td>
-                                                            <td class="alignright">30.00 €</td>
-                                                        </tr>
-                                                        <tr class="total">
-                                                            <td class="alignright" width="80%">Total sans  AR </td>
                                                             <td class="alignright">Prix total - 30% du prix total </td>
-                                                            
                                                         </tr>
                                                     </tbody></table>
                                                 </td>
@@ -69,7 +55,6 @@
                                         </tbody></table>
                                     </td>
                                 </tr>
-                            
                             </tbody></table>
                         </td>
                     </tr>

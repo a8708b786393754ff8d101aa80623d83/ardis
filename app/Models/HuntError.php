@@ -177,7 +177,7 @@ class HuntError {
     public function huntReservation(array $post):array{
         if(! $this->isAllEmpty($post, 5)){
             $this->error[] = 'Veuillez entrez tout les champ'; 
-        }if(strtotime($post['enddate']) > strtotime($post['startdate'])){
+        }if(strtotime($post['enddate']) < strtotime($post['startdate'])){
             $this->error[] = 'Veuillez verifier vos date';
         }if(! is_numeric($post['nbr_lit'])){
             $this->error[] = 'Veuillez entrez une nombre'; 
