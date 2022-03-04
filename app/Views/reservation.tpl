@@ -7,7 +7,7 @@
                 <form action='{base_url('Reservation/validation/')}' method='post'>
                     <div class="destination">
                         <label for="reservation">Hotel de destinations: </label>
-                        <select name="hotel_destination" required>
+                        <select name="hotel_destination" id ="hotel" required>
                         {foreach from=$nav_bar_hotel item=item}
                             <option value="{$item}">Hotel {$item}</option>
                         {/foreach}
@@ -23,11 +23,29 @@
                         Non:<input type="radio" name='activiter' value='non'required>
                     </div>
                     <div class="nombre_voyager">
-                        Nombre de lit dans la chambre: <input type="number" name='nb_lit' min=0  max=10>
+                    <label>Nombre de lit dans la chambre</label>
+                       <select name="hotel_destination" required>
+                            <option value="2" >2 lits</option>
+                             <option value="4">4 lits</option>
+
+                        </select>
                     </div>
-                        <input type="submit" class="btn" value="reserver">
+
                     </div>
                 </form>
         </div>
     </div>
+    {literal}
+         <script>
+    $('#hotel ').change(function(){
+        $.ajax({
+        url: `http://localhost/ardis/public/MiniApiArdis/getActivByName?hotel_name=${$(this).val()}`,
+        method : 'get',
+        data: {hotel_name:$(this).val()}
+      }).done(function(resp){
+          console.log(resp)
+      })
+    })
+    </script>
+    {/literal}
 {/block}

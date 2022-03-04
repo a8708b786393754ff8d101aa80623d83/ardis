@@ -57,4 +57,14 @@ class ActiviterModel extends Model{
                                 INNER JOIN hotels ON hotels.hotel_id = activites.hotel_id 
                                 WHERE YEAR(`activ_date`) = YEAR(CURRENT_DATE)')->getResult(); 
     }
+
+    public function getActivByHotelReserv(string $hotel_name){
+        return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca 
+                                AS loca,activ_tarif AS tarif, activ_date AS date, activ_descri AS descri, hotel_nom AS nom_hotel , activ_dispo AS dispo 
+                                FROM activites 
+                                INNER JOIN hotels ON hotels.hotel_id = activites.hotel_id 
+                                WHERE YEAR(`activ_date`) = YEAR(CURRENT_DATE)
+                                AND hotel_nom=?', [$hotel_name])->getResult(); 
+    }
+
 }

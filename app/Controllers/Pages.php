@@ -22,7 +22,7 @@ class Pages extends BaseController{
     protected SearchManager $searchMngr; 
     public $objEmail;
     
-    private $searchManager; 
+        private $searchManager; 
     /**
     * @brief Méthode constructrice 
     * @details 
