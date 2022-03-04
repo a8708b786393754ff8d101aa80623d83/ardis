@@ -25,11 +25,14 @@
                     <div id="activHide"></div>
                     <div class="nombre_voyager">
                     <label>Nombre de lit dans la chambre</label>
-                       <select name="hotel_destination" required>
+                       <select name="nbr_lit" required>
                             <option value="2" >2 lits</option>
                              <option value="4">4 lits</option>
 
                         </select>
+                    </div>
+                    <input type="submit" value="reserver">
+                    </div>
                 </form>
         </div>
     </div>

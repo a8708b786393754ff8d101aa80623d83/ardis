@@ -106,7 +106,8 @@ class UsersModel extends Model{
 
     // ? Recupere l'image pars le pseudo
     public function getImgByIdCustomers(string $id){
-        return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
+        return $this->db->query('SELECT client_profil_img 
+                                FROM clients 
+                                WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
     }
-
 }

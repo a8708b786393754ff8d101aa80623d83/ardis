@@ -1,6 +1,6 @@
 <?php 
 namespace App\Controllers; 
-use App\Models\CustomerManager;
+use App\Models\ReservationManager;
 /**
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -13,13 +13,15 @@ use App\Models\CustomerManager;
 * </ul>
 **/
 
-class Reservation extends Visitor{
+class Reservation extends Pages{
+    protected $reservMngr; 
     /**
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Visitor</p>
     **/
     public function __construct(){
+        $this->reservMngr = new ReservationManager; 
         $this->_data['color_link_nav'] = 'black';
         parent::__construct();
     }
@@ -33,11 +35,9 @@ class Reservation extends Visitor{
     public function validation(){
         $this->_data['name_file']      = 'validation_reservation';
         $this->_data['meta_title']     = 'Validation de reservation'; 
-        $resp = $this->userManager->verifReservation($this->request->getPost());
+        $resp = $this->reservMngr->validateReservation($this->request->getPost(), $this->session->get('pseudo'));
         $this->_data[$resp[0]]      = $resp[1]; 
+        // ! lui envoyer les donner pour qu'elle sois afficher dans le recus
         $this->display('reservation_validation.tpl'); 
     }
-
-
-   
 }
