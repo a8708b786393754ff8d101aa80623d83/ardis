@@ -23,7 +23,7 @@
                         Non:<input type="radio" name='activiter' value='non'required>
                     </div>
                     <div class="nombre_voyager">
-                        Nombre de voyageur: <input type="number" name='number_personne'>
+                        Nombre de lit dans la chambre: <input type="number" name='nb_lit' min=0  max=10>
                     </div>
                         <input type="submit" class="btn" value="reserver">
                     </div>

@@ -3,11 +3,11 @@ namespace App\Models;
 
 class UserManager{
     protected HuntError $errorHunt;
-    private  UsersModel $respQuery; 
+    private  UsersModel $userModel; 
 
     public function __construct(){
         $this->errorHunt = new HuntError; 
-        $this->respQuery = new UsersModel; 
+        $this->userModel = new UsersModel; 
     }
 
     public function verificate_login($method, $session, $redirect){
@@ -17,11 +17,10 @@ class UserManager{
         $pseudo = esc($_POST['username']); 
         $password = esc($_POST['password']); 
         if ($pseudo !== '' || $password !== ''){
-            $passwd_hash_bdd = $this->respQuery->getPasswordByPseudo($pseudo);
+            $passwd_hash_bdd = $this->userModel->getPasswordByPseudo($pseudo);
             if(! empty($passwd_hash_bdd)){
-                $resp = $this->respQuery->login($pseudo, $passwd_hash_bdd); 
+                $resp = $this->userModel->login($pseudo, $passwd_hash_bdd); 
                 if (is_array($resp) && count($resp) === 1 ){ // si la requete est bonne on a joute le pseudo est son id dans la session
-                    var_dump($password);
                     if(password_verify($password, $resp[0]->passwd_hash)){
                         $session->set([
                             'pseudo'=>$resp[0]->name,
@@ -38,7 +37,7 @@ class UserManager{
     public function verificate_mdp_oublier($method){
         if ($method === 'post'){
             $email = $_POST['email']; 
-            $resp_query = $this->respQuery->is_a_account_by_email($email); 
+            $resp_query = $this->userModel->is_a_account_by_email($email); 
             return  $this->errorHunt->forget_password($email, $resp_query);
         }return []; 
     }
@@ -58,11 +57,11 @@ class UserManager{
                     }
                     // ? si tout les champs sont renseigner
                     if ($not_empty === count($_POST)){
-                        $is_register_pseudo = $this->respQuery->is_a_account_by_pseudo($_POST['pseudo']); 
-                        $is_register_email = $this->respQuery->is_a_account_by_email($_POST['email']);
+                        $is_register_pseudo = $this->userModel->is_a_account_by_pseudo($_POST['pseudo']); 
+                        $is_register_email = $this->userModel->is_a_account_by_email($_POST['email']);
                         if(empty($is_register_pseudo)){
                             if(empty($is_register_email)){
-                                $this->respQuery->appendUser([
+                                $this->userModel->appendUser([
                                         'client_nom'    => esc($_POST['lastname']), 
                                         'client_prenom' => esc($_POST['firstname']), 
                                         'client_cp'     => esc($_POST['CP']), 
@@ -97,20 +96,5 @@ class UserManager{
             return true; 
         }return false; 
 
-    }
-
-    public function verifReservation(array $data){
-        $error = []; 
-        if($this->errorHunt->isAllEmpty($data, 5)){
-            if(strtotime($data['startdate']) > strtotime($data['enddate'])){
-                $error[] = 'Veuillez verifier votre date'; 
-            }
-        }else{
-            $error[] = 'Veuillez rentrez tout les champs'; 
-        }
-
-        if(empty($error)){
-            return ['msg_succes','Votre reservation est faite, veuillez verifier votre adrresse email'];  
-        }return ['msg_error', $error]; 
     }
 }

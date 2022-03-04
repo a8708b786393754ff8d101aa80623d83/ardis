@@ -106,7 +106,18 @@ class UsersModel extends Model{
 
     // ? Recupere l'image pars le pseudo
     public function getImgByIdCustomers(string $id){
-        return $this->db->query('SELECT client_profil_img FROM clients WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
+        return $this->db->query('SELECT client_profil_img 
+                                FROM clients 
+                                WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
+    }
+
+    public function getNbLit(string $hotel_name):array {
+        return $this->db->query("SELECT hotel_nom , chambres.hotel_id AS chambre_id , chamb_num, chamb_dispo as dispo  ,nbr_lit 
+                                FROM hotels
+                                INNER JOIN chambres
+                                ON hotels.hotel_id = chambres.hotel_id 
+                                WHERE chamb_dispo = 1 AND hotel_nom = ?
+                                LIMIT 1", [$hotel_name])->getResult(); 
     }
 
 }
