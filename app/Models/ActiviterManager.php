@@ -1,6 +1,6 @@
 <?php 
 namespace App\Models; 
-define('MAX_ACTIVITER_SHOW', 4); 
+define('MAX_ACTIVITER_SHOW', 5); 
 /**
 * @file ActiviterManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>, Arthur Kurt
