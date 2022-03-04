@@ -54,7 +54,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPUser ='ardis.hotel68@gmail.com'; // ! j'ai changer ici pour tester avec mot adresse email
+    public $SMTPUser ='ardis.hotel68@gmail.com'; 
 
     /**
      * SMTP Password

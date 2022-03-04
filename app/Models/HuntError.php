@@ -184,4 +184,9 @@ class HuntError {
         }
         return $this->error; 
     }
+
+
+    public function huntAddAvis(array $post){
+        
+    }
 }
