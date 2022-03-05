@@ -72,7 +72,7 @@ class ImageManager{
         $name_file_or_error = $this->imageIsmatches($picture, 'assets/Images/avis/'); 
         if(is_array($name_file_or_error)){
             return $name_file_or_error; 
-        }return $name_file_or_error;
+        }
     }
 
     /**

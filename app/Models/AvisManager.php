@@ -33,10 +33,12 @@ class AvisManager{
         if($objRequest->getMethod() === 'post'){
             $data = $objRequest->getPost();
             $resp_upload_file = $this->imgMngr->imgAvisIsMatches($objRequest); 
-            if(is_string($resp_upload_file)){
+            if(! is_array($resp_upload_file)){
                 $this->avisModel->setAvis($data['title'], $data['message'], $data['note'], $id_hotel); 
-                $this->imgModel->setAvisPhoto($resp_upload_file, $id_hotel);
-                return ['msg_success_avis', null];
+                if(! empty($resp_upload_file)){
+                    $this->imgModel->setAvisPhoto($resp_upload_file, $id_hotel);
+                }
+                return ['msg_success_avis', ' '];
             }else{
                 return ['msg_error_avis', $resp_upload_file]; 
             }
