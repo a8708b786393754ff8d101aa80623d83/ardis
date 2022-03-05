@@ -37,7 +37,7 @@ class Visitor extends Pages{
     public function login(){
         $msg = $this->userManager->verificate_login($this->request->getMethod(),  $this->session, redirect());
         if($msg === true){
-            return redirect()->to('http://localhost/ardis/public/customers/profile/'); 
+            return redirect()->to('http://localhost/public/customers/profile/'); 
         }
         $this->_data['message'] = $msg;  
         $this->view('login');
@@ -50,6 +50,7 @@ class Visitor extends Pages{
     */
     public function create_account(){
         $msg = $this->userManager->verificate_create_account($this->request->getMethod());
+        // ! ajouter un test pour l'envoie de l'email
         // l'index 0 est pour le type de message (d'erreurs ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$msg[0]] = $msg[1]; 

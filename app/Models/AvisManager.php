@@ -42,12 +42,6 @@ class AvisManager{
             }else{
                 return ['msg_error_avis', $resp_upload_file]; 
             }
-
         }
-
     }
-
-
-    
-
 }

@@ -1,5 +1,5 @@
 <?php 
- namespace App\Models; 
+namespace App\Models; 
 /**
 * @file SearchManager.php
 * @author Ayoub Brahim

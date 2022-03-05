@@ -1,16 +1,39 @@
 <?php 
 namespace App\Models; 
+/**
+* @file UserManager.php
+* @author Ayoub Brahim
+* @date 27/02/2022
+* @brief Manager pour les utilisateur
+*  @details 
+* <p>Cette classe gére toute la logique pour executer la bonne requete</p>
+**/
 
 class UserManager{
     protected HuntError $errorHunt;
     private  UsersModel $userModel; 
 
+    /**
+    * @brief Méthode constructrice 
+    * @details 
+    * <p>La méthode constructrice initialise la classe UsersModel est la classe HuntError </p>
+    **/
     public function __construct(){
         $this->errorHunt = new HuntError; 
         $this->userModel = new UsersModel; 
     }
 
-    public function verificate_login($method, $session, $redirect){
+    /**
+    * @brief Methode qui verifie les donner entrez par l'utilsateur pour se connecter     
+    * @details 
+    * <p>La methode verifie la methode d'envoye, si c'est un POST il recupere le pseudo est le mot de passe en filtrant le contenue.</p>
+    * <p>Si les entrez sont correct, on ajoute le pseudo, nom, prenom est l'id du client</p>
+    * <p>Elle renvoie true si tout ce passe bien, sinon un tableaux avec les erruer </p>
+    * @param  string $method
+    * @param  $session
+    * @return array Contient les donner de l'hotel
+    **/
+    public function verificate_login(string $method, $session){
         if ($method !== 'post'){
             return []; 
         }
@@ -30,12 +53,21 @@ class UserManager{
                         ]);
                         return true; 
                     }
-                }return ['Mot de passe ou/et indentifiant incorrect']; 
-            }
-            return $this->errorHunt->hunt_error_login($pseudo, $password, $passwd_hash_bdd); //renvoie le message d'erreur
+                } 
+            }return $this->errorHunt->hunt_error_login($pseudo, $password, $passwd_hash_bdd); //renvoie le message d'erreur
         }
     }
 
+    /**
+    * @brief Methode qui verifie l'email du mot de passe oublier    
+    * @details 
+    * <p>La methode verifie la methode d'envoye, si c'est un POST il recupere le pseudo est le mot de passe en filtrant le contenue.</p>
+    * <p>Si les entrez sont correct, on ajoute le pseudo, nom, prenom est l'id du client</p>
+    * <p>Elle renvoie true si tout ce passe bien, sinon un tableaux avec les erruer </p>
+    * @param  string $method
+    * @param  $session
+    * @return array Contient les donner de l'hotel
+    **/
     public function verificate_mdp_oublier($method){
         if ($method === 'post'){
             $email = $_POST['email']; 

@@ -17,11 +17,22 @@ use App\Models\AvisManager;
 class Avis extends Pages{
     protected $avisMngr; 
     
+    /**
+    * @brief Méthode constructrice
+    * @details
+    * <p>Cette méthode appelle la méthode constructrice de la classe mère Pages</p>
+    * <p>Elel instancie un la classe AvisManager</p>
+    **/
     public function __construct(){
         parent::__construct(); 
         $this->avisMngr = new AvisManager; 
     }
 
+     /**
+     * @brief Méthode index
+     * @details
+     * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil, elle recuperer toute les avis</p>
+     */
     public function index(){
         $this->_data['color_link_nav'] = 'dark';
         $this->_data['name_file']      = 'avis';

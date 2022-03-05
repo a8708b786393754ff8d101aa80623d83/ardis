@@ -90,6 +90,8 @@ class Hotel extends Pages{
         $this->display(lcfirst($page).'.tpl');
     }
 
+
+
     public function sendMail(){
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['meta_title']     = "Envoie d'email"; 
@@ -116,8 +118,15 @@ class Hotel extends Pages{
     }
 
 
+    /** 
+    * @brief Méthode qui ajoute une avis tout en donner le type de message est son contenue
+    * @details
+    * <p>Elle récupére les données de l'id de l'hotel grâce à la méthode getNameById de la classe HotelManager</p>
+    * <p>Elle envoie un tableau de message d'erruer/de succes à Smarty pour qu'ils s'affichent dans la page d'hotel</p>
+    * <p>Elle ajoute l'avis si il passe les test de securiter</p>
+    * @param  $page 
+    */
     public function addAvis($page){
-        // ! ajouter le message d'erruer ou le message de succes
         $id_hotel = $this->hotelMngr->getNameById($page); 
         $error_or_success = $this->avisMngr->addMngrAvis($this->request, $id_hotel);
         $this->_data[$error_or_success[0]] = $error_or_success[1];

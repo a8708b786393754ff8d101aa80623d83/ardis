@@ -46,13 +46,6 @@ class Reservation extends Pages{
         $this->_data['hotel_sejour'] = $this->request->getVar('hotel_destination');
         // $this->_data['nb_'] = null;
         $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
-        $this->_data[] = null;
         
         $this->display('reservation_validation.tpl'); 
     }

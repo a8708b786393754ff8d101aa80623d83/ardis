@@ -35,7 +35,7 @@ class HotelModel extends Model{
     /**
     * @brief Methode qui retourne les meuilleur hotels selon les prix   
     * @details 
-    * <p>La methode continet la requete SQL complexe pour etre reutiliser </p>
+    * <p>La methode contient la requete SQL complexe pour etre reutiliser </p>
     * @return array Contient les donner des hotels aux meuilleur prix
     **/
     public function getBestHotels(): array {
@@ -52,7 +52,7 @@ class HotelModel extends Model{
     * @brief Methode qui retourne  les information lieer a l'hotel specifier    
     * @param string $hotel
     * @details 
-    * <p>La methode continet la requete SQL pour recuperer l'image, nom, prix, ville note, contenue, email de l'hotel </p>
+    * <p>La methode contient la requete SQL pour recuperer l'image, nom, prix, ville note, contenue, email de l'hotel </p>
     * <p> Le premier caractere est mis en majiscule</p>
     * @return array Contient les donner de l'hotel
     **/
@@ -77,7 +77,7 @@ class HotelModel extends Model{
     * @brief Methode qui retourne l'id de l'hotel selon son nom    
     * @param string $name_hotel
     * @details 
-    * <p>La methode continet la requete SQL qui recuperer l'id de l'hotel  </p>
+    * <p>La methode contient la requete SQL qui recuperer l'id de l'hotel  </p>
     * @return array l'id de l'hotel 
     **/
     public function getIdByNameHotel(string $name_hotel):array {

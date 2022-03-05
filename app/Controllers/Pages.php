@@ -40,10 +40,10 @@ class Pages extends BaseController{
     }
     
     /**
-     * @brief Méthode index
-     * @details
-     * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil </p>
-     */
+    * @brief Méthode index
+    * @details
+    * <p>Elle envoie l'information à Smarty pour afficher la page d'acceuil </p>
+    */
     public function index(){
         $this->_data['color_link_nav'] = 'white';
         $this->_data['name_file']      = 'index';

@@ -173,7 +173,7 @@ class HuntError {
         return $this->error; 
     }
 
-
+    //! ajouter un commaniter
     public function huntReservation(array $post):array{
         if(! $this->isAllEmpty($post, 5)){
             $this->error[] = 'Veuillez entrez tout les champ'; 
@@ -183,10 +183,5 @@ class HuntError {
             $this->error[] = 'Veuillez entrez une nombre'; 
         }
         return $this->error; 
-    }
-
-
-    public function huntAddAvis(array $post){
-        
     }
 }
