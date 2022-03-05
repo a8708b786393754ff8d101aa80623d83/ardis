@@ -59,13 +59,16 @@ class HotelManager {
     *           les noms des hôtels pour les afficher dans la barre de menu</p>
     * @return array Contient les noms des hôtels  
     **/
-    public function getHotelsNamesForNavBar()
-    {
+    public function getHotelsNamesForNavBar(){
         $arrNameHotel = []; 
         $resultQuery =  $this->respQuery->getName(); 
         foreach($resultQuery as $_ => $element){
             $arrNameHotel[] = $element->hotel_nom; // je stocke les noms des hôtels dans une variable 
         }
         return $arrNameHotel;
+    }
+
+    public function getNameById(string $hotel){
+        return $this->respQuery->getIdByNameHotel($hotel)[0]->hotel_id; 
     }
 }

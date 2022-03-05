@@ -1,6 +1,5 @@
 <?php 
 namespace App\Models; 
-use App\Models\AvisModel;
 /**
 * @file AvisManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -12,9 +11,13 @@ use App\Models\AvisModel;
 
 class AvisManager{
     protected $avisModel; 
+    protected $imgModel; 
+    protected $imMngr; 
 
     public function __construct(){
         $this->avisModel  = new AvisModel; 
+        $this->imgMngr    = new ImageManager; 
+        $this->imgModel   = new ImageModel; 
     }
 
     public function getAllData():array {
@@ -26,7 +29,19 @@ class AvisManager{
     }
 
 
-    public function addAvis(){
+    public function addMngrAvis($objRequest, string $id_hotel){
+        if($objRequest->getMethod() === 'post'){
+            $data = $objRequest->getPost();
+            $resp_upload_file = $this->imgMngr->imgAvisIsMatches($objRequest); 
+            if(is_string($resp_upload_file)){
+                $this->avisModel->setAvis($data['title'], $data['message'], $data['note'], $id_hotel); 
+                $this->imgModel->setAvisPhoto($resp_upload_file, $id_hotel);
+                return ['msg_success_avis', null];
+            }else{
+                return ['msg_error_avis', $resp_upload_file]; 
+            }
+
+        }
 
     }
 

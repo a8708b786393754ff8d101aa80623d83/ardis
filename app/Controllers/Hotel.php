@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
 use App\Models\UserManager;
+use App\Models\AvisManager;
+use App\Models\HotelManager;
 /**
 * @file Hotel.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -24,6 +26,8 @@ class Hotel extends Pages{
     protected string $email;
 
     protected UserManager $userMgr;
+    protected AvisManager $avisMngr;
+    protected HotelManager $hotelMngr;
 
     /**
     * @brief Méthode constructrice 
@@ -32,7 +36,9 @@ class Hotel extends Pages{
     **/
     public function __construct(){   
         parent::__construct(); 
-        $this->userMgr = new UserManager(); 
+        $this->userMgr = new UserManager; 
+        $this->avisMngr = new AvisManager; 
+        $this->hotelMngr = new HotelManager; 
     }
     
     /** 
@@ -110,11 +116,11 @@ class Hotel extends Pages{
     }
 
 
-    public function addAvis(){
-        $this->_data['color_link_nav'] = 'black'; 
-        $this->_data['meta_title']     = "Ajout d'avis"; 
-        $this->_data['name_file']      = "ajout_avis"; 
-
-        $this->display('ajout_avis.tpl'); 
+    public function addAvis($page){
+        // ! ajouter le message d'erruer ou le message de succes
+        $id_hotel = $this->hotelMngr->getNameById($page); 
+        $error_or_success = $this->avisMngr->addMngrAvis($this->request, $id_hotel);
+        $this->_data[$error_or_success[0]] = $error_or_success[1];
+        $this->view($page); 
     }
 }

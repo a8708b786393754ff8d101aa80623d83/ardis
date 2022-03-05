@@ -76,9 +76,9 @@ class ImageModel extends Model{
         $id = $this->userModel->getIdByPseudo($pseudo);
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
     }
-
-    public function setAvisPhoto(){
-        
+    
+    public function setAvisPhoto(string $name_file, string $hotel_avis){
+        $this->db->query('UPDATE avis SET avis_nomphoto=? WHERE avis_hotel=?', [$name_file, $hotel_avis]); 
     }
 
     /**

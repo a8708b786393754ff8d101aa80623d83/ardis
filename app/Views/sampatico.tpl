@@ -1,5 +1,16 @@
 {extends file='base/layout.tpl'}
 {block name=content}
+{if isset($msg_success_avis)}
+<div class="alert alert-success" role="alert">
+  Votre avis a ete pris en compte.
+</div>
+{elseif isset($msg_error_avis)}
+<div class="alert alert-danger" role="alert">
+  {foreach from=$msg_error_avis item=item}
+    {$item}
+  {/foreach}
+</div>
+{/if}
 <article>
     <div class="container-fluid ">
         <img class="image_{$name}" src="{base_url('assets/Images/nos_hotels')|cat:'/'}{$image}" alt="image {$name} hotel">
@@ -59,7 +70,9 @@
  <div class="container mt-5">
   <hr>
   <h3 class='text-center'>Ajouter un avis</h3>
-     <form method="post" action="{base_url('Hotel/addAvis')}" enctype="multipart/form-data">
+
+     <form method="post" action="{base_url('Hotel/addAvis/')|cat:'/'}{$name_file|capitalize}" 
+                                                                                  enctype="multipart/form-data">
       <div class="form-group">
         <label>Titre: </label>
         <input type="text" name="title" class="form-control">
@@ -68,18 +81,41 @@
         <input type="file" name="photo_avis_clients" class="form-control">
       </div>
       <div class="form-group">
+        <label>Note: </label>
+        <select name='note'>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+        </select>
+      </div>
+      <div class="form-group">
         <label>Message: </label>
-        <pre>
           <textarea rows="6" type="text" name="message" class="form-control">
-            
           </textarea>
-        </pre>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
       </div>
     </form>
+
   </div>
 </div>
 {/if}
+{literal}
+  <script> 
+    let allstart = document.querySelectorAll('.star'); 
+    allstart.forEach( (element) =>{
+        $(element).click(function(){
+          let index_click = $(".star").index(element)
+          for(let i=1; i <= index_click; i++){
+            let class_element = $(allstart[i]).attr('class')            
+              $(allstart[i]).addClass('gold'); 
+          }
+        })
+    })
+  
+  </script>
+{/literal}
 {/block}

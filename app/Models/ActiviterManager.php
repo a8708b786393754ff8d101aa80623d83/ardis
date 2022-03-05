@@ -1,6 +1,6 @@
 <?php 
 namespace App\Models; 
-define('MAX_ACTIVITER_SHOW', 5); 
+define('MAX_ACTIVITER_SHOW', 4); 
 /**
 * @file ActiviterManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>, Arthur Kurt
@@ -39,6 +39,7 @@ class ActiviterManager{
     public function getYoungActiviter(){
         $arrdata = []; 
         $respQuery = $this->activModel->getDataYoung();
+        var_dump($respQuery); 
         for($i=0; $i < MAX_ACTIVITER_SHOW; $i++){
             $arrdata[$respQuery[$i]->nom_hotel][] = $respQuery[$i];  
         }
