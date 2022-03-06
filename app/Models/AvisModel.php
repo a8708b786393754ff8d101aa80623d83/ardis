@@ -12,12 +12,10 @@ use CodeIgniter\Model;
 
 class AvisModel extends Model{
     // ! regler les champs ici
-    protected $table         = 'hotels';
-    protected $primaryKey    = 'hotel_id';
-    protected $allowedFields = ["hotel_nom","hotel_adresse","hotel_cp" ,"hotel_ville" ,
-                "hotel_pays" ,"hotel_mail","hotel_tel", "hotel_menu","hotel_activ","hotel_avis", 
-                "hotel_image", "hotel_chambr", "hotel_price",  "hotel_note","hotel_contenue"];
-    protected $returnType    = 'App\Entities\HotelEntity';
+    protected $table         = 'avis';
+    protected $primaryKey    = 'avis_id';
+    protected $allowedFields = ["avis_titre","avis_cont","avis_answer" ,"avis_date" , "avis_nomphoto", "avis_note", "avis_hotel",  "avis_note"];
+    protected $returnType    = 'App\Entities\AvisEntity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

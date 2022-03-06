@@ -47,4 +47,13 @@ class ReservationManager{
         $id_client = $this->userMdl->getIdByClientByIdPseudo($id_pseudo);
         return $this->reservMdl->getChambNumByIdClient($id_pseudo)[0]->chamb_num; 
     }
+
+
+    public function getYourReservationNumberNameHotel(string $name_client){
+        $reservAchieve = $this->reservMdl->getUserReservation($name_client);
+        if(! empty($reservAchieve)){
+            return $reservAchieve; 
+        }return false; 
+
+    }
 }

@@ -3,13 +3,10 @@ namespace App\Models;
 use CodeIgniter\Model; 
 
 class ReservationModel extends Model{
-    protected $table         = 'clients';
-    protected $primaryKey    = 'client_id';
-    protected $allowedFields = [ "client_nom","client_prénom",
-                                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
-                                "client_tel", "compte_client","resrv_client","client_avis"
-                                ];
-    protected $returnType    = 'App\Entities\UserEntity';
+    protected $table         = 'reservations';
+    protected $primaryKey    = 'reserv_id';
+    protected $allowedFields = [ "reserv_datedeb","reserv_datefin","client_id" ,"chamb_reserv" ,"chamb_id" ,"hotel_id","activ_id", "activ_reserv"];
+    protected $returnType    = 'App\Entities\ReservationEntity';
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -53,5 +50,14 @@ class ReservationModel extends Model{
                             INNER JOIN reservations ON reservations.chamb_id = chambres.chamb_id 
                             INNER JOIN clients ON clients.client_id=reservations.client_id 
                             WHERE clients.client_id = ?', [$id_client])->getResult(); 
+    }
+
+    public function getUserReservation(string $name_client){
+        return $this->db->query('SELECT COUNT(reserv_datedeb) AS nb_reservation, hotels.hotel_nom 
+                                FROM reservations 
+                                INNER JOIN hotels ON hotels.hotel_id = reservations.hotel_id 
+                                INNER JOIN clients ON clients.client_id = reservations.client_id 
+                                WHERE clients.client_nom = ? 
+                                GROUP BY hotels.hotel_nom', [$name_client])->getResult(); 
     }
 }

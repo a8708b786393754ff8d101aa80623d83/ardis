@@ -73,6 +73,4 @@ class ActiviterModel extends Model{
                                 WHERE activ_id=?', [$id])->getResult()[0]->price; 
     }
 
-
-
 }
