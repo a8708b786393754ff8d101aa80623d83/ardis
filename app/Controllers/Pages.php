@@ -56,8 +56,8 @@ class Pages extends BaseController{
     /**
      * @brief Méthode view
      * @details
-     * @param  $page
      * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
+     * @param  $page
      */
     public function view($page){
         $this->_data['color_link_nav']  = 'black'; 
@@ -66,6 +66,11 @@ class Pages extends BaseController{
         $this->display($page.'.tpl');
     }
     
+    /**
+    * @brief Méthode search
+    * @details
+    * <p>Elle envoie l'information à Smarty pour afficher les pages du site </p>
+    */
     public function search(){
         $this->searchMngr = new SearchManager($this->request); 
 

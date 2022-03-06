@@ -138,7 +138,7 @@ class UsersModel extends Model{
     }
 
     /** 
-    * @brief Methode qui contient la requete SQL pour recuperer l'id par le pseudo 
+    * @brief Methode qui contient la requete SQL pour recuperer l'id du compte par le pseudo 
     * @details
     * <p>Elle construit la requete pour avoir l'id a partir du pseudo </p>
     * @param string $pseudo
@@ -149,6 +149,20 @@ class UsersModel extends Model{
     }
 
     /** 
+    * @brief Methode qui contient la requete SQL pour recuperer l'id du client 
+    * @details
+    * <p>Elle construit la requete pour avoir l'id du client a partir de l'id de l'utilisateur </p>
+    * @param string $id_pseudo
+    * @return string l'id du client
+    */
+    public function getIdByClientByIdPseudo(string $id_pseudo):string{
+        return $this->db->query('SELECT client_id 
+                                FROM clients 
+                                INNER JOIN compte ON client_id=compt_id 
+                                WHERE compt_id = ?', [$id_pseudo])->getResult()[0]->client_id; 
+    }
+
+    /** 
     * @brief Methode qui contient la requete SQL pour recuperer l'id du client par le prenom 
     * @details
     * <p>Elle construit la requete pour avoir l'id du client a  partir du prenom</p>
@@ -156,7 +170,10 @@ class UsersModel extends Model{
     * @return string l'id du compte
     */
     private function getIdByClient(string $prenom): string{
-        return $this->db->query('SELECT client_id FROM clients WHERE client_prenom = ?', [$prenom])->getResult()[0]->client_id;  
+        return $this->db->query('SELECT client_id 
+                                FROM clients 
+                                WHERE client_prenom = ?
+                                LIMIT 1', [$prenom])->getResult()[0]->client_id;  
     }
 
     /** 

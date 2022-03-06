@@ -6,7 +6,7 @@ class ReservationManager{
     protected ReservationModel $reservMdl; 
     protected UsersModel $userMdl; 
 
-
+    
     public function __construct(){
         $this->errorHunt = new HuntError; 
         $this->reservMdl = new ReservationModel; 
@@ -17,25 +17,34 @@ class ReservationManager{
         // ! calcul du total
     }
 
-    public function getResultDateReservation(string $startdate, string $enddate){
+    public function getResultDateReservation(string $startdate, string $enddate): string{
         $firstdate = new \DateTime($startdate);
         $secondDate = new \DateTime($enddate);
-        return $firstdate->diff($secondDate)->d;
+        return $firstdate->diff($secondDate)->d; // renvoie le nombre de jours 
     }
 
-    public function validateReservation(array $data,$pseudo){
+    public function validateReservation(array $data,$pseudo): array{
         if(is_string($pseudo)){
             $error = $this->errorHunt->huntReservation($data); 
             if(empty($error)){
                 $id_pseudo = $this->userMdl->getIdByPseudo($pseudo); 
                 $resp_data = $this->reservMdl->getAllData($data['hotel_destination'], $data['nbr_lit']); 
                 if(! empty($resp_data)){
-                    $this->reservMdl->setReservation($data['startdate'], $data['enddate'], $id_pseudo,$resp_data[0]->chamb_num, $resp_data[0]->chamb_id, $data['activiter'], $resp_data[0]->hotel_id); 
+                    if($data['activiter'] === "non"){ // pour voir si il a choisi une activiter
+                        $this->reservMdl->setReservationWithouthActiv($data['startdate'], $data['enddate'], $id_pseudo, $resp_data[0]->chamb_num, $resp_data[0]->chamb_id, $resp_data[0]->hotel_id); 
+                    }else{
+                        $this->reservMdl->setReservationWithActiv($data['startdate'], $data['enddate'], $id_pseudo, $resp_data[0]->chamb_num, $resp_data[0]->chamb_id, $resp_data[0]->hotel_id,$data['activiter']); 
+                    }
                     return ['msg_succes', 'Votre reservation a ete pris en compte'];
                 }else{
                     $error[] = "L'hotel n'est pas disponible pour ".$data['nbr_lit'].' lits'; 
                 }
             }return ['msg_error',$error]; 
         }return ['error_conn', 'Veuillez vous connecter']; 
+    }
+
+    public function getChambNum(string $id_pseudo){
+        $id_client = $this->userMdl->getIdByClientByIdPseudo($id_pseudo);
+        return $this->reservMdl->getChambNumByIdClient($id_pseudo)[0]->chamb_num; 
     }
 }

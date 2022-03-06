@@ -88,30 +88,66 @@ class HuntError {
         return $this->error; 
     }
 
-    public function verif_conf_password(string $password, string $confPasswd){
-        if($password !== $confPasswd){
+    /**
+    * @brief Methode qui verifie la confirmation de mot de passe  
+    * @details
+    *<p>Elle regarde si le mot de passe est le meme que la confirmation, si c'est pas le meme il ajoute l'erruer au tableaux d'erreur</p>
+    * @param string $password 
+    * @param string $conf_password 
+    */
+    public function verif_conf_password(string $password, string $conf_password){
+        if($password !== $conf_password){
             $this->error[] ='Veuillez entrez le meme mot de passe!';
         }
     }
 
+    /**
+    * @brief Methode qui verifie la longeur du mot de passe 
+    * @details
+    *<p>Elle regarde si la longeur du mot de passe est de 8 ou plus, si c'est pas le cas il rajoute au tableaux d'erreur </p>
+    * @param int $min_length = 8
+    * @param string $password 
+    */
     public function length_password(string $password, int $min_length=8){
         if(strlen($password) < $min_length){
             $this->error[] = 'Veuillez entrez un mot de passe de plus de huit carachtere!'; 
         }
     }
 
+     /**
+    * @brief Methode qui verifie l'email 
+    * @details
+    *<p>Elle regarde si l'email est dans le bon format , si c'est pas le cas il rajoute au tableaux d'erreur </p>
+    * @param string $email
+    * @return true|null 
+    */
     public function verif_email($email){
-        if(! is_string($email) || strpos($email, '@') === false){
+        if(! filter_var($email, FILTER_VALIDATE_EMAIL)){
             $this->error[] = 'Veuillez entrez un email valide'; 
             return null; 
         }return true;
     }
 
+    /**
+    * @brief Methode qui verifie le format du numéros de téléphone 
+    * @details
+    *<p>Elle regarde si le numéros de téléphone  est dans le bon format , si c'est pas le cas il rajoute au tableaux d'erreur </p>
+    *<p>Cette methode sera plus utiliser dans l'edition de profile, l'inscription</p>
+    * @param string $tel 
+    */
     public function verif_tel(string $tel){
-        if(! is_numeric($tel)){
-            $this->error[] ='Veuillez entrez un numero de telephone valide!';
+        if(! filter_var($tel, FILTER_VALIDATE_INT)){
+            $this->error[] ='Veuillez entrez un numéros de téléphone valide!';
         }
     }
+
+     /**
+    * @brief Methode qui verifie le format du numéros de téléphone 
+    * @details
+    *<p>Elle regarde si le numéros de téléphone  est dans le bon format , si c'est pas le cas il rajoute au tableaux d'erreur </p>
+    *<p>Cette methode sera plus utiliser dans l'edition de profile, l'inscription</p>
+    * @param string $tel 
+    */
     public function isAllEmpty(array $arrData, int $mandatory): bool{
         $not_empty = 0; 
         foreach($arrData as $_ =>$values){
@@ -122,17 +158,23 @@ class HuntError {
         return $not_empty >= $mandatory; 
     }
 
-    public function hunt_edit_profile(array $data_post){
+     /**
+    * @brief Methode qui chasse les erruer lié a l'editiion de profile
+    * @details
+    *<p>Elle regarde si les entrez sont dans le bon format , si c'est pas le cas il rajoute au tableaux d'erreur </p>
+    * @param array $data_post 
+    */
+    public function hunt_edit_profile(array $data_post):array {
         $password = $data_post['new_password']; 
         $password_confirm = $data_post['new_password_confirm']; 
         $num_tel = $data_post['tel']; 
         $email = $data_post['email'];
         
-        if($this->isAllEmpty($data_post, 8)){   // ? le 8, c'est le nombre de champs obligatoire 
+        if($this->isAllEmpty($data_post, 8)){   //  le 8, c'est le nombre de champs obligatoire 
             $this->verif_conf_password($password, $password_confirm); 
             $this->verif_tel($num_tel); 
             $this->verif_email($email); 
-            if(! empty($password) && ! empty($password_confirm)){ // ?pour verifier si les mot de passe est le confirm passwd sont entrez
+            if(! empty($password) && ! empty($password_confirm)){ // pour verifier si les mot de passe est le confirm passwd sont entrez
                 $this->length_password($password);
             }
         }else{
@@ -173,7 +215,13 @@ class HuntError {
         return $this->error; 
     }
 
-    //! ajouter un commaniter
+    /**
+    * @brief Methode qui trouve les erruer liée a la reservation
+    * @details 
+    * <p>Cette methode utilise la methode isAllEmpty pour voir si les champs d'entrez son bien remplie, le décalage des date de debut est de fin.</p>
+    * @param  array $post
+    * @return array contenant les erruer 
+    */
     public function huntReservation(array $post):array{
         if(! $this->isAllEmpty($post, 5)){
             $this->error[] = 'Veuillez entrez tout les champ'; 
