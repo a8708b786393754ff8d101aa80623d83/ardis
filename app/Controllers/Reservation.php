@@ -1,6 +1,7 @@
 <?php 
 namespace App\Controllers; 
 use App\Models\ReservationManager;
+use App\Models\ActiviterManager;
 /**
 * @file Reservation.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -16,6 +17,7 @@ use App\Models\ReservationManager;
 
 class Reservation extends Pages{
     protected $reservMngr; 
+    protected $activMngr; 
 
     /**
     * @brief Méthode constructrice 
@@ -28,6 +30,7 @@ class Reservation extends Pages{
         $this->_data['color_link_nav'] = 'black';
         
         $this->reservMngr = new ReservationManager; 
+        $this->activMngr = new ActiviterManager($this->allNamesHotels); 
     }
     
 
@@ -60,11 +63,12 @@ class Reservation extends Pages{
         $this->_data['enddate']      = $this->request->getVar('enddate');
         $this->_data['durer']        = $this->reservMngr->getResultDateReservation($this->request->getVar('startdate'), $this->request->getVar('enddate'));
         $this->_data['hotel_sejour'] = $this->request->getVar('hotel_destination');
-        $this->_data['activiter']    = $this->request->getVar('activiter');
         $this->_data['nb_lit']       = $this->request->getVar('nbr_lit');
         $this->_data['nb_chambre']   = $this->reservMngr->getChambNum($this->session->get('id')); 
-
-        // ! recuperer le prix de l'activiter
+        
+        $this->_data['activiter']         = $this->request->getVar('activiter');
+        $this->_data['activiter_price']    = $this->activMngr->getPriceActiv($this->_data['activiter']); 
+        // ! voir ce qui manque a afficher
         $this->display('recus.tpl'); 
     }
 }

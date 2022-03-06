@@ -67,6 +67,12 @@ class ActiviterModel extends Model{
                                 AND hotel_nom=?', [$hotel_name])->getResult();
     }
 
+    public function getPriceActivByIdActiv(string $id): string{
+        return $this->db->query('SELECT activ_tarif AS price
+                                FROM activites 
+                                WHERE activ_id=?', [$id])->getResult()[0]->price; 
+    }
+
 
 
 }

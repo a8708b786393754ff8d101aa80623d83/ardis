@@ -43,7 +43,7 @@
                                                         {if $activiter neq "non"}
                                                         <tr>
                                                             <td>Activité</td>
-                                                            <td class="alignright">150.00 €</td>
+                                                            <td class="alignright">{$activiter_price} €</td>
                                                         </tr>
                                                         {/if}
                                                        
