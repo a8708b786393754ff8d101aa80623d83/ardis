@@ -62,4 +62,11 @@ class ActiviterManager{
         return $arrdata; 
     }
 
+
+    public function getPriceActiv(string $value_activiter): string{
+        if($value_activiter !== 'non'){
+            return $this->activModel->getPriceActivByIdActiv($value_activiter); 
+        }return $value_activiter; 
+    }
+
 }

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="reservation">
                 <h1>Reserver dés maintenant !! </h1>
-                <form action='{base_url('Reservation/validation/')}' method='post'>
+                <form action='{base_url('Reservation/recus')}' method='post'>
                     <div class="destination">
                         <label for="reservation">Hotel de destinations: </label>
                         <select name="hotel_destination" id ="hotel" required>

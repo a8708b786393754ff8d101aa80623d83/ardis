@@ -2,7 +2,7 @@
 {block name=content}
 {if isset($msg_success_avis)}
 <div class="alert alert-success" role="alert">
-  Votre avis a ete pris en compte.
+  {$msg_success_avis}
 </div>
 {elseif isset($msg_error_avis)}
 <div class="alert alert-danger" role="alert">
