@@ -2,6 +2,7 @@
 namespace App\Controllers; 
 use App\Models\CustomerManager;
 use App\Models\ImageManager;
+use App\Models\ReservationManager;
 /**
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -34,6 +35,7 @@ class Customers extends Visitor{
     
     protected ImageManager $imgManager;
     protected CustomerManager $custManager;
+    protected ReservationManager $reservMngr;
     private $dataCreditials; 
 
     /**
@@ -51,6 +53,8 @@ class Customers extends Visitor{
         parent::__construct();
         $this->custManager = new CustomerManager;
         $this->imgManager = new ImageManager;
+        $this->reservMngr = new ReservationManager;
+
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
         $this->updateAttribut(); 
@@ -107,15 +111,17 @@ class Customers extends Visitor{
     **/
     public function profile(){
         $this->updateAttribut();
-        $this->_data['firstname']  = $this->firstname;
-        $this->_data['name']  = $this->name;
-        $this->_data['tel']  = $this->tel;
-        $this->_data['email']  = $this->email;
-        $this->_data['pseudo']  = $this->pseudo;
-        $this->_data['adresse']  = $this->adresse;
-        $this->_data['zip']  = $this->zip_code;
-        $this->_data['city']  = $this->city;
-        $this->_data['photo_profile'] = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id); 
+        $this->_data['firstname']           = $this->firstname;
+        $this->_data['name']                = $this->name;
+        $this->_data['tel']                 = $this->tel;
+        $this->_data['email']               = $this->email;
+        $this->_data['pseudo']              = $this->pseudo;
+        $this->_data['adresse']             = $this->adresse;
+        $this->_data['zip']                 = $this->zip_code;
+        $this->_data['city']                = $this->city;
+        $this->_data['photo_profile']       = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id); 
+        $this->_data['reservation_achieve'] = $this->reservMngr->getYourReservationNumberNameHotel($this->name); 
+
         $this->view('profile'); 
     }
     

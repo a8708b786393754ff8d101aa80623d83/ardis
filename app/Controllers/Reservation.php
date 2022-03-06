@@ -53,7 +53,7 @@ class Reservation extends Pages{
     **/
     public function recus(){
         $this->_data['name_file']      = 'validation_reservation';
-        $this->_data['meta_title']     = 'Validation de reservation'; 
+        $this->_data['meta_title']     = 'Recus de votre reservation'; 
         
         $resp = $this->reservMngr->validateReservation($this->request->getPost(), $this->session->get('pseudo'));
         $this->_data[$resp[0]]       = $resp[1]; 

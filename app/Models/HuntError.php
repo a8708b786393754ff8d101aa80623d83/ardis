@@ -126,6 +126,7 @@ class HuntError {
             $this->error[] = 'Veuillez entrez un email valide'; 
             return null; 
         }return true;
+
     }
 
     /**
@@ -136,7 +137,7 @@ class HuntError {
     * @param string $tel 
     */
     public function verif_tel(string $tel){
-        if(! filter_var($tel, FILTER_VALIDATE_INT)){
+        if(! is_numeric($tel)){
             $this->error[] ='Veuillez entrez un numéros de téléphone valide!';
         }
     }
