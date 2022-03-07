@@ -86,7 +86,7 @@ class Hotel extends Pages{
         $this->_data['meta_title']     = 'Hotel '.lcfirst($page); 
         $this->_data['name_file']      = lcfirst($page); 
         $this->_data['object_prefixed']  = "Hotel Ardis ".$page; 
-        $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis-hôtel qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
+        $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
 
 
         $this->display(lcfirst($page).'.tpl');

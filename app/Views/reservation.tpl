@@ -3,10 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="reservation">
-                <h1>Reserver dés maintenant !! </h1>
+                <h1>Réserver dès maintenant</h1>
                 <form action='{base_url('Reservation/recus')}' method='post'>
                     <div class="destination">
-                        <label for="reservation">Hotel de destinations: </label>
+                        <label for="reservation">Hôtel de destination: </label>
                         <select name="hotel_destination" id ="hotel" required>
                         {foreach from=$nav_bar_hotel item=item}
                             <option value="{$item}">Hotel {$item}</option>
@@ -18,7 +18,7 @@
                         Au: <input type="date" name="enddate" required>
                     </div>
                     <div class="date">
-                        <label>Voulez vous choisir une activiter</label><br>
+                        <label>Voulez vous réserver une activiters :</label><br>
                         Oui:<input type="radio" name='activiter' id ="oui" value='yes' required>
                         Non:<input type="radio" name='activiter' id ="non" value='non'required>
                     </div>
@@ -31,7 +31,7 @@
 
                         </select>
                     </div>
-                    <input type="submit" value="reserver" class='btn btn-primary'>
+                    <input type="submit" value="Confirmer" class='btn btn-primary'>
                     </div>
                 </form>
         </div>

@@ -40,7 +40,7 @@ class AvisModel extends Model{
     public function getAvis():array {
         return $this->db->query("SELECT avis_titre, avis_date, avis_note, avis_nomphoto , hotel_nom, avis_cont
                         FROM avis
-                        INNER JOIN hotels ON hotel_id=avis_id")->getResult();
+                       INNER JOIN hotels ON hotel_id = avis_hotel")->getResult();
     }
 
     /** 
@@ -54,8 +54,8 @@ class AvisModel extends Model{
     */
     public function setAvis(string $title, string $content, string $note, string $id_hotel){
         $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,
-                                                     avis_note, avis_hotel, avis_answer)
-                        VALUES(?, ?, CURRENT_DATE, ?, ?,'enlever ca')", // ! oublier avis_answer dans ce code
+                                                     avis_note, avis_hotel)
+                        VALUES(?, ?, CURRENT_DATE, ?, ?)", 
                         [$title, $content, $note, $id_hotel]);
     }
 }

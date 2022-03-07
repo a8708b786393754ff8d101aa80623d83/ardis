@@ -27,7 +27,7 @@
                 <div class="localisation_hotel ">
                     <p class='contenue'>{$contenue}</p>
                     <p>A partir de <span style='color: #ff00aa;'>{$price}€</span></p>
-                    <a href="{base_url('galerie_photo')}" class=" btn galerie_photo ">Galerie_photo</a>
+                    <a href="{base_url('galerie_photo')}" class=" btn galerie_photo ">Galerie photo</a>
                 </div>
                  <div class="presentation ">
             <p>Pour les activités, nous vous proposerons une Visite de L’île de Maui avec notre guide.</p>
@@ -40,7 +40,7 @@
 
  <div class="container mt-5">
   <hr>
-  <h3 class='text-center'>Partager l'hotel a un proche.</h3>
+  <h3 class='text-center'>Partager l'hotel.</h3>
      <form method="post" action="{base_url('Hotel/sendMail')}">
       <div class="form-group">
         <label>Destinateur</label>
