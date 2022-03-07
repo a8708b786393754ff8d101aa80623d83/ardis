@@ -53,7 +53,9 @@ class ReservationModel extends Model{
                             FROM chambres  
                             INNER JOIN reservations ON reservations.chamb_id = chambres.chamb_id 
                             INNER JOIN clients ON clients.client_id=reservations.client_id 
-                            WHERE clients.client_id = ? AND reserv_datedeb = ?',
+                            WHERE clients.client_id = ? AND reserv_datedeb = ?
+                            ORDER BY reserv_datedeb DESC 
+                            LIMIT 1',
                             [$id_client, $date_deb_reservation])->getResult(); 
     }
 
