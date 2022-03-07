@@ -30,6 +30,9 @@
 		<testsuite name="App">
 			<directory>./tests</directory>
 		</testsuite>
+		<testsuite name="myTest">
+			<directory suffix='.php'>./tests/app</directory>
+		</testsuite>
 	</testsuites>
 	<logging>
 		<testdoxHtml outputFile="build/logs/testdox.html"/>

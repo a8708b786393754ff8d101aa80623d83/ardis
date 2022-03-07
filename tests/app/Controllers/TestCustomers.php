@@ -15,19 +15,19 @@ class TestCustomers extends CIUnitTestCase
     {
         parent::setUp();
 
-        $this->myClassMethod();
     }
 
     protected function tearDown(): void
     {
         parent::tearDown();
 
-        $this->anotherClassMethod();
     }
 
 
     protected function testlogout(){
         $result = $this->get('customers/logout'); 
+        $result->assertOk(); 
+        $result->assertOk(); 
         $result->assertOk(); 
         
     }
