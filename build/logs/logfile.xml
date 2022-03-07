@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< HEAD
   <testsuite name="" tests="6" assertions="4" errors="2" warnings="1" failures="0" skipped="0" time="0.115931">
     <testsuite name="App" tests="5" assertions="4" errors="2" warnings="0" failures="0" skipped="0" time="0.115785">
       <testsuite name="ExampleDatabaseTest" file="C:\wamp64\www\ardis\tests\database\ExampleDatabaseTest.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.087189">
         <testcase name="testModelFindAll" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="C:\wamp64\www\ardis\tests\database\ExampleDatabaseTest.php" line="17" assertions="0" time="0.082022">
+=======
+  <testsuite name="" tests="6" assertions="4" errors="2" warnings="1" failures="0" skipped="0" time="0.018122">
+    <testsuite name="App" tests="5" assertions="4" errors="2" warnings="0" failures="0" skipped="0" time="0.017932">
+      <testsuite name="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.014402">
+        <testcase name="testModelFindAll" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="17" assertions="0" time="0.013808">
+>>>>>>> a43d3d9c7634f7636b5913065a320ad7d3fa6efc
           <error type="CodeIgniter\Database\Exceptions\DatabaseException">ExampleDatabaseTest::testModelFindAll
 CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.&#13;
 Main connection [SQLite3]: Class 'SQLite3' not found
@@ -13,7 +20,11 @@ C:\wamp64\www\ardis\system\Test\DatabaseTestTrait.php:74
 C:\wamp64\www\ardis\system\Test\DatabaseTestTrait.php:54
 C:\wamp64\www\ardis\system\Test\CIUnitTestCase.php:244</error>
         </testcase>
+<<<<<<< HEAD
         <testcase name="testSoftDeleteLeavesRow" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="C:\wamp64\www\ardis\tests\database\ExampleDatabaseTest.php" line="28" assertions="0" time="0.005166">
+=======
+        <testcase name="testSoftDeleteLeavesRow" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="28" assertions="0" time="0.000594">
+>>>>>>> a43d3d9c7634f7636b5913065a320ad7d3fa6efc
           <error type="CodeIgniter\Database\Exceptions\DatabaseException">ExampleDatabaseTest::testSoftDeleteLeavesRow
 CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.&#13;
 Main connection [SQLite3]: Class 'SQLite3' not found
@@ -24,6 +35,7 @@ C:\wamp64\www\ardis\system\Test\DatabaseTestTrait.php:54
 C:\wamp64\www\ardis\system\Test\CIUnitTestCase.php:244</error>
         </testcase>
       </testsuite>
+<<<<<<< HEAD
       <testsuite name="ExampleSessionTest" file="C:\wamp64\www\ardis\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001641">
         <testcase name="testSessionSimple" class="ExampleSessionTest" classname="ExampleSessionTest" file="C:\wamp64\www\ardis\tests\session\ExampleSessionTest.php" line="11" assertions="1" time="0.001641"/>
       </testsuite>
@@ -35,6 +47,19 @@ C:\wamp64\www\ardis\system\Test\CIUnitTestCase.php:244</error>
     <testsuite name="myTest" tests="1" assertions="0" errors="0" warnings="1" failures="0" skipped="0" time="0.000147">
       <testsuite name="App\TestCustomers" file="C:\wamp64\www\ardis\tests\app\Controllers\TestCustomers.php" tests="1" assertions="0" errors="0" warnings="1" failures="0" skipped="0" time="0.000147">
         <testcase name="Warning" assertions="0" time="0.000147">
+=======
+      <testsuite name="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.000585">
+        <testcase name="testSessionSimple" class="ExampleSessionTest" classname="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" line="11" assertions="1" time="0.000585"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.002944">
+        <testcase name="testIsDefinedAppPath" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="13" assertions="1" time="0.000369"/>
+        <testcase name="testBaseUrlHasBeenSet" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="18" assertions="2" time="0.002575"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="myTest" tests="1" assertions="0" errors="0" warnings="1" failures="0" skipped="0" time="0.000191">
+      <testsuite name="App\TestCustomers" file="/var/www/html/ardis/tests/app/Controllers/TestCustomers.php" tests="1" assertions="0" errors="0" warnings="1" failures="0" skipped="0" time="0.000191">
+        <testcase name="Warning" assertions="0" time="0.000191">
+>>>>>>> a43d3d9c7634f7636b5913065a320ad7d3fa6efc
           <warning type="PHPUnit\Framework\Warning">Warning
 No tests found in class "App\TestCustomers".</warning>
         </testcase>
