@@ -38,11 +38,10 @@ class AvisModel extends Model{
     * @return array les donner d'avis
     */
     public function getAvis():array {
-        return $this->db->query("SELECT avis_titre, avis_date, avis_note, avis_nomphoto , hotel_nom, avis_cont
+        return $this->db->query("SELECT avis_titre, avis_date, avis_note, avis_nomphoto, hotel_nom, avis_cont
                         FROM avis
                         INNER JOIN hotels ON hotel_id=avis_hotel 
                         ORDER BY avis_date ASC 
-                        LIMIT 4
                         ")->getResult();
     }
 

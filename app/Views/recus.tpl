@@ -81,13 +81,13 @@
     </div>
 </div>
 {/if}
-{elseif (isset($error_conn))}
+{else}
     <div class='container'>
         <div class='row'>
             <div class="alert alert-danger" role="alert">
                 Vous devez vous connecter pour effectuer une reservation.
-                <a href="{base_url('visitor/login')}" class="btn btn-primary">Se connecter</a>
                 <a href="{base_url('visitor/create_account')}" class="btn btn-primary">Crée un compte</a>
+                <a href="{base_url('visitor/login')}" class="btn btn-primary">Se connecter</a>
             </div>
         </div>
     </div>

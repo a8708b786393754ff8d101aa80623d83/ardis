@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 14:51:10
+/* Smarty version 4.0.4, created on 2022-03-07 15:39:31
   from '/var/www/html/ardis/app/Views/recus.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6226703e17d107_80432962',
+  'unifunc' => 'content_62267b93a86a15_42160407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0de7461e2374045c3f2a83650cb73952c1372707' => 
     array (
       0 => '/var/www/html/ardis/app/Views/recus.tpl',
-      1 => 1646686268,
+      1 => 1646689168,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6226703e17d107_80432962 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62267b93a86a15_42160407 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1734458166226703e175dc2_80341848', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_48826076662267b93a80be3_11926701', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_1734458166226703e175dc2_80341848 extends Smarty_Internal_Block
+class Block_48826076662267b93a80be3_11926701 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1734458166226703e175dc2_80341848',
+    0 => 'Block_48826076662267b93a80be3_11926701',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -147,15 +147,15 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 </div>
 <?php }
-} elseif (((isset($_smarty_tpl->tpl_vars['error_conn']->value)))) {?>
+} else { ?>
     <div class='container'>
         <div class='row'>
             <div class="alert alert-danger" role="alert">
                 Vous devez vous connecter pour effectuer une reservation.
-                <a href="<?php echo base_url('visitor/login');?>
-" class="btn btn-primary">Se connecter</a>
                 <a href="<?php echo base_url('visitor/create_account');?>
 " class="btn btn-primary">Crée un compte</a>
+                <a href="<?php echo base_url('visitor/login');?>
+" class="btn btn-primary">Se connecter</a>
             </div>
         </div>
     </div>
