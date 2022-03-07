@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model; 
 /**
 * @file ImageModel.php
-* @author Arthur Kurt <email d'arthur>
+* @author Arthur Kretz <kretz.arthur68000@gmail.com>
 * @date 22/02/2022
 * @brief Model pour les images 
 * @details 

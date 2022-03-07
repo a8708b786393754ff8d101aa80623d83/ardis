@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model; 
 /**
 * @file RestaurantModel.php
-* @author Arthur Kurt <ayoubbrahim68@gmail.com>
+* @author Brahim Ayoub <ayoubbrahim68@gmail.com>
 * @date 14/02/2022
 * @brief Model pour la restauration
 * @details 

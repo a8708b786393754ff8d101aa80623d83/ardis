@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 /**
 * @file ActiviterModel.php
-* @author Arthur Kurt <email d'arthur>, Ayoub Brahim <ayoubbrahim68@gmail.com>
+* @author Arthur Kretz <kretz.arthur68000@gmail.com>, Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 19/02/2022
 * @brief Model pour les activités
 * @details
@@ -67,6 +67,7 @@ class ActiviterModel extends Model{
                                 AND hotel_nom=?', [$hotel_name])->getResult();
     }
 
+    
 
 
 }

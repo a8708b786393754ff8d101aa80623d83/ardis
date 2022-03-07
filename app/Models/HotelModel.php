@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model; 
 /**
 * @file HotelModel.php
-* @author Arthur Kurt <email d'arthur>
+* @author Arthur Kretz <kretz.arthur68000@gmail.com>
 * @date 19/02/2022
 * @brief Model pour les hotels 
 * @details 
