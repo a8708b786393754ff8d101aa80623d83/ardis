@@ -37,7 +37,7 @@ class SearchModel extends Model{
                                 ON activites.hotel_id = hotels.hotel_id
                                 WHERE activ_loca LIKE '%".$this->element."%'
                                 OR activ_nom LIKE '%".$this->element."%'
-                                OR activ_descri LIKE '%".$this->element."%'  
+                                OR activ_descri LIKE '%".$this->element."%'
                                 AND YEAR(activ_date) = YEAR(CURRENT_DATE) 
                                 ")->getResult();
     }

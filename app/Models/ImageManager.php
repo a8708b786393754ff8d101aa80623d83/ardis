@@ -1,5 +1,6 @@
 <?php
 namespace App\Models;
+use App\Libraries\HuntError; 
 define('MAX_SIZE', 500_000); // constante pour la taille maximum des fichier
 /**
 * @file ImageManager.php

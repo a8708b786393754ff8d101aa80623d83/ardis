@@ -39,7 +39,6 @@ class ActiviterManager{
     public function getYoungActiviter(){
         $arrdata = []; 
         $respQuery = $this->activModel->getDataYoung();
-        var_dump($respQuery); 
         for($i=0; $i < MAX_ACTIVITER_SHOW; $i++){
             $arrdata[$respQuery[$i]->nom_hotel][] = $respQuery[$i];  
         }

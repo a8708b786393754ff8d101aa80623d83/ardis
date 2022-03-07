@@ -1,5 +1,6 @@
 <?php 
 namespace App\Models; 
+use App\Libraries\HuntError; 
 
 class ReservationManager{
     protected HuntError $errorHunt;
