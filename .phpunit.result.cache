@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"version":1,"defects":{"Warning":6,"ExampleDatabaseTest::testModelFindAll":4,"ExampleDatabaseTest::testSoftDeleteLeavesRow":4},"times":{"Warning":0,"ExampleDatabaseTest::testModelFindAll":0.082,"ExampleDatabaseTest::testSoftDeleteLeavesRow":0.005,"ExampleSessionTest::testSessionSimple":0.002,"HealthTest::testIsDefinedAppPath":0.004,"HealthTest::testBaseUrlHasBeenSet":0.023}}
+=======
+{"version":1,"defects":{"Warning":6,"ExampleDatabaseTest::testModelFindAll":4,"ExampleDatabaseTest::testSoftDeleteLeavesRow":4},"times":{"Warning":0,"ExampleDatabaseTest::testModelFindAll":0.014,"ExampleDatabaseTest::testSoftDeleteLeavesRow":0.001,"ExampleSessionTest::testSessionSimple":0.001,"HealthTest::testIsDefinedAppPath":0,"HealthTest::testBaseUrlHasBeenSet":0.003}}
+>>>>>>> a43d3d9c7634f7636b5913065a320ad7d3fa6efc

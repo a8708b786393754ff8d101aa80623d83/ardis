@@ -3,7 +3,7 @@ namespace App\Models;
 use CodeIgniter\Model; 
 /**
 * @file ImageModel.php
-* @author Arthur Kurt <email d'arthur>
+* @author Arthur Kretz <kretz.arthur68000@gmail.com>
 * @date 22/02/2022
 * @brief Model pour les images 
 * @details 
@@ -48,18 +48,18 @@ class ImageModel extends Model{
     }
     
 
-    // ? Recuperer tout les nom des images 
     public function getAllImgNom(){
+        //  Recuperer tout les nom des images 
 
     }
 
-    // ? Recupere lèid a apartir du nom de l'image 
     public function getIdImgByName(string $name_img){
+        // Recupere lèid a apartir du nom de l'image 
 
     }
 
-    // ? Recuperer l'image par uen date 
     public function getImgDate(string $date_post){
+        //  Recuperer l'image par uen date 
         
     }
 
@@ -76,9 +76,15 @@ class ImageModel extends Model{
         $id = $this->userModel->getIdByPseudo($pseudo);
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
     }
+    
+    public function setAvisPhoto(string $name_file, string $hotel_avis){
+        $this->db->query('UPDATE avis SET avis_nomphoto=? WHERE avis_hotel=?', [$name_file, $hotel_avis]); 
+    }
 
     /**
-    * @brief 
+    * @brief Methode qui supprime une image
+    * @details
+    *<p>Elle forge la requete pour supprimer une image a partir de l'id de l'image</p>
     * @param string $id 
     */
     public function deleteImg(string $id){

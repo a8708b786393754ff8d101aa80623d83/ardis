@@ -6,20 +6,28 @@
 * @date 27/02/2022
 * @brief Manager pour le restaurant
 *  @details 
-* <p>Cette class gérer toute la logique pour executer une requete</p>
-* <p>Les actions sont :</p>
-* <ul>
-* 	<li><strong>home</strong> : page d'accueil</li>
-* 	<li><strong>blog</strong> : Liste des articles</li>
-* </ul>
+* <p>Cette class gérer toute la logique pour executer une requete lier aux menu est au restaurant</p>
 **/
+
 class RestaurantManager{
     protected $respQuery; 
 
+    /**
+    * @brief Méthode constructrice 
+    * @details 
+    * <p>La méthode instancie l'objet RestaurantModel</p>
+    **/
     public function __construct(){
         $this->respQuery = new RestaurantModel; 
     }
 
+    /**
+    * @brief Méthode getAllData 
+    * @details 
+    * <p>Cette méthode recupere les menus</p>
+    * <p>Elle trie les elements dans un tableaux associatif</p>
+    * @return array les données des menus 
+    **/
     public function getAllData(){
         $data = []; 
         foreach($this->respQuery->getAllData() as $element){

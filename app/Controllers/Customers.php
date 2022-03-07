@@ -2,6 +2,7 @@
 namespace App\Controllers; 
 use App\Models\CustomerManager;
 use App\Models\ImageManager;
+use App\Models\ReservationManager;
 /**
 * @file Customers.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -32,7 +33,9 @@ class Customers extends Visitor{
     protected string $civ; 
     protected  $photo_profile; 
     
-    protected $imgManager;
+    protected ImageManager $imgManager;
+    protected CustomerManager $custManager;
+    protected ReservationManager $reservMngr;
     private $dataCreditials; 
 
     /**
@@ -50,6 +53,8 @@ class Customers extends Visitor{
         parent::__construct();
         $this->custManager = new CustomerManager;
         $this->imgManager = new ImageManager;
+        $this->reservMngr = new ReservationManager;
+
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
         $this->updateAttribut(); 
@@ -75,6 +80,7 @@ class Customers extends Visitor{
         $objResp = $this->dataCreditials = $this->custManager->getProfileData($this->id);
         $this->session->set('pseudo', $objResp->pseudo); 
 
+        $this->pseudo = $objResp->pseudo; 
         $this->firstname = $objResp->prenom; 
         $this->name = $objResp->nom; 
         $this->tel = $objResp->num_tel; 
@@ -105,15 +111,17 @@ class Customers extends Visitor{
     **/
     public function profile(){
         $this->updateAttribut();
-        $this->_data['firstname']  = $this->firstname;
-        $this->_data['name']  = $this->name;
-        $this->_data['tel']  = $this->tel;
-        $this->_data['email']  = $this->email;
-        $this->_data['pseudo']  = $this->pseudo;
-        $this->_data['adresse']  = $this->adresse;
-        $this->_data['zip']  = $this->zip_code;
-        $this->_data['city']  = $this->city;
-        $this->_data['photo_profile']  = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id);
+        $this->_data['firstname']           = $this->firstname;
+        $this->_data['name']                = $this->name;
+        $this->_data['tel']                 = $this->tel;
+        $this->_data['email']               = $this->email;
+        $this->_data['pseudo']              = $this->pseudo;
+        $this->_data['adresse']             = $this->adresse;
+        $this->_data['zip']                 = $this->zip_code;
+        $this->_data['city']                = $this->city;
+        $this->_data['photo_profile']       = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id); 
+        $this->_data['reservation_achieve'] = $this->reservMngr->getYourReservationNumberNameHotel($this->name); 
+
         $this->view('profile'); 
     }
     
@@ -126,8 +134,7 @@ class Customers extends Visitor{
     * <p>Elle soumet les données à Smarty pour qu'elles soient affichées</p>
     **/
     public function edite_profile(){
-        $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,  
-        [
+        $resp = $this->custManager->is_up_to_date($this->pseudo, $this->request,$this->id,[
             'pseudo'=>$this->pseudo,
             'prenom'=>$this->firstname,
             'nom'=>$this->name,
@@ -135,14 +142,13 @@ class Customers extends Visitor{
             'email'=>$this->email,
             'adresse'=>$this->adresse,
             'cp'=>$this->zip_code,
-            'pays'=>$this->city,
-            'photo_profile'=>$this->photo_profile,
+            'pays'=>$this->city
             ]    
         );
         // l'index 0 est pour le type de message (d'erreur ou de succès)
         // l'index 1 est pour le(s) message(s)
         $this->_data[$resp[0]] = $resp[1];
-        $this->_data['msg_error_profile'] = $this->imgManager->management_uplaod_img($this->request, $this->pseudo);
+        $this->_data['msg_error_profile'] = $this->imgManager->updateProfileOrError($this->request, $this->pseudo);
         
         $this->updateAttribut(); 
         $this->profile(); 

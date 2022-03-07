@@ -1,0 +1,422 @@
+CRITICAL - 2022-03-02 03:06:31 --> Call to undefined method App\Models\ImageManager::managerImgProfile()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 07:46:58 --> Unable to load template 'file:activiter.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Activiter.php(52): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Activiter->index()
+#5 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-02 09:14:16 --> Unable to load template 'file:sampatico.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Hotel.php(78): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#5 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-02 12:31:32 --> Call to a member function setFrom() on null
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\SendMail->send()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:31:33 --> Call to a member function setFrom() on null
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\SendMail->send()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:31:51 --> Call to a member function setFrom() on null
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\SendMail->send()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:33:13 --> Call to a member function setFrom() on null
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\SendMail->send()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:50:06 --> Unable to load template 'file:hotel.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(66): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#5 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-02 12:50:16 --> Unable to load template 'file:hotel.tpl'
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#2 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(66): App\Controllers\BaseController->display()
+#4 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->view()
+#5 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-02 12:50:28 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:50:35 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:51:05 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:51:06 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:51:06 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:51:09 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:53:55 --> Class 'App\Controllers\Emails' not found
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:53:59 --> Class 'App\Controllers\Emails' not found
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 12:54:49 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 12:54:54 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 13:28:43 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 13:28:44 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 13:54:49 --> Typed property App\Controllers\Hotel::$userMgr must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 13:55:09 --> Typed property App\Controllers\Hotel::$userMgr must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 14:07:22 --> Call to undefined method CodeIgniter\Email\Email::seTo()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 14:07:47 --> Call to undefined method CodeIgniter\Email\Email::seTo()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 14:19:11 --> Array to string conversion
+#0 /var/www/html/ardis/writable/cache/templates_c/aa24ceacfd03de0f4eb7f005fe17cfcbd73f92fe_0.file.pageMail.tpl.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_1831219508621fd13f306115_49894274->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621e37413c14d9_89003798()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/aa24ceacfd03de0f4eb7f005fe17cfcbd73f92fe_0.file.pageMail.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621fd13f30fa27_21090913()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Hotel.php(102): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-03-02 14:23:18 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 14:23:19 --> Undefined offset: 0
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 14:40:42 --> Typed property App\Controllers\Hotel::$name must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 14:41:39 --> syntax error, unexpected '.'
+#0 /var/www/html/ardis/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ardis/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ardis/system/CodeIgniter.php(790): class_exists()
+#5 /var/www/html/ardis/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-02 14:42:17 --> Undefined index: name
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 14:43:19 --> Undefined variable: page
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#2 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 14:43:20 --> Undefined variable: page
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#2 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 15:05:32 --> Undefined index: name
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-02 15:06:07 --> Typed property App\Controllers\Hotel::$name must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 15:07:06 --> Typed property App\Controllers\Hotel::$name must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 15:09:06 --> Typed property App\Controllers\Hotel::$name must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->sendMail()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-02 15:11:34 --> Undefined index: msg_prefixed
+#0 /var/www/html/ardis/writable/cache/templates_c/eaa8023708b7b5be570a553acd0b4299407b8335_0.file.aloardis.tpl.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_1851367076621fdd869f5942_64390844->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621e37413c14d9_89003798()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/eaa8023708b7b5be570a553acd0b4299407b8335_0.file.aloardis.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621fdd869f97c0_42066356()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Hotel.php(82): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2022-03-02 15:24:51 --> Syntax error in template "file:/var/www/html/ardis/app/Views/dubai.tpl"  on line 43 "<form action='{base_url('hotel/')|cat:'/'|$name_file}' method="POST">"  - Unexpected "$name_file", expected one of: "id, name" , "@"
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2819): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2880): Smarty_Internal_Templateparser->yy_syntax_error()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(469): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#11 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#12 /var/www/html/ardis/app/Controllers/Hotel.php(97): App\Controllers\BaseController->display()
+#13 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#14 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#15 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#16 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-03-02 15:36:20 --> Syntax error in template "file:/var/www/html/ardis/app/Views/sampatico.tpl"  on line 43 "<form action='{base_url('/hotel/'.$name_file)}' method="POST">"  - Unexpected ".", expected one of: "","" , ")"
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2819): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2880): Smarty_Internal_Templateparser->yy_syntax_error()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(469): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#11 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#12 /var/www/html/ardis/app/Controllers/Hotel.php(99): App\Controllers\BaseController->display()
+#13 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#14 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#15 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#16 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-03-02 15:37:44 --> Syntax error in template "file:/var/www/html/ardis/app/Views/sampatico.tpl"  on line 43 "<form action='{base_url('/hotel')|cat:'/'}{|cat:$name|}' method="POST">"  - Unexpected "|"
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2819): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2880): Smarty_Internal_Templateparser->yy_syntax_error()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(469): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#11 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#12 /var/www/html/ardis/app/Controllers/Hotel.php(99): App\Controllers\BaseController->display()
+#13 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#14 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#15 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#16 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-03-02 15:37:58 --> Syntax error in template "file:/var/www/html/ardis/app/Views/sampatico.tpl"  on line 43 "<form action='{base_url('/hotel')|cat:'/'|cat:$name|}' method="POST">"  - Unexpected "}", expected one of: "id, name" , "@"
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2819): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2880): Smarty_Internal_Templateparser->yy_syntax_error()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(469): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#11 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#12 /var/www/html/ardis/app/Controllers/Hotel.php(99): App\Controllers\BaseController->display()
+#13 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#14 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#15 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#16 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-03-02 16:00:04 --> Syntax error in template "file:/var/www/html/ardis/app/Views/sampatico.tpl"  on line 43 "<form action='{redirect($_SERVER['REQUEST_URI'], 'refresh')' method="POST">"  - Unexpected "'", expected one of: "}"
+#0 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2819): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templateparser.php(2880): Smarty_Internal_Templateparser->yy_syntax_error()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(469): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#5 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#11 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#12 /var/www/html/ardis/app/Controllers/Hotel.php(97): App\Controllers\BaseController->display()
+#13 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#14 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#15 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#16 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-03-02 16:00:19 --> Undefined index: _SERVER
+#0 /var/www/html/ardis/writable/cache/templates_c/90c8b098e3265ac344c7cf8a5504e0b9ffed24e4_0.file.sampatico.tpl.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_1769691775621fe8f3d50552_96909532->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621e37413c14d9_89003798()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/90c8b098e3265ac344c7cf8a5504e0b9ffed24e4_0.file.sampatico.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621fe8f3d54bc8_91273830()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Hotel.php(97): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->view()
+#20 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#23 {main}

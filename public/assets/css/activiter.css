@@ -26,12 +26,21 @@ h5 , p {
     color: black;
 }
 
+.card{
+    margin-left: auto ;
+    /* margin-top: 2rem ; */
+    margin-right: auto ;
+    margin: 50px;
+}
 
+section{
+    display: flex;
+}
 /* foooter */
 footer {
     position: relative;
     background: #707070! important;
-    top: 216px;
+    top: 230px;
     height: 82px;
 }
 

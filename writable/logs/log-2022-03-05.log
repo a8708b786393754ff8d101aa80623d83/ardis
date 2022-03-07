@@ -1,0 +1,608 @@
+CRITICAL - 2022-03-05 06:22:20 --> Typed property App\Controllers\Hotel::$id must not be accessed before initialization
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-05 06:27:49 --> Call to undefined method App\Models\HotelManager::getIdByNameHotel()
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-05 06:29:24 --> Argument 2 passed to App\Models\AvisManager::addMngrAvis() must be of the type string, array given, called in /var/www/html/ardis/app/Controllers/Hotel.php on line 122
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(122): App\Models\AvisManager->addMngrAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-05 06:29:53 --> Argument 2 passed to App\Models\AvisManager::addMngrAvis() must be of the type string, array given, called in /var/www/html/ardis/app/Controllers/Hotel.php on line 123
+#0 /var/www/html/ardis/app/Controllers/Hotel.php(123): App\Models\AvisManager->addMngrAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#2 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-05 06:34:42 --> Undefined index: msg_success_avis
+#0 /var/www/html/ardis/writable/cache/templates_c/90c8b098e3265ac344c7cf8a5504e0b9ffed24e4_0.file.sampatico.tpl.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_1602581551622358e21e1b80_95803813->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621e37413c14d9_89003798()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/90c8b098e3265ac344c7cf8a5504e0b9ffed24e4_0.file.sampatico.tpl.php(30): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_622358e21ee540_05320642()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Hotel.php(90): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/app/Controllers/Hotel.php(124): App\Controllers\Hotel->view()
+#20 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#21 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#22 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#23 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#24 {main}
+ERROR - 2022-03-05 06:42:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?, CURRENT_DATE, ?, ?, ?)
+                                FROM avis' at line 3
+CRITICAL - 2022-03-05 06:42:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?, CURRENT_DATE, ?, ?, ?)
+                                FROM avis' at line 3
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/AvisModel.php(41): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/AvisManager.php(38): App\Models\AvisModel->setAvis()
+#5 /var/www/html/ardis/app/Controllers/Hotel.php(122): App\Models\AvisManager->addMngrAvis()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-05 06:48:28 --> Argument 1 passed to App\Models\ImageModel::setAvisPhoto() must be of the type string, null given, called in /var/www/html/ardis/app/Models/AvisManager.php on line 39
+#0 /var/www/html/ardis/app/Models/AvisManager.php(39): App\Models\ImageModel->setAvisPhoto()
+#1 /var/www/html/ardis/app/Controllers/Hotel.php(122): App\Models\AvisManager->addMngrAvis()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-05 06:51:23 --> Too few arguments to function App\Controllers\Hotel::addAvis(), 0 passed in /var/www/html/ardis/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-05 06:51:59 --> Too few arguments to function App\Controllers\Hotel::addAvis(), 0 passed in /var/www/html/ardis/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#1 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-05 06:53:30 --> Undefined offset: 4
+#0 /var/www/html/ardis/app/Models/ActiviterManager.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Activiter.php(50): App\Models\ActiviterManager->getYoungActiviter()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Activiter->index()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-05 06:53:37 --> Undefined offset: 4
+#0 /var/www/html/ardis/app/Models/ActiviterManager.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Activiter.php(50): App\Models\ActiviterManager->getYoungActiviter()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Activiter->index()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-05 06:57:43 --> Undefined offset: 4
+#0 /var/www/html/ardis/app/Models/ActiviterManager.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Controllers/Activiter.php(50): App\Models\ActiviterManager->getYoungActiviter()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Activiter->index()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-05 07:07:31 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getFileName()
+#0 /var/www/html/ardis/app/Models/AvisManager.php(35): App\Models\ImageManager->imgAvisIsMatches()
+#1 /var/www/html/ardis/app/Controllers/Hotel.php(122): App\Models\AvisManager->addMngrAvis()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Hotel->addAvis()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-03-05 13:47:47 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 13:47:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 13:48:03 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 13:48:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Hotel.php(38): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 13:52:40 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 13:52:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Hotel.php(38): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 13:52:42 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 13:52:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 14:11:36 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:11:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 14:14:53 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:14:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 14:14:57 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:14:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 14:14:58 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:14:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 14:15:02 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:15:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 14:15:32 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:15:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/PhotoGallery.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\PhotoGallery->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 14:15:40 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:15:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Hotel.php(38): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 14:37:25 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:37:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 14:37:55 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:37:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 14:38:24 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:38:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 14:40:21 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:40:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 14:42:05 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-05 14:42:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:06:09 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:06:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 15:08:51 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:08:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 15:10:08 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:10:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:12:12 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:12:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:12:14 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:12:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Hotel.php(38): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Hotel->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:12:16 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:12:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Activiter.php(37): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Activiter->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:12:17 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:12:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Activiter.php(37): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Activiter->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:12:35 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:12:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 15:13:21 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:13:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:15:49 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:15:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Activiter.php(37): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Activiter->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:15:51 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:15:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Activiter.php(37): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Activiter->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:15:51 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:15:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Avis.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Avis->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-03-05 15:15:55 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:15:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:16:07 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 15:16:20 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:16:22 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:16:24 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:16:24 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:16:28 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:16:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-03-05 15:19:58 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:19:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/app/Controllers/Visitor.php(27): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/app/Controllers/Customers.php(51): App\Controllers\Visitor->__construct()
+#6 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#7 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-05 15:20:11 --> Error connecting to the database: Host '185.39.141.155' is not allowed to connect to this MySQL server
+CRITICAL - 2022-03-05 15:20:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Host '185.39.141.155' is not allowed to connect to this MySQL server
+#0 /var/www/html/ardis/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ardis/app/Models/HotelModel.php(73): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ardis/app/Models/HotelManager.php(64): App\Models\HotelModel->getName()
+#3 /var/www/html/ardis/app/Controllers/Pages.php(37): App\Models\HotelManager->getHotelsNamesForNavBar()
+#4 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Pages->__construct()
+#5 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-05 15:32:40 --> Call to undefined function App\Controllers\var_dmp()
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

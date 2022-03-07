@@ -17,7 +17,6 @@ use App\Models\UserManager;
 
 class Visitor extends Pages{
     protected $userManager;
-    protected $objetEmails;
     /**
     * @brief Méthode constructrice 
     * @details 
@@ -27,7 +26,6 @@ class Visitor extends Pages{
     public function __construct(){
         parent::__construct();
         $this->userManager = new UserManager;
-        $this->objetEmails = new Emails;
     }
 
     /**
@@ -52,9 +50,10 @@ class Visitor extends Pages{
     */
     public function create_account(){
         $msg = $this->userManager->verificate_create_account($this->request->getMethod());
+        // ! ajouter un test pour l'envoie de l'email pour recuperer 
         // l'index 0 est pour le type de message (d'erreurs ou de succès)
         // l'index 1 est pour le(s) message(s)
-        $this->_data[$msg[0]]       = $msg[1]; 
+        $this->_data[$msg[0]] = $msg[1]; 
         $this->view('create_account'); 
     }
 
@@ -68,7 +67,5 @@ class Visitor extends Pages{
         $this->_data['message'] = $msg; 
         $this->view('mdpoublier'); 
     }
-
-  
 
 }

@@ -1,5 +1,8 @@
 <?php
 namespace App\Controllers;
+use App\Models\UserManager;
+use App\Models\AvisManager;
+use App\Models\HotelManager;
 /**
 * @file Hotel.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -22,13 +25,21 @@ class Hotel extends Pages{
     protected string $contenue;
     protected string $email;
 
-     /**
+    protected UserManager $userMgr;
+    protected AvisManager $avisMngr;
+    protected HotelManager $hotelMngr;
+
+    /**
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
+    * <p>Elle instancie l'objet UserManager, AVisManager, HotelManager </p>
     **/
     public function __construct(){   
         parent::__construct(); 
+        $this->userMgr = new UserManager; 
+        $this->avisMngr = new AvisManager; 
+        $this->hotelMngr = new HotelManager; 
     }
     
     /** 
@@ -47,7 +58,8 @@ class Hotel extends Pages{
     * 	<li><strong>Attribut : email</strong> :    email de l'hôtel</li>
     * </ul>
     * <p>Elle envoie un tableau de noms d'hôtels à Smarty pour qu'ils s'affichent dans la barre de navigation</p>
-    * @param string $page 
+    * <p>Elle prefixe l'object du l'email et son contenue.</p>
+    * @param  $page 
     * @return array Nom de l'image appartenant à l'hôtel 
     */
     public function view($page){
@@ -70,12 +82,56 @@ class Hotel extends Pages{
         $this->_data['email']       = $this->email;
         $this->_data['ville']       = $this->ville;
 
-        // pour la couleur du texte de la barre de navigation
         $this->_data['color_link_nav'] = 'black'; 
         $this->_data['meta_title']     = 'Hotel '.lcfirst($page); 
         $this->_data['name_file']      = lcfirst($page); 
+        $this->_data['object_prefixed']  = "Hotel Ardis ".$page; 
+        $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
+
 
         $this->display(lcfirst($page).'.tpl');
     }
 
+
+
+    public function sendMail(){
+        $this->_data['color_link_nav'] = 'black'; 
+        $this->_data['meta_title']     = "Envoie d'email"; 
+        $this->_data['name_file']      = "result_email"; 
+
+
+        if($this->request->getMethod() === 'post'){
+            if($this->userMgr->isMatchForSendMail($this->request->getPost())){
+                $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
+                
+                $this->objEmail->setFrom('ardis.hotel68@gmail.com', 'Hotel Ardis'); 
+                $this->objEmail->setSubject(esc($this->request->getVar('subject'))); 
+                $this->objEmail->setMessage(esc($this->request->getVar('message'))); 
+                if ($this->objEmail->send()){
+                    $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
+                }else{
+                    $this->_data['msg_error'] = 'Veuillez verifier votre destinateur'; 
+                }
+            }else{
+                $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
+            }
+        }
+        $this->display('result_email.tpl'); 
+    }
+
+
+    /** 
+    * @brief Méthode qui ajoute une avis tout en donner le type de message est son contenue
+    * @details
+    * <p>Elle récupére les données de l'id de l'hotel grâce à la méthode getNameById de la classe HotelManager</p>
+    * <p>Elle envoie un tableau de message d'erruer/de succes à Smarty pour qu'ils s'affichent dans la page d'hotel</p>
+    * <p>Elle ajoute l'avis si il passe les test de securiter</p>
+    * @param  $page 
+    */
+    public function addAvis($page){
+        $id_hotel = $this->hotelMngr->getNameById($page); 
+        $error_or_success = $this->avisMngr->addMngrAvis($this->request, $id_hotel);
+        $this->_data[$error_or_success[0]] = $error_or_success[1];
+        $this->view($page); 
+    }
 }

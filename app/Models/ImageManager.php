@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;
-define('MAX_SIZE', 300_000); // constante pour la taille maximum des fichier
+use App\Libraries\HuntError; 
+define('MAX_SIZE', 500_000); // constante pour la taille maximum des fichier
 /**
 * @file ImageManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
@@ -44,22 +45,39 @@ class ImageManager{
     * <p>Si l'image passe les test de verification, le nouveaux nom de l'image serais ajouter a la base de donner</p>
     * @return array Contient erreur lier au televersement d'image de profile 
     **/
-    public function management_uplaod_img($img_file, string $pseudo){
+    public function updateProfileOrError($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
-        if (! empty($img_pre_uplaoded->getFileName())){
-            $error = $this->error->huntUplaodedFile($img_pre_uplaoded, MAX_SIZE, $this->white_list); 
-            if(count($error) === 0 ){
-                $name_rand_file = $img_pre_uplaoded->getRandomName(); // nom aleatoire 
-                $img_pre_uplaoded->move('assets/Images/profile/',$name_rand_file); //deplace le fichier 
-                $this->imgModel->setImgProfile($pseudo, $name_rand_file); 
+        $name_file_or_error = $this->imageIsmatches($img_pre_uplaoded, 'assets/Images/profile/'); 
+        if(is_string($name_file_or_error)){
+            $this->imgModel->setImgProfile($pseudo, $name_file_or_error); 
+        }else{
+            return $name_file_or_error; 
+        }
+    }
+
+    private function imageIsmatches($objFile, string $target_folder){
+        if(! empty($objFile->getFileName()) ){
+            $error = $this->error->huntUplaodedFile($objFile, MAX_SIZE, $this->white_list); 
+            if(empty($error)){
+                $name_rand_file  = $objFile->getRandomName(); 
+                $objFile->move($target_folder, $name_rand_file); 
+                return $name_rand_file; 
             }else{
                 return $error; 
             }
         }
     }
 
+    public function imgAvisIsMatches($objFile){
+        $picture = $objFile->getFile('photo_avis_clients'); 
+        $name_file_or_error = $this->imageIsmatches($picture, 'assets/Images/avis/'); 
+        if(is_array($name_file_or_error)){
+            return $name_file_or_error; 
+        }
+    }
+
     /**
-    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chasue hotels 
+    * @brief Methode qui retournez un tableaux associatif de donner pour les image de chaque hotel
     * @details 
     * <p>Cette methode a besoin d'un tableaux de nom d'hotels pour avoir l'id est recuperer les image de cette hotels</p>
     * <p>Le nombre d'image maximum pour chaque hotel est de 4</p>

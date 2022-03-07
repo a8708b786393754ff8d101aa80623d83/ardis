@@ -7,6 +7,7 @@
 }
 
 body {
+    background-repeat: no-repeat;
     background-color: #F1F1F2;
 }
 
@@ -23,8 +24,7 @@ body {
     position: relative;
     left: 65px;
 }
-
-.breadcrumb li:first-child {
+.breadcrumb p{
     right: 12px;
     position: relative;
 }
@@ -33,57 +33,45 @@ body {
     text-decoration: none;
 }
 
-
-/* titre  */
-article h1{
+/* ajustement de l'image  */
+.image_Sampatico{
     position: relative;
-    left: 800px;
-    width: 300px;
-    top: 80px;
+    left: 200px;
+    top: 100px;
 }
-/* ajustement de l'image */
-.image_suisse{
-    position: relative;
-    left: 130px;
-}
-/* position de la div */
+/* positionnement du contenus principale*/
 article .row {
     width: 500px;
     height: 100px;
     position: relative;
-    bottom: 220px;
-    left: 800px;
+    bottom: 630px;
+    left: 850px;
 }
 
-/* postion de l'image  */
-.container-fluid > img{
-    position: relative;
-    top: 100px;
-    width: 600px;
- }
-
-/* reglage de l'icone gps*/
-
-article .gps_icone{
-    position: relative;
-    bottom: 5px;
-}
-
-/* reglage  de la vilee de l'hotel*/
 article .city_hotel {
     position: relative;
     bottom: 25px;
     left: 25px;
 }
 
-/* positionnement des etoile */
+
+/* positionnement des etoile**/
 article .start {
     position: relative;
-    font-size: 30px;
     bottom: 40px;
+}
+
+article .start i {
+    font-size: 30px;
     color: yellow;
 }
 
+.share_email{
+    position: relative;
+    left: 800px;
+    top: 200px;
+}
+/* placement du button reserver est galerie  */
 article .galerie_photo,
 .reserver-btn {
     background-color: #33939A;
@@ -92,12 +80,67 @@ article .galerie_photo,
     width: 150px;
 }
 
-
+.milieu{
+    position: relative;
+    top: 250px;
+    right: 80px;
+}
 /* foooter */
+
 footer {
     position: relative;
-    top: 291px;
     background: #707070! important;
-    height: 82px;
+    height: 66px;
+    top: 180px;
 }
 
+
+/* partie responsive   */
+@media screen and (max-width: 1280px){
+
+    .navbar{
+        position: relative;
+        width: 1350px;
+        font-size: xx-large;
+
+    }
+
+    /* localisation  */
+    .breadcrumb{
+        font-size:xx-large;
+        /* width: 10px; */
+        
+    }
+     /* titre avec les note  */
+    .description{
+        position: relative;
+        right: 450px;
+        top: 30px;
+        font-size: xx-large;
+    }
+
+    /* positionnement image  */
+
+    .image_hotel{
+        position: relative;
+        top: 400px;
+        left: 400px;
+    }
+
+    .localisation_hotel, .presentation{
+        font-size:40px;
+        text-align: center;
+        position: relative;
+        top: 900px;
+        right: 400px;
+        width: 1000px;
+    }
+
+    footer{
+        font-size:xx-large; 
+        position: relative;
+        height: 150px;
+        top: 2130px;
+        width: 1500px;
+    }
+}

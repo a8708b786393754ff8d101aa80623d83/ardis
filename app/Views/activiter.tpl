@@ -1,21 +1,28 @@
 {extends file='base/layout.tpl'}
 {block name=content}
+<a href="{base_url('activiter/archive')}" class='btn btn-primary'>Activités archiver</a>
 <section>
   {foreach from=$activiter item=item key=key}
     {for $foo=0 to count($item) -1}
         <div class="contanier">
           <div class="row">
-              <h2 class="text-center">{$item[$foo]->nom_hotel}</h2>
-              <h4 class='text-center'>{$item[$foo]->nom}</h4>
-              <img src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item[$foo]->image}" alt="">
-              <p>Pays: {$item[$foo]->loca}</p>
-              <p>Date: {$item[$foo]->date}</p>
-              <p>Description: {$item[$foo]->descri}</p>
-              <p>Tarif par personne: <strong>{$item[$foo]->tarif}€</strong></p>
+            <div class="card" style="width: 18rem;">
+              <img src="{base_url('assets/Images/activiter')|cat:'/'|cat:$item[$foo]->image}" alt="img" class='card-img-top'>
+                <div class="card-body">
+                <h5 class="text-center card-title">Hôtel {$item[$foo]->nom_hotel|lower}</h5>
+                <h6 class='text-center'>{$item[$foo]->nom}</h6>
+                <ul>
+                  <li>Localisation: {$item[$foo]->loca}</li>
+                  <li>Date: {$item[$foo]->date}</li>
+                  <li>Tarif par personne: <strong>{$item[$foo]->tarif}€</strong></li>
+                </ul>
+                <p class="card-text">{$item[$foo]->descri}</p>
+                <a href="{base_url('hotel')|cat:'/'|cat:{$item[$foo]->nom_hotel}}" class="btn btn-primary">Voir l'hotel</a>
+              </div>
             </div>
+          </div>
         </div>
       {/for}
   {/foreach}
 </section>
-<a href="{base_url('activiter/archive')}">Les activiter archiver</a>
 {/block}

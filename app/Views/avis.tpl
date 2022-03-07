@@ -1,16 +1,18 @@
 {extends file='base/layout.tpl'}
 {block name=content}
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="{base_url('assets/')}" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Partager</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Repondre</a>
-  </div>
-</div>
+  {foreach from=$avis item=item key=key}
+    <h2>Hotel {$key}</h2>
+    {for $foo=0 to count($item)-1}
+      <div class="card"  style="width: 25rem;">
+        <img class="card-img-top" src="{base_url('assets/Images/avis')|cat:'/'|cat:$item[$foo]->avis_nomphoto}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{$item[$foo]->avis_titre}</h5>
+          <p class="card-text">{$item[$foo]->avis_cont}</p>
+        </div>
+        <div class="card-body">
+          <a href="{base_url('hotel')|cat:'/'|cat:$item[$foo]->hotel_nom}" class="card-link btn btn-primary">Voir l'hotel</a>
+        </div>
+      </div>
+    {/for}
+  {/foreach}
 {/block}

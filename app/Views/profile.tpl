@@ -33,6 +33,11 @@
                             </p>
                             <p>Entrez votre nouveaux mot de passe: <input type="password" name="new_password"> </p>
                             <p>Confirmez votre nouveaux mot de passe: <input type="password" name="new_password_confirm"> </p>
+                            {if $reservation_achieve neq false}
+                                {for $i=0 to count($reservation_achieve) -1 }
+                                    <p>Vous avez effectuer {$reservation_achieve[$i]->nb_reservation} reservation dans l'hotel ardis {$reservation_achieve[$i]->hotel_nom}.</p>
+                                {/for}
+                            {/if}
                             <input type="submit" value="Valider les modification" class='btn-primary submit-btn '>
                         </form>
                         <form action="{base_url('/customers/delete_profile/')}" method="POST">
