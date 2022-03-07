@@ -33,6 +33,7 @@ class Hotel extends Pages{
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
+    * <p>Elle instancie l'objet UserManager, AVisManager, HotelManager </p>
     **/
     public function __construct(){   
         parent::__construct(); 
@@ -57,6 +58,7 @@ class Hotel extends Pages{
     * 	<li><strong>Attribut : email</strong> :    email de l'hôtel</li>
     * </ul>
     * <p>Elle envoie un tableau de noms d'hôtels à Smarty pour qu'ils s'affichent dans la barre de navigation</p>
+    * <p>Elle prefixe l'object du l'email et son contenue.</p>
     * @param  $page 
     * @return array Nom de l'image appartenant à l'hôtel 
     */
@@ -99,7 +101,7 @@ class Hotel extends Pages{
 
 
         if($this->request->getMethod() === 'post'){
-            if($this->userMgr->verifSendMail($this->request->getPost())){
+            if($this->userMgr->isMatchForSendMail($this->request->getPost())){
                 $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
                 
                 $this->objEmail->setFrom('ardis.hotel68@gmail.com', 'Hotel Ardis'); 

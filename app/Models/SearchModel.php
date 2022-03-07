@@ -4,13 +4,6 @@ use CodeIgniter\Model;
 
 class SearchModel extends Model{
     public string $element; 
-   
-    protected $table         = 'clients';
-    protected $primaryKey    = 'client_id';
-    protected $allowedFields = [ "client_nom","client_prénom",
-                                "client_adresse","client_cp" ,"client_ville" ,"client_pays" ,"client_email",
-                                "client_tel", "compte_client","resrv_client","client_avis"
-                                ];
     
     public function __construct(string $element_search){
         parent::__construct();
@@ -44,7 +37,7 @@ class SearchModel extends Model{
                                 ON activites.hotel_id = hotels.hotel_id
                                 WHERE activ_loca LIKE '%".$this->element."%'
                                 OR activ_nom LIKE '%".$this->element."%'
-                                OR activ_descri LIKE '%".$this->element."%'  
+                                OR activ_descri LIKE '%".$this->element."%'
                                 AND YEAR(activ_date) = YEAR(CURRENT_DATE) 
                                 ")->getResult();
     }

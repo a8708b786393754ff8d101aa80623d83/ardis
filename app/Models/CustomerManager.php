@@ -1,5 +1,7 @@
 <?php 
- namespace App\Models; 
+namespace App\Models; 
+use App\Libraries\HuntError; 
+
 /**
 * @file CustomerManager.php
 * @author Ayoub Brahim

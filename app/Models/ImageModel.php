@@ -48,18 +48,18 @@ class ImageModel extends Model{
     }
     
 
-    // ? Recuperer tout les nom des images 
     public function getAllImgNom(){
+        //  Recuperer tout les nom des images 
 
     }
 
-    // ? Recupere lèid a apartir du nom de l'image 
     public function getIdImgByName(string $name_img){
+        // Recupere lèid a apartir du nom de l'image 
 
     }
 
-    // ? Recuperer l'image par uen date 
     public function getImgDate(string $date_post){
+        //  Recuperer l'image par uen date 
         
     }
 
@@ -82,7 +82,7 @@ class ImageModel extends Model{
     }
 
     /**
-    * @brief Methode qui supprime ine image
+    * @brief Methode qui supprime une image
     * @details
     *<p>Elle forge la requete pour supprimer une image a partir de l'id de l'image</p>
     * @param string $id 
