@@ -3,7 +3,7 @@ namespace App\Models;
 define('MAX_ACTIVITER_SHOW', 4); 
 /**
 * @file ActiviterManager.php
-* @author Ayoub Brahim <ayoubbrahim68@gmail.com>, Arthur Kurt
+* @author Ayoub Brahim <ayoubbrahim68@gmail.com>, Arthur Kretz <kretz.arthur68000@gmail.com>
 * @date 27/02/2022
 * @brief Manager pour les activités
 *  @details 
