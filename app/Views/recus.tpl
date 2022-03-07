@@ -26,8 +26,13 @@
                                                 <br> Hotel de séjours : {$hotel_sejour}
                                                 <br> Date de séjour : {$startdate} / {$enddate}
                                                 <br> Durée du séjour : {$durer} jours
-                                                <br> Nombr de chambre loué : {$nb_lit}
-                                                <br> Numero chambre : {$nb_chambre}
+                                                {if is_array($num_chamb)}
+                                                    {foreach from=$num_chamb item=item}
+                                                        <br> Numero chambre : {$item->chamb_num}    
+                                                    {/foreach}
+                                                {else}
+                                                        <br> Numero chambre : {$num_chamb[0]->chamb_num}    
+                                                {/if}
                                             </td>
                                             </tr>
                                             <tr>
@@ -40,7 +45,7 @@
                                                             </tr>
                                                             <tr>
                                                         </tr>
-                                                        {if $activiter neq "non"}
+                                                        {if $activiter neq 'non'}
                                                         <tr>
                                                             <td>Activité</td>
                                                             <td class="alignright">{$activiter_price} €</td>
@@ -48,7 +53,7 @@
                                                         {/if}
                                                        
                                                         <tr class="total">
-                                                            <td class="alignright">Prix total - 30% du prix total </td>
+                                                            <td class="alignright">Prix total: <span>{$price_total} €</span> </td>
                                                         </tr>
                                                     </tbody></table>
                                                 </td>
@@ -60,7 +65,6 @@
                         </td>
                     </tr>
                 </tbody></table>
-               
         </td>
         <td></td>
     </tr>
@@ -70,7 +74,8 @@
     <div class='row'>
         <div class="alert alert-danger" role="alert">
             {foreach from=$msg_error item=item}
-                {$item}
+                {$item}.
+                <br>
             {/foreach}
         </div>
     </div>
@@ -81,8 +86,9 @@
         <div class='row'>
             <div class="alert alert-danger" role="alert">
                 Vous devez vous connecter pour effectuer une reservation.
+                <a href="{base_url('visitor/login')}" class="btn btn-primary">Se connecter</a>
+                <a href="{base_url('visitor/create_account')}" class="btn btn-primary">Crée un compte</a>
             </div>
-            <a href="{base_url('visitor/login')}" class="btn btn-primary">login</a>
         </div>
     </div>
 {/if}

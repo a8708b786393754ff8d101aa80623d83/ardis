@@ -52,22 +52,20 @@
               <div class="card" style="width: 18rem;">
                 <img src="http://localhost/ardis/public/assets/Images/activiter/${resp[i].image}" alt="img" class='card-img-top'>
                   <div class="card-body">
-                  <h5 class="text-center card-title">Hotel ${resp[i].nom_hotel}</h5>
-                  <h6 class='text-center'>${resp[i].nom}</h6>
-                  <ul>
-                    <li>Pays: ${resp[i].loca}</li>
-                    <li>Date: ${resp[i].date}</li>
-                    <li>Tarif par personne: <strong> ${resp[i].tarif}€</strong></li>
-                  </ul>
-                  <p class="card-text">${resp[i].descri}</p>
-                  <a href="http://localhost/ardis/public/hotel/${resp[i].nom_hotel}" class="btn btn-primary">Voir l'hotel</a>
-                  <input type='checkbox' name='activiter' value='${resp[i].activID}'>Ajouter l'activités</a>
+                    <h5 class="text-center card-title">Hotel ${resp[i].nom_hotel}</h5>
+                    <h6 class='text-center'>${resp[i].nom}</h6>
+                    <ul>
+                      <li>Pays: ${resp[i].loca}</li>
+                      <li>Date: ${resp[i].date}</li>
+                      <li>Tarif par personne: <strong> ${resp[i].tarif}€</strong></li>
+                    </ul>
+                    <p class="card-text">${resp[i].descri}</p>
+                    <a href="http://localhost/ardis/public/hotel/${resp[i].nom_hotel}" class="btn btn-primary">Voir l'hotel</a>
+                    <input type='checkbox' name='activiter' value='${resp[i].activID}'>Ajouter l'activités</a>
                   </div>
-              </div>
-              `);
-            }
-      })
-    });
+              </div>`)}
+        })
+      });
     $("#oui").click(function(){
       $("#activHide").show()
     })

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-06 14:41:16
+/* Smarty version 4.0.4, created on 2022-03-07 14:51:10
   from '/var/www/html/ardis/app/Views/recus.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62251c6c636966_04402855',
+  'unifunc' => 'content_6226703e17d107_80432962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0de7461e2374045c3f2a83650cb73952c1372707' => 
     array (
       0 => '/var/www/html/ardis/app/Views/recus.tpl',
-      1 => 1646599222,
+      1 => 1646686268,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62251c6c636966_04402855 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6226703e17d107_80432962 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_198739958762251c6c631bc9_25742548', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1734458166226703e175dc2_80341848', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_198739958762251c6c631bc9_25742548 extends Smarty_Internal_Block
+class Block_1734458166226703e175dc2_80341848 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_198739958762251c6c631bc9_25742548',
+    0 => 'Block_1734458166226703e175dc2_80341848',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -73,10 +73,22 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
                                                 <br> Durée du séjour : <?php echo $_smarty_tpl->tpl_vars['durer']->value;?>
  jours
-                                                <br> Nombr de chambre loué : <?php echo $_smarty_tpl->tpl_vars['nb_lit']->value;?>
-
-                                                <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['nb_chambre']->value;?>
-
+                                                <?php if (is_array($_smarty_tpl->tpl_vars['num_chamb']->value)) {?>
+                                                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['num_chamb']->value, 'item');
+$_smarty_tpl->tpl_vars['item']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->do_else = false;
+?>
+                                                        <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['item']->value->chamb_num;?>
+    
+                                                    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                                <?php } else { ?>
+                                                        <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['num_chamb']->value[0]->chamb_num;?>
+    
+                                                <?php }?>
                                             </td>
                                             </tr>
                                             <tr>
@@ -89,7 +101,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                                                             </tr>
                                                             <tr>
                                                         </tr>
-                                                        <?php if ($_smarty_tpl->tpl_vars['activiter']->value != "non") {?>
+                                                        <?php if ($_smarty_tpl->tpl_vars['activiter']->value != 'non') {?>
                                                         <tr>
                                                             <td>Activité</td>
                                                             <td class="alignright"><?php echo $_smarty_tpl->tpl_vars['activiter_price']->value;?>
@@ -98,7 +110,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                                                         <?php }?>
                                                        
                                                         <tr class="total">
-                                                            <td class="alignright">Prix total - 30% du prix total </td>
+                                                            <td class="alignright">Prix total: <span><?php echo $_smarty_tpl->tpl_vars['price_total']->value;?>
+ €</span> </td>
                                                         </tr>
                                                     </tbody></table>
                                                 </td>
@@ -110,7 +123,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         </td>
                     </tr>
                 </tbody></table>
-               
         </td>
         <td></td>
     </tr>
@@ -126,7 +138,8 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 $_smarty_tpl->tpl_vars['item']->do_else = false;
 ?>
                 <?php echo $_smarty_tpl->tpl_vars['item']->value;?>
-
+.
+                <br>
             <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -139,9 +152,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <div class='row'>
             <div class="alert alert-danger" role="alert">
                 Vous devez vous connecter pour effectuer une reservation.
+                <a href="<?php echo base_url('visitor/login');?>
+" class="btn btn-primary">Se connecter</a>
+                <a href="<?php echo base_url('visitor/create_account');?>
+" class="btn btn-primary">Crée un compte</a>
             </div>
-            <a href="<?php echo base_url('visitor/login');?>
-" class="btn btn-primary">login</a>
         </div>
     </div>
 <?php }

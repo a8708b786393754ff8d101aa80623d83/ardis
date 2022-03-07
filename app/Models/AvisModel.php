@@ -42,6 +42,7 @@ class AvisModel extends Model{
                         FROM avis
                         INNER JOIN hotels ON hotel_id=avis_hotel 
                         ORDER BY avis_date ASC 
+                        LIMIT 4
                         ")->getResult();
     }
 
@@ -54,9 +55,7 @@ class AvisModel extends Model{
     * @return string la note 
     * @return string l'id de l'hotel
     */
-
     public function setAvis(string $title, string $content, string $note, string $id_hotel, string $name_img=null){
-
         $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,avis_note, avis_hotel, avis_nomphoto)
                         VALUES(?, ?, CURRENT_DATE, ?, ?, ?)", [$title, $content, $note, $id_hotel, $name_img]);
     }

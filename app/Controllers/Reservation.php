@@ -23,7 +23,7 @@ class Reservation extends Pages{
     * @brief Méthode constructrice 
     * @details 
     * <p>Cette méthode appelle la méthode constructrice de la classe Pages</p>
-    * <p>Elle instancie la classe ReservationManager</p>
+    * <p>Elle instancie la classe ReservationManager est ActiviterManager</p>
     **/
     public function __construct(){
         parent::__construct();
@@ -52,23 +52,29 @@ class Reservation extends Pages{
     * <p>Cette méthode passe les information du client est les information de la reservation a smarty</p>
     **/
     public function recus(){
-        $this->_data['name_file']      = 'validation_reservation';
-        $this->_data['meta_title']     = 'Recus de votre reservation'; 
-        
-        $resp = $this->reservMngr->validateReservation($this->request->getPost(), $this->session->get('pseudo'));
-        $this->_data[$resp[0]]       = $resp[1]; 
-        $this->_data['nom']          = $this->session->get('nom');
-        $this->_data['prenom']       = $this->session->get('prenom');
-        $this->_data['startdate']    = $this->request->getVar('startdate');
-        $this->_data['enddate']      = $this->request->getVar('enddate');
-        $this->_data['durer']        = $this->reservMngr->getResultDateReservation($this->request->getVar('startdate'), $this->request->getVar('enddate'));
-        $this->_data['hotel_sejour'] = $this->request->getVar('hotel_destination');
-        $this->_data['nb_lit']       = $this->request->getVar('nbr_lit');
-        $this->_data['nb_chambre']   = $this->reservMngr->getChambNum($this->session->get('id')); 
-        
-        $this->_data['activiter']         = $this->request->getVar('activiter');
-        $this->_data['activiter_price']    = $this->activMngr->getPriceActiv($this->_data['activiter']); 
-        // ! voir ce qui manque a afficher
-        $this->display('recus.tpl'); 
+        $this->_data['name_file']     = 'validation_reservation';
+        $this->_data['meta_title']    = 'Recus de votre reservation';
+
+        // le bloc try catch c'est pour eviter les erruer si il est pas connecter. 
+        try{
+            $resp = $this->reservMngr->validateReservation($this->request->getPost(), $this->session->get('pseudo'));
+            $this->_data[$resp[0]]       = $resp[1]; // type de message est son contenue
+            $this->_data['nom']          = $this->session->get('nom');
+            $this->_data['prenom']       = $this->session->get('prenom');
+
+            $this->_data['startdate']    = $this->request->getVar('startdate');
+            $this->_data['enddate']      = $this->request->getVar('enddate');
+            $this->_data['durer']        = $this->reservMngr->getResultDateReservation($this->request->getVar('startdate'), $this->request->getVar('enddate'));
+            $this->_data['hotel_sejour'] = $this->request->getVar('hotel_destination');
+            $this->_data['num_chamb']    = $this->reservMngr->getChambNum($this->session->get('id'), $this->_data['startdate']); 
+            
+            $this->_data['activiter']         = $this->request->getVar('activiter');
+            $this->_data['activiter_price']   = $this->activMngr->getPriceActiv($this->_data['activiter']); 
+            
+            $this->_data['price_total']  = $this->reservMngr->getResultTotalReservation($this->_data['durer'], $this->_data['activiter_price'], $this->request->getVar('hotel_destination')); 
+        }catch (\Throwable $th) {
+        }finally{
+            $this->display('recus.tpl');    
+        }
     }
 }

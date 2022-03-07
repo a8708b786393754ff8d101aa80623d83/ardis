@@ -26,12 +26,16 @@ class ReservationModel extends Model{
     }
 
     public function setReservationWithouthActiv(string $startdate, string $enddate, string $client_id, string $chamb_reserv, string $chamb_id, string $hotel_id){
-        $this->db->query('INSERT INTO  reservations (reserv_datedeb,reserv_datefin, client_id,
-                                    chamb_reserv,chamb_id,hotel_id)
+        $this->db->query('INSERT INTO  reservations (reserv_datedeb,reserv_datefin, client_id,chamb_reserv,chamb_id,hotel_id)
                           VALUES (?, ?, ?, ?, ?, ?)', 
                                 [$startdate, $enddate, $client_id, $chamb_reserv, $chamb_id, $hotel_id]);
     }
 
+    public function setChambNoDisponible(string $chamb_id){
+        $this->db->query('UPDATE chambres 
+                        SET chamb_dispo = 0 
+                        WHERE chamb_id = ?', [$chamb_id]); 
+    }
 
     public function getAllData(string $hotel_name, int $nb_lit):array {
         return $this->db->query("SELECT chambres.hotel_id AS hotel_id, chamb_num,  nbr_lit , activ_id, chamb_id
@@ -44,12 +48,13 @@ class ReservationModel extends Model{
                                 LIMIT 1", [$hotel_name, $nb_lit])->getResult(); 
     }
 
-    public function getChambNumByIdClient(string $id_client){
+    public function getChambNumByIdClient(string $id_client, string $date_deb_reservation){
         return $this->query('SELECT chamb_num 
                             FROM chambres  
                             INNER JOIN reservations ON reservations.chamb_id = chambres.chamb_id 
                             INNER JOIN clients ON clients.client_id=reservations.client_id 
-                            WHERE clients.client_id = ?', [$id_client])->getResult(); 
+                            WHERE clients.client_id = ? AND reserv_datedeb = ?',
+                            [$id_client, $date_deb_reservation])->getResult(); 
     }
 
     public function getUserReservation(string $name_client){

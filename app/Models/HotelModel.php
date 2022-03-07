@@ -42,7 +42,9 @@ class HotelModel extends Model{
         return $this->db->query(
                 'SELECT hotel_image,hotel_nom,hotel_price, hotel_ville
                 FROM hotels
-                WHERE hotel_price < (SELECT MAX(hotel_price) FROM hotels)
+                WHERE hotel_price < (
+                                    SELECT MAX(hotel_price) 
+                                    FROM hotels)
                 ORDER BY hotel_price 
                 LIMIT 3'
                 )->getResult(); 
@@ -50,10 +52,10 @@ class HotelModel extends Model{
 
     /**
     * @brief Methode qui retourne  les information lieer a l'hotel specifier    
-    * @param string $hotel
     * @details 
     * <p>La methode contient la requete SQL pour recuperer l'image, nom, prix, ville note, contenue, email de l'hotel </p>
     * <p> Le premier caractere est mis en majiscule</p>
+    * @param string $hotel
     * @return array Contient les donner de l'hotel
     **/
     public function getAll(string $hotel):array {
@@ -75,12 +77,21 @@ class HotelModel extends Model{
 
     /**
     * @brief Methode qui retourne l'id de l'hotel selon son nom    
-    * @param string $name_hotel
     * @details 
     * <p>La methode contient la requete SQL qui recuperer l'id de l'hotel  </p>
+    * @param string $name_hotel
     * @return array l'id de l'hotel 
     **/
     public function getIdByNameHotel(string $name_hotel):array {
-        return $this->db->query('SELECT  hotel_id FROM hotels WHERE hotel_nom=?', [$name_hotel])->getResult(); 
+        return $this->db->query('SELECT  hotel_id 
+                                FROM hotels 
+                                WHERE hotel_nom=? 
+                                LIMIT 1', [$name_hotel])->getResult(); 
+    }
+
+    public function getPriceHotelByName(string $name){
+        return $this->db->query('SELECT hotel_price AS price 
+                                FROM hotels 
+                                WHERE hotel_nom = ?', [$name])->getResult(); 
     }
 }

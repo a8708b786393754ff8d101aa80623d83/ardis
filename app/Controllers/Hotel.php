@@ -82,9 +82,9 @@ class Hotel extends Pages{
         $this->_data['email']       = $this->email;
         $this->_data['ville']       = $this->ville;
 
-        $this->_data['color_link_nav'] = 'black'; 
-        $this->_data['meta_title']     = 'Hotel '.lcfirst($page); 
-        $this->_data['name_file']      = lcfirst($page); 
+        $this->_data['color_link_nav']   = 'black'; 
+        $this->_data['meta_title']       = 'Hotel '.lcfirst($page); 
+        $this->_data['name_file']        = lcfirst($page); 
         $this->_data['object_prefixed']  = "Hotel Ardis ".$page; 
         $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
 
@@ -121,7 +121,7 @@ class Hotel extends Pages{
 
 
     /** 
-    * @brief Méthode qui ajoute une avis tout en donner le type de message est son contenue
+    * @brief Méthode d'ajout d'avis 
     * @details
     * <p>Elle récupére les données de l'id de l'hotel grâce à la méthode getNameById de la classe HotelManager</p>
     * <p>Elle envoie un tableau de message d'erruer/de succes à Smarty pour qu'ils s'affichent dans la page d'hotel</p>
