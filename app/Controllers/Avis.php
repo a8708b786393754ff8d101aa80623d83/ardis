@@ -37,7 +37,7 @@ class Avis extends Pages{
         $this->_data['color_link_nav'] = 'dark';
         $this->_data['name_file']      = 'avis';
         $this->_data['meta_title']     = 'Avis'; 
-        $this->_data['avis']           = $this->avisMngr->getAllData(); 
+        $this->_data['avis']           = $this->avisMngr->getAllData();
         $this->display('avis.tpl');
     }
 }

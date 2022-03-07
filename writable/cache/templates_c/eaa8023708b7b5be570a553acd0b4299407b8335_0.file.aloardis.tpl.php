@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 02:41:46
+/* Smarty version 4.0.4, created on 2022-03-07 07:18:57
   from '/var/www/html/ardis/app/Views/aloardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6225c54a9408e2_12205468',
+  'unifunc' => 'content_62260641512a67_21198921',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eaa8023708b7b5be570a553acd0b4299407b8335' => 
     array (
       0 => '/var/www/html/ardis/app/Views/aloardis.tpl',
-      1 => 1646505219,
+      1 => 1646659037,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6225c54a9408e2_12205468 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62260641512a67_21198921 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3479679076225c54a92b9b8_51897286', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12285418236226064150c612_58888296', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_3479679076225c54a92b9b8_51897286 extends Smarty_Internal_Block
+class Block_12285418236226064150c612_58888296 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_3479679076225c54a92b9b8_51897286',
+    0 => 'Block_12285418236226064150c612_58888296',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -96,7 +96,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 " class=" btn galerie_photo ">Galerie_photo</a>
                 </div>
                  <div class="presentation ">
-            <p>Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.</p>
+            <p>Pour les activités, nous vous proposerons une Visite de L’île de Maui avec notre guide.</p>
             <a href="<?php echo base_url('reserver');?>
 " class=" btn reserver-btn  ">Réserver</a>
         </div>

@@ -28,6 +28,11 @@ h2{
     left: 52rem;
     width: 300px;
 }
+.star{
+    position: relative;
+    font-size: 20px;
+    color: yellow;
+}
 
 /* foooter */
 

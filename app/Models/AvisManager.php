@@ -52,14 +52,9 @@ class AvisManager{
             $data = $objRequest->getPost();
             $resp_upload_file = $this->imgMngr->imgAvisIsMatches($objRequest); 
             if(! is_array($resp_upload_file)){
-                $this->avisModel->setAvis($data['title'], $data['message'], $data['note'], $id_hotel); 
-                if(! empty($resp_upload_file)){
-                    $this->imgModel->setAvisPhoto($resp_upload_file, $id_hotel);
-                }
+                $this->avisModel->setAvis($data['title'], $data['message'], $data['note'], $id_hotel, $resp_upload_file); 
                 return ['msg_success_avis', 'Votre avis a ete pris en compte.'];
-            }else{
-                return ['msg_error_avis', $resp_upload_file]; 
-            }
+            }return ['msg_error_avis', $resp_upload_file]; 
         }
     }
 }
