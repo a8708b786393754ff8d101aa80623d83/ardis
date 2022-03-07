@@ -10,12 +10,13 @@
     <link rel="stylesheet " href="{base_url('assets/css/bootstrap.css')}">
     <link rel="stylesheet" href="{base_url('assets/css/'|cat:$name_file|cat:'.css')}">
     <link rel="stylesheet" href="{base_url('assets/Fontawesome/css/font-awesome.min.css')}">
+    <link rel="icon" type="image/png" href="{base_url('assets/Images/Objet dynamique vectoriel.webp')}" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
     <title>{$meta_title}</title>
 </head>
 {if $name_file eq 'index'}
 <body style="background-image: url({base_url('assets/Images/background.webp')})">
-{else}
+{else}  
 <body>
 {/if}
     <!-- hedear -->
@@ -51,13 +52,13 @@
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('activiter/')}">Nos activités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('restaurant/')}">Restaurants</a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('restaurant/')}">Restaurant</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-{$color_link_nav}" href="{base_url('galerie_photo')}">Galerie photo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-{$color_link_nav}" href="{base_url('avis')}">Les avis </a>
+                        <a class="nav-link text-{$color_link_nav}" href="{base_url('avis')}">Avis </a>
                     </li>
                     {if isset($smarty.session.pseudo)}
                         <li class="nav-item">

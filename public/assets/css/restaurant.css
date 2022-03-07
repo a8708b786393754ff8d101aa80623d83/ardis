@@ -47,9 +47,9 @@ h1{
 
 
 
-/* image menu enfant  */
-.menu_enfant_image{
-    position: relative;
+
+.enfant_image{
+    position: center;
     left: 700px;
     top: 70px;
 }
@@ -61,8 +61,10 @@ h1{
     width: 500px;
 }
 .img{
-    position: relative;
-    left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+    
 }
 /* titre de menu enfant  */
 .menu_enfant_titre{
