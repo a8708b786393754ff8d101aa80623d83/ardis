@@ -30,7 +30,7 @@
                     <a href="{base_url('galerie_photo')}" class=" btn galerie_photo ">Galerie_photo</a>
                 </div>
                  <div class="presentation ">
-            <p>Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.</p>
+            <p>Pour les activités, nous vous proposerons une Visite de L’île de Maui avec notre guide.</p>
             <a href="{base_url('reserver')}" class=" btn reserver-btn  ">Réserver</a>
         </div>
             </div>

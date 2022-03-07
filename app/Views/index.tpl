@@ -6,15 +6,15 @@
             <h1 class="text-center text-white">Découvrez nos hôtels <br> sur tout les climats...</h1>
             <form class="form-search form-inline" method='POST' action='{base_url('/pages/search')}'>
                 <div class="input-append text-black">
-                    <input type="text" name='input' placeholder="Chercher un hotel, une activiter..." class="form-control"/>
-                    <input type="submit" class="btn btn-dark" value='Search'/>
+                    <input type="text" name='input' placeholder="Chercher un hotel, une activité" class="form-control"/>
+                    <input type="submit" class="btn btn-dark" value='Rechercher'/>
                 </div>
             </form>
         </div>
     </div>
     <i class="fas fa-arrow-down"></i>
     <section>
-        <h2 class="text-center presentation_hotel">Le fleuron de nos hôtels aux meilleurs prix</h2>
+        <h2 class="text-center presentation_hotel"> Nos hôtels aux meilleurs prix</h2>
         <div class="card-group">
         {foreach from=$element  key=key item=item}
             <div class="card">
