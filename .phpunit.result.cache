@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Warning":6,"App\\CustomersTest::testLogout":4},"times":{"ExampleDatabaseTest::testModelFindAll":0.012,"ExampleDatabaseTest::testSoftDeleteLeavesRow":0.003,"ExampleSessionTest::testSessionSimple":0,"HealthTest::testIsDefinedAppPath":0,"HealthTest::testBaseUrlHasBeenSet":0.001,"Warning":0.001,"App\\CustomersTest::testLogout":0.011}}

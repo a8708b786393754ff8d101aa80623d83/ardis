@@ -1,3 +1,6 @@
+Customers (App\Customers)
+ [ ] Logout
+
 Example Database
  [x] Model find all
  [x] Soft delete leaves row

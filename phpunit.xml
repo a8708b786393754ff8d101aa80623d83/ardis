@@ -31,7 +31,7 @@
 			<directory>./tests</directory>
 		</testsuite>
 		<testsuite name="myTest">
-			<directory suffix='.php'>./tests/app</directory>
+			<directory suffix='.php'>./tests/app/</directory>
 		</testsuite>
 	</testsuites>
 	<logging>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="6" assertions="7" errors="1" warnings="0" failures="0" skipped="0" time="0.027276">
+    <testsuite name="App" tests="6" assertions="7" errors="1" warnings="0" failures="0" skipped="0" time="0.027276">
+      <testsuite name="App\CustomersTest" file="/var/www/html/ardis/tests/app/Controllers/CustomersTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.011120">
+        <testcase name="testLogout" class="App\CustomersTest" classname="App.CustomersTest" file="/var/www/html/ardis/tests/app/Controllers/CustomersTest.php" line="10" assertions="0" time="0.011120">
+          <error type="Error">App\CustomersTest::testLogout
+Error: Call to undefined method App\CustomersTest::call()
+
+/var/www/html/ardis/tests/app/Controllers/CustomersTest.php:11</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.014052">
+        <testcase name="testModelFindAll" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="17" assertions="1" time="0.011520"/>
+        <testcase name="testSoftDeleteLeavesRow" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="28" assertions="2" time="0.002532"/>
+      </testsuite>
+      <testsuite name="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.000447">
+        <testcase name="testSessionSimple" class="ExampleSessionTest" classname="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" line="11" assertions="1" time="0.000447"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.001656">
+        <testcase name="testIsDefinedAppPath" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="13" assertions="1" time="0.000359"/>
+        <testcase name="testBaseUrlHasBeenSet" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="18" assertions="2" time="0.001297"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
