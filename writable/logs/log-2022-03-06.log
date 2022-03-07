@@ -1,0 +1,103 @@
+ERROR - 2022-03-06 06:51:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'avis%' 
+                                OR hotel_ville LIKE '%pas d'avis%' 
+    ' at line 3
+CRITICAL - 2022-03-06 06:51:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'avis%' 
+                                OR hotel_ville LIKE '%pas d'avis%' 
+    ' at line 3
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/SearchModel.php(26): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/SearchManager.php(38): App\Models\SearchModel->getResultHotel()
+#5 /var/www/html/ardis/app/Controllers/Pages.php(75): App\Models\SearchManager->getResult()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->search()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-03-06 06:51:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'avis%' 
+                                OR hotel_ville LIKE '%pas d'avis%' 
+    ' at line 3
+CRITICAL - 2022-03-06 06:51:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'avis%' 
+                                OR hotel_ville LIKE '%pas d'avis%' 
+    ' at line 3
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/SearchModel.php(26): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/SearchManager.php(38): App\Models\SearchModel->getResultHotel()
+#5 /var/www/html/ardis/app/Controllers/Pages.php(75): App\Models\SearchManager->getResult()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Pages->search()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-06 12:32:06 --> Call to undefined method App\Models\ReservationModel::setReservation
+#0 /var/www/html/ardis/app/Models/ReservationManager.php(34): CodeIgniter\Model->__call()
+#1 /var/www/html/ardis/app/Controllers/Reservation.php(55): App\Models\ReservationManager->validateReservation()
+#2 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Reservation->validation()
+#3 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-03-06 12:36:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 3
+CRITICAL - 2022-03-06 12:36:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 3
+#0 /var/www/html/ardis/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ardis/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ardis/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ardis/app/Models/ReservationModel.php(33): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ardis/app/Models/ReservationManager.php(34): App\Models\ReservationModel->setReservationWithouthActiv()
+#5 /var/www/html/ardis/app/Controllers/Reservation.php(55): App\Models\ReservationManager->validateReservation()
+#6 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Reservation->validation()
+#7 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-06 12:39:39 --> Undefined index: enddate
+#0 /var/www/html/ardis/app/Models/HuntError.php(228): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/Models/ReservationManager.php(28): App\Models\HuntError->huntReservation()
+#2 /var/www/html/ardis/app/Controllers/Reservation.php(55): App\Models\ReservationManager->validateReservation()
+#3 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Reservation->recus()
+#4 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-06 14:40:35 --> Too few arguments to function App\Models\ActiviterManager::__construct(), 0 passed in /var/www/html/ardis/app/Controllers/Reservation.php on line 33 and exactly 1 expected
+#0 /var/www/html/ardis/app/Controllers/Reservation.php(33): App\Models\ActiviterManager->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Reservation->__construct()
+#2 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-06 15:18:38 --> Typed property App\Controllers\Customers::$reservMngr must be an instance of App\Controllers\RservationManager, App\Models\ReservationManager used
+#0 /var/www/html/ardis/system/CodeIgniter.php(802): App\Controllers\Customers->__construct()
+#1 /var/www/html/ardis/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-06 15:32:26 --> Undefined offset: 2
+#0 /var/www/html/ardis/writable/cache/templates_c/2aede7db75b42c6d96ccf0200c008c09990add2f_0.file.profile.tpl.php(114): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(248): Block_959988366225286a8f11f1_29758094->callBlock()
+#2 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(184): Smarty_Internal_Runtime_Inheritance->callBlock()
+#3 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(186): Smarty_Internal_Runtime_Inheritance->process()
+#4 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(156): Smarty_Internal_Runtime_Inheritance->process()
+#5 /var/www/html/ardis/writable/cache/templates_c/99521537329930fe353d6a3eadd00d40b5d8ecb7_0.file.layout.tpl.php(32): Smarty_Internal_Runtime_Inheritance->instanceBlock()
+#6 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_621e37413c14d9_89003798()
+#7 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#8 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#9 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(385): Smarty_Internal_Template->render()
+#10 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender()
+#11 /var/www/html/ardis/writable/cache/templates_c/2aede7db75b42c6d96ccf0200c008c09990add2f_0.file.profile.tpl.php(33): Smarty_Internal_Runtime_Inheritance->endChild()
+#12 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_resource_base.php(123): content_6225286a8f7b82_32014799()
+#13 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode()
+#14 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#15 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#16 /var/www/html/ardis/app/ThirdParty/smarty/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#17 /var/www/html/ardis/app/Controllers/BaseController.php(73): Smarty_Internal_TemplateBase->display()
+#18 /var/www/html/ardis/app/Controllers/Pages.php(66): App\Controllers\BaseController->display()
+#19 /var/www/html/ardis/app/Controllers/Customers.php(125): App\Controllers\Pages->view()
+#20 /var/www/html/ardis/system/CodeIgniter.php(825): App\Controllers\Customers->profile()
+#21 /var/www/html/ardis/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#22 /var/www/html/ardis/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#23 /var/www/html/ardis/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#24 {main}
