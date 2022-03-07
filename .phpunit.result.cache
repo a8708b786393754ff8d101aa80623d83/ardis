@@ -1,1 +1,0 @@
-{"version":1,"defects":{"Warning":6,"ExampleDatabaseTest::testModelFindAll":4,"ExampleDatabaseTest::testSoftDeleteLeavesRow":4},"times":{"Warning":0,"ExampleDatabaseTest::testModelFindAll":0.022,"ExampleDatabaseTest::testSoftDeleteLeavesRow":0.003,"ExampleSessionTest::testSessionSimple":0,"HealthTest::testIsDefinedAppPath":0,"HealthTest::testBaseUrlHasBeenSet":0.001}}

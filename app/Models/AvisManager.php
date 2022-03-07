@@ -33,7 +33,7 @@ class AvisManager{
     **/
     public function getAllData():array {
         $data = []; 
-        $resp = $this->avisModel->getAvis();
+        $resp = $this->avisModel->getAvis(); 
         foreach($resp as $elements){
             $data[$elements->hotel_nom][] = $elements;
         }return $data;
