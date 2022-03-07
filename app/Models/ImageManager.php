@@ -56,7 +56,7 @@ class ImageManager{
     }
 
     private function imageIsmatches($objFile, string $target_folder){
-        if(! empty($objFile->getFileName()) ){
+        if(! empty($objFile->getFileName())){
             $error = $this->error->huntUplaodedFile($objFile, MAX_SIZE, $this->white_list); 
             if(empty($error)){
                 $name_rand_file  = $objFile->getRandomName(); 
@@ -67,13 +67,13 @@ class ImageManager{
             }
         }
     }
-
+    
     public function imgAvisIsMatches($objFile){
         $picture = $objFile->getFile('photo_avis_clients'); 
         $name_file_or_error = $this->imageIsmatches($picture, 'assets/Images/avis/'); 
-        if(is_array($name_file_or_error)){
+        if(is_string($name_file_or_error)){
             return $name_file_or_error; 
-        }
+        }return $name_file_or_error; 
     }
 
     /**

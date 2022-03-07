@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 01:55:47
+/* Smarty version 4.0.4, created on 2022-03-07 07:18:43
   from '/var/www/html/ardis/app/Views/sampatico.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6225ba8363c169_94683629',
+  'unifunc' => 'content_62260633efd4a0_64817723',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '90c8b098e3265ac344c7cf8a5504e0b9ffed24e4' => 
     array (
       0 => '/var/www/html/ardis/app/Views/sampatico.tpl',
-      1 => 1646599371,
+      1 => 1646659037,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6225ba8363c169_94683629 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62260633efd4a0_64817723 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15879932206225ba8362d112_90826129', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_205088969262260633ef2700_64273098', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_15879932206225ba8362d112_90826129 extends Smarty_Internal_Block
+class Block_205088969262260633ef2700_64273098 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_15879932206225ba8362d112_90826129',
+    0 => 'Block_205088969262260633ef2700_64273098',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -94,10 +94,10 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
                     <p>A partir de <span style='color: #ff00aa;'><?php echo $_smarty_tpl->tpl_vars['price']->value;?>
 €</span></p>
                     <a href="<?php echo base_url('galerie_photo');?>
-" class=" btn galerie_photo ">Galerie_photo</a>
+" class=" btn galerie_photo ">Galerie photo</a>
                 </div>
                  <div class="presentation ">
-            <p>Pour les activités, nous vous proposerons du ski et de la luge et une visite guide dû la chocolaterie Lindt.</p>
+            <p>Pour les activités, nous vous proposerons de faire du Jet Ski </p>
             <a href="<?php echo base_url('reserver');?>
 " class=" btn reserver-btn  ">Réserver</a>
         </div>
@@ -108,7 +108,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 
  <div class="container mt-5">
   <hr>
-  <h3 class='text-center'>Partager l'hotel a un proche.</h3>
+  <h3 class='text-center'>Partager l'hotel.</h3>
      <form method="post" action="<?php echo base_url('Hotel/sendMail');?>
 ">
       <div class="form-group">
