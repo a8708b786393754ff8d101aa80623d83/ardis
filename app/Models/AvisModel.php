@@ -54,21 +54,10 @@ class AvisModel extends Model{
     * @return string la note 
     * @return string l'id de l'hotel
     */
-<<<<<<< HEAD
+
     public function setAvis(string $title, string $content, string $note, string $id_hotel, string $name_img=null){
+
         $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,avis_note, avis_hotel, avis_nomphoto)
                         VALUES(?, ?, CURRENT_DATE, ?, ?, ?)", [$title, $content, $note, $id_hotel, $name_img]);
-=======
-    public function setAvis(string $title, string $content, string $note, string $id_hotel){
-<<<<<<< HEAD
-        $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,
-                                                     avis_note, avis_hotel)
-                        VALUES(?, ?, CURRENT_DATE, ?, ?)", 
-                        [$title, $content, $note, $id_hotel]);
-=======
-        $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,avis_note, avis_hotel)
-                        VALUES(?, ?, CURRENT_DATE, ?, ?)", [$title, $content, $note, $id_hotel]);
->>>>>>> a43d3d9c7634f7636b5913065a320ad7d3fa6efc
->>>>>>> dbfbcf0404ac3f20e6c5b3792d0ec3696b9020d9
     }
 }
