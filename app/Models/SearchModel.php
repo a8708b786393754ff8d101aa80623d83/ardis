@@ -41,6 +41,4 @@ class SearchModel extends Model{
                                 AND YEAR(activ_date) = YEAR(CURRENT_DATE) 
                                 ")->getResult();
     }
-
-
 }

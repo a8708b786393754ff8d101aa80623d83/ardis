@@ -58,6 +58,14 @@ class ActiviterModel extends Model{
                                 WHERE YEAR(`activ_date`) = YEAR(CURRENT_DATE)')->getResult();
     }
 
+    /**
+    * @brief Méthode qui contient la requête SQL pour avoir les activités d'un hotel au particulier
+    * @details
+    * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
+    * <p>Elle seras utiliser pour l'api</p>
+    * @param  string $hotel_name
+    * @return array les données des activités archivées
+    */
     public function getActivByHotelReserv(string $hotel_name){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca
                                 AS loca,activ_tarif AS tarif, activ_date AS date, activ_descri AS descri, hotel_nom AS nom_hotel , activ_dispo AS dispo , activ_id  AS activID
@@ -67,6 +75,13 @@ class ActiviterModel extends Model{
                                 AND hotel_nom=?', [$hotel_name])->getResult();
     }
 
+    /**
+    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées
+    * @details
+    * <p>Elle récupére le prix de l'hotel.</p>
+    * @param  string $id
+    * @return string le prix de l'activiter
+    */
     public function getPriceActivByIdActiv(string $id): string{
         return $this->db->query('SELECT activ_tarif AS price
                                 FROM activites 

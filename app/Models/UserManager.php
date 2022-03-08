@@ -30,19 +30,17 @@ class UserManager{
     * <p>La methode verifie la methode d'envoye, si c'est un POST il recupere le pseudo est le mot de passe en filtrant le contenue.</p>
     * <p>Si les entrez sont correct, on ajoute le pseudo, nom, prenom est l'id du client</p>
     * <p>Elle renvoie true si tout ce passe bien, sinon un tableaux avec les erruer </p>
-    * @param  string $method
+    * @param  $objRequests
     * @param  $session
-    * @return array Contient les donner de l'hotel
+    * @return array|true Contient les donner de l'hotel ou renvoie un true 
     **/
-    public function verificate_login(string $method, $session){
-        if ($method !== 'post'){
+    public function verificate_login($objRequests, $session){
+        if ($objRequests->getMethod() !== 'post'){
             return []; 
         }
-        $pseudo = isset($_POST['username'])  ?$_POST['username']: ''; 
-        $password = isset($_POST['password']) ?$_POST['password'] :  ''; 
-        if ($pseudo !== '' || $password !== ''){
-            $pseudo = esc($pseudo);
-            $password = esc($password);
+        $pseudo   = $objRequests->getVar('username'); 
+        $password = $objRequests->getVar('password'); 
+        if (!empty($pseudo) &&  !empty($password)){
             $passwd_hash_bdd = $this->userModel->getPasswordByPseudo($pseudo);
             if(! empty($passwd_hash_bdd)){
                 $resp = $this->userModel->login($pseudo, $passwd_hash_bdd); 
@@ -70,11 +68,13 @@ class UserManager{
     * @param  string $method
     * @return array Contient les erruer/rien 
     **/
-    public function verificate_mdp_oublier(string $method): array{
-        if ($method === 'post'){
-            $email = $_POST['email']; 
-            $resp_query = $this->userModel->is_a_account_by_email($email); 
-            return  $this->errorHunt->forget_password($email, $resp_query);
+    public function verificate_mdp_oublier($objRequest): array{
+        if ($objRequest->getMethod() === 'post'){
+            $email = $objRequest->getVar('email');
+            if(! empty($email)){
+                $resp_query = $this->userModel->is_a_account_by_email($email); 
+                return  $this->errorHunt->forget_password($email, $resp_query);
+            }
         }return []; 
     }
 
@@ -88,30 +88,30 @@ class UserManager{
     * @param  string $method
     * @return array Contient les erruer/succes 
     **/
-    public function verificate_create_account(string $method){
-        if ($method === 'post'){
-            $error = $this->errorHunt->hunt_error_create_account($_POST);
-            if(count($error) === 0){
-                if ($this->errorHunt->isAllEmpty($_POST, 12)){ // envoie tru si les 12 champs sont reseignier
-                    $is_register_pseudo = $this->userModel->is_a_account_by_pseudo($_POST['pseudo']); 
-                    $is_register_email = $this->userModel->is_a_account_by_email($_POST['email']);
+    public function verificate_create_account($obJRequest){
+        if ($obJRequest->getMethod() === 'post'){
+            $error = $this->errorHunt->hunt_error_create_account($obJRequest->getPost());
+            if(empty($error)){
+                if ($this->errorHunt->isAllEmpty($obJRequest->getPost(), 12)){ // envoie tru si les 12 champs sont reseignier
+                    $is_register_pseudo = $this->userModel->is_a_account_by_pseudo($obJRequest->getVar('pseudo')); 
+                    $is_register_email = $this->userModel->is_a_account_by_email($obJRequest->getVar('email'));
                     if(empty($is_register_pseudo)){
                         if(empty($is_register_email)){
                             $this->userModel->appendUser([
-                                    'client_nom'    => esc($_POST['lastname']), 
-                                    'client_prenom' => esc($_POST['firstname']), 
-                                    'client_cp'     => esc($_POST['CP']), 
-                                    'client_ville'  => esc($_POST['city']), 
-                                    'client_tel'    => esc($_POST['tel']) , 
-                                    'client_email'  => esc($_POST['email']), 
-                                    'client_pays'   => esc($_POST['select']), 
-                                    'client_adresse'=> esc($_POST['adresse']),
-                                    'client_civ'=> esc($_POST['civ'])
-                                ],
-                                [
-                                    'compt_pseudo' => esc($_POST['pseudo']),
-                                    'compt_pass'   => password_hash(esc($_POST['password']), PASSWORD_DEFAULT)
-                                ]); 
+                                    'client_nom'    => esc($obJRequest->getVar('lastname')), 
+                                    'client_prenom' => esc($obJRequest->getVar('firstname')), 
+                                    'client_cp'     => esc($obJRequest->getVar('CP')), 
+                                    'client_ville'  => esc($obJRequest->getVar('city')), 
+                                    'client_tel'    => esc($obJRequest->getVar('tel')), 
+                                    'client_email'  => esc($obJRequest->getVar('email')), 
+                                    'client_pays'   => esc($obJRequest->getVar('select')), 
+                                    'client_adresse'=> esc($obJRequest->getVar('adresse')),
+                                    'client_civ'=> esc($obJRequest->getVar('civ'))
+                                    ],
+                                    [
+                                    'compt_pseudo' => esc($obJRequest->getVar('pseudo')),
+                                    'compt_pass'   => password_hash(esc($obJRequest->getVar('password')), PASSWORD_DEFAULT)
+                                    ]); 
                             return ['msg_succes', 'Votre compe a été creer'];  
                         }
                         else{
@@ -123,7 +123,7 @@ class UserManager{
                     }
                 }     
             }return ['msg_error',$error];
-        }return "none";// est renvoyer si c'est pas un methode en POST
+        }return "none";// est renvoyer si c'est pas un methode en POST (c'est plutot smarty qui l'utiliser)
     }
 
 
@@ -132,7 +132,7 @@ class UserManager{
     * @details 
     * <p>La methode verifie si les champs ne sont pas vide est que l'email est bien dans le bon format.</p>
     * @param  array $data
-    * @return bool  Contient les erruer/succes 
+    * @return bool   
     **/
     public function isMatchForSendMail(array $data): bool{
         // verifie si les champs sans ne sont pas vide, return true si tout est remplie

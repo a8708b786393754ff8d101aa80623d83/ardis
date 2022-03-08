@@ -68,7 +68,13 @@ class HotelManager {
         return $arrNameHotel;
     }
 
-    public function getNameById(string $hotel){
+    /**    
+    * @brief Méthode qui retourne l'id de l' hotel.
+    * @details 
+    * <p>La méthode exécute la requête SQL pour récupérer l'id de l'hotel.</p>
+    * @return array Id de l'hôtel  
+    **/
+    public function getNameById(string $hotel): string{
         return $this->respQuery->getIdByNameHotel($hotel)[0]->hotel_id; 
     }
 }

@@ -72,12 +72,12 @@ class HuntError {
     * @param array $resp
     * @return array Contient le type de d'erruer est de son contenue  
     **/
-    public function hunt_error_create_account(array $post): array{
-        $tel = $post['tel']; 
-        $email = $post['email']; 
-        $password = $post['password']; 
-        $confirm_password = $post['Confirm_password']; 
-        if(! $this->isAllEmpty($post, 12)){
+    public function hunt_error_create_account(array $post_data): array{
+        $tel = $post_data['tel']; 
+        $email = $post_data['email']; 
+        $password = $post_data['password']; 
+        $confirm_password = $post_data['Confirm_password']; 
+        if(! $this->isAllEmpty($post_data, 12)){
             $this->error[] = "Veuillez remplire les tout les champs! "; 
         }
 

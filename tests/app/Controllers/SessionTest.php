@@ -3,10 +3,17 @@ use CodeIgniter\Test\DatabaseTestTrait;
 use CodeIgniter\Test\FeatureTestTrait;
 use CodeIgniter\Test\CIUnitTestCase;
 use Config\Services;
-
+/**
+* @file SessionTest.php
+* @author Ayoub Brahim <ayoubbrahim68@gmail.com>
+* @date 5/03/2022
+* @brief Test pour les session
+* @details 
+* <p>Cette classe test les methode des controller qui ont besoin d'une session/p>
+**/
 /**
  * @internal
- */
+*/
 class SessionTest extends CIUnitTestCase{
     use DatabaseTestTrait, FeatureTestTrait;
     
@@ -27,11 +34,21 @@ class SessionTest extends CIUnitTestCase{
         parent::tearDown();
     }
 
-    public function testVisitorloggin(){
-        $result = $this->withSession($this->values)->get('visitor/login');
+    /**
+    * @brief Méthode test avis 
+    * @details 
+    * <p>Cette méthode creer une session est fait une requete GET est affirme que la reponse est bonne</p>
+    **/
+    public function testAvis(){
+        $result = $this->withSession($this->values)->get('visitor/login'); // envoie la session au login
         $this->assertTrue($result->isOk());
     }
 
+    /**
+    * @brief Méthode test le recus d'une reservation 
+    * @details 
+    * <p>Cette méthode creer une session est fait une requete GET est affirme que la reponse est bonne</p>
+    **/
     public function testReservationRecus(){
         $result = $this->withSession($this->values)->get('reservation/recus');
         $this->assertTrue($result->isOk());

@@ -39,7 +39,7 @@ class ImageManager{
      /**
     * @brief Methode qui fait les tests pour enregistrer la photo de profile 
     * @details 
-    * <p>Cette methode continet la requete SQL pour ajouter la photo de profile a l'utilisateur</p>
+    * <p>Cette methode contient la requete SQL pour ajouter la photo de profile a l'utilisateur</p>
     * <p>Les test s'appuye sur la methode huntUplaodedFile() de la classe HuntError</p>
     * <p>Regarde si le nom de fichier n'est pas vide (si c'est le cas la photo de profile n'est preciser dans l'edition de profile)</p>
     * <p>Si l'image passe les test de verification, le nouveaux nom de l'image serais ajouter a la base de donner</p>
@@ -55,6 +55,16 @@ class ImageManager{
         }
     }
 
+    /**
+    * @brief Methode privée qui regarde la validiter de l'image
+    * @details 
+    * <p>Cette methode regarde si le nom du fichier n'est pas vide, en gros il regarde si l'utilisateur entre un fichier</p>
+    * <p>Les test s'appuye sur la methode huntUplaodedFile() de la classe HuntError</p>
+    * <p>Si le tableaux d'erreur est vide, on genére un nom aleatoire est on le bouge le fichier dans le dossier cible </p>
+    * @param $objFile
+    * @param string $target_folder
+    * @return array Contient erreur lier au televersement d'image de profile 
+    **/
     private function imageIsmatches($objFile, string $target_folder){
         if(! empty($objFile->getFileName())){
             $error = $this->error->huntUplaodedFile($objFile, MAX_SIZE, $this->white_list); 
@@ -68,6 +78,13 @@ class ImageManager{
         }
     }
     
+    /**
+    * @brief Methode qui est utiliser pour les avis 
+    * @details 
+    * <p>Cette methode contient la requete SQL pour ajouter la photo de l'avis</p>
+    * <p>Execute la methode priver imageIsmatches() pour voir la validation de l'image </p>
+    * @return array|string Contient erreur lier au televersement de l'image d'avis/nom du fichier
+    **/
     public function imgAvisIsMatches($objFile){
         $picture = $objFile->getFile('photo_avis_clients'); 
         $name_file_or_error = $this->imageIsmatches($picture, 'assets/Images/avis/'); 

@@ -89,6 +89,13 @@ class HotelModel extends Model{
                                 LIMIT 1', [$name_hotel])->getResult(); 
     }
 
+    /**
+    * @brief Methode qui retourne le prix de l'hotel par son nom
+    * @details 
+    * <p>La methode contient la requete SQL pour recuperer le prix de l'hotel par son nom.</p>
+    * @param string $name
+    * @return array le prix de l'hotel 
+    **/
     public function getPriceHotelByName(string $name){
         return $this->db->query('SELECT hotel_price AS price 
                                 FROM hotels 

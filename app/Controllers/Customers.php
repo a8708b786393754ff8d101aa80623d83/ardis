@@ -165,7 +165,6 @@ class Customers extends Visitor{
     * <p>Cette méthode supprime toutes les données de l'utilisateur et redirige vers la page d'acceuil</p>
     */
     public function delete_profile(){
-        // !  try catch
         $this->custManager->delete_user_data($this->session); 
         return redirect()->to('http://localhost/ardis/public/visitor/');
     }

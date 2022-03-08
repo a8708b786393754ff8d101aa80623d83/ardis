@@ -44,7 +44,7 @@ class AvisManager{
     * @details 
     * <p>Cette méthode verifie la methode d'envoye, si c'est en post, elle recuperer les données est 
     *                   verifie si les entrée respecte les regle de securiter</p>
-    * <p>Elle ajoute le message, le titre de l'avis,si il y a une photo elle rajoute juste apres le titre est ele contenue</p>
+    * <p>Elle ajoute le message, le titre de l'avis,si il y a une photo elle rajoute juste apres le titre est elle contenue</p>
     * @return array message d'erruer/de succcée  
     **/
     public function addMngrAvis($objRequest, string $id_hotel){

@@ -40,10 +40,12 @@ class Hotel extends Pages{
         $this->userMgr = new UserManager; 
         $this->avisMngr = new AvisManager; 
         $this->hotelMngr = new HotelManager; 
+        
+        $this->_data['color_link_nav']   = 'black'; 
     }
     
     /** 
-    * @brief Méthode qui donne à la vue les éléments pour qu'ils soient affichés dans celle-ci
+    * @brief Méthode qui donne à la vue les éléments pour que les page des hotels s'affiches
     * @details
     * <p>Elle récupére les données de l'hôtel grâce à la méthode getData de la classe HotelManager</p>
     * <p>Elle initialise les variables</p>
@@ -57,10 +59,8 @@ class Hotel extends Pages{
     * 	<li><strong>Attribut : contenue</strong> : paragraphe de présentation de l'hôtel</li>
     * 	<li><strong>Attribut : email</strong> :    email de l'hôtel</li>
     * </ul>
-    * <p>Elle envoie un tableau de noms d'hôtels à Smarty pour qu'ils s'affichent dans la barre de navigation</p>
     * <p>Elle prefixe l'object du l'email et son contenue.</p>
     * @param  $page 
-    * @return array Nom de l'image appartenant à l'hôtel 
     */
     public function view($page){
         try {
@@ -83,11 +83,10 @@ class Hotel extends Pages{
             $this->_data['email']       = $this->email;
             $this->_data['ville']       = $this->ville;
     
-            $this->_data['color_link_nav']   = 'black'; 
             $this->_data['meta_title']       = 'Hotel '.lcfirst($page); 
             $this->_data['name_file']        = lcfirst($page); 
             $this->_data['object_prefixed']  = "Hotel Ardis ".$page; 
-            $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis qu'il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
+            $this->_data['msg_prefixed']     = "Un ami veut vous  partager un hôtel de la chaine Ardis qu \' il a trouver. Pour le découvrir , cliquer sur ce lien :".base_url('hotel/'.$this->name);
     
     
             $this->display(lcfirst($page).'.tpl');   
@@ -98,39 +97,43 @@ class Hotel extends Pages{
 
 
 
+    /** 
+    * @brief Méthode qui donne à la vue les éléments pour qu'ils soient affichés dans celle-ci
+    * @details
+    * <p>Elle est utiliser quand on un visiteur ou un client veut partager un hotel par email</p>
+    * <p>Elle récupére les données pour envoyer l'email</p>
+    * <p>Elle prefixe l'object du l'email et son contenue.</p>
+    */
     public function sendMail(){
-        $this->_data['color_link_nav'] = 'black'; 
         $this->_data['meta_title']     = "Envoie d'email"; 
         $this->_data['name_file']      = "result_email"; 
 
 
-        if($this->request->getMethod() === 'post'){
-            if($this->userMgr->isMatchForSendMail($this->request->getPost())){
-                $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
+        if($this->request->getMethod() === 'post'){ // verifie toujour la methode 
+            if($this->userMgr->isMatchForSendMail($this->request->getPost())){ // regarde si l'email respecte le bon format
                 
+                $this->objEmail->setTo(esc($this->request->getVar('mailTo'))); 
                 $this->objEmail->setFrom('ardis.hotel68@gmail.com', 'Hotel Ardis'); 
                 $this->objEmail->setSubject(esc($this->request->getVar('subject'))); 
                 $this->objEmail->setMessage(esc($this->request->getVar('message'))); 
                 if ($this->objEmail->send()){
-                    $this->_data['msg_succes'] = "L'mail a bien été envoyer!";
+                    $this->_data['msg_succes'] = "L'email a bien été envoyer!";
                 }else{
                     $this->_data['msg_error'] = 'Veuillez verifier votre destinateur'; 
                 }
             }else{
-                $this->_data['msg_error'] = 'Veuillez entrez/verifier vos champs'; 
+                $this->_data['msg_error'] = 'Veuillez entrez est verifier vos champs'; 
             }
         }
         $this->display('result_email.tpl'); 
     }
 
-
     /** 
     * @brief Méthode d'ajout d'avis 
     * @details
-    * <p>Elle récupére les données de l'id de l'hotel grâce à la méthode getNameById de la classe HotelManager</p>
+    * <p>Elle recupere l'id du nom de l'hotel.</p>
     * <p>Elle envoie un tableau de message d'erruer/de succes à Smarty pour qu'ils s'affichent dans la page d'hotel</p>
-    * <p>Elle ajoute l'avis si il passe les test de securiter</p>
-    * @param  $page 
+    * @param string $page 
     */
     public function addAvis($page){
         $id_hotel = $this->hotelMngr->getNameById($page); 

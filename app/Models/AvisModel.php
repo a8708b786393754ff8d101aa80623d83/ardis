@@ -11,7 +11,6 @@ use CodeIgniter\Model;
 **/
 
 class AvisModel extends Model{
-    // ! regler les champs ici
     protected $table         = 'avis';
     protected $primaryKey    = 'avis_id';
     protected $allowedFields = ["avis_titre","avis_cont","avis_answer" ,"avis_date" , "avis_nomphoto", "avis_note", "avis_hotel",  "avis_note"];
@@ -31,7 +30,7 @@ class AvisModel extends Model{
         parent::__construct(); 
     }
 
-    /** 
+    /**
     * @brief Methode qui contient la requete SQL pour avoir l'avis de l'hotel 
     * @details
     * <p>Elle recupere le titre, la date, la note, le contenue ,la photo de l'avis est le nom de l'hotel</p>
@@ -49,10 +48,10 @@ class AvisModel extends Model{
     * @brief Methode qui contient la requete SQL pour un avis 
     * @details
     * <p>Elle ajoute le titre, la date, la note, le contenue.</p>
-    * @return string le titre
-    * @return string le contenue 
-    * @return string la note 
-    * @return string l'id de l'hotel
+    * @param string $title
+    * @param string $content
+    * @param string $note
+    * @param string $name_image
     */
     public function setAvis(string $title, string $content, string $note, string $id_hotel, string $name_img=null){
         $this->db->query("INSERT INTO avis(avis_titre, avis_cont, avis_date,avis_note, avis_hotel, avis_nomphoto)

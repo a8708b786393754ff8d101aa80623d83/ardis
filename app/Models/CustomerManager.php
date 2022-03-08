@@ -130,9 +130,9 @@ class CustomerManager{
      * @param string $civ
      * @param  $img_profile
      * @param string $pseudo
-     * @return array|string nom de l'image 
+     * @return string nom de l'image 
      */
-    public function managerImgProfile(string $civ, $img_profile, string $id){
+    public function managerImgProfile(string $civ, $img_profile, string $id):string {
         if(empty($img_profile)){
             if($civ === 'Mr'){
                 return "mr.webp";
