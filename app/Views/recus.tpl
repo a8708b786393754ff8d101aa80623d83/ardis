@@ -26,13 +26,8 @@
                                                 <br> Hotel de séjours : {$hotel_sejour}
                                                 <br> Date de séjour : {$startdate} / {$enddate}
                                                 <br> Durée du séjour : {$durer} jours
-                                                {if is_array($num_chamb)}
-                                                    {foreach from=$num_chamb item=item}
-                                                        <br> Numero chambre : {$item->chamb_num}    
-                                                    {/foreach}
-                                                {else}
-                                                        <br> Numero chambre : {$num_chamb[0]->chamb_num}    
-                                                {/if}
+                                                <br> Nombr de lits loué : {$nb_lit}
+                                                <br> Numero chambre : {$nb_chambre}
                                             </td>
                                             </tr>
                                             <tr>
@@ -41,7 +36,7 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td>Prix séjours</td>
-                                                                <td class="alignright">1000.00 €</td>
+                                                                <td class="alignright"> 1000.00 €</td>
                                                             </tr>
                                                             <tr>
                                                         </tr>
