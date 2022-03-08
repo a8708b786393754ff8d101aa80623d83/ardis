@@ -26,7 +26,7 @@
                                                 <br> Hotel de séjours : {$hotel_sejour}
                                                 <br> Date de séjour : {$startdate} / {$enddate}
                                                 <br> Durée du séjour : {$durer} jours
-                                                <br> Nombr de chambre loué : {$nb_lit}
+                                                <br> Nombr de lits loué : {$nb_lit}
                                                 <br> Numero chambre : {$nb_chambre}
                                             </td>
                                             </tr>
@@ -36,7 +36,7 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td>Prix séjours</td>
-                                                                <td class="alignright">1000.00 €</td>
+                                                                <td class="alignright"> 1000.00 €</td>
                                                             </tr>
                                                             <tr>
                                                         </tr>
@@ -47,9 +47,7 @@
                                                         </tr>
                                                         {/if}
                                                        
-                                                        <tr class="total">
-                                                            <td class="alignright">Prix total - 30% du prix total </td>
-                                                        </tr>
+                                                       
                                                     </tbody></table>
                                                 </td>
                                             </tr>
