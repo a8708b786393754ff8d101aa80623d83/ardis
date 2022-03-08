@@ -1,14 +1,3 @@
-Customers (App\Customers)
- [ ] Logout
-
-Example Database
- [x] Model find all
- [x] Soft delete leaves row
-
-Example Session
- [x] Session simple
-
-Health
- [x] Is defined app path
- [x] Base url has been set
+Post
+ [ ] Post create account
 

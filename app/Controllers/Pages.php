@@ -50,7 +50,6 @@ class Pages extends BaseController{
         $this->_data['element']        = $this->hotelMngr->getBestHotel(); 
         $this->_data['meta_title']     = 'Acceuil'; 
         $this->display();
-        die; 
     }
     
     /**

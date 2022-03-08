@@ -38,9 +38,11 @@ class UserManager{
         if ($method !== 'post'){
             return []; 
         }
-        $pseudo = esc($_POST['username']); 
-        $password = esc($_POST['password']); 
+        $pseudo = isset($_POST['username'])  ?$_POST['username']: ''; 
+        $password = isset($_POST['password']) ?$_POST['password'] :  ''; 
         if ($pseudo !== '' || $password !== ''){
+            $pseudo = esc($pseudo);
+            $password = esc($password);
             $passwd_hash_bdd = $this->userModel->getPasswordByPseudo($pseudo);
             if(! empty($passwd_hash_bdd)){
                 $resp = $this->userModel->login($pseudo, $passwd_hash_bdd); 

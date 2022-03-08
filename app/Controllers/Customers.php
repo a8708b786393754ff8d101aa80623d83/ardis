@@ -53,10 +53,11 @@ class Customers extends Visitor{
         parent::__construct();
         $this->custManager = new CustomerManager;
         $this->imgManager = new ImageManager;
+        
         $this->reservMngr = new ReservationManager;
-
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
+
         $this->updateAttribut(); 
     }
     
@@ -111,18 +112,22 @@ class Customers extends Visitor{
     **/
     public function profile(){
         $this->updateAttribut();
-        $this->_data['firstname']           = $this->firstname;
-        $this->_data['name']                = $this->name;
-        $this->_data['tel']                 = $this->tel;
-        $this->_data['email']               = $this->email;
-        $this->_data['pseudo']              = $this->pseudo;
-        $this->_data['adresse']             = $this->adresse;
-        $this->_data['zip']                 = $this->zip_code;
-        $this->_data['city']                = $this->city;
-        $this->_data['photo_profile']       = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id); 
-        $this->_data['reservation_achieve'] = $this->reservMngr->getYourReservationNumberNameHotel($this->name); 
-
-        $this->view('profile'); 
+        try {
+            $this->_data['firstname']           = $this->firstname;
+            $this->_data['name']                = $this->name;
+            $this->_data['tel']                 = $this->tel;
+            $this->_data['email']               = $this->email;
+            $this->_data['pseudo']              = $this->pseudo;
+            $this->_data['adresse']             = $this->adresse;
+            $this->_data['zip']                 = $this->zip_code;
+            $this->_data['city']                = $this->city;
+            $this->_data['photo_profile']       = $this->custManager->managerImgProfile($this->civ, $this->photo_profile, $this->id); 
+            $this->_data['reservation_achieve'] = $this->reservMngr->getYourReservationNumberNameHotel($this->name); 
+    
+            $this->view('profile'); 
+        } catch (\Throwable $th) {
+            return $this->response->setStatusCode(403);
+        }
     }
     
     /**
@@ -160,7 +165,8 @@ class Customers extends Visitor{
     * <p>Cette méthode supprime toutes les données de l'utilisateur et redirige vers la page d'acceuil</p>
     */
     public function delete_profile(){
-        $this->custManager->delete_user_data($this->pseudo, $this->session); 
+        // !  try catch
+        $this->custManager->delete_user_data($this->session); 
         return redirect()->to('http://localhost/ardis/public/visitor/');
     }
 }

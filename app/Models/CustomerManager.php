@@ -117,8 +117,8 @@ class CustomerManager{
     * @param  string $pseudo
     * @param $session
     */
-    public function delete_user_data(string $pseudo, $session){
-        $this->respQuery->deleteUser($pseudo); 
+    public function delete_user_data($session){
+        $this->respQuery->deleteUser($session->get('pseudo')); 
         $session->remove(['pseudo', 'id']); 
     }
 

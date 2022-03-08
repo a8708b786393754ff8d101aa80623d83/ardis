@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-01 09:10:03
+/* Smarty version 4.0.4, created on 2022-03-08 07:49:21
   from '/var/www/html/ardis/app/Views/mdpoublier.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_621e374bd37784_85872679',
+  'unifunc' => 'content_62275ee1cebe11_48815769',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '50130f02f65990e15e43da94bca71d1771d6e140' => 
     array (
       0 => '/var/www/html/ardis/app/Views/mdpoublier.tpl',
-      1 => 1646147344,
+      1 => 1646668714,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_621e374bd37784_85872679 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62275ee1cebe11_48815769 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_768880029621e374bd316e2_39025293', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_195417311062275ee1ce63b5_15788684', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_768880029621e374bd316e2_39025293 extends Smarty_Internal_Block
+class Block_195417311062275ee1ce63b5_15788684 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_768880029621e374bd316e2_39025293',
+    0 => 'Block_195417311062275ee1ce63b5_15788684',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -63,8 +63,8 @@ $_smarty_tpl->tpl_vars['msg']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                               <?php }?>
-                              <h2 class="text-center">Mot de passe oublié ?</h2>
-                              <p>Demandez votre mot de passe .</p>
+                              <h2 class="text-center">Mot de passe oublié </h2>
+                              <p>Demandez votre mot de passe.</p>
                                 <div class="panel-body">
                                   
                                   <form class="<?php echo base_url('/visitor/mdpoublier');?>
