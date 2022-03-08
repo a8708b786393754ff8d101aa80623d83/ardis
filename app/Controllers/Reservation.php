@@ -11,7 +11,7 @@ use App\Models\ActiviterManager;
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>index</strong>: affiche la page de reservation</li>
-* 	<li><strong>validation</strong>: affiche la page de validation de la reservation</li>
+* 	<li><strong>recu</strong>: affiche la page de recu</li>
 * </ul>
 **/
 

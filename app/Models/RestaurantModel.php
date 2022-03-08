@@ -29,7 +29,7 @@ class RestaurantModel  extends Model{
     }
 
 
-     /** 
+    /** 
     * @brief Methode qui contient la requete SQL pour avoir les tout les donner de la menu/restaurantion 
     * @details
     * <p>Elle recupere le nom du menu, le prix, la description est l'image </p>

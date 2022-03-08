@@ -3,15 +3,16 @@ namespace App\Controllers;
 use App\Models\HotelManager;
 use App\Models\SearchManager;
 /**
-* @file Visitor.php
+* @file Pages.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 14/02/2022
-* @brief Controller des visiteurs 
+* @brief Controller des Pages 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>index</strong> : pour afficher la page d'acceuil</li>
 * 	<li><strong>view</strong> : pour afficher toutes les  pages </li>
+* 	<li><strong>search</strong> : pour afficher le resultat des recherche </li>
 * </ul>
 **/
 

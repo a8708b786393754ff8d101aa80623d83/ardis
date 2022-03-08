@@ -21,7 +21,7 @@ class Avis extends Pages{
     * @brief Méthode constructrice
     * @details
     * <p>Cette méthode appelle la méthode constructrice de la classe mère Pages</p>
-    * <p>Elel instancie un la classe AvisManager</p>
+    * <p>Elle instancie un la classe AvisManager</p>
     **/
     public function __construct(){
         parent::__construct(); 

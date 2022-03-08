@@ -2,7 +2,7 @@
 namespace App\Controllers;
 use App\Models\ActiviterModel;
 /**
-* @file Hotel.php
+* @file MiniApiArdis.php
 * @author Arthur Kretz <kretz.arthur68000@gmail.com>
 * @date 21/02/2022
 * @brief  

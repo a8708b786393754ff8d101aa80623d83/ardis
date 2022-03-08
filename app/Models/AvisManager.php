@@ -4,9 +4,9 @@ namespace App\Models;
 * @file AvisManager.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 23/02/2022
-* @brief Manager des hotel
+* @brief Manager des avis
 * @details 
-* <p>Cette classe  gérer toute la logique lier aux hotels pour executer la bonne requete</p>
+* <p>Cette classe  gérer toute la logique lier aux avis pour executer la bonne requete</p>
 **/
 
 class AvisManager{
