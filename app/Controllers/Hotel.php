@@ -27,7 +27,6 @@ class Hotel extends Pages{
 
     protected UserManager $userMgr;
     protected AvisManager $avisMngr;
-    protected HotelManager $hotelMngr;
 
     /**
     * @brief Méthode constructrice 
@@ -39,7 +38,6 @@ class Hotel extends Pages{
         parent::__construct(); 
         $this->userMgr = new UserManager; 
         $this->avisMngr = new AvisManager; 
-        $this->hotelMngr = new HotelManager; 
         
         $this->_data['color_link_nav']   = 'black'; 
     }

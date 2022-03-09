@@ -60,7 +60,7 @@ class HotelModel extends Model{
     **/
     public function getAll(string $hotel):array {
         return $this->db->query(
-            'SELECT hotel_nom,hotel_image,hotel_pays,hotel_price, hotel_ville, hotel_note, hotel_contenue,hotel_mail 
+            'SELECT hotel_nom,hotel_image,hotel_pays,hotel_price, hotel_ville, hotel_note, hotel_contenue,hotel_mail, hotel_tel
             FROM hotels
             WHERE hotel_nom = ?', [ucfirst($hotel)])->getResult();
     }
