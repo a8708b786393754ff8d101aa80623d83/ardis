@@ -47,7 +47,6 @@ class ImageModel extends Model{
         return $this->db->query('SELECT image_nom FROM images WHERE hotel_id=?', [$id])->getResult(); 
     }
     
-
     public function setNameImgHotel(string $id, string $name){
         $this->db->query('UPDATE hotels
                         SET hotel_image = ?

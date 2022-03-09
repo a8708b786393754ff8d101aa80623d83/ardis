@@ -8,8 +8,8 @@
         <img class="card-img-top" src="{base_url('assets/Images/avis')|cat:'/'|cat:$item[$foo]->avis_nomphoto}" alt="Card image cap">
       {/if}
         <div class="card-body">
-          <h5 class="card-title">{$item[$foo]->avis_titre}</h5>
-          <p class="card-text">{$item[$foo]->avis_cont}</p>
+          <h5 class="card-title">Titre: {$item[$foo]->avis_titre}</h5>
+          <p class="card-text">Description: {$item[$foo]->avis_cont}</p>
           <p class="card-text">Note: 
               {for $i=1 to $item[$foo]->avis_note}
                 <i class="fas fa-star star"></i>
