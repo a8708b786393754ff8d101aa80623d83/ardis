@@ -34,7 +34,7 @@ class UserManager{
     * @param  $session
     * @return array|true Contient les donner de l'hotel ou renvoie un true 
     **/
-    public function verificate_login($objRequests, $session){
+    public function verificateLogin($objRequests, $session){
         if ($objRequests->getMethod() !== 'post'){
             return []; 
         }
@@ -68,7 +68,7 @@ class UserManager{
     * @param  string $method
     * @return array Contient les erruer/rien 
     **/
-    public function verificate_mdp_oublier($objRequest): array{
+    public function verificateMdpOublier($objRequest): array{
         if ($objRequest->getMethod() === 'post'){
             $email = $objRequest->getVar('email');
             if(! empty($email)){
@@ -88,7 +88,7 @@ class UserManager{
     * @param  string $method
     * @return array Contient les erruer/succes 
     **/
-    public function verificate_create_account($obJRequest){
+    public function verificateCreateAccount($obJRequest){
         if ($obJRequest->getMethod() === 'post'){
             $error = $this->errorHunt->hunt_error_create_account($obJRequest->getPost());
             if(empty($error)){
@@ -139,5 +139,10 @@ class UserManager{
         if($this->errorHunt->isAllEmpty($data,3) && $this->errorHunt->verif_email($data['mailTo'])){ 
             return true; 
         }return false; 
+    }
+
+
+    public function verifLoginAdmin(){
+
     }
 }

@@ -47,6 +47,12 @@ $routes->group('customers', function ($routes){
     $routes->add('profile(:any)', 'Customers::profile/$1');
 });
 
+$routes->group('admin', function ($routes){
+    $routes->add('/', 'Admin::index');
+    $routes->add('panel/', 'Admin::panel');
+    $routes->add('hotel/(:any)', 'Admin::operateHotel/$1');
+});
+
 $routes->get('pages/', 'Pages::index');
 $routes->get('pages/(:any)', 'Pages::view/$1');
 $routes->get('hotel/(:any)', 'Hotel::view/$1');
@@ -56,7 +62,6 @@ $routes->get('galerie_photo/', 'PhotoGallery::view');
 $routes->get('restaurant/', 'Restaurant::index');
 $routes->get('activiter/', 'Activiter::index');
 $routes->get('avis/', 'Avis::index');
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

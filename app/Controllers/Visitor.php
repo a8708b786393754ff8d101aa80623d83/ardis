@@ -35,7 +35,7 @@ class Visitor extends Pages{
     *            à Smarty, si il n'y en a pas elle redirige le client vers sa page de profil </p>
     */
     public function login(){
-        $msg = $this->userManager->verificate_login($this->request,  $this->session);
+        $msg = $this->userManager->verificateLogin($this->request,  $this->session);
         if($msg === true){
             return redirect()->to('http://localhost/ardis/public/customers/profile/'); 
         }
@@ -49,7 +49,7 @@ class Visitor extends Pages{
     * <p>Elle récupére les messages de succès/d'erreurs liés à la création du compte et les envoie à Smarty </p>
     */
     public function create_account(){
-        $msg = $this->userManager->verificate_create_account($this->request);
+        $msg = $this->userManager->verificateCreateAccount($this->request);
         // ! ajouter un test pour l'envoie de l'email pour recuperer 
         // l'index 0 est pour le type de message (d'erreurs ou de succès)
         // l'index 1 est pour le(s) message(s)
@@ -57,13 +57,13 @@ class Visitor extends Pages{
         $this->view('create_account'); 
     }
 
-     /**
+    /**
     * @brief Méthode mdpoublier
     * @details
     * <p>Elle récupére les messages d'erreurs/de succès liés à l'oublie du mot de passe et les envoie à Smarty </p>
     */
     public function mdpoublier(){
-        $msg = $this->userManager->verificate_mdp_oublier($this->request); 
+        $msg = $this->userManager->verificateMdpOublier($this->request); 
         $this->_data['message'] = $msg; 
         $this->view('mdpoublier'); 
     }
