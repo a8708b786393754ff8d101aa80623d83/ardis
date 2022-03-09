@@ -114,10 +114,4 @@ class HotelManager {
         $id = $this->getNameById($name);
         $this->respQuery->delete($id); 
     }
-
-    public function removeAll(string $name){
-        $id = $this->getNameById($name);
-        $this->respQuery->delete($id); ; 
-
-    }
 }

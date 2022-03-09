@@ -34,7 +34,6 @@ final class Admin extends Moderateur{
 
         if($this->request->getMethod() === 'post'){
             $this->userManager->deleteUser($this->request->getVar('pseudo'));  
-            // ! redirection a cette page
         }
         $this->_data['color_link_nav'] = "black";
         $this->_data['name_file']      = 'operate_user';
