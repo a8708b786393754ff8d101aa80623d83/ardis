@@ -96,4 +96,10 @@ class HotelManager {
         }
     
     }
+
+    public function removeAll(string $name){
+        $id = $this->getNameById($name);
+        $this->respQuery->delete($id); ; 
+
+    }
 }

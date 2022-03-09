@@ -40,12 +40,17 @@ final class Admin extends Visitor{
         $this->_data['meta_title'] = "Operations de l'hotel".$name;
 
         if($this->request->getMethod() === 'post'){
+            var_dump($this->request->getPost());
+            if($this->request->getVar('delete')){
+                $this->hotelMngr->removeAll($name); 
+                return redirect()->to('admin/panel/'); 
+            }
+
             $data = $this->request->getPost(); 
             $msg = $this->hotelMngr->update(ucfirst($name), $data, $this->request); 
-            var_dump($msg);
             $this->_data[$msg[0]] = $msg[1];
         }
-        
+  
         $respQuery = $this->hotelMngr->getData($name)[0]; 
         $this->name = $respQuery->hotel_nom; 
         $this->image = $respQuery->hotel_image; 
@@ -68,13 +73,8 @@ final class Admin extends Visitor{
         $this->_data['tel']         = $this->tel;
 
 
-        // ! ajouter un AdminManager
-
         $this->display('admin/hotel.tpl'); 
     }
 
-    public function delete(){
-
-    }
 
 }

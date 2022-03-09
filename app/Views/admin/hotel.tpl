@@ -30,10 +30,7 @@
             <label for="">NUmero de téléphone: <input type="tel" value="{$tel}" name='tel'></label>
             <img src="{base_url('assets/Images/nos_hotels/')|cat:'/'}{$image|lower}"  alt="image_{$name}">
             <input type="submit" value="Modifier">
-        </form>
-        <form action="" method="post">
-            <input type="submit" value="Supprimer">
-        </form>
+            <input type="submit" value="Supprimer" name='delete'>
     </div>
 </div>
 {literal}
