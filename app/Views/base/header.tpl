@@ -78,10 +78,17 @@
                             <a class="nav-link text-{$color_link_nav}" href="{base_url('visitor/mdpoublier')}">Mot de passe oublié </a>
                         </li>
                     {/if}
-                    {if isset($smarty.session.pseudo) && $smarty.session.pseudo eq '4dm1n4rd1s' && $smarty.session.id eq "1"}
-                        <li class="nav-item">
-                            <a class="nav-link text-{$color_link_nav}" href="{base_url('admin/panel')}">Panel Admin</a>
-                        </li>
+                    {if isset($smarty.session.pseudo)}
+                        {if ($smarty.session.pseudo eq '4dm1n4rd1s' && $smarty.session.id eq "1") || $smarty.session.pseudo eq 'lithium' && $smarty.session.id eq "2"}
+                            <li class="nav-item">
+                                {if $smarty.session.pseudo eq '4dm1n4rd1s'}
+                                    <a class="nav-link text-{$color_link_nav}" href="{base_url('admin/panel')}">Panel Admin</a>
+                                {else}
+                                    <a class="nav-link text-{$color_link_nav}" href="{base_url('moderateur/panel')}">Panel Moderateur</a>
+                                
+                                {/if}
+                            </li>
+                        {/if}
                     {/if}
                 </ul>
             </div>

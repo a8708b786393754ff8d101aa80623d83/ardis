@@ -47,9 +47,16 @@ $routes->group('customers', function ($routes){
     $routes->add('profile(:any)', 'Customers::profile/$1');
 });
 
+$routes->group('moderateur', function ($routes){
+    $routes->add('/', 'Moderateur::index');
+    $routes->add('panel/', 'Moderateur::panel');
+    $routes->add('hotel/(:any)', 'Moderateur::operateHotel/$1');
+});
+
 $routes->group('admin', function ($routes){
     $routes->add('/', 'Admin::index');
     $routes->add('panel/', 'Admin::panel');
+    $routes->add('users/', 'Admin::operateUser');
     $routes->add('hotel/(:any)', 'Admin::operateHotel/$1');
 });
 

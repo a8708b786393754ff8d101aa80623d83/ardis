@@ -6,13 +6,14 @@ use App\Libraries\HuntError;
 * @author Ayoub Brahim
 * @date 10/02/2022
 * @brief Manager pour les utilisateur
-*  @details 
+* @details 
 * <p>Cette classe gére toute la logique pour executer la bonne requete</p>
 **/
 
 class UserManager{
-    protected HuntError $errorHunt;
-    private  UsersModel $userModel; 
+    private  HuntError   $errorHunt;
+    private  UsersModel  $userModel; 
+    private  AvisManager $avisMngr; 
 
     /**
     * @brief Méthode constructrice 
@@ -22,6 +23,7 @@ class UserManager{
     public function __construct(){
         $this->errorHunt = new HuntError; 
         $this->userModel = new UsersModel; 
+        $this->avisMngr  = new AvisManager; 
     }
 
     /**
@@ -142,7 +144,18 @@ class UserManager{
     }
 
 
-    public function verifLoginAdmin(){
-
+    public function getAllUserFromAdmin(){
+        $users = []; 
+        foreach($this->userModel->getAllUserInfoForAdmin() as $keys=>$values){
+            $creditial_user = $this->userModel->getCreditials($values->compt_id)[0]; 
+            $users[$creditial_user->nom][] = $creditial_user;  
+        } 
+        return $users; 
     }
+
+
+    public function deleteUser(string $pseudo){
+        $this->userModel->deleteUser($pseudo); 
+    }
+
 }

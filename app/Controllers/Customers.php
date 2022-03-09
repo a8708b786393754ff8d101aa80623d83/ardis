@@ -31,7 +31,7 @@ class Customers extends Visitor{
     protected string $zip_code; 
     protected string $city; 
     protected string $civ; 
-    protected  $photo_profile; 
+    protected $photo_profile; 
     
     protected ImageManager $imgManager;
     protected CustomerManager $custManager;
@@ -53,8 +53,8 @@ class Customers extends Visitor{
         parent::__construct();
         $this->custManager = new CustomerManager;
         $this->imgManager = new ImageManager;
-        
         $this->reservMngr = new ReservationManager;
+
         $this->pseudo = $this->session->pseudo;
         $this->id = $this->session->id;
 
@@ -100,7 +100,7 @@ class Customers extends Visitor{
     */
     public function logout(){ 
         $this->session->destroy();  
-        return redirect()->to('http://localhost/ardis/public/visitor/');
+        return redirect()->to('visitor/');
     }
 
     /**
