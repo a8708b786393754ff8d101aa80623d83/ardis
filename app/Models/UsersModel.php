@@ -105,7 +105,7 @@ class UsersModel extends Model{
             client_cp AS cp, client_ville AS ville , client_pays AS pays , client_email AS email , 
             client_tel AS num_tel, client_profil_img AS img_profile, client_civ AS civ, compt_pseudo AS pseudo
             FROM clients 
-            INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compte.compt_id=?'; // ! mettre l'id est le tester
+            INNER JOIN compte ON clients.client_id = compte.compt_id WHERE compte.compt_id=?'; 
         return $this->db->query($sql, [$id])->getResult(); 
     }
 
@@ -118,7 +118,7 @@ class UsersModel extends Model{
     */
     public function getPasswordByPseudo(string $pseudo): string{
         $resp = $this->db->query('SELECT compt_pass FROM compte WHERE compt_pseudo= ?', [$pseudo])->getResult();
-        if(count($resp) !== 0){ // ? la verif si jamais le pseudo il est pas dans la bdd
+        if(count($resp) !== 0){ //  la verif si jamais le pseudo il est pas dans la bdd
             return $resp[0]->compt_pass; 
         }return ''; 
     }
@@ -222,5 +222,15 @@ class UsersModel extends Model{
         return $this->db->query('SELECT client_profil_img 
                                 FROM clients 
                                 WHERE client_id=?', $id)->getResult()[0]->client_profil_img; 
+    }
+
+    /** 
+    * @brief Methode qui contient la requete SQL pour recuperer tout les id de la base de donner
+    * @details
+    * <p>Elle recupere tout les id des comptes utilisateur, cette methode sera utiliser par l'administrateur</p>
+    * @param array tout les id
+    */
+    public function getAllUserInfoForAdmin(): array{
+        return $this->query('SELECT compt_id FROM compte')->getResult(); 
     }
 }

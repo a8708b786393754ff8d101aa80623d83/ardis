@@ -5,12 +5,11 @@ use App\Models\AvisManager;
 * @file Avis.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 14/02/2022
-* @brief Controller des visiteurs 
+* @brief Controller des avis 
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
 * 	<li><strong>index</strong> : pour afficher la page d'acceuil</li>
-* 	<li><strong>view</strong> : pour afficher toutes les  pages </li>
 * </ul>
 **/
 

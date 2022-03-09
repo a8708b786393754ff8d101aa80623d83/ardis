@@ -102,6 +102,12 @@ class HotelModel extends Model{
                                 WHERE hotel_nom = ?', [$name])->getResult(); 
     }
 
+    /**
+    * @brief Methode qui supprime les information d'un hotel
+    * @details 
+    * <p>La methode contient la requete SQL pour supprimer les informations d'un utlisateur.</p>
+    * @param string $id
+    **/
     public function deleteAllInformations(string $id){
         $this->db->query('DELETE hotels WHERE hotel_id = ?', [$id]); 
     }

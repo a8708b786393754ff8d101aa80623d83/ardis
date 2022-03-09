@@ -15,7 +15,7 @@
             </div>
         {/foreach}
     {/if}
-        <form action="{base_url('admin/hotel/')|cat:'/'}{$name|lower}" enctype="multipart/form-data" method="post">
+        <form action="{base_url('moderateur/hotel')|cat:'/'}{$name|lower}" enctype="multipart/form-data" method="post">
             <label for="nom_hotel">Nom de l'hotel: <input type="text" name='nom' value="{$name}"></label>
             <label for="nom_hotel">Pays de l'hotel: <input type="text" name='pays' value="{$pays}"></label>
             <label for="nom_hotel">Ville de l'hotel: <input type="text" name='ville' value="{$ville}"></label>
@@ -34,7 +34,6 @@
     </div>
 </div>
 {literal}
-    
 <style>
 .trash { color:rgb(209, 91, 71); }
 .flag { color:rgb(248, 148, 6); }

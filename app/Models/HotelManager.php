@@ -80,7 +80,16 @@ class HotelManager {
         return $this->respQuery->getIdByNameHotel($hotel)[0]->hotel_id; 
     }
 
-    public function update(string $name_hotel, array $post, $objRequest){
+    /**
+    * @brief Methode qui met a jour les donner de l'hotel
+    * @details 
+    * <p>La methode contient la requete SQL met a jour les donner de l'hotel, cette methode seras utiliser par l'administrateur est le moderateur.</p>
+    * @param string $name_hotel
+    * @param array $post
+    * @param $objRequest
+    * @return array tyep de message est le contenue
+    **/
+    public function update(string $name_hotel, array $post, $objRequest): array{
         $data = []; 
         foreach($post as $key=>$value){
             $data['hotel_'.$key] = $value; 
@@ -91,15 +100,18 @@ class HotelManager {
         $success =  $this->imgMngr->updateImgHotel($objRequest, $name_hotel, $id); 
         if($success){
             return ['msg_success',  "Les element ont bien ete mise a jour."]; 
-        }else{
-            return ['msg_error', $success]; 
         }
-    
+        return ['msg_error', $success];     
     }
 
+    /**
+    * @brief Methode qui execute une requete pour supprimer un hotel
+    * @details 
+    * <p>La methode execute une requete pour supprimer un hotel, elle utilise la methode getNameById pour recuperer l'id de celui-ci.</p>
+    * @param string $name
+    **/
     public function removeAll(string $name){
         $id = $this->getNameById($name);
-        $this->respQuery->delete($id); ; 
-
+        $this->respQuery->delete($id); 
     }
 }

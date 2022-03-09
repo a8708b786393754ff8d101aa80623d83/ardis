@@ -7,7 +7,7 @@ use App\Models\RestaurantManager;
 * @date 27/02/2022
 * @brief Controller des menus  
 * @details 
-* <p>L'action de la classe est view</p>
+* <p>L'action de la classe est index</p>
 **/
 
 class Restaurant extends Pages{
@@ -17,7 +17,7 @@ class Restaurant extends Pages{
     protected string $descri;
     protected string $image;
     protected array  $allData; 
-    protected RestaurantManager $restoManagenr; 
+    protected RestaurantManager $restoMngr; 
 
     /**
     * @brief Méthode constructrice 
@@ -28,8 +28,8 @@ class Restaurant extends Pages{
     **/
     public function __construct(){
         parent::__construct(); 
-        $this->restoManagenr = new RestaurantManager; 
-        $this->allData = $this->restoManagenr->getAllData(); 
+        $this->restoMngr = new RestaurantManager; 
+        $this->allData = $this->restoMngr->getAllData(); 
 
     }
 
