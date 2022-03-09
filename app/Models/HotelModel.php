@@ -101,4 +101,8 @@ class HotelModel extends Model{
                                 FROM hotels 
                                 WHERE hotel_nom = ?', [$name])->getResult(); 
     }
+
+    public function deleteAllInformations(string $id){
+        $this->db->query('DELETE hotels WHERE hotel_id = ?', [$id]); 
+    }
 }
