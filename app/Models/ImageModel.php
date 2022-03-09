@@ -66,15 +66,4 @@ class ImageModel extends Model{
         $id = $this->userModel->getIdByPseudo($pseudo);
         $this->db->query('UPDATE clients SET client_profil_img=? WHERE client_id=?', [$name_img, $id]);
     }
-
-    /**
-    * @brief Methode qui supprime une image
-    * @details
-    *<p>Elle forge la requete pour supprimer une image a partir de l'id de l'image</p>
-    * @param string $id 
-    */
-    public function deleteImg(string $id){
-        $this->db->query('query', [$id]); 
-    }
-
 }

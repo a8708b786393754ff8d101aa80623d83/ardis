@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 02:40:09
+/* Smarty version 4.0.4, created on 2022-03-09 17:39:31
   from '/var/www/html/ardis/app/Views/profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6225c4e9558276_66139126',
+  'unifunc' => 'content_62293ab3d15400_62483316',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2aede7db75b42c6d96ccf0200c008c09990add2f' => 
     array (
       0 => '/var/www/html/ardis/app/Views/profile.tpl',
-      1 => 1646604222,
+      1 => 1646865663,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6225c4e9558276_66139126 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62293ab3d15400_62483316 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ((isset($_SESSION['pseudo'])) && (isset($_SESSION['id']))) {?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20891698116225c4e9552739_97595363', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_186373179462293ab3d0e062_77165153', 'content');
 ?>
 
 <?php }
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_20891698116225c4e9552739_97595363 extends Smarty_Internal_Block
+class Block_186373179462293ab3d0e062_77165153 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_20891698116225c4e9552739_97595363',
+    0 => 'Block_186373179462293ab3d0e062_77165153',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
