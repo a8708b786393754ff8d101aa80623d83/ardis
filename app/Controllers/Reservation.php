@@ -73,9 +73,10 @@ class Reservation extends Pages{
             $this->_data['activiter_price']   = $this->activMngr->getPriceActiv($this->_data['activiter']); 
             
             $this->_data['price_total']  = $this->reservMngr->getResultTotalReservation($this->_data['durer'], $this->_data['activiter_price'], $this->request->getVar('hotel_destination')); 
-            $this->display('recus.tpl');    
         }catch (\Throwable $th) {
-            echo '403 Forbidden';
+            // none
+        }finally{
+            $this->display('recus.tpl');    
         }
     }
 }
