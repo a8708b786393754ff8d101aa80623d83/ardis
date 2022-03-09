@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-07 15:39:31
+/* Smarty version 4.0.4, created on 2022-03-09 15:40:35
   from '/var/www/html/ardis/app/Views/recus.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_62267b93a86a15_42160407',
+  'unifunc' => 'content_62291ed38591f6_96134362',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0de7461e2374045c3f2a83650cb73952c1372707' => 
     array (
       0 => '/var/www/html/ardis/app/Views/recus.tpl',
-      1 => 1646689168,
+      1 => 1646862008,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62267b93a86a15_42160407 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62291ed38591f6_96134362 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_48826076662267b93a80be3_11926701', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_145518038962291ed3854479_93488800', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_48826076662267b93a80be3_11926701 extends Smarty_Internal_Block
+class Block_145518038962291ed3854479_93488800 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_48826076662267b93a80be3_11926701',
+    0 => 'Block_145518038962291ed3854479_93488800',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -73,34 +73,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
                                                 <br> Durée du séjour : <?php echo $_smarty_tpl->tpl_vars['durer']->value;?>
  jours
-                                                <?php if (is_array($_smarty_tpl->tpl_vars['num_chamb']->value)) {?>
-                                                    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['num_chamb']->value, 'item');
-$_smarty_tpl->tpl_vars['item']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
-$_smarty_tpl->tpl_vars['item']->do_else = false;
-?>
-                                                        <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['item']->value->chamb_num;?>
-    
-                                                    <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                                                <?php } else { ?>
-                                                        <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['num_chamb']->value[0]->chamb_num;?>
-    
-                                                <?php }?>
+                                                <br> Nombr de lits loué : <?php echo $_smarty_tpl->tpl_vars['nb_lit']->value;?>
+
+                                                <br> Numero chambre : <?php echo $_smarty_tpl->tpl_vars['nb_chambre']->value;?>
+
                                             </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <table class="invoice-items" cellpadding="0" cellspacing="0">
                                                         <tbody>
-                                                            <tr>
-                                                                <td>Prix séjours</td>
-                                                                <td class="alignright">1000.00 €</td>
-                                                            </tr>
-                                                            <tr>
-                                                        </tr>
                                                         <?php if ($_smarty_tpl->tpl_vars['activiter']->value != 'non') {?>
                                                         <tr>
                                                             <td>Activité</td>
@@ -119,7 +101,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                         </tbody></table>
                                     </td>
                                 </tr>
-                            </tbody></table>
+                            </tbody></table> 
                         </td>
                     </tr>
                 </tbody></table>

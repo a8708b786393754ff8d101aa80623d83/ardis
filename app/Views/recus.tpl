@@ -34,12 +34,6 @@
                                                 <td>
                                                     <table class="invoice-items" cellpadding="0" cellspacing="0">
                                                         <tbody>
-                                                            <tr>
-                                                                <td>Prix séjours</td>
-                                                                <td class="alignright"> 1000.00 €</td>
-                                                            </tr>
-                                                            <tr>
-                                                        </tr>
                                                         {if $activiter neq 'non'}
                                                         <tr>
                                                             <td>Activité</td>

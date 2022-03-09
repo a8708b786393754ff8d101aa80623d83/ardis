@@ -64,7 +64,7 @@ class ActiviterManager{
     * @return string|int Contient le prix de l'activiter ou renvoie un 0 
     **/
     public function getPriceActiv(string $value_activiter){
-        if($value_activiter !== 'non'){
+        if($value_activiter !== 'non' && $value_activiter !== 'yes'){
             return $this->activModel->getPriceActivByIdActiv($value_activiter); 
         }return 0; 
     }

@@ -48,21 +48,6 @@ class ImageModel extends Model{
     }
     
 
-    public function getAllImgNom(){
-        //  Recuperer tout les nom des images 
-
-    }
-
-    public function getIdImgByName(string $name_img){
-        // Recupere lèid a apartir du nom de l'image 
-
-    }
-
-    public function getImgDate(string $date_post){
-        //  Recuperer l'image par uen date 
-        
-    }
-
     public function setNameImgHotel(string $id, string $name){
         $this->db->query('UPDATE hotels
                         SET hotel_image = ?
