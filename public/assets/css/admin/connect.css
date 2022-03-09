@@ -1,0 +1,36 @@
+body{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.row{
+ margin-top: 10%;
+}
+
+p{
+    font-family: "Homer Simpson", cursive;
+ font-size:30px;
+ text-shadow: 1px 2px #000;
+   color: blue;
+ 
+}
+label{
+    font-family: "Homer Simpson", cursive;
+    font-size:15px;
+}
+
+button{
+    font-family: "Homer Simpson", cursive;
+ text-shadow: 1px 2px #000;
+   
+}
+
+#col-Login{
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}

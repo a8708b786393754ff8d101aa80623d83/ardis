@@ -62,16 +62,16 @@ class PostTest extends CIUnitTestCase{
     public function testPostCreateAccountIncorrectName(){
         $value = [
             "lastname" => $this->fake->lastName(),
-            "firstname" => $this->fake->firstNameFemale(),
-            "civ" => 'mr',
-            "tel" => $this->fake->phoneNumber(),
-            "CP" => $this->fake->randomNumber(5, true),
-            "city" => $this->fake->words(3, true)[0],
+            "rez" => $this->fake->firstNameFemale(),
+            "cizerv" => 'mr',
+            "telzer" => $this->fake->phoneNumber(),
+            "CPzer" => $this->fake->randomNumber(5, true),
+            "citzery" => $this->fake->words(3, true)[0],
             "email" => $this->fake->safeEmail(),
-            "select" => 'France',
-            "adresse" => 'ddssdfsdfsdf',
-            "password" => $this->fake->password(2, 6),
-            "Confirm_password" => $this->fake->password(2, 6),
+            "seleczert" => 'France',
+            "adreszerse" => 'ddssdfsdfsdf',
+            "passwozerrd" => $this->fake->password(2, 6),
+            "Confirm_pzerzerzerassword" => $this->fake->password(2, 6),
         ];
         $result = $this->call('post','visitor/create_account', $value);
         $this->assertTrue($result->isOk()); 

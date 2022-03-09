@@ -1,3 +1,4 @@
+{if isset($smarty.session.pseudo) && $smarty.session.pseudo === '4dm1n4rd1s'}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,8 +7,8 @@
 		<meta name="description " content="Hotel ardis ,l 'hotel du 'climats ' ">
 		<meta name="description " content="Decouvrez nos hotels sur tout les climats, nous avons des hotel sur les 4 coin du globe.
 		Nous avons 3 hotel a dubai, 2 en suise est 2 a punt cana tousse ">
-		<link rel="stylesheet" href="assets/css/bootstrap.css">
-		<link rel="stylesheet" href="assets/css/login.css">
+		<link rel="stylesheet" href="{base_url('assets/css/bootstrap.css')}">
+		<link rel="stylesheet" href="{base_url('assets/css/admin/admin.css')}">
 		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Panel admin</title>
 </head>
@@ -30,9 +31,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<label>
 					Administrateur
-				</a>
+				</label>
 			</div>
 	
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,7 +45,7 @@
 					<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html" target="_blank">Visiter le site</a></li>
+					<li><a href="{base_url('pages/')}" target="_blank">Visiter le site</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -85,9 +86,9 @@
 											<div id="dropdown-lvl2" class="panel-collapse collapse">
 												<div class="panel-body">
 													<ul class="nav navbar-nav">
-														<li><a href="#">Punta cana</a></li>
-														<li><a href="#">Dubaï</a></li>
-														<li><a href="#">Suisse</a></li>
+													{foreach from=$nom_hotel item=item}
+														<li><a href="{base_url('admin/hotel/')|cat:'/'}{$item|lower}">{$item}</a></li>														
+													{/foreach}
 													</ul>
 												</div>
 											</div>
@@ -104,11 +105,8 @@
 			</nav>
 	
 		</div>
-	</div>  		</div>
-			  <div class="col-md-10 content">
-					<div class="panel panel-default">
-		<div class="panel-heading">
-			Tableau de bord
+	</div>
+		Tableau de bord
 		</div>
 		<div class="panel-body">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -124,7 +122,7 @@
             <div class="d-flex ">
                 <p class=" "> © 2021 Hotel ardis|Mention legale</p>
                 <p>| Email: hotel@ardis.com |  Numero mobile: 06 06 06 06 06</p>
-                <img src="../assets/Images/Objet dynamique vectoriel.png " alt="logo_icone " height="30">
+                <img src="{base_url('assets/Images/Objet dynamique vectoriel.webp')}" alt="logo_icone " height="30">
             </div>
         </div>
     </div>
@@ -146,4 +144,7 @@
   	});
   });
 	</script>
-</html>
+</html>	
+{else}
+	403 FORBIDDEN
+{/if}

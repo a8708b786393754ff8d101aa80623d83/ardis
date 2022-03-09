@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2022-03-06 12:21:24
+/* Smarty version 4.0.4, created on 2022-03-08 16:35:31
   from '/var/www/html/ardis/app/Views/alpardis.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_6224fba43b7399_83173785',
+  'unifunc' => 'content_6227da33c68f89_29195602',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6541a7561a180a8599b217c481d032ca5e41142b' => 
     array (
       0 => '/var/www/html/ardis/app/Views/alpardis.tpl',
-      1 => 1646505219,
+      1 => 1646668714,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6224fba43b7399_83173785 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6227da33c68f89_29195602 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3881790036224fba43b05e7_70205549', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20783259346227da33c50908_48010239', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'base/layout.tpl');
 }
 /* {block 'content'} */
-class Block_3881790036224fba43b05e7_70205549 extends Smarty_Internal_Block
+class Block_20783259346227da33c50908_48010239 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_3881790036224fba43b05e7_70205549',
+    0 => 'Block_20783259346227da33c50908_48010239',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -88,7 +88,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 ?>
                 </div>
                 <div class="localisation_hotel ">
-                    <p class='contenue'><?php echo $_smarty_tpl->tpl_vars['contenue']->value;?>
+                      <p class='contenue'><?php echo $_smarty_tpl->tpl_vars['contenue']->value;?>
 </p>
                     <p>A partir de <span style='color: #ff00aa;'><?php echo $_smarty_tpl->tpl_vars['price']->value;?>
 €</span></p>
@@ -107,7 +107,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 
  <div class="container mt-5">
   <hr>
-  <h3 class='text-center'>Partager l'hotel a un proche.</h3>
+  <h3 class='text-center'>Partager l'hotel.</h3>
      <form method="post" action="<?php echo base_url('Hotel/sendMail');?>
 ">
       <div class="form-group">
