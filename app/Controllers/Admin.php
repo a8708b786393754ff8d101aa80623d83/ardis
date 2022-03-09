@@ -36,9 +36,16 @@ final class Admin extends Visitor{
     
     public function operateHotel(string $name){
         $this->_data['color_link_nav'] = "black";
-        $this->_data['name_file']  = 'hotel_admin';
+        $this->_data['name_file']  = 'Hotel '.ucfirst($name);
         $this->_data['meta_title'] = "Operations de l'hotel".$name;
 
+        if($this->request->getMethod() === 'post'){
+            $data = $this->request->getPost(); 
+            $msg = $this->hotelMngr->update(ucfirst($name), $data, $this->request); 
+            var_dump($msg);
+            $this->_data[$msg[0]] = $msg[1];
+        }
+        
         $respQuery = $this->hotelMngr->getData($name)[0]; 
         $this->name = $respQuery->hotel_nom; 
         $this->image = $respQuery->hotel_image; 
@@ -61,9 +68,13 @@ final class Admin extends Visitor{
         $this->_data['tel']         = $this->tel;
 
 
-        // ! methode qui met a jour sin c'est en post
+        // ! ajouter un AdminManager
 
         $this->display('admin/hotel.tpl'); 
+    }
+
+    public function delete(){
+
     }
 
 }

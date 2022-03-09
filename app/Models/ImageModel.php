@@ -63,6 +63,12 @@ class ImageModel extends Model{
         
     }
 
+    public function setNameImgHotel(string $id, string $name){
+        $this->db->query('UPDATE hotels
+                        SET hotel_image = ?
+                        WHERE hotel_id = ?', [$name, $id]); 
+    }
+
     /** 
     * @brief Methode qui ajoute l'image profile de l'utilisateur 
     * @details

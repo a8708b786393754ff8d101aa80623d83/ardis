@@ -9,13 +9,13 @@ Controller (CodeIgniter\Controller)
 
 Post
  [x] Post create account correct name
- [x] Post create account incorrect name
+ [ ] Post create account incorrect name
  [x] Visitor login incorrect name
  [x] Visitor login correct name
 
 Session
  [x] Avis
- [x] Reservation recus
+ [ ] Reservation recus
 
 Example Database
  [x] Model find all
