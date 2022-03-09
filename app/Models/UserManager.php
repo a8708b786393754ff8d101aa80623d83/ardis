@@ -144,6 +144,13 @@ class UserManager{
     }
 
 
+    /**
+    * @brief Methode qui recupere tout les informations de tout les utilisateurs
+    * @details 
+    * <p>La methode recupere tout les informations de tout les utilisateurs,elle renvoie dans  un bon format.</p>
+    * <p>Elle sera utiliser par l'administateur du site .</p>
+    * @return array    
+    **/
     public function getAllUserFromAdmin(){
         $users = []; 
         foreach($this->userModel->getAllUserInfoForAdmin() as $keys=>$values){
@@ -153,7 +160,12 @@ class UserManager{
         return $users; 
     }
 
-
+    /**
+    * @brief Methode qui supprime un utlisateur
+    * @details 
+    * <p>La methode supprime tout les information de l'utilisateur a partir du pseudo.</p>
+    * <p>Elle sera utiliser par l'administateur du site .</p>
+    **/
     public function deleteUser(string $pseudo){
         $this->userModel->deleteUser($pseudo); 
     }

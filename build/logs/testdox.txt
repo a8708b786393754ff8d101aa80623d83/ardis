@@ -1,0 +1,30 @@
+Controller (CodeIgniter\Controller)
+ [x] Pages index check
+ [x] Hotel view check
+ [x] Activiter index check
+ [x] Activiter archiver check
+ [x] A vis index check
+ [x] Reservation index check
+ [x] Photo gallery view check
+
+Post
+ [x] Post create account correct name
+ [x] Post create account incorrect name
+ [x] Visitor login incorrect name
+ [x] Visitor login correct name
+
+Session
+ [x] Avis
+ [x] Reservation recus
+
+Example Database
+ [x] Model find all
+ [x] Soft delete leaves row
+
+Example Session
+ [x] Session simple
+
+Health
+ [x] Is defined app path
+ [x] Base url has been set
+

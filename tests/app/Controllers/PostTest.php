@@ -75,6 +75,8 @@ class PostTest extends CIUnitTestCase{
         ];
         $result = $this->call('post','visitor/create_account', $value);
         $this->assertTrue($result->isOk()); 
+
+        // ce test ma permis de verifier les name dans chaque input
     }
 
     /**
