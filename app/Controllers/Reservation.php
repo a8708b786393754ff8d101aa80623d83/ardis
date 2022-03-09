@@ -46,6 +46,7 @@ class Reservation extends Pages{
     }
 
 
+    // throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     /**
     * @brief Méthode qui affiche le recus de la reservation 
     * @details 
@@ -74,7 +75,7 @@ class Reservation extends Pages{
             $this->_data['price_total']  = $this->reservMngr->getResultTotalReservation($this->_data['durer'], $this->_data['activiter_price'], $this->request->getVar('hotel_destination')); 
             $this->display('recus.tpl');    
         }catch (\Throwable $th) {
-            // page 403
+            var_dump('a');
         }
     }
 }
