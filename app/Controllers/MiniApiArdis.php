@@ -22,7 +22,6 @@ class MiniApiArdis extends BaseController{
     * <p>Cette méthode appelle la méthode constructrice de la classe BaseController</p>
     **/
     public function __construct(){
-        parent::__construct(); 
         $this->activMdl = new ActiviterModel;    
     }
 

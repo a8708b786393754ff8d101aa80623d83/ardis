@@ -2,20 +2,33 @@
 {block name=content}
 <div class="container">
     <div class="row">
-        <form action="" method="post">
-            <label for="nom_hotel">Nom de l'hotel: <input type="text" value="{$name}"></label>
-            <label for="nom_hotel">Pays de l'hotel: <input type="text" value="{$pays}"></label>
-            <label for="nom_hotel">Ville de l'hotel: <input type="text" value="{$ville}"></label>
-            <label for="note">Note: <input type="text" value="{$note}"></label>
-            <label for="price">Prix : <input type="text" value="{$note}"></label>
+    {if isset($msg_error)}
+        {foreach from=$msg_error item=item }
+            <div class="alert alert-danger" role="alert">
+                {$item}
+            </div>
+        {/foreach}
+    {elseif isset($msg_success)}
+        {foreach from=$msg_success item=item }
+            <div class="alert alert-success" role="alert">
+                {$item}
+            </div>
+        {/foreach}
+    {/if}
+        <form action="{base_url('admin/hotel/')|cat:'/'}{$name|lower}" enctype="multipart/form-data" method="post">
+            <label for="nom_hotel">Nom de l'hotel: <input type="text" name='nom' value="{$name}"></label>
+            <label for="nom_hotel">Pays de l'hotel: <input type="text" name='pays' value="{$pays}"></label>
+            <label for="nom_hotel">Ville de l'hotel: <input type="text" name='ville' value="{$ville}"></label>
+            <label for="note">Note: <input type="number" min=0 max=5 name='note' value="{$note}"></label>
+            <label for="price">Prix : <input type="text"  value="{$price}" name="price"></label>
             <label for="contenue">contenue: </label>
             <textarea name="contenue" cols="30" rows="10">
                 {$contenue}
             </textarea>
-            <label for="email">Email: <input type="email" value="{$email}"></label>
+            <label for="email">Email: <input type="email" value="{$email}" name="mail"></label>
             <label for="image">Nouvelle image: <input type="file" name="image"></label>
-            <label for="">NUmero de téléphone: <input type="tel" value="{$tel}"></label>
-            <img src="{base_url('assets/Images/nos_hotels/')|cat:'/'}{$image|lower}" alt="image_{$name}">
+            <label for="">NUmero de téléphone: <input type="tel" value="{$tel}" name='tel'></label>
+            <img src="{base_url('assets/Images/nos_hotels/')|cat:'/'}{$image|lower}"  alt="image_{$name}">
             <input type="submit" value="Modifier">
         </form>
         <form action="" method="post">

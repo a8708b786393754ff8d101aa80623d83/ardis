@@ -1,36 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="18" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="0.437700">
-    <testsuite name="App" tests="18" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="0.437700">
-      <testsuite name="CodeIgniter\ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.198847">
-        <testcase name="testPagesIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="36" assertions="1" time="0.049256"/>
-        <testcase name="testHotelViewCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="48" assertions="1" time="0.025067"/>
-        <testcase name="testActiviterIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="60" assertions="1" time="0.025984"/>
-        <testcase name="testActiviterArchiverCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="72" assertions="1" time="0.023959"/>
-        <testcase name="testAVisIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="84" assertions="1" time="0.025314"/>
-        <testcase name="testReservationIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="96" assertions="1" time="0.024822"/>
-        <testcase name="testPhotoGalleryViewCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="109" assertions="1" time="0.024445"/>
+  <testsuite name="" tests="18" assertions="19" errors="1" warnings="0" failures="1" skipped="0" time="0.491983">
+    <testsuite name="App" tests="18" assertions="19" errors="1" warnings="0" failures="1" skipped="0" time="0.491983">
+      <testsuite name="CodeIgniter\ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.227443">
+        <testcase name="testPagesIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="36" assertions="1" time="0.062709"/>
+        <testcase name="testHotelViewCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="48" assertions="1" time="0.028172"/>
+        <testcase name="testActiviterIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="60" assertions="1" time="0.028355"/>
+        <testcase name="testActiviterArchiverCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="72" assertions="1" time="0.025942"/>
+        <testcase name="testAVisIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="84" assertions="1" time="0.028502"/>
+        <testcase name="testReservationIndexCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="96" assertions="1" time="0.025841"/>
+        <testcase name="testPhotoGalleryViewCheck" class="CodeIgniter\ControllerTest" classname="CodeIgniter.ControllerTest" file="/var/www/html/ardis/tests/app/Controllers/ControllerTest.php" line="109" assertions="1" time="0.027922"/>
       </testsuite>
-      <testsuite name="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.123516">
-        <testcase name="testPostCreateAccountCorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="21" assertions="1" time="0.035416"/>
-        <testcase name="testPostCreateAccountIncorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="39" assertions="1" time="0.037720"/>
-        <testcase name="testVisitorLoginIncorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="57" assertions="1" time="0.025442"/>
-        <testcase name="testVisitorLoginCorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="69" assertions="1" time="0.024937"/>
+      <testsuite name="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" tests="4" assertions="3" errors="1" warnings="0" failures="0" skipped="0" time="0.125681">
+        <testcase name="testPostCreateAccountCorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="38" assertions="1" time="0.041245"/>
+        <testcase name="testPostCreateAccountIncorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="62" assertions="0" time="0.027858">
+          <error type="ErrorException">PostTest::testPostCreateAccountIncorrectName
+ErrorException: Undefined index: tel
+
+/var/www/html/ardis/app/Libraries/HuntError.php:76
+/var/www/html/ardis/app/Models/UserManager.php:93
+/var/www/html/ardis/app/Controllers/Visitor.php:52
+/var/www/html/ardis/system/CodeIgniter.php:825
+/var/www/html/ardis/system/CodeIgniter.php:412
+/var/www/html/ardis/system/CodeIgniter.php:320
+/var/www/html/ardis/system/Test/FeatureTestTrait.php:188
+/var/www/html/ardis/tests/app/Controllers/PostTest.php:76</error>
+        </testcase>
+        <testcase name="testVisitorLoginIncorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="86" assertions="1" time="0.027392"/>
+        <testcase name="testVisitorLoginCorrectName" class="PostTest" classname="PostTest" file="/var/www/html/ardis/tests/app/Controllers/PostTest.php" line="103" assertions="1" time="0.029186"/>
       </testsuite>
-      <testsuite name="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.050611">
-        <testcase name="testAvis" class="SessionTest" classname="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" line="37" assertions="1" time="0.025971"/>
-        <testcase name="testReservationRecus" class="SessionTest" classname="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" line="42" assertions="1" time="0.024640"/>
+      <testsuite name="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="1" skipped="0" time="0.062036">
+        <testcase name="testAvis" class="SessionTest" classname="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" line="42" assertions="1" time="0.029068"/>
+        <testcase name="testReservationRecus" class="SessionTest" classname="SessionTest" file="/var/www/html/ardis/tests/app/Controllers/SessionTest.php" line="52" assertions="1" time="0.032968">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">SessionTest::testReservationRecus
+Failed asserting that false is true.
+
+/var/www/html/ardis/tests/app/Controllers/SessionTest.php:54</failure>
+        </testcase>
       </testsuite>
-      <testsuite name="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.062665">
-        <testcase name="testModelFindAll" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="17" assertions="1" time="0.033570"/>
-        <testcase name="testSoftDeleteLeavesRow" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="28" assertions="2" time="0.029094"/>
+      <testsuite name="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.074424">
+        <testcase name="testModelFindAll" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="17" assertions="1" time="0.041094"/>
+        <testcase name="testSoftDeleteLeavesRow" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" file="/var/www/html/ardis/tests/database/ExampleDatabaseTest.php" line="28" assertions="2" time="0.033330"/>
       </testsuite>
-      <testsuite name="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.000490">
-        <testcase name="testSessionSimple" class="ExampleSessionTest" classname="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" line="11" assertions="1" time="0.000490"/>
+      <testsuite name="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.000565">
+        <testcase name="testSessionSimple" class="ExampleSessionTest" classname="ExampleSessionTest" file="/var/www/html/ardis/tests/session/ExampleSessionTest.php" line="11" assertions="1" time="0.000565"/>
       </testsuite>
-      <testsuite name="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.001572">
-        <testcase name="testIsDefinedAppPath" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="13" assertions="1" time="0.000321"/>
-        <testcase name="testBaseUrlHasBeenSet" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="18" assertions="2" time="0.001251"/>
+      <testsuite name="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" tests="2" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.001835">
+        <testcase name="testIsDefinedAppPath" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="13" assertions="1" time="0.000385"/>
+        <testcase name="testBaseUrlHasBeenSet" class="HealthTest" classname="HealthTest" file="/var/www/html/ardis/tests/unit/HealthTest.php" line="18" assertions="2" time="0.001450"/>
       </testsuite>
     </testsuite>
   </testsuite>

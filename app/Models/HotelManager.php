@@ -12,6 +12,7 @@ use App\Models\HotelModel;
 
 class HotelManager {
     private $respQuery; 
+    private $imgMngr; 
     /**
     * @brief Méthode constructrice 
     * @details 
@@ -19,6 +20,7 @@ class HotelManager {
     **/
     public function __construct(){
         $this->respQuery = new HotelModel(); 
+        $this->imgMngr   = new ImageManager(); 
     }
 
     /**
@@ -76,5 +78,22 @@ class HotelManager {
     **/
     public function getNameById(string $hotel): string{
         return $this->respQuery->getIdByNameHotel($hotel)[0]->hotel_id; 
+    }
+
+    public function update(string $name_hotel, array $post, $objRequest){
+        $data = []; 
+        foreach($post as $key=>$value){
+            $data['hotel_'.$key] = $value; 
+        }
+        
+        $id = $this->getNameById($name_hotel);
+        $this->respQuery->update($id, $data); 
+        $success =  $this->imgMngr->updateImgHotel($objRequest, $name_hotel, $id); 
+        if($success){
+            return ['msg_success',  "Les element ont bien ete mise a jour."]; 
+        }else{
+            return ['msg_error', $success]; 
+        }
+    
     }
 }
