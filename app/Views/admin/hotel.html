@@ -1,0 +1,31 @@
+{extends file='base/layout.tpl'}
+{block name=content}
+<div class="container">
+    <div class="row">
+        <form action="" method="post">
+            <label for="">Not de l'hotel: <input type="text" value="{$name}"></label>
+            <label for="">Note: <input type="text" value="{$note}"></label>
+            <label for="">Prix : <input type="text" value="{$note}"></label>
+            <label for="">Note: <input type="text" value="{$note}"></label>
+            <label for="">Note: <input type="text" value="{$note}"></label>
+            <textarea name="content" cols="30" rows="10">
+                {$contenue}
+            </textarea>
+        </form>
+    </div>
+</div>
+{literal}
+    
+<style>
+.trash { color:rgb(209, 91, 71); }
+.flag { color:rgb(248, 148, 6); }
+.panel-body { padding:0px; }
+.panel-footer .pagination { margin: 0; }
+.panel .glyphicon,.list-group-item .glyphicon { margin-right:5px; }
+.panel-body .radio, .checkbox { display:inline-block;margin:0px; }
+.panel-body input[type=checkbox]:checked + label { text-decoration: line-through;color: rgb(128, 144, 160); }
+.list-group-item:hover, a.list-group-item:focus {text-decoration: none;background-color: rgb(245, 245, 245);}
+.list-group { margin-bottom:0px; }
+</style>
+{/literal}
+{/block}

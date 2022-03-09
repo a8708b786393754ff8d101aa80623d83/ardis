@@ -6,7 +6,7 @@ use App\Models\ActiviterManager;
 * @file Reservation.php
 * @author Ayoub Brahim <ayoubbrahim68@gmail.com>
 * @date 01/03/2022
-* @brief Controller des reservfation
+* @brief Controller des reservations
 * @details 
 * <p>Les actions sont :</p>
 * <ul>
@@ -72,9 +72,9 @@ class Reservation extends Pages{
             $this->_data['activiter_price']   = $this->activMngr->getPriceActiv($this->_data['activiter']); 
             
             $this->_data['price_total']  = $this->reservMngr->getResultTotalReservation($this->_data['durer'], $this->_data['activiter_price'], $this->request->getVar('hotel_destination')); 
-        }catch (\Throwable $th) {
-        }finally{
             $this->display('recus.tpl');    
+        }catch (\Throwable $th) {
+            // page 404
         }
     }
 }

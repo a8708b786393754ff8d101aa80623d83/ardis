@@ -1,6 +1,5 @@
 <?php 
 namespace App\Controllers; 
-use App\Models\HotelManager;
 use App\Models\ImageManager;
 /**
 * @file PhotoGallery.php
@@ -12,9 +11,6 @@ use App\Models\ImageManager;
 **/
 
 class PhotoGallery extends Pages{
-    protected int $max_photo = 4; 
-    protected array $allHotelNoms; 
-    protected HotelManager $hotelManager; 
     protected ImageManager $ImgManager; 
 
     /**
@@ -25,7 +21,6 @@ class PhotoGallery extends Pages{
     **/
     public function __construct(){
         parent::__construct(); 
-        $this->hotelManager = new HotelManager; 
         $this->ImgManager = new ImageManager();
     }
 
