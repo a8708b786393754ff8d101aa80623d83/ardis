@@ -54,11 +54,15 @@ class Customers extends Visitor{
         $this->custManager = new CustomerManager;
         $this->imgManager = new ImageManager;
         $this->reservMngr = new ReservationManager;
+        try {
+            $this->pseudo = $this->session->pseudo;
+            $this->id = $this->session->id;
+        } catch (\Throwable $th) {
+            //throw $th;
+        }finally{
+            $this->updateAttribut(); 
+        }
 
-        $this->pseudo = $this->session->pseudo;
-        $this->id = $this->session->id;
-
-        $this->updateAttribut(); 
     }
     
     /**

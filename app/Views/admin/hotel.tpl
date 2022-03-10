@@ -3,11 +3,15 @@
 <div class="container">
     <div class="row">
     {if isset($msg_error)}
-        {foreach from=$msg_error item=item }
-            <div class="alert alert-danger" role="alert">
-                {$item}
-            </div>
-        {/foreach}
+        {if empty($msg_error)}
+            {foreach from=$msg_error item=item }
+                <div class="alert alert-danger" role="alert">
+                    {for $i=1 to count($item)-1 }
+                        {$item[$i]}
+                    {/for}
+                </div>
+            {/foreach}
+        {/if}
     {elseif isset($msg_success)}
         {foreach from=$msg_success item=item }
             <div class="alert alert-success" role="alert">

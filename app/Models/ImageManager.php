@@ -47,7 +47,6 @@ class ImageManager{
     **/
     public function updateProfileOrError($img_file, string $pseudo){
         $img_pre_uplaoded = $img_file->getFile('photo_profile'); 
-        var_dump($img_pre_uplaoded->getFileName()); 
         $name_file_or_error = $this->imageIsMatches($img_pre_uplaoded, 'assets/Images/profile/'); 
         if(is_string($name_file_or_error)){
             $this->imgModel->setImgProfile($pseudo, $name_file_or_error); 
@@ -88,7 +87,6 @@ class ImageManager{
     **/
     public function imgAvisIsMatches($objFile){
         $picture = $objFile->getFile('photo_avis_clients'); 
-        var_dump($picture->getFileName());
         $name_file_or_error = $this->imageIsMatches($picture, 'assets/Images/avis/'); 
         if(is_string($name_file_or_error)){
             return $name_file_or_error; 
@@ -119,11 +117,9 @@ class ImageManager{
     public function updateImgHotel($objFile, $name, $id_hotel) {
         $picture = $objFile->getFile('image');
         $name_file_or_error = $this->imageIsMatches($picture, 'assets/Images/nos_hotels/'); 
-        var_dump($name_file_or_error); 
         if(is_string($name_file_or_error)){
             $this->imgModel->setNameImgHotel($id_hotel, $name_file_or_error); 
             return true; 
-            // return ['msg_success',  "L'image a bien été chnager"]; 
-        }return ['msg_error', $name_file_or_error]; 
+        }return [$name_file_or_error]; 
     }
 }

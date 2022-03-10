@@ -31,7 +31,7 @@
                 </div>
                  <div class="presentation ">
             <p>Pour les activités, nous vous proposerons de faire du Jet Ski </p>
-            <a href="{base_url('reserver')}" class=" btn reserver-btn  ">Réserver</a>
+            <a href="{base_url('reservation')}" class=" btn reserver-btn  ">Réserver</a>
         </div>
             </div>
         </div>

@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['pages_0',['Pages',['../classApp_1_1Controllers_1_1Pages.html',1,'App::Controllers']]],
-  ['pages_2ephp_1',['Pages.php',['../Pages_8php.html',1,'']]],
-  ['panel_2',['panel',['../classApp_1_1Controllers_1_1Moderateur.html#afda232fc6588b8f9374d8047b6c35aa6',1,'App::Controllers::Moderateur']]],
-  ['photogallery_3',['PhotoGallery',['../classApp_1_1Controllers_1_1PhotoGallery.html',1,'App::Controllers']]],
-  ['photogallery_2ephp_4',['PhotoGallery.php',['../PhotoGallery_8php.html',1,'']]],
-  ['profile_5',['profile',['../classApp_1_1Controllers_1_1Customers.html#a185a1d86c66e0621c64984c230550b77',1,'App::Controllers::Customers']]]
-];

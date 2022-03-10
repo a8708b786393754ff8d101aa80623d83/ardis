@@ -98,7 +98,7 @@ class HotelManager {
         $id = $this->getNameById($name_hotel);
         $this->respQuery->update($id, $data); 
         $success =  $this->imgMngr->updateImgHotel($objRequest, $name_hotel, $id); 
-        if($success){
+        if($success === true){
             return ['msg_success',  "Les element ont bien ete mise a jour."]; 
         }
         return ['msg_error', $success];     
