@@ -1,0 +1,90 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+
+
+/* reseravtion  */
+
+.form-reservation {
+    text-align: center;
+}
+
+.reservation {
+    border: 0px black;
+}
+
+/* positionnement de la fleche  */
+.fa-arrow-down{
+    position: relative;
+    left: 950px; 
+    font-size: 50px;
+    top: 860px;
+}
+
+/* titre meuiller hotel au meuilleur prix  */
+
+.presentation_hotel {
+    position: relative;
+    top: 1000px;
+}
+
+
+/* card */
+
+section .card-group {
+    position: relative;
+    top: 1050px;
+}
+
+/* lien des page   */
+.card-body p:first-child{
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #33939A;
+    
+}
+/* button pour voir en plus */
+
+section .container {
+    position: relative;
+    width: 15rem;
+    top: 68rem;
+}
+
+
+/* foooter */
+
+footer {
+    position: relative;
+    top: 1150px;
+    background-color: #707070 !important;
+    height: 110px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .fa-arrow-down{
+        position: relative;
+        color: white ;
+        top: 700px;
+        left: 180px;        
+    }
+}

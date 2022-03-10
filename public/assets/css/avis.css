@@ -1,0 +1,44 @@
+/*config global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+
+
+.card{
+    position: relative;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
+h2{
+    position: relative;
+    left: 52rem;
+    width: 300px;
+}
+.star{
+    position: relative;
+    font-size: 20px;
+    color: yellow;
+}
+
+/* foooter */
+
+footer {
+    position: relative;
+    top: 1150px;
+    background-color: #707070 !important;
+    height: 110px;
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.nav-item {
+    margin: 5px !important;
+}
+
+/* localisation */
+.breadcrumb{
+    position: relative;
+    left: 65px;
+}
+
+.breadcrumb li:first-child {
+    right: 15px;
+    position: relative;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+/* dubai galerie image  */
+  .dubai_photos{
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* punta cana galerie image  */
+article  > .punta_cana{
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* suisse galerie image  */
+article  > .suisse_photos{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* foooter */
+footer {
+    position: relative;
+    background: #707070! important;
+    top: 20px;
+    height: 82px;
+}
+
+/* partie responsive   */
+@media screen and (max-width: 1280px){
+    /* laisser un peux d'espace */
+    h2{
+        margin: 50px;
+    }
+
+}

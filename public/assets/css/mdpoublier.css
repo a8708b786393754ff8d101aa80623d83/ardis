@@ -1,0 +1,40 @@
+ .form-gap {
+    padding-top: 100px;
+}
+.nav-item {
+    margin: 5px !important;
+}
+
+
+.container {
+    position: absolute;
+  top: 50%; left: 70%; 
+  transform: translate(-50%, -50%); 
+  width: 1000px;
+}
+
+.item {
+    width: 10em;
+}
+    
+div > .breadcrumb{
+    position: relative;
+    right: 500px;
+    bottom: 300px;
+}
+
+div >.breadcrumb li:first-child {
+    right: 12px;
+    position: relative;
+}
+
+div > .breadcrumb a {
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    top: 799px;
+    background: #707070! important;
+    height: 82px;
+} 
