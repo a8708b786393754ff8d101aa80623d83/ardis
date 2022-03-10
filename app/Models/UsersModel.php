@@ -34,7 +34,7 @@ class UsersModel extends Model{
     }
 
      /** 
-    * @brief Methode qui contient la requete SQL pour avoir les donner du client 
+    * @brief Methode qui contient la requete SQL pour avoir les donner du client .
     * @details
     * <p>Elle recupere le pseudo, le mot de passe hasher, le nom, le prenom du clients </p>
     * @param string $username

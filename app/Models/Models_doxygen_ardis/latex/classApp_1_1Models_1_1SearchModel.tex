@@ -1,0 +1,100 @@
+\hypertarget{classApp_1_1Models_1_1SearchModel}{}\doxysection{App\textbackslash{}Models\textbackslash{}Search\+Model Class Reference}
+\label{classApp_1_1Models_1_1SearchModel}\index{App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}Search\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classApp_1_1Models_1_1SearchModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1SearchModel_a8ce547bc3cf85b42f459067f2f6a547d}{\+\_\+\+\_\+construct}} (string \$element\+\_\+search)
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1SearchModel_a753db2bdc56b846989ca42c14f03cda6}{get\+Result\+Hotel}} ()
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}hotel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1SearchModel_ac7501a55f9009f5ca4a47621575e4e0f}{get\+Result\+Avis}} ()
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}avis (non archiver). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1SearchModel_ae659adcd8422f96c07a199d3d41c0029}{get\+Result\+Activ}} ()
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}activiter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1SearchModel_a59a658ce1ca0ec995e3f3a585917c8b4}\label{classApp_1_1Models_1_1SearchModel_a59a658ce1ca0ec995e3f3a585917c8b4}} 
+string {\bfseries \$element}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1SearchModel_a8ce547bc3cf85b42f459067f2f6a547d}\label{classApp_1_1Models_1_1SearchModel_a8ce547bc3cf85b42f459067f2f6a547d}} 
+\index{App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Search\+Model\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$element\+\_\+search }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+Cette méthode appelle la méthode constructrice de la classe mère Model.
+
+Initialise l\textquotesingle{}attribut element (le mot rentreer par l\textquotesingle{}utilisateur) pour l\textquotesingle{}utiliser dans la classe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$element\+\_\+search} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1SearchModel_ae659adcd8422f96c07a199d3d41c0029}\label{classApp_1_1Models_1_1SearchModel_ae659adcd8422f96c07a199d3d41c0029}} 
+\index{App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}!getResultActiv@{getResultActiv}}
+\index{getResultActiv@{getResultActiv}!App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}}
+\doxysubsubsection{\texorpdfstring{getResultActiv()}{getResultActiv()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Search\+Model\+::get\+Result\+Activ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}activiter. 
+
+Elle recupere le nom du menu, le prix, la description est l\textquotesingle{}image 
+
+\begin{DoxyReturn}{Returns}
+array Donner de l\textquotesingle{}activiter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1SearchModel_ac7501a55f9009f5ca4a47621575e4e0f}\label{classApp_1_1Models_1_1SearchModel_ac7501a55f9009f5ca4a47621575e4e0f}} 
+\index{App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}!getResultAvis@{getResultAvis}}
+\index{getResultAvis@{getResultAvis}!App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}}
+\doxysubsubsection{\texorpdfstring{getResultAvis()}{getResultAvis()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Search\+Model\+::get\+Result\+Avis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}avis (non archiver). 
+
+Elle recupere le le titre, contenue, est le nom d\textquotesingle{}image de l\textquotesingle{}avis 
+
+\begin{DoxyReturn}{Returns}
+array Donner de l\textquotesingle{}avis 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1SearchModel_a753db2bdc56b846989ca42c14f03cda6}\label{classApp_1_1Models_1_1SearchModel_a753db2bdc56b846989ca42c14f03cda6}} 
+\index{App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}!getResultHotel@{getResultHotel}}
+\index{getResultHotel@{getResultHotel}!App\textbackslash{}Models\textbackslash{}SearchModel@{App\textbackslash{}Models\textbackslash{}SearchModel}}
+\doxysubsubsection{\texorpdfstring{getResultHotel()}{getResultHotel()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Search\+Model\+::get\+Result\+Hotel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}hotel. 
+
+Elle recupere le nom, ville pays, contenue est le nom de l\textquotesingle{}iamge de l\textquotesingle{}hotel.
+
+\begin{DoxyReturn}{Returns}
+array Donner de l\textquotesingle{}hotel 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{SearchModel_8php}{Search\+Model.\+php}}\end{DoxyCompactItemize}

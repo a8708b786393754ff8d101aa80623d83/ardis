@@ -88,7 +88,7 @@ class ReservationModel extends Model{
     }
 
     /** 
-    * @brief Methode qui contient la requete SQL pour recuperer le numer de chambre par don id. 
+    * @brief Methode qui contient la requete SQL pour recuperer le numero de chambre par son id. 
     * @details
     * <p>Elle recupere le numero de chambre</p>
     * @return array 

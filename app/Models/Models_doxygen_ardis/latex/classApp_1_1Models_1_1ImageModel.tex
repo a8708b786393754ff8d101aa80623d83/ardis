@@ -1,0 +1,126 @@
+\hypertarget{classApp_1_1Models_1_1ImageModel}{}\doxysection{App\textbackslash{}Models\textbackslash{}Image\+Model Class Reference}
+\label{classApp_1_1Models_1_1ImageModel}\index{App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}Image\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classApp_1_1Models_1_1ImageModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ImageModel_aa9361776c05af1386f72d9c8da6d1ac1}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Methode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ImageModel_a2f6ec3f104901f0d445c8b78ef94e554}{get\+Img\+By\+Id\+Hotel}} (string \$id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir le nom de l\textquotesingle{}image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_ada99d1a67ec46b352f082c840ce02b9c}\label{classApp_1_1Models_1_1ImageModel_ada99d1a67ec46b352f082c840ce02b9c}} 
+{\bfseries set\+Name\+Img\+Hotel} (string \$id, string \$name)
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ImageModel_ada85015f7b12e7af96aa99d291d93179}{set\+Img\+Profile}} (string \$pseudo, string \$name\+\_\+img)
+\begin{DoxyCompactList}\small\item\em Methode qui ajoute l\textquotesingle{}image profile de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_a746a0a76da8718878233faf485a04cab}\label{classApp_1_1Models_1_1ImageModel_a746a0a76da8718878233faf485a04cab}} 
+{\bfseries \$table} = \textquotesingle{}images\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_a9434444408ab405a80d50b2ffd01967a}\label{classApp_1_1Models_1_1ImageModel_a9434444408ab405a80d50b2ffd01967a}} 
+{\bfseries \$primary\+Key} = \textquotesingle{}image\+\_\+id\textquotesingle{}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ImageModel_ad897dd769ead9ce29ea7bd31d8412e19}{\$allowed\+Fields}}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_a8613cf681e7a31c94d6d3b38d22769b3}\label{classApp_1_1Models_1_1ImageModel_a8613cf681e7a31c94d6d3b38d22769b3}} 
+{\bfseries \$return\+Type} = \textquotesingle{}App\textbackslash{}\+Entities\textbackslash{}\+Image\+Entity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_a309c80ed3c3bcf61ebd282988455d28b}\label{classApp_1_1Models_1_1ImageModel_a309c80ed3c3bcf61ebd282988455d28b}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel}{Users\+Model}} {\bfseries \$user\+Model}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_abd496cd27280c09a6fff3f53d02e23f6}\label{classApp_1_1Models_1_1ImageModel_abd496cd27280c09a6fff3f53d02e23f6}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelModel}{Hotel\+Model}} {\bfseries \$hotel\+Model}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_aa9361776c05af1386f72d9c8da6d1ac1}\label{classApp_1_1Models_1_1ImageModel_aa9361776c05af1386f72d9c8da6d1ac1}} 
+\index{App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Image\+Model\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode constructrice. 
+
+Cette methode constructrice appelle la methode constructrice de la classe Model
+
+La methode constructrice initialise deux classe\+: 
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Atrribut\+: user\+Model}} = User\+Model 
+\item {\bfseries{Atrribut\+: hotel\+Model}} = \mbox{\hyperlink{classApp_1_1Models_1_1HotelModel}{Hotel\+Model}} 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_a2f6ec3f104901f0d445c8b78ef94e554}\label{classApp_1_1Models_1_1ImageModel_a2f6ec3f104901f0d445c8b78ef94e554}} 
+\index{App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}!getImgByIdHotel@{getImgByIdHotel}}
+\index{getImgByIdHotel@{getImgByIdHotel}!App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}}
+\doxysubsubsection{\texorpdfstring{getImgByIdHotel()}{getImgByIdHotel()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Image\+Model\+::get\+Img\+By\+Id\+Hotel (\begin{DoxyParamCaption}\item[{string}]{\$id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir le nom de l\textquotesingle{}image. 
+
+Elle recupere le nom de l\textquotesingle{}image grace a l\textquotesingle{}id de l\textquotesingle{}hotel
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array nom de l\textquotesingle{}image appartenant a l\textquotesingle{}hotel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_ada85015f7b12e7af96aa99d291d93179}\label{classApp_1_1Models_1_1ImageModel_ada85015f7b12e7af96aa99d291d93179}} 
+\index{App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}!setImgProfile@{setImgProfile}}
+\index{setImgProfile@{setImgProfile}!App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}}
+\doxysubsubsection{\texorpdfstring{setImgProfile()}{setImgProfile()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Image\+Model\+::set\+Img\+Profile (\begin{DoxyParamCaption}\item[{string}]{\$pseudo,  }\item[{string}]{\$name\+\_\+img }\end{DoxyParamCaption})}
+
+
+
+Methode qui ajoute l\textquotesingle{}image profile de l\textquotesingle{}utilisateur. 
+
+Elle execute la methode get\+Id\+By\+Pseudo pour recuperer le id a partir du pseudo pour ensuite inserer l\textquotesingle{}image de profile dans la table clients
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pseudo} & \\
+\hline
+string & {\em \$name\+\_\+img} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array nom de l\textquotesingle{}image appartenant a l\textquotesingle{}hotel 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ImageModel_ad897dd769ead9ce29ea7bd31d8412e19}\label{classApp_1_1Models_1_1ImageModel_ad897dd769ead9ce29ea7bd31d8412e19}} 
+\index{App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}!\$allowedFields@{\$allowedFields}}
+\index{\$allowedFields@{\$allowedFields}!App\textbackslash{}Models\textbackslash{}ImageModel@{App\textbackslash{}Models\textbackslash{}ImageModel}}
+\doxysubsubsection{\texorpdfstring{\$allowedFields}{$allowedFields}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Image\+Model\+::\$allowed\+Fields\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [\textcolor{stringliteral}{"{}image\_nom"{}},\textcolor{stringliteral}{"{}image\_date"{}},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"{}page"{}}, \textcolor{stringliteral}{"{}hotel\_id"{}}]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ImageModel_8php}{Image\+Model.\+php}}\end{DoxyCompactItemize}

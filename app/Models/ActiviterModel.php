@@ -45,10 +45,10 @@ class ActiviterModel extends Model{
     }
 
     /**
-    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées
+    * @brief Méthode qui contient la requête SQL pour avoir les activités 
     * @details
     * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
-    * @return array les données des activités archivées
+    * @return array les données des activités 
     */
     public function getDataYoung(){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca
@@ -64,7 +64,7 @@ class ActiviterModel extends Model{
     * <p>Elle récupére le nom de l'activité, l'image, le pays, le tarif par personne, l'année, la description, le nom de l'hôtel qui propose l'activité </p>
     * <p>Elle seras utiliser pour l'api</p>
     * @param  string $hotel_name
-    * @return array les données des activités archivées
+    * @return array 
     */
     public function getActivByHotelReserv(string $hotel_name){
         return $this->db->query('SELECT activ_nom AS nom, activ_image AS image, activ_loca
@@ -76,9 +76,9 @@ class ActiviterModel extends Model{
     }
 
     /**
-    * @brief Méthode qui contient la requête SQL pour avoir les activités archivées
+    * @brief Méthode qui contient la requête SQL pour avoir les prix de l'activiter par l'id
     * @details
-    * <p>Elle récupére le prix de l'hotel.</p>
+    * <p>Elle récupére le prix de l'activiter.</p>
     * @param  string $id
     * @return string le prix de l'activiter
     */

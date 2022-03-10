@@ -1,0 +1,77 @@
+\hypertarget{classApp_1_1Models_1_1AvisManager}{}\doxysection{App\textbackslash{}Models\textbackslash{}Avis\+Manager Class Reference}
+\label{classApp_1_1Models_1_1AvisManager}\index{App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1AvisManager_abd8638492afbb4b5bfd3de9d8f6ebc96}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1AvisManager_a3ef92c182702b49a8f39ecb182f7ad7c}{get\+All\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui recupere les avis. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1AvisManager_a9756fbf465dc21d9cdc665143cf5ecd7}{add\+Mngr\+Avis}} (\$obj\+Request, string \$id\+\_\+hotel)
+\begin{DoxyCompactList}\small\item\em Méthode qui ajoute un avis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_aa520a67b8fe5728bc5784e8c8879dcd4}\label{classApp_1_1Models_1_1AvisManager_aa520a67b8fe5728bc5784e8c8879dcd4}} 
+{\bfseries \$avis\+Model}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_acd4639b54f6eff8d985e811340222b7e}\label{classApp_1_1Models_1_1AvisManager_acd4639b54f6eff8d985e811340222b7e}} 
+{\bfseries \$img\+Model}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_a8e882e150fe5462b5f94742ab0353ea7}\label{classApp_1_1Models_1_1AvisManager_a8e882e150fe5462b5f94742ab0353ea7}} 
+{\bfseries \$im\+Mngr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_abd8638492afbb4b5bfd3de9d8f6ebc96}\label{classApp_1_1Models_1_1AvisManager_abd8638492afbb4b5bfd3de9d8f6ebc96}} 
+\index{App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Avis\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+La méthode instancie l\textquotesingle{}objet \mbox{\hyperlink{classApp_1_1Models_1_1AvisModel}{Avis\+Model}}, \mbox{\hyperlink{classApp_1_1Models_1_1ImageManager}{Image\+Manager}}, \mbox{\hyperlink{classApp_1_1Models_1_1ImageModel}{Image\+Model}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_a9756fbf465dc21d9cdc665143cf5ecd7}\label{classApp_1_1Models_1_1AvisManager_a9756fbf465dc21d9cdc665143cf5ecd7}} 
+\index{App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}!addMngrAvis@{addMngrAvis}}
+\index{addMngrAvis@{addMngrAvis}!App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}}
+\doxysubsubsection{\texorpdfstring{addMngrAvis()}{addMngrAvis()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Avis\+Manager\+::add\+Mngr\+Avis (\begin{DoxyParamCaption}\item[{}]{\$obj\+Request,  }\item[{string}]{\$id\+\_\+hotel }\end{DoxyParamCaption})}
+
+
+
+Méthode qui ajoute un avis. 
+
+Cette méthode verifie la methode d\textquotesingle{}envoye, si c\textquotesingle{}est en post, elle recuperer les données est verifie si les entrée respecte les regle de securiter
+
+Elle ajoute le message, le titre de l\textquotesingle{}avis,si il y a une photo elle rajoute juste apres le titre est elle contenue
+
+\begin{DoxyReturn}{Returns}
+array message d\textquotesingle{}erruer/de succcée ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1AvisManager_a3ef92c182702b49a8f39ecb182f7ad7c}\label{classApp_1_1Models_1_1AvisManager_a3ef92c182702b49a8f39ecb182f7ad7c}} 
+\index{App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}!getAllData@{getAllData}}
+\index{getAllData@{getAllData}!App\textbackslash{}Models\textbackslash{}AvisManager@{App\textbackslash{}Models\textbackslash{}AvisManager}}
+\doxysubsubsection{\texorpdfstring{getAllData()}{getAllData()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Avis\+Manager\+::get\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui recupere les avis. 
+
+Cette méthode recupere les avis de chaque hotel
+
+\begin{DoxyReturn}{Returns}
+array les données des avis 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AvisManager_8php}{Avis\+Manager.\+php}}\end{DoxyCompactItemize}
