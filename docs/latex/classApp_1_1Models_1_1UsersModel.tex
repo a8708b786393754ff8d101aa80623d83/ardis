@@ -1,0 +1,364 @@
+\hypertarget{classApp_1_1Models_1_1UsersModel}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}Users\+Model}
+\label{classApp_1_1Models_1_1UsersModel}\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+Graphe d\textquotesingle{}héritage de App\textbackslash{}Models\textbackslash{}Users\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classApp_1_1Models_1_1UsersModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_ae51803edc86d9c9d7c82d27b59cac35b}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a48ff045ea36faa095cd4bac8101ea6dc}{login}} (string \$username, string \$password)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir les donner du client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_ab20d41a49cfa53886db805e1fcd23295}{append\+User}} (array \$contact, array \$identify)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour ajouter les information d\textquotesingle{}un nouveau client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a0fd48732374dd39c4df163da5f7b8c9a}{is\+\_\+a\+\_\+account\+\_\+by\+\_\+email}} (string \$email)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour savoir si l\textquotesingle{} email est deja pris. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_ab06a19e022ecfe084f7bb7c1a4ee71a7}{is\+\_\+a\+\_\+account\+\_\+by\+\_\+pseudo}} (string \$pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour savoir si le pseudo est deja pris. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_afdd1b1d2232fcea3d51f71846ed504f3}{get\+Creditials}} (string \$id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer toute les information du client par l\textquotesingle{}id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a994d79d5bc6cb0ab37c0c1eafc6942e9}{get\+Password\+By\+Pseudo}} (string \$pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer le mot de passe hasher par le pseudo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_aaa0971c57d4312e3d29558c1c48f00ba}{update\+Password}} (string \$pseudo, string \$new\+\_\+password)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour mettre a jour le mot de passe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a3a59e871194897ab33960a2b7fd8239e}{get\+Id\+By\+Pseudo}} (string \$pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer l\textquotesingle{}id du compte par le pseudo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a24ddae58ab38cce223a34e0f878f418b}{get\+Id\+By\+Client\+By\+Id\+Pseudo}} (string \$id\+\_\+pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer l\textquotesingle{}id du client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a6042ac296060bf64eb57b72d54718014}{update\+Profile}} (array \$data\+\_\+for\+\_\+update, string \$pseudo, string \$id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour mettre a jour le profile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_ab54153e6a941ebd182711b2398f86264}{delete\+User}} (string \$pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour supprimer l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_a1d29afb43973688f465445935e7ba38e}{get\+Img\+By\+Id\+Customers}} (string \$id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer l\textquotesingle{}image de profile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_af0a6581163907db2e7f59ce6777b27cd}{get\+All\+User\+Info\+For\+Admin}} ()
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer tout les id de la base de donner. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a17bf73b76464e0da7450c38b7c82cad5}\label{classApp_1_1Models_1_1UsersModel_a17bf73b76464e0da7450c38b7c82cad5}} 
+{\bfseries \$table} = \textquotesingle{}clients\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_af5086f26136cc4ccef018bc220a38537}\label{classApp_1_1Models_1_1UsersModel_af5086f26136cc4ccef018bc220a38537}} 
+{\bfseries \$primary\+Key} = \textquotesingle{}client\+\_\+id\textquotesingle{}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel_ae0b8fe182d7751e302927229349b26e1}{\$allowed\+Fields}}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a70c86aa52d9500a1bf4f8538bf286d1c}\label{classApp_1_1Models_1_1UsersModel_a70c86aa52d9500a1bf4f8538bf286d1c}} 
+{\bfseries \$return\+Type} = \textquotesingle{}App\textbackslash{}\+Entities\textbackslash{}\+User\+Entity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a09e18930a55c539b63823d1645e0adce}\label{classApp_1_1Models_1_1UsersModel_a09e18930a55c539b63823d1645e0adce}} 
+{\bfseries \$use\+Timestamps} = true
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a3a383ae24a50170594b14e2c617e802b}\label{classApp_1_1Models_1_1UsersModel_a3a383ae24a50170594b14e2c617e802b}} 
+{\bfseries \$created\+Field} = \textquotesingle{}created\+\_\+at\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a89d5589ea20291f69b4b7ff22b704b32}\label{classApp_1_1Models_1_1UsersModel_a89d5589ea20291f69b4b7ff22b704b32}} 
+{\bfseries \$updated\+Field} = \textquotesingle{}updated\+\_\+at\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a7d839918d58f1b7437d6ee3f25b37116}\label{classApp_1_1Models_1_1UsersModel_a7d839918d58f1b7437d6ee3f25b37116}} 
+{\bfseries \$deleted\+Field} = \textquotesingle{}deleted\+\_\+at\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_ae51803edc86d9c9d7c82d27b59cac35b}\label{classApp_1_1Models_1_1UsersModel_ae51803edc86d9c9d7c82d27b59cac35b}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+Cette méthode appelle la méthode constructrice de la classe Model
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_ab20d41a49cfa53886db805e1fcd23295}\label{classApp_1_1Models_1_1UsersModel_ab20d41a49cfa53886db805e1fcd23295}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!appendUser@{appendUser}}
+\index{appendUser@{appendUser}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{appendUser()}{appendUser()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::append\+User (\begin{DoxyParamCaption}\item[{array}]{\$contact,  }\item[{array}]{\$identify }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour ajouter les information d\textquotesingle{}un nouveau client. 
+
+Elle ajoute les donner personnelle du client
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$contact} & \\
+\hline
+string & {\em \$identify} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_ab54153e6a941ebd182711b2398f86264}\label{classApp_1_1Models_1_1UsersModel_ab54153e6a941ebd182711b2398f86264}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::delete\+User (\begin{DoxyParamCaption}\item[{string}]{\$pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour supprimer l\textquotesingle{}utilisateur. 
+
+Elle supprime les donner du client est son compte
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$pseudo} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_af0a6581163907db2e7f59ce6777b27cd}\label{classApp_1_1Models_1_1UsersModel_af0a6581163907db2e7f59ce6777b27cd}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getAllUserInfoForAdmin@{getAllUserInfoForAdmin}}
+\index{getAllUserInfoForAdmin@{getAllUserInfoForAdmin}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getAllUserInfoForAdmin()}{getAllUserInfoForAdmin()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+All\+User\+Info\+For\+Admin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer tout les id de la base de donner. 
+
+Elle recupere tout les id des comptes utilisateur, cette methode sera utiliser par l\textquotesingle{}administrateur
+
+
+\begin{DoxyParams}{Paramètres}
+{\em array} & tout les id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_afdd1b1d2232fcea3d51f71846ed504f3}\label{classApp_1_1Models_1_1UsersModel_afdd1b1d2232fcea3d51f71846ed504f3}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getCreditials@{getCreditials}}
+\index{getCreditials@{getCreditials}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getCreditials()}{getCreditials()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+Creditials (\begin{DoxyParamCaption}\item[{string}]{\$id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer toute les information du client par l\textquotesingle{}id. 
+
+Elle renvoie toutel les information du client, ces information seront utiliser dans la page de profile
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array toute les information du client 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a24ddae58ab38cce223a34e0f878f418b}\label{classApp_1_1Models_1_1UsersModel_a24ddae58ab38cce223a34e0f878f418b}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getIdByClientByIdPseudo@{getIdByClientByIdPseudo}}
+\index{getIdByClientByIdPseudo@{getIdByClientByIdPseudo}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getIdByClientByIdPseudo()}{getIdByClientByIdPseudo()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+Id\+By\+Client\+By\+Id\+Pseudo (\begin{DoxyParamCaption}\item[{string}]{\$id\+\_\+pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer l\textquotesingle{}id du client. 
+
+Elle construit la requete pour avoir l\textquotesingle{}id du client a partir de l\textquotesingle{}id de l\textquotesingle{}utilisateur 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id\+\_\+pseudo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string l\textquotesingle{}id du client 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a3a59e871194897ab33960a2b7fd8239e}\label{classApp_1_1Models_1_1UsersModel_a3a59e871194897ab33960a2b7fd8239e}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getIdByPseudo@{getIdByPseudo}}
+\index{getIdByPseudo@{getIdByPseudo}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getIdByPseudo()}{getIdByPseudo()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+Id\+By\+Pseudo (\begin{DoxyParamCaption}\item[{string}]{\$pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer l\textquotesingle{}id du compte par le pseudo. 
+
+Elle construit la requete pour avoir l\textquotesingle{}id a partir du pseudo 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$pseudo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string l\textquotesingle{}id du compte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a1d29afb43973688f465445935e7ba38e}\label{classApp_1_1Models_1_1UsersModel_a1d29afb43973688f465445935e7ba38e}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getImgByIdCustomers@{getImgByIdCustomers}}
+\index{getImgByIdCustomers@{getImgByIdCustomers}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getImgByIdCustomers()}{getImgByIdCustomers()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+Img\+By\+Id\+Customers (\begin{DoxyParamCaption}\item[{string}]{\$id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer l\textquotesingle{}image de profile. 
+
+Elle recupere le nom de la photo de profile par l\textquotesingle{}id di client
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a994d79d5bc6cb0ab37c0c1eafc6942e9}\label{classApp_1_1Models_1_1UsersModel_a994d79d5bc6cb0ab37c0c1eafc6942e9}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!getPasswordByPseudo@{getPasswordByPseudo}}
+\index{getPasswordByPseudo@{getPasswordByPseudo}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{getPasswordByPseudo()}{getPasswordByPseudo()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::get\+Password\+By\+Pseudo (\begin{DoxyParamCaption}\item[{string}]{\$pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer le mot de passe hasher par le pseudo. 
+
+Elle renvoie le mot de passe hasher de l\textquotesingle{}utilisateur pour qu\textquotesingle{}elle sois utliser lors de la connexion, si le mot de passe correspand pas au pseudo elle renvoie une chaine vide 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string mot de passe hasher ou une chaine vide 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a0fd48732374dd39c4df163da5f7b8c9a}\label{classApp_1_1Models_1_1UsersModel_a0fd48732374dd39c4df163da5f7b8c9a}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!is\_a\_account\_by\_email@{is\_a\_account\_by\_email}}
+\index{is\_a\_account\_by\_email@{is\_a\_account\_by\_email}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{is\_a\_account\_by\_email()}{is\_a\_account\_by\_email()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::is\+\_\+a\+\_\+account\+\_\+by\+\_\+email (\begin{DoxyParamCaption}\item[{string}]{\$email }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour savoir si l\textquotesingle{} email est deja pris. 
+
+Elle renvoie , si il le trouve pas il renvoie un tableaux vide
+
+Cette methode sera utiliser lors de la creation du compte
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$contact} & \\
+\hline
+string & {\em \$identify} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array pseudo dans un tableaux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_ab06a19e022ecfe084f7bb7c1a4ee71a7}\label{classApp_1_1Models_1_1UsersModel_ab06a19e022ecfe084f7bb7c1a4ee71a7}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!is\_a\_account\_by\_pseudo@{is\_a\_account\_by\_pseudo}}
+\index{is\_a\_account\_by\_pseudo@{is\_a\_account\_by\_pseudo}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{is\_a\_account\_by\_pseudo()}{is\_a\_account\_by\_pseudo()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::is\+\_\+a\+\_\+account\+\_\+by\+\_\+pseudo (\begin{DoxyParamCaption}\item[{string}]{\$pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour savoir si le pseudo est deja pris. 
+
+Elle renvoie le pseudo si il est deja pris par un compte, si il le trouve pas il renvoie un tableaux vide
+
+Cette methode sera utiliser lors de la creation du compte
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$pseudo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array pseudo dans un tableaux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a48ff045ea36faa095cd4bac8101ea6dc}\label{classApp_1_1Models_1_1UsersModel_a48ff045ea36faa095cd4bac8101ea6dc}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!login@{login}}
+\index{login@{login}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::login (\begin{DoxyParamCaption}\item[{string}]{\$username,  }\item[{string}]{\$password }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir les donner du client. 
+
+Elle recupere le pseudo, le mot de passe hasher, le nom, le prenom du clients 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array les donner du client 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_aaa0971c57d4312e3d29558c1c48f00ba}\label{classApp_1_1Models_1_1UsersModel_aaa0971c57d4312e3d29558c1c48f00ba}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!updatePassword@{updatePassword}}
+\index{updatePassword@{updatePassword}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{updatePassword()}{updatePassword()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::update\+Password (\begin{DoxyParamCaption}\item[{string}]{\$pseudo,  }\item[{string}]{\$new\+\_\+password }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour mettre a jour le mot de passe. 
+
+Elle construit la requete pour mettre a jour le mot de passe, le nouveau mot de passe dois etre hasher, elle utilise la methode get\+Id\+By\+Pseudo pour recuperer l\textquotesingle{}id du pseudo. 
+
+Cette methode sera utiliser dans la modification de compte
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & \\
+\hline
+string & {\em \$new\+\_\+password} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_a6042ac296060bf64eb57b72d54718014}\label{classApp_1_1Models_1_1UsersModel_a6042ac296060bf64eb57b72d54718014}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!updateProfile@{updateProfile}}
+\index{updateProfile@{updateProfile}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{updateProfile()}{updateProfile()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::update\+Profile (\begin{DoxyParamCaption}\item[{array}]{\$data\+\_\+for\+\_\+update,  }\item[{string}]{\$pseudo,  }\item[{string}]{\$id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour mettre a jour le profile. 
+
+Elle recuperer les champs a ete modifier, elle construit la requete au fur est a mesure est l\textquotesingle{}execute
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$data\+\_\+for\+\_\+update} & \\
+\hline
+string & {\em \$pseudo} & \\
+\hline
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UsersModel_ae0b8fe182d7751e302927229349b26e1}\label{classApp_1_1Models_1_1UsersModel_ae0b8fe182d7751e302927229349b26e1}} 
+\index{App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}!\$allowedFields@{\$allowedFields}}
+\index{\$allowedFields@{\$allowedFields}!App\textbackslash{}Models\textbackslash{}UsersModel@{App\textbackslash{}Models\textbackslash{}UsersModel}}
+\doxysubsubsection{\texorpdfstring{\$allowedFields}{$allowedFields}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Users\+Model\+::\$allowed\+Fields\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}client\_nom"{}}, \textcolor{stringliteral}{"{}client\_prénom"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}client\_adresse"{}}, \textcolor{stringliteral}{"{}client\_cp"{}}, \textcolor{stringliteral}{"{}client\_ville"{}}, \textcolor{stringliteral}{"{}client\_pays"{}}, \textcolor{stringliteral}{"{}client\_email"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}client\_tel"{}}, \textcolor{stringliteral}{"{}compte\_client"{}}, \textcolor{stringliteral}{"{}resrv\_client"{}}, \textcolor{stringliteral}{"{}client\_avis"{}}}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{UsersModel_8php}{Users\+Model.\+php}}\end{DoxyCompactItemize}

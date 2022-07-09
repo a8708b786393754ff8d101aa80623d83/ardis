@@ -1,0 +1,165 @@
+\hypertarget{classApp_1_1Models_1_1ReservationModel}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}Reservation\+Model}
+\label{classApp_1_1Models_1_1ReservationModel}\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+Graphe d\textquotesingle{}héritage de App\textbackslash{}Models\textbackslash{}Reservation\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classApp_1_1Models_1_1ReservationModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_adeea504c9dd6bfcf2bceb84b0e924bbb}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_aeb1d4dc475c9ad5d9fb985c922389d90}{set\+Reservation\+With\+Activ}} (string \$startdate, string \$enddate, string \$client\+\_\+id, string \$chamb\+\_\+reserv, string \$chamb\+\_\+id, string \$hotel\+\_\+id, string \$activ\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}hotel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_ac134729bdd010ac52983ca47be71fd7f}{set\+Reservation\+Withouth\+Activ}} (string \$startdate, string \$enddate, string \$client\+\_\+id, string \$chamb\+\_\+reserv, string \$chamb\+\_\+id, string \$hotel\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour inserer la reservation sans activiter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_a4ae1b6f17025dac6d7c321c0700369f4}{set\+Chamb\+No\+Disponible}} (string \$chamb\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour mettre a jour la chambre . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_a01e1d25d30c2a190d80aea51c75b05e0}{get\+All\+Data}} (string \$hotel\+\_\+name, int \$nb\+\_\+lit)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer les reservations qui sont disponible. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_a4a8c49e91b886dadebf2671a6c38a0c7}{get\+Chamb\+Num\+By\+Id\+Client}} (string \$id\+\_\+client, string \$date\+\_\+deb\+\_\+reservation)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour recuperer le numer de chambre par don id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel_a811c6d25294c796526db3bedadd1827e}{get\+User\+Reservation}} (string \$name\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Methode qui contient la requete SQL pour avoir la reservation de l\textquotesingle{}utilsateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a9cf3a0d2fffb7fbc16cddb40ad532f56}\label{classApp_1_1Models_1_1ReservationModel_a9cf3a0d2fffb7fbc16cddb40ad532f56}} 
+{\bfseries \$table} = \textquotesingle{}reservations\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_af2fc0552ad7dbb231d1021db460d32a9}\label{classApp_1_1Models_1_1ReservationModel_af2fc0552ad7dbb231d1021db460d32a9}} 
+{\bfseries \$primary\+Key} = \textquotesingle{}reserv\+\_\+id\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_ab9d2b22218038d73d061cb618ca38740}\label{classApp_1_1Models_1_1ReservationModel_ab9d2b22218038d73d061cb618ca38740}} 
+{\bfseries \$allowed\+Fields} = \mbox{[} \char`\"{}reserv\+\_\+datedeb\char`\"{},\char`\"{}reserv\+\_\+datefin\char`\"{},\char`\"{}client\+\_\+id\char`\"{} ,\char`\"{}chamb\+\_\+reserv\char`\"{} ,\char`\"{}chamb\+\_\+id\char`\"{} ,\char`\"{}hotel\+\_\+id\char`\"{},\char`\"{}activ\+\_\+id\char`\"{}, \char`\"{}activ\+\_\+reserv\char`\"{}\mbox{]}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a1060fd6fc71abada0a5b99b20d69c0bd}\label{classApp_1_1Models_1_1ReservationModel_a1060fd6fc71abada0a5b99b20d69c0bd}} 
+{\bfseries \$return\+Type} = \textquotesingle{}App\textbackslash{}\+Entities\textbackslash{}\+Reservation\+Entity\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_ae9dfbb714a546d698f54a973edfb4380}\label{classApp_1_1Models_1_1ReservationModel_ae9dfbb714a546d698f54a973edfb4380}} 
+{\bfseries \$use\+Timestamps} = true
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a9c96940e3d58967dfedb952a9541eb08}\label{classApp_1_1Models_1_1ReservationModel_a9c96940e3d58967dfedb952a9541eb08}} 
+{\bfseries \$created\+Field} = \textquotesingle{}created\+\_\+at\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_ac4b17c098675dcafec07da9931ba0d44}\label{classApp_1_1Models_1_1ReservationModel_ac4b17c098675dcafec07da9931ba0d44}} 
+{\bfseries \$updated\+Field} = \textquotesingle{}updated\+\_\+at\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_aa4835721130d42121bcae7719b0071af}\label{classApp_1_1Models_1_1ReservationModel_aa4835721130d42121bcae7719b0071af}} 
+{\bfseries \$deleted\+Field} = \textquotesingle{}deleted\+\_\+at\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_adeea504c9dd6bfcf2bceb84b0e924bbb}\label{classApp_1_1Models_1_1ReservationModel_adeea504c9dd6bfcf2bceb84b0e924bbb}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+Cette méthode appelle la méthode constructrice de la classe mère Model
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a01e1d25d30c2a190d80aea51c75b05e0}\label{classApp_1_1Models_1_1ReservationModel_a01e1d25d30c2a190d80aea51c75b05e0}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!getAllData@{getAllData}}
+\index{getAllData@{getAllData}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{getAllData()}{getAllData()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::get\+All\+Data (\begin{DoxyParamCaption}\item[{string}]{\$hotel\+\_\+name,  }\item[{int}]{\$nb\+\_\+lit }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer les reservations qui sont disponible. 
+
+Elle recupere l\textquotesingle{}id de l\textquotesingle{}hotel (il seras utiliser par son manager), numero de chambre, nombre de lit, l\textquotesingle{}id de l\textquotesingle{}activiter de la chambre
+
+\begin{DoxyReturn}{Renvoie}
+array donner de la reservation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a4a8c49e91b886dadebf2671a6c38a0c7}\label{classApp_1_1Models_1_1ReservationModel_a4a8c49e91b886dadebf2671a6c38a0c7}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!getChambNumByIdClient@{getChambNumByIdClient}}
+\index{getChambNumByIdClient@{getChambNumByIdClient}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{getChambNumByIdClient()}{getChambNumByIdClient()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::get\+Chamb\+Num\+By\+Id\+Client (\begin{DoxyParamCaption}\item[{string}]{\$id\+\_\+client,  }\item[{string}]{\$date\+\_\+deb\+\_\+reservation }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour recuperer le numer de chambre par don id. 
+
+Elle recupere le numero de chambre
+
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a811c6d25294c796526db3bedadd1827e}\label{classApp_1_1Models_1_1ReservationModel_a811c6d25294c796526db3bedadd1827e}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!getUserReservation@{getUserReservation}}
+\index{getUserReservation@{getUserReservation}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{getUserReservation()}{getUserReservation()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::get\+User\+Reservation (\begin{DoxyParamCaption}\item[{string}]{\$name\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir la reservation de l\textquotesingle{}utilsateur. 
+
+Elle recupere le nombre de reservation le nom de l\textquotesingle{}hotel.
+
+\begin{DoxyReturn}{Renvoie}
+array Donner de l\textquotesingle{}hotel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_a4ae1b6f17025dac6d7c321c0700369f4}\label{classApp_1_1Models_1_1ReservationModel_a4ae1b6f17025dac6d7c321c0700369f4}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!setChambNoDisponible@{setChambNoDisponible}}
+\index{setChambNoDisponible@{setChambNoDisponible}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{setChambNoDisponible()}{setChambNoDisponible()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::set\+Chamb\+No\+Disponible (\begin{DoxyParamCaption}\item[{string}]{\$chamb\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour mettre a jour la chambre . 
+
+Elle met la chambre en indisponible.\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_aeb1d4dc475c9ad5d9fb985c922389d90}\label{classApp_1_1Models_1_1ReservationModel_aeb1d4dc475c9ad5d9fb985c922389d90}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!setReservationWithActiv@{setReservationWithActiv}}
+\index{setReservationWithActiv@{setReservationWithActiv}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{setReservationWithActiv()}{setReservationWithActiv()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::set\+Reservation\+With\+Activ (\begin{DoxyParamCaption}\item[{string}]{\$startdate,  }\item[{string}]{\$enddate,  }\item[{string}]{\$client\+\_\+id,  }\item[{string}]{\$chamb\+\_\+reserv,  }\item[{string}]{\$chamb\+\_\+id,  }\item[{string}]{\$hotel\+\_\+id,  }\item[{string}]{\$activ\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour avoir le resultat de l\textquotesingle{}hotel. 
+
+Elle recupere le nom, ville pays, contenue est le nom de l\textquotesingle{}iamge de l\textquotesingle{}hotel.\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationModel_ac134729bdd010ac52983ca47be71fd7f}\label{classApp_1_1Models_1_1ReservationModel_ac134729bdd010ac52983ca47be71fd7f}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}!setReservationWithouthActiv@{setReservationWithouthActiv}}
+\index{setReservationWithouthActiv@{setReservationWithouthActiv}!App\textbackslash{}Models\textbackslash{}ReservationModel@{App\textbackslash{}Models\textbackslash{}ReservationModel}}
+\doxysubsubsection{\texorpdfstring{setReservationWithouthActiv()}{setReservationWithouthActiv()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Model\+::set\+Reservation\+Withouth\+Activ (\begin{DoxyParamCaption}\item[{string}]{\$startdate,  }\item[{string}]{\$enddate,  }\item[{string}]{\$client\+\_\+id,  }\item[{string}]{\$chamb\+\_\+reserv,  }\item[{string}]{\$chamb\+\_\+id,  }\item[{string}]{\$hotel\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Methode qui contient la requete SQL pour inserer la reservation sans activiter. 
+
+Elle insére les donner donner par l\textquotesingle{}utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$startdate} & \\
+\hline
+string & {\em \$enddate} & \\
+\hline
+string & {\em \$client\+\_\+id} & \\
+\hline
+string & {\em \$chamb\+\_\+reserv} & \\
+\hline
+string & {\em \$chamb\+\_\+id} & \\
+\hline
+string & {\em \$hotel\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{ReservationModel_8php}{Reservation\+Model.\+php}}\end{DoxyCompactItemize}

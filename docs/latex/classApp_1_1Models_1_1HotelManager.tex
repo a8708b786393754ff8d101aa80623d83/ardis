@@ -1,0 +1,130 @@
+\hypertarget{classApp_1_1Models_1_1HotelManager}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}Hotel\+Manager}
+\label{classApp_1_1Models_1_1HotelManager}\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_abfe1e60cc80048832dd073b223c899fa}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_ab6be3d9481f5916065237267181799df}{get\+Data}} (string \$page)
+\begin{DoxyCompactList}\small\item\em Méthode qui retourne les données du nom de l\textquotesingle{}hôtel passer au paramètre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_a7f2dcc4e5ab128d48984d8ac739ddf0f}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui tout les noms des hotels ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_a55dc7936799cb62656c091695232bb60}{get\+Best\+Hotel}} ()
+\begin{DoxyCompactList}\small\item\em Methode qui retourne les trois meilleurs hôtels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_a98c6cdcd74a770abe089b118783ce5d7}{get\+Hotels\+Names\+For\+Nav\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui retourne les noms des hôtels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelManager_abe6367f3788b7765756d2fefd3a06ba3}{get\+Name\+By\+Id}} (string \$hotel)
+\begin{DoxyCompactList}\small\item\em Méthode qui retourne l\textquotesingle{}id de l\textquotesingle{} hotel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_a63f56f3185d88304bbec0bcdf1c1c242}\label{classApp_1_1Models_1_1HotelManager_a63f56f3185d88304bbec0bcdf1c1c242}} 
+{\bfseries update} (string \$name\+\_\+hotel, array \$post, \$obj\+Request)
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_a8905ce05dd1ca1d450125068232da09d}\label{classApp_1_1Models_1_1HotelManager_a8905ce05dd1ca1d450125068232da09d}} 
+{\bfseries remove\+All} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_abfe1e60cc80048832dd073b223c899fa}\label{classApp_1_1Models_1_1HotelManager_abfe1e60cc80048832dd073b223c899fa}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+Cette méthode constructrice initialise la classe \mbox{\hyperlink{classApp_1_1Models_1_1HotelModel}{Hotel\+Model}} à l\textquotesingle{}attribut resp\+Query
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_a55dc7936799cb62656c091695232bb60}\label{classApp_1_1Models_1_1HotelManager_a55dc7936799cb62656c091695232bb60}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!getBestHotel@{getBestHotel}}
+\index{getBestHotel@{getBestHotel}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{getBestHotel()}{getBestHotel()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::get\+Best\+Hotel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui retourne les trois meilleurs hôtels. 
+
+La méethode exécute la requête SQL pour récupérer les images, noms, prix et villes des trois meilleurs hôtels
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les données liées à l\textquotesingle{}hôtel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_ab6be3d9481f5916065237267181799df}\label{classApp_1_1Models_1_1HotelManager_ab6be3d9481f5916065237267181799df}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!getData@{getData}}
+\index{getData@{getData}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::get\+Data (\begin{DoxyParamCaption}\item[{string}]{\$page }\end{DoxyParamCaption})}
+
+
+
+Méthode qui retourne les données du nom de l\textquotesingle{}hôtel passer au paramètre. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+
+
+La méthode exécute la requête SQL pour récupérer les données de l\textquotesingle{}hôtel 
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les données des hôtels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_a98c6cdcd74a770abe089b118783ce5d7}\label{classApp_1_1Models_1_1HotelManager_a98c6cdcd74a770abe089b118783ce5d7}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!getHotelsNamesForNavBar@{getHotelsNamesForNavBar}}
+\index{getHotelsNamesForNavBar@{getHotelsNamesForNavBar}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{getHotelsNamesForNavBar()}{getHotelsNamesForNavBar()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::get\+Hotels\+Names\+For\+Nav\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui retourne les noms des hôtels. 
+
+La méthode exécute la requête SQL pour récupérer les noms des hôtels pour les afficher dans la barre de menu
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les noms des hôtels ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_a7f2dcc4e5ab128d48984d8ac739ddf0f}\label{classApp_1_1Models_1_1HotelManager_a7f2dcc4e5ab128d48984d8ac739ddf0f}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!getName@{getName}}
+\index{getName@{getName}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui tout les noms des hotels ~\newline
+ 
+
+La méthode exécute la requête SQL pour récupérer les noms de tous les hôtels 
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les nom des hotels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1HotelManager_abe6367f3788b7765756d2fefd3a06ba3}\label{classApp_1_1Models_1_1HotelManager_abe6367f3788b7765756d2fefd3a06ba3}} 
+\index{App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}!getNameById@{getNameById}}
+\index{getNameById@{getNameById}!App\textbackslash{}Models\textbackslash{}HotelManager@{App\textbackslash{}Models\textbackslash{}HotelManager}}
+\doxysubsubsection{\texorpdfstring{getNameById()}{getNameById()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Hotel\+Manager\+::get\+Name\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{\$hotel }\end{DoxyParamCaption})}
+
+
+
+Méthode qui retourne l\textquotesingle{}id de l\textquotesingle{} hotel. 
+
+La méthode exécute la requête SQL pour récupérer l\textquotesingle{}id de l\textquotesingle{}hotel.
+
+\begin{DoxyReturn}{Renvoie}
+array Id de l\textquotesingle{}hôtel ~\newline
+ 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{HotelManager_8php}{Hotel\+Manager.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classApp_1_1Models_1_1ActiviterManager}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}Activiter\+Manager}
+\label{classApp_1_1Models_1_1ActiviterManager}\index{App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ActiviterManager_a286e7f675e0284c63666fcfe40e23352}{\+\_\+\+\_\+construct}} (array \$all\+Hotels)
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ActiviterManager_a9c02037bd02e0038eadacde08cb93483}{get\+Young\+Activiter}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui donne les activités les plus récentes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ActiviterManager_afa9059c539113a07bc6982e70578f9b2}{get\+Old\+Activiter}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui donne les activiter les plus anciennes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ActiviterManager_abdf0eaf427e14eed643295c013e299ed}{get\+Price\+Activ}} (string \$value\+\_\+activiter)
+\begin{DoxyCompactList}\small\item\em Méthode qui donne les prix des activiter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_a7e8f71e2af5825a9ef024f1d6e360c0e}\label{classApp_1_1Models_1_1ActiviterManager_a7e8f71e2af5825a9ef024f1d6e360c0e}} 
+array {\bfseries \$names\+Hotels}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_acea1a2bdb4f307efc06a2afd53f12b8a}\label{classApp_1_1Models_1_1ActiviterManager_acea1a2bdb4f307efc06a2afd53f12b8a}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1ActiviterModel}{Activiter\+Model}} {\bfseries \$activ\+Model}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_a286e7f675e0284c63666fcfe40e23352}\label{classApp_1_1Models_1_1ActiviterManager_a286e7f675e0284c63666fcfe40e23352}} 
+\index{App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Activiter\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$all\+Hotels }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$all\+Hotels} & \\
+\hline
+\end{DoxyParams}
+méthode constructrice initialise la classe \mbox{\hyperlink{classApp_1_1Models_1_1ActiviterModel}{Activiter\+Model}} pour utiliser et exécuter les requêtes SQL 
+
+Elle a besoin des noms des hôtels pour les utiliser dans d\textquotesingle{}autres méthodes
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_afa9059c539113a07bc6982e70578f9b2}\label{classApp_1_1Models_1_1ActiviterManager_afa9059c539113a07bc6982e70578f9b2}} 
+\index{App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}!getOldActiviter@{getOldActiviter}}
+\index{getOldActiviter@{getOldActiviter}!App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}}
+\doxysubsubsection{\texorpdfstring{getOldActiviter()}{getOldActiviter()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Activiter\+Manager\+::get\+Old\+Activiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui donne les activiter les plus anciennes. 
+
+La méthode exécute une requête SQL qui lui donne les vielles activités.
+
+Elle n\textquotesingle{}a plus qu\textquotesingle{}à les ranger par hôtel et à renvoyer le tableau
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les données triées et ordonnées de la bonne manière pour qu\textquotesingle{}elle soient affichées 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_abdf0eaf427e14eed643295c013e299ed}\label{classApp_1_1Models_1_1ActiviterManager_abdf0eaf427e14eed643295c013e299ed}} 
+\index{App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}!getPriceActiv@{getPriceActiv}}
+\index{getPriceActiv@{getPriceActiv}!App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}}
+\doxysubsubsection{\texorpdfstring{getPriceActiv()}{getPriceActiv()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Activiter\+Manager\+::get\+Price\+Activ (\begin{DoxyParamCaption}\item[{string}]{\$value\+\_\+activiter }\end{DoxyParamCaption})}
+
+
+
+Méthode qui donne les prix des activiter. 
+
+La méthode exécute une requête SQL qui lui donne les prix de l\textquotesingle{}activités 
+
+\begin{DoxyReturn}{Renvoie}
+string$\vert$int Contient le prix de l\textquotesingle{}activiter ou renvoie un 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ActiviterManager_a9c02037bd02e0038eadacde08cb93483}\label{classApp_1_1Models_1_1ActiviterManager_a9c02037bd02e0038eadacde08cb93483}} 
+\index{App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}!getYoungActiviter@{getYoungActiviter}}
+\index{getYoungActiviter@{getYoungActiviter}!App\textbackslash{}Models\textbackslash{}ActiviterManager@{App\textbackslash{}Models\textbackslash{}ActiviterManager}}
+\doxysubsubsection{\texorpdfstring{getYoungActiviter()}{getYoungActiviter()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Activiter\+Manager\+::get\+Young\+Activiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui donne les activités les plus récentes. 
+
+La méthode exécute une requête SQL qui lui donne les activités récentes.
+
+Elle n\textquotesingle{}a plus qu\textquotesingle{}à les ranger par hôtel et à renvoyer le tableau
+
+\begin{DoxyReturn}{Renvoie}
+array Contient les données triées et ordonnées de la bonne manière pour qu\textquotesingle{}elle soient affichées 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{ActiviterManager_8php}{Activiter\+Manager.\+php}}\end{DoxyCompactItemize}

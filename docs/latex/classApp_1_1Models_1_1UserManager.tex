@@ -1,0 +1,143 @@
+\hypertarget{classApp_1_1Models_1_1UserManager}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}User\+Manager}
+\label{classApp_1_1Models_1_1UserManager}\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UserManager_a3ebef7d7014695419d1fac238b5f1fbb}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UserManager_a6bea3fff5319c3e491a4f00ef5395314}{verificate\+Login}} (\$obj\+Requests, \$session)
+\begin{DoxyCompactList}\small\item\em Methode qui verifie les donner entrez par l\textquotesingle{}utilsateur pour se connecter ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UserManager_a5e5d9e25de4f61df0ffc465795e5cad4}{verificate\+Mdp\+Oublier}} (\$obj\+Request)
+\begin{DoxyCompactList}\small\item\em Methode qui verifie l\textquotesingle{}email du mot de passe oublier ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UserManager_afbe661b15e601f5917d04e06598f3800}{verificate\+Create\+Account}} (\$ob\+JRequest)
+\begin{DoxyCompactList}\small\item\em Methode qui verifie l\textquotesingle{}inscription d\textquotesingle{}un nouvelle utilisateur ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1UserManager_a799e7ef5044a1bdbb00c0b39035ae008}{is\+Match\+For\+Send\+Mail}} (array \$data)
+\begin{DoxyCompactList}\small\item\em Methode qui regarde si l\textquotesingle{}email doit etre envoyer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a8c34949cd62095044b8bdb0aa3a19915}\label{classApp_1_1Models_1_1UserManager_a8c34949cd62095044b8bdb0aa3a19915}} 
+{\bfseries get\+All\+User\+From\+Admin} ()
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a2bb91db974b312dd8747601730cac0ed}\label{classApp_1_1Models_1_1UserManager_a2bb91db974b312dd8747601730cac0ed}} 
+{\bfseries delete\+User} (string \$pseudo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a3ebef7d7014695419d1fac238b5f1fbb}\label{classApp_1_1Models_1_1UserManager_a3ebef7d7014695419d1fac238b5f1fbb}} 
+\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+User\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+La méthode constructrice initialise la classe \mbox{\hyperlink{classApp_1_1Models_1_1UsersModel}{Users\+Model}} est la classe Hunt\+Error 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a799e7ef5044a1bdbb00c0b39035ae008}\label{classApp_1_1Models_1_1UserManager_a799e7ef5044a1bdbb00c0b39035ae008}} 
+\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}!isMatchForSendMail@{isMatchForSendMail}}
+\index{isMatchForSendMail@{isMatchForSendMail}!App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsubsection{\texorpdfstring{isMatchForSendMail()}{isMatchForSendMail()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+User\+Manager\+::is\+Match\+For\+Send\+Mail (\begin{DoxyParamCaption}\item[{array}]{\$data }\end{DoxyParamCaption})}
+
+
+
+Methode qui regarde si l\textquotesingle{}email doit etre envoyer. 
+
+La methode verifie si les champs ne sont pas vide est que l\textquotesingle{}email est bien dans le bon format.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_afbe661b15e601f5917d04e06598f3800}\label{classApp_1_1Models_1_1UserManager_afbe661b15e601f5917d04e06598f3800}} 
+\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}!verificateCreateAccount@{verificateCreateAccount}}
+\index{verificateCreateAccount@{verificateCreateAccount}!App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsubsection{\texorpdfstring{verificateCreateAccount()}{verificateCreateAccount()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+User\+Manager\+::verificate\+Create\+Account (\begin{DoxyParamCaption}\item[{}]{\$ob\+JRequest }\end{DoxyParamCaption})}
+
+
+
+Methode qui verifie l\textquotesingle{}inscription d\textquotesingle{}un nouvelle utilisateur ~\newline
+ 
+
+La methode verifie les entrez de l\textquotesingle{}utilisateur respecte les regles de securiter du mot de passe, regarde si le pseudo est l\textquotesingle{}email n\textquotesingle{}a pas deja été renseigner par un autre utilisateur.
+
+Si tout est bon, le tableaux associatif se remplie, les clefs\+: les nom des champs, les valeurs\+: les valeur entrez par l\textquotesingle{}utilisateur
+
+Elle renvoie un tableaux d\textquotesingle{}erruer/de succes a l\textquotesingle{}indice 0 est le conteune du message a l\textquotesingle{}indice 1
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array Contient les erruer/succes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a6bea3fff5319c3e491a4f00ef5395314}\label{classApp_1_1Models_1_1UserManager_a6bea3fff5319c3e491a4f00ef5395314}} 
+\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}!verificateLogin@{verificateLogin}}
+\index{verificateLogin@{verificateLogin}!App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsubsection{\texorpdfstring{verificateLogin()}{verificateLogin()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+User\+Manager\+::verificate\+Login (\begin{DoxyParamCaption}\item[{}]{\$obj\+Requests,  }\item[{}]{\$session }\end{DoxyParamCaption})}
+
+
+
+Methode qui verifie les donner entrez par l\textquotesingle{}utilsateur pour se connecter ~\newline
+ 
+
+La methode verifie la methode d\textquotesingle{}envoye, si c\textquotesingle{}est un POST il recupere le pseudo est le mot de passe en filtrant le contenue.
+
+Si les entrez sont correct, on ajoute le pseudo, nom, prenom est l\textquotesingle{}id du client
+
+Elle renvoie true si tout ce passe bien, sinon un tableaux avec les erruer 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \$obj\+Requests} & \\
+\hline
+{\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array$\vert$true Contient les donner de l\textquotesingle{}hotel ou renvoie un true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1UserManager_a5e5d9e25de4f61df0ffc465795e5cad4}\label{classApp_1_1Models_1_1UserManager_a5e5d9e25de4f61df0ffc465795e5cad4}} 
+\index{App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}!verificateMdpOublier@{verificateMdpOublier}}
+\index{verificateMdpOublier@{verificateMdpOublier}!App\textbackslash{}Models\textbackslash{}UserManager@{App\textbackslash{}Models\textbackslash{}UserManager}}
+\doxysubsubsection{\texorpdfstring{verificateMdpOublier()}{verificateMdpOublier()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+User\+Manager\+::verificate\+Mdp\+Oublier (\begin{DoxyParamCaption}\item[{}]{\$obj\+Request }\end{DoxyParamCaption})}
+
+
+
+Methode qui verifie l\textquotesingle{}email du mot de passe oublier ~\newline
+ 
+
+La methode verifie la methode d\textquotesingle{}envoye, si c\textquotesingle{}est un POST il recupere l\textquotesingle{}email en filtrant le contenue.
+
+Si l\textquotesingle{}entrez est correcte, on lui dit envoye un message 
+
+Elle renvoie un tableaux d\textquotesingle{}erruer si il y en a, sinon un tableaux vide
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array Contient les erruer/rien 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{UserManager_8php}{User\+Manager.\+php}}\end{DoxyCompactItemize}

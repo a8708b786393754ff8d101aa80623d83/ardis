@@ -1,0 +1,175 @@
+\hypertarget{classApp_1_1Models_1_1ReservationManager}{}\doxysection{Référence de la classe App\textbackslash{}Models\textbackslash{}Reservation\+Manager}
+\label{classApp_1_1Models_1_1ReservationManager}\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_af8544c1bde4f6e8d670723c252ffb021}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Méthode constructrice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_ab7f6d9bef1294732d12b1b921336a8d7}{get\+Result\+Total\+Reservation}} (string \$durer\+\_\+total, string \$activ\+\_\+price, string \$name\+\_\+hotel)
+\begin{DoxyCompactList}\small\item\em Methode qui calcul le prix total de la reservation ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_ab78d4e91031e647f2fb7fdb935893528}{get\+Result\+Date\+Reservation}} (string \$startdate, string \$enddate)
+\begin{DoxyCompactList}\small\item\em Methode qui donne la diffirence de la date de debut est de fin de la reservation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_a5097f7116bc95394107599c95924da0a}{validate\+Reservation}} (array \$data, string \$pseudo)
+\begin{DoxyCompactList}\small\item\em Methode qui valide ou pas la reservation ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_a1ea94d5824c923b7d8ee3bcac477a785}{get\+Chamb\+Num}} (string \$id\+\_\+pseudo, string \$date\+\_\+deb)
+\begin{DoxyCompactList}\small\item\em Methode qui execute des requete pour recuperer le nombre de chambre ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationManager_a0b9559015c7ac8a0ffa3697879809e5d}{get\+Your\+Reservation\+Number\+Name\+Hotel}} (string \$name\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Methode qui donne les reservation au client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a7b64f3ba7e21872b9684a726d0bc267d}\label{classApp_1_1Models_1_1ReservationManager_a7b64f3ba7e21872b9684a726d0bc267d}} 
+Hunt\+Error {\bfseries \$error\+Hunt}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a7d58cb99a125bbd0ba396961ea8723c3}\label{classApp_1_1Models_1_1ReservationManager_a7d58cb99a125bbd0ba396961ea8723c3}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1ReservationModel}{Reservation\+Model}} {\bfseries \$reserv\+Mdl}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a62b978917865569835e5178130d4708a}\label{classApp_1_1Models_1_1ReservationManager_a62b978917865569835e5178130d4708a}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1UsersModel}{Users\+Model}} {\bfseries \$user\+Mdl}
+\item 
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a6690159359cf824512fa5724ec81212d}\label{classApp_1_1Models_1_1ReservationManager_a6690159359cf824512fa5724ec81212d}} 
+\mbox{\hyperlink{classApp_1_1Models_1_1HotelModel}{Hotel\+Model}} {\bfseries \$hotel\+Mdl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_af8544c1bde4f6e8d670723c252ffb021}\label{classApp_1_1Models_1_1ReservationManager_af8544c1bde4f6e8d670723c252ffb021}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode constructrice. 
+
+La méthode constructrice initialise la classe \mbox{\hyperlink{classApp_1_1Models_1_1UsersModel}{Users\+Model}},Hunt\+Error,\mbox{\hyperlink{classApp_1_1Models_1_1HotelModel}{Hotel\+Model}}, Rservation\+Model. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a1ea94d5824c923b7d8ee3bcac477a785}\label{classApp_1_1Models_1_1ReservationManager_a1ea94d5824c923b7d8ee3bcac477a785}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!getChambNum@{getChambNum}}
+\index{getChambNum@{getChambNum}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{getChambNum()}{getChambNum()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::get\+Chamb\+Num (\begin{DoxyParamCaption}\item[{string}]{\$id\+\_\+pseudo,  }\item[{string}]{\$date\+\_\+deb }\end{DoxyParamCaption})}
+
+
+
+Methode qui execute des requete pour recuperer le nombre de chambre ~\newline
+ 
+
+Recuperer l\textquotesingle{}id du client via l\textquotesingle{}id du client.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id\+\_\+pseudo} & \\
+\hline
+string & {\em \$date\+\_\+deb} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array numero(s) de(s) chambre(s) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_ab78d4e91031e647f2fb7fdb935893528}\label{classApp_1_1Models_1_1ReservationManager_ab78d4e91031e647f2fb7fdb935893528}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!getResultDateReservation@{getResultDateReservation}}
+\index{getResultDateReservation@{getResultDateReservation}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{getResultDateReservation()}{getResultDateReservation()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::get\+Result\+Date\+Reservation (\begin{DoxyParamCaption}\item[{string}]{\$startdate,  }\item[{string}]{\$enddate }\end{DoxyParamCaption})}
+
+
+
+Methode qui donne la diffirence de la date de debut est de fin de la reservation. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$startdate} & \\
+\hline
+string & {\em \$enddate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string jour de difference 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_ab7f6d9bef1294732d12b1b921336a8d7}\label{classApp_1_1Models_1_1ReservationManager_ab7f6d9bef1294732d12b1b921336a8d7}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!getResultTotalReservation@{getResultTotalReservation}}
+\index{getResultTotalReservation@{getResultTotalReservation}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{getResultTotalReservation()}{getResultTotalReservation()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::get\+Result\+Total\+Reservation (\begin{DoxyParamCaption}\item[{string}]{\$durer\+\_\+total,  }\item[{string}]{\$activ\+\_\+price,  }\item[{string}]{\$name\+\_\+hotel }\end{DoxyParamCaption})}
+
+
+
+Methode qui calcul le prix total de la reservation ~\newline
+ 
+
+Execute la requete pour recupere le prix de l\textquotesingle{}hotel.
+
+Le prix de l\textquotesingle{}activiter n\textquotesingle{}est pas pris au compte si elle est de 0
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$durer\+\_\+total} & \\
+\hline
+string & {\em \$activ\+\_\+price} & \\
+\hline
+string & {\em \$name\+\_\+hotel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int total de la reservation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a0b9559015c7ac8a0ffa3697879809e5d}\label{classApp_1_1Models_1_1ReservationManager_a0b9559015c7ac8a0ffa3697879809e5d}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!getYourReservationNumberNameHotel@{getYourReservationNumberNameHotel}}
+\index{getYourReservationNumberNameHotel@{getYourReservationNumberNameHotel}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{getYourReservationNumberNameHotel()}{getYourReservationNumberNameHotel()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::get\+Your\+Reservation\+Number\+Name\+Hotel (\begin{DoxyParamCaption}\item[{string}]{\$name\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Methode qui donne les reservation au client. 
+
+Elle recuperer les reservations du client de l\textquotesingle{}hotel.
+
+Renvoie faux si il y a pas de reservation.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$name\+\_\+client} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array$\vert$false false ou les reservation est nom d\textquotesingle{}hotel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_1_1Models_1_1ReservationManager_a5097f7116bc95394107599c95924da0a}\label{classApp_1_1Models_1_1ReservationManager_a5097f7116bc95394107599c95924da0a}} 
+\index{App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}!validateReservation@{validateReservation}}
+\index{validateReservation@{validateReservation}!App\textbackslash{}Models\textbackslash{}ReservationManager@{App\textbackslash{}Models\textbackslash{}ReservationManager}}
+\doxysubsubsection{\texorpdfstring{validateReservation()}{validateReservation()}}
+{\footnotesize\ttfamily App\textbackslash{}\+Models\textbackslash{}\+Reservation\+Manager\+::validate\+Reservation (\begin{DoxyParamCaption}\item[{array}]{\$data,  }\item[{string}]{\$pseudo }\end{DoxyParamCaption})}
+
+
+
+Methode qui valide ou pas la reservation ~\newline
+ 
+
+La methode verifie si il n\textquotesingle{}y a pas d\textquotesingle{}erreur dans les champs entre zpar l\textquotesingle{}utilisateur 
+
+Si les entrez sont correct, on recupere l\textquotesingle{}id du pseudo est les reservation disponible.
+
+Si il\textquotesingle{}y a des reservation disponible,on ajoute la reservation a l\textquotesingle{}utilisateur est les activiters (si il y en a). 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$data} & \\
+\hline
+string & {\em \$pseudo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array$\vert$ Contient le type de message est son contenue 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{ReservationManager_8php}{Reservation\+Manager.\+php}}\end{DoxyCompactItemize}
